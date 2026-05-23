@@ -1,10 +1,12 @@
+import { assetPath } from "../utils/assets.js";
+
 const imageByTheme = {
-  vowels: "/assets/letter-pages/memory-vowels.png",
-  consonants: "/assets/letter-pages/memory-consonants.png",
-  school: "/assets/letter-pages/memory-school.png",
-  nature: "/assets/letter-pages/memory-nature.png",
-  home: "/assets/letter-pages/memory-home-food.png",
-  actions: "/assets/letter-pages/memory-actions.png"
+  vowels: assetPath("assets/letter-pages/memory-vowels.png"),
+  consonants: assetPath("assets/letter-pages/memory-consonants.png"),
+  school: assetPath("assets/letter-pages/memory-school.png"),
+  nature: assetPath("assets/letter-pages/memory-nature.png"),
+  home: assetPath("assets/letter-pages/memory-home-food.png"),
+  actions: assetPath("assets/letter-pages/memory-actions.png")
 };
 
 let pageSequence = 0;
@@ -25,7 +27,7 @@ function makePage(symbol, roman, theme, words) {
     playfulNote: `今天的任務：看到 ${symbol} 就在心裡按一下小鈴鐺，提醒自己這個音正在幫韓文字變有生命。`,
     words: words.map((word, wordIndex) => ({
       ...word,
-      image: `/assets/letter-pages/words/word-${String(firstWordIndex + wordIndex + 1).padStart(3, "0")}.png`
+      image: assetPath(`assets/letter-pages/words/word-${String(firstWordIndex + wordIndex + 1).padStart(3, "0")}.png`)
     }))
   };
 }
