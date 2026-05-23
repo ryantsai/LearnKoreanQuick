@@ -7,7 +7,6 @@ import { speakKorean } from "./utils/speech.js";
 
 export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
-  const [speechNotice, setSpeechNotice] = useState("點一個母音或子音，切換到它的個別學習頁。");
   const activeLetterPage = activeLetterSymbol
     ? letterPages.find((page) => page.symbol === activeLetterSymbol)
     : null;
@@ -18,26 +17,11 @@ export default function App() {
   }
 
   function playSound(text) {
-    const ok = speakKorean(text);
-    setSpeechNotice(ok ? `正在播放：${text}` : `這個瀏覽器沒有可用語音，請看讀音提示：${text}`);
+    speakKorean(text);
   }
 
   return (
     <main className="app-shell">
-      <section className="hero hero-single">
-        <div className="hero-copy">
-          <div className="brand-row">
-            <span className="brand-mark">한</span>
-            <span>Learn Korean Quick</span>
-          </div>
-          <h1>選一個音，進入它的小宇宙。</h1>
-          <p>
-            首頁只保留完整母音和完整子音。點任一張字卡，就會切換到該音的個別學習頁，搭配常用單字、記憶圖片和生動提示。
-          </p>
-          <p className="sound-notice">{speechNotice}</p>
-        </div>
-      </section>
-
       <section className="learning-grid">
         <AlphabetRail
           title="完整母音"
@@ -57,6 +41,7 @@ export default function App() {
 
       {activeLetterPage ? (
         <LetterLearningPopup
+          key={activeLetterPage.symbol}
           page={activeLetterPage}
           onBack={() => setActiveLetterSymbol(null)}
           onSpeak={playSound}
@@ -79,11 +64,9 @@ function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
             className={`letter-card ${activeSymbol === item.symbol ? "is-viewed" : ""}`}
             key={item.id}
             onClick={() => onPick(item.symbol)}
+            aria-label={`${item.symbol} ${item.roman} ${item.zh}`}
           >
             <span className="letter-symbol">{item.symbol}</span>
-            <span className="letter-roman">{item.roman}</span>
-            <span className="letter-hint">{item.zh}</span>
-            <span className="letter-example">{item.example}</span>
           </button>
         ))}
       </div>
@@ -92,6 +75,13 @@ function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
 }
 
 function LetterLearningPopup({ page, onBack, onSpeak }) {
+  const [selectedStoryWord, setSelectedStoryWord] = useState(page.words[0]);
+
+  function selectStoryWord(word) {
+    setSelectedStoryWord(word);
+    onSpeak(word.hangul);
+  }
+
   return (
     <div className="letter-modal-backdrop" role="dialog" aria-modal="true" aria-label={`${page.symbol} 獨立學習頁`}>
       <section className="letter-page">
@@ -119,6 +109,8 @@ function LetterLearningPopup({ page, onBack, onSpeak }) {
           <img src={page.memoryImage} alt={`${page.symbol} 記憶圖`} />
         </div>
 
+        <StoryPanel page={page} selectedWord={selectedStoryWord} onSelectWord={selectStoryWord} />
+
         <div className="letter-word-grid">
           {page.words.map((word) => (
             <article className="letter-word-card" key={`${page.symbol}-${word.hangul}`}>
@@ -127,6 +119,7 @@ function LetterLearningPopup({ page, onBack, onSpeak }) {
                 <span className="letter-word-hangul">{word.hangul}</span>
                 <span className="letter-word-meta">{word.zh} · {word.roman}</span>
                 <p>{word.note}</p>
+                <SyllableBreakdown syllables={word.syllables} />
                 <button className="letter-sound-button" onClick={() => onSpeak(word.hangul)}>
                   <Volume2 size={15} />
                   發音
@@ -136,6 +129,64 @@ function LetterLearningPopup({ page, onBack, onSpeak }) {
           ))}
         </div>
       </section>
+    </div>
+  );
+}
+
+function StoryPanel({ page, selectedWord, onSelectWord }) {
+  return (
+    <section className="story-panel" aria-label={`${page.symbol} 趣味小故事`}>
+      <div className="story-copy">
+        <h3>{page.story.title}</h3>
+        <p>{page.story.setup}</p>
+        <p className="story-line">
+          {page.story.tokens.map((token, index) => {
+            if (token.type === "text") {
+              return <React.Fragment key={`${token.value}-${index}`}>{token.value}</React.Fragment>;
+            }
+
+            const word = page.words.find((item) => item.hangul === token.value);
+
+            return (
+              <button
+                className={`story-word ${selectedWord.hangul === token.value ? "is-active" : ""}`}
+                key={`${token.value}-${index}`}
+                onClick={() => onSelectWord(word)}
+              >
+                {token.value}
+              </button>
+            );
+          })}
+        </p>
+        <p>{page.story.ending}</p>
+      </div>
+
+      <WordInspector word={selectedWord} />
+    </section>
+  );
+}
+
+function WordInspector({ word }) {
+  return (
+    <aside className="word-inspector" aria-live="polite">
+      <span className="inspector-label">Tap result</span>
+      <strong className="inspector-word">{word.hangul}</strong>
+      <span className="inspector-meta">{word.zh} · {word.roman}</span>
+      <SyllableBreakdown syllables={word.syllables} />
+    </aside>
+  );
+}
+
+function SyllableBreakdown({ syllables }) {
+  return (
+    <div className="syllable-breakdown" aria-label="音節拆解">
+      {syllables.map((syllable, index) => (
+        <span className="syllable-chip" key={`${syllable.block}-${syllable.roman}-${index}`}>
+          <strong>{syllable.block}</strong>
+          <span>{syllable.parts.map((part) => part.jamo).join(" + ")}</span>
+          <em>{syllable.roman}</em>
+        </span>
+      ))}
     </div>
   );
 }

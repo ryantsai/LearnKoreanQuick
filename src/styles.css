@@ -33,61 +33,17 @@ body:has(.letter-modal-backdrop) {
   overflow: hidden;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.7fr);
-  gap: 24px;
-  align-items: stretch;
-  max-width: 1180px;
-  margin: 0 auto 24px;
-}
-
-.hero-single {
-  grid-template-columns: 1fr;
-}
-
-.hero-copy,
 .alphabet-panel,
 .letter-page {
   border: 2px solid rgba(29, 38, 51, 0.08);
   box-shadow: 0 22px 58px rgba(40, 58, 83, 0.12);
 }
 
-.hero-copy {
-  min-height: 360px;
-  padding: 42px;
-  border-radius: 28px;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.7)),
-    repeating-linear-gradient(45deg, rgba(25, 170, 151, 0.08) 0 12px, transparent 12px 24px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.brand-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #376457;
-  font-weight: 800;
-}
-
-.brand-mark {
-  width: 44px;
-  height: 44px;
-  display: inline-grid;
-  place-items: center;
-  border-radius: 14px;
-  background: #19aa97;
-  color: white;
-  font-size: 24px;
-}
-
-.brand-mark,
 .letter-symbol,
 .letter-page-hero h2,
-.letter-word-hangul {
+.letter-word-hangul,
+.story-word,
+.inspector-word {
   font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
 }
 
@@ -96,28 +52,6 @@ h2,
 h3,
 p {
   margin-top: 0;
-}
-
-.hero h1 {
-  max-width: 760px;
-  margin: 22px 0 16px;
-  font-size: clamp(44px, 7vw, 86px);
-  line-height: 0.98;
-  letter-spacing: 0;
-}
-
-.hero p {
-  max-width: 720px;
-  color: #506070;
-  font-size: 18px;
-  line-height: 1.75;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 14px;
 }
 
 .primary-button,
@@ -145,17 +79,6 @@ p {
   border: 1px solid rgba(29, 38, 51, 0.12);
 }
 
-.sound-notice {
-  display: inline-flex;
-  width: fit-content;
-  margin: 0;
-  padding: 12px 14px;
-  border-radius: 14px;
-  background: #fff3dc;
-  color: #714d00 !important;
-  font-weight: 900;
-}
-
 .panel-heading {
   display: flex;
   align-items: center;
@@ -172,6 +95,7 @@ p {
 
 .learning-grid {
   grid-template-columns: 1fr 1fr;
+  align-items: start;
 }
 
 .alphabet-panel,
@@ -195,7 +119,7 @@ p {
 }
 
 .letter-card {
-  min-height: 136px;
+  min-height: 108px;
   border-radius: 18px;
   padding: 14px 10px;
   background: #fff;
@@ -220,7 +144,7 @@ p {
 }
 
 .letter-symbol {
-  font-size: 42px;
+  font-size: clamp(40px, 6vw, 62px);
   font-weight: 900;
 }
 
@@ -349,6 +273,112 @@ p {
   margin-top: 24px;
 }
 
+.story-panel {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 22px;
+  background: #f3fbf8;
+  border: 1px solid rgba(25, 170, 151, 0.18);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 18px;
+}
+
+.story-copy h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.story-copy p {
+  margin-bottom: 12px;
+  color: #506070;
+  line-height: 1.7;
+}
+
+.story-line {
+  font-size: 20px;
+  color: #1d2633 !important;
+}
+
+.story-word {
+  display: inline-flex;
+  margin: 0 4px 6px;
+  padding: 5px 9px 7px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f766e;
+  border: 1px solid rgba(25, 170, 151, 0.24);
+  font-size: 1.04em;
+  font-weight: 900;
+  box-shadow: 0 7px 14px rgba(40, 58, 83, 0.07);
+}
+
+.story-word:hover,
+.story-word:focus-visible,
+.story-word.is-active {
+  color: #ffffff;
+  background: #19aa97;
+}
+
+.word-inspector {
+  align-self: stretch;
+  padding: 16px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 38, 51, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inspector-label {
+  color: #f96f5d;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.inspector-word {
+  font-size: 42px;
+  line-height: 1;
+}
+
+.inspector-meta {
+  color: #506070;
+  font-weight: 900;
+}
+
+.syllable-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.syllable-chip {
+  min-width: 74px;
+  padding: 8px;
+  border-radius: 12px;
+  background: #fff8ec;
+  border: 1px solid rgba(29, 38, 51, 0.08);
+  display: grid;
+  gap: 2px;
+}
+
+.syllable-chip strong {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.syllable-chip span,
+.syllable-chip em {
+  color: #647386;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+
 .letter-word-card {
   min-height: 360px;
   padding: 12px;
@@ -399,9 +429,9 @@ p {
 }
 
 @media (max-width: 960px) {
-  .hero,
   .learning-grid,
-  .letter-page-hero {
+  .letter-page-hero,
+  .story-panel {
     grid-template-columns: 1fr;
   }
 
@@ -409,9 +439,6 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-copy {
-    min-height: 0;
-  }
 }
 
 @media (max-width: 640px) {
@@ -419,17 +446,12 @@ p {
     padding: 14px;
   }
 
-  .hero-copy,
   .alphabet-panel,
   .letter-page {
     border-radius: 20px;
     padding: 18px;
     width: min(100%, calc(100vw - 18px));
     max-height: calc(100vh - 18px);
-  }
-
-  .hero h1 {
-    font-size: 42px;
   }
 
   .letter-grid {

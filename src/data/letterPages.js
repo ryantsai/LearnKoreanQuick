@@ -1,4 +1,5 @@
 import { assetPath } from "../utils/assets.js";
+import { decomposeHangulWord } from "../utils/hangul.js";
 
 const imageByTheme = {
   vowels: assetPath("assets/letter-pages/memory-vowels.png"),
@@ -16,6 +17,11 @@ function makePage(symbol, roman, theme, words) {
   const pageIndex = pageSequence;
   pageSequence += 1;
   const firstWordIndex = pageIndex * 5;
+  const enrichedWords = words.map((word, wordIndex) => ({
+    ...word,
+    image: assetPath(`assets/letter-pages/words/word-${String(firstWordIndex + wordIndex + 1).padStart(3, "0")}.png`),
+    syllables: decomposeHangulWord(word.hangul, word.roman)
+  }));
 
   return {
     id: `page-${symbol}`,
@@ -25,10 +31,33 @@ function makePage(symbol, roman, theme, words) {
     memoryImage: image,
     memoryTip: `把 ${symbol} 想成一個會在單字裡發光的小積木。先找出它，再把旁邊的子音接上去，聲音就會自己拼起來。`,
     playfulNote: `今天的任務：看到 ${symbol} 就在心裡按一下小鈴鐺，提醒自己這個音正在幫韓文字變有生命。`,
-    words: words.map((word, wordIndex) => ({
-      ...word,
-      image: assetPath(`assets/letter-pages/words/word-${String(firstWordIndex + wordIndex + 1).padStart(3, "0")}.png`)
-    }))
+    story: makeFunnyStory(symbol, roman, enrichedWords),
+    words: enrichedWords
+  };
+}
+
+function makeFunnyStory(symbol, roman, words) {
+  const storyWords = words.slice(0, 5).map((word) => word.hangul);
+
+  return {
+    title: `${symbol} 小隊的五秒冒險`,
+    setup: `${symbol} 今天戴著小隊長帽，規定大家說話前都要先練一次「${roman}」。`,
+    ending: `結果整條街都記住了 ${symbol}，因為它實在太會搶鏡了。點故事裡的韓文字，偷看它的意思和拆音。`,
+    tokens: [
+      { type: "text", value: "它先遇到 " },
+      { type: "word", value: storyWords[0] },
+      { type: "text", value: "，又拉著 " },
+      { type: "word", value: storyWords[1] },
+      { type: "text", value: " 去找 " },
+      { type: "word", value: storyWords[2] },
+      { type: "text", value: "。半路上 " },
+      { type: "word", value: storyWords[3] },
+      { type: "text", value: " 突然大喊「" },
+      { type: "word", value: storyWords[4] },
+      { type: "text", value: "！」大家笑到把 " },
+      { type: "text", value: symbol },
+      { type: "text", value: " 念了三遍。" }
+    ]
   };
 }
 

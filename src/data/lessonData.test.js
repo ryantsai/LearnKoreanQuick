@@ -76,6 +76,8 @@ describe("lessonData", () => {
       expect(page.title.length).toBeGreaterThan(0);
       expect(page.memoryImage).toMatch(/\/?assets\/letter-pages\/.+\.png$/);
       expect(page.memoryTip.length).toBeGreaterThan(20);
+      expect(page.story.title).toContain(page.symbol);
+      expect(page.story.tokens.filter((token) => token.type === "word")).toHaveLength(5);
       expect(page.words.length).toBeGreaterThanOrEqual(5);
       expect(page.words.length).toBeLessThanOrEqual(10);
 
@@ -83,6 +85,10 @@ describe("lessonData", () => {
         expect(word.hangul.length).toBeGreaterThan(0);
         expect(word.zh.length).toBeGreaterThan(0);
         expect(word.roman.length).toBeGreaterThan(0);
+        expect(word.syllables).toHaveLength([...word.hangul].length);
+        for (const syllable of word.syllables) {
+          expect(syllable.parts.length).toBeGreaterThanOrEqual(2);
+        }
         expect(word.image).toMatch(/\/?assets\/letter-pages\/words\/word-\d{3}\.png$/);
         const publicPath = word.image.slice(word.image.indexOf("assets/"));
         expect(existsSync(path.join(process.cwd(), "public", publicPath))).toBe(true);

@@ -77,3 +77,169 @@ export function restoreSessionSnapshot(rawValue, fallbackSelection) {
     };
   }
 }
+
+const initialJamo = [
+  "ㄱ",
+  "ㄲ",
+  "ㄴ",
+  "ㄷ",
+  "ㄸ",
+  "ㄹ",
+  "ㅁ",
+  "ㅂ",
+  "ㅃ",
+  "ㅅ",
+  "ㅆ",
+  "ㅇ",
+  "ㅈ",
+  "ㅉ",
+  "ㅊ",
+  "ㅋ",
+  "ㅌ",
+  "ㅍ",
+  "ㅎ"
+];
+
+const medialJamo = [
+  "ㅏ",
+  "ㅐ",
+  "ㅑ",
+  "ㅒ",
+  "ㅓ",
+  "ㅔ",
+  "ㅕ",
+  "ㅖ",
+  "ㅗ",
+  "ㅘ",
+  "ㅙ",
+  "ㅚ",
+  "ㅛ",
+  "ㅜ",
+  "ㅝ",
+  "ㅞ",
+  "ㅟ",
+  "ㅠ",
+  "ㅡ",
+  "ㅢ",
+  "ㅣ"
+];
+
+const finalJamo = [
+  "",
+  "ㄱ",
+  "ㄲ",
+  "ㄳ",
+  "ㄴ",
+  "ㄵ",
+  "ㄶ",
+  "ㄷ",
+  "ㄹ",
+  "ㄺ",
+  "ㄻ",
+  "ㄼ",
+  "ㄽ",
+  "ㄾ",
+  "ㄿ",
+  "ㅀ",
+  "ㅁ",
+  "ㅂ",
+  "ㅄ",
+  "ㅅ",
+  "ㅆ",
+  "ㅇ",
+  "ㅈ",
+  "ㅊ",
+  "ㅋ",
+  "ㅌ",
+  "ㅍ",
+  "ㅎ"
+];
+
+const jamoSounds = {
+  ㄱ: "g/k",
+  ㄲ: "kk",
+  ㄳ: "ks",
+  ㄴ: "n",
+  ㄵ: "nj",
+  ㄶ: "nh",
+  ㄷ: "d/t",
+  ㄸ: "tt",
+  ㄹ: "r/l",
+  ㄺ: "lg",
+  ㄻ: "lm",
+  ㄼ: "lb",
+  ㄽ: "ls",
+  ㄾ: "lt",
+  ㄿ: "lp",
+  ㅀ: "lh",
+  ㅁ: "m",
+  ㅂ: "b/p",
+  ㅃ: "pp",
+  ㅄ: "ps",
+  ㅅ: "s",
+  ㅆ: "ss",
+  ㅇ: "silent/ng",
+  ㅈ: "j",
+  ㅉ: "jj",
+  ㅊ: "ch",
+  ㅋ: "k",
+  ㅌ: "t",
+  ㅍ: "p",
+  ㅎ: "h",
+  ㅏ: "a",
+  ㅐ: "ae",
+  ㅑ: "ya",
+  ㅒ: "yae",
+  ㅓ: "eo",
+  ㅔ: "e",
+  ㅕ: "yeo",
+  ㅖ: "ye",
+  ㅗ: "o",
+  ㅘ: "wa",
+  ㅙ: "wae",
+  ㅚ: "oe",
+  ㅛ: "yo",
+  ㅜ: "u",
+  ㅝ: "wo",
+  ㅞ: "we",
+  ㅟ: "wi",
+  ㅠ: "yu",
+  ㅡ: "eu",
+  ㅢ: "ui",
+  ㅣ: "i"
+};
+
+export function decomposeHangulWord(hangul, roman = "") {
+  const romanParts = roman.split("-").filter(Boolean);
+
+  return [...hangul].map((block, index) => {
+    const code = block.charCodeAt(0);
+    const offset = code - 0xac00;
+
+    if (offset < 0 || offset > 11171) {
+      return {
+        block,
+        roman: romanParts[index] ?? block,
+        parts: [{ jamo: block, sound: romanParts[index] ?? block }]
+      };
+    }
+
+    const initialIndex = Math.floor(offset / 588);
+    const medialIndex = Math.floor((offset % 588) / 28);
+    const finalIndex = offset % 28;
+    const jamos = [initialJamo[initialIndex], medialJamo[medialIndex]];
+
+    if (finalIndex > 0) {
+      jamos.push(finalJamo[finalIndex]);
+    }
+
+    return {
+      block,
+      roman: romanParts[index] ?? jamos.map((jamo) => jamoSounds[jamo]).join(""),
+      parts: jamos.map((jamo) => ({
+        jamo,
+        sound: jamoSounds[jamo] ?? jamo
+      }))
+    };
+  });
+}
