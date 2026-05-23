@@ -1,6 +1,7 @@
 import { BookOpen, CheckCircle2, Headphones, RotateCcw, Sparkles, Volume2 } from "lucide-react";
 import React from "react";
 import { useEffect, useMemo, useState } from "react";
+import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import {
   createSessionSnapshot,
@@ -22,6 +23,7 @@ export default function App() {
   const [practicedWords, setPracticedWords] = useState(() => new Set());
   const [practiceCount, setPracticeCount] = useState(0);
   const [speechNotice, setSpeechNotice] = useState("點任一韓文字母或單字，開始拆音。");
+  const [activeLetterSymbol, setActiveLetterSymbol] = useState(letterPages[0].symbol);
 
   useEffect(() => {
     const restored = restoreSessionSnapshot(sessionStorage.getItem(STORAGE_KEY), fallbackSelection);
@@ -29,20 +31,23 @@ export default function App() {
     setViewedLetters(restored.viewedLetters);
     setPracticedWords(restored.practicedWords);
     setPracticeCount(restored.practiceCount);
+    setActiveLetterSymbol(restored.activeLetterSymbol ?? letterPages[0].symbol);
   }, [fallbackSelection]);
 
   useEffect(() => {
-    const snapshot = createSessionSnapshot({ selected, viewedLetters, practicedWords, practiceCount });
+    const snapshot = createSessionSnapshot({ selected, viewedLetters, practicedWords, practiceCount, activeLetterSymbol });
     sessionStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
-  }, [selected, viewedLetters, practicedWords, practiceCount]);
+  }, [selected, viewedLetters, practicedWords, practiceCount, activeLetterSymbol]);
 
   const selectedWord = getSelectedWord(lessonData.words, selected);
   const selectedSyllable = getSelectedSyllable(selectedWord, selected);
   const selectedPart = getSelectedPart(selectedSyllable, selected);
   const selectionInfo = describeSelection(selectedWord, selectedSyllable, selectedPart);
+  const activeLetterPage = letterPages.find((page) => page.symbol === activeLetterSymbol) ?? letterPages[0];
 
   function markLetter(symbol) {
     setViewedLetters((current) => new Set(current).add(symbol));
+    setActiveLetterSymbol(symbol);
     setSpeechNotice(`${symbol}：先看形狀，再試著跟讀。`);
     playSound(symbol);
   }
@@ -84,6 +89,7 @@ export default function App() {
     setViewedLetters(new Set());
     setPracticedWords(new Set());
     setPracticeCount(0);
+    setActiveLetterSymbol(letterPages[0].symbol);
     setSpeechNotice("已重置這次分頁的學習進度。");
   }
 
@@ -155,6 +161,15 @@ export default function App() {
           onSpeak={playSound}
         />
       </section>
+
+      <LetterLearningPage
+        page={activeLetterPage}
+        onSpeak={playSound}
+        onPractice={(word) => {
+          setPracticeCount((count) => count + 1);
+          setSpeechNotice(`${word.hangul}：${word.note}`);
+        }}
+      />
     </main>
   );
 }
@@ -173,6 +188,49 @@ function ProgressDock({ letterCount, wordCount, practiceCount, notice }) {
       </div>
       <p>{notice}</p>
     </aside>
+  );
+}
+
+function LetterLearningPage({ page, onSpeak, onPractice }) {
+  return (
+    <section className="letter-page" aria-label={`${page.symbol} 獨立學習頁`}>
+      <div className="letter-page-hero">
+        <div>
+          <p className="lab-label">Letter Page</p>
+          <h2>{page.title}</h2>
+          <p>{page.memoryTip}</p>
+          <p className="playful-note">{page.playfulNote}</p>
+          <button className="primary-button" onClick={() => onSpeak(page.symbol)}>
+            <Volume2 size={18} />
+            聽 {page.symbol}
+          </button>
+        </div>
+        <img src={page.memoryImage} alt={`${page.symbol} 記憶圖`} />
+      </div>
+
+      <div className="letter-word-grid">
+        {page.words.map((word) => (
+          <article className="letter-word-card" key={`${page.symbol}-${word.hangul}`}>
+            <img src={word.image} alt={`${word.zh} 記憶圖`} />
+            <div>
+              <span className="letter-word-hangul">{word.hangul}</span>
+              <span className="letter-word-meta">{word.zh} · {word.roman}</span>
+              <p>{word.note}</p>
+              <div className="letter-word-actions">
+                <button onClick={() => onSpeak(word.hangul)}>
+                  <Volume2 size={15} />
+                  發音
+                </button>
+                <button onClick={() => onPractice(word)}>
+                  <Sparkles size={15} />
+                  記一下
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 

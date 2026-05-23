@@ -42,7 +42,8 @@ button {
 .progress-dock,
 .alphabet-panel,
 .word-gallery,
-.pronunciation-lab {
+.pronunciation-lab,
+.letter-page {
   border: 2px solid rgba(29, 38, 51, 0.08);
   box-shadow: 0 22px 58px rgba(40, 58, 83, 0.12);
 }
@@ -185,7 +186,8 @@ p {
 }
 
 .learning-grid,
-.practice-zone {
+.practice-zone,
+.letter-page {
   max-width: 1180px;
   margin: 0 auto 24px;
   display: grid;
@@ -203,7 +205,8 @@ p {
 
 .alphabet-panel,
 .word-gallery,
-.pronunciation-lab {
+.pronunciation-lab,
+.letter-page {
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.86);
   padding: 24px;
@@ -520,11 +523,119 @@ p {
   white-space: nowrap;
 }
 
+.letter-page {
+  display: block;
+}
+
+.letter-page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: center;
+}
+
+.letter-page-hero h2 {
+  margin-bottom: 12px;
+  font-size: clamp(52px, 8vw, 96px);
+  line-height: 0.95;
+}
+
+.letter-page-hero p {
+  max-width: 700px;
+  color: #506070;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.playful-note {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #fff3dc;
+  color: #714d00 !important;
+  font-weight: 800;
+}
+
+.letter-page-hero img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 22px;
+  background: #f6efe5;
+  box-shadow: inset 0 0 0 1px rgba(29, 38, 51, 0.08);
+}
+
+.letter-word-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.letter-word-card {
+  min-height: 360px;
+  padding: 12px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 38, 51, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.letter-word-card img {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.letter-word-hangul {
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.letter-word-meta {
+  display: block;
+  color: #f96f5d;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.letter-word-card p {
+  color: #647386;
+  line-height: 1.55;
+}
+
+.letter-word-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.letter-word-actions button {
+  min-height: 36px;
+  border-radius: 12px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #eef8f6;
+  color: #1d2633;
+  font-weight: 900;
+}
+
 @media (max-width: 960px) {
   .hero,
   .learning-grid,
-  .practice-zone {
+  .practice-zone,
+  .letter-page-hero {
     grid-template-columns: 1fr;
+  }
+
+  .letter-word-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-copy {
@@ -545,7 +656,8 @@ p {
   .progress-dock,
   .alphabet-panel,
   .word-gallery,
-  .pronunciation-lab {
+  .pronunciation-lab,
+  .letter-page {
     border-radius: 20px;
     padding: 18px;
   }
@@ -569,6 +681,14 @@ p {
 
   .progress-stats {
     grid-template-columns: 1fr;
+  }
+
+  .letter-word-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .letter-page-hero h2 {
+    font-size: 58px;
   }
 
   .explain-card {

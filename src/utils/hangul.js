@@ -44,7 +44,8 @@ export function createSessionSnapshot(state) {
     selected: state.selected,
     viewedLetters: Array.from(state.viewedLetters),
     practicedWords: Array.from(state.practicedWords),
-    practiceCount: state.practiceCount
+    practiceCount: state.practiceCount,
+    activeLetterSymbol: state.activeLetterSymbol
   };
 }
 
@@ -64,7 +65,8 @@ export function restoreSessionSnapshot(rawValue, fallbackSelection) {
       selected: parsed.selected ?? fallbackSelection,
       viewedLetters: new Set(parsed.viewedLetters ?? []),
       practicedWords: new Set(parsed.practicedWords ?? []),
-      practiceCount: Number(parsed.practiceCount ?? 0)
+      practiceCount: Number(parsed.practiceCount ?? 0),
+      activeLetterSymbol: parsed.activeLetterSymbol
     };
   } catch {
     return {
