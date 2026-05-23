@@ -29,6 +29,10 @@ button {
     linear-gradient(135deg, #fff8ec 0%, #f3fbf8 47%, #fff0f0 100%);
 }
 
+body:has(.letter-modal-backdrop) {
+  overflow: hidden;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.7fr);
@@ -78,6 +82,13 @@ button {
   background: #19aa97;
   color: white;
   font-size: 24px;
+}
+
+.brand-mark,
+.letter-symbol,
+.letter-page-hero h2,
+.letter-word-hangul {
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
 }
 
 h1,
@@ -242,6 +253,56 @@ p {
 
 .letter-page {
   display: block;
+  width: min(1180px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  position: relative;
+}
+
+.letter-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(29, 38, 51, 0.46);
+  backdrop-filter: blur(8px);
+}
+
+.letter-page-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -8px -8px 12px;
+  padding: 8px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.back-button,
+.icon-button {
+  min-height: 42px;
+  border-radius: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #1d2633;
+  color: white;
+  font-weight: 900;
+}
+
+.back-button {
+  padding: 0 16px;
+}
+
+.icon-button {
+  width: 42px;
 }
 
 .letter-page-hero {
@@ -299,11 +360,12 @@ p {
   gap: 12px;
 }
 
-.letter-word-card img {
+.letter-word-image {
   width: 100%;
   aspect-ratio: 1 / 0.8;
-  object-fit: cover;
   border-radius: 16px;
+  background-color: #f6efe5;
+  object-fit: cover;
 }
 
 .letter-word-hangul {
@@ -362,6 +424,8 @@ p {
   .letter-page {
     border-radius: 20px;
     padding: 18px;
+    width: min(100%, calc(100vw - 18px));
+    max-height: calc(100vh - 18px);
   }
 
   .hero h1 {

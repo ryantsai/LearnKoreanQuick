@@ -1,34 +1,20 @@
-import { BookOpen, Sparkles, Volume2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Sparkles, Volume2, X } from "lucide-react";
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import { speakKorean } from "./utils/speech.js";
 
-const STORAGE_KEY = "learn-korean-quick-active-letter";
-
 export default function App() {
-  const [activeLetterSymbol, setActiveLetterSymbol] = useState(letterPages[0].symbol);
+  const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
   const [speechNotice, setSpeechNotice] = useState("點一個母音或子音，切換到它的個別學習頁。");
-  const activeLetterPage = letterPages.find((page) => page.symbol === activeLetterSymbol) ?? letterPages[0];
-
-  useEffect(() => {
-    const restoredSymbol = sessionStorage.getItem(STORAGE_KEY);
-    if (letterPages.some((page) => page.symbol === restoredSymbol)) {
-      setActiveLetterSymbol(restoredSymbol);
-    }
-  }, []);
-
-  useEffect(() => {
-    sessionStorage.setItem(STORAGE_KEY, activeLetterSymbol);
-  }, [activeLetterSymbol]);
+  const activeLetterPage = activeLetterSymbol
+    ? letterPages.find((page) => page.symbol === activeLetterSymbol)
+    : null;
 
   function openLetterPage(symbol) {
     setActiveLetterSymbol(symbol);
     playSound(symbol);
-    requestAnimationFrame(() => {
-      document.querySelector(".letter-page")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
   }
 
   function playSound(text) {
@@ -69,7 +55,13 @@ export default function App() {
         />
       </section>
 
-      <LetterLearningPage page={activeLetterPage} onSpeak={playSound} />
+      {activeLetterPage ? (
+        <LetterLearningPopup
+          page={activeLetterPage}
+          onBack={() => setActiveLetterSymbol(null)}
+          onSpeak={playSound}
+        />
+      ) : null}
     </main>
   );
 }
@@ -99,39 +91,51 @@ function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
   );
 }
 
-function LetterLearningPage({ page, onSpeak }) {
+function LetterLearningPopup({ page, onBack, onSpeak }) {
   return (
-    <section className="letter-page" aria-label={`${page.symbol} 獨立學習頁`}>
-      <div className="letter-page-hero">
-        <div>
-          <p className="lab-label">Letter Page</p>
-          <h2>{page.title}</h2>
-          <p>{page.memoryTip}</p>
-          <p className="playful-note">{page.playfulNote}</p>
-          <button className="primary-button" onClick={() => onSpeak(page.symbol)}>
-            <Volume2 size={18} />
-            聽 {page.symbol}
+    <div className="letter-modal-backdrop" role="dialog" aria-modal="true" aria-label={`${page.symbol} 獨立學習頁`}>
+      <section className="letter-page">
+        <div className="letter-page-toolbar">
+          <button className="back-button" onClick={onBack}>
+            <ArrowLeft size={18} />
+            返回
+          </button>
+          <button className="icon-button" onClick={onBack} aria-label="關閉學習頁">
+            <X size={20} />
           </button>
         </div>
-        <img src={page.memoryImage} alt={`${page.symbol} 記憶圖`} />
-      </div>
 
-      <div className="letter-word-grid">
-        {page.words.map((word) => (
-          <article className="letter-word-card" key={`${page.symbol}-${word.hangul}`}>
-            <img src={word.image} alt={`${word.zh} 記憶圖`} />
-            <div>
-              <span className="letter-word-hangul">{word.hangul}</span>
-              <span className="letter-word-meta">{word.zh} · {word.roman}</span>
-              <p>{word.note}</p>
-              <button className="letter-sound-button" onClick={() => onSpeak(word.hangul)}>
-                <Volume2 size={15} />
-                發音
-              </button>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
+        <div className="letter-page-hero">
+          <div>
+            <p className="lab-label">Letter Page</p>
+            <h2>{page.title}</h2>
+            <p>{page.memoryTip}</p>
+            <p className="playful-note">{page.playfulNote}</p>
+            <button className="primary-button" onClick={() => onSpeak(page.symbol)}>
+              <Volume2 size={18} />
+              聽 {page.symbol}
+            </button>
+          </div>
+          <img src={page.memoryImage} alt={`${page.symbol} 記憶圖`} />
+        </div>
+
+        <div className="letter-word-grid">
+          {page.words.map((word) => (
+            <article className="letter-word-card" key={`${page.symbol}-${word.hangul}`}>
+              <img className="letter-word-image" src={word.image} alt={`${word.zh} 記憶圖`} />
+              <div>
+                <span className="letter-word-hangul">{word.hangul}</span>
+                <span className="letter-word-meta">{word.zh} · {word.roman}</span>
+                <p>{word.note}</p>
+                <button className="letter-sound-button" onClick={() => onSpeak(word.hangul)}>
+                  <Volume2 size={15} />
+                  發音
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

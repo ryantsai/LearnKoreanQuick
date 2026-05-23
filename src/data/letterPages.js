@@ -7,8 +7,13 @@ const imageByTheme = {
   actions: "/assets/letter-pages/memory-actions.png"
 };
 
+let pageSequence = 0;
+
 function makePage(symbol, roman, theme, words) {
   const image = imageByTheme[theme];
+  const pageIndex = pageSequence;
+  pageSequence += 1;
+  const firstWordIndex = pageIndex * 5;
 
   return {
     id: `page-${symbol}`,
@@ -18,7 +23,10 @@ function makePage(symbol, roman, theme, words) {
     memoryImage: image,
     memoryTip: `把 ${symbol} 想成一個會在單字裡發光的小積木。先找出它，再把旁邊的子音接上去，聲音就會自己拼起來。`,
     playfulNote: `今天的任務：看到 ${symbol} 就在心裡按一下小鈴鐺，提醒自己這個音正在幫韓文字變有生命。`,
-    words: words.map((word) => ({ ...word, image }))
+    words: words.map((word, wordIndex) => ({
+      ...word,
+      image: `/assets/letter-pages/words/word-${String(firstWordIndex + wordIndex + 1).padStart(3, "0")}.png`
+    }))
   };
 }
 

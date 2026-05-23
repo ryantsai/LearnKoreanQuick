@@ -1,4 +1,6 @@
 import { describe, expect, test } from "vitest";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { lessonData } from "./lessonData.js";
 import { letterPages } from "./letterPages.js";
 
@@ -81,9 +83,12 @@ describe("lessonData", () => {
         expect(word.hangul.length).toBeGreaterThan(0);
         expect(word.zh.length).toBeGreaterThan(0);
         expect(word.roman.length).toBeGreaterThan(0);
-        expect(word.image).toMatch(/^\/assets\/letter-pages\/.+\.png$/);
+        expect(word.image).toMatch(/^\/assets\/letter-pages\/words\/word-\d{3}\.png$/);
+        expect(existsSync(path.join(process.cwd(), "public", word.image))).toBe(true);
         expect(word.note.length).toBeGreaterThan(10);
       }
+
+      expect(new Set(page.words.map((word) => word.image)).size).toBe(page.words.length);
     }
   });
 });
