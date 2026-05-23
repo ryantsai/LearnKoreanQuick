@@ -67,6 +67,8 @@ function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
             aria-label={`${item.symbol} ${item.roman} ${item.zh}`}
           >
             <span className="letter-symbol">{item.symbol}</span>
+            <span className="letter-roman">{item.roman}</span>
+            <span className="letter-hint">{item.zh}</span>
           </button>
         ))}
       </div>
