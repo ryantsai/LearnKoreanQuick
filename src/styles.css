@@ -218,12 +218,12 @@ p {
 .letter-grid {
   margin-top: 18px;
   display: grid;
-  grid-template-columns: repeat(5, minmax(88px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
   gap: 12px;
 }
 
 .letter-card {
-  min-height: 144px;
+  min-height: 136px;
   border-radius: 18px;
   padding: 14px 10px;
   background: #fff;
@@ -291,6 +291,7 @@ p {
   border: 2px solid transparent;
   text-align: left;
   padding: 12px;
+  cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease;
 }
 
@@ -310,10 +311,59 @@ p {
 }
 
 .word-hangul {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
   margin-top: 10px;
   font-size: 32px;
   font-weight: 900;
+}
+
+.word-syllable-hotspot {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  min-height: 68px;
+  border-radius: 12px;
+  padding: 3px;
+  outline: none;
+}
+
+.word-syllable-hotspot:hover,
+.word-syllable-hotspot:focus-visible,
+.word-syllable-hotspot.is-hot {
+  background: #fff3dc;
+  color: #d94e40;
+}
+
+.word-jamo-popover {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 12px;
+  background: #eef8f6;
+}
+
+.word-jamo-chip {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #376457;
+  background: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.word-jamo-chip:hover,
+.word-jamo-chip:focus-visible,
+.word-jamo-chip.is-hot {
+  background: #ffd066;
+  color: #1d2633;
 }
 
 .word-meta {

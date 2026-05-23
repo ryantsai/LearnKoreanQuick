@@ -53,6 +53,16 @@ export default function App() {
     setPracticeCount((count) => count + 1);
   }
 
+  function previewWordSyllable(wordId, syllableIndex) {
+    setSelected({ wordId, syllableIndex, partIndex: null });
+    setPracticedWords((current) => new Set(current).add(wordId));
+  }
+
+  function previewWordPart(wordId, syllableIndex, partIndex) {
+    setSelected({ wordId, syllableIndex, partIndex });
+    setPracticedWords((current) => new Set(current).add(wordId));
+  }
+
   function selectSyllable(syllableIndex) {
     setSelected((current) => ({ ...current, syllableIndex, partIndex: null }));
     setPracticeCount((count) => count + 1);
@@ -110,14 +120,14 @@ export default function App() {
 
       <section className="learning-grid">
         <AlphabetRail
-          title="基本母音"
+          title="完整母音"
           icon={<Sparkles size={18} />}
           items={lessonData.vowels}
           viewedLetters={viewedLetters}
           onPick={markLetter}
         />
         <AlphabetRail
-          title="常用子音"
+          title="完整子音"
           icon={<BookOpen size={18} />}
           items={lessonData.consonants}
           viewedLetters={viewedLetters}
@@ -126,7 +136,14 @@ export default function App() {
       </section>
 
       <section className="practice-zone">
-        <WordGallery words={lessonData.words} selectedWord={selectedWord} onSelect={selectWord} />
+        <WordGallery
+          words={lessonData.words}
+          selected={selected}
+          selectedWord={selectedWord}
+          onSelect={selectWord}
+          onPreviewSyllable={previewWordSyllable}
+          onPreviewPart={previewWordPart}
+        />
         <PronunciationLab
           word={selectedWord}
           selected={selected}
@@ -184,7 +201,7 @@ function AlphabetRail({ title, icon, items, viewedLetters, onPick }) {
   );
 }
 
-function WordGallery({ words, selectedWord, onSelect }) {
+function WordGallery({ words, selected, selectedWord, onSelect, onPreviewSyllable, onPreviewPart }) {
   return (
     <section className="word-gallery">
       <div className="section-title">
@@ -193,15 +210,68 @@ function WordGallery({ words, selectedWord, onSelect }) {
       </div>
       <div className="word-list">
         {words.map((word) => (
-          <button
+          <article
             className={`word-card ${selectedWord.id === word.id ? "is-active" : ""}`}
             key={word.id}
+            role="button"
+            tabIndex={0}
             onClick={() => onSelect(word.id)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                onSelect(word.id);
+              }
+            }}
           >
             <img src={word.asset} alt={`${word.meaning} 插圖`} />
-            <span className="word-hangul">{word.hangul}</span>
+            <span className="word-hangul">
+              {word.syllables.map((syllable, syllableIndex) => (
+                <span
+                  className={`word-syllable-hotspot ${
+                    selected.wordId === word.id && selected.syllableIndex === syllableIndex ? "is-hot" : ""
+                  }`}
+                  key={`${word.id}-${syllable.block}-${syllableIndex}`}
+                  onMouseEnter={(event) => {
+                    event.stopPropagation();
+                    onPreviewSyllable(word.id, syllableIndex);
+                  }}
+                  onFocus={(event) => {
+                    event.stopPropagation();
+                    onPreviewSyllable(word.id, syllableIndex);
+                  }}
+                  tabIndex={0}
+                >
+                  {syllable.block}
+                  <span className="word-jamo-popover" aria-label={`${syllable.block} parts`}>
+                    {syllable.parts.map((part, partIndex) => (
+                      <span
+                        className={`word-jamo-chip ${
+                          selected.wordId === word.id &&
+                          selected.syllableIndex === syllableIndex &&
+                          selected.partIndex === partIndex
+                            ? "is-hot"
+                            : ""
+                        }`}
+                        key={`${word.id}-${syllableIndex}-${part.jamo}-${partIndex}`}
+                        onMouseEnter={(event) => {
+                          event.stopPropagation();
+                          onPreviewPart(word.id, syllableIndex, partIndex);
+                        }}
+                        onFocus={(event) => {
+                          event.stopPropagation();
+                          onPreviewPart(word.id, syllableIndex, partIndex);
+                        }}
+                        tabIndex={0}
+                      >
+                        {part.jamo}
+                      </span>
+                    ))}
+                  </span>
+                </span>
+              ))}
+            </span>
             <span className="word-meta">{word.meaning} · {word.roman}</span>
-          </button>
+          </article>
         ))}
       </div>
     </section>
