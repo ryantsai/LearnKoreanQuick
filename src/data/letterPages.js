@@ -36,27 +36,270 @@ function makePage(symbol, roman, theme, words) {
   };
 }
 
+const funnyStoryScenes = [
+  {
+    title: "寶寶司令的啊啊閱兵",
+    setup: ({ symbol, roman }) => `${symbol} 今天自封早餐司令，要求每個點名都要用「${roman}」拉長三秒。`,
+    pieces: ["先把 ", " 放進嬰兒車，又命令 ", " 戴上蘋果安全帽。接著 ", " 背錯書包，撞到 ", " 的樹幹，最後 ", " 滑進香蕉隊伍裡。"],
+    ending: ({ symbol }) => `全隊笑到敬禮歪掉，只有 ${symbol} 很得意，因為大家都把嘴巴張得超標準。`
+  },
+  {
+    title: "扁嘴偵探找 ae",
+    setup: ({ symbol, roman }) => `${symbol} 開了一間扁嘴偵探社，所有線索都要念成「${roman}」才算有效。`,
+    pieces: ["第一個證人是 ", "，牠說 ", " 偷走了雲朵拖鞋。", " 假裝是船逃跑，被 ", " 照得發亮，最後藏進 ", " 的書頁裡。"],
+    ending: ({ symbol }) => `案件破了以後，${symbol} 發給大家一張「嘴角拉平也能很帥」獎狀。`
+  },
+  {
+    title: "夜市棒球隊亂揮棒",
+    setup: ({ symbol, roman }) => `${symbol} 在夜市組棒球隊，口號是先喊「${roman}」，再假裝很專業。`,
+    pieces: ["第一棒 ", " 把球打進 ", " 攤位，", " 老闆追著球跑。", " 坐在板凳講戰術，", " 在戶外當啦啦隊。"],
+    ending: ({ symbol }) => `比分沒人記得，但 ${symbol} 的口號大到連棉花糖都震成球形。`
+  },
+  {
+    title: "孩子們的悄悄話電台",
+    setup: ({ symbol, roman }) => `${symbol} 架起紙杯電台，播音前一定要咬清「${roman}」。`,
+    pieces: ["主持人 ", " 說今天主題是 ", "，可是 ", " 一直插播零食新聞。", " 在旁邊裝神祕，", " 乾脆組成合唱團。"],
+    ending: ({ symbol }) => `電台收聽率只有三個人，但 ${symbol} 宣布這是「小而閃亮的大成功」。`
+  },
+  {
+    title: "迷路咖啡公車",
+    setup: ({ symbol, roman }) => `${symbol} 當起公車司機，發車聲不是叭叭，而是「${roman}」。`,
+    pieces: ["車上坐著 ", "，她問 ", " 才知道大家迷路了。", " 灑出咖啡香，", " 忘了停站，最後全車開到 ", " 門口。"],
+    ending: ({ symbol }) => `乘客下車時都買了一本地圖，${symbol} 則買了更大的方向盤。`
+  },
+  {
+    title: "螃蟹菜單睡衣派對",
+    setup: ({ symbol, roman }) => `${symbol} 辦睡衣派對，入場暗號是乾脆的一聲「${roman}」。`,
+    pieces: ["門口的 ", " 說「", "」，可是 ", " 還在洗臉。", " 把菜單當枕頭，", " 睡到差點點了一份夢。"],
+    ending: ({ symbol }) => `${symbol} 最後宣布枕頭可以加點，但不能加辣。大家點頭點到又想睡。`
+  },
+  {
+    title: "旅行箱自己去醫院",
+    setup: ({ symbol, roman }) => `${symbol} 帶隊旅行，規定迷路時先說「${roman}」再看地圖。`,
+    pieces: ["隊員 ", " 問 ", " 是不是入口，", " 卻把車票塞進冬天的口袋。", " 打噴嚏，最後大家陪 ", " 去掛號。"],
+    ending: ({ symbol }) => `${symbol} 在候診室畫了新路線，路線彎到連護士都笑了。`
+  },
+  {
+    title: "正式回答藝術展",
+    setup: ({ symbol, roman }) => `${symbol} 開藝術展，每件作品旁都貼著「請優雅念 ${roman}」。`,
+    pieces: ["入口作品叫 ", "，旁邊掛著 ", " 招牌。", " 滴答滴答當配樂，", " 滾成雕像，", " 負責假裝懂藝術。"],
+    ending: ({ symbol }) => `觀眾鼓掌時，${symbol} 小聲說：其實最美的作品是大家的發音。`
+  },
+  {
+    title: "圓嘴小黃瓜賽車",
+    setup: ({ symbol, roman }) => `${symbol} 舉辦圓嘴賽車，車手起跑都要喊「${roman}」。`,
+    pieces: ["", " 開著小黃瓜車，", " 在後面烤肉加速。", " 的帽子飛走，", " 撒鹽當雪，", " 變成彎彎賽道。"],
+    ending: ({ symbol }) => `冠軍獎盃是圓的，${symbol} 抱著它練嘴型，差點把自己照成輪胎。`
+  },
+  {
+    title: "哇聲餅乾電話亭",
+    setup: ({ symbol, roman }) => `${symbol} 經營一台會驚呼的電話亭，投幣聲就是「${roman}」。`,
+    pieces: ["第一通電話只有 ", "，第二通送來 ", "。", " 把餅乾屑講成密碼，", " 忙著接線，", " 問電話亭有沒有廁紙。"],
+    ending: ({ symbol }) => `${symbol} 決定把電話亭改名「哇，誰又打來了」。`
+  },
+  {
+    title: "為什麼小劇場",
+    setup: ({ symbol, roman }) => `${symbol} 主持問答節目，所有問題都用「${roman}」開場。`,
+    pieces: ["觀眾先問 ", "，接著 ", " 舉蹄發問。", " 說沒關係，", " 說因為因為，", " 則宣布可以收工。"],
+    ending: ({ symbol }) => `答案越講越亂，${symbol} 卻很滿意：至少每個為什麼都很響亮。`
+  },
+  {
+    title: "外出公司牛肉會議",
+    setup: ({ symbol, roman }) => `${symbol} 穿西裝上班，打卡時一定要說「${roman}」。`,
+    pieces: ["早會題目是 ", "，", " 做簡報做到一半想 ", "。", " 負責照鏡子，", " 把午餐牛肉當成年度策略。"],
+    ending: ({ symbol }) => `${symbol} 寫下會議結論：外出可以，忘記發音不可以。`
+  },
+  {
+    title: "料理鍋的最近新聞",
+    setup: ({ symbol, roman }) => `${symbol} 當料理主播，開場白是香噴噴的「${roman}」。`,
+    pieces: ["今天主菜 ", " 先跳進鍋，", " 在旁邊算費用。", " 整間教室聞香集合，", " 舉著牛奶杯，", " 報導最近很餓。"],
+    ending: ({ symbol }) => `新聞結束後，${symbol} 發現麥克風其實是一根湯匙。`
+  },
+  {
+    title: "牛奶門前的皮鞋舞",
+    setup: ({ symbol, roman }) => `${symbol} 開舞會，低音鼓只會咚咚念「${roman}」。`,
+    pieces: ["", " 當飲料總監，", " 穿皮鞋跳踢踏。", " 滾成西瓜燈球，", " 一邊補水，", " 把門當成舞台出口。"],
+    ending: ({ symbol }) => `舞會散場時，${symbol} 還在地板上找那個最圓的 u 音。`
+  },
+  {
+    title: "星期一硬幣冷笑話",
+    setup: ({ symbol, roman }) => `${symbol} 發明冷笑話販賣機，每個笑話售價一個「${roman}」。`,
+    pieces: ["第一則叫 ", "，第二則由 ", " 投幣。", " 星期一笑不出來，", " 問「什麼」，", " 說冷到答案結冰。"],
+    ending: ({ symbol }) => `${symbol} 覺得冷笑話很成功，因為大家真的開始發抖。`
+  },
+  {
+    title: "婚禮毛衣波浪秀",
+    setup: ({ symbol, roman }) => `${symbol} 辦時尚秀，模特兒走台步時要閃亮念「${roman}」。`,
+    pieces: ["司儀 ", " 端著托盤，", " 放婚禮音樂。", " 穿毛衣走紅毯，", " 沿軌道轉圈，", " 做出波浪謝幕。"],
+    ending: ({ symbol }) => `${symbol} 給全場最佳造型：一件會發音的毛衣。`
+  },
+  {
+    title: "上面耳朵位置圖",
+    setup: ({ symbol, roman }) => `${symbol} 畫藏寶圖，箭頭一律朝上並標註「${roman}」。`,
+    pieces: ["寶藏在 ", "，但 ", " 聽錯方向。", " 跑去後面，", " 又躲到 ", "，最後 ", " 才找到正確位置。"],
+    ending: ({ symbol }) => `${symbol} 把地圖翻過來，發現寶藏其實是大家的笑聲。`
+  },
+  {
+    title: "玻璃牛奶新聞台",
+    setup: ({ symbol, roman }) => `${symbol} 當晨間主播，播新聞前要用「${roman}」清喉嚨。`,
+    pieces: ["頭條是 ", " 變透明，", " 被倒進高腳杯。", " 急著拿衛生紙，", " 播報國際新聞，", " 忽然紅到上熱搜。"],
+    ending: ({ symbol }) => `導播對 ${symbol} 比讚，雖然字幕把牛奶打成了月光。`
+  },
+  {
+    title: "平嘴食物銀行",
+    setup: ({ symbol, roman }) => `${symbol} 開了一家很嚴肅的食物銀行，密碼是平平的「${roman}」。`,
+    pieces: ["第一筆存款是 ", "，", " 排隊領號碼牌。", " 畫出存摺，", " 說今天陰天，", " 表示感覺有點餓。"],
+    ending: ({ symbol }) => `${symbol} 把利息改成點心，客戶滿意到嘴角完全拉平。`
+  },
+  {
+    title: "椅子醫生會議",
+    setup: ({ symbol, roman }) => `${symbol} 召開椅子會議，發言前先滑一聲「${roman}」。`,
+    pieces: ["主席是 ", "，旁邊坐著 ", "。", " 的議程太長，", " 一直提醒注意，", " 問這場會議的意思。"],
+    ending: ({ symbol }) => `會議結論很短：${symbol} 很會滑，椅子很會坐。`
+  },
+  {
+    title: "牙齒火車泡菜鐘",
+    setup: ({ symbol, roman }) => `${symbol} 把教室改成火車站，驗票聲是清亮的「${roman}」。`,
+    pieces: ["月台上有 ", " 當站長，", " 嗚嗚進站。", " 帶著泡菜便當，", " 來送行，", " 負責滴答報時。"],
+    ending: ({ symbol }) => `${symbol} 發現火車晚點三分鐘，但大家剛好多練三次發音。`
+  },
+  {
+    title: "書包烤肉火車雲",
+    setup: ({ symbol, roman }) => `${symbol} 當露營隊長，點火前一定要說「${roman}」。`,
+    pieces: ["", " 裝滿餐具，", " 負責烤肉。", " 開火車送柴，", " 飄過來遮太陽，", " 當晚餐的驚喜嘉賓。"],
+    ending: ({ symbol }) => `${symbol} 宣布露營成功，雖然帳篷聞起來像泡菜。`
+  },
+  {
+    title: "緊緊花夢蜂蜜秀",
+    setup: ({ symbol, roman }) => `${symbol} 辦緊張才藝秀，登台前要用力念「${roman}」。`,
+    pieces: ["", " 變成舞台花束，", " 表演睡著。", " 黏在麥克風上，", " 叫醒全場，", " 用尾巴謝幕。"],
+    ending: ({ symbol }) => `${symbol} 給大家滿分，因為每個 kk 都像彈簧一樣跳出來。`
+  },
+  {
+    title: "樹國姐姐雪歌",
+    setup: ({ symbol, roman }) => `${symbol} 畫了一張鼻音地圖，路標都寫著「${roman}」。`,
+    pieces: ["地圖從 ", " 出發，穿過 ", "。", " 在路邊發便當，", " 變成雪花路標，", " 唱歌幫大家導航。"],
+    ending: ({ symbol }) => `${symbol} 聽完歌才發現，整張地圖其實畫成了微笑。`
+  },
+  {
+    title: "豆腐橋月亮錢包",
+    setup: ({ symbol, roman }) => `${symbol} 蓋了一座方方的橋，通行費是一聲「${roman}」。`,
+    pieces: ["橋名叫 ", "，通往 ", "。", " 用豆腐當磚頭，", " 在橋下發亮，", " 說沒有零錢也能過。"],
+    ending: ({ symbol }) => `${symbol} 很驕傲，雖然豆腐橋每走一步都會晃一下。`
+  },
+  {
+    title: "草莓土地年糕熱舞",
+    setup: ({ symbol, roman }) => `${symbol} 開健身課，所有動作都要繃緊念「${roman}」。`,
+    pieces: ["暖身吃 ", "，然後 ", " 負責數拍。", " 當瑜伽墊，", " 彈起來，", " 熱到大家開始扇風。"],
+    ending: ({ symbol }) => `${symbol} 宣布下課，因為連發音都做完深蹲了。`
+  },
+  {
+    title: "拉麵機器人緞帶歌",
+    setup: ({ symbol, roman }) => `${symbol} 帶一支舌尖樂團，開唱前先彈一下「${roman}」。`,
+    pieces: ["主唱 ", " 端著湯，", " 負責機械舞。", " 綁上緞帶，", " 甩頭髮打節奏，", " 把副歌唱成彩帶。"],
+    ending: ({ symbol }) => `${symbol} 聽到安可聲，立刻把舌頭又彈了一下。`
+  },
+  {
+    title: "方杯水門帽子",
+    setup: ({ symbol, roman }) => `${symbol} 經營方形咖啡館，點餐要先閉嘴再念「${roman}」。`,
+    pieces: ["今天特調是 ", "，", " 負責洗杯子。", " 在收銀台談心，", " 戴著帽子巡桌，", " 一開一關當門鈴。"],
+    ending: ({ symbol }) => `${symbol} 覺得生意很好，因為每個客人都像在哼小調。`
+  },
+  {
+    title: "香蕉公車雨飯海",
+    setup: ({ symbol, roman }) => `${symbol} 開海邊公車，發車時砰的一聲「${roman}」。`,
+    pieces: ["第一站 ", "，第二站 ", "。", " 在窗外下雨，", " 把飯盒抱緊，", " 在終點站拍浪。"],
+    ending: ({ symbol }) => `${symbol} 把車票曬乾，發現每張都印著胖胖的 ㅂ。`
+  },
+  {
+    title: "麵包根親親快跑",
+    setup: ({ symbol, roman }) => `${symbol} 辦快速烘焙賽，倒數時要爆出「${roman}」。`,
+    pieces: ["", " 先膨起來，", " 抓住桌腳。", " 在烤箱裡報時，", " 啵啵加油，", " 催大家快點出爐。"],
+    ending: ({ symbol }) => `${symbol} 拿到金牌，獎品是一個還會冒氣的麵包。`
+  },
+  {
+    title: "蘋果老師鹽鐘",
+    setup: ({ symbol, roman }) => `${symbol} 當代課老師，黑板上只寫一個清楚的「${roman}」。`,
+    pieces: ["點名先叫 ", "，再叫 ", "。", " 把鹽當粉筆，", " 滴答提醒下課，", " 說今天作業是微笑。"],
+    ending: ({ symbol }) => `${symbol} 批改作業時發現，大家都把 s 寫得像蛇形跑道。`
+  },
+  {
+    title: "米種子苦味特價",
+    setup: ({ symbol, roman }) => `${symbol} 開超市廣播，特價品要用很集中的「${roman}」喊。`,
+    pieces: ["一號貨架是 ", "，二號貨架是 ", "。", " 說標籤寫錯會苦，", " 說便宜到眨眼，", " 的香氣突然插隊。"],
+    ending: ({ symbol }) => `${symbol} 廣播到缺貨，因為顧客都想買那個最緊的 ss 音。`
+  },
+  {
+    title: "安靜圓圈變尾音",
+    setup: ({ symbol, roman }) => `${symbol} 是今天的隱形主持人，開頭安靜，結尾才變成「${roman}」。`,
+    pieces: ["", " 先睡醒，", " 切小黃瓜。", " 倒牛奶時很安靜，", " 流過橋下，", " 在房間裡發出 ng 的回音。"],
+    ending: ({ symbol }) => `${symbol} 笑著說：我不搶開場，但我很會收尾。`
+  },
+  {
+    title: "汽車錢包果汁晚餐",
+    setup: ({ symbol, roman }) => `${symbol} 開外送公司，按門鈴前先念「${roman}」。`,
+    pieces: ["", " 負責開車，", " 負責付錢。", " 灑了一點果汁，", " 點了晚餐，", " 騎車追著收據跑。"],
+    ending: ({ symbol }) => `${symbol} 結算今天營收：三杯果汁、一個笑聲、很多 j。`
+  },
+  {
+    title: "鹹邊果醬湯鍋",
+    setup: ({ symbol, roman }) => `${symbol} 辦廚房辯論賽，發言都要緊緊念「${roman}」。`,
+    pieces: ["第一題是 ", " 到底多鹹，第二題由 ", " 選邊。", " 把果醬塗上講稿，", " 冒泡抗議，", " 說兩個一對剛剛好。"],
+    ending: ({ symbol }) => `${symbol} 敲下湯匙槌，宣布今天的論點很黏，但發音很清楚。`
+  },
+  {
+    title: "茶車朋友巧克力",
+    setup: ({ symbol, roman }) => `${symbol} 開下午茶列車，車掌吹氣喊「${roman}」。`,
+    pieces: ["第一杯是 ", "，第一位乘客是 ", "。", " 穿裙子轉圈，", " 翻書找座位，", " 當甜點壓軸。"],
+    ending: ({ symbol }) => `${symbol} 收票時發現，全車都在偷偷念 ch。`
+  },
+  {
+    title: "相機咖啡鼻子餅乾",
+    setup: ({ symbol, roman }) => `${symbol} 當攝影師，快門聲是有空氣感的「${roman}」。`,
+    pieces: ["", " 對準鏡頭，", " 端來咖啡。", " 搶著當特寫，", " 說鑰匙不見了，", " 用餅乾排出線索。"],
+    ending: ({ symbol }) => `${symbol} 拍到最佳照片：一個鼻子聞到餅乾的瞬間。`
+  },
+  {
+    title: "搭桌透明番茄",
+    setup: ({ symbol, roman }) => `${symbol} 開透明劇場，入場要吐氣念「${roman}」。`,
+    pieces: ["主演 ", " 一跳上台，", " 說要搭車。", " 變成桌子，", " 忽然透明，", " 滾來滾去搶戲。"],
+    ending: ({ symbol }) => `${symbol} 拉上布幕，觀眾還在找那顆逃跑的番茄。`
+  },
+  {
+    title: "蔥披薩葡萄信票",
+    setup: ({ symbol, roman }) => `${symbol} 開郵局披薩店，蓋章聲是噗的一聲「${roman}」。`,
+    pieces: ["", " 負責撒蔥，", " 負責切披薩。", " 滾進信封，", " 寫信投訴，", " 買票排隊等外送。"],
+    ending: ({ symbol }) => `${symbol} 把收據摺成飛機，發現它飛起來也會念 p。`
+  },
+  {
+    title: "天空學校湖衛生紙",
+    setup: ({ symbol, roman }) => `${symbol} 當校長，早會先呼一口氣說「${roman}」。`,
+    pieces: ["早操看 ", "，鐘聲來自 ", "。", " 在湖邊集合，", " 飛來救急，", " 把幸福貼在公布欄。"],
+    ending: ({ symbol }) => `${symbol} 宣布今天放晴，因為每個 h 都像小風一樣吹過。`
+  }
+];
+
 function makeFunnyStory(symbol, roman, words) {
   const storyWords = words.slice(0, 5).map((word) => word.hangul);
+  const scene = funnyStoryScenes[pageSequence % funnyStoryScenes.length];
+  const values = { symbol, roman };
 
   return {
-    title: `${symbol} 小隊的五秒冒險`,
-    setup: `${symbol} 今天戴著小隊長帽，規定大家說話前都要先練一次「${roman}」。`,
-    ending: `結果整條街都記住了 ${symbol}，因為它實在太會搶鏡了。點故事裡的韓文字，偷看它的意思和拆音。`,
+    title: `${symbol} ${scene.title}`,
+    setup: scene.setup(values),
+    ending: `${scene.ending(values)} 點故事裡的韓文字，偷看它的意思和拆音。`,
     tokens: [
-      { type: "text", value: "它先遇到 " },
+      { type: "text", value: scene.pieces[0] },
       { type: "word", value: storyWords[0] },
-      { type: "text", value: "，又拉著 " },
+      { type: "text", value: scene.pieces[1] },
       { type: "word", value: storyWords[1] },
-      { type: "text", value: " 去找 " },
+      { type: "text", value: scene.pieces[2] },
       { type: "word", value: storyWords[2] },
-      { type: "text", value: "。半路上 " },
+      { type: "text", value: scene.pieces[3] },
       { type: "word", value: storyWords[3] },
-      { type: "text", value: " 突然大喊「" },
+      { type: "text", value: scene.pieces[4] },
       { type: "word", value: storyWords[4] },
-      { type: "text", value: "！」大家笑到把 " },
-      { type: "text", value: symbol },
-      { type: "text", value: " 念了三遍。" }
+      { type: "text", value: scene.pieces[5] }
     ]
   };
 }
