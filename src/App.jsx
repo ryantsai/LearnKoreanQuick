@@ -30,10 +30,21 @@ export default function App() {
 
   if (activeNovel) {
     return (
-      <NovelReader
-        novel={activeNovel}
-        onClose={() => setActiveNovelId(null)}
-      />
+      <>
+        <NovelReader
+          novel={activeNovel}
+          onClose={() => setActiveNovelId(null)}
+          onOpenLetter={openLetterPage}
+        />
+        {activeLetterPage ? (
+          <LetterLearningPopup
+            key={activeLetterPage.symbol}
+            page={activeLetterPage}
+            onBack={() => setActiveLetterSymbol(null)}
+            onSpeak={playSound}
+          />
+        ) : null}
+      </>
     );
   }
 
@@ -122,7 +133,7 @@ function NovelListPanel({ novels, onOpen }) {
   );
 }
 
-function NovelReader({ novel, onClose }) {
+function NovelReader({ novel, onClose, onOpenLetter }) {
   const [chapterIndex, setChapterIndex] = useState(0);
   const [selectedWord, setSelectedWord] = useState(null);
   const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
@@ -209,6 +220,7 @@ function NovelReader({ novel, onClose }) {
             word={selectedWord}
             pos={inspectorPos}
             onClose={() => setSelectedWord(null)}
+            onOpenLetter={onOpenLetter}
           />
         ) : null}
       </section>
@@ -216,7 +228,9 @@ function NovelReader({ novel, onClose }) {
   );
 }
 
-function WordInspectorPopup({ word, pos, onClose }) {
+const letterPageSymbols = new Set(letterPages.map((p) => p.symbol));
+
+function WordInspectorPopup({ word, pos, onClose, onOpenLetter }) {
   const syllables = decomposeHangulWord(word.text, word.roman);
 
   return (
@@ -241,7 +255,24 @@ function WordInspectorPopup({ word, pos, onClose }) {
         {syllables.map((syllable, index) => (
           <span className="syllable-chip" key={`${syllable.block}-${index}`}>
             <strong>{syllable.block}</strong>
-            <span>{syllable.parts.map((part) => part.jamo).join(" + ")}</span>
+            <span className="jamo-parts">
+              {syllable.parts.map((part, pi) => (
+                <React.Fragment key={pi}>
+                  {pi > 0 && <span className="jamo-plus"> + </span>}
+                  {letterPageSymbols.has(part.jamo) ? (
+                    <button
+                      className="jamo-link"
+                      onClick={() => { onClose(); onOpenLetter(part.jamo); }}
+                      title={`查看 ${part.jamo} 介紹頁`}
+                    >
+                      {part.jamo}
+                    </button>
+                  ) : (
+                    <span>{part.jamo}</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </span>
             <em>{syllable.roman}</em>
           </span>
         ))}

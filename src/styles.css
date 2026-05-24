@@ -783,6 +783,39 @@ p {
   background: #e5e7eb;
 }
 
+.jamo-parts {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.jamo-plus {
+  color: #aab4c0;
+  font-size: 11px;
+}
+
+.jamo-link {
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 5px;
+  background: #eafbf6;
+  border: 1px solid rgba(25, 170, 151, 0.3);
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.jamo-link:hover,
+.jamo-link:focus-visible {
+  background: #19aa97;
+  color: #fff;
+  border-color: #19aa97;
+}
+
 .inspector-roman {
   color: #f96f5d;
   font-weight: 900;
