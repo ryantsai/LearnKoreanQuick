@@ -71,6 +71,7 @@ describe("lessonData", () => {
     const symbols = [...lessonData.vowels, ...lessonData.consonants].map((item) => item.symbol);
 
     expect(letterPages.map((page) => page.symbol)).toEqual(symbols);
+    expect(new Set(letterPages.map((page) => page.story.title)).size).toBe(symbols.length);
 
     for (const page of letterPages) {
       expect(page.title.length).toBeGreaterThan(0);
@@ -78,8 +79,19 @@ describe("lessonData", () => {
       expect(page.memoryTip.length).toBeGreaterThan(20);
       expect(page.story.title).toContain(page.symbol);
       expect(page.story.tokens.filter((token) => token.type === "word")).toHaveLength(5);
+      expect(page.story.bonusLine.length).toBeGreaterThan(20);
+      expect(page.story.newWords).toHaveLength(3);
       expect(page.words.length).toBeGreaterThanOrEqual(5);
       expect(page.words.length).toBeLessThanOrEqual(10);
+
+      const pageWordSet = new Set(page.words.map((word) => word.hangul));
+      for (const word of page.story.newWords) {
+        expect(pageWordSet.has(word.hangul)).toBe(false);
+        expect(word.hangul.length).toBeGreaterThan(0);
+        expect(word.zh.length).toBeGreaterThan(0);
+        expect(word.roman.length).toBeGreaterThan(0);
+        expect(word.syllables).toHaveLength([...word.hangul].length);
+      }
 
       for (const word of page.words) {
         expect(word.hangul.length).toBeGreaterThan(0);

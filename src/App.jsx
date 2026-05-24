@@ -161,6 +161,16 @@ function StoryPanel({ page, selectedWord, onSelectWord }) {
           })}
         </p>
         <p>{page.story.ending}</p>
+        <p className="story-bonus-line">{page.story.bonusLine}</p>
+        <div className="story-new-words" aria-label="故事新單字">
+          <span>新單字</span>
+          {page.story.newWords.map((word) => (
+            <button key={`${page.symbol}-${word.hangul}`} onClick={() => onSelectWord(word)}>
+              <strong>{word.hangul}</strong>
+              <em>{word.zh} · {word.roman}</em>
+            </button>
+          ))}
+        </div>
       </div>
 
       <WordInspector word={selectedWord} />

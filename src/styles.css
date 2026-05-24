@@ -298,6 +298,14 @@ p {
   line-height: 1.7;
 }
 
+.story-bonus-line {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #fff8ec;
+  color: #714d00 !important;
+  font-weight: 800;
+}
+
 .story-line {
   font-size: 20px;
   color: #1d2633 !important;
@@ -321,6 +329,57 @@ p {
 .story-word.is-active {
   color: #ffffff;
   background: #19aa97;
+}
+
+.story-new-words {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.story-new-words > span {
+  grid-column: 1 / -1;
+  color: #f96f5d;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.story-new-words button {
+  min-height: 72px;
+  padding: 10px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(249, 111, 93, 0.22);
+  color: #1d2633;
+  text-align: left;
+}
+
+.story-new-words button:hover,
+.story-new-words button:focus-visible {
+  border-color: #f96f5d;
+  background: #fff3dc;
+}
+
+.story-new-words strong,
+.story-new-words em {
+  display: block;
+}
+
+.story-new-words strong {
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-size: 23px;
+  line-height: 1.15;
+}
+
+.story-new-words em {
+  margin-top: 4px;
+  color: #647386;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .word-inspector {
@@ -466,6 +525,10 @@ p {
   }
 
   .letter-word-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-new-words {
     grid-template-columns: 1fr;
   }
 

@@ -31,10 +31,333 @@ function makePage(symbol, roman, theme, words) {
     memoryImage: image,
     memoryTip: `把 ${symbol} 想成一個會在單字裡發光的小積木。先找出它，再把旁邊的子音接上去，聲音就會自己拼起來。`,
     playfulNote: `今天的任務：看到 ${symbol} 就在心裡按一下小鈴鐺，提醒自己這個音正在幫韓文字變有生命。`,
-    story: makeFunnyStory(symbol, roman, enrichedWords),
+    story: makeFunnyStory(symbol, roman, enrichedWords, pageIndex),
     words: enrichedWords
   };
 }
+
+const storyExtrasBySymbol = {
+  "ㅏ": {
+    line: "加映任務：把韓服、漢江和市場貼在故事角落，讓 ㅏ 像逛首爾一樣一路張嘴前進。",
+    words: [
+      { hangul: "한복", zh: "韓服", roman: "han-bok" },
+      { hangul: "한강", zh: "漢江", roman: "han-gang" },
+      { hangul: "시장", zh: "市場", roman: "si-jang" }
+    ]
+  },
+  "ㅐ": {
+    line: "扁嘴偵探又查到三個新線索：色彩、發現和拍照，全部都要用 ae 的扁扁嘴型蓋章。",
+    words: [
+      { hangul: "색깔", zh: "顏色", roman: "saek-kkal" },
+      { hangul: "발견", zh: "發現", roman: "bal-gyeon" },
+      { hangul: "촬영", zh: "拍攝", roman: "chwa-ryeong" }
+    ]
+  },
+  "ㅑ": {
+    line: "夜市球隊突然開宵夜會，椰子水、香味和藥局都被喊成 ya 的加油口號。",
+    words: [
+      { hangul: "야식", zh: "宵夜", roman: "ya-sik" },
+      { hangul: "향기", zh: "香氣", roman: "hyang-gi" },
+      { hangul: "약국", zh: "藥局", roman: "yak-guk" }
+    ]
+  },
+  "ㅒ": {
+    line: "悄悄話電台插播一段：얘네、얘야、쟤네 全都像小孩指來指去，yae 一出聲就很有畫面。",
+    words: [
+      { hangul: "얘네", zh: "這些孩子／這些人", roman: "yae-ne" },
+      { hangul: "얘야", zh: "孩子呀", roman: "yae-ya" },
+      { hangul: "쟤네", zh: "那些孩子／那些人", roman: "jyae-ne" }
+    ]
+  },
+  "ㅓ": {
+    line: "迷路公車開過城市，轉進廚房，又在鏡子前停車；eo 的聲音像方向盤慢慢轉大圈。",
+    words: [
+      { hangul: "도시", zh: "城市", roman: "do-si" },
+      { hangul: "부엌", zh: "廚房", roman: "bu-eok" },
+      { hangul: "거울", zh: "鏡子", roman: "geo-ul" }
+    ]
+  },
+  "ㅔ": {
+    line: "睡衣派對追加三張邀請卡：世界、郵件、電梯，e 音像按鈴一樣短短亮起。",
+    words: [
+      { hangul: "세계", zh: "世界", roman: "se-gye" },
+      { hangul: "메일", zh: "電子郵件", roman: "me-il" },
+      { hangul: "엘리베이터", zh: "電梯", roman: "el-li-be-i-teo" }
+    ]
+  },
+  "ㅕ": {
+    line: "旅行隊多帶了護照、車站和紀念品，yeo 一念出來，整隊就像準備出發。",
+    words: [
+      { hangul: "여권", zh: "護照", roman: "yeo-kkwon" },
+      { hangul: "역", zh: "車站", roman: "yeok" },
+      { hangul: "기념품", zh: "紀念品", roman: "gi-nyeom-pum" }
+    ]
+  },
+  "ㅖ": {
+    line: "藝術展的 VIP 區放了禮貌、計畫和預約，ye 聽起來像正式場合的亮晶晶門鈴。",
+    words: [
+      { hangul: "예의", zh: "禮貌", roman: "ye-ui" },
+      { hangul: "계획", zh: "計畫", roman: "gye-hoek" },
+      { hangul: "예약", zh: "預約", roman: "ye-yak" }
+    ]
+  },
+  "ㅗ": {
+    line: "圓嘴賽車場旁邊開了圖書館、照相館和公園，o 音像一個個圓形路標。",
+    words: [
+      { hangul: "도서관", zh: "圖書館", roman: "do-seo-gwan" },
+      { hangul: "사진관", zh: "照相館", roman: "sa-jin-gwan" },
+      { hangul: "공원", zh: "公園", roman: "gong-won" }
+    ]
+  },
+  "ㅘ": {
+    line: "電話亭又收到畫家、觀光和水果三通電話，wa 像大家一起說「哇」。",
+    words: [
+      { hangul: "화가", zh: "畫家", roman: "hwa-ga" },
+      { hangul: "관광", zh: "觀光", roman: "gwan-gwang" },
+      { hangul: "과일", zh: "水果", roman: "gwa-il" }
+    ]
+  },
+  "ㅙ": {
+    line: "問答節目準備了超市、對話和矮桌，wae 的嘴型像先圓後扁的小問號。",
+    words: [
+      { hangul: "슈퍼마켓", zh: "超市", roman: "syu-peo-ma-ket" },
+      { hangul: "대화", zh: "對話", roman: "dae-hwa" },
+      { hangul: "왜소", zh: "矮小", roman: "wae-so" }
+    ]
+  },
+  "ㅚ": {
+    line: "外出公司把外交、聚會和灰色印在名片上，oe 像一個往外轉的小滑音。",
+    words: [
+      { hangul: "외교", zh: "外交", roman: "oe-gyo" },
+      { hangul: "모임", zh: "聚會", roman: "mo-im" },
+      { hangul: "회색", zh: "灰色", roman: "hoe-saek" }
+    ]
+  },
+  "ㅛ": {
+    line: "料理主播加播教育、孝順和表情，yo 像把嘴唇捲成小小料理鍋。",
+    words: [
+      { hangul: "교육", zh: "教育", roman: "gyo-yuk" },
+      { hangul: "효도", zh: "孝順", roman: "hyo-do" },
+      { hangul: "표정", zh: "表情", roman: "pyo-jeong" }
+    ]
+  },
+  "ㅜ": {
+    line: "牛奶舞會請來朋友、足球和郵局，u 音像杯子底下圓圓的回聲。",
+    words: [
+      { hangul: "친구", zh: "朋友", roman: "chin-gu" },
+      { hangul: "축구", zh: "足球", roman: "chuk-gu" },
+      { hangul: "우체국", zh: "郵局", roman: "u-che-guk" }
+    ]
+  },
+  "ㅝ": {
+    line: "冷笑話販賣機又吐出願望、月光和原味，wo 像硬幣滾進機器的圓聲。",
+    words: [
+      { hangul: "소원", zh: "願望", roman: "so-won" },
+      { hangul: "월광", zh: "月光", roman: "wol-gwang" },
+      { hangul: "원래", zh: "原本", roman: "wol-lae" }
+    ]
+  },
+  "ㅞ": {
+    line: "時尚秀的新配件是網站、軌跡和問答，we 像波浪先捲再亮。",
+    words: [
+      { hangul: "웹사이트", zh: "網站", roman: "web-sa-i-teu" },
+      { hangul: "궤적", zh: "軌跡", roman: "gwe-jeok" },
+      { hangul: "퀘스트", zh: "任務", roman: "kwe-seu-teu" }
+    ]
+  },
+  "ㅟ": {
+    line: "藏寶圖標出危險、廚房和休息，wi 像聲音往上滑到地圖角落。",
+    words: [
+      { hangul: "위험", zh: "危險", roman: "wi-heom" },
+      { hangul: "취미", zh: "興趣", roman: "chwi-mi" },
+      { hangul: "휴식", zh: "休息", roman: "hyu-sik" }
+    ]
+  },
+  "ㅠ": {
+    line: "新聞台播出留學、柚子和流行，yu 像一道亮亮的滑梯從嘴邊溜走。",
+    words: [
+      { hangul: "유학", zh: "留學", roman: "yu-hak" },
+      { hangul: "유자", zh: "柚子", roman: "yu-ja" },
+      { hangul: "유행", zh: "流行", roman: "yu-haeng" }
+    ]
+  },
+  "ㅡ": {
+    line: "食物銀行把韓文字、微笑和音樂存進保險箱，eu 音要把嘴拉平才打得開。",
+    words: [
+      { hangul: "한글", zh: "韓文字", roman: "han-geul" },
+      { hangul: "미소", zh: "微笑", roman: "mi-so" },
+      { hangul: "음악", zh: "音樂", roman: "eu-mak" }
+    ]
+  },
+  "ㅢ": {
+    line: "椅子會議新增議題：白衣、意見、希望，ui 像從 ㅡ 滑到 ㅣ 的小電梯。",
+    words: [
+      { hangul: "흰색", zh: "白色", roman: "huin-saek" },
+      { hangul: "의견", zh: "意見", roman: "ui-gyeon" },
+      { hangul: "희망", zh: "希望", roman: "hui-mang" }
+    ]
+  },
+  "ㅣ": {
+    line: "火車站加開機器、地圖和秘密車廂，i 音像一條直直的鐵軌。",
+    words: [
+      { hangul: "기계", zh: "機器", roman: "gi-gye" },
+      { hangul: "지도", zh: "地圖", roman: "ji-do" },
+      { hangul: "비밀", zh: "秘密", roman: "bi-mil" }
+    ]
+  },
+  "ㄱ": {
+    line: "露營隊長把韓國、價格和歌手排進行程，ㄱ 像咔一聲打開背包扣。",
+    words: [
+      { hangul: "한국", zh: "韓國", roman: "han-guk" },
+      { hangul: "가격", zh: "價格", roman: "ga-gyeok" },
+      { hangul: "가수", zh: "歌手", roman: "ga-su" }
+    ]
+  },
+  "ㄲ": {
+    line: "才藝秀把蜂蜜味升級成꼭、깜짝、깨끗，ㄲ 像緊緊彈出的驚喜按鈕。",
+    words: [
+      { hangul: "꼭", zh: "一定／緊緊地", roman: "kkok" },
+      { hangul: "깜짝", zh: "嚇一跳", roman: "kkam-jjak" },
+      { hangul: "깨끗", zh: "乾淨", roman: "kkae-kkeut" }
+    ]
+  },
+  "ㄴ": {
+    line: "鼻音地圖多了今天、年紀和南山，ㄴ 像路口轉角，念起來很穩。",
+    words: [
+      { hangul: "오늘", zh: "今天", roman: "o-neul" },
+      { hangul: "나이", zh: "年紀", roman: "na-i" },
+      { hangul: "남산", zh: "南山", roman: "nam-san" }
+    ]
+  },
+  "ㄷ": {
+    line: "豆腐橋旁邊有大門、茶道和圖章，ㄷ 像方方的橋墩站得很直。",
+    words: [
+      { hangul: "대문", zh: "大門", roman: "dae-mun" },
+      { hangul: "다도", zh: "茶道", roman: "da-do" },
+      { hangul: "도장", zh: "印章", roman: "do-jang" }
+    ]
+  },
+  "ㄸ": {
+    line: "熱舞課加練暖暖、分開和擦拭，ㄸ 像腳尖用力踩下去。",
+    words: [
+      { hangul: "따뜻해", zh: "溫暖", roman: "tta-tteut-hae" },
+      { hangul: "따로", zh: "分開", roman: "tta-ro" },
+      { hangul: "닦다", zh: "擦拭", roman: "ttak-da" }
+    ]
+  },
+  "ㄹ": {
+    line: "舌尖樂團加了道路、日曆和料理長，ㄹ 像舌頭輕輕彈一下又轉彎。",
+    words: [
+      { hangul: "도로", zh: "道路", roman: "do-ro" },
+      { hangul: "달력", zh: "日曆", roman: "dal-lyeok" },
+      { hangul: "요리사", zh: "廚師", roman: "yo-ri-sa" }
+    ]
+  },
+  "ㅁ": {
+    line: "方形咖啡館推出味道、村子和媽媽菜單，ㅁ 像嘴唇先合起來再打開。",
+    words: [
+      { hangul: "맛", zh: "味道", roman: "mat" },
+      { hangul: "마을", zh: "村子", roman: "ma-eul" },
+      { hangul: "엄마", zh: "媽媽", roman: "eom-ma" }
+    ]
+  },
+  "ㅂ": {
+    line: "海邊公車多停靠釜山、拌飯和袋子站，ㅂ 像車門砰一聲打開。",
+    words: [
+      { hangul: "부산", zh: "釜山", roman: "bu-san" },
+      { hangul: "비빔밥", zh: "拌飯", roman: "bi-bim-bap" },
+      { hangul: "봉투", zh: "袋子", roman: "bong-tu" }
+    ]
+  },
+  "ㅃ": {
+    line: "烘焙賽的新口令是빨간색、뻔뻔、뿜다，ㅃ 像麵團突然膨起來。",
+    words: [
+      { hangul: "빨간색", zh: "紅色", roman: "ppal-gan-saek" },
+      { hangul: "뻔뻔", zh: "厚臉皮", roman: "ppeon-ppeon" },
+      { hangul: "뿜다", zh: "噴出", roman: "ppum-da" }
+    ]
+  },
+  "ㅅ": {
+    line: "代課老師把首爾、照片和禮物寫上黑板，ㅅ 像一口輕輕滑出的氣。",
+    words: [
+      { hangul: "서울", zh: "首爾", roman: "seo-ul" },
+      { hangul: "사진", zh: "照片", roman: "sa-jin" },
+      { hangul: "선물", zh: "禮物", roman: "seon-mul" }
+    ]
+  },
+  "ㅆ": {
+    line: "超市廣播新增便條、雙胞胎和堆積，ㅆ 像把 s 音壓緊再放出來。",
+    words: [
+      { hangul: "쪽지", zh: "便條", roman: "jjok-ji" },
+      { hangul: "쌍둥이", zh: "雙胞胎", roman: "ssang-dung-i" },
+      { hangul: "쌓다", zh: "堆積", roman: "ssat-da" }
+    ]
+  },
+  "ㅇ": {
+    line: "隱形主持人把語言、旅行和音符放到結尾，ㅇ 開頭安靜，收尾變成 ng。",
+    words: [
+      { hangul: "언어", zh: "語言", roman: "eo-neo" },
+      { hangul: "여행", zh: "旅行", roman: "yeo-haeng" },
+      { hangul: "음표", zh: "音符", roman: "eum-pyo" }
+    ]
+  },
+  "ㅈ": {
+    line: "外送公司新接到濟州、紙和地鐵訂單，ㅈ 像車輪開始轉的 j 聲。",
+    words: [
+      { hangul: "제주", zh: "濟州", roman: "je-ju" },
+      { hangul: "종이", zh: "紙", roman: "jong-i" },
+      { hangul: "지하철", zh: "地鐵", roman: "ji-ha-cheol" }
+    ]
+  },
+  "ㅉ": {
+    line: "廚房辯論賽追加짜장면、찌르다、쫄깃，ㅉ 像筷子夾到彈牙麵條。",
+    words: [
+      { hangul: "짜장면", zh: "炸醬麵", roman: "jja-jang-myeon" },
+      { hangul: "찌르다", zh: "刺／戳", roman: "jji-reu-da" },
+      { hangul: "쫄깃", zh: "有嚼勁", roman: "jjol-git" }
+    ]
+  },
+  "ㅊ": {
+    line: "下午茶列車加開清溪川、邀請和行李站，ㅊ 像車掌吹出一口氣。",
+    words: [
+      { hangul: "청계천", zh: "清溪川", roman: "cheong-gye-cheon" },
+      { hangul: "초대", zh: "邀請", roman: "cho-dae" },
+      { hangul: "짐차", zh: "行李車", roman: "jim-cha" }
+    ]
+  },
+  "ㅋ": {
+    line: "攝影師多拍了韓式卡拉 OK、尺寸和卡片，ㅋ 像快門吐出一口亮亮的氣。",
+    words: [
+      { hangul: "코인노래방", zh: "投幣式練歌房", roman: "ko-in-no-rae-bang" },
+      { hangul: "크기", zh: "大小", roman: "keu-gi" },
+      { hangul: "카드", zh: "卡片", roman: "ka-deu" }
+    ]
+  },
+  "ㅌ": {
+    line: "透明劇場加入跆拳道、土曜和塔，ㅌ 像跳上台時吐出的清脆 t。",
+    words: [
+      { hangul: "태권도", zh: "跆拳道", roman: "tae-kwon-do" },
+      { hangul: "토요일", zh: "星期六", roman: "to-yo-il" },
+      { hangul: "타워", zh: "塔", roman: "ta-wo" }
+    ]
+  },
+  "ㅍ": {
+    line: "披薩郵局新增郵票、便利店和藍色信封，ㅍ 像吹一下就蓋好章。",
+    words: [
+      { hangul: "우표", zh: "郵票", roman: "u-pyo" },
+      { hangul: "편의점", zh: "便利店", roman: "pyeon-ui-jeom" },
+      { hangul: "파란색", zh: "藍色", roman: "pa-ran-saek" }
+    ]
+  },
+  "ㅎ": {
+    line: "校長早會請大家念韓食、韓屋和和平，ㅎ 像一口溫柔的風把字吹亮。",
+    words: [
+      { hangul: "한식", zh: "韓食", roman: "han-sik" },
+      { hangul: "한옥", zh: "韓屋", roman: "han-ok" },
+      { hangul: "평화", zh: "和平", roman: "pyeong-hwa" }
+    ]
+  }
+};
 
 const funnyStoryScenes = [
   {
@@ -279,15 +602,22 @@ const funnyStoryScenes = [
   }
 ];
 
-function makeFunnyStory(symbol, roman, words) {
+function makeFunnyStory(symbol, roman, words, pageIndex) {
   const storyWords = words.slice(0, 5).map((word) => word.hangul);
-  const scene = funnyStoryScenes[pageSequence % funnyStoryScenes.length];
+  const scene = funnyStoryScenes[pageIndex % funnyStoryScenes.length];
+  const extras = storyExtrasBySymbol[symbol];
+  const newWords = extras.words.map((word) => ({
+    ...word,
+    syllables: decomposeHangulWord(word.hangul, word.roman)
+  }));
   const values = { symbol, roman };
 
   return {
     title: `${symbol} ${scene.title}`,
     setup: scene.setup(values),
     ending: `${scene.ending(values)} 點故事裡的韓文字，偷看它的意思和拆音。`,
+    bonusLine: extras.line,
+    newWords,
     tokens: [
       { type: "text", value: scene.pieces[0] },
       { type: "word", value: storyWords[0] },
