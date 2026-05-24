@@ -592,17 +592,19 @@ p {
 
 /* ── Novel Reader ── */
 
+.novel-page {
+  min-height: 100vh;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 85% 5%, rgba(249, 111, 93, 0.12), transparent 28%),
+    linear-gradient(135deg, #fff8ec 0%, #f3fbf8 47%, #fff0f0 100%);
+}
+
 .novel-reader {
   display: block;
-  width: min(1080px, calc(100vw - 32px));
-  max-height: calc(100vh - 32px);
-  overflow: auto;
+  max-width: 1180px;
+  margin: 0 auto;
   position: relative;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 2px solid rgba(29, 38, 51, 0.08);
-  box-shadow: 0 22px 58px rgba(40, 58, 83, 0.12);
-  padding: 24px;
 }
 
 .novel-reader-title {
@@ -747,8 +749,8 @@ p {
 /* ── Word Inspector Popup ── */
 
 .novel-inspector {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 100;
   width: 300px;
   padding: 16px;
   border-radius: 18px;
@@ -834,12 +836,15 @@ p {
   }
 
   .alphabet-panel,
-  .letter-page,
-  .novel-reader {
+  .letter-page {
     border-radius: 20px;
     padding: 18px;
     width: min(100%, calc(100vw - 18px));
     max-height: calc(100vh - 18px);
+  }
+
+  .novel-page {
+    padding: 14px;
   }
 
   .letter-grid {

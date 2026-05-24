@@ -28,6 +28,15 @@ export default function App() {
     speakKorean(text);
   }
 
+  if (activeNovel) {
+    return (
+      <NovelReader
+        novel={activeNovel}
+        onClose={() => setActiveNovelId(null)}
+      />
+    );
+  }
+
   return (
     <main className="app-shell">
       <section className="learning-grid">
@@ -54,13 +63,6 @@ export default function App() {
           page={activeLetterPage}
           onBack={() => setActiveLetterSymbol(null)}
           onSpeak={playSound}
-        />
-      ) : null}
-
-      {activeNovel ? (
-        <NovelReader
-          novel={activeNovel}
-          onClose={() => setActiveNovelId(null)}
         />
       ) : null}
     </main>
@@ -129,18 +131,16 @@ function NovelReader({ novel, onClose }) {
 
   function handleWordClick(word, event) {
     const rect = event.currentTarget.getBoundingClientRect();
-    const modalEl = event.currentTarget.closest(".novel-reader");
-    const modalRect = modalEl ? modalEl.getBoundingClientRect() : { left: 0, top: 0 };
     setInspectorPos({
-      x: rect.left - modalRect.left,
-      y: rect.bottom - modalRect.top + 8,
+      x: rect.left + window.scrollX,
+      y: rect.bottom + window.scrollY + 8,
     });
-    setSelectedWord(word);
+    setSelectedWord(selectedWord === word ? null : word);
     speakKorean(word.text);
   }
 
   return (
-    <div className="letter-modal-backdrop" role="dialog" aria-modal="true" aria-label={`${novel.titleZh} 閱讀器`}>
+    <main className="novel-page">
       <section className="novel-reader">
         <div className="letter-page-toolbar">
           <button className="back-button" onClick={onClose}>
@@ -212,7 +212,7 @@ function NovelReader({ novel, onClose }) {
           />
         ) : null}
       </section>
-    </div>
+    </main>
   );
 }
 
@@ -225,6 +225,7 @@ function WordInspectorPopup({ word, pos, onClose }) {
       style={{
         left: Math.min(pos.x, window.innerWidth - 320) + "px",
         top: pos.y + "px",
+        position: "fixed",
       }}
     >
       <div className="novel-inspector-header">
