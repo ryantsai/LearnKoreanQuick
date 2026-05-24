@@ -1,19 +1,27 @@
-import { ArrowLeft, BookOpen, Sparkles, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookOpen, BookText, Sparkles, Volume2, X } from "lucide-react";
 import React from "react";
 import { useState } from "react";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
+import { novelData } from "./data/novelData.js";
 import { speakKorean } from "./utils/speech.js";
+import { decomposeHangulWord } from "./utils/hangul.js";
 
 export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
+  const [activeNovelId, setActiveNovelId] = useState(null);
+
   const activeLetterPage = activeLetterSymbol
     ? letterPages.find((page) => page.symbol === activeLetterSymbol)
     : null;
 
+  const activeNovel = activeNovelId
+    ? novelData.find((n) => n.id === activeNovelId)
+    : null;
+
   function openLetterPage(symbol) {
     setActiveLetterSymbol(symbol);
-    playSound(symbol);
+    speakKorean(symbol);
   }
 
   function playSound(text) {
@@ -37,6 +45,7 @@ export default function App() {
           activeSymbol={activeLetterSymbol}
           onPick={openLetterPage}
         />
+        <NovelListPanel novels={novelData} onOpen={setActiveNovelId} />
       </section>
 
       {activeLetterPage ? (
@@ -45,6 +54,13 @@ export default function App() {
           page={activeLetterPage}
           onBack={() => setActiveLetterSymbol(null)}
           onSpeak={playSound}
+        />
+      ) : null}
+
+      {activeNovel ? (
+        <NovelReader
+          novel={activeNovel}
+          onClose={() => setActiveNovelId(null)}
         />
       ) : null}
     </main>
@@ -73,6 +89,167 @@ function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
         ))}
       </div>
     </section>
+  );
+}
+
+function NovelListPanel({ novels, onOpen }) {
+  return (
+    <section className="alphabet-panel novel-list-panel">
+      <div className="panel-heading">
+        <BookText size={18} />
+        <h2>輕小說閱讀</h2>
+      </div>
+      <p className="novel-panel-desc">點擊每個韓文單字，即可查看發音、拆解與中文翻譯。</p>
+      <div className="novel-list">
+        {novels.map((novel) => (
+          <article key={novel.id} className="novel-card">
+            <div className="novel-card-emoji">{novel.emoji}</div>
+            <div className="novel-card-body">
+              <span className="novel-genre-tag">{novel.genre}</span>
+              <h3 className="novel-card-title">{novel.title}</h3>
+              <p className="novel-card-title-zh">{novel.titleZh}</p>
+              <p className="novel-card-desc">{novel.description}</p>
+              <button className="novel-read-button" onClick={() => onOpen(novel.id)}>
+                開始閱讀 →
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function NovelReader({ novel, onClose }) {
+  const [chapterIndex, setChapterIndex] = useState(0);
+  const [selectedWord, setSelectedWord] = useState(null);
+  const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
+
+  const chapter = novel.chapters[chapterIndex];
+
+  function handleWordClick(word, event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const modalEl = event.currentTarget.closest(".novel-reader");
+    const modalRect = modalEl ? modalEl.getBoundingClientRect() : { left: 0, top: 0 };
+    setInspectorPos({
+      x: rect.left - modalRect.left,
+      y: rect.bottom - modalRect.top + 8,
+    });
+    setSelectedWord(word);
+    speakKorean(word.text);
+  }
+
+  return (
+    <div className="letter-modal-backdrop" role="dialog" aria-modal="true" aria-label={`${novel.titleZh} 閱讀器`}>
+      <section className="novel-reader">
+        <div className="letter-page-toolbar">
+          <button className="back-button" onClick={onClose}>
+            <ArrowLeft size={18} />
+            返回
+          </button>
+          <div className="novel-reader-title">
+            <span>{novel.emoji}</span>
+            <span>{novel.titleZh}</span>
+          </div>
+          <button className="icon-button" onClick={onClose} aria-label="關閉">
+            <X size={20} />
+          </button>
+        </div>
+
+        <div className="novel-reader-layout">
+          <nav className="novel-chapter-nav">
+            <p className="nav-label">章節</p>
+            {novel.chapters.map((ch, i) => (
+              <button
+                key={ch.id}
+                className={`chapter-nav-item ${i === chapterIndex ? "is-active" : ""}`}
+                onClick={() => { setChapterIndex(i); setSelectedWord(null); }}
+              >
+                <strong>第 {ch.id} 章</strong>
+                <span>{ch.titleZh}</span>
+              </button>
+            ))}
+          </nav>
+
+          <div className="novel-reading-area">
+            <div className="novel-chapter-header">
+              <p className="lab-label">第 {chapter.id} 章</p>
+              <h2 className="novel-chapter-title">{chapter.title}</h2>
+              <p className="novel-chapter-title-zh">{chapter.titleZh}</p>
+            </div>
+
+            <div className="novel-text">
+              {chapter.paragraphs.map((para, pi) => (
+                <p key={pi} className="novel-paragraph">
+                  {para.map((token, ti) => {
+                    if (token.type === "punct") {
+                      return <span key={ti} className="novel-punct">{token.text}</span>;
+                    }
+                    const isSelected = selectedWord && selectedWord === token;
+                    return (
+                      <button
+                        key={ti}
+                        className={`novel-word ${isSelected ? "is-selected" : ""}`}
+                        onClick={(e) => handleWordClick(token, e)}
+                      >
+                        {token.text}
+                      </button>
+                    );
+                  })}
+                </p>
+              ))}
+            </div>
+
+            <p className="novel-tap-hint">點擊任意韓文單字查看詳細說明</p>
+          </div>
+        </div>
+
+        {selectedWord ? (
+          <WordInspectorPopup
+            word={selectedWord}
+            pos={inspectorPos}
+            onClose={() => setSelectedWord(null)}
+          />
+        ) : null}
+      </section>
+    </div>
+  );
+}
+
+function WordInspectorPopup({ word, pos, onClose }) {
+  const syllables = decomposeHangulWord(word.text, word.roman);
+
+  return (
+    <div
+      className="novel-inspector"
+      style={{
+        left: Math.min(pos.x, window.innerWidth - 320) + "px",
+        top: pos.y + "px",
+      }}
+    >
+      <div className="novel-inspector-header">
+        <span className="inspector-label">單字解析</span>
+        <button className="novel-inspector-close" onClick={onClose} aria-label="關閉">
+          <X size={14} />
+        </button>
+      </div>
+      <strong className="inspector-word">{word.text}</strong>
+      <span className="inspector-roman">{word.roman}</span>
+      <span className="inspector-zh">{word.zh}</span>
+      <div className="syllable-breakdown">
+        {syllables.map((syllable, index) => (
+          <span className="syllable-chip" key={`${syllable.block}-${index}`}>
+            <strong>{syllable.block}</strong>
+            <span>{syllable.parts.map((part) => part.jamo).join(" + ")}</span>
+            <em>{syllable.roman}</em>
+          </span>
+        ))}
+      </div>
+      <button className="letter-sound-button" style={{ marginTop: 4 }} onClick={() => speakKorean(word.text)}>
+        <Volume2 size={14} />
+        發音
+      </button>
+    </div>
   );
 }
 
