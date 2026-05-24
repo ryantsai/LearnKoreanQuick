@@ -1,19 +1,53 @@
 import { assetPath } from "../utils/assets.js";
 import { decomposeHangulWord } from "../utils/hangul.js";
 
-const imageByTheme = {
-  vowels: assetPath("assets/letter-pages/memory-vowels.png"),
-  consonants: assetPath("assets/letter-pages/memory-consonants.png"),
-  school: assetPath("assets/letter-pages/memory-school.png"),
-  nature: assetPath("assets/letter-pages/memory-nature.png"),
-  home: assetPath("assets/letter-pages/memory-home-food.png"),
-  actions: assetPath("assets/letter-pages/memory-actions.png")
-};
+// Keep this array aligned with the letterPages declaration order below.
+const pageMemoryImages = [
+  assetPath("assets/letter-pages/memory-pages/01.png"),
+  assetPath("assets/letter-pages/memory-pages/02.png"),
+  assetPath("assets/letter-pages/memory-pages/03.png"),
+  assetPath("assets/letter-pages/memory-pages/04.png"),
+  assetPath("assets/letter-pages/memory-pages/05.png"),
+  assetPath("assets/letter-pages/memory-pages/06.png"),
+  assetPath("assets/letter-pages/memory-pages/07.png"),
+  assetPath("assets/letter-pages/memory-pages/08.png"),
+  assetPath("assets/letter-pages/memory-pages/09.png"),
+  assetPath("assets/letter-pages/memory-pages/10.png"),
+  assetPath("assets/letter-pages/memory-pages/11.png"),
+  assetPath("assets/letter-pages/memory-pages/12.png"),
+  assetPath("assets/letter-pages/memory-pages/13.png"),
+  assetPath("assets/letter-pages/memory-pages/14.png"),
+  assetPath("assets/letter-pages/memory-pages/15.png"),
+  assetPath("assets/letter-pages/memory-pages/16.png"),
+  assetPath("assets/letter-pages/memory-pages/17.png"),
+  assetPath("assets/letter-pages/memory-pages/18.png"),
+  assetPath("assets/letter-pages/memory-pages/19.png"),
+  assetPath("assets/letter-pages/memory-pages/20.png"),
+  assetPath("assets/letter-pages/memory-pages/21.png"),
+  assetPath("assets/letter-pages/memory-pages/22.png"),
+  assetPath("assets/letter-pages/memory-pages/23.png"),
+  assetPath("assets/letter-pages/memory-pages/24.png"),
+  assetPath("assets/letter-pages/memory-pages/25.png"),
+  assetPath("assets/letter-pages/memory-pages/26.png"),
+  assetPath("assets/letter-pages/memory-pages/27.png"),
+  assetPath("assets/letter-pages/memory-pages/28.png"),
+  assetPath("assets/letter-pages/memory-pages/29.png"),
+  assetPath("assets/letter-pages/memory-pages/30.png"),
+  assetPath("assets/letter-pages/memory-pages/31.png"),
+  assetPath("assets/letter-pages/memory-pages/32.png"),
+  assetPath("assets/letter-pages/memory-pages/33.png"),
+  assetPath("assets/letter-pages/memory-pages/34.png"),
+  assetPath("assets/letter-pages/memory-pages/35.png"),
+  assetPath("assets/letter-pages/memory-pages/36.png"),
+  assetPath("assets/letter-pages/memory-pages/37.png"),
+  assetPath("assets/letter-pages/memory-pages/38.png"),
+  assetPath("assets/letter-pages/memory-pages/39.png"),
+  assetPath("assets/letter-pages/memory-pages/40.png")
+];
 
 let pageSequence = 0;
 
 function makePage(symbol, roman, theme, words) {
-  const image = imageByTheme[theme];
   const pageIndex = pageSequence;
   pageSequence += 1;
   const firstWordIndex = pageIndex * 5;
@@ -28,7 +62,7 @@ function makePage(symbol, roman, theme, words) {
     symbol,
     roman,
     title: `${symbol} · ${roman}`,
-    memoryImage: image,
+    memoryImage: pageMemoryImages[pageIndex],
     memoryTip: `把 ${symbol} 想成一個會在單字裡發光的小積木。先找出它，再把旁邊的子音接上去，聲音就會自己拼起來。`,
     playfulNote: `今天的任務：看到 ${symbol} 就在心裡按一下小鈴鐺，提醒自己這個音正在幫韓文字變有生命。`,
     story: makeFunnyStory(symbol, roman, enrichedWords, pageIndex),
