@@ -262,7 +262,7 @@ function WordInspectorPopup({ word, pos, onClose, onOpenLetter }) {
                   {letterPageSymbols.has(part.jamo) ? (
                     <button
                       className="jamo-link"
-                      onClick={() => { onClose(); onOpenLetter(part.jamo); }}
+                      onClick={() => onOpenLetter(part.jamo)}
                       title={`查看 ${part.jamo} 介紹頁`}
                     >
                       {part.jamo}
