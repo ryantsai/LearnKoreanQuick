@@ -919,9 +919,25 @@ p {
     gap: 6px;
   }
 
+  /* Word inspector: ignore JS anchor position, center as a dialog */
   .novel-inspector {
-    width: calc(100vw - 60px);
-    left: 0 !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 32px);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  /* Letter backdrop: anchor to top so toolbar/close buttons are always
+     the first thing visible rather than vertically centered off-screen */
+  .letter-modal-backdrop {
+    align-items: flex-start;
+    padding-top: max(16px, env(safe-area-inset-top));
+  }
+
+  .letter-page {
+    max-height: calc(100dvh - 18px);
   }
 }
 
