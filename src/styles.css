@@ -1093,7 +1093,7 @@ p {
     break-after: avoid;
     grid-template-columns: 88mm 1fr;
     gap: 18mm;
-    align-items: center;
+    align-items: start;
     padding: 10mm 8mm;
     border: 0;
     border-radius: 0;
@@ -1103,6 +1103,7 @@ p {
 
   .jamo-index-group {
     gap: 17mm;
+    align-content: start;
   }
 
   .jamo-index-group h2 {
