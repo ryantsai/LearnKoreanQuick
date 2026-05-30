@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpen, BookText, Sparkles, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookText, Volume2, X } from "lucide-react";
 import React from "react";
 import { useState } from "react";
 import { letterPages } from "./data/letterPages.js";
@@ -51,17 +51,9 @@ export default function App() {
   return (
     <main className="app-shell">
       <section className="learning-grid">
-        <AlphabetRail
-          title="完整母音"
-          icon={<Sparkles size={18} />}
-          items={lessonData.vowels}
-          activeSymbol={activeLetterSymbol}
-          onPick={openLetterPage}
-        />
-        <AlphabetRail
-          title="完整子音"
-          icon={<BookOpen size={18} />}
-          items={lessonData.consonants}
+        <JamoIndex
+          vowels={lessonData.vowels}
+          consonants={lessonData.consonants}
           activeSymbol={activeLetterSymbol}
           onPick={openLetterPage}
         />
@@ -80,25 +72,77 @@ export default function App() {
   );
 }
 
-function AlphabetRail({ title, icon, items, activeSymbol, onPick }) {
+const consonantRows = [
+  ["ㄱ", "ㄷ", "ㅂ", "ㅅ", "ㅈ"],
+  ["ㄲ", "ㄸ", "ㅃ", "ㅆ", "ㅉ"],
+  ["ㅋ", "ㅌ", "ㅍ", "ㅎ", "ㅊ"],
+  ["ㄴ", "ㅁ", "ㄹ", "ㅇ"],
+];
+
+const vowelRows = [
+  ["ㅏ", "ㅓ", "ㅗ", "ㅜ", "ㅡ", "ㅣ", "ㅐ", "ㅔ"],
+  ["ㅑ", "ㅕ", "ㅛ", "ㅠ", "ㅢ", "ㅒ", "ㅖ"],
+  ["ㅘ", "ㅝ", "ㅟ", "ㅚ", "ㅙ", "ㅞ"],
+];
+
+function JamoIndex({ vowels, consonants, activeSymbol, onPick }) {
+  const jamosBySymbol = new Map(
+    [...consonants, ...vowels].map((item) => [item.symbol, item])
+  );
+
   return (
-    <section className="alphabet-panel">
-      <div className="panel-heading">
-        {icon}
-        <h2>{title}</h2>
-      </div>
-      <div className="letter-grid">
-        {items.map((item) => (
-          <button
-            className={`letter-card ${activeSymbol === item.symbol ? "is-viewed" : ""}`}
-            key={item.id}
-            onClick={() => onPick(item.symbol)}
-            aria-label={`${item.symbol} ${item.roman} ${item.zh}`}
+    <section className="jamo-index" aria-label="韓文字母索引">
+      <JamoIndexGroup
+        title="輔音"
+        rows={consonantRows}
+        jamosBySymbol={jamosBySymbol}
+        activeSymbol={activeSymbol}
+        onPick={onPick}
+      />
+      <JamoIndexGroup
+        title="元音"
+        rows={vowelRows}
+        jamosBySymbol={jamosBySymbol}
+        activeSymbol={activeSymbol}
+        onPick={onPick}
+      />
+    </section>
+  );
+}
+
+function JamoIndexGroup({ title, rows, jamosBySymbol, activeSymbol, onPick }) {
+  return (
+    <section className="jamo-index-group">
+      <h2>{title}</h2>
+      <div className="jamo-row-stack">
+        {rows.map((row) => (
+          <div
+            className="jamo-row"
+            style={{ "--jamo-count": row.length }}
+            key={`${title}-${row.join("")}`}
           >
-            <span className="letter-symbol">{item.symbol}</span>
-            <span className="letter-roman">{item.roman}</span>
-            <span className="letter-hint">{item.zh}</span>
-          </button>
+            {row.map((symbol) => {
+              const item = jamosBySymbol.get(symbol);
+
+              return (
+                <button
+                  className={`letter-card jamo-index-card ${activeSymbol === symbol ? "is-viewed" : ""}`}
+                  key={symbol}
+                  onClick={() => onPick(symbol)}
+                  aria-label={item ? `${item.symbol} ${item.roman} ${item.zh}` : symbol}
+                  title={item ? `${item.symbol} ${item.roman} - ${item.zh}` : symbol}
+                >
+                  <span className="letter-symbol">{symbol}</span>
+                  {item ? (
+                    <>
+                      <span className="letter-roman">{item.roman}</span>
+                      <span className="letter-hint">{item.zh}</span>
+                    </>
+                  ) : null}
+                </button>
+              );
+            })}
+          </div>
         ))}
       </div>
     </section>

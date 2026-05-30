@@ -87,15 +87,82 @@ p {
 
 .learning-grid,
 .letter-page {
-  max-width: 1440px;
+  max-width: 2480px;
   margin: 0 auto 24px;
   display: grid;
   gap: 24px;
 }
 
 .learning-grid {
-  grid-template-columns: 1fr 1fr 380px;
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
+}
+
+.jamo-index {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(430px, 0.8fr) minmax(760px, 1.2fr);
+  gap: clamp(28px, 4vw, 68px);
+  align-items: start;
+  padding: clamp(18px, 2.4vw, 36px) clamp(22px, 4vw, 58px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 2px solid rgba(29, 38, 51, 0.08);
+  box-shadow: 0 22px 58px rgba(40, 58, 83, 0.12);
+}
+
+.jamo-index-group {
+  min-width: 0;
+  display: grid;
+  gap: clamp(26px, 4vh, 52px);
+  align-content: start;
+}
+
+.jamo-index-group h2 {
+  justify-self: center;
+  margin: 0;
+  padding: 16px 34px 18px;
+  border: 2px solid rgba(86, 167, 214, 0.62);
+  border-radius: 3px;
+  color: #111827;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 0 0 1px rgba(86, 167, 214, 0.18), 0 6px 14px rgba(86, 167, 214, 0.12);
+  font-size: clamp(26px, 2.1vw, 44px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.jamo-row-stack {
+  display: grid;
+  gap: clamp(12px, 2.1vh, 28px);
+}
+
+.jamo-row {
+  display: grid;
+  grid-template-columns: repeat(var(--jamo-count), minmax(0, 1fr));
+  gap: clamp(8px, 1.1vw, 18px);
+  align-items: center;
+  justify-items: center;
+}
+
+.jamo-index-card {
+  width: 100%;
+  min-width: 0;
+  min-height: clamp(112px, 8vw, 152px);
+  border-radius: 14px;
+  padding: 12px 8px;
+}
+
+.jamo-index-card .letter-symbol {
+  color: #6faadd;
+  font-size: clamp(34px, 3.6vw, 64px);
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(58, 122, 173, 0.14);
+}
+
+.jamo-index-card .letter-hint {
+  min-height: 32px;
+  max-width: 100%;
 }
 
 .alphabet-panel,
@@ -130,6 +197,12 @@ p {
   justify-content: center;
   gap: 5px;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.letter-card.jamo-index-card {
+  min-height: clamp(96px, 7vw, 124px);
+  border-radius: 14px;
+  padding: 10px 8px;
 }
 
 .letter-card:hover,
@@ -506,8 +579,8 @@ p {
 }
 
 .novel-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 14px;
   flex: 1;
 }
@@ -839,23 +912,31 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .jamo-index {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
 }
 
 @media (max-width: 1200px) {
   .learning-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .novel-list-panel {
     grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
   }
 
   .novel-list {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .novel-card {
-    flex: 1;
+    flex: none;
   }
 }
 
@@ -896,6 +977,31 @@ p {
     min-height: 132px;
   }
 
+  .jamo-index {
+    padding: 22px 14px;
+    gap: 40px;
+  }
+
+  .jamo-index-group {
+    gap: 30px;
+  }
+
+  .jamo-row-stack {
+    gap: 18px;
+  }
+
+  .jamo-row {
+    gap: 8px;
+  }
+
+  .letter-card.jamo-index-card {
+    min-height: 116px;
+  }
+
+  .jamo-index-card .letter-symbol {
+    font-size: clamp(32px, 9vw, 54px);
+  }
+
   .letter-word-grid {
     grid-template-columns: 1fr;
   }
@@ -909,7 +1015,7 @@ p {
   }
 
   .novel-list {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .novel-reader-layout {
@@ -946,6 +1052,105 @@ p {
 
   .letter-page {
     max-height: calc(100dvh - 18px);
+  }
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 8mm;
+  }
+
+  :root,
+  body {
+    background: #ffffff !important;
+  }
+
+  body {
+    width: 297mm;
+    min-width: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .app-shell {
+    min-height: auto;
+    padding: 0;
+    background: #ffffff !important;
+  }
+
+  .learning-grid {
+    max-width: none;
+    margin: 0;
+    display: block;
+  }
+
+  .jamo-index {
+    width: 281mm;
+    min-height: 194mm;
+    aspect-ratio: auto;
+    page-break-after: avoid;
+    break-after: avoid;
+    grid-template-columns: 88mm 1fr;
+    gap: 18mm;
+    align-items: center;
+    padding: 10mm 8mm;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  .jamo-index-group {
+    gap: 17mm;
+  }
+
+  .jamo-index-group h2 {
+    padding: 5mm 14mm 6mm;
+    border: 0.55mm solid #77b5de;
+    box-shadow: none;
+    font-size: 12mm;
+  }
+
+  .jamo-row-stack {
+    gap: 10mm;
+  }
+
+  .jamo-row {
+    gap: 7mm;
+  }
+
+  .letter-card.jamo-index-card {
+    min-height: 24mm;
+    padding: 2mm 1.2mm;
+    border-radius: 2mm;
+    border-color: rgba(29, 38, 51, 0.12);
+    box-shadow: none;
+  }
+
+  .jamo-index-card .letter-symbol {
+    color: #6faadd !important;
+    font-size: 9mm;
+    text-shadow: none;
+  }
+
+  .jamo-index-card .letter-roman {
+    font-size: 3.2mm;
+  }
+
+  .jamo-index-card .letter-hint {
+    min-height: 7mm;
+    font-size: 2.7mm;
+    line-height: 1.18;
+  }
+
+  .jamo-index-card.is-viewed {
+    background: #ffffff;
+  }
+
+  .novel-list-panel,
+  .letter-modal-backdrop {
+    display: none !important;
   }
 }
 
