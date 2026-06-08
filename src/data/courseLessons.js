@@ -1,4 +1,7 @@
+import { assetPath } from "../utils/assets.js";
 import { decomposeHangulWord } from "../utils/hangul.js";
+
+const courseAsset = (name) => assetPath(`assets/course-lessons/${name}.png`);
 
 function word(text, roman, zh) {
   return {
@@ -7,6 +10,13 @@ function word(text, roman, zh) {
     zh,
     syllables: decomposeHangulWord(text, roman)
   };
+}
+
+function withVocabImages(lessonId, words) {
+  return words.map((item, index) => ({
+    ...item,
+    image: courseAsset(`${lessonId}-vocab-${String(index + 1).padStart(2, "0")}`)
+  }));
 }
 
 function line(speaker, ko, zh, tokens) {
@@ -122,9 +132,14 @@ export const courseLessons = [
     titleZh: "你的興趣是什麼？",
     theme: "興趣與休閒活動",
     sourcePdf: "docs/lessons/L2-1PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-1-dialogue-person")
+    },
     dialogues: [
       {
         title: "情境對話",
+        image: courseAsset("l2-1-dialogue-person"),
+        objectImage: courseAsset("l2-1-dialogue-object"),
         lines: [
           line("유미", "관우 씨, 취미가 뭡니까?", "關宇，你的興趣是什麼？", [l21[0], l21[1], l21[2], l21[3]]),
           line("관우", "제 취미는 여자입니다.", "我的興趣是女人。", [l21[4], l21[5], l21[6]]),
@@ -134,6 +149,8 @@ export const courseLessons = [
       },
       {
         title: "對話練習",
+        image: courseAsset("l2-1-practice-person"),
+        objectImage: courseAsset("l2-1-practice-visual"),
         lines: [
           line("지민", "안녕하세요. 저는 지민입니다. 만나서 반갑습니다.", "您好。我是智敏。很高興認識你。", [l21[13], l21[14], l21[15], l21[17], l21[18]]),
           line("유미", "안녕하세요. 저는 유미입니다. 만나서 반갑습니다.", "您好。我是由美。很高興認識你。", [l21[13], l21[14], l21[16], l21[17], l21[18]]),
@@ -143,7 +160,7 @@ export const courseLessons = [
         ]
       }
     ],
-    vocabulary: [
+    vocabulary: withVocabImages("l2-1", [
       word("스포츠", "seu-po-cheu", "運動"),
       word("야구", "ya-gu", "棒球"),
       word("요가", "yo-ga", "瑜伽"),
@@ -156,7 +173,7 @@ export const courseLessons = [
       word("여행하기", "yeo-haeng-ha-gi", "旅行"),
       word("노래하기", "no-rae-ha-gi", "唱歌"),
       word("게임하기", "ge-im-ha-gi", "玩遊戲")
-    ]
+    ])
   },
   {
     id: "l2-2",
@@ -165,9 +182,13 @@ export const courseLessons = [
     titleZh: "身體不舒服",
     theme: "身體部位與看病",
     sourcePdf: "docs/lessons/L2-2PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-2-dialogue-person")
+    },
     dialogues: [
       {
         title: "情境對話",
+        image: courseAsset("l2-2-dialogue-person"),
         lines: [
           line("유미", "많이 이야기해서 몸이 아픕니다.", "因為說太多話，身體不舒服。", [l22[0], l22[1], l22[2], l22[3]]),
           line("관우", "몸이요? 그럼 어디가 아픕니까?", "身體嗎？那麼哪裡痛？", [l22[4], l22[5], l22[6], l22[7]]),
@@ -177,6 +198,8 @@ export const courseLessons = [
       },
       {
         title: "醫院對話練習",
+        image: courseAsset("l2-2-practice-person"),
+        objectImage: courseAsset("l2-2-practice-visual"),
         lines: [
           line("의사", "어디가 불편합니까?", "哪裡不舒服？", [l22[6], l22[15]]),
           line("환자", "제 머리가 어제부터 아픕니다.", "我的頭從昨天開始痛。", [word("제", "je", "我的"), l22[16], l22[17], l22[3]]),
@@ -187,7 +210,7 @@ export const courseLessons = [
         ]
       }
     ],
-    vocabulary: [
+    vocabulary: withVocabImages("l2-2", [
       word("머리", "meo-ri", "頭"),
       word("가슴", "ga-seum", "胸口"),
       word("허리", "heo-ri", "腰"),
@@ -200,7 +223,7 @@ export const courseLessons = [
       word("입원", "ib-won", "住院"),
       word("검사", "geom-sa", "檢查"),
       word("수술", "su-sul", "手術")
-    ]
+    ])
   },
   {
     id: "l2-3",
@@ -209,9 +232,14 @@ export const courseLessons = [
     titleZh: "這個多少錢？",
     theme: "咖啡廳點餐與價格",
     sourcePdf: "docs/lessons/L2-3PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-3-dialogue-person")
+    },
     dialogues: [
       {
         title: "情境對話",
+        image: courseAsset("l2-3-dialogue-person"),
+        objectImage: courseAsset("l2-3-dialogue-object"),
         lines: [
           line("유미", "저기요, 커피 하나 얼마예요?", "不好意思，一杯咖啡多少錢？", [l23[0], l23[1], l23[2], l23[3]]),
           line("점원", "커피요?", "咖啡嗎？", [l23[4]]),
@@ -221,6 +249,8 @@ export const courseLessons = [
       },
       {
         title: "咖啡廳對話練習",
+        image: courseAsset("l2-3-practice-person"),
+        objectImage: courseAsset("l2-3-practice-visual"),
         lines: [
           line("점원", "어서오세요, 무엇을 드릴까요?", "歡迎光臨，要點什麼？", [l23[8], l23[9], l23[10]]),
           line("유미", "커피하고 와플 주세요.", "請給我咖啡和鬆餅。", [l23[11], l23[12], l23[13]]),
@@ -231,7 +261,7 @@ export const courseLessons = [
         ]
       }
     ],
-    vocabulary: [
+    vocabulary: withVocabImages("l2-3", [
       word("녹차", "nok-cha", "綠茶"),
       word("라떼", "ra-tte", "拿鐵"),
       word("고구마", "go-gu-ma", "地瓜"),
@@ -244,7 +274,7 @@ export const courseLessons = [
       word("빙수", "bing-su", "刨冰"),
       word("와플", "wa-peul", "鬆餅"),
       word("조각케이크", "jo-gak-ke-i-keu", "切片蛋糕")
-    ],
+    ]),
     notes: [
       word("이천오백원", "i-cheon-o-baek-won", "2,500 韓元"),
       word("오천원", "o-cheon-won", "5,000 韓元"),

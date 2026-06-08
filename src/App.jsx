@@ -1,10 +1,11 @@
 import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Volume2, X } from "lucide-react";
 import React from "react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { courseLessons } from "./data/courseLessons.js";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import { novelData } from "./data/novelData.js";
+import { buildDialoguePlaybackItems, buildVocabularyPlaybackItems } from "./utils/playback.js";
 import { speakKorean } from "./utils/speech.js";
 import { decomposeHangulWord } from "./utils/hangul.js";
 
@@ -24,6 +25,12 @@ export default function App() {
   const activeCourseLesson = activeCourseLessonId
     ? courseLessons.find((lesson) => lesson.id === activeCourseLessonId)
     : null;
+
+  useEffect(() => {
+    if (activeCourseLessonId || activeNovelId) {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, [activeCourseLessonId, activeNovelId]);
 
   function openLetterPage(symbol) {
     setActiveLetterSymbol(symbol);
@@ -333,10 +340,106 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   const [dialogueIndex, setDialogueIndex] = useState(0);
   const [selectedWord, setSelectedWord] = useState(null);
   const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
+  const [playback, setPlayback] = useState(null);
+  const [highlight, setHighlight] = useState(null);
+  const playbackRunRef = useRef(0);
 
   const dialogue = lesson.dialogues[dialogueIndex];
 
+  useEffect(() => {
+    return () => stopPlayback();
+  }, []);
+
+  useEffect(() => {
+    stopPlayback();
+    setSelectedWord(null);
+  }, [dialogueIndex]);
+
+  function sleep(ms) {
+    return new Promise((resolve) => window.setTimeout(resolve, ms));
+  }
+
+  function speakQueued(text, lang) {
+    if (!("speechSynthesis" in window)) {
+      return Promise.resolve();
+    }
+
+    return new Promise((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = lang === "ko-KR" ? 0.78 : 0.92;
+      utterance.pitch = 1.04;
+      utterance.onend = resolve;
+      utterance.onerror = resolve;
+      window.speechSynthesis.speak(utterance);
+    });
+  }
+
+  function stopPlayback() {
+    playbackRunRef.current += 1;
+    setPlayback(null);
+    setHighlight(null);
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+  }
+
+  async function runPlayback(kind, includeChinese) {
+    const runId = playbackRunRef.current + 1;
+    playbackRunRef.current = runId;
+    setSelectedWord(null);
+    setPlayback({ kind, includeChinese });
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+
+    const cyclePause = kind === "dialogue" ? 5000 : 0;
+    const vocabPause = 3000;
+
+    while (playbackRunRef.current === runId) {
+      const items = kind === "dialogue"
+        ? buildDialoguePlaybackItems(dialogue, includeChinese)
+        : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
+
+      for (const item of items) {
+        if (playbackRunRef.current !== runId) {
+          return;
+        }
+
+        if (item.type === "korean") {
+          setHighlight(kind === "dialogue"
+            ? { kind, lineIndex: item.lineIndex, tokenIndex: item.tokenIndex }
+            : { kind, wordIndex: item.wordIndex });
+          await speakQueued(item.text, "ko-KR");
+        } else {
+          setHighlight(null);
+          await speakQueued(item.text, "zh-TW");
+        }
+
+        if (kind === "vocabulary" && (!includeChinese || item.type === "chinese")) {
+          setHighlight(null);
+          await sleep(vocabPause);
+        }
+      }
+
+      setHighlight(null);
+      if (cyclePause > 0) {
+        await sleep(cyclePause);
+      }
+    }
+  }
+
+  function togglePlayback(kind, includeChinese) {
+    if (playback?.kind === kind && playback.includeChinese === includeChinese) {
+      stopPlayback();
+      return;
+    }
+
+    runPlayback(kind, includeChinese);
+  }
+
   function handleWordClick(word, event) {
+    stopPlayback();
     const rect = event.currentTarget.getBoundingClientRect();
     setInspectorPos({
       x: rect.left + window.scrollX,
@@ -369,6 +472,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
             <h1>{lesson.titleKo}</h1>
             <p>{lesson.titleZh}</p>
           </div>
+          <img className="course-hero-image" src={lesson.media.hero} alt={`${lesson.label} 課程人物`} />
           <button className="primary-button" onClick={() => speakKorean(lesson.titleKo)}>
             <Volume2 size={18} />
             聽標題
@@ -382,7 +486,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
               <button
                 key={item.title}
                 className={`chapter-nav-item ${index === dialogueIndex ? "is-active" : ""}`}
-                onClick={() => { setDialogueIndex(index); setSelectedWord(null); }}
+                onClick={() => setDialogueIndex(index)}
               >
                 <strong>{lesson.label}</strong>
                 <span>{item.title}</span>
@@ -392,10 +496,29 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
 
           <div className="course-study-area">
             <section className="course-dialogue-card">
-              <div className="novel-chapter-header">
-                <p className="lab-label">{dialogue.title}</p>
-                <h2 className="novel-chapter-title">{lesson.titleKo}</h2>
-                <p className="novel-chapter-title-zh">{lesson.titleZh}</p>
+              <div className="course-dialogue-top">
+                <div className="novel-chapter-header">
+                  <p className="lab-label">{dialogue.title}</p>
+                  <h2 className="novel-chapter-title">{lesson.titleKo}</h2>
+                  <p className="novel-chapter-title-zh">{lesson.titleZh}</p>
+                </div>
+                <PlaybackButtons
+                  isPlaying={playback?.kind === "dialogue"}
+                  activeIncludeChinese={playback?.kind === "dialogue" ? playback.includeChinese : null}
+                  onPlay={() => togglePlayback("dialogue", false)}
+                  onPlayWithChinese={() => togglePlayback("dialogue", true)}
+                  onStop={stopPlayback}
+                />
+              </div>
+
+              <LessonMediaRail dialogue={dialogue} />
+
+              <div className="course-karaoke-status" aria-live="polite">
+                {playback?.kind === "dialogue"
+                  ? playback.includeChinese
+                    ? "播放對話與中文翻譯中"
+                    : "播放對話中"
+                  : "點擊播放可循環播放整段對話"}
               </div>
 
               <div className="course-dialogue-lines">
@@ -406,6 +529,8 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                       <ClickableKoreanLine
                         line={lineItem}
                         selectedWord={selectedWord}
+                        highlight={highlight}
+                        lineIndex={lineIndex}
                         onWordClick={handleWordClick}
                       />
                     </p>
@@ -420,20 +545,30 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
             </section>
 
             <section className="course-vocab-card">
-              <div className="panel-heading">
-                <BookText size={18} />
-                <h2>單字</h2>
+              <div className="course-dialogue-top">
+                <div className="panel-heading">
+                  <BookText size={18} />
+                  <h2>單字</h2>
+                </div>
+                <PlaybackButtons
+                  isPlaying={playback?.kind === "vocabulary"}
+                  activeIncludeChinese={playback?.kind === "vocabulary" ? playback.includeChinese : null}
+                  onPlay={() => togglePlayback("vocabulary", false)}
+                  onPlayWithChinese={() => togglePlayback("vocabulary", true)}
+                  onStop={stopPlayback}
+                />
               </div>
               <div className="course-vocab-grid">
-                {lesson.vocabulary.map((vocab) => (
+                {lesson.vocabulary.map((vocab, wordIndex) => (
                   <button
                     key={vocab.text}
-                    className={`course-vocab-item ${selectedWord === vocab ? "is-selected" : ""}`}
+                    className={`course-vocab-item ${selectedWord === vocab ? "is-selected" : ""} ${highlight?.kind === "vocabulary" && highlight.wordIndex === wordIndex ? "is-karaoke" : ""}`}
                     onClick={(event) => handleWordClick(vocab, event)}
                   >
                     <strong>{vocab.text}</strong>
                     <span>{vocab.zh}</span>
                     <em>{vocab.roman}</em>
+                    <img className="course-vocab-image" src={vocab.image} alt={`${vocab.zh} 圖片`} />
                   </button>
                 ))}
               </div>
@@ -467,9 +602,49 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   );
 }
 
-function ClickableKoreanLine({ line, selectedWord, onWordClick }) {
+function PlaybackButtons({ isPlaying, activeIncludeChinese, onPlay, onPlayWithChinese, onStop }) {
+  return (
+    <div className="playback-controls">
+      <button
+        className={`ghost-button playback-button ${isPlaying && activeIncludeChinese === false ? "is-playing" : ""}`}
+        onClick={onPlay}
+      >
+        <Volume2 size={16} />
+        {isPlaying && activeIncludeChinese === false ? "停止" : "播放"}
+      </button>
+      <button
+        className={`ghost-button playback-button ${isPlaying && activeIncludeChinese === true ? "is-playing" : ""}`}
+        onClick={onPlayWithChinese}
+      >
+        <Volume2 size={16} />
+        {isPlaying && activeIncludeChinese === true ? "停止" : "播放中文"}
+      </button>
+      {isPlaying ? (
+        <button className="icon-button playback-stop-button" onClick={onStop} aria-label="停止播放">
+          <X size={18} />
+        </button>
+      ) : null}
+    </div>
+  );
+}
+
+function LessonMediaRail({ dialogue }) {
+  if (!dialogue.image && !dialogue.objectImage) {
+    return null;
+  }
+
+  return (
+    <div className="course-media-rail">
+      {dialogue.image ? <img src={dialogue.image} alt={`${dialogue.title} 人物圖片`} /> : null}
+      {dialogue.objectImage ? <img src={dialogue.objectImage} alt={`${dialogue.title} 情境圖片`} /> : null}
+    </div>
+  );
+}
+
+function ClickableKoreanLine({ line, selectedWord, highlight, lineIndex, onWordClick }) {
   const tokenByText = new Map(line.tokens.map((token) => [token.text, token]));
   const segments = line.ko.match(/[A-Za-z0-9가-힣]+|[^A-Za-z0-9가-힣]+/g) ?? [line.ko];
+  let tokenIndex = -1;
 
   return segments.map((segment, index) => {
     const token = tokenByText.get(segment);
@@ -478,10 +653,16 @@ function ClickableKoreanLine({ line, selectedWord, onWordClick }) {
       return <React.Fragment key={`${segment}-${index}`}>{segment}</React.Fragment>;
     }
 
+    tokenIndex += 1;
+    const isHighlighted =
+      highlight?.kind === "dialogue" &&
+      highlight.lineIndex === lineIndex &&
+      highlight.tokenIndex === tokenIndex;
+
     return (
       <button
         key={`${segment}-${index}`}
-        className={`novel-word ${selectedWord === token ? "is-selected" : ""}`}
+        className={`novel-word ${selectedWord === token ? "is-selected" : ""} ${isHighlighted ? "is-karaoke" : ""}`}
         onClick={(event) => onWordClick(token, event)}
       >
         {segment}

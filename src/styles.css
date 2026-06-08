@@ -747,9 +747,9 @@ p {
 }
 
 .course-hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px auto;
   align-items: center;
-  justify-content: space-between;
   gap: 18px;
   margin-top: 18px;
   padding: 22px;
@@ -771,6 +771,13 @@ p {
   color: #506070;
   font-size: 18px;
   font-weight: 900;
+}
+
+.course-hero-image {
+  width: 100%;
+  max-height: 170px;
+  object-fit: contain;
+  align-self: end;
 }
 
 .novel-reader-title {
@@ -805,6 +812,75 @@ p {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(29, 38, 51, 0.09);
   box-shadow: 0 14px 34px rgba(40, 58, 83, 0.08);
+}
+
+.course-dialogue-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.playback-button {
+  min-height: 38px;
+  border-radius: 12px;
+  padding: 0 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.playback-button.is-playing {
+  background: #19aa97;
+  color: #ffffff;
+  border-color: #19aa97;
+}
+
+.playback-stop-button {
+  width: 38px;
+  min-height: 38px;
+  border-radius: 12px;
+}
+
+.course-media-rail {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 38, 51, 0.08);
+}
+
+.course-media-rail img {
+  width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.course-media-rail img:only-child {
+  max-width: 190px;
+}
+
+.course-karaoke-status {
+  min-height: 36px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #fff8ec;
+  color: #714d00;
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .course-dialogue-lines {
@@ -866,21 +942,22 @@ p {
 .course-vocab-grid {
   margin-top: 14px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
 }
 
 .course-vocab-item {
-  min-height: 106px;
+  min-height: 230px;
   padding: 12px;
   border-radius: 15px;
   background: #ffffff;
   border: 1px solid rgba(29, 38, 51, 0.09);
   color: #1d2633;
-  text-align: left;
+  text-align: center;
   display: grid;
-  align-content: center;
-  gap: 4px;
+  grid-template-rows: auto auto auto minmax(112px, 1fr);
+  align-content: start;
+  gap: 6px;
   transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
 }
 
@@ -911,11 +988,34 @@ p {
   line-height: 1.3;
 }
 
+.course-vocab-image {
+  width: 100%;
+  max-height: 132px;
+  align-self: end;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 38, 51, 0.08);
+}
+
 .course-note-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 14px;
+}
+
+.novel-word.is-karaoke,
+.course-vocab-item.is-karaoke {
+  color: #ffffff;
+  background: #f96f5d;
+  border-color: #f96f5d;
+  box-shadow: 0 0 0 4px rgba(249, 111, 93, 0.18);
+}
+
+.course-vocab-item.is-karaoke span,
+.course-vocab-item.is-karaoke em {
+  color: #ffffff;
 }
 
 .novel-chapter-nav {
@@ -1256,9 +1356,33 @@ p {
   }
 
   .course-hero {
+    grid-template-columns: 1fr;
     align-items: flex-start;
-    flex-direction: column;
     padding: 18px;
+  }
+
+  .course-hero-image {
+    max-height: 150px;
+    justify-self: center;
+  }
+
+  .course-dialogue-top,
+  .playback-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .playback-controls {
+    width: 100%;
+  }
+
+  .playback-button,
+  .playback-stop-button {
+    width: 100%;
+  }
+
+  .course-media-rail {
+    grid-template-columns: 1fr;
   }
 
   .novel-reader-layout {
