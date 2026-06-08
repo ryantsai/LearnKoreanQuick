@@ -393,15 +393,15 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
       window.speechSynthesis.cancel();
     }
 
-    const cyclePause = kind === "dialogue" ? 5000 : 0;
-    const vocabPause = 3000;
+    const sentencePause = 2000;
+    const vocabPause = 2000;
 
     while (playbackRunRef.current === runId) {
       const items = kind === "dialogue"
         ? buildDialoguePlaybackItems(dialogue, includeChinese)
         : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
 
-      for (const item of items) {
+      for (const [itemIndex, item] of items.entries()) {
         if (playbackRunRef.current !== runId) {
           return;
         }
@@ -420,12 +420,21 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           setHighlight(null);
           await sleep(vocabPause);
         }
+
+        if (kind === "dialogue") {
+          const nextItem = items[itemIndex + 1];
+          const isSentenceEnd = includeChinese
+            ? item.type === "chinese"
+            : !nextItem || nextItem.lineIndex !== item.lineIndex;
+
+          if (isSentenceEnd) {
+            setHighlight(null);
+            await sleep(sentencePause);
+          }
+        }
       }
 
       setHighlight(null);
-      if (cyclePause > 0) {
-        await sleep(cyclePause);
-      }
     }
   }
 
