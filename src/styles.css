@@ -565,6 +565,62 @@ p {
 
 /* ── Novel List Panel ── */
 
+.course-list-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.course-card {
+  min-height: 190px;
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 14px;
+  padding: 14px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid rgba(29, 38, 51, 0.09);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  border-color: #19aa97;
+  box-shadow: 0 10px 24px rgba(25, 170, 151, 0.14);
+}
+
+.course-card-label {
+  min-height: 100%;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #eafbf6;
+  color: #0f766e;
+  font-size: 20px;
+  font-weight: 900;
+  border: 1px solid rgba(25, 170, 151, 0.2);
+}
+
+.course-card-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.course-card-title {
+  margin: 0;
+  color: #1d2633;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-size: 24px;
+  line-height: 1.18;
+}
+
 .novel-list-panel {
   display: flex;
   flex-direction: column;
@@ -673,11 +729,48 @@ p {
     linear-gradient(135deg, #fff8ec 0%, #f3fbf8 47%, #fff0f0 100%);
 }
 
+.course-page {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(25, 170, 151, 0.15), transparent 28%),
+    linear-gradient(135deg, #fff8ec 0%, #f3fbf8 52%, #fff0f0 100%);
+}
+
 .novel-reader {
   display: block;
   max-width: 1180px;
   margin: 0 auto;
   position: relative;
+}
+
+.course-reader {
+  max-width: 1240px;
+}
+
+.course-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(29, 38, 51, 0.08);
+  box-shadow: 0 18px 48px rgba(40, 58, 83, 0.1);
+}
+
+.course-hero h1 {
+  margin: 0 0 8px;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1.04;
+}
+
+.course-hero p:not(.lab-label) {
+  margin: 0;
+  color: #506070;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .novel-reader-title {
@@ -694,6 +787,135 @@ p {
   grid-template-columns: 200px minmax(0, 1fr);
   gap: 24px;
   margin-top: 20px;
+}
+
+.course-reader-layout {
+  grid-template-columns: 210px minmax(0, 1fr);
+}
+
+.course-study-area {
+  display: grid;
+  gap: 18px;
+}
+
+.course-dialogue-card,
+.course-vocab-card {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(29, 38, 51, 0.09);
+  box-shadow: 0 14px 34px rgba(40, 58, 83, 0.08);
+}
+
+.course-dialogue-lines {
+  display: grid;
+  gap: 12px;
+}
+
+.course-dialogue-line {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr) auto;
+  gap: 10px 14px;
+  align-items: start;
+  padding: 14px;
+  border-radius: 16px;
+  background: #f8fbfb;
+  border: 1px solid rgba(25, 170, 151, 0.12);
+}
+
+.course-speaker {
+  min-height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eafbf6;
+  color: #0f766e;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-weight: 900;
+}
+
+.course-line-ko {
+  margin: 0;
+  color: #1d2633;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-size: 23px;
+  line-height: 1.8;
+}
+
+.course-line-zh {
+  grid-column: 2 / 3;
+  margin: -4px 0 0;
+  color: #647386;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.course-dialogue-line .letter-sound-button {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.course-vocab-card h2 {
+  margin: 0;
+}
+
+.course-vocab-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+}
+
+.course-vocab-item {
+  min-height: 106px;
+  padding: 12px;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 38, 51, 0.09);
+  color: #1d2633;
+  text-align: left;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
+}
+
+.course-vocab-item:hover,
+.course-vocab-item:focus-visible,
+.course-vocab-item.is-selected {
+  transform: translateY(-1px);
+  background: #eafbf6;
+  border-color: rgba(25, 170, 151, 0.36);
+}
+
+.course-vocab-item strong {
+  font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.course-vocab-item span {
+  color: #506070;
+  font-weight: 900;
+}
+
+.course-vocab-item em {
+  color: #f96f5d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.course-note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
 }
 
 .novel-chapter-nav {
@@ -904,7 +1126,8 @@ p {
 @media (max-width: 960px) {
   .learning-grid,
   .letter-page-hero,
-  .story-panel {
+  .story-panel,
+  .course-reader-layout {
     grid-template-columns: 1fr;
   }
 
@@ -935,6 +1158,10 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+
   .novel-card {
     flex: none;
   }
@@ -952,6 +1179,11 @@ p {
   .novel-list-panel {
     grid-column: 1 / -1;
     order: 3;
+  }
+
+  .course-list-panel {
+    grid-column: 1 / -1;
+    order: 2;
   }
 
   .alphabet-panel,
@@ -1018,8 +1250,34 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .course-card {
+    grid-template-columns: 68px minmax(0, 1fr);
+    min-height: 170px;
+  }
+
+  .course-hero {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px;
+  }
+
   .novel-reader-layout {
     grid-template-columns: 1fr;
+  }
+
+  .course-dialogue-line {
+    grid-template-columns: 1fr;
+  }
+
+  .course-speaker,
+  .course-line-zh,
+  .course-dialogue-line .letter-sound-button {
+    grid-column: 1;
+  }
+
+  .course-dialogue-line .letter-sound-button {
+    grid-row: auto;
+    justify-self: start;
   }
 
   .novel-chapter-nav {

@@ -1,6 +1,7 @@
-import { ArrowLeft, BookText, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Volume2, X } from "lucide-react";
 import React from "react";
 import { useState } from "react";
+import { courseLessons } from "./data/courseLessons.js";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import { novelData } from "./data/novelData.js";
@@ -9,6 +10,7 @@ import { decomposeHangulWord } from "./utils/hangul.js";
 
 export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
+  const [activeCourseLessonId, setActiveCourseLessonId] = useState(null);
   const [activeNovelId, setActiveNovelId] = useState(null);
 
   const activeLetterPage = activeLetterSymbol
@@ -17,6 +19,10 @@ export default function App() {
 
   const activeNovel = activeNovelId
     ? novelData.find((n) => n.id === activeNovelId)
+    : null;
+
+  const activeCourseLesson = activeCourseLessonId
+    ? courseLessons.find((lesson) => lesson.id === activeCourseLessonId)
     : null;
 
   function openLetterPage(symbol) {
@@ -48,6 +54,26 @@ export default function App() {
     );
   }
 
+  if (activeCourseLesson) {
+    return (
+      <>
+        <CourseLessonReader
+          lesson={activeCourseLesson}
+          onClose={() => setActiveCourseLessonId(null)}
+          onOpenLetter={openLetterPage}
+        />
+        {activeLetterPage ? (
+          <LetterLearningPopup
+            key={activeLetterPage.symbol}
+            page={activeLetterPage}
+            onBack={() => setActiveLetterSymbol(null)}
+            onSpeak={playSound}
+          />
+        ) : null}
+      </>
+    );
+  }
+
   return (
     <main className="app-shell">
       <section className="learning-grid">
@@ -57,6 +83,7 @@ export default function App() {
           activeSymbol={activeLetterSymbol}
           onPick={openLetterPage}
         />
+        <CourseLessonListPanel lessons={courseLessons} onOpen={setActiveCourseLessonId} />
         <NovelListPanel novels={novelData} onOpen={setActiveNovelId} />
       </section>
 
@@ -69,6 +96,36 @@ export default function App() {
         />
       ) : null}
     </main>
+  );
+}
+
+function CourseLessonListPanel({ lessons, onOpen }) {
+  return (
+    <section className="alphabet-panel course-list-panel">
+      <div className="panel-heading">
+        <GraduationCap size={19} />
+        <h2>課程練習</h2>
+      </div>
+      <p className="novel-panel-desc">從 PDF 課堂內容整理短對話與單字；點擊韓文即可聽發音、看拆解。</p>
+      <div className="course-list">
+        {lessons.map((lesson) => (
+          <article key={lesson.id} className="course-card">
+            <div className="course-card-label">{lesson.label}</div>
+            <div className="course-card-body">
+              <span className="novel-genre-tag">{lesson.theme}</span>
+              <h3 className="course-card-title">{lesson.titleKo}</h3>
+              <p className="novel-card-title-zh">{lesson.titleZh}</p>
+              <p className="novel-card-desc">
+                {lesson.dialogues.length} 組對話 · {lesson.vocabulary.length} 個單字
+              </p>
+              <button className="novel-read-button" onClick={() => onOpen(lesson.id)}>
+                開始練習 →
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -270,6 +327,167 @@ function NovelReader({ novel, onClose, onOpenLetter }) {
       </section>
     </main>
   );
+}
+
+function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
+  const [dialogueIndex, setDialogueIndex] = useState(0);
+  const [selectedWord, setSelectedWord] = useState(null);
+  const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
+
+  const dialogue = lesson.dialogues[dialogueIndex];
+
+  function handleWordClick(word, event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    setInspectorPos({
+      x: rect.left + window.scrollX,
+      y: rect.bottom + window.scrollY + 8,
+    });
+    setSelectedWord(selectedWord === word ? null : word);
+    speakKorean(word.text);
+  }
+
+  return (
+    <main className="novel-page course-page">
+      <section className="novel-reader course-reader">
+        <div className="letter-page-toolbar">
+          <button className="back-button" onClick={onClose}>
+            <ArrowLeft size={18} />
+            返回
+          </button>
+          <div className="novel-reader-title">
+            <BookOpenCheck size={18} />
+            <span>{lesson.label} · {lesson.titleZh}</span>
+          </div>
+          <button className="icon-button" onClick={onClose} aria-label="關閉">
+            <X size={20} />
+          </button>
+        </div>
+
+        <div className="course-hero">
+          <div>
+            <p className="lab-label">{lesson.theme}</p>
+            <h1>{lesson.titleKo}</h1>
+            <p>{lesson.titleZh}</p>
+          </div>
+          <button className="primary-button" onClick={() => speakKorean(lesson.titleKo)}>
+            <Volume2 size={18} />
+            聽標題
+          </button>
+        </div>
+
+        <div className="novel-reader-layout course-reader-layout">
+          <nav className="novel-chapter-nav">
+            <p className="nav-label">對話</p>
+            {lesson.dialogues.map((item, index) => (
+              <button
+                key={item.title}
+                className={`chapter-nav-item ${index === dialogueIndex ? "is-active" : ""}`}
+                onClick={() => { setDialogueIndex(index); setSelectedWord(null); }}
+              >
+                <strong>{lesson.label}</strong>
+                <span>{item.title}</span>
+              </button>
+            ))}
+          </nav>
+
+          <div className="course-study-area">
+            <section className="course-dialogue-card">
+              <div className="novel-chapter-header">
+                <p className="lab-label">{dialogue.title}</p>
+                <h2 className="novel-chapter-title">{lesson.titleKo}</h2>
+                <p className="novel-chapter-title-zh">{lesson.titleZh}</p>
+              </div>
+
+              <div className="course-dialogue-lines">
+                {dialogue.lines.map((lineItem, lineIndex) => (
+                  <article className="course-dialogue-line" key={`${dialogue.title}-${lineIndex}`}>
+                    <span className="course-speaker">{lineItem.speaker}</span>
+                    <p className="course-line-ko">
+                      <ClickableKoreanLine
+                        line={lineItem}
+                        selectedWord={selectedWord}
+                        onWordClick={handleWordClick}
+                      />
+                    </p>
+                    <p className="course-line-zh">{lineItem.zh}</p>
+                    <button className="letter-sound-button" onClick={() => speakKorean(lineItem.ko)}>
+                      <Volume2 size={14} />
+                      整句發音
+                    </button>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="course-vocab-card">
+              <div className="panel-heading">
+                <BookText size={18} />
+                <h2>單字</h2>
+              </div>
+              <div className="course-vocab-grid">
+                {lesson.vocabulary.map((vocab) => (
+                  <button
+                    key={vocab.text}
+                    className={`course-vocab-item ${selectedWord === vocab ? "is-selected" : ""}`}
+                    onClick={(event) => handleWordClick(vocab, event)}
+                  >
+                    <strong>{vocab.text}</strong>
+                    <span>{vocab.zh}</span>
+                    <em>{vocab.roman}</em>
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            {lesson.notes ? (
+              <section className="course-vocab-card">
+                <h2>價格練習</h2>
+                <div className="course-note-list">
+                  {lesson.notes.map((note) => (
+                    <button key={note.text} className="story-word" onClick={(event) => handleWordClick(note, event)}>
+                      {note.text}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+          </div>
+        </div>
+
+        {selectedWord ? (
+          <WordInspectorPopup
+            word={selectedWord}
+            pos={inspectorPos}
+            onClose={() => setSelectedWord(null)}
+            onOpenLetter={onOpenLetter}
+          />
+        ) : null}
+      </section>
+    </main>
+  );
+}
+
+function ClickableKoreanLine({ line, selectedWord, onWordClick }) {
+  const tokenByText = new Map(line.tokens.map((token) => [token.text, token]));
+  const segments = line.ko.match(/[A-Za-z0-9가-힣]+|[^A-Za-z0-9가-힣]+/g) ?? [line.ko];
+
+  return segments.map((segment, index) => {
+    const token = tokenByText.get(segment);
+
+    if (!token) {
+      return <React.Fragment key={`${segment}-${index}`}>{segment}</React.Fragment>;
+    }
+
+    return (
+      <button
+        key={`${segment}-${index}`}
+        className={`novel-word ${selectedWord === token ? "is-selected" : ""}`}
+        onClick={(event) => onWordClick(token, event)}
+      >
+        {segment}
+      </button>
+    );
+  });
 }
 
 const letterPageSymbols = new Set(letterPages.map((p) => p.symbol));
