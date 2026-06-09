@@ -8,6 +8,12 @@ import { novelData } from "./data/novelData.js";
 import { buildDialoguePlaybackItems, buildVocabularyPlaybackItems } from "./utils/playback.js";
 import { speakKorean } from "./utils/speech.js";
 import { decomposeHangulWord } from "./utils/hangul.js";
+import {
+  getTtsSpeed,
+  setTtsSpeed,
+  MIN_TTS_SPEED,
+  MAX_TTS_SPEED,
+} from "./utils/ttsSpeed.js";
 
 export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
@@ -83,6 +89,7 @@ export default function App() {
 
   return (
     <main className="app-shell">
+      <TtsSpeedControl />
       <section className="learning-grid">
         <JamoIndex
           vowels={lessonData.vowels}
@@ -103,6 +110,32 @@ export default function App() {
         />
       ) : null}
     </main>
+  );
+}
+
+function TtsSpeedControl() {
+  const [speed, setSpeed] = useState(() => getTtsSpeed());
+
+  function handleChange(event) {
+    const next = setTtsSpeed(Number.parseFloat(event.target.value));
+    setSpeed(next);
+  }
+
+  return (
+    <div className="tts-speed-control">
+      <Volume2 size={18} />
+      <label htmlFor="tts-speed-slider">語音速度</label>
+      <input
+        id="tts-speed-slider"
+        type="range"
+        min={MIN_TTS_SPEED}
+        max={MAX_TTS_SPEED}
+        step={0.1}
+        value={speed}
+        onChange={handleChange}
+      />
+      <span className="tts-speed-value">{speed.toFixed(1)}x</span>
+    </div>
   );
 }
 
