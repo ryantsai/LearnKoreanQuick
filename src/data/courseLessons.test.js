@@ -49,4 +49,31 @@ describe("courseLessons", () => {
       }
     }
   });
+
+  test("L3 exposes a numbers pronunciation guide with table and practice answers", () => {
+    const l3 = courseLessons.find((lesson) => lesson.id === "l2-3");
+    expect(l3.numbers).toBeDefined();
+    expect(l3.numbers.label.length).toBeGreaterThan(0);
+    expect(l3.numbers.title.length).toBeGreaterThan(0);
+    expect(l3.numbers.table).toHaveLength(18);
+    expect(l3.numbers.practice).toHaveLength(8);
+
+    // Every number word must keep its romanization aligned with its Hangul
+    // syllables so the word inspector can break it down correctly.
+    const assertWord = (word) => {
+      expect(word.text.length).toBeGreaterThan(0);
+      expect(word.roman.length).toBeGreaterThan(0);
+      expect(word.zh.length).toBeGreaterThan(0);
+      expect(word.syllables).toHaveLength([...word.text].length);
+    };
+
+    for (const entry of l3.numbers.table) {
+      assertWord(entry);
+    }
+
+    for (const item of l3.numbers.practice) {
+      expect(item.value.length).toBeGreaterThan(0);
+      assertWord(item.answer);
+    }
+  });
 });
