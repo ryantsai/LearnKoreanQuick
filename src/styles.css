@@ -1146,7 +1146,8 @@ p {
 }
 
 .novel-word.is-karaoke,
-.course-vocab-item.is-karaoke {
+.course-vocab-item.is-karaoke,
+.course-number-item.is-karaoke {
   color: #ffffff;
   background: #f96f5d;
   border-color: #f96f5d;
@@ -1154,7 +1155,9 @@ p {
 }
 
 .course-vocab-item.is-karaoke span,
-.course-vocab-item.is-karaoke em {
+.course-vocab-item.is-karaoke em,
+.course-number-item.is-karaoke span,
+.course-number-item.is-karaoke em {
   color: #ffffff;
 }
 

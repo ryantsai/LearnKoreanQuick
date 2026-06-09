@@ -433,7 +433,9 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
     while (playbackRunRef.current === runId) {
       const items = kind === "dialogue"
         ? buildDialoguePlaybackItems(dialogue, includeChinese)
-        : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
+        : kind === "numbers"
+          ? buildVocabularyPlaybackItems(lesson.numbers.table, includeChinese)
+          : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
 
       for (const [itemIndex, item] of items.entries()) {
         if (playbackRunRef.current !== runId) {
@@ -450,7 +452,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           await speakQueued(item.text, "zh-TW");
         }
 
-        if (kind === "vocabulary" && (!includeChinese || item.type === "chinese")) {
+        if ((kind === "vocabulary" || kind === "numbers") && (!includeChinese || item.type === "chinese")) {
           setHighlight(null);
           await sleep(vocabPause);
         }
@@ -551,7 +553,15 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
 
           <div className="course-study-area">
             {view === "numbers" ? (
-              <NumbersGuide numbers={lesson.numbers} selectedWord={selectedWord} onWordClick={handleWordClick} />
+              <NumbersGuide
+                numbers={lesson.numbers}
+                selectedWord={selectedWord}
+                onWordClick={handleWordClick}
+                playback={playback}
+                highlight={highlight}
+                onTogglePlayback={togglePlayback}
+                onStop={stopPlayback}
+              />
             ) : (
             <>
             <section className="course-dialogue-card">
@@ -689,20 +699,29 @@ function PlaybackButtons({ isPlaying, activeIncludeChinese, onPlay, onPlayWithCh
   );
 }
 
-function NumbersGuide({ numbers, selectedWord, onWordClick }) {
+function NumbersGuide({ numbers, selectedWord, onWordClick, playback, highlight, onTogglePlayback, onStop }) {
   return (
     <>
       <section className="course-vocab-card">
-        <div className="panel-heading">
-          <BookText size={18} />
-          <h2>{numbers.title}</h2>
+        <div className="course-dialogue-top">
+          <div className="panel-heading">
+            <BookText size={18} />
+            <h2>{numbers.title}</h2>
+          </div>
+          <PlaybackButtons
+            isPlaying={playback?.kind === "numbers"}
+            activeIncludeChinese={playback?.kind === "numbers" ? playback.includeChinese : null}
+            onPlay={() => onTogglePlayback("numbers", false)}
+            onPlayWithChinese={() => onTogglePlayback("numbers", true)}
+            onStop={onStop}
+          />
         </div>
         <p className="course-numbers-hint">點擊任一數字即可聽發音，並查看拼音與音節拆解。</p>
         <div className="course-numbers-grid">
-          {numbers.table.map((item) => (
+          {numbers.table.map((item, index) => (
             <button
               key={item.text}
-              className={`course-number-item ${selectedWord === item ? "is-selected" : ""}`}
+              className={`course-number-item ${selectedWord === item ? "is-selected" : ""} ${highlight?.kind === "numbers" && highlight.wordIndex === index ? "is-karaoke" : ""}`}
               onClick={(event) => onWordClick(item, event)}
             >
               <span className="course-number-value">{item.zh}</span>
