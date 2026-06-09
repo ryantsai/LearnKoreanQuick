@@ -371,6 +371,7 @@ function NovelReader({ novel, onClose, onOpenLetter }) {
 
 function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   const [dialogueIndex, setDialogueIndex] = useState(0);
+  const [view, setView] = useState("dialogue");
   const [selectedWord, setSelectedWord] = useState(null);
   const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
   const [playback, setPlayback] = useState(null);
@@ -386,7 +387,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   useEffect(() => {
     stopPlayback();
     setSelectedWord(null);
-  }, [dialogueIndex]);
+  }, [dialogueIndex, view]);
 
   function sleep(ms) {
     return new Promise((resolve) => window.setTimeout(resolve, ms));
@@ -527,16 +528,32 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
             {lesson.dialogues.map((item, index) => (
               <button
                 key={item.title}
-                className={`chapter-nav-item ${index === dialogueIndex ? "is-active" : ""}`}
-                onClick={() => setDialogueIndex(index)}
+                className={`chapter-nav-item ${view === "dialogue" && index === dialogueIndex ? "is-active" : ""}`}
+                onClick={() => {
+                  setView("dialogue");
+                  setDialogueIndex(index);
+                }}
               >
                 <strong>{lesson.label}</strong>
                 <span>{item.title}</span>
               </button>
             ))}
+            {lesson.numbers ? (
+              <button
+                className={`chapter-nav-item ${view === "numbers" ? "is-active" : ""}`}
+                onClick={() => setView("numbers")}
+              >
+                <strong>{lesson.label}</strong>
+                <span>{lesson.numbers.label}</span>
+              </button>
+            ) : null}
           </nav>
 
           <div className="course-study-area">
+            {view === "numbers" ? (
+              <NumbersGuide numbers={lesson.numbers} selectedWord={selectedWord} onWordClick={handleWordClick} />
+            ) : (
+            <>
             <section className="course-dialogue-card">
               <div className="course-dialogue-top">
                 <div className="novel-chapter-header">
@@ -628,6 +645,8 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                 </div>
               </section>
             ) : null}
+            </>
+            )}
           </div>
         </div>
 
@@ -667,6 +686,52 @@ function PlaybackButtons({ isPlaying, activeIncludeChinese, onPlay, onPlayWithCh
         </button>
       ) : null}
     </div>
+  );
+}
+
+function NumbersGuide({ numbers, selectedWord, onWordClick }) {
+  return (
+    <>
+      <section className="course-vocab-card">
+        <div className="panel-heading">
+          <BookText size={18} />
+          <h2>{numbers.title}</h2>
+        </div>
+        <p className="course-numbers-hint">點擊任一數字即可聽發音，並查看拼音與音節拆解。</p>
+        <div className="course-numbers-grid">
+          {numbers.table.map((item) => (
+            <button
+              key={item.text}
+              className={`course-number-item ${selectedWord === item ? "is-selected" : ""}`}
+              onClick={(event) => onWordClick(item, event)}
+            >
+              <span className="course-number-value">{item.zh}</span>
+              <strong>{item.text}</strong>
+              <em>{item.roman}</em>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="course-vocab-card">
+        <h2>練習說出價錢</h2>
+        <p className="course-numbers-hint">每題金額的韓文答案與發音如下，點擊即可聽發音。</p>
+        <div className="course-practice-list">
+          {numbers.practice.map((item) => (
+            <button
+              key={item.value}
+              className={`course-practice-item ${selectedWord === item.answer ? "is-selected" : ""}`}
+              onClick={(event) => onWordClick(item.answer, event)}
+            >
+              <span className="course-practice-value">{item.value} 원</span>
+              <span className="course-practice-arrow">→</span>
+              <strong>{item.answer.text}</strong>
+              <em>{item.answer.roman}</em>
+            </button>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 

@@ -279,6 +279,40 @@ export const courseLessons = [
       word("이천오백원", "i-cheon-o-baek-won", "2,500 韓元"),
       word("오천원", "o-cheon-won", "5,000 韓元"),
       word("오천이백원", "o-cheon-i-baek-won", "5,200 韓元")
-    ]
+    ],
+    numbers: {
+      label: "數字",
+      title: "學習說出數字",
+      table: [
+        word("일", "il", "1"),
+        word("이", "i", "2"),
+        word("삼", "sam", "3"),
+        word("사", "sa", "4"),
+        word("오", "o", "5"),
+        word("육", "yuk", "6"),
+        word("칠", "chil", "7"),
+        word("팔", "pal", "8"),
+        word("구", "gu", "9"),
+        word("십", "sip", "10"),
+        word("백", "baek", "100"),
+        word("이백", "i-baek", "200"),
+        word("천", "cheon", "1,000"),
+        word("삼천", "sam-cheon", "3,000"),
+        word("만", "man", "10,000"),
+        word("사만", "sa-man", "40,000"),
+        word("십만", "sip-man", "100,000"),
+        word("육십만", "yuk-sip-man", "600,000")
+      ],
+      practice: [
+        { value: "300", answer: word("삼백", "sam-baek", "300 원") },
+        { value: "659", answer: word("육백오십구", "yuk-baek-o-sip-gu", "659 원") },
+        { value: "1,500", answer: word("천오백", "cheon-o-baek", "1,500 원") },
+        { value: "4,300", answer: word("사천삼백", "sa-cheon-sam-baek", "4,300 원") },
+        { value: "6,208", answer: word("육천이백팔", "yuk-cheon-i-baek-pal", "6,208 원") },
+        { value: "19,154", answer: word("만구천백오십사", "man-gu-cheon-baek-o-sip-sa", "19,154 원") },
+        { value: "83,400", answer: word("팔만삼천사백", "pal-man-sam-cheon-sa-baek", "83,400 원") },
+        { value: "500,689", answer: word("오십만육백팔십구", "o-sip-man-yuk-baek-pal-sip-gu", "500,689 원") }
+      ]
+    }
   }
 ];
