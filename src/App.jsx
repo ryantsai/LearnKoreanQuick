@@ -400,7 +400,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
     return new Promise((resolve) => {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = lang;
-      utterance.rate = lang === "ko-KR" ? 0.78 : 0.92;
+      utterance.rate = (lang === "ko-KR" ? 0.78 : 0.92) * getTtsSpeed();
       utterance.pitch = 1.04;
       utterance.onend = resolve;
       utterance.onerror = resolve;
