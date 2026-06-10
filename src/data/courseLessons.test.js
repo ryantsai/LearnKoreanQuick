@@ -5,7 +5,7 @@ import { courseLessons } from "./courseLessons.js";
 
 describe("courseLessons", () => {
   test("contains the three PDF-backed lessons with dialogues and vocabulary", () => {
-    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3"]);
+    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3", "l2-4"]);
 
     for (const lesson of courseLessons) {
       expect(lesson.label).toMatch(/^L2-/);
@@ -50,30 +50,50 @@ describe("courseLessons", () => {
     }
   });
 
-  test("L3 exposes a numbers pronunciation guide with table and practice answers", () => {
-    const l3 = courseLessons.find((lesson) => lesson.id === "l2-3");
-    expect(l3.numbers).toBeDefined();
-    expect(l3.numbers.label.length).toBeGreaterThan(0);
-    expect(l3.numbers.title.length).toBeGreaterThan(0);
-    expect(l3.numbers.table).toHaveLength(18);
-    expect(l3.numbers.practice).toHaveLength(8);
+  // Every guide word must keep its romanization aligned with its Hangul
+  // syllables so the word inspector can break it down correctly.
+  const assertWord = (word) => {
+    expect(word.text.length).toBeGreaterThan(0);
+    expect(word.roman.length).toBeGreaterThan(0);
+    expect(word.zh.length).toBeGreaterThan(0);
+    expect(word.syllables).toHaveLength([...word.text].length);
+  };
 
-    // Every number word must keep its romanization aligned with its Hangul
-    // syllables so the word inspector can break it down correctly.
-    const assertWord = (word) => {
-      expect(word.text.length).toBeGreaterThan(0);
-      expect(word.roman.length).toBeGreaterThan(0);
-      expect(word.zh.length).toBeGreaterThan(0);
-      expect(word.syllables).toHaveLength([...word.text].length);
-    };
+  const assertGuide = (guide) => {
+    expect(guide).toBeDefined();
+    expect(guide.label.length).toBeGreaterThan(0);
+    expect(guide.title.length).toBeGreaterThan(0);
+    expect(guide.hint.length).toBeGreaterThan(0);
+    expect(guide.sections.length).toBeGreaterThanOrEqual(1);
 
-    for (const entry of l3.numbers.table) {
-      assertWord(entry);
+    for (const section of guide.sections) {
+      expect(section.words.length).toBeGreaterThanOrEqual(1);
+      for (const entry of section.words) {
+        assertWord(entry);
+      }
     }
 
-    for (const item of l3.numbers.practice) {
+    expect(guide.practice.heading.length).toBeGreaterThan(0);
+    expect(guide.practice.items.length).toBeGreaterThanOrEqual(1);
+    for (const item of guide.practice.items) {
       expect(item.value.length).toBeGreaterThan(0);
       assertWord(item.answer);
     }
+  };
+
+  test("L3 exposes a numbers learning guide with a single grid and price practice", () => {
+    const l3 = courseLessons.find((lesson) => lesson.id === "l2-3");
+    assertGuide(l3.guide);
+    expect(l3.guide.sections).toHaveLength(1);
+    expect(l3.guide.sections[0].words).toHaveLength(18);
+    expect(l3.guide.practice.items).toHaveLength(8);
+  });
+
+  test("L4 exposes a dates learning guide with weekday/month/day grids and date practice", () => {
+    const l4 = courseLessons.find((lesson) => lesson.id === "l2-4");
+    assertGuide(l4.guide);
+    expect(l4.guide.sections).toHaveLength(3);
+    expect(l4.guide.sections.map((section) => section.words.length)).toEqual([7, 12, 12]);
+    expect(l4.guide.practice.items.length).toBeGreaterThanOrEqual(6);
   });
 });
