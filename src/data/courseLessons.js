@@ -124,6 +124,41 @@ const l23 = [
   word("감사합니다", "gam-sa-ham-ni-da", "謝謝")
 ];
 
+const l24 = [
+  word("이모", "i-mo", "阿姨（親切稱呼）"),
+  word("차가운", "cha-ga-un", "冰的/冰涼的"),
+  word("무", "mu", "蘿蔔"),
+  word("주세요", "ju-se-yo", "請給我"),
+  word("죄송합니다", "joe-song-ham-ni-da", "對不起"),
+  word("물", "mul", "水"),
+  word("잠시만요", "jam-si-man-yo", "請稍等一下"),
+  word("물건", "mul-geon", "東西/物品"),
+  word("다", "da", "全部/都"),
+  word("챙겼지요", "chaeng-gyeot-ji-yo", "收拾好了吧？"),
+  word("클렌징", "keul-len-jing", "卸妝乳"),
+  word("있고", "it-go", "有，而且"),
+  word("칫솔도", "chit-sol-do", "牙刷也"),
+  word("보조", "bo-jo", "輔助"),
+  word("배터리", "bae-teo-ri", "電池"),
+  word("잠깐", "jam-kkan", "等一下"),
+  word("오늘", "o-neul", "今天"),
+  word("삼십일", "sam-sip-il", "三十一"),
+  word("일이에요", "il-i-e-yo", "是…日"),
+  word("며칠이에요", "myeo-chil-i-e-yo", "是幾號？"),
+  word("무슨", "mu-seun", "什麼"),
+  word("요일이에요", "yo-il-i-e-yo", "是星期幾？"),
+  word("음", "eum", "嗯"),
+  word("수요일이에요", "su-yo-il-i-e-yo", "是星期三"),
+  word("여행가는", "yeo-haeng-ga-neun", "去旅行的"),
+  word("날이", "nal-i", "日子（主語）"),
+  word("내일이에요", "nae-il-i-e-yo", "是明天"),
+  word("날짜를", "nal-jja-reul", "把日期"),
+  word("헷갈렸네요", "het-gal-lyeot-ne-yo", "搞混了"),
+  word("내일", "nae-il", "明天"),
+  word("일찍", "il-jjik", "早一點"),
+  word("옵시다", "op-si-da", "來吧/出發吧")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -280,39 +315,170 @@ export const courseLessons = [
       word("오천원", "o-cheon-won", "5,000 韓元"),
       word("오천이백원", "o-cheon-i-baek-won", "5,200 韓元")
     ],
-    numbers: {
+    guide: {
       label: "數字",
       title: "學習說出數字",
-      table: [
-        word("일", "il", "1"),
-        word("이", "i", "2"),
-        word("삼", "sam", "3"),
-        word("사", "sa", "4"),
-        word("오", "o", "5"),
-        word("육", "yuk", "6"),
-        word("칠", "chil", "7"),
-        word("팔", "pal", "8"),
-        word("구", "gu", "9"),
-        word("십", "sip", "10"),
-        word("백", "baek", "100"),
-        word("이백", "i-baek", "200"),
-        word("천", "cheon", "1,000"),
-        word("삼천", "sam-cheon", "3,000"),
-        word("만", "man", "10,000"),
-        word("사만", "sa-man", "40,000"),
-        word("십만", "sip-man", "100,000"),
-        word("육십만", "yuk-sip-man", "600,000")
+      hint: "點擊任一數字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: null,
+          words: [
+            word("일", "il", "1"),
+            word("이", "i", "2"),
+            word("삼", "sam", "3"),
+            word("사", "sa", "4"),
+            word("오", "o", "5"),
+            word("육", "yuk", "6"),
+            word("칠", "chil", "7"),
+            word("팔", "pal", "8"),
+            word("구", "gu", "9"),
+            word("십", "sip", "10"),
+            word("백", "baek", "100"),
+            word("이백", "i-baek", "200"),
+            word("천", "cheon", "1,000"),
+            word("삼천", "sam-cheon", "3,000"),
+            word("만", "man", "10,000"),
+            word("사만", "sa-man", "40,000"),
+            word("십만", "sip-man", "100,000"),
+            word("육십만", "yuk-sip-man", "600,000")
+          ]
+        }
       ],
-      practice: [
-        { value: "300", answer: word("삼백", "sam-baek", "300 원") },
-        { value: "659", answer: word("육백오십구", "yuk-baek-o-sip-gu", "659 원") },
-        { value: "1,500", answer: word("천오백", "cheon-o-baek", "1,500 원") },
-        { value: "4,300", answer: word("사천삼백", "sa-cheon-sam-baek", "4,300 원") },
-        { value: "6,208", answer: word("육천이백팔", "yuk-cheon-i-baek-pal", "6,208 원") },
-        { value: "19,154", answer: word("만구천백오십사", "man-gu-cheon-baek-o-sip-sa", "19,154 원") },
-        { value: "83,400", answer: word("팔만삼천사백", "pal-man-sam-cheon-sa-baek", "83,400 원") },
-        { value: "500,689", answer: word("오십만육백팔십구", "o-sip-man-yuk-baek-pal-sip-gu", "500,689 원") }
-      ]
+      practice: {
+        heading: "練習說出價錢",
+        hint: "每題金額的韓文答案與發音如下，點擊即可聽發音。",
+        valueSuffix: " 원",
+        items: [
+          { value: "300", answer: word("삼백", "sam-baek", "300 원") },
+          { value: "659", answer: word("육백오십구", "yuk-baek-o-sip-gu", "659 원") },
+          { value: "1,500", answer: word("천오백", "cheon-o-baek", "1,500 원") },
+          { value: "4,300", answer: word("사천삼백", "sa-cheon-sam-baek", "4,300 원") },
+          { value: "6,208", answer: word("육천이백팔", "yuk-cheon-i-baek-pal", "6,208 원") },
+          { value: "19,154", answer: word("만구천백오십사", "man-gu-cheon-baek-o-sip-sa", "19,154 원") },
+          { value: "83,400", answer: word("팔만삼천사백", "pal-man-sam-cheon-sa-baek", "83,400 원") },
+          { value: "500,689", answer: word("오십만육백팔십구", "o-sip-man-yuk-baek-pal-sip-gu", "500,689 원") }
+        ]
+      }
+    }
+  },
+  {
+    id: "l2-4",
+    label: "L2-4",
+    titleKo: "여행 합시다!",
+    titleZh: "一起去旅行吧！",
+    theme: "旅行準備與日期說法",
+    sourcePdf: "docs/lessons/L2-4PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-4-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "情境對話",
+        image: courseAsset("l2-4-dialogue-person"),
+        objectImage: courseAsset("l2-4-dialogue-object"),
+        lines: [
+          line("유미", "이모, 차가운 무 주세요.", "阿姨，請給我冰的蘿蔔。", [l24[0], l24[1], l24[2], l24[3]]),
+          line("이모", "차가운 무?", "冰的蘿蔔？", [l24[1], l24[2]]),
+          line("유미", "아, 죄송합니다. 물 주세요.", "啊，對不起。請給我水。", [word("아", "a", "啊"), l24[4], l24[5], l24[3]]),
+          line("이모", "네~ 잠시만요.", "好的~ 請稍等一下。", [word("네", "ne", "好的"), l24[6]])
+        ]
+      },
+      {
+        title: "旅行對話練習",
+        image: courseAsset("l2-4-practice-person"),
+        objectImage: courseAsset("l2-4-practice-visual"),
+        lines: [
+          line("관우", "물건 다 챙겼지요?", "東西都收拾好了嗎？", [l24[7], l24[8], l24[9]]),
+          line("유미", "클렌징 있고, 칫솔도 있고, 보조 배터리……", "有卸妝乳，也有牙刷，行動電源……", [l24[10], l24[11], l24[12], l24[11], l24[13], l24[14]]),
+          line("관우", "잠깐, 오늘 며칠이에요? 무슨 요일이에요?", "等等，今天幾號？星期幾？", [l24[15], l24[16], l24[19], l24[20], l24[21]]),
+          line("유미", "음…오늘 삼십일 일이에요. 수요일이에요.", "嗯…今天31號。星期三。", [l24[22], l24[16], l24[17], l24[18], l24[23]]),
+          line("관우", "여행가는 날이 내일이에요.", "出發旅行的日子是明天。", [l24[24], l24[25], l24[26]]),
+          line("유미", "날짜를 헷갈렸네요. 내일 일찍 옵시다.", "我把日期搞混了。明天早點出發吧。", [l24[27], l24[28], l24[29], l24[30], l24[31]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("l2-4", [
+      word("지갑", "ji-gap", "錢包/皮夾"),
+      word("백팩", "baek-paek", "後背包"),
+      word("캐리어", "kae-ri-eo", "行李箱"),
+      word("포인트 카드", "po-in-teu ka-deu", "點數卡/集點卡"),
+      word("주민등록증", "ju-min-deung-nok-jjeung", "身分證"),
+      word("동전", "dong-jeon", "硬幣"),
+      word("칫솔", "chit-sol", "牙刷"),
+      word("손수건", "son-su-geon", "手帕"),
+      word("클렌징", "keul-len-jing", "卸妝乳"),
+      word("휴대폰", "hyu-dae-pon", "手機"),
+      word("셀카봉", "sel-ka-bong", "自拍棒"),
+      word("보조 배터리", "bo-jo bae-teo-ri", "行動電源")
+    ]),
+    guide: {
+      label: "日期",
+      title: "學習說出星期、日期、月份",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "星期（요일）",
+          words: [
+            word("월요일", "wo-ryo-il", "星期一"),
+            word("화요일", "hwa-yo-il", "星期二"),
+            word("수요일", "su-yo-il", "星期三"),
+            word("목요일", "mo-gyo-il", "星期四"),
+            word("금요일", "geu-myo-il", "星期五"),
+            word("토요일", "to-yo-il", "星期六"),
+            word("일요일", "i-ryo-il", "星期日")
+          ]
+        },
+        {
+          heading: "月份（월）",
+          words: [
+            word("일월", "il-wol", "1月"),
+            word("이월", "i-wol", "2月"),
+            word("삼월", "sam-wol", "3月"),
+            word("사월", "sa-wol", "4月"),
+            word("오월", "o-wol", "5月"),
+            word("유월", "yu-wol", "6月"),
+            word("칠월", "chil-wol", "7月"),
+            word("팔월", "pal-wol", "8月"),
+            word("구월", "gu-wol", "9月"),
+            word("시월", "si-wol", "10月"),
+            word("십일월", "sip-il-wol", "11月"),
+            word("십이월", "sip-i-wol", "12月")
+          ]
+        },
+        {
+          heading: "日期（일）",
+          words: [
+            word("일일", "il-il", "1日"),
+            word("이일", "i-il", "2日"),
+            word("삼일", "sam-il", "3日"),
+            word("사일", "sa-il", "4日"),
+            word("오일", "o-il", "5日"),
+            word("육일", "yuk-il", "6日"),
+            word("십일", "sip-il", "10日"),
+            word("십오일", "sip-o-il", "15日"),
+            word("이십일", "i-sip-il", "20日"),
+            word("이십육일", "i-sip-yuk-il", "26日"),
+            word("삼십일", "sam-sip-il", "30日"),
+            word("삼십일일", "sam-sip-il-il", "31日")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習說出日期、月份",
+        hint: "把日期念成「○월 ○일」，韓文答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "3/10", answer: word("삼월 십일", "sam-wol sip-il", "3月10日") },
+          { value: "6/9", answer: word("유월 구일", "yu-wol gu-il", "6月9日") },
+          { value: "5/14", answer: word("오월 십사일", "o-wol sip-sa-il", "5月14日") },
+          { value: "7/16", answer: word("칠월 십육일", "chil-wol sip-yuk-il", "7月16日") },
+          { value: "12/31", answer: word("십이월 삼십일일", "sip-i-wol sam-sip-il-il", "12月31日") },
+          { value: "10/10", answer: word("시월 십일", "si-wol sip-il", "10月10日") },
+          { value: "8/13", answer: word("팔월 십삼일", "pal-wol sip-sam-il", "8月13日（목요일）") },
+          { value: "5/1", answer: word("오월 일일", "o-wol il-il", "5月1日（화요일）") },
+          { value: "9/28", answer: word("구월 이십팔일", "gu-wol i-sip-pal-il", "9月28日（토요일）") }
+        ]
+      }
     }
   }
 ];

@@ -1045,6 +1045,18 @@ p {
   font-weight: 700;
 }
 
+.course-guide-section {
+  margin-top: 18px;
+}
+
+.course-guide-subheading {
+  margin: 0;
+  color: #1d2633;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
 .course-numbers-grid {
   margin-top: 14px;
   display: grid;
