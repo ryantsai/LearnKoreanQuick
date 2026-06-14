@@ -4,8 +4,8 @@ import path from "node:path";
 import { courseLessons } from "./courseLessons.js";
 
 describe("courseLessons", () => {
-  test("contains the three PDF-backed lessons with dialogues and vocabulary", () => {
-    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3"]);
+  test("contains the PDF-backed lessons with dialogues and vocabulary", () => {
+    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3", "l2-5"]);
 
     for (const lesson of courseLessons) {
       expect(lesson.label).toMatch(/^L2-/);
