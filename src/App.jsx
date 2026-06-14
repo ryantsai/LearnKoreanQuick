@@ -371,6 +371,7 @@ function NovelReader({ novel, onClose, onOpenLetter }) {
 
 function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   const [dialogueIndex, setDialogueIndex] = useState(0);
+  const [view, setView] = useState("dialogue");
   const [selectedWord, setSelectedWord] = useState(null);
   const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
   const [playback, setPlayback] = useState(null);
@@ -386,7 +387,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   useEffect(() => {
     stopPlayback();
     setSelectedWord(null);
-  }, [dialogueIndex]);
+  }, [dialogueIndex, view]);
 
   function sleep(ms) {
     return new Promise((resolve) => window.setTimeout(resolve, ms));
@@ -432,7 +433,9 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
     while (playbackRunRef.current === runId) {
       const items = kind === "dialogue"
         ? buildDialoguePlaybackItems(dialogue, includeChinese)
-        : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
+        : kind === "guide"
+          ? buildVocabularyPlaybackItems(lesson.guide.sections.flatMap((section) => section.words), includeChinese)
+          : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
 
       for (const [itemIndex, item] of items.entries()) {
         if (playbackRunRef.current !== runId) {
@@ -449,7 +452,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           await speakQueued(item.text, "zh-TW");
         }
 
-        if (kind === "vocabulary" && (!includeChinese || item.type === "chinese")) {
+        if ((kind === "vocabulary" || kind === "guide") && (!includeChinese || item.type === "chinese")) {
           setHighlight(null);
           await sleep(vocabPause);
         }
@@ -527,16 +530,40 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
             {lesson.dialogues.map((item, index) => (
               <button
                 key={item.title}
-                className={`chapter-nav-item ${index === dialogueIndex ? "is-active" : ""}`}
-                onClick={() => setDialogueIndex(index)}
+                className={`chapter-nav-item ${view === "dialogue" && index === dialogueIndex ? "is-active" : ""}`}
+                onClick={() => {
+                  setView("dialogue");
+                  setDialogueIndex(index);
+                }}
               >
                 <strong>{lesson.label}</strong>
                 <span>{item.title}</span>
               </button>
             ))}
+            {lesson.guide ? (
+              <button
+                className={`chapter-nav-item ${view === "guide" ? "is-active" : ""}`}
+                onClick={() => setView("guide")}
+              >
+                <strong>{lesson.label}</strong>
+                <span>{lesson.guide.label}</span>
+              </button>
+            ) : null}
           </nav>
 
           <div className="course-study-area">
+            {view === "guide" ? (
+              <LearningGuide
+                guide={lesson.guide}
+                selectedWord={selectedWord}
+                onWordClick={handleWordClick}
+                playback={playback}
+                highlight={highlight}
+                onTogglePlayback={togglePlayback}
+                onStop={stopPlayback}
+              />
+            ) : (
+            <>
             <section className="course-dialogue-card">
               <div className="course-dialogue-top">
                 <div className="novel-chapter-header">
@@ -628,6 +655,8 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                 </div>
               </section>
             ) : null}
+            </>
+            )}
           </div>
         </div>
 
@@ -667,6 +696,78 @@ function PlaybackButtons({ isPlaying, activeIncludeChinese, onPlay, onPlayWithCh
         </button>
       ) : null}
     </div>
+  );
+}
+
+function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, onTogglePlayback, onStop }) {
+  // The karaoke highlighter tracks the active cell with a single flat index,
+  // so each section's words start at the running total of the prior sections.
+  let wordOffset = 0;
+  const sections = guide.sections.map((section) => {
+    const startIndex = wordOffset;
+    wordOffset += section.words.length;
+    return { ...section, startIndex };
+  });
+
+  return (
+    <>
+      <section className="course-vocab-card">
+        <div className="course-dialogue-top">
+          <div className="panel-heading">
+            <BookText size={18} />
+            <h2>{guide.title}</h2>
+          </div>
+          <PlaybackButtons
+            isPlaying={playback?.kind === "guide"}
+            activeIncludeChinese={playback?.kind === "guide" ? playback.includeChinese : null}
+            onPlay={() => onTogglePlayback("guide", false)}
+            onPlayWithChinese={() => onTogglePlayback("guide", true)}
+            onStop={onStop}
+          />
+        </div>
+        <p className="course-numbers-hint">{guide.hint}</p>
+        {sections.map((section, sectionIndex) => (
+          <div className="course-guide-section" key={section.heading ?? sectionIndex}>
+            {section.heading ? <h3 className="course-guide-subheading">{section.heading}</h3> : null}
+            <div className="course-numbers-grid">
+              {section.words.map((item, localIndex) => {
+                const index = section.startIndex + localIndex;
+                return (
+                  <button
+                    key={item.text}
+                    className={`course-number-item ${selectedWord === item ? "is-selected" : ""} ${highlight?.kind === "guide" && highlight.wordIndex === index ? "is-karaoke" : ""}`}
+                    onClick={(event) => onWordClick(item, event)}
+                  >
+                    <span className="course-number-value">{item.zh}</span>
+                    <strong>{item.text}</strong>
+                    <em>{item.roman}</em>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section className="course-vocab-card">
+        <h2>{guide.practice.heading}</h2>
+        <p className="course-numbers-hint">{guide.practice.hint}</p>
+        <div className="course-practice-list">
+          {guide.practice.items.map((item) => (
+            <button
+              key={item.value}
+              className={`course-practice-item ${selectedWord === item.answer ? "is-selected" : ""}`}
+              onClick={(event) => onWordClick(item.answer, event)}
+            >
+              <span className="course-practice-value">{item.value}{guide.practice.valueSuffix}</span>
+              <span className="course-practice-arrow">→</span>
+              <strong>{item.answer.text}</strong>
+              <em>{item.answer.roman}</em>
+            </button>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 
