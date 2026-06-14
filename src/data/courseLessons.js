@@ -159,6 +159,37 @@ const l24 = [
   word("옵시다", "op-si-da", "來吧/出發吧")
 ];
 
+const l25 = [
+  word("바닷물", "ba-dan-mul", "海水（唸作 바단물）"),
+  word("너무", "neo-mu", "太/很"),
+  word("예뻐요", "ye-ppeo-yo", "漂亮"),
+  word("바닥", "ba-dak", "地板"),
+  word("바닥에", "ba-dag-e", "在地板上"),
+  word("있는", "in-neun", "在/有的"),
+  word("물이요", "mu-ri-yo", "是水嗎？"),
+  word("아니요", "a-ni-yo", "不是"),
+  word("저기", "jeo-gi", "那邊"),
+  word("진짜", "jin-jja", "真的"),
+  word("아름다워요", "a-reum-da-wo-yo", "美麗/漂亮"),
+  word("수업", "su-eop", "課程"),
+  word("끝난", "kkeun-nan", "結束的"),
+  word("후에", "hu-e", "之後"),
+  word("어디에", "eo-di-e", "去哪裡"),
+  word("가요", "ga-yo", "去"),
+  word("오토바이로", "o-to-ba-i-ro", "坐摩托車"),
+  word("터미널에", "teo-mi-neor-e", "去客運站"),
+  word("왜", "wae", "為什麼"),
+  word("오토바이", "o-to-ba-i", "摩托車"),
+  word("타고", "ta-go", "搭乘"),
+  word("오토바이가", "o-to-ba-i-ga", "摩托車（主語）"),
+  word("더", "deo", "更"),
+  word("빨라요", "ppal-la-yo", "快"),
+  word("그건", "geu-geon", "那個"),
+  word("그래요", "geu-rae-yo", "沒錯/是的"),
+  word("조심해서", "jo-sim-hae-seo", "小心地"),
+  word("알겠어요", "al-ge-sseo-yo", "我知道了")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -480,5 +511,56 @@ export const courseLessons = [
         ]
       }
     }
+  },
+  {
+    id: "l2-5",
+    label: "L2-5",
+    titleKo: "어디에 가요?",
+    titleZh: "你要去哪裡？",
+    theme: "交通工具與地點",
+    sourcePdf: "docs/lessons/L2-5PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-5-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "情境對話",
+        image: courseAsset("l2-5-dialogue-person"),
+        objectImage: courseAsset("l2-5-dialogue-object"),
+        lines: [
+          line("관우", "‘바닷물’ 너무 예뻐요.", "「海水」太美了。", [l25[0], l25[1], l25[2]]),
+          line("유미", "‘바닥’물? 바닥에 있는 물이요?", "「地板」水？是在地板上的水嗎？", [l25[3], l25[4], l25[5], l25[6]]),
+          line("관우", "아니요. 저~기 ‘바닷물’이요.", "不是。是那邊的「海水」。", [l25[7], l25[8], l25[0]]),
+          line("유미", "아…진짜 아름다워요.", "啊…真的好美。", [word("아", "a", "啊"), l25[9], l25[10]])
+        ]
+      },
+      {
+        title: "對話練習",
+        image: courseAsset("l2-5-practice-person"),
+        objectImage: courseAsset("l2-5-practice-visual"),
+        lines: [
+          line("관우", "수업 끝난 후에 어디에 가요?", "下課後要去哪裡？", [l25[11], l25[12], l25[13], l25[14], l25[15]]),
+          line("유미", "오토바이로 터미널에 가요.", "我坐摩托車去客運站。", [l25[16], l25[17], l25[15]]),
+          line("관우", "왜 오토바이 타고 가요?", "為什麼坐摩托車去？", [l25[18], l25[19], l25[20], l25[15]]),
+          line("유미", "오토바이가 더 빨라요.", "摩托車比較快。", [l25[21], l25[22], l25[23]]),
+          line("관우", "그건 그래요. 조심해서 가요.", "那倒是。小心點去。", [l25[24], l25[25], l25[26], l25[15]]),
+          line("유미", "네, 알겠어요.", "好的，我知道了。", [word("네", "ne", "是/好的"), l25[27]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("l2-5", [
+      word("버스 정류장", "beo-seu jeong-nyu-jang", "公車站"),
+      word("지하철역", "ji-ha-cheo-ryeok", "地鐵站"),
+      word("터미널", "teo-mi-neol", "客運站"),
+      word("비행기", "bi-haeng-gi", "飛機"),
+      word("고속 철도", "go-sok cheol-do", "高速鐵路"),
+      word("도보", "do-bo", "步行"),
+      word("은행", "eun-haeng", "銀行"),
+      word("편의점", "pyeo-nui-jeom", "便利商店"),
+      word("헬스장", "hel-seu-jang", "健身房"),
+      word("국내", "gung-nae", "國內"),
+      word("박물관", "bang-mul-gwan", "博物館"),
+      word("평후", "pyeong-hu", "澎湖")
+    ])
   }
 ];
