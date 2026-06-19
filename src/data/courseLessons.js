@@ -190,6 +190,45 @@ const l25 = [
   word("알겠어요", "al-ge-sseo-yo", "我知道了")
 ];
 
+const l26 = [
+  word("크게", "keu-ge", "大聲地"),
+  word("웃는게", "un-neun-ge", "笑這件事（唸作 운는게）"),
+  word("공간에", "gong-gan-e", "對空間（唸作 공가네）"),
+  word("좋아요", "jo-a-yo", "好"),
+  word("공간", "gong-gan", "空間"),
+  word("이라고요", "i-ra-go-yo", "你說…嗎？"),
+  word("건강", "geon-gang", "健康"),
+  word("발음이", "ba-reum-i", "發音（主語）"),
+  word("너무", "neo-mu", "太/很"),
+  word("비슷해서", "bi-seu-tae-seo", "因為太相似"),
+  word("착각했어요", "chak-ga-kae-sseo-yo", "搞錯了/誤會了"),
+  word("괜찮아요", "gwaen-cha-na-yo", "沒關係"),
+  word("이제부터", "i-je-bu-teo", "從現在起"),
+  word("많이", "ma-ni", "很多"),
+  word("웃어야겠어요", "u-seo-ya-ge-sseo-yo", "得多笑才行"),
+  word("한국어", "han-gu-geo", "韓語"),
+  word("이상해서", "i-sang-hae-seo", "因為很奇怪"),
+  word("어떡해요", "eo-tteo-kae-yo", "怎麼辦？"),
+  word("그럼", "geu-reom", "那麼"),
+  word("같이", "ga-chi", "一起"),
+  word("연습할까요", "yeon-seu-pal-kka-yo", "要一起練習嗎？"),
+  word("책만", "chaeng-man", "只看書"),
+  word("보는", "bo-neun", "看的"),
+  word("것은", "geo-seun", "事情/東西"),
+  word("싫어요", "si-reo-yo", "討厭/不喜歡"),
+  word("재미있게", "jae-mi-it-ge", "有趣地"),
+  word("연습하는", "yeon-seu-pa-neun", "練習的"),
+  word("방법", "bang-beop", "方法"),
+  word("없어요", "eop-seo-yo", "沒有嗎？"),
+  word("잰말놀이", "jaen-mal-no-ri", "繞口令"),
+  word("볼까요", "bol-kka-yo", "要試試看嗎？"),
+  word("한국관광공사", "han-guk-gwan-gwang-gong-sa", "韓國觀光公社"),
+  word("곽진광", "gwak-jin-gwang", "郭振光（人名）"),
+  word("관광과장", "gwan-gwang-gwa-jang", "觀光科長"),
+  word("철수책상은", "cheol-su-chaek-sang-eun", "哲秀的書桌是"),
+  word("철책상", "cheol-chaek-sang", "鐵書桌")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -561,6 +600,56 @@ export const courseLessons = [
       word("국내", "gung-nae", "國內"),
       word("박물관", "bang-mul-gwan", "博物館"),
       word("평후", "pyeong-hu", "澎湖")
+    ])
+  },
+  {
+    id: "l2-6",
+    label: "L2-6",
+    titleKo: "한국말 잘하고 싶어요.",
+    titleZh: "我希望韓文能講好一點",
+    theme: "繞口令與表達喜好",
+    sourcePdf: "docs/lessons/L2-6PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("l2-6-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "情境對話",
+        image: courseAsset("l2-6-dialogue-person"),
+        objectImage: courseAsset("l2-6-dialogue-object"),
+        lines: [
+          line("관우", "크게 웃는게 ‘공간’에 좋아요.", "大笑對「空間」很好。", [l26[0], l26[1], l26[2], l26[3]]),
+          line("유미", "‘공간’이라고요?", "你說「空間」？", [l26[4], l26[5]]),
+          line("관우", "아…‘건강’. 발음이 너무 비슷해서 착각했어요.", "啊…是「健康」。發音太像了，所以說錯了。", [word("아", "a", "啊"), l26[6], l26[7], l26[8], l26[9], l26[10]]),
+          line("유미", "괜찮아요. 이제부터 많이 웃어야겠어요.", "沒關係。從現在起要多笑一點了。", [l26[11], l26[12], l26[13], l26[14]])
+        ]
+      },
+      {
+        title: "對話練習",
+        image: courseAsset("l2-6-practice-person"),
+        objectImage: courseAsset("l2-6-practice-visual"),
+        lines: [
+          line("유미", "한국어 발음이 이상해서 어떡해요?", "韓語發音很奇怪，怎麼辦？", [l26[15], l26[7], l26[16], l26[17]]),
+          line("관우", "그럼 같이 연습할까요?", "那要不要一起練習？", [l26[18], l26[19], l26[20]]),
+          line("유미", "책만 보는 것은 싫어요. 재미있게 연습하는 방법 없어요?", "只看書很無聊。有沒有有趣一點的練習方法？", [l26[21], l26[22], l26[23], l26[24], l26[25], l26[26], l26[27], l26[28]]),
+          line("관우", "잰말놀이 해 볼까요? 한국관광공사 곽진광 관광과장.", "要不要玩繞口令？「韓國觀光公社郭振光觀光科長」。", [l26[29], word("해", "hae", "做"), l26[30], l26[31], l26[32], l26[33]]),
+          line("유미", "철수책상은 철책상.", "「哲秀的書桌是鐵書桌」。", [l26[34], l26[35]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("l2-6", [
+      word("야채", "ya-chae", "蔬菜"),
+      word("고기", "go-gi", "肉"),
+      word("과일", "gwa-il", "水果"),
+      word("조깅", "jo-ging", "慢跑"),
+      word("수영", "su-yeong", "游泳"),
+      word("사이클링", "sa-i-keul-ling", "自行車運動"),
+      word("잰말놀이", "jaen-mal-no-ri", "繞口令"),
+      word("닭싸움", "dak-ssa-um", "鬥雞遊戲"),
+      word("윷놀이", "yun-no-ri", "擲柶遊戲"),
+      word("좋아해요", "jo-a-hae-yo", "喜歡"),
+      word("싫어해요", "si-reo-hae-yo", "討厭"),
+      word("제가", "je-ga", "我（主語）")
     ])
   }
 ];

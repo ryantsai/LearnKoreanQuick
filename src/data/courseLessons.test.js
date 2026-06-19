@@ -5,7 +5,7 @@ import { courseLessons } from "./courseLessons.js";
 
 describe("courseLessons", () => {
   test("contains the three PDF-backed lessons with dialogues and vocabulary", () => {
-    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3", "l2-4", "l2-5"]);
+    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3", "l2-4", "l2-5", "l2-6"]);
 
     for (const lesson of courseLessons) {
       expect(lesson.label).toMatch(/^L2-/);
