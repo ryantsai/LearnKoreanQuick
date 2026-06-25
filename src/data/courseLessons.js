@@ -229,6 +229,46 @@ const l26 = [
   word("철책상", "cheol-chaek-sang", "鐵書桌")
 ];
 
+// === 初級 1 系列（new format，與 L2 系列分開）===
+const b11 = [
+  word("안녕하세요", "an-nyeong-ha-se-yo", "您好"),
+  word("저는", "jeo-neun", "我（主題）"),
+  word("임관우입니다", "im-gwan-u-im-ni-da", "我是林冠宇"),
+  word("만나서", "man-na-seo", "見面後"),
+  word("반갑습니다", "ban-gap-seum-ni-da", "很高興（認識你）"),
+  word("김민준입니다", "gim-min-jun-im-ni-da", "我是金敏俊"),
+  word("김민준", "gim-min-jun", "金敏俊（人名）"),
+  word("씨는", "ssi-neun", "先生/小姐（主題）"),
+  word("한국", "han-guk", "韓國"),
+  word("사람입니까", "sa-ram-im-ni-kka", "是…人嗎？"),
+  word("네", "ne", "是"),
+  word("사람입니다", "sa-ram-im-ni-da", "是…人"),
+  word("임관우", "im-gwan-u", "林冠宇（人名）"),
+  word("대만", "dae-man", "台灣")
+];
+
+const b12 = [
+  word("여기는", "yeo-gi-neun", "這裡（主題）"),
+  word("라오허지에", "ra-o-heo-ji-e", "饒河街"),
+  word("야시장입니까", "ya-si-jang-im-ni-kka", "是夜市嗎？"),
+  word("아니요", "a-ni-yo", "不是"),
+  word("야시장이", "ya-si-jang-i", "夜市（主語）"),
+  word("아닙니다", "a-nim-ni-da", "不是"),
+  word("쓰린", "sseu-rin", "士林"),
+  word("야시장입니다", "ya-si-jang-im-ni-da", "是夜市"),
+  word("버블티입니까", "beo-beul-ti-im-ni-kka", "是珍奶嗎？"),
+  word("버블티는", "beo-beul-ti-neun", "珍奶（主題）"),
+  word("대만", "dae-man", "台灣"),
+  word("음식입니까", "eum-sik-im-ni-kka", "是…食物嗎？"),
+  word("네", "ne", "是"),
+  word("음식입니다", "eum-sik-im-ni-da", "是…食物"),
+  word("대접해", "dae-jeo-pae", "招待/接待"),
+  word("주셔서", "ju-syeo-seo", "為我（做）"),
+  word("감사합니다", "gam-sa-ham-ni-da", "謝謝"),
+  word("안녕히", "an-nyeong-hi", "平安地"),
+  word("가세요", "ga-se-yo", "請走（再見）")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -651,5 +691,175 @@ export const courseLessons = [
       word("싫어해요", "si-reo-hae-yo", "討厭"),
       word("제가", "je-ga", "我（主語）")
     ])
+  },
+  {
+    id: "b1-1",
+    label: "初級1-1",
+    titleKo: "안녕하세요. 저는 대만 사람입니다.",
+    titleZh: "你好，我是台灣人。",
+    theme: "問候與自我介紹",
+    sourcePdf: "docs/lessons/new/L1PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("b1-1-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-1-dialogue-person"),
+        objectImage: courseAsset("b1-1-dialogue-object"),
+        lines: [
+          line("관우", "안녕하세요. 저는 임관우입니다. 만나서 반갑습니다.", "您好。我是林冠宇。很高興認識你。", [b11[0], b11[1], b11[2], b11[3], b11[4]]),
+          line("민준", "안녕하세요. 저는 김민준입니다. 반갑습니다.", "您好。我是金敏俊。很高興認識你。", [b11[0], b11[1], b11[5], b11[4]]),
+          line("관우", "김민준 씨는 한국 사람입니까?", "金敏俊先生是韓國人嗎？", [b11[6], b11[7], b11[8], b11[9]]),
+          line("민준", "네, 저는 한국 사람입니다. 임관우 씨는 대만 사람입니까?", "是，我是韓國人。林冠宇先生是台灣人嗎？", [b11[10], b11[1], b11[8], b11[11], b11[12], b11[7], b11[13], b11[9]]),
+          line("관우", "네. 저는 대만 사람입니다.", "是。我是台灣人。", [b11[10], b11[1], b11[13], b11[11]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-1", [
+      word("대만", "dae-man", "台灣"),
+      word("한국", "han-guk", "韓國"),
+      word("일본", "il-bon", "日本"),
+      word("타이베이", "ta-i-be-i", "台北"),
+      word("타이중", "ta-i-jung", "台中"),
+      word("타이난", "ta-i-nan", "台南"),
+      word("가오슝", "ga-o-syung", "高雄"),
+      word("선생님", "seon-saeng-nim", "老師"),
+      word("김치", "gim-chi", "泡菜"),
+      word("떡볶이", "tteok-bok-i", "辣炒年糕"),
+      word("찌파이", "jji-pa-i", "雞排"),
+      word("버블티", "beo-beul-ti", "珍珠奶茶")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N은/는 N입니다」自我介紹",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "問候・道別（인사）",
+          words: [
+            word("안녕하세요", "an-nyeong-ha-se-yo", "您好（非正式敬語）"),
+            word("안녕하십니까", "an-nyeong-ha-sim-ni-kka", "您好（正式敬語）"),
+            word("안녕", "an-nyeong", "嗨/再見（半語）"),
+            word("만나서 반갑습니다", "man-na-seo ban-gap-seum-ni-da", "幸會/很高興認識你"),
+            word("처음 뵙겠습니다", "cheo-eum boep-get-seum-ni-da", "初次見面"),
+            word("네", "ne", "是"),
+            word("아니요", "a-ni-yo", "不是")
+          ]
+        },
+        {
+          heading: "自我介紹用語",
+          words: [
+            word("저", "jeo", "我"),
+            word("저는", "jeo-neun", "我（主題）"),
+            word("씨", "ssi", "先生/小姐（禮貌稱呼）"),
+            word("사람", "sa-ram", "人"),
+            word("학생", "hak-saeng", "學生"),
+            word("회사원", "hoe-sa-won", "上班族"),
+            word("입니다", "im-ni-da", "是（陳述）"),
+            word("입니까", "im-ni-kka", "是…嗎？（疑問）")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習說出「我是…」",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "我是台灣人", answer: word("저는 대만 사람입니다", "jeo-neun dae-man sa-ram-im-ni-da", "我是台灣人") },
+          { value: "我是韓國人", answer: word("저는 한국 사람입니다", "jeo-neun han-guk sa-ram-im-ni-da", "我是韓國人") },
+          { value: "我是日本人", answer: word("저는 일본 사람입니다", "jeo-neun il-bon sa-ram-im-ni-da", "我是日本人") },
+          { value: "我是台北人", answer: word("저는 타이베이 사람입니다", "jeo-neun ta-i-be-i sa-ram-im-ni-da", "我是台北人") },
+          { value: "我是學生", answer: word("저는 학생입니다", "jeo-neun hak-saeng-im-ni-da", "我是學生") },
+          { value: "我是上班族", answer: word("저는 회사원입니다", "jeo-neun hoe-sa-won-im-ni-da", "我是上班族") },
+          { value: "你是韓國人嗎？", answer: word("한국 사람입니까?", "han-guk sa-ram-im-ni-kka", "（你）是韓國人嗎？") },
+          { value: "你是老師嗎？", answer: word("선생님입니까?", "seon-saeng-nim-im-ni-kka", "（你）是老師嗎？") }
+        ]
+      }
+    }
+  },
+  {
+    id: "b1-2",
+    label: "初級1-2",
+    titleKo: "저는 학생이 아닙니다. 회사원입니다.",
+    titleZh: "我不是學生，是上班族。",
+    theme: "職業與「不是」的說法",
+    sourcePdf: "docs/lessons/new/L2PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("b1-2-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-2-dialogue-person"),
+        objectImage: courseAsset("b1-2-dialogue-object"),
+        lines: [
+          line("민준", "여기는 라오허지에 야시장입니까?", "這裡是饒河街夜市嗎？", [b12[0], b12[1], b12[2]]),
+          line("관우", "아니요, 라오허지에 야시장이 아닙니다. 쓰린 야시장입니다.", "不，不是饒河街夜市，是士林夜市。", [b12[3], b12[1], b12[4], b12[5], b12[6], b12[7]]),
+          line("민준", "버블티입니까? 버블티는 대만 음식입니까?", "是珍珠奶茶嗎？珍珠奶茶是台灣食物嗎？", [b12[8], b12[9], b12[10], b12[11]]),
+          line("관우", "네, 대만 음식입니다.", "是的，是台灣食物。", [b12[12], b12[10], b12[13]]),
+          line("민준", "대접해 주셔서 감사합니다. 안녕히 가세요.", "謝謝招待。再見。", [b12[14], b12[15], b12[16], b12[17], b12[18]]),
+          line("관우", "네, 안녕히 가세요.", "好，再見。", [b12[12], b12[17], b12[18]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-2", [
+      word("회사원", "hoe-sa-won", "上班族"),
+      word("공무원", "gong-mu-won", "公務員"),
+      word("의사", "ui-sa", "醫師"),
+      word("간호사", "gan-ho-sa", "護理師"),
+      word("요리사", "yo-ri-sa", "廚師"),
+      word("주부", "ju-bu", "家庭主婦"),
+      word("선생님", "seon-saeng-nim", "老師"),
+      word("학생", "hak-saeng", "學生"),
+      word("버블티", "beo-beul-ti", "珍珠奶茶"),
+      word("야시장", "ya-si-jang", "夜市"),
+      word("여자", "yeo-ja", "女生"),
+      word("남자", "nam-ja", "男生")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N이/가 아닙니다」表達不是",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "道別與感謝（인사）",
+          words: [
+            word("안녕히 가세요", "an-nyeong-hi ga-se-yo", "再見（對方要離開時）"),
+            word("안녕히 계세요", "an-nyeong-hi gye-se-yo", "再見（請留步）"),
+            word("감사합니다", "gam-sa-ham-ni-da", "謝謝"),
+            word("도와주셔서 감사합니다", "do-wa-ju-syeo-seo gam-sa-ham-ni-da", "謝謝幫忙"),
+            word("대접해 주셔서 감사합니다", "dae-jeo-pae ju-syeo-seo gam-sa-ham-ni-da", "謝謝招待"),
+            word("수고하셨습니다", "su-go-ha-syeot-seum-ni-da", "辛苦了")
+          ]
+        },
+        {
+          heading: "「不是」句型用語",
+          words: [
+            word("아닙니다", "a-nim-ni-da", "不是"),
+            word("아닙니까", "a-nim-ni-kka", "不是…嗎？"),
+            word("여기", "yeo-gi", "這裡"),
+            word("집", "jip", "家"),
+            word("여동생", "yeo-dong-saeng", "妹妹"),
+            word("남동생", "nam-dong-saeng", "弟弟")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習說出「不是…」",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "我不是學生", answer: word("저는 학생이 아닙니다", "jeo-neun hak-saeng-i a-nim-ni-da", "我不是學生") },
+          { value: "我不是上班族", answer: word("저는 회사원이 아닙니다", "jeo-neun hoe-sa-won-i a-nim-ni-da", "我不是上班族") },
+          { value: "林冠宇不是老師", answer: word("임관우 씨는 선생님이 아닙니다", "im-gwan-u ssi-neun seon-saeng-nim-i a-nim-ni-da", "林冠宇先生不是老師") },
+          { value: "妹妹不是護理師", answer: word("여동생은 간호사가 아닙니다", "yeo-dong-saeng-eun gan-ho-sa-ga a-nim-ni-da", "妹妹不是護理師") },
+          { value: "你不是醫師嗎？", answer: word("의사가 아닙니까?", "ui-sa-ga a-nim-ni-kka", "（你）不是醫師嗎？") },
+          { value: "這裡不是台北嗎？", answer: word("여기는 타이베이가 아닙니까?", "yeo-gi-neun ta-i-be-i-ga a-nim-ni-kka", "這裡不是台北嗎？") },
+          { value: "珍奶不是台灣食物嗎？", answer: word("버블티는 대만 음식이 아닙니까?", "beo-beul-ti-neun dae-man eum-sik-i a-nim-ni-kka", "珍珠奶茶不是台灣食物嗎？") },
+          { value: "弟弟不是學生嗎？", answer: word("남동생은 학생이 아닙니까?", "nam-dong-saeng-eun hak-saeng-i a-nim-ni-kka", "弟弟不是學生嗎？") }
+        ]
+      }
+    }
   }
 ];
