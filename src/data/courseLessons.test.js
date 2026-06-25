@@ -5,10 +5,19 @@ import { courseLessons } from "./courseLessons.js";
 
 describe("courseLessons", () => {
   test("contains the three PDF-backed lessons with dialogues and vocabulary", () => {
-    expect(courseLessons.map((lesson) => lesson.id)).toEqual(["l2-1", "l2-2", "l2-3", "l2-4", "l2-5", "l2-6"]);
+    expect(courseLessons.map((lesson) => lesson.id)).toEqual([
+      "l2-1",
+      "l2-2",
+      "l2-3",
+      "l2-4",
+      "l2-5",
+      "l2-6",
+      "b1-1",
+      "b1-2"
+    ]);
 
     for (const lesson of courseLessons) {
-      expect(lesson.label).toMatch(/^L2-/);
+      expect(lesson.label).toMatch(/^(L2-|初級1-)/);
       expect(lesson.titleKo.length).toBeGreaterThan(0);
       expect(lesson.dialogues.length).toBeGreaterThanOrEqual(1);
       expect(lesson.vocabulary.length).toBeGreaterThanOrEqual(12);
