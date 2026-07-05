@@ -13,7 +13,9 @@ describe("courseLessons", () => {
       "l2-5",
       "l2-6",
       "b1-1",
-      "b1-2"
+      "b1-2",
+      "b1-3",
+      "b1-4"
     ]);
 
     for (const lesson of courseLessons) {
