@@ -269,6 +269,52 @@ const b12 = [
   word("가세요", "ga-se-yo", "請走（再見）")
 ];
 
+const b13 = [
+  word("오늘", "o-neul", "今天"),
+  word("날씨가", "nal-ssi-ga", "天氣（主語）"),
+  word("어떻습니까", "eo-tteo-seum-ni-kka", "如何？／怎麼樣？"),
+  word("좀", "jom", "稍微／一點"),
+  word("덥습니다", "deop-seum-ni-da", "熱"),
+  word("거기도", "geo-gi-do", "那裡也"),
+  word("덥습니까", "deop-seum-ni-kka", "熱嗎？"),
+  word("아니요", "a-ni-yo", "不"),
+  word("시원합니다", "si-won-ham-ni-da", "涼爽"),
+  word("요즘", "yo-jeum", "最近"),
+  word("한국", "han-guk", "韓國"),
+  word("좋습니다", "jo-seum-ni-da", "好"),
+  word("한국어가", "han-gu-geo-ga", "韓語（主語）"),
+  word("어렵습니까", "eo-ryeop-seum-ni-kka", "難嗎？"),
+  word("네", "ne", "是"),
+  word("어렵습니다", "eo-ryeop-seum-ni-da", "難"),
+  word("하지만", "ha-ji-man", "但是"),
+  word("재미있습니다", "jae-mi-it-seum-ni-da", "有趣")
+];
+
+const b14 = [
+  word("여기가", "yeo-gi-ga", "這裡（主語）"),
+  word("어디입니까", "eo-di-im-ni-kka", "是哪裡？"),
+  word("가오슝입니다", "ga-o-syung-im-ni-da", "是高雄"),
+  word("가오슝은", "ga-o-syung-eun", "高雄（主題）"),
+  word("대만의", "dae-man-ui", "台灣的"),
+  word("부산입니다", "bu-san-im-ni-da", "是釜山"),
+  word("아주", "a-ju", "非常"),
+  word("덥습니다", "deop-seum-ni-da", "熱"),
+  word("그렇습니까", "geu-reo-seum-ni-kka", "是嗎？"),
+  word("음료수", "eum-nyo-su", "飲料"),
+  word("가게가", "ga-ge-ga", "店（主語）"),
+  word("많습니까", "man-seum-ni-kka", "多嗎？"),
+  word("네", "ne", "是"),
+  word("많습니다", "man-seum-ni-da", "多"),
+  word("버블티", "beo-beul-ti", "珍奶"),
+  word("종류도", "jong-nyu-do", "種類也"),
+  word("좋습니다", "jo-seum-ni-da", "好"),
+  word("버블티는", "beo-beul-ti-neun", "珍奶（主題）"),
+  word("제가", "je-ga", "我（主語）"),
+  word("제일", "je-il", "最"),
+  word("좋아하는", "jo-a-ha-neun", "喜歡的"),
+  word("음료수입니다", "eum-nyo-su-im-ni-da", "是飲料")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -858,6 +904,174 @@ export const courseLessons = [
           { value: "這裡不是台北嗎？", answer: word("여기는 타이베이가 아닙니까?", "yeo-gi-neun ta-i-be-i-ga a-nim-ni-kka", "這裡不是台北嗎？") },
           { value: "珍奶不是台灣食物嗎？", answer: word("버블티는 대만 음식이 아닙니까?", "beo-beul-ti-neun dae-man eum-sik-i a-nim-ni-kka", "珍珠奶茶不是台灣食物嗎？") },
           { value: "弟弟不是學生嗎？", answer: word("남동생은 학생이 아닙니까?", "nam-dong-saeng-eun hak-saeng-i a-nim-ni-kka", "弟弟不是學生嗎？") }
+        ]
+      }
+    }
+  },
+  {
+    id: "b1-3",
+    label: "初級1-3",
+    titleKo: "오늘 날씨가 어떻습니까?",
+    titleZh: "今天天氣如何？",
+    theme: "天氣與主格助詞 이/가",
+    sourcePdf: "docs/lessons/new/L3PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("b1-3-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-3-dialogue-person"),
+        objectImage: courseAsset("b1-3-dialogue-object"),
+        lines: [
+          line("민준", "오늘 날씨가 어떻습니까?", "今天天氣如何？", [b13[0], b13[1], b13[2]]),
+          line("관우", "좀 덥습니다. 거기도 덥습니까?", "有點熱。那裡也熱嗎？", [b13[3], b13[4], b13[5], b13[6]]),
+          line("민준", "아니요, 시원합니다. 요즘 한국 날씨가 좋습니다.", "不，很涼爽。最近韓國天氣很好。", [b13[7], b13[8], b13[9], b13[10], b13[1], b13[11]]),
+          line("민준", "한국어가 어렵습니까?", "韓語難嗎？", [b13[12], b13[13]]),
+          line("관우", "네, 좀 어렵습니다. 하지만 재미있습니다.", "是，有點難。但是很有趣。", [b13[14], b13[3], b13[15], b13[16], b13[17]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-3", [
+      word("비가 오다", "bi-ga-o-da", "下雨"),
+      word("눈이 오다", "nun-i-o-da", "下雪"),
+      word("구름이 많다", "gu-reum-i-man-ta", "多雲"),
+      word("바람이 불다", "ba-ram-i-bul-da", "刮風"),
+      word("흐리다", "heu-ri-da", "天陰"),
+      word("안개가 끼다", "an-gae-ga-kki-da", "起霧"),
+      word("천둥이 치다", "cheon-dung-i-chi-da", "打雷"),
+      word("태풍이 오다", "tae-pung-i-o-da", "颱風（來）"),
+      word("좋다", "jo-ta", "好"),
+      word("덥다", "deop-da", "熱"),
+      word("춥다", "chup-da", "冷"),
+      word("맛있다", "mat-it-da", "好吃")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N이/가」主格助詞與「-ㅂ니다/습니다」",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "天氣形容詞（형용사）",
+          words: [
+            word("좋다", "jo-ta", "好"),
+            word("나쁘다", "na-ppeu-da", "壞"),
+            word("덥다", "deop-da", "熱"),
+            word("춥다", "chup-da", "冷"),
+            word("시원하다", "si-won-ha-da", "涼爽"),
+            word("예쁘다", "ye-ppeu-da", "漂亮"),
+            word("맛있다", "mat-it-da", "好吃")
+          ]
+        },
+        {
+          heading: "韓語知識・漢字詞（한자어）",
+          words: [
+            word("감사", "gam-sa", "感謝（漢字「感謝」，意義相同）"),
+            word("운동", "un-dong", "運動（漢字「運動」，意義相同）"),
+            word("시간", "si-gan", "時間（漢字「時間」，意義相同）"),
+            word("공부", "gong-bu", "讀書（漢字「工夫」，意義不同）"),
+            word("만두", "man-du", "餃子（漢字「饅頭」，意義不同）"),
+            word("유리", "yu-ri", "玻璃（漢字「琉璃」，意義不同）")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習說出天氣句",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "天氣好嗎？", answer: word("날씨가 좋습니까?", "nal-ssi-ga jo-seum-ni-kka", "天氣好嗎？") },
+          { value: "天氣很好", answer: word("날씨가 좋습니다", "nal-ssi-ga jo-seum-ni-da", "天氣很好") },
+          { value: "台灣熱嗎？", answer: word("대만이 덥습니까?", "dae-man-i deop-seum-ni-kka", "台灣熱嗎？") },
+          { value: "台灣很熱", answer: word("대만이 덥습니다", "dae-man-i deop-seum-ni-da", "台灣很熱") },
+          { value: "韓國冷嗎？", answer: word("한국이 춥습니까?", "han-gu-gi chup-seum-ni-kka", "韓國冷嗎？") },
+          { value: "韓國很冷", answer: word("한국이 춥습니다", "han-gu-gi chup-seum-ni-da", "韓國很冷") },
+          { value: "學生很多", answer: word("학생이 많습니다", "hak-saeng-i man-seum-ni-da", "學生很多") },
+          { value: "泡菜好吃", answer: word("김치가 맛있습니다", "gim-chi-ga mat-it-seum-ni-da", "泡菜好吃") }
+        ]
+      }
+    }
+  },
+  {
+    id: "b1-4",
+    label: "初級1-4",
+    titleKo: "버블티는 제가 제일 좋아하는 음료수입니다.",
+    titleZh: "珍奶是我最喜歡的飲料。",
+    theme: "飲料與主題補助詞 은/는",
+    sourcePdf: "docs/lessons/new/L4PDF Viewer.pdf",
+    media: {
+      hero: courseAsset("b1-4-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-4-dialogue-person"),
+        objectImage: courseAsset("b1-4-dialogue-object"),
+        lines: [
+          line("민준", "여기가 어디입니까?", "這裡是哪裡？", [b14[0], b14[1]]),
+          line("관우", "가오슝입니다. 가오슝은 대만의 부산입니다. 아주 덥습니다.", "這是高雄。高雄是台灣的釜山。非常熱。", [b14[2], b14[3], b14[4], b14[5], b14[6], b14[7]]),
+          line("민준", "그렇습니까? 음료수 가게가 많습니까?", "是嗎？飲料店很多嗎？", [b14[8], b14[9], b14[10], b14[11]]),
+          line("관우", "네, 많습니다. 버블티 종류도 많습니다.", "是的，很多。珍奶的種類也很多。", [b14[12], b14[13], b14[14], b14[15], b14[13]]),
+          line("민준", "좋습니다. 버블티는 제가 제일 좋아하는 음료수입니다.", "很好。珍奶是我最喜歡的飲料。", [b14[16], b14[17], b14[18], b14[19], b14[20], b14[21]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-4", [
+      word("차", "cha", "茶"),
+      word("홍차", "hong-cha", "紅茶"),
+      word("우롱차", "u-rong-cha", "烏龍茶"),
+      word("녹차", "nok-cha", "綠茶"),
+      word("콜라", "kol-la", "可樂"),
+      word("사이다", "sa-i-da", "汽水"),
+      word("주스", "ju-seu", "果汁"),
+      word("우유", "u-yu", "牛奶"),
+      word("버블티", "beo-beul-ti", "珍奶"),
+      word("밀크티", "mil-keu-ti", "奶茶"),
+      word("커피", "keo-pi", "咖啡"),
+      word("물", "mul", "水")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N은/는」主題補助詞與「主題-解說」句",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "主題補助詞 은/는（주제 보조사）",
+          words: [
+            word("은", "eun", "主題補助詞（前字有尾音）"),
+            word("는", "neun", "主題補助詞（前字無尾音）"),
+            word("저는", "jeo-neun", "我（主題）"),
+            word("대만의", "dae-man-ui", "台灣的"),
+            word("수도", "su-do", "首都"),
+            word("특산품", "teuk-san-pum", "特產品"),
+            word("음료수", "eum-nyo-su", "飲料")
+          ]
+        },
+        {
+          heading: "「主題-解說」句型單字",
+          words: [
+            word("갈비탕", "gal-bi-tang", "排骨湯"),
+            word("군인", "gun-in", "軍人"),
+            word("나라", "na-ra", "國家"),
+            word("지킵니다", "ji-kim-ni-da", "守護"),
+            word("반드시", "ban-deu-si", "必定"),
+            word("죽습니다", "juk-seum-ni-da", "死")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習用 은/는 造主題句",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "我是台灣人", answer: word("저는 대만 사람입니다", "jeo-neun dae-man sa-ram-im-ni-da", "我是台灣人") },
+          { value: "泡菜是韓國食物", answer: word("김치는 한국 음식입니다", "gim-chi-neun han-guk eum-sik-im-ni-da", "泡菜是韓國食物") },
+          { value: "排骨湯是韓國食物", answer: word("갈비탕은 한국 음식입니다", "gal-bi-tang-eun han-guk eum-sik-im-ni-da", "排骨湯是韓國食物") },
+          { value: "珍奶是台灣的飲料", answer: word("버블티는 대만의 음료수입니다", "beo-beul-ti-neun dae-man-ui eum-nyo-su-im-ni-da", "珍奶是台灣的飲料") },
+          { value: "台北是台灣的首都", answer: word("타이베이는 대만의 수도입니다", "ta-i-be-i-neun dae-man-ui su-do-im-ni-da", "台北是台灣的首都") },
+          { value: "軍人守護國家", answer: word("군인은 나라를 지킵니다", "gun-in-eun na-ra-reul ji-kim-ni-da", "軍人守護國家") },
+          { value: "人必定得死", answer: word("사람은 반드시 죽습니다", "sa-ram-eun ban-deu-si juk-seum-ni-da", "人必定得死") },
+          { value: "綠茶是中國人的飲料", answer: word("녹차는 중국 사람의 음료수입니다", "nok-cha-neun jung-guk sa-ram-ui eum-nyo-su-im-ni-da", "綠茶是中國人的飲料") }
         ]
       }
     }
