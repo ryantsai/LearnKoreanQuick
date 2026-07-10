@@ -315,6 +315,34 @@ const b14 = [
   word("음료수입니다", "eum-nyo-su-im-ni-da", "是飲料")
 ];
 
+const b15 = [
+  word("불고기를", "bul-go-gi-reul", "烤牛肉（目的語）"),
+  word("좋아합니까", "jo-a-ham-ni-kka", "喜歡嗎？"),
+  word("네", "ne", "是"),
+  word("좋아합니다", "jo-a-ham-ni-da", "喜歡"),
+  word("아주", "a-ju", "非常"),
+  word("맛있습니다", "mat-it-seum-ni-da", "好吃"),
+  word("그럼", "geu-reom", "那麼"),
+  word("같이", "ga-chi", "一起（發音「가치」）"),
+  word("먹습니까", "meok-seum-ni-kka", "吃嗎？"),
+  word("좋습니다", "jo-seum-ni-da", "好")
+];
+
+const b16 = [
+  word("한국", "han-guk", "韓國"),
+  word("날씨", "nal-ssi", "天氣"),
+  word("어떻습니까", "eo-tteo-seum-ni-kka", "如何？"),
+  word("북쪽은", "buk-jjo-geun", "北部（主題）"),
+  word("시원합니다", "si-won-ham-ni-da", "涼爽"),
+  word("그렇지만", "geu-reo-chi-man", "但是（發音「그러치만」）"),
+  word("남쪽은", "nam-jjo-geun", "南部（主題）"),
+  word("덥습니다", "deop-seum-ni-da", "熱"),
+  word("그럼", "geu-reom", "那麼"),
+  word("음식", "eum-sik", "食物"),
+  word("음식은", "eum-si-geun", "食物（主題）"),
+  word("맵습니다", "maep-seum-ni-da", "辣")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -1072,6 +1100,176 @@ export const courseLessons = [
           { value: "軍人守護國家", answer: word("군인은 나라를 지킵니다", "gun-in-eun na-ra-reul ji-kim-ni-da", "軍人守護國家") },
           { value: "人必定得死", answer: word("사람은 반드시 죽습니다", "sa-ram-eun ban-deu-si juk-seum-ni-da", "人必定得死") },
           { value: "綠茶是中國人的飲料", answer: word("녹차는 중국 사람의 음료수입니다", "nok-cha-neun jung-guk sa-ram-ui eum-nyo-su-im-ni-da", "綠茶是中國人的飲料") }
+        ]
+      }
+    }
+  },
+  {
+    id: "b1-5",
+    label: "初級1-5",
+    titleKo: "저녁을 같이 먹습니까?",
+    titleZh: "一起吃晚餐嗎？",
+    theme: "動詞與目的語助詞 을/를",
+    sourcePdf: "docs/lessons/new/L5.pdf",
+    media: {
+      hero: courseAsset("b1-5-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-5-dialogue-person"),
+        objectImage: courseAsset("b1-5-dialogue-object"),
+        lines: [
+          line("관우", "불고기를 좋아합니까?", "喜歡烤牛肉嗎？", [b15[0], b15[1]]),
+          line("민준", "네, 좋아합니다. 아주 맛있습니다.", "是的，喜歡。非常好吃。", [b15[2], b15[3], b15[4], b15[5]]),
+          line("관우", "그럼, 불고기를 같이 먹습니까?", "那麼，一起吃烤牛肉嗎？", [b15[6], b15[0], b15[7], b15[8]]),
+          line("민준", "네, 좋습니다.", "是，好的。", [b15[2], b15[9]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-5", [
+      word("음악", "eum-ak", "音樂"),
+      word("신문", "sin-mun", "報紙"),
+      word("한국어", "han-gu-geo", "韓語"),
+      word("영화", "yeong-hwa", "電影"),
+      word("옷", "ot", "衣服"),
+      word("신발", "sin-bal", "鞋子"),
+      word("듣다", "deut-da", "聽"),
+      word("말하다", "mal-ha-da", "說"),
+      word("읽다", "ik-da", "讀"),
+      word("쓰다", "sseu-da", "寫"),
+      word("보다", "bo-da", "看"),
+      word("사다", "sa-da", "買")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N을/를」目的語助詞與動詞句",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "常用動詞（동사）",
+          words: [
+            word("듣다", "deut-da", "聽"),
+            word("말하다", "mal-ha-da", "說"),
+            word("읽다", "ik-da", "讀"),
+            word("쓰다", "sseu-da", "寫"),
+            word("보다", "bo-da", "看"),
+            word("사다", "sa-da", "買"),
+            word("입다", "ip-da", "穿（衣物）"),
+            word("신다", "sin-da", "穿（鞋襪）"),
+            word("먹다", "meok-da", "吃")
+          ]
+        },
+        {
+          heading: "動作的對象（목적어）",
+          words: [
+            word("음악", "eum-ak", "音樂"),
+            word("신문", "sin-mun", "報紙"),
+            word("소설책", "so-seol-chaek", "小說書"),
+            word("영화", "yeong-hwa", "電影"),
+            word("옷", "ot", "衣服"),
+            word("신발", "sin-bal", "鞋子")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習用 을/를 造動詞句",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "聽音樂", answer: word("음악을 듣습니다", "eum-a-geul deut-seum-ni-da", "聽音樂") },
+          { value: "讀報紙", answer: word("신문을 읽습니다", "sin-mun-eul ik-seum-ni-da", "讀報紙") },
+          { value: "說韓語", answer: word("한국어를 말합니다", "han-gu-geo-reul mal-ham-ni-da", "說韓語") },
+          { value: "看電影", answer: word("영화를 봅니다", "yeong-hwa-reul bom-ni-da", "看電影") },
+          { value: "買衣服嗎？", answer: word("옷을 삽니까?", "o-seul sam-ni-kka", "買衣服嗎？") },
+          { value: "穿鞋子嗎？", answer: word("신발을 신습니까?", "sin-bal-eul sin-seum-ni-kka", "穿鞋子嗎？") },
+          { value: "吃早餐", answer: word("아침을 먹습니다", "a-chim-eul meok-seum-ni-da", "吃早餐") },
+          { value: "一起吃晚餐嗎？", answer: word("저녁을 같이 먹습니까?", "jeo-nyeok-eul ga-chi meok-seum-ni-kka", "一起吃晚餐嗎？") }
+        ]
+      }
+    }
+  },
+  {
+    id: "b1-6",
+    label: "初級1-6",
+    titleKo: "대만은 덥습니다. 그렇지만 한국은 춥습니다.",
+    titleZh: "台灣熱，但是韓國冷。",
+    theme: "對比補助詞 은/는 與相對形容詞",
+    sourcePdf: "docs/lessons/new/L6.pdf",
+    media: {
+      hero: courseAsset("b1-6-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-6-dialogue-person"),
+        objectImage: courseAsset("b1-6-dialogue-object"),
+        lines: [
+          line("관우", "한국 날씨 어떻습니까?", "韓國天氣如何呢？", [b16[0], b16[1], b16[2]]),
+          line("민준", "북쪽은 시원합니다. 그렇지만 남쪽은 덥습니다.", "北部涼爽，但是南部熱。", [b16[3], b16[4], b16[5], b16[6], b16[7]]),
+          line("관우", "그럼 한국 음식 어떻습니까?", "那麼韓國食物如何呢？", [b16[8], b16[0], b16[9], b16[2]]),
+          line("민준", "한국 음식은 맵습니다.", "韓國食物辣。", [b16[0], b16[10], b16[11]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-6", [
+      word("어렵다", "eo-ryeop-da", "難"),
+      word("쉽다", "swip-da", "簡單"),
+      word("작다", "jak-da", "小"),
+      word("크다", "keu-da", "大"),
+      word("적다", "jeok-da", "少"),
+      word("많다", "man-ta", "多"),
+      word("무겁다", "mu-geop-da", "重"),
+      word("가볍다", "ga-byeop-da", "輕"),
+      word("라면", "ra-myeon", "泡麵"),
+      word("맛없다", "mat-eop-da", "不好吃"),
+      word("북쪽", "buk-jjok", "北部"),
+      word("남쪽", "nam-jjok", "南部")
+    ]),
+    guide: {
+      label: "句型",
+      title: "「N은/는」對比補助詞與相對形容詞",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解。",
+      sections: [
+        {
+          heading: "相對形容詞（형용사）",
+          words: [
+            word("크다", "keu-da", "大"),
+            word("작다", "jak-da", "小"),
+            word("어렵다", "eo-ryeop-da", "難"),
+            word("쉽다", "swip-da", "簡單"),
+            word("많다", "man-ta", "多"),
+            word("적다", "jeok-da", "少"),
+            word("무겁다", "mu-geop-da", "重"),
+            word("가볍다", "ga-byeop-da", "輕")
+          ]
+        },
+        {
+          heading: "對比句常用單字",
+          words: [
+            word("그렇지만", "geu-reo-chi-man", "但是"),
+            word("안", "an", "不（表否定）"),
+            word("맵다", "maep-da", "辣"),
+            word("맛있다", "mat-it-da", "好吃"),
+            word("맛없다", "mat-eop-da", "不好吃"),
+            word("북쪽", "buk-jjok", "北部"),
+            word("남쪽", "nam-jjok", "南部")
+          ]
+        }
+      ],
+      practice: {
+        heading: "練習用 은/는 造對比句",
+        hint: "把中文念成韓語句子，答案與發音如下，點擊即可聽發音。",
+        valueSuffix: "",
+        items: [
+          { value: "台灣熱，但是韓國冷", answer: word("대만은 덥습니다. 그렇지만 한국은 춥습니다", "dae-man-eun deop-seum-ni-da. geu-reo-chi-man han-gug-eun chup-seum-ni-da", "台灣熱，但是韓國冷") },
+          { value: "美國大，但是台灣小", answer: word("미국은 큽니다. 그렇지만 대만은 작습니다", "mi-gug-eun keum-ni-da. geu-reo-chi-man dae-man-eun jak-seum-ni-da", "美國大，但是台灣小") },
+          { value: "排骨湯好吃，但是泡麵不好吃", answer: word("갈비탕은 맛있습니다. 그렇지만 라면은 맛없습니다", "gal-bi-tang-eun mat-it-seum-ni-da. geu-reo-chi-man ra-myeon-eun mat-eop-seum-ni-da", "排骨湯好吃，但是泡麵不好吃") },
+          { value: "韓語難，但是英語簡單", answer: word("한국어는 어렵습니다. 그렇지만 영어는 쉽습니다", "han-gu-geo-neun eo-ryeop-seum-ni-da. geu-reo-chi-man yeong-eo-neun swip-seum-ni-da", "韓語難，但是英語簡單") },
+          { value: "冠宇好，但是敏俊壞", answer: word("관우는 좋습니다. 그렇지만 민준은 나쁩니다", "gwan-u-neun jo-seum-ni-da. geu-reo-chi-man min-jun-eun na-ppeum-ni-da", "冠宇好，但是敏俊壞") },
+          { value: "辣炒年糕辣，但是雞排不辣", answer: word("떡볶이는 맵습니다. 그렇지만 찌파이는 안 맵습니다", "tteok-bok-i-neun maep-seum-ni-da. geu-reo-chi-man jji-pa-i-neun an maep-seum-ni-da", "辣炒年糕辣，但是雞排不辣") },
+          { value: "北部涼爽，但是南部熱", answer: word("북쪽은 시원합니다. 그렇지만 남쪽은 덥습니다", "buk-jjok-eun si-won-ham-ni-da. geu-reo-chi-man nam-jjok-eun deop-seum-ni-da", "北部涼爽，但是南部熱") },
+          { value: "男生多，但是女生少", answer: word("남자는 많습니다. 그렇지만 여자는 적습니다", "nam-ja-neun man-seum-ni-da. geu-reo-chi-man yeo-ja-neun jeok-seum-ni-da", "男生多，但是女生少") }
         ]
       }
     }
