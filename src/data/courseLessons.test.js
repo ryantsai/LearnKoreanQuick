@@ -17,7 +17,9 @@ describe("courseLessons", () => {
       "b1-3",
       "b1-4",
       "b1-5",
-      "b1-6"
+      "b1-6",
+      "b1-7",
+      "b1-8"
     ]);
 
     for (const lesson of courseLessons) {
@@ -108,5 +110,52 @@ describe("courseLessons", () => {
     expect(l4.guide.sections).toHaveLength(3);
     expect(l4.guide.sections.map((section) => section.words.length)).toEqual([7, 12, 12]);
     expect(l4.guide.practice.items.length).toBeGreaterThanOrEqual(6);
+  });
+
+  test("b1-8 preserves the -고 guide, source references, and open prompts", () => {
+    const b18 = courseLessons.find((lesson) => lesson.id === "b1-8");
+    expect(b18.dialogues).toHaveLength(4);
+    expect(b18.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([4, 4, 4, 4]);
+    expect(b18.vocabulary).toHaveLength(18);
+    assertGuide(b18.guide);
+    expect(b18.guide.practice.prompts).toHaveLength(9);
+    expect(b18.guide.sourceNotes).toHaveLength(1);
+    expect(b18.guide.references).toHaveLength(1);
+    expect(b18.guide.references[0].entries).toHaveLength(4);
+
+    const words = [
+      ...b18.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((lineItem) => lineItem.tokens)),
+      ...b18.vocabulary,
+      ...b18.guide.sections.flatMap((section) => section.words),
+      ...b18.guide.practice.items.map((item) => item.answer)
+    ];
+    for (const item of words) {
+      expect(item.roman.split("-").filter(Boolean)).toHaveLength([...item.text].length);
+    }
+  });
+
+  test("b1-7 preserves the 장소 dialogue, fixed examples, open prompts, and PDF appendices", () => {
+    const b17 = courseLessons.find((lesson) => lesson.id === "b1-7");
+    expect(b17.sourcePdf).toBe("docs/lessons/new/0804.pdf");
+    expect(b17.dialogues).toHaveLength(1);
+    expect(b17.dialogues[0].lines).toHaveLength(5);
+    expect(b17.vocabulary).toHaveLength(12);
+    assertGuide(b17.guide);
+    expect(b17.guide.practice.items).toHaveLength(9);
+    expect(b17.guide.practice.prompts).toHaveLength(6);
+    expect(b17.guide.sourceNotes).toHaveLength(6);
+    expect(b17.guide.references).toHaveLength(2);
+    expect(b17.guide.references[0].entries).toHaveLength(5);
+    expect(b17.guide.references[1].entries).toHaveLength(5);
+
+    const words = [
+      ...b17.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((lineItem) => lineItem.tokens)),
+      ...b17.vocabulary,
+      ...b17.guide.sections.flatMap((section) => section.words),
+      ...b17.guide.practice.items.map((item) => item.answer)
+    ];
+    for (const item of words) {
+      expect(item.roman.split("-").filter(Boolean)).toHaveLength([...item.text].length);
+    }
   });
 });

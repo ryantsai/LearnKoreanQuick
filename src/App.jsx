@@ -766,7 +766,42 @@ function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, 
             </button>
           ))}
         </div>
+        {guide.practice.prompts?.length ? (
+          <div className="course-guide-prompts">
+            <h3 className="course-guide-subheading">開放式口說練習</h3>
+            <p className="course-numbers-hint">教材以留白呈現的題目保留原樣；請自行組織回答。</p>
+            {guide.practice.prompts.map((prompt, promptIndex) => (
+              <article className="course-guide-prompt" key={`${prompt.page ?? "prompt"}-${promptIndex}`}>
+                <span className="course-guide-prompt-page">{prompt.page}</span>
+                <strong>{prompt.ko}</strong>
+                <p>{prompt.zh}</p>
+                {prompt.pattern ? <em>{prompt.pattern}</em> : null}
+              </article>
+            ))}
+          </div>
+        ) : null}
       </section>
+
+      {guide.sourceNotes?.map((section, sectionIndex) => (
+        <section className="course-vocab-card course-guide-source-notes" key={`${section.heading}-${sectionIndex}`}>
+          <h2>{section.heading}</h2>
+          {section.lines.map((sourceLine, lineIndex) => (
+            <p key={`${sectionIndex}-${lineIndex}`}>{sourceLine}</p>
+          ))}
+        </section>
+      ))}
+
+      {guide.references?.map((section, sectionIndex) => (
+        <section className="course-vocab-card course-guide-source-notes" key={`${section.heading}-${sectionIndex}`}>
+          <h2>{section.heading}</h2>
+          {section.entries.map((entry, entryIndex) => (
+            <p key={`${sectionIndex}-${entryIndex}`}>
+              {entry.label ? <strong>{entry.label}：</strong> : null}
+              <span>{entry.text}</span>
+            </p>
+          ))}
+        </section>
+      ))}
     </>
   );
 }

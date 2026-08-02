@@ -343,6 +343,86 @@ const b16 = [
   word("맵습니다", "maep-seum-ni-da", "辣")
 ];
 
+const b17 = [
+  // 本課對話（第 11 頁）
+  word("민준", "min-jun", "敏俊（人名）"),
+  word("씨", "ssi", "先生／小姐（禮貌稱呼）"),
+  word("오늘", "o-neul", "今天"),
+  word("시간이", "si-gan-i", "時間（主語）"),
+  word("있습니까", "it-seum-ni-kka", "有嗎？／有時間嗎？"),
+  word("오후에는", "o-hu-e-neun", "下午（主題）"),
+  word("괜찮습니다", "gwaen-chan-seum-ni-da", "可以／沒關係"),
+  word("무슨", "mu-seun", "什麼（後接名詞）"),
+  word("일이", "il-i", "事情（主語）"),
+  word("같이", "ga-chi", "一起（發音「가치」）"),
+  word("운동합니까", "un-dong-ham-ni-kka", "運動嗎？"),
+  word("네", "ne", "是／好的"),
+  word("그런데", "geu-reon-de", "可是／不過"),
+  word("어디에서", "eo-di-e-seo", "在哪裡"),
+  word("공원에서", "gong-won-e-seo", "在公園"),
+  word("운동합니다", "un-dong-ham-ni-da", "運動"),
+
+  // 相關單字照片（第 8、9 頁）
+  word("비행기를 타다", "bi-haeng-gi-reul- -ta-da", "搭飛機"),
+  word("배를 타다", "bae-reul- -ta-da", "搭船"),
+  word("기차를 타다", "gi-cha-reul- -ta-da", "搭火車"),
+  word("지하철을 타다", "ji-ha-cheol-eul- -ta-da", "搭地鐵"),
+  word("버스를 타다", "beo-seu-reul- -ta-da", "搭公車"),
+  word("주차를 하다", "ju-cha-reul- -ha-da", "停車"),
+  word("게임을 하다", "ge-im-eul- -ha-da", "打電玩"),
+  word("노래를 하다", "no-rae-reul- -ha-da", "唱歌"),
+  word("찜질을 하다", "jjim-jil-eul- -ha-da", "汗蒸／熱療"),
+  word("영화를 보다", "yeong-hwa-reul- -bo-da", "看電影"),
+  word("커피를 마시다", "keo-pi-reul- -ma-si-da", "喝咖啡"),
+  word("차를 마시다", "cha-reul- -ma-si-da", "喝茶")
+];
+
+const b18 = [
+  // Main dialogue vocabulary (page 11)
+  word("관우", "gwan-u", "冠宇（人名）"),
+  word("씨", "ssi", "先生／小姐（禮貌稱呼）"),
+  word("운동하고", "un-dong-ha-go", "運動後／運動並且"),
+  word("집에서", "ji-be-seo", "在家"),
+  word("저녁을", "jeo-nyeo-geul", "晚餐（受詞）"),
+  word("먹습니까", "meok-seum-ni-kka", "吃嗎？"),
+  word("아니요", "a-ni-yo", "不／不是"),
+  word("백화점에서", "baek-hwa-jeom-e-seo", "在百貨公司"),
+  word("먹습니다", "meok-seum-ni-da", "吃"),
+  word("먹고", "meok-go", "吃了之後／吃並且"),
+  word("바로", "ba-ro", "直接"),
+  word("집에", "ji-be", "到家／回家"),
+  word("갑니까", "gap-ni-kka", "去嗎？"),
+  word("밥을", "ba-beul", "飯（受詞）"),
+  word("커피숍에서", "keo-pi-syop-e-seo", "在咖啡店"),
+  word("커피를", "keo-pi-reul", "咖啡（受詞）"),
+  word("마십니다", "ma-sim-ni-da", "喝"),
+  word("영화를", "yeong-hwa-reul", "電影（受詞）"),
+  word("봅니까", "bom-ni-kka", "看嗎？"),
+  word("샤워하고", "sya-wo-ha-go", "洗澡後／洗澡並且"),
+  word("운동합니까", "un-dong-ham-ni-kka", "運動嗎？"),
+
+  // -(으)고 examples and the page 9 verb-order table
+  word("밥을 먹다", "ba-beul- -meok-da", "吃飯"),
+  word("커피를 마시다", "keo-pi-reul- -ma-si-da", "喝咖啡"),
+  word("공부하다", "gong-bu-ha-da", "念書"),
+  word("텔레비전을 보다", "tel-le-bi-jeon-eul- -bo-da", "看電視"),
+  word("운동하다", "un-dong-ha-da", "運動"),
+  word("샤워하다", "sya-wo-ha-da", "洗澡"),
+  word("아침을 먹다", "a-chim-eul- -meok-da", "吃早餐"),
+  word("회사에 가다", "hoe-sa-e- -ga-da", "去公司"),
+  word("세수하다", "se-su-ha-da", "洗臉"),
+  word("이를 닦다", "i-reul- -ttak-da", "刷牙"),
+  word("바지를 입다", "ba-ji-reul- -ip-da", "穿褲"),
+  word("양말을 신다", "yang-mal-eul- -sin-da", "穿襪"),
+  word("국물을 먹다", "guk-mul-eul- -meok-da", "喝湯"),
+  word("숙제를 하다", "suk-je-reul- -ha-da", "做作業"),
+  word("물을 마시다", "mul-eul- -ma-si-da", "喝水"),
+  word("차를 사다", "cha-reul- -sa-da", "買車"),
+  word("집을 사다", "jib-eul- -sa-da", "買房"),
+  word("저녁을 먹다", "jeo-nyeok-eul- -meok-da", "吃晚餐"),
+  word("영화를 보다", "yeong-hwa-reul- -bo-da", "看電影")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -1272,6 +1352,374 @@ export const courseLessons = [
           { value: "男生多，但是女生少", answer: word("남자는 많습니다. 그렇지만 여자는 적습니다", "nam-ja-neun man-seum-ni-da. geu-reo-chi-man yeo-ja-neun jeok-seum-ni-da", "男生多，但是女生少") }
         ]
       }
+    }
+  },
+  {
+    id: "b1-7",
+    label: "初級1-7",
+    titleKo: "공원에서 운동합니다.",
+    titleZh: "在公園運動。",
+    theme: "場所助詞 에서 與場所相關動詞",
+    sourcePdf: "docs/lessons/new/0804.pdf",
+    media: {
+      hero: courseAsset("b1-7-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-7-dialogue-person"),
+        objectImage: courseAsset("b1-7-dialogue-object"),
+        lines: [
+          line("관우", "민준 씨, 오늘 시간이 있습니까?", "敏俊先生，今天有時間嗎？", [b17[0], b17[1], b17[2], b17[3], b17[4]]),
+          line("민준", "오후에는 괜찮습니다. 무슨 일이 있습니까?", "下午可以。有什麼事嗎？", [b17[5], b17[6], b17[7], b17[8], b17[4]]),
+          line("관우", "같이 운동합니까?", "一起運動嗎？", [b17[9], b17[10]]),
+          line("민준", "네. 그런데 어디에서 운동합니까?", "是。不過，要在哪裡運動呢？", [b17[11], b17[12], b17[13], b17[10]]),
+          line("관우", "공원에서 운동합니다.", "在公園運動。", [b17[14], b17[15]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-7", [
+      b17[16], b17[17], b17[18], b17[19], b17[20], b17[21],
+      b17[22], b17[23], b17[24], b17[25], b17[26], b17[27]
+    ]),
+    guide: {
+      label: "句型與附錄",
+      title: "「~에서」動作場所與「名詞 + 하다」",
+      hint: "點擊任一單字即可聽發音，並查看拼音與音節拆解；來源頁面的說明、留白題與附錄均保留。",
+      sections: [
+        {
+          heading: "場所助詞 ~에서（第 3-4 頁）",
+          words: [
+            word("에서", "e-seo", "表示動作場所的助詞；中文通常翻譯為「在～做～」"),
+            word("학교에서", "hak-gyo-e-seo", "在學校"),
+            word("공부하다", "gong-bu-ha-da", "念書"),
+            word("식당에서", "sik-dang-e-seo", "在餐廳"),
+            word("먹다", "meok-da", "吃"),
+            word("호텔에서", "ho-tel-e-seo", "在飯店"),
+            word("자다", "ja-da", "睡覺"),
+            word("도서관", "do-seo-gwan", "圖書館"),
+            word("쉬다", "swi-da", "休息")
+          ]
+        },
+        {
+          heading: "~에서 ~을/를 動詞（第 5-7 頁）",
+          words: [
+            word("집에서", "jip-e-seo", "在家"),
+            word("라면을", "ra-myeon-eul", "拉麵（受詞）"),
+            word("백화점에서", "baek-hwa-jeom-e-seo", "在百貨公司"),
+            word("옷을", "o-seul", "衣服（受詞）"),
+            word("텔레비전을", "tel-le-bi-jeon-eul", "電視（受詞）"),
+            word("밥을", "ba-beul", "飯（受詞）"),
+            word("영어를", "yeong-eo-reul", "英語（受詞）"),
+            word("배우다", "bae-u-da", "學習"),
+            word("사진을", "sa-jin-eul", "照片（受詞）"),
+            word("찍다", "jjik-da", "拍攝")
+          ]
+        },
+        {
+          heading: "場所與相關動詞（第 8-10 頁）",
+          words: [
+            word("공항", "gong-hang", "機場"),
+            word("선착장", "seon-chak-jang", "碼頭"),
+            word("기차역", "gi-cha-yeok", "火車站"),
+            word("지하철역", "ji-ha-cheol-yeok", "地鐵站"),
+            word("버스 정류장", "beo-seu- -jeong-nyu-jang", "公車站"),
+            word("주차장", "ju-cha-jang", "停車場"),
+            word("PC방", "P-C-bang", "網咖"),
+            word("노래방", "no-rae-bang", "KTV"),
+            word("찜질방", "jjim-jil-bang", "汗蒸幕"),
+            word("DVD방", "D-V-D-bang", "電影院（DVD 房）"),
+            word("커피숍", "keo-pi-syop", "咖啡廳"),
+            word("찻집", "chat-jip", "茶店")
+          ]
+        },
+        {
+          heading: "名詞 + 하다（第 13-14 頁）",
+          words: [
+            word("운동", "un-dong", "運動（名詞）"),
+            word("운동하다", "un-dong-ha-da", "運動（動詞）"),
+            word("노래", "no-rae", "歌曲（名詞）"),
+            word("노래하다", "no-rae-ha-da", "唱歌（動詞）"),
+            word("복습", "bok-seup", "複習（名詞）"),
+            word("복습하다", "bok-seup-ha-da", "複習（動詞）"),
+            word("하다", "ha-da", "做；加在部分名詞後形成動詞")
+          ]
+        },
+        {
+          heading: "本課對話關鍵字（第 11-12 頁）",
+          words: [
+            b17[2], b17[5], b17[6], b17[7], b17[8], b17[9], b17[12], b17[13], b17[14], b17[15],
+            word("주말", "ju-mal", "週末")
+          ]
+        }
+      ],
+      practice: {
+        heading: "固定例句（第 3、5、6、15 頁）",
+        hint: "以下保留來源中已印出的例句；第 10、12 頁的開放式留白題顯示在下方，不替教材填入答案。",
+        valueSuffix: "",
+        items: [
+          { value: "在學校念書", answer: word("학교에서 공부합니다", "hak-gyo-e-seo- -gong-bu-ham-ni-da", "在學校念書") },
+          { value: "在餐廳吃飯", answer: word("식당에서 먹습니다", "sik-dang-e-seo- -meok-seum-ni-da", "在餐廳吃飯") },
+          { value: "在飯店睡覺", answer: word("호텔에서 잡니다", "ho-tel-e-seo- -jam-ni-da", "在飯店睡覺") },
+          { value: "在家吃拉麵", answer: word("집에서 라면을 먹습니다", "jip-e-seo- -ra-myeon-eul- -meok-seum-ni-da", "在家吃拉麵") },
+          { value: "在百貨公司買衣服", answer: word("백화점에서 옷을 삽니다", "baek-hwa-jeom-e-seo- -o-seul- -sam-ni-da", "在百貨公司買衣服") },
+          { value: "在學校學英語", answer: word("학교에서 영어를 배웁니다", "hak-gyo-e-seo- -yeong-eo-reul- -bae-um-ni-da", "在學校學英語") },
+          { value: "在公園拍照嗎？", answer: word("공원에서 사진을 찍습니까", "gong-won-e-seo- -sa-jin-eul- -jjik-seum-ni-kka", "在公園拍照嗎？") },
+          { value: "在百貨公司買衣服嗎？", answer: word("백화점에서 옷을 삽니까", "baek-hwa-jeom-e-seo- -o-seul- -sam-ni-kka", "在百貨公司買衣服嗎？") },
+          { value: "在公園運動", answer: word("공원에서 운동합니다", "gong-won-e-seo- -un-dong-ham-ni-da", "在公園運動") }
+        ],
+        prompts: [
+          { page: "第 10 頁", ko: "어디에서 비행기를 탑니까?", zh: "你在哪裡搭飛機？" },
+          { page: "第 10 頁", ko: "커피숍에서 뭐 합니까?", zh: "在咖啡廳做什麼？" },
+          { page: "第 10 頁", ko: "노래방 ____________?", zh: "在 KTV ____________？（來源保留空格）" },
+          { page: "第 10 頁", ko: "DVD방 ____________?", zh: "在 DVD 房 ____________？（來源保留空格）" },
+          { page: "第 12 頁", ko: "어디에서 옷을 삽니까?", zh: "你在哪裡買衣服？（請以 B 的身分回答）" },
+          { page: "第 12 頁", ko: "주말에 뭐 합니까?", zh: "週末做什麼？（請以 B 的身分回答）", pattern: "回答格式：________에서 __________" }
+        ]
+      },
+      sourceNotes: [
+        {
+          heading: "來源逐頁筆記：第 1-2 頁",
+          lines: [
+            "第 1 頁｜초급 한국어 韓國語初級 1；공원에서 운동합니다.｜在公園運動。",
+            "第 2 頁｜本課學習目標：① 表達在哪裡做什麼。（使用 -에서 + 動詞） ② 搭配其他助詞，使用「~에서 ~을/를 動詞」的句型 ③ 與場所相關的動詞。"
+          ]
+        },
+        {
+          heading: "來源逐頁筆記：第 3-4 頁",
+          lines: [
+            "第 3 頁｜1-1 表達「在（哪裡）做（什麼）」；助詞：~에서。助詞「에서」最常被使用於代表「動作場所」，因此其後方絕大多數都接動詞；中文翻譯成「在～做～」。",
+            "第 3 頁例句｜학교에서 공부합니다.／식당에서 먹습니다.／호텔에서 잡니다.；單字：공부하다 念書。",
+            "第 4 頁｜1-2 練習：試著表達在哪裡做什麼；場所：집、식당、호텔、도서관；動詞：자다、먹다、공부하다、쉬다；單字：도서관 圖書館。"
+          ]
+        },
+        {
+          heading: "來源逐頁筆記：第 5-7 頁",
+          lines: [
+            "第 5 頁｜2-1 使用「~에서 ~을/를 動詞」句型（1）：除了「학교에서 공부합니다.」，絕大多數句子都有明確的目的語，也就是做什麼（東西）。",
+            "第 5 頁例句｜식당에서 라면을 먹습니다.／백화점에서 옷을 삽니다.／집에서 텔레비전을 봅니다.。",
+            "第 6 頁｜場所（在哪？）：집、학교、공원、백화점；目的語（什麼？）：밥、영어、사진、옷；動詞（動作）：먹다、배우다、찍다、사다。例句：집에서 밥을 먹습니다.／학교에서 영어를 배웁니다.／공원에서 사진을 찍습니까?／백화점에서 옷을 삽니까?",
+            "第 7 頁｜練習：試著詢問在哪做什麼（~에서 ~을/를 ~ㅂ니까/습니까?）；場所：야시장、대만、한국、백화점；目的語：가방、야식、한국어、콘서트；動詞：보다、배우다、사다、먹다；콘서트 演唱會。"
+          ]
+        },
+        {
+          heading: "來源逐頁筆記：第 8-9 頁",
+          lines: [
+            "第 8 頁｜3-1 搭配之前學過的場所，學一些相關動詞（1）：공항 機場／선착장 碼頭／기차역 火車站；비행기를 타다 搭飛機／배를 타다 搭船／기차를 타다 搭火車。",
+            "第 8 頁下排｜지하철역 地鐵站／버스 정류장 公車站／주차장 停車場；지하철을 타다 搭地鐵／버스를 타다 搭公車／주차를 하다 停車。照片取自維基共享資源。",
+            "第 9 頁｜PC방 網咖／노래방 KTV／찜질방 汗蒸幕；게임을 하다 打電玩／노래를 하다 唱歌／찜질을 하다 熱療。",
+            "第 9 頁下排｜DVD방 電影院／커피숍 咖啡廳／찻집 茶店；영화(DVD)를 보다 看電影／커피를 마시다 喝咖啡／차를 마시다 喝茶。照片取自維基共享資源。"
+          ]
+        },
+        {
+          heading: "來源逐頁筆記：第 10-12 頁",
+          lines: [
+            "第 10 頁｜3-2 練習：利用剛剛學過的單字，試著造出句子；來源保留四組問句與回答空格，單字表為비행기를 타다、배를 타다、기차를 타다、지하철을 타다、버스를 타다、노래를 하다、영화를 보다、차를 마시다、주차를 하다、찜질을 하다、커피를 마시다、게임을 하다。",
+            "第 11 頁｜本課對話：관우、민준；對話翻譯見下方附錄。",
+            "第 12 頁｜換你說說看：您是 B，試著回答 A 的提問；어디에서 옷을 삽니까?／주말에 뭐 합니까?；單字：주말 週末。空格不填入答案。"
+          ]
+        },
+        {
+          heading: "來源逐頁筆記：第 13-16 頁",
+          lines: [
+            "第 13 頁｜韓語知識 - 名詞 + 하다（1）：韓語有一些動詞是透過「名詞 + 하다」產生；하다 本身意思為「做」，加在部分名詞後，與該名詞形成動詞時，通常意義轉為與該名詞相關的動作。例：운동（名詞：運動）+하다 → 운동하다（動詞：運動）；노래（名詞：歌曲）+하다 → 노래하다（動詞：唱歌）；복습（名詞：複習）+하다 → 복습하다（動詞：複習）。",
+            "第 14 頁｜因為這些動詞是「名詞 + 하다」而來，有時也可拆開成原來的型態；把名詞與하다拆開寫，名詞就變成動詞的目的語，因此後面可以再加上助詞을/를。例：운동하다 → 운동을 하다；노래하다 → 노래를 하다；복습하다 → 복습을 하다。",
+            "第 15 頁｜重點整理：表達在哪裡所做什麼（使用 -에서 + 動詞）；搭配其他助詞，使用「~에서 ~을/를 動詞」的句型；與場所相關的動詞。例：학교에서 공부합니다.／집에서 밥을 먹습니다.；공항에서 비행기를 타다／선착장에서 배를 타다／기차역에서 기차를 타다。",
+            "第 16 頁｜課程結束：수고하셨습니다.｜辛苦了。"
+          ]
+        }
+      ],
+      references: [
+        {
+          heading: "附錄：對話翻譯（第 17 頁）",
+          entries: [
+            { label: "冠宇", text: "敏俊先生，今天有時間嗎？" },
+            { label: "敏俊", text: "下午可以。有什麼事嗎？" },
+            { label: "冠宇", text: "一起運動嗎？" },
+            { label: "敏俊", text: "是，（然而）在哪裡運動呢？" },
+            { label: "冠宇", text: "在公園運動。" }
+          ]
+        },
+        {
+          heading: "附錄：照片來源與作者（第 18-20 頁）",
+          entries: [
+            { label: "地鐵站｜作者 Marcopolis", text: "來源：https://commons.wikimedia.org/wiki/File:Seoul_Station_(Seoul_metro)_002.jpg" },
+            { label: "公車站｜作者 Aranaraaya", text: "來源：https://zh.wikipedia.org/wiki/File:Re20140723_063759.jpg" },
+            { label: "停車場｜作者 최광모", text: "來源：https://zh.wikipedia.org/wiki/File:2014%EB%85%84_9%EC%9B%94_6%EC%9D%BC_%EA%B3%BC%EC%B2%9C%EC%8B%9C_%EC%A3%BC%EA%B3%B82%EB%8B%A8%EC%A7%80%EB%B3%B5%ED%95%A9%EC%83%81%EA%B0%8006.jpg" },
+            { label: "網咖｜作者 Ss이준 (lhj8396)", text: "來源：https://zh.wikipedia.org/wiki/File:World_of_Tanks_PC_bang_LAN_party_Bunker_Rush_Season_2_in_Antinora_%26_Flying_Cat_2.jpg" },
+            { label: "汗蒸幕｜作者 WhiteNight7", text: "來源：https://commons.wikimedia.org/wiki/File:jimjilbang-room.jpg" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    id: "b1-8",
+    label: "初級1-8",
+    titleKo: "밥을 먹고 커피숍에서 커피를 마십니다.",
+    titleZh: "吃完飯後在咖啡店喝咖啡。",
+    theme: "連結語尾 -고 的先後順序",
+    sourcePdf: "docs/lessons/new/0806.pdf",
+    media: {
+      hero: courseAsset("b1-8-dialogue-person")
+    },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-8-dialogue-person"),
+        objectImage: courseAsset("b1-8-dialogue-object"),
+        lines: [
+          line("민준", "관우 씨, 운동하고 집에서 저녁을 먹습니까?", "敏俊：冠宇先生，運動後在家吃晚餐嗎？", [b18[0], b18[1], b18[2], b18[3], b18[4], b18[5]]),
+          line("관우", "아니요, 백화점에서 저녁을 먹습니다.", "冠宇：不，在百貨公司吃晚餐。", [b18[6], b18[7], b18[4], b18[8]]),
+          line("민준", "저녁을 먹고 바로 집에 갑니까?", "敏俊：吃完晚餐後直接回家嗎？", [b18[4], b18[9], b18[10], b18[11], b18[12]]),
+          line("관우", "아니요, 밥을 먹고 커피숍에서 커피를 마십니다.", "冠宇：不，吃完飯後在咖啡店喝咖啡。", [b18[6], b18[13], b18[9], b18[14], b18[15], b18[16]])
+        ]
+      },
+      {
+        title: "句型練習（保留空格）",
+        image: courseAsset("b1-8-practice-visual"),
+        objectImage: courseAsset("b1-8-practice-visual"),
+        lines: [
+          line("提示", "밥을 먹다 + 커피를 마시다 → ______", "請用 -고 連成完整句子（來源頁面保留空格）。", [b18[21], b18[22]]),
+          line("提示", "공부하다 + 텔레비전을 보다 → ______", "請用 -고 連成完整句子（來源頁面保留空格）。", [b18[23], b18[24]]),
+          line("提示", "운동하다 + 샤워하다 → ______", "請用 -고 連成完整句子（來源頁面保留空格）。", [b18[25], b18[26]]),
+          line("提示", "아침을 먹다 + 회사에 가다 → ______", "請用 -고 連成完整句子（來源頁面保留空格）。", [b18[27], b18[28]])
+        ]
+      },
+      {
+        title: "順序練習（保留空格）",
+        image: courseAsset("b1-8-practice-person"),
+        objectImage: courseAsset("b1-8-practice-visual"),
+        lines: [
+          line("示例", "세수하다 / 이를 닦다 → 세수하고 이를 닦습니다. / 이를 닦고 세수합니다.", "示例：先洗臉再刷牙，或先刷牙再洗臉。", [b18[29], b18[30]]),
+          line("提示", "바지를 입다 / 양말을 신다 → ______ / ______", "請說出先後順序；來源頁面保留兩個空格。", [b18[31], b18[32]]),
+          line("提示", "국물을 먹다 / 밥을 먹다 → ______ / ______", "請說出先後順序；來源頁面保留兩個空格。", [b18[33], b18[21]]),
+          line("提示", "숙제를 하다 / 텔레비전을 보다 → ______ / ______", "請說出先後順序；來源頁面保留兩個空格。", [b18[34], b18[24]])
+        ]
+      },
+      {
+        title: "換你說看看（B 的空格）",
+        image: courseAsset("b1-8-practice-person"),
+        objectImage: courseAsset("b1-8-practice-person"),
+        lines: [
+          line("A", "저녁을 먹고 영화를 봅니까?", "吃完晚餐後看電影嗎？", [b18[4], b18[9], b18[17], b18[18]]),
+          line("B", "아니요, ______", "不，請自行填寫回答（來源頁面空白）。", [b18[6]]),
+          line("A", "샤워하고 운동합니까?", "洗澡後運動嗎？", [b18[19], b18[20]]),
+          line("B", "아니요, ______", "不，請自行填寫回答（來源頁面空白）。", [b18[6]])
+        ]
+      }
+    ],
+    vocabulary: withVocabImages("b1-8", [
+      b18[29], b18[31], b18[33], b18[34], b18[25], b18[27], b18[36], b18[38],
+      b18[30], b18[32], b18[21], b18[24], b18[35], b18[28], b18[37], b18[39],
+      b18[26], b18[10]
+    ]),
+    guide: {
+      label: "句型與翻譯",
+      title: "連結語尾 -고：先後動作",
+      hint: "點擊任一單字即可聽發音，查看拼音與音節拆解；中文說明與附錄翻譯均依來源頁面保留。",
+      sections: [
+        {
+          heading: "學習目標（頁 2）",
+          words: [
+            word("목표", "mok-pyo", "① 表達先做什麼之後，再做什麼。(-고)；② 具有先後性的動詞。")
+          ]
+        },
+        {
+          heading: "連結語尾 -고（頁 3）",
+          words: [
+            word("연결어미", "yeon-gyeol-eo-mi", "連結語尾；-고 可表動作順序，也可表示同時具有兩種狀態。"),
+            word("고", "go", "本課的 -고 表示動作先後順序。"),
+            word("조사", "jo-sa", "助詞主要加在名詞後方（少部分加在助詞、副詞與語尾等）。"),
+            word("어미", "eo-mi", "語尾主要加在動詞與形容詞後方（少部分加在語尾後）。")
+          ]
+        },
+        {
+          heading: "使用規則（頁 4、7）",
+          words: [
+            word("동사", "dong-sa", "表先後時必須加在動詞後方；形容詞通常沒有先後關係。"),
+            word("어간", "eo-gan", "-고 接於詞幹之後；使用時直接去除動詞原型的 다 即可添加。"),
+            word("주어", "ju-eo", "表先後時，前後動作的主語通常都是同一人。"),
+            word("순서", "sun-seo", "前後內容對調，動作順序也會改變。")
+          ]
+        },
+        {
+          heading: "先後動作詞組（頁 6、9）",
+          words: [
+            b18[21], b18[22], b18[23], b18[24], b18[25], b18[26], b18[27], b18[28],
+            b18[29], b18[30], b18[31], b18[32], b18[33], b18[34], b18[35], b18[36], b18[37], b18[38], b18[39]
+          ]
+        },
+        {
+          heading: "附錄：對話翻譯（頁 15）",
+          words: [
+            word("민준①", "min-jun-1", "敏俊：冠宇先生，運動之後回家吃晚餐嗎？"),
+            word("관우①", "gwan-u-1", "冠宇：不，在百貨公司吃晚餐。"),
+            word("민준②", "min-jun-2", "敏俊：吃完晚餐後直接回家嗎？"),
+            word("관우②", "gwan-u-2", "冠宇：不，吃完飯後在咖啡廳喝咖啡。")
+          ]
+        },
+        {
+          heading: "重點整理（頁 13）",
+          words: [
+            word("정리", "jeong-ri", "學會表達先做後做：밥을 먹고 커피를 마십니다；공부하고 텔레비전을 봅니다。"),
+            word("복습", "bok-seup", "具有先後性的動詞：숙제를 하다／텔레비전을 보다；세수하다／이를 닦다。")
+          ]
+        },
+        {
+          heading: "課程結束（頁 14）",
+          words: [
+            word("수고하셨습니다", "su-go-ha-syeot-seum-ni-da", "辛苦了。")
+          ]
+        }
+      ],
+      practice: {
+        heading: "固定例句（頁 5、6、7、10）",
+        hint: "以下是來源中有印出答案的例句；頁 8、10、12 的空格練習保留在對話分頁，未填入新答案。",
+        valueSuffix: "",
+        items: [
+          { value: "吃飯後喝咖啡", answer: word("밥을 먹고 커피를 마십니다.", "bab-eul- -meok-go- -keo-pi-reul- -ma-sim-ni-da-.", "吃飯後喝咖啡") },
+          { value: "念書後看電視", answer: word("공부하고 텔레비전을 봅니다.", "gong-bu-ha-go- -tel-le-bi-jeon-eul- -bom-ni-da-.", "念書後看電視") },
+          { value: "運動後洗澡", answer: word("운동하고 샤워합니다.", "un-dong-ha-go- -sya-wo-ham-ni-da-.", "運動後洗澡") },
+          { value: "吃早餐後去公司", answer: word("아침을 먹고 회사에 갑니다.", "a-chim-eul- -meok-go- -hoe-sa-e- -gam-ni-da-.", "吃早餐後去公司") },
+          { value: "先洗臉再刷牙", answer: word("세수하고 이를 닦습니다.", "se-su-ha-go- -i-reul- -ttak-seum-ni-da-.", "先洗臉再刷牙") },
+          { value: "先刷牙再洗臉", answer: word("이를 닦고 세수합니다.", "i-reul- -ttak-go- -se-su-ham-ni-da-.", "先刷牙再洗臉") },
+          { value: "喝咖啡後吃飯", answer: word("커피를 마시고 밥을 먹습니다.", "keo-pi-reul- -ma-si-go- -ba-beul- -meok-seum-ni-da-.", "喝咖啡後吃飯") },
+          { value: "看電視後念書", answer: word("텔레비전을 보고 공부합니다.", "tel-le-bi-jeon-eul- -bo-go- -gong-bu-ham-ni-da-.", "看電視後念書") }
+        ],
+        prompts: [
+          { page: "第 8 頁", ko: "밥을 먹다 + 커피를 마시다 → ______", zh: "請按照先後組成完整句子；來源頁面保留空格。", pattern: "-고" },
+          { page: "第 8 頁", ko: "공부하다 + 텔레비전을 보다 → ______", zh: "請按照先後組成完整句子；來源頁面保留空格。", pattern: "-고" },
+          { page: "第 8 頁", ko: "운동하다 + 샤워하다 → ______", zh: "請按照先後組成完整句子；來源頁面保留空格。", pattern: "-고" },
+          { page: "第 8 頁", ko: "아침을 먹다 + 회사에 가다 → ______", zh: "請按照先後組成完整句子；來源頁面保留空格。", pattern: "-고" },
+          { page: "第 10 頁", ko: "바지를 입다 / 양말을 신다 → ______ / ______", zh: "請說出先後順序；來源頁面保留兩個空格。", pattern: "-고" },
+          { page: "第 10 頁", ko: "국물을 먹다 / 밥을 먹다 → ______ / ______", zh: "請說出先後順序；來源頁面保留兩個空格。", pattern: "-고" },
+          { page: "第 10 頁", ko: "숙제를 하다 / 텔레비전을 보다 → ______ / ______", zh: "請說出先後順序；來源頁面保留兩個空格。", pattern: "-고" },
+          { page: "第 12 頁", ko: "A: 저녁을 먹고 영화를 봅니까?  B: 아니요, ______", zh: "您是 B，請自行回答 A 的問題；來源頁面沒有固定答案。", pattern: "-고" },
+          { page: "第 12 頁", ko: "A: 샤워하고 운동합니까?  B: 아니요, ______", zh: "您是 B，請自行回答 A 的問題；來源頁面沒有固定答案。", pattern: "-고" }
+        ]
+      },
+      sourceNotes: [
+        {
+          heading: "來源重點（第 3–7 頁）",
+          lines: [
+            "-고 可表示動作順序，也可表示同時具有兩種狀態；本課只學動作順序。",
+            "表先後時 -고 接在動詞後方，直接去掉動詞原型的 다；前後動作的主語通常是同一人。",
+            "前後內容對調，動作順序也會改變：밥을 먹고 커피를 마십니다 ↔ 커피를 마시고 밥을 먹습니다。"
+          ]
+        }
+      ],
+      references: [
+        {
+          heading: "附錄：對話翻譯（第 15 頁）",
+          entries: [
+            { label: "敏俊", text: "冠宇先生，運動之後回家吃晚餐嗎？" },
+            { label: "冠宇", text: "不，在百貨公司吃晚餐。" },
+            { label: "敏俊", text: "吃完晚餐後直接回家嗎？" },
+            { label: "冠宇", text: "不，吃完飯後在咖啡廳喝咖啡。" }
+          ]
+        }
+      ]
     }
   }
 ];
