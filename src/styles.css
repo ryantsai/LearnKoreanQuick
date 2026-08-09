@@ -1751,20 +1751,57 @@ p {
 
 .vocabulary-pronunciation-cases article > div {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
 
-.vocabulary-pronunciation-cases strong {
+.vocabulary-pronunciation-cases article > div:first-child > span {
+  display: grid;
+  gap: 3px;
+}
+
+.vocabulary-pronunciation-cases article > div:first-child strong {
   color: #0f766e;
   font-size: 13px;
 }
 
-.vocabulary-pronunciation-cases article span {
+.vocabulary-pronunciation-cases article small {
   color: #8a96a5;
   font-size: 10px;
-  text-align: right;
+  font-weight: 800;
+}
+
+.vocabulary-pronunciation-cases article > div:first-child > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 9px;
+  border-radius: 8px;
+  background: #dff7f1;
+  color: #0f766e;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.vocabulary-pronunciation-cases .pronunciation-transformation {
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  background: #ffffff;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+.pronunciation-transformation span,
+.pronunciation-transformation strong {
+  color: #1d2633;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.pronunciation-transformation b {
+  color: #f96f5d;
 }
 
 .vocabulary-pronunciation-cases article p {

@@ -871,7 +871,7 @@ function VocabularyLibrary({ words, selectedWord, onSelect, onOpenLesson }) {
         <div>
           <span className="lab-label">Vocabulary</span>
           <h1>全部單字</h1>
-          <p>涵蓋所有課程的對話、圖解單字與句型內容，共 {words.length} 筆。</p>
+          <p>只收錄所有課程中的獨立單字；片語與完整句子不列入，共 {words.length} 筆。</p>
         </div>
       </div>
       <div className="vocabulary-library-layout">
@@ -907,11 +907,19 @@ function VocabularyLibrary({ words, selectedWord, onSelect, onOpenLesson }) {
                 {activeWord.pronunciationCases.map((pronunciationCase) => (
                   <article key={pronunciationCase.label}>
                     <div>
-                      <strong>{pronunciationCase.label}</strong>
-                      <span>{pronunciationCase.condition}</span>
+                      <span>
+                        <strong>{pronunciationCase.label}</strong>
+                        <small>{pronunciationCase.condition}</small>
+                      </span>
+                      <button onClick={() => speakKorean(pronunciationCase.written)} aria-label={`播放 ${pronunciationCase.written}`}><Volume2 size={14} />聽</button>
+                    </div>
+                    <div className="pronunciation-transformation">
+                      <span>{pronunciationCase.written}</span>
+                      <b>→</b>
+                      <strong>[{pronunciationCase.pronounced}]</strong>
                     </div>
                     <p>{pronunciationCase.explanation}</p>
-                    <em>{pronunciationCase.example}</em>
+                    <em>跟讀：{pronunciationCase.drill}</em>
                   </article>
                 ))}
               </div>
