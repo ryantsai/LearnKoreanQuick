@@ -19,6 +19,10 @@ function withVocabImages(lessonId, words) {
   }));
 }
 
+function withSharedVocabImage(imageName, words) {
+  return words.map((item) => ({ ...item, image: courseAsset(imageName) }));
+}
+
 function line(speaker, ko, zh, tokens) {
   return { speaker, ko, zh, tokens };
 }
@@ -421,6 +425,41 @@ const b18 = [
   word("집을 사다", "jib-eul- -sa-da", "買房"),
   word("저녁을 먹다", "jeo-nyeok-eul- -meok-da", "吃晚餐"),
   word("영화를 보다", "yeong-hwa-reul- -bo-da", "看電影")
+];
+
+const b19 = [
+  word("민준", "min-jun", "敏俊（人名）"),
+  word("씨", "ssi", "先生／小姐（禮貌稱呼）"),
+  word("땀이", "ttam-i", "汗（主語）"),
+  word("납니다", "nam-ni-da", "流出／冒出"),
+  word("덥습니까", "deop-seum-ni-kka", "熱嗎？"),
+  word("요즘", "yo-jeum", "最近"),
+  word("왜", "wae", "為什麼"),
+  word("이렇게", "i-reo-ke", "這麼／如此"),
+  word("원래", "wol-lae", "本來／原本"),
+  word("대만이", "dae-man-i", "台灣（主語）"),
+  word("습하고", "seu-pa-go", "潮濕而且…"),
+  word("덥습니다", "deop-seum-ni-da", "很熱"),
+  word("그렇습니까", "geu-reo-seum-ni-kka", "是這樣嗎？"),
+  word("한국은", "han-gu-geun", "韓國（主題）"),
+  word("건조하고", "geon-jo-ha-go", "乾燥而且…"),
+  word("춥습니다", "chup-seum-ni-da", "很冷")
+];
+
+const b110 = [
+  word("같이", "ga-chi", "一起"),
+  word("운동을", "un-dong-eul", "運動（受詞）"),
+  word("합니까", "ham-ni-kka", "做嗎？"),
+  word("다음에", "da-eum-e", "下次"),
+  word("합시다", "hap-si-da", "一起做吧"),
+  word("오늘", "o-neul", "今天"),
+  word("안", "an", "不／不要（意志否定）"),
+  word("아니요", "a-ni-yo", "不／不是"),
+  word("못", "mot", "不能／無法（能力否定）"),
+  word("합니다", "ham-ni-da", "做"),
+  word("지금", "ji-geum", "現在"),
+  word("발이", "ba-ri", "腳（主語）"),
+  word("아픕니다", "a-peum-ni-da", "疼痛／不舒服")
 ];
 
 export const courseLessons = [
@@ -1720,6 +1759,141 @@ export const courseLessons = [
           ]
         }
       ]
+    }
+  },
+  {
+    id: "b1-9",
+    label: "初級1-9",
+    titleKo: "대만이 습하고 덥습니다.",
+    titleZh: "台灣潮濕又炎熱。",
+    theme: "用 -고 並列狀態與動作",
+    sourcePdf: "docs/lessons/new/0811.pdf",
+    media: { hero: courseAsset("b1-9-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-9-dialogue-person"),
+        objectImage: courseAsset("b1-9-dialogue-object"),
+        lines: [
+          line("관우", "민준 씨, 땀이 납니다. 덥습니까?", "敏俊先生，你流汗了。很熱嗎？", [b19[0], b19[1], b19[2], b19[3], b19[4]]),
+          line("민준", "네, 요즘 왜 이렇게 덥습니까?", "是啊，最近為什麼這麼熱？", [word("네", "ne", "是／好的"), b19[5], b19[6], b19[7], b19[4]]),
+          line("관우", "원래 이렇게 덥습니다. 대만이 습하고 덥습니다.", "本來就這麼熱。台灣潮濕又炎熱。", [b19[8], b19[7], b19[11], b19[9], b19[10], b19[11]]),
+          line("민준", "그렇습니까? 한국은 건조하고 춥습니다.", "是這樣嗎？韓國乾燥又寒冷。", [b19[12], b19[13], b19[14], b19[15]])
+        ]
+      },
+      {
+        title: "換你說看看",
+        image: courseAsset("b1-9-practice-person"),
+        objectImage: courseAsset("b1-9-practice-visual"),
+        lines: [
+          line("A", "대만 날씨가 어떻습니까?", "台灣天氣如何？", [word("대만", "dae-man", "台灣"), word("날씨가", "nal-ssi-ga", "天氣（主語）"), word("어떻습니까", "eo-tteo-seum-ni-kka", "如何？")]),
+          line("B", "대만이 습하고 덥습니다.", "台灣潮濕又炎熱。", [b19[9], b19[10], b19[11]]),
+          line("A", "요즘 뭐 합니까?", "最近做什麼？", [b19[5], word("뭐", "mwo", "什麼"), word("합니까", "ham-ni-kka", "做嗎？")]),
+          line("B", "요즘 한국어를 배우고 한국 음악을 듣습니다.", "最近學韓語，也聽韓國音樂。", [b19[5], word("한국어를", "han-gu-geo-reul", "韓語（受詞）"), word("배우고", "bae-u-go", "學習並且…"), word("한국", "han-guk", "韓國"), word("음악을", "eu-ma-geul", "音樂（受詞）"), word("듣습니다", "deut-seum-ni-da", "聽")])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-9-vocab-page", [
+      word("싸다", "ssa-da", "便宜"),
+      word("품질이 좋다", "pum-ji-ri- -jo-ta", "品質好"),
+      word("피곤하다", "pi-gon-ha-da", "疲倦"),
+      word("배가 고프다", "bae-ga- -go-peu-da", "肚子餓"),
+      word("달다", "dal-da", "甜"),
+      word("맛있다", "ma-sit-da", "好吃"),
+      word("쓰다", "sseu-da", "苦"),
+      word("맛없다", "ma-deop-da", "不好吃"),
+      word("습하다", "seu-pa-da", "潮濕"),
+      word("덥다", "deop-da", "熱"),
+      word("건조하다", "geon-jo-ha-da", "乾燥"),
+      word("춥다", "chup-da", "冷")
+    ]),
+    guide: {
+      label: "句型與翻譯",
+      title: "連結語尾 -고：並列兩種狀態或動作",
+      hint: "這一課的 -고 不強調先後，而是把同時成立的描述並列起來。",
+      sections: [
+        { heading: "狀態並列", words: [word("좋고 예쁩니다", "jot-go- -ye-ppeum-ni-da", "又好又漂亮"), word("습하고 덥습니다", "seu-pa-go- -deop-seum-ni-da", "又潮濕又熱"), word("어둡고 더럽습니다", "eo-dup-go- -deo-reop-seum-ni-da", "又暗又髒")] },
+        { heading: "動作並列", words: [word("음악을 듣고 책을 봅니다", "eu-ma-geul- -deut-go- -chae-geul- -bom-ni-da", "聽音樂也看書"), word("한국어를 배우고 음악을 듣습니다", "han-gu-geo-reul- -bae-u-go- -eu-ma-geul- -deut-seum-ni-da", "學韓語也聽音樂")] }
+      ],
+      practice: {
+        heading: "固定例句",
+        hint: "點擊例句可聽發音，並比較前後調換後語意仍相同的用法。",
+        valueSuffix: "",
+        items: [
+          { value: "房間又亮又乾淨", answer: word("방이 밝고 깨끗합니다", "bang-i- -bal-go- -kkae-kkeu-tam-ni-da", "房間又亮又乾淨") },
+          { value: "教室又暗又髒", answer: word("교실이 어둡고 더럽습니다", "gyo-si-ri- -eo-dup-go- -deo-reop-seum-ni-da", "教室又暗又髒") },
+          { value: "今天又冷又下雪", answer: word("오늘은 춥고 눈이 옵니다", "o-neu-reun- -chup-go- -nun-i- -om-ni-da", "今天又冷又下雪") }
+        ]
+      },
+      sourceNotes: [{ heading: "來源重點", lines: ["-고 接在詞幹後，直接去除原形的 다 再加 고。", "本課的 -고 表示並列；前後內容可以對調，基本語意不變。"] }]
+    }
+  },
+  {
+    id: "b1-10",
+    label: "初級1-10",
+    titleKo: "오늘 운동을 안 합니까?",
+    titleZh: "今天不運動嗎？",
+    theme: "안 與 못 的短形否定",
+    sourcePdf: "docs/lessons/new/0813.pdf",
+    media: { hero: courseAsset("b1-10-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-10-dialogue-person"),
+        objectImage: courseAsset("b1-10-dialogue-object"),
+        lines: [
+          line("민준", "같이 운동을 합니까?", "一起運動嗎？", [b110[0], b110[1], b110[2]]),
+          line("관우", "다음에 합시다.", "下次吧。", [b110[3], b110[4]]),
+          line("민준", "오늘 운동을 안 합니까?", "今天不運動嗎？", [b110[5], b110[1], b110[6], b110[2]]),
+          line("관우", "아니요. 운동을 못 합니다. 지금 발이 아픕니다.", "不，我沒辦法運動。現在腳痛。", [b110[7], b110[1], b110[8], b110[9], b110[10], b110[11], b110[12]])
+        ]
+      },
+      {
+        title: "換你說說看",
+        image: courseAsset("b1-10-practice-person"),
+        objectImage: courseAsset("b1-10-practice-visual"),
+        lines: [
+          line("A", "오늘 수영을 합니까?", "今天游泳嗎？", [b110[5], word("수영을", "su-yeong-eul", "游泳（受詞）"), b110[2]]),
+          line("B", "아니요, 오늘 수영을 안 합니다.", "不，今天不游泳。", [b110[7], b110[5], word("수영을", "su-yeong-eul", "游泳（受詞）"), b110[6], b110[9]]),
+          line("A", "태국 신문을 읽습니까?", "讀泰國報紙嗎？", [word("태국", "tae-guk", "泰國"), word("신문을", "sin-mu-neul", "報紙（受詞）"), word("읽습니까", "ik-seum-ni-kka", "讀嗎？")]),
+          line("B", "아니요, 태국 신문을 못 읽습니다.", "不，我沒辦法讀泰國報紙。", [b110[7], word("태국", "tae-guk", "泰國"), word("신문을", "sin-mu-neul", "報紙（受詞）"), b110[8], word("읽습니다", "ik-seum-ni-da", "閱讀")])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-10-vocab-page", [
+      word("안", "an", "不／不要；表示主觀意志否定"),
+      word("못", "mot", "不能／無法；表示能力或條件不允許"),
+      word("가다", "ga-da", "去"),
+      word("보다", "bo-da", "看"),
+      word("먹다", "meok-da", "吃"),
+      word("읽다", "ik-da", "讀"),
+      word("예쁘다", "ye-ppeu-da", "漂亮"),
+      word("공부하다", "gong-bu-ha-da", "念書／學習"),
+      word("운동하다", "un-dong-ha-da", "運動"),
+      word("노래하다", "no-rae-ha-da", "唱歌"),
+      word("다음에", "da-eum-e", "下次"),
+      word("아프다", "a-peu-da", "疼痛／不舒服")
+    ]),
+    guide: {
+      label: "否定表現",
+      title: "안（不做）與 못（做不到）",
+      hint: "안 表示意志上的不做；못 表示能力或條件上無法做到。하다 類動詞要把 안／못 放在 하다 前。",
+      sections: [
+        { heading: "意志否定：안", words: [word("안 갑니다", "an- -gam-ni-da", "不去"), word("안 봅니다", "an- -bom-ni-da", "不看"), word("공부 안 합니다", "gong-bu- -an- -ham-ni-da", "不念書")] },
+        { heading: "能力否定：못", words: [word("못 갑니다", "mot- -gam-ni-da", "不能去"), word("못 봅니다", "mot- -bom-ni-da", "不能看"), word("운동 못 합니다", "un-dong- -mot- -ham-ni-da", "不能運動")] }
+      ],
+      practice: {
+        heading: "固定例句",
+        hint: "比較說話者是選擇不做，還是因為能力或情況而做不到。",
+        valueSuffix: "",
+        items: [
+          { value: "今天不去學校", answer: word("오늘 학교에 안 갑니다", "o-neul- -hak-gyo-e- -an- -gam-ni-da", "今天不去學校") },
+          { value: "我不吃泡菜", answer: word("저는 김치를 안 먹습니다", "jeo-neun- -gim-chi-reul- -an- -meok-seum-ni-da", "我不吃泡菜") },
+          { value: "今天不能去公司", answer: word("오늘 회사에 못 갑니다", "o-neul- -hoe-sa-e- -mot- -gam-ni-da", "今天不能去公司") },
+          { value: "我不能讀日文書", answer: word("제가 일본어 책을 못 읽습니다", "je-ga- -il-bo-neo- -chae-geul- -mot- -ik-seum-ni-da", "我不能讀日文書") }
+        ]
+      },
+      sourceNotes: [{ heading: "來源重點", lines: ["短形否定直接放在一般動詞或形容詞前。", "공부하다、운동하다、노래하다 等 하다 類詞，把 안／못 放在 하다 前。"] }]
     }
   }
 ];

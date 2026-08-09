@@ -1,7 +1,8 @@
-import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Search, Volume2, X } from "lucide-react";
 import React from "react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { courseLessons } from "./data/courseLessons.js";
+import { buildVocabularyIndex } from "./data/vocabularyIndex.js";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import { novelData } from "./data/novelData.js";
@@ -19,6 +20,19 @@ export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
   const [activeCourseLessonId, setActiveCourseLessonId] = useState(null);
   const [activeNovelId, setActiveNovelId] = useState(null);
+  const [mainView, setMainView] = useState("lessons");
+  const [vocabularyQuery, setVocabularyQuery] = useState("");
+  const [selectedVocabulary, setSelectedVocabulary] = useState(null);
+  const allVocabulary = useMemo(() => buildVocabularyIndex(courseLessons), []);
+  const normalizedQuery = vocabularyQuery.trim().toLocaleLowerCase();
+  const filteredVocabulary = useMemo(() => {
+    if (!normalizedQuery) return allVocabulary;
+    return allVocabulary.filter((item) =>
+      [item.text, item.zh, item.roman].some((value) =>
+        value?.toLocaleLowerCase().includes(normalizedQuery)
+      )
+    );
+  }, [allVocabulary, normalizedQuery]);
 
   const activeLetterPage = activeLetterSymbol
     ? letterPages.find((page) => page.symbol === activeLetterSymbol)
@@ -45,6 +59,12 @@ export default function App() {
 
   function playSound(text) {
     speakKorean(text);
+  }
+
+  function selectVocabulary(item) {
+    setSelectedVocabulary(item);
+    setMainView("vocabulary");
+    setVocabularyQuery("");
   }
 
   if (activeNovel) {
@@ -89,17 +109,51 @@ export default function App() {
 
   return (
     <main className="app-shell">
-      <TtsSpeedControl />
-      <section className="learning-grid">
-        <JamoIndex
-          vowels={lessonData.vowels}
-          consonants={lessonData.consonants}
-          activeSymbol={activeLetterSymbol}
-          onPick={openLetterPage}
+      <header className="main-toolbar">
+        <div className="main-segmented-control" aria-label="主要內容" role="tablist">
+          <button className={mainView === "lessons" ? "is-active" : ""} onClick={() => setMainView("lessons")} role="tab" aria-selected={mainView === "lessons"}>Lessons</button>
+          <button className={mainView === "vocabulary" ? "is-active" : ""} onClick={() => setMainView("vocabulary")} role="tab" aria-selected={mainView === "vocabulary"}>單字</button>
+        </div>
+        <div className="main-toolbar-actions">
+          <div className="global-vocabulary-search">
+            <Search size={18} aria-hidden="true" />
+            <input
+              value={vocabularyQuery}
+              onChange={(event) => setVocabularyQuery(event.target.value)}
+              placeholder="搜尋中文或韓文"
+              aria-label="搜尋中文或韓文單字"
+            />
+            {vocabularyQuery ? <button onClick={() => setVocabularyQuery("")} aria-label="清除搜尋"><X size={16} /></button> : null}
+            {normalizedQuery ? (
+              <div className="global-search-results" role="listbox">
+                {filteredVocabulary.slice(0, 8).map((item) => (
+                  <button key={item.text} onClick={() => selectVocabulary(item)} role="option">
+                    <strong>{item.text}</strong>
+                    <span>{item.zh}</span>
+                  </button>
+                ))}
+                {!filteredVocabulary.length ? <p>找不到符合的單字</p> : null}
+              </div>
+            ) : null}
+          </div>
+          <TtsSpeedControl />
+        </div>
+      </header>
+
+      {mainView === "lessons" ? (
+        <section className="learning-grid">
+          <JamoIndex vowels={lessonData.vowels} consonants={lessonData.consonants} activeSymbol={activeLetterSymbol} onPick={openLetterPage} />
+          <CourseLessonListPanel lessons={courseLessons} onOpen={setActiveCourseLessonId} />
+          <NovelListPanel novels={novelData} onOpen={setActiveNovelId} />
+        </section>
+      ) : (
+        <VocabularyLibrary
+          words={filteredVocabulary}
+          selectedWord={selectedVocabulary}
+          onSelect={setSelectedVocabulary}
+          onOpenLesson={setActiveCourseLessonId}
         />
-        <CourseLessonListPanel lessons={courseLessons} onOpen={setActiveCourseLessonId} />
-        <NovelListPanel novels={novelData} onOpen={setActiveNovelId} />
-      </section>
+      )}
 
       {activeLetterPage ? (
         <LetterLearningPopup
@@ -803,6 +857,72 @@ function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, 
         </section>
       ))}
     </>
+  );
+}
+
+function VocabularyLibrary({ words, selectedWord, onSelect, onOpenLesson }) {
+  const activeWord = selectedWord && words.some((item) => item.text === selectedWord.text)
+    ? words.find((item) => item.text === selectedWord.text)
+    : words[0] ?? null;
+
+  return (
+    <section className="vocabulary-library" aria-label="全部單字">
+      <div className="vocabulary-library-heading">
+        <div>
+          <span className="lab-label">Vocabulary</span>
+          <h1>全部單字</h1>
+          <p>涵蓋所有課程的對話、圖解單字與句型內容，共 {words.length} 筆。</p>
+        </div>
+      </div>
+      <div className="vocabulary-library-layout">
+        <div className="vocabulary-master-list">
+          {words.map((item) => (
+            <button key={item.text} className={activeWord?.text === item.text ? "is-active" : ""} onClick={() => onSelect(item)}>
+              <span>
+                <strong>{item.text}</strong>
+                <em>{item.roman}</em>
+              </span>
+              <span>{item.zh}</span>
+              <small>{item.lessons.map((lesson) => lesson.label).join(" · ")}</small>
+            </button>
+          ))}
+          {!words.length ? <p className="vocabulary-empty">沒有符合搜尋條件的單字。</p> : null}
+        </div>
+        {activeWord ? (
+          <aside className="vocabulary-detail" aria-live="polite">
+            <div className="vocabulary-detail-title">
+              <div>
+                <span className="lab-label">Word detail</span>
+                <h2>{activeWord.text}</h2>
+                <p>{activeWord.roman}</p>
+              </div>
+              <button className="letter-sound-button" onClick={() => speakKorean(activeWord.text)}><Volume2 size={16} />發音</button>
+            </div>
+            <strong className="vocabulary-meaning">{activeWord.zh}</strong>
+            <p className="vocabulary-explanation">{activeWord.explanation}</p>
+            <div className="vocabulary-pronunciation-note">
+              <span>發音提示</span>
+              <p>{activeWord.pronunciationNote}</p>
+            </div>
+            <div className="vocabulary-examples">
+              <h3>不同語境例句</h3>
+              {activeWord.examples.map((example, index) => (
+                <article key={`${example.ko}-${index}`}>
+                  <span>{example.label}</span>
+                  <button onClick={() => speakKorean(example.ko)} aria-label={`播放例句 ${example.ko}`}><Volume2 size={15} /></button>
+                  <strong>{example.ko}</strong>
+                  <p>{example.zh}</p>
+                </article>
+              ))}
+            </div>
+            <div className="vocabulary-lesson-links">
+              <span>出現課程</span>
+              {activeWord.lessons.map((lesson) => <button key={lesson.id} onClick={() => onOpenLesson(lesson.id)}>{lesson.label}</button>)}
+            </div>
+          </aside>
+        ) : null}
+      </div>
+    </section>
   );
 }
 

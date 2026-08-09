@@ -4,7 +4,7 @@ import path from "node:path";
 import { courseLessons } from "./courseLessons.js";
 
 describe("courseLessons", () => {
-  test("contains the three PDF-backed lessons with dialogues and vocabulary", () => {
+  test("contains every PDF-backed lesson with dialogues and vocabulary", () => {
     expect(courseLessons.map((lesson) => lesson.id)).toEqual([
       "l2-1",
       "l2-2",
@@ -19,7 +19,9 @@ describe("courseLessons", () => {
       "b1-5",
       "b1-6",
       "b1-7",
-      "b1-8"
+      "b1-8",
+      "b1-9",
+      "b1-10"
     ]);
 
     for (const lesson of courseLessons) {
@@ -157,5 +159,20 @@ describe("courseLessons", () => {
     for (const item of words) {
       expect(item.roman.split("-").filter(Boolean)).toHaveLength([...item.text].length);
     }
+  });
+
+  test("adds the 0811 and 0813 lessons with their printed grammar focus", () => {
+    const b19 = courseLessons.find((lesson) => lesson.id === "b1-9");
+    const b110 = courseLessons.find((lesson) => lesson.id === "b1-10");
+
+    expect(b19.sourcePdf).toBe("docs/lessons/new/0811.pdf");
+    expect(b19.titleKo).toContain("습하고 덥습니다");
+    expect(b19.guide.title).toContain("-고");
+    expect(b19.vocabulary).toHaveLength(12);
+
+    expect(b110.sourcePdf).toBe("docs/lessons/new/0813.pdf");
+    expect(b110.titleKo).toContain("안 합니까");
+    expect(b110.guide.title).toContain("못");
+    expect(b110.vocabulary).toHaveLength(12);
   });
 });
