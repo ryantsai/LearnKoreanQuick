@@ -1736,6 +1736,53 @@ p {
   line-height: 1.6;
 }
 
+.vocabulary-pronunciation-cases {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.vocabulary-pronunciation-cases article {
+  padding: 12px 13px;
+  border-left: 3px solid #19aa97;
+  border-radius: 0 11px 11px 0;
+  background: #f5fbf9;
+}
+
+.vocabulary-pronunciation-cases article > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.vocabulary-pronunciation-cases strong {
+  color: #0f766e;
+  font-size: 13px;
+}
+
+.vocabulary-pronunciation-cases article span {
+  color: #8a96a5;
+  font-size: 10px;
+  text-align: right;
+}
+
+.vocabulary-pronunciation-cases article p {
+  margin-top: 6px;
+  color: #506070;
+}
+
+.vocabulary-pronunciation-cases em {
+  display: block;
+  margin-top: 7px;
+  color: #f96f5d;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.55;
+}
+
 .vocabulary-examples {
   margin-top: 18px;
 }

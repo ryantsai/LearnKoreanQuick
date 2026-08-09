@@ -16,6 +16,8 @@ describe("buildVocabularyIndex", () => {
     for (const item of vocabulary) {
       expect(item.explanation.length).toBeGreaterThan(0);
       expect(item.pronunciationNote.length).toBeGreaterThan(0);
+      expect(item.pronunciationCases.length).toBeGreaterThanOrEqual(3);
+      expect(item.pronunciationCases[0].example.length).toBeGreaterThan(0);
       expect(item.examples.length).toBeGreaterThanOrEqual(1);
       expect(item.examples[0].ko.length).toBeGreaterThan(0);
       expect(item.examples[0].zh.length).toBeGreaterThan(0);

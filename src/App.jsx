@@ -903,6 +903,18 @@ function VocabularyLibrary({ words, selectedWord, onSelect, onOpenLesson }) {
             <div className="vocabulary-pronunciation-note">
               <span>發音提示</span>
               <p>{activeWord.pronunciationNote}</p>
+              <div className="vocabulary-pronunciation-cases">
+                {activeWord.pronunciationCases.map((pronunciationCase) => (
+                  <article key={pronunciationCase.label}>
+                    <div>
+                      <strong>{pronunciationCase.label}</strong>
+                      <span>{pronunciationCase.condition}</span>
+                    </div>
+                    <p>{pronunciationCase.explanation}</p>
+                    <em>{pronunciationCase.example}</em>
+                  </article>
+                ))}
+              </div>
             </div>
             <div className="vocabulary-examples">
               <h3>不同語境例句</h3>
