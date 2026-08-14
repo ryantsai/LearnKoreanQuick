@@ -10,6 +10,17 @@ describe("buildVocabularyIndex", () => {
     expect(vocabulary.filter((item) => item.text === "안")).toHaveLength(1);
     expect(vocabulary.find((item) => item.text === "안").lessons.some((lesson) => lesson.id === "b1-10")).toBe(true);
     expect(vocabulary.some((item) => item.text === "대만이")).toBe(true);
+    expect(vocabulary.find((item) => item.text === "어제").lessons.some((lesson) => lesson.id === "b1-11")).toBe(true);
+    expect(vocabulary.find((item) => item.text === "짬뽕").lessons.some((lesson) => lesson.id === "b1-12")).toBe(true);
+    expect(vocabulary.find((item) => item.text === "맥주").lessons.some((lesson) => lesson.id === "b1-12")).toBe(true);
+
+    for (const lessonId of ["b1-11", "b1-12"]) {
+      const lesson = courseLessons.find((item) => item.id === lessonId);
+      for (const lessonWord of lesson.vocabulary) {
+        const indexedWord = vocabulary.find((item) => item.text === lessonWord.text);
+        expect(indexedWord?.lessons.some((item) => item.id === lessonId)).toBe(true);
+      }
+    }
   });
 
   test("keeps only standalone words and excludes phrases or sentences", () => {

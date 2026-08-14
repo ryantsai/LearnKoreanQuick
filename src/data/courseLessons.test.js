@@ -21,7 +21,9 @@ describe("courseLessons", () => {
       "b1-7",
       "b1-8",
       "b1-9",
-      "b1-10"
+      "b1-10",
+      "b1-11",
+      "b1-12"
     ]);
 
     for (const lesson of courseLessons) {
@@ -174,5 +176,22 @@ describe("courseLessons", () => {
     expect(b110.titleKo).toContain("안 합니까");
     expect(b110.guide.title).toContain("못");
     expect(b110.vocabulary).toHaveLength(12);
+  });
+
+  test("adds the 0817 and 0819 lessons with past tense and noun-linking vocabulary", () => {
+    const b111 = courseLessons.find((lesson) => lesson.id === "b1-11");
+    const b112 = courseLessons.find((lesson) => lesson.id === "b1-12");
+
+    expect(b111.sourcePdf).toBe("docs/lessons/new/0817.pdf");
+    expect(b111.titleKo).toContain("뭐 했습니까");
+    expect(b111.guide.title).toContain("-았／었／였-");
+    expect(b111.vocabulary).toHaveLength(16);
+    expect(b111.guide.practice.prompts).toHaveLength(4);
+
+    expect(b112.sourcePdf).toBe("docs/lessons/new/0819.pdf");
+    expect(b112.titleKo).toContain("김밥하고 라면");
+    expect(b112.guide.title).toContain("하고、와／과");
+    expect(b112.vocabulary).toHaveLength(20);
+    expect(b112.guide.practice.prompts).toHaveLength(5);
   });
 });

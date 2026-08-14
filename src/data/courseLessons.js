@@ -462,6 +462,74 @@ const b110 = [
   word("아픕니다", "a-peum-ni-da", "疼痛／不舒服")
 ];
 
+const b111 = [
+  word("작년", "jak-nyeon", "去年"),
+  word("올해", "ol-hae", "今年"),
+  word("내년", "nae-nyeon", "明年"),
+  word("지난주", "ji-nan-ju", "上週"),
+  word("이번주", "i-beon-ju", "本週"),
+  word("다음주", "da-eum-ju", "下週"),
+  word("어제", "eo-je", "昨天"),
+  word("오늘", "o-neul", "今天"),
+  word("내일", "nae-il", "明天"),
+  word("아침", "a-chim", "早上"),
+  word("점심", "jeom-sim", "中午"),
+  word("오후", "o-hu", "下午"),
+  word("저녁", "jeo-nyeok", "傍晚／晚餐"),
+  word("밤", "bam", "晚上"),
+  word("새벽", "sae-byeok", "清晨"),
+  word("언제", "eon-je", "何時"),
+  word("관우", "gwan-u", "冠宇（人名）"),
+  word("민준", "min-jun", "敏俊（人名）"),
+  word("뭐", "mwo", "什麼"),
+  word("했습니까", "haet-seum-ni-kka", "做了嗎？"),
+  word("친구를", "chin-gu-reul", "朋友（受詞）"),
+  word("만났습니다", "man-nat-seum-ni-da", "見面了"),
+  word("어디에서", "eo-di-e-seo", "在哪裡"),
+  word("커피숍에서", "keo-pi-syop-e-seo", "在咖啡店"),
+  word("커피를", "keo-pi-reul", "咖啡（受詞）"),
+  word("마시고", "ma-si-go", "喝了之後／喝並且…"),
+  word("한국", "han-guk", "韓國"),
+  word("식당에서", "sik-dang-e-seo", "在餐廳"),
+  word("저녁을", "jeo-nyeok-eul", "晚餐（受詞）"),
+  word("먹었습니다", "meok-eot-seum-ni-da", "吃了")
+];
+
+const b112 = [
+  word("짬뽕", "jjam-ppong", "什錦麵／辣海鮮麵"),
+  word("자장면", "ja-jang-myeon", "炸醬麵"),
+  word("만두", "man-du", "餃子"),
+  word("볶음밥", "bok-keum-bap", "炒飯"),
+  word("탕수육", "tang-su-yuk", "糖醋肉"),
+  word("김치찌개", "gim-chi-jji-gae", "泡菜鍋"),
+  word("순두부찌개", "sun-du-bu-jji-gae", "豆腐鍋"),
+  word("부대찌개", "bu-dae-jji-gae", "部隊鍋"),
+  word("삼계탕", "sam-gye-tang", "蔘雞湯"),
+  word("된장찌개", "doen-jang-jji-gae", "大醬湯"),
+  word("미역국", "mi-yeok-guk", "海帶湯"),
+  word("돈가스", "don-ga-seu", "炸豬排（飯）"),
+  word("맥주", "maek-ju", "啤酒"),
+  word("소주", "so-ju", "燒酒"),
+  word("막걸리", "mak-geol-li", "馬格利／濁米酒"),
+  word("양주", "yang-ju", "洋酒"),
+  word("레드와인", "re-deu-wa-in", "紅葡萄酒"),
+  word("화이트와인", "hwa-i-teu-wa-in", "白葡萄酒"),
+  word("위스키", "wi-seu-ki", "威士忌"),
+  word("고량주", "go-ryang-ju", "高粱酒"),
+  word("관우", "gwan-u", "冠宇（人名）"),
+  word("민준", "min-jun", "敏俊（人名）"),
+  word("점심을", "jeom-sim-eul", "午餐（受詞）"),
+  word("같이", "ga-chi", "一起"),
+  word("먹습니까", "meok-seum-ni-kka", "吃嗎？"),
+  word("아까", "a-kka", "剛才"),
+  word("먹었습니다", "meok-eot-seum-ni-da", "吃了"),
+  word("뭐", "mwo", "什麼"),
+  word("한국", "han-guk", "韓國"),
+  word("식당에서", "sik-dang-e-seo", "在餐廳"),
+  word("김밥하고", "gim-bap-ha-go", "紫菜飯捲和…"),
+  word("라면을", "ra-myeon-eul", "泡麵（受詞）")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -1894,6 +1962,203 @@ export const courseLessons = [
         ]
       },
       sourceNotes: [{ heading: "來源重點", lines: ["短形否定直接放在一般動詞或形容詞前。", "공부하다、운동하다、노래하다 等 하다 類詞，把 안／못 放在 하다 前。"] }]
+    }
+  },
+  {
+    id: "b1-11",
+    label: "初級1-11",
+    titleKo: "어제 뭐 했습니까?",
+    titleZh: "昨天做了什麼？",
+    theme: "過去時態 -았／었／였- 與時間副詞",
+    sourcePdf: "docs/lessons/new/0817.pdf",
+    media: { hero: courseAsset("b1-11-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-11-dialogue-person"),
+        objectImage: courseAsset("b1-11-dialogue-object"),
+        lines: [
+          line("관우", "어제 뭐 했습니까?", "冠宇：昨天做了什麼？", [b111[6], b111[18], b111[19]]),
+          line("민준", "어제 친구를 만났습니다.", "敏俊：昨天見了朋友。", [b111[6], b111[20], b111[21]]),
+          line("관우", "어디에서 친구를 만났습니까?", "冠宇：在哪裡見了朋友？", [b111[22], b111[20], word("만났습니까", "man-nat-seum-ni-kka", "見面了嗎？")]),
+          line("민준", "커피숍에서 만났습니다. 커피숍에서 커피를 마시고 한국 식당에서 저녁을 먹었습니다.", "敏俊：在咖啡店見面。在咖啡店喝完咖啡後，又在韓國餐廳吃了晚餐。", [b111[23], b111[21], b111[23], b111[24], b111[25], b111[26], b111[27], b111[28], b111[29]])
+        ]
+      },
+      {
+        title: "換你說說看（保留空格）",
+        image: courseAsset("b1-11-practice-person"),
+        objectImage: courseAsset("b1-11-practice-visual"),
+        lines: [
+          line("A", "어제 뭐 했습니까?", "昨天做了什麼？", [b111[6], b111[18], b111[19]]),
+          line("B", "어제 ____에서 ____________________.", "請填入昨天去過的場所與做過的事情。", [b111[6], b111[22]]),
+          line("A", "그리고 뭐 했습니까?", "然後做了什麼？", [word("그리고", "geu-ri-go", "然後／而且"), b111[18], b111[19]]),
+          line("B", "그리고 ____________________.", "請用過去式補上另一件事情。", [word("그리고", "geu-ri-go", "然後／而且"), b111[19]])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-11-vocab-page", [
+      b111[0], b111[1], b111[2], b111[3], b111[4], b111[5], b111[6], b111[7],
+      b111[8], b111[9], b111[10], b111[11], b111[12], b111[13], b111[14], b111[15]
+    ]),
+    guide: {
+      label: "時態與翻譯",
+      title: "過去時態 -았／었／였-",
+      hint: "先去掉原形的 다，再依詞幹最後母音選擇 았、었；하다 類詞與 였 結合後縮寫成 했。來源中的開放式練習保留空格。",
+      sections: [
+        {
+          heading: "詞幹母音為 ㅏ／ㅗ：使用 았",
+          words: [
+            word("갔습니다", "gat-seum-ni-da", "去了（가다 → 가 + 았 → 갔）"),
+            word("잤습니다", "jat-seum-ni-da", "睡了（자다 → 자 + 았 → 잤）"),
+            word("봤습니다", "bwat-seum-ni-da", "看了（보다 → 보 + 았 → 봤）"),
+            word("왔습니다", "wat-seum-ni-da", "來了（오다 → 오 + 았 → 왔）")
+          ]
+        },
+        {
+          heading: "其他母音：使用 었；하다：使用 였 → 했",
+          words: [
+            word("먹었습니다", "meok-eot-seum-ni-da", "吃了（먹다 → 먹 + 었）"),
+            word("읽었습니다", "il-geot-seum-ni-da", "讀了（읽다 → 읽 + 었）"),
+            word("입었습니다", "i-beot-seum-ni-da", "穿了（입다 → 입 + 었）"),
+            word("마셨습니다", "ma-syeot-seum-ni-da", "喝了（마시다 → 마시 + 었）"),
+            word("공부했습니다", "gong-bu-haet-seum-ni-da", "念書了（공부하다 → 공부했）"),
+            word("운동했습니다", "un-dong-haet-seum-ni-da", "運動了（운동하다 → 운동했）")
+          ]
+        },
+        { heading: "時間相關詞彙", words: [b111[0], b111[1], b111[2], b111[3], b111[4], b111[5], b111[6], b111[7], b111[8], b111[9], b111[10], b111[11], b111[12], b111[13], b111[14], b111[15]] }
+      ],
+      practice: {
+        heading: "固定例句",
+        hint: "以下保留來源中已印出的例句；需要自行回答的題目仍顯示在對話分頁。",
+        valueSuffix: "",
+        items: [
+          { value: "昨天買了褲子", answer: word("어제 바지를 샀습니다", "eo-je- -ba-ji-reul- -sat-seum-ni-da", "昨天買了褲子") },
+          { value: "昨晚吃了泡麵", answer: word("저녁에 라면을 먹었습니다", "jeo-nyeo-ge- -ra-myeon-eul- -meok-eot-seum-ni-da", "昨晚吃了泡麵") },
+          { value: "昨天見了朋友", answer: word("어제 친구를 만났습니다", "eo-je- -chin-gu-reul- -man-nat-seum-ni-da", "昨天見了朋友") },
+          { value: "在圖書館念書了", answer: word("도서관에서 공부했습니다", "do-seo-gwan-e-seo- -gong-bu-haet-seum-ni-da", "在圖書館念書了") }
+        ],
+        prompts: [
+          { page: "第 14 頁", ko: "작년 → ( ) → ( )", zh: "請依時間順序填入今年與明年。" },
+          { page: "第 15 頁", ko: "언제 한국어를 배웠습니까?", zh: "何時學了韓語？來源保留回答空格。" },
+          { page: "第 15 頁", ko: "어제 뭐 했습니까?", zh: "昨天做了什麼？來源保留回答空格。" },
+          { page: "第 18 頁", ko: "어제 ____에서 ____________________.", zh: "請填入場所和昨天做過的事。" }
+        ]
+      },
+      sourceNotes: [{
+        heading: "來源重點",
+        lines: [
+          "韓語說明過去的事情時，使用 -았／었／였- 過去時態語尾；三種形式依詞幹最後母音選擇。",
+          "與時態相關的副詞包括 작년、올해、내년、지난주、이번주、다음주、어제、오늘、내일、아침、점심、오후、저녁、밤、새벽、언제。",
+          "本課對話位於第 17 頁，中文翻譯位於第 21 頁。"
+        ]
+      }],
+      references: [{
+        heading: "附錄：對話翻譯（第 21 頁）",
+        entries: [
+          { label: "冠宇", text: "昨天做了什麼呢？" },
+          { label: "敏俊", text: "昨天見了朋友。" },
+          { label: "冠宇", text: "在哪裡見了朋友？" },
+          { label: "敏俊", text: "在咖啡店見面。咖啡店喝完咖啡後，在韓國餐廳吃了晚餐。" }
+        ]
+      }]
+    }
+  },
+  {
+    id: "b1-12",
+    label: "初級1-12",
+    titleKo: "김밥하고 라면을 먹었습니다.",
+    titleZh: "我吃了紫菜飯捲和泡麵。",
+    theme: "名詞並列助詞 하고、와／과 與食物詞彙",
+    sourcePdf: "docs/lessons/new/0819.pdf",
+    media: { hero: courseAsset("b1-12-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-12-dialogue-person"),
+        objectImage: courseAsset("b1-12-dialogue-object"),
+        lines: [
+          line("관우", "점심을 같이 먹습니까?", "冠宇：中餐一起吃嗎？", [b112[22], b112[23], b112[24]]),
+          line("민준", "아…아까 먹었습니다.", "敏俊：啊……我剛剛吃過了。", [b112[25], b112[26]]),
+          line("관우", "뭐 먹었습니까?", "冠宇：吃了什麼？", [b112[27], word("먹었습니까", "meo-geot-seum-ni-kka", "吃了嗎？")]),
+          line("민준", "아까 한국 식당에서 김밥하고 라면을 먹었습니다.", "敏俊：剛剛在韓國餐廳吃了紫菜飯捲跟泡麵。", [b112[25], b112[28], b112[29], b112[30], b112[31], b112[26]])
+        ]
+      },
+      {
+        title: "換你說說看（保留空格）",
+        image: courseAsset("b1-12-practice-person"),
+        objectImage: courseAsset("b1-12-practice-visual"),
+        lines: [
+          line("A", "아침에 뭐 먹었습니까?", "早餐吃了什麼？", [word("아침에", "a-chi-me", "在早上"), b112[27], word("먹었습니까", "meo-geot-seum-ni-kka", "吃了嗎？")]),
+          line("B", "________ 하고 ________", "請使用 하고 連接兩種食物。", [word("하고", "ha-go", "和／跟（口語）"), b112[0]]),
+          line("A", "백화점에서 뭐 샀습니까?", "在百貨公司買了什麼？", [word("백화점에서", "baek-hwa-jeo-me-seo", "在百貨公司"), b112[27], word("샀습니까", "sat-seum-ni-kka", "買了嗎？")]),
+          line("B", "________ 하고 ________", "請使用 하고 連接兩種物品。", [word("하고", "ha-go", "和／跟（口語）"), word("샀습니다", "sat-seum-ni-da", "買了")])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-12-vocab-page", [
+      b112[0], b112[1], b112[2], b112[3], b112[4], b112[5], b112[6], b112[7], b112[8], b112[9],
+      b112[10], b112[11], b112[12], b112[13], b112[14], b112[15], b112[16], b112[17], b112[18], b112[19]
+    ]),
+    guide: {
+      label: "助詞與翻譯",
+      title: "連接名詞：하고、와／과",
+      hint: "하고 多用於口語，前方名詞不分有無尾音；와／과 多用於書面語，無尾音用 와、有尾音用 과。來源中的開放式回答保留空格。",
+      sections: [
+        {
+          heading: "口語：名詞 + 하고 + 名詞",
+          words: [
+            word("하고", "ha-go", "和／跟；口語常用，不分有無尾音"),
+            word("김치하고 김밥", "gim-chi-ha-go- -gim-bap", "泡菜和紫菜飯捲"),
+            word("책하고 가방", "chaek-ha-go- -ga-bang", "書和包包"),
+            word("학생하고 선생님", "hak-saeng-ha-go- -seon-saeng-nim", "學生和老師")
+          ]
+        },
+        {
+          heading: "書面語：無尾音用 와；有尾音用 과",
+          words: [
+            word("와", "wa", "和；接在無尾音名詞後"),
+            word("과", "gwa", "和；接在有尾音名詞後"),
+            word("김치와 김밥", "gim-chi-wa- -gim-bap", "泡菜和紫菜飯捲"),
+            word("학생과 선생님", "hak-saeng-gwa- -seon-saeng-nim", "學生和老師")
+          ]
+        },
+        { heading: "食物與飲料", words: [b112[0], b112[1], b112[2], b112[3], b112[4], b112[5], b112[6], b112[7], b112[8], b112[9], b112[10], b112[11], b112[12], b112[13], b112[14], b112[15], b112[16], b112[17], b112[18], b112[19]] }
+      ],
+      practice: {
+        heading: "固定例句",
+        hint: "以下保留來源中已印出的搭配；第 6、9、12、14、16 頁的回答題不替教材填入答案。",
+        valueSuffix: "",
+        items: [
+          { value: "泡菜和紫菜飯捲（口語）", answer: word("김치하고 김밥", "gim-chi-ha-go- -gim-bap", "泡菜和紫菜飯捲") },
+          { value: "學生和老師（口語）", answer: word("학생하고 선생님", "hak-saeng-ha-go- -seon-saeng-nim", "學生和老師") },
+          { value: "泡菜和紫菜飯捲（書面）", answer: word("김치와 김밥", "gim-chi-wa- -gim-bap", "泡菜和紫菜飯捲") },
+          { value: "學生和老師（書面）", answer: word("학생과 선생님", "hak-saeng-gwa- -seon-saeng-nim", "學生和老師") }
+        ],
+        prompts: [
+          { page: "第 6 頁", ko: "김밥/라면 → ______", zh: "請使用 하고 回答吃了什麼。" },
+          { page: "第 9 頁", ko: "과일/우유 → ______", zh: "請使用 와／과 回答午餐吃了什麼。" },
+          { page: "第 12 頁", ko: "오늘 중국 식당에서 뭐 먹었습니까?", zh: "請從食物詞表自行回答。" },
+          { page: "第 14 頁", ko: "무슨 술을 좋아합니까?", zh: "喜歡哪種酒？請自行回答。" },
+          { page: "第 16 頁", ko: "아침에 뭐 먹었습니까?", zh: "請用 하고 連接兩種食物。" }
+        ]
+      },
+      sourceNotes: [{
+        heading: "來源重點",
+        lines: [
+          "하고 與 와／과 都可把多個名詞並列；하고 多用於口語，와／과 多用於書面語。",
+          "하고 不受前方名詞尾音影響；와 接在無尾音名詞後，과 接在有尾音名詞後。",
+          "食物詞彙位於第 10-11 頁，飲料詞彙位於第 13 頁，本課對話位於第 15 頁。"
+        ]
+      }],
+      references: [{
+        heading: "附錄：對話翻譯（第 19 頁）",
+        entries: [
+          { label: "冠宇", text: "中餐一起吃嗎？" },
+          { label: "敏俊", text: "啊，我剛剛吃過了。" },
+          { label: "冠宇", text: "吃了什麼呢？" },
+          { label: "敏俊", text: "剛剛在韓國餐廳吃了紫菜飯捲跟拉麵。" }
+        ]
+      }]
     }
   }
 ];
