@@ -866,6 +866,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
   const [isLessonListOpen, setIsLessonListOpen] = useState(false);
   const [detailsWord, setDetailsWord] = useState(selectedWord ?? null);
   const [playback, setPlayback] = useState(null);
+  const [highlightedWord, setHighlightedWord] = useState(null);
   const lessonSelectorRef = useRef(null);
   const playbackRunRef = useRef(0);
 
@@ -937,6 +938,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
   function stopPlayback() {
     playbackRunRef.current += 1;
     setPlayback(null);
+    setHighlightedWord(null);
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
@@ -948,6 +950,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
     const runId = playbackRunRef.current + 1;
     playbackRunRef.current = runId;
     setPlayback({ includeChinese });
+    setHighlightedWord(null);
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
@@ -956,6 +959,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
     for (const item of items) {
       if (playbackRunRef.current !== runId) return;
 
+      setHighlightedWord(selectedLessonWords[item.wordIndex]?.text ?? null);
       await speakQueued(item.text, item.type === "korean" ? "ko-KR" : "zh-TW");
       if (playbackRunRef.current !== runId) return;
 
@@ -966,6 +970,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
 
     if (playbackRunRef.current === runId) {
       setPlayback(null);
+      setHighlightedWord(null);
     }
   }
 
@@ -1067,7 +1072,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
 
       <div className="vocabulary-master-list">
         {visibleWords.map((item) => (
-          <article key={item.text} className="vocabulary-word-row">
+          <article key={item.text} className={`vocabulary-word-row ${highlightedWord === item.text ? "is-karaoke" : ""}`}>
             <span className="vocabulary-word-main">
               <strong>{item.text}</strong>
               <em>{item.roman}</em>
