@@ -1008,8 +1008,8 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
             aria-controls="vocabulary-lesson-list"
           >
             <ListFilter size={18} />
-            Lesson selection
-            <span>{hasAllLessonsSelected ? "All lessons" : `${selectedLessonIds.length} lessons`}</span>
+            選擇課程
+            <span>{hasAllLessonsSelected ? "全部課程" : `已選 ${selectedLessonIds.length} 課`}</span>
           </button>
           {isLessonListOpen ? (
             <div className="vocabulary-lesson-list" id="vocabulary-lesson-list">
@@ -1044,7 +1044,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
             disabled={!selectedLessonWords.length}
           >
             <Volume2 size={18} />
-            {playback?.includeChinese === false ? "Stop reading" : "Read aloud (Korean only)"}
+            {playback?.includeChinese === false ? "停止朗讀" : "朗讀（僅韓文）"}
           </button>
           <button
             className={`vocabulary-control-button ${playback?.includeChinese === true ? "is-playing" : ""}`}
@@ -1052,7 +1052,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
             disabled={!selectedLessonWords.length}
           >
             <Volume2 size={18} />
-            {playback?.includeChinese === true ? "Stop reading" : "Read aloud (Chinese + Korean)"}
+            {playback?.includeChinese === true ? "停止朗讀" : "朗讀（中文＋韓文）"}
           </button>
         </div>
       </div>
