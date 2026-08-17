@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Search, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Info, ListFilter, Search, Volume2, X } from "lucide-react";
 import React from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { courseLessons } from "./data/courseLessons.js";
@@ -62,7 +62,8 @@ export default function App() {
   }
 
   function selectVocabulary(item) {
-    setSelectedVocabulary(item);
+    // Use a fresh value so selecting the same search result can reopen its details.
+    setSelectedVocabulary({ ...item });
     setMainView("vocabulary");
     setVocabularyQuery("");
   }
@@ -149,8 +150,8 @@ export default function App() {
       ) : (
         <VocabularyLibrary
           words={filteredVocabulary}
+          allWords={allVocabulary}
           selectedWord={selectedVocabulary}
-          onSelect={setSelectedVocabulary}
           onOpenLesson={setActiveCourseLessonId}
         />
       )}
@@ -860,89 +861,319 @@ function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, 
   );
 }
 
-function VocabularyLibrary({ words, selectedWord, onSelect, onOpenLesson }) {
-  const activeWord = selectedWord && words.some((item) => item.text === selectedWord.text)
-    ? words.find((item) => item.text === selectedWord.text)
-    : words[0] ?? null;
+function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
+  const [selectedLessonIds, setSelectedLessonIds] = useState(() => courseLessons.map((lesson) => lesson.id));
+  const [isLessonListOpen, setIsLessonListOpen] = useState(false);
+  const [detailsWord, setDetailsWord] = useState(selectedWord ?? null);
+  const [playback, setPlayback] = useState(null);
+  const lessonSelectorRef = useRef(null);
+  const playbackRunRef = useRef(0);
+
+  const selectedLessonIdSet = useMemo(() => new Set(selectedLessonIds), [selectedLessonIds]);
+  const selectedLessonWords = useMemo(
+    () => allWords.filter((item) => item.lessons.some((lesson) => selectedLessonIdSet.has(lesson.id))),
+    [allWords, selectedLessonIdSet]
+  );
+  const visibleWords = useMemo(
+    () => words.filter((item) => item.lessons.some((lesson) => selectedLessonIdSet.has(lesson.id))),
+    [words, selectedLessonIdSet]
+  );
+  const hasAllLessonsSelected = selectedLessonIds.length === courseLessons.length;
+
+  useEffect(() => {
+    if (selectedWord) {
+      setDetailsWord(selectedWord);
+    }
+  }, [selectedWord]);
+
+  useEffect(() => {
+    if (!isLessonListOpen) return undefined;
+
+    function closeLessonList(event) {
+      if (!lessonSelectorRef.current?.contains(event.target)) {
+        setIsLessonListOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", closeLessonList);
+    return () => document.removeEventListener("mousedown", closeLessonList);
+  }, [isLessonListOpen]);
+
+  useEffect(() => {
+    if (!detailsWord) return undefined;
+
+    function closeOnEscape(event) {
+      if (event.key === "Escape") {
+        setDetailsWord(null);
+      }
+    }
+
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [detailsWord]);
+
+  useEffect(() => () => stopPlayback(), []);
+
+  function sleep(ms) {
+    return new Promise((resolve) => window.setTimeout(resolve, ms));
+  }
+
+  function speakQueued(text, lang) {
+    if (!("speechSynthesis" in window)) {
+      return Promise.resolve();
+    }
+
+    return new Promise((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = (lang === "ko-KR" ? 0.78 : 0.92) * getTtsSpeed();
+      utterance.pitch = 1.04;
+      utterance.onend = resolve;
+      utterance.onerror = resolve;
+      window.speechSynthesis.speak(utterance);
+    });
+  }
+
+  function stopPlayback() {
+    playbackRunRef.current += 1;
+    setPlayback(null);
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+  }
+
+  async function runPlayback(includeChinese) {
+    if (!selectedLessonWords.length) return;
+
+    const runId = playbackRunRef.current + 1;
+    playbackRunRef.current = runId;
+    setPlayback({ includeChinese });
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+
+    const items = buildVocabularyPlaybackItems(selectedLessonWords, includeChinese);
+    for (const item of items) {
+      if (playbackRunRef.current !== runId) return;
+
+      await speakQueued(item.text, item.type === "korean" ? "ko-KR" : "zh-TW");
+      if (playbackRunRef.current !== runId) return;
+
+      // A brief Korean-to-Chinese beat keeps the translation distinct; the longer
+      // word pause gives learners enough time to repeat before the next item.
+      await sleep(includeChinese && item.type === "korean" ? 500 : 1800);
+    }
+
+    if (playbackRunRef.current === runId) {
+      setPlayback(null);
+    }
+  }
+
+  function togglePlayback(includeChinese) {
+    if (playback?.includeChinese === includeChinese) {
+      stopPlayback();
+      return;
+    }
+
+    runPlayback(includeChinese);
+  }
+
+  function toggleLesson(lessonId) {
+    stopPlayback();
+    setSelectedLessonIds((current) => (
+      current.includes(lessonId)
+        ? current.filter((id) => id !== lessonId)
+        : [...current, lessonId]
+    ));
+  }
+
+  function selectAllLessons() {
+    stopPlayback();
+    setSelectedLessonIds(courseLessons.map((lesson) => lesson.id));
+  }
+
+  function clearLessonSelection() {
+    stopPlayback();
+    setSelectedLessonIds([]);
+  }
 
   return (
     <section className="vocabulary-library" aria-label="全部單字">
+      <div className="vocabulary-library-controls">
+        <div className="vocabulary-lesson-selector" ref={lessonSelectorRef}>
+          <button
+            className="vocabulary-control-button"
+            onClick={() => setIsLessonListOpen((isOpen) => !isOpen)}
+            aria-expanded={isLessonListOpen}
+            aria-controls="vocabulary-lesson-list"
+          >
+            <ListFilter size={18} />
+            Lesson selection
+            <span>{hasAllLessonsSelected ? "All lessons" : `${selectedLessonIds.length} lessons`}</span>
+          </button>
+          {isLessonListOpen ? (
+            <div className="vocabulary-lesson-list" id="vocabulary-lesson-list">
+              <div className="vocabulary-lesson-list-heading">
+                <strong>選擇要練習的課程</strong>
+                <span>{selectedLessonIds.length} / {courseLessons.length}</span>
+              </div>
+              <div className="vocabulary-lesson-list-actions">
+                <button onClick={selectAllLessons}>全部選取</button>
+                <button onClick={clearLessonSelection}>清除</button>
+              </div>
+              <div className="vocabulary-lesson-options">
+                {courseLessons.map((lesson) => (
+                  <label key={lesson.id}>
+                    <input
+                      type="checkbox"
+                      checked={selectedLessonIdSet.has(lesson.id)}
+                      onChange={() => toggleLesson(lesson.id)}
+                    />
+                    <span>{lesson.label}</span>
+                    <small>{lesson.titleZh}</small>
+                  </label>
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </div>
+        <div className="vocabulary-playback-controls" aria-label="全部單字朗讀">
+          <button
+            className={`vocabulary-control-button ${playback?.includeChinese === false ? "is-playing" : ""}`}
+            onClick={() => togglePlayback(false)}
+            disabled={!selectedLessonWords.length}
+          >
+            <Volume2 size={18} />
+            {playback?.includeChinese === false ? "Stop reading" : "Read aloud (Korean only)"}
+          </button>
+          <button
+            className={`vocabulary-control-button ${playback?.includeChinese === true ? "is-playing" : ""}`}
+            onClick={() => togglePlayback(true)}
+            disabled={!selectedLessonWords.length}
+          >
+            <Volume2 size={18} />
+            {playback?.includeChinese === true ? "Stop reading" : "Read aloud (Chinese + Korean)"}
+          </button>
+        </div>
+      </div>
+
       <div className="vocabulary-library-heading">
         <div>
           <span className="lab-label">Vocabulary</span>
           <h1>全部單字</h1>
-          <p>只收錄所有課程中的獨立單字；片語與完整句子不列入，共 {words.length} 筆。</p>
+          <p>只收錄所有課程中的獨立單字；片語與完整句子不列入，共顯示 {visibleWords.length} 筆。</p>
         </div>
       </div>
-      <div className="vocabulary-library-layout">
-        <div className="vocabulary-master-list">
-          {words.map((item) => (
-            <button key={item.text} className={activeWord?.text === item.text ? "is-active" : ""} onClick={() => onSelect(item)}>
-              <span>
-                <strong>{item.text}</strong>
-                <em>{item.roman}</em>
-              </span>
-              <span>{item.zh}</span>
-              <small>{item.lessons.map((lesson) => lesson.label).join(" · ")}</small>
-            </button>
-          ))}
-          {!words.length ? <p className="vocabulary-empty">沒有符合搜尋條件的單字。</p> : null}
-        </div>
-        {activeWord ? (
-          <aside className="vocabulary-detail" aria-live="polite">
-            <div className="vocabulary-detail-title">
-              <div>
-                <span className="lab-label">Word detail</span>
-                <h2>{activeWord.text}</h2>
-                <p>{activeWord.roman}</p>
-              </div>
-              <button className="letter-sound-button" onClick={() => speakKorean(activeWord.text)}><Volume2 size={16} />發音</button>
-            </div>
-            <strong className="vocabulary-meaning">{activeWord.zh}</strong>
-            <p className="vocabulary-explanation">{activeWord.explanation}</p>
-            <div className="vocabulary-pronunciation-note">
-              <span>發音提示</span>
-              <p>{activeWord.pronunciationNote}</p>
-              <div className="vocabulary-pronunciation-cases">
-                {activeWord.pronunciationCases.map((pronunciationCase) => (
-                  <article key={pronunciationCase.label}>
-                    <div>
-                      <span>
-                        <strong>{pronunciationCase.label}</strong>
-                        <small>{pronunciationCase.condition}</small>
-                      </span>
-                      <button onClick={() => speakKorean(pronunciationCase.written)} aria-label={`播放 ${pronunciationCase.written}`}><Volume2 size={14} />聽</button>
-                    </div>
-                    <div className="pronunciation-transformation">
-                      <span>{pronunciationCase.written}</span>
-                      <b>→</b>
-                      <strong>[{pronunciationCase.pronounced}]</strong>
-                    </div>
-                    <p>{pronunciationCase.explanation}</p>
-                    <em>跟讀：{pronunciationCase.drill}</em>
-                  </article>
-                ))}
-              </div>
-            </div>
-            <div className="vocabulary-examples">
-              <h3>不同語境例句</h3>
-              {activeWord.examples.map((example, index) => (
-                <article key={`${example.ko}-${index}`}>
-                  <span>{example.label}</span>
-                  <button onClick={() => speakKorean(example.ko)} aria-label={`播放例句 ${example.ko}`}><Volume2 size={15} /></button>
-                  <strong>{example.ko}</strong>
-                  <p>{example.zh}</p>
-                </article>
-              ))}
-            </div>
-            <div className="vocabulary-lesson-links">
-              <span>出現課程</span>
-              {activeWord.lessons.map((lesson) => <button key={lesson.id} onClick={() => onOpenLesson(lesson.id)}>{lesson.label}</button>)}
-            </div>
-          </aside>
-        ) : null}
+
+      <div className="vocabulary-master-list">
+        {visibleWords.map((item) => (
+          <article key={item.text} className="vocabulary-word-row">
+            <span className="vocabulary-word-main">
+              <strong>{item.text}</strong>
+              <em>{item.roman}</em>
+            </span>
+            <span className="vocabulary-word-meaning">{item.zh}</span>
+            <small>{item.lessons.map((lesson) => lesson.label).join(" · ")}</small>
+            <span className="vocabulary-word-actions">
+              <button
+                className="vocabulary-row-icon"
+                onClick={() => setDetailsWord(item)}
+                aria-label={`查看 ${item.text} 詳細說明`}
+                title="詳細說明"
+              >
+                <Info size={18} />
+              </button>
+              <button
+                className="vocabulary-row-icon"
+                onClick={() => speakKorean(item.text)}
+                aria-label={`播放 ${item.text}`}
+                title="播放發音"
+              >
+                <Volume2 size={18} />
+              </button>
+            </span>
+          </article>
+        ))}
+        {!visibleWords.length ? <p className="vocabulary-empty">沒有符合搜尋條件或已選課程的單字。</p> : null}
       </div>
+
+      {detailsWord ? (
+        <VocabularyDetailsModal
+          word={detailsWord}
+          onClose={() => setDetailsWord(null)}
+          onOpenLesson={onOpenLesson}
+        />
+      ) : null}
     </section>
+  );
+}
+
+function VocabularyDetailsModal({ word, onClose, onOpenLesson }) {
+  return (
+    <div className="vocabulary-modal-backdrop" role="presentation" onMouseDown={(event) => {
+      if (event.target === event.currentTarget) onClose();
+    }}>
+      <section className="vocabulary-modal" role="dialog" aria-modal="true" aria-label={`${word.text} 詳細說明`}>
+        <div className="vocabulary-modal-toolbar">
+          <div>
+            <span className="lab-label">Word detail</span>
+            <h2>{word.text}</h2>
+            <p>{word.roman}</p>
+          </div>
+          <div className="vocabulary-modal-actions">
+            <button className="letter-sound-button" onClick={() => speakKorean(word.text)}>
+              <Volume2 size={16} />發音
+            </button>
+            <button className="icon-button" onClick={onClose} aria-label="關閉詳細說明">
+              <X size={20} />
+            </button>
+          </div>
+        </div>
+        <strong className="vocabulary-meaning">{word.zh}</strong>
+        <p className="vocabulary-explanation">{word.explanation}</p>
+        <div className="vocabulary-pronunciation-note">
+          <span>發音提示</span>
+          <p>{word.pronunciationNote}</p>
+          <div className="vocabulary-pronunciation-cases">
+            {word.pronunciationCases.map((pronunciationCase) => (
+              <article key={pronunciationCase.label}>
+                <div>
+                  <span>
+                    <strong>{pronunciationCase.label}</strong>
+                    <small>{pronunciationCase.condition}</small>
+                  </span>
+                  <button onClick={() => speakKorean(pronunciationCase.written)} aria-label={`播放 ${pronunciationCase.written}`}><Volume2 size={14} />聽</button>
+                </div>
+                <div className="pronunciation-transformation">
+                  <span>{pronunciationCase.written}</span>
+                  <b>→</b>
+                  <strong>[{pronunciationCase.pronounced}]</strong>
+                </div>
+                <p>{pronunciationCase.explanation}</p>
+                <em>跟讀：{pronunciationCase.drill}</em>
+              </article>
+            ))}
+          </div>
+        </div>
+        <div className="vocabulary-examples">
+          <h3>不同語境例句</h3>
+          {word.examples.map((example, index) => (
+            <article key={`${example.ko}-${index}`}>
+              <span>{example.label}</span>
+              <button onClick={() => speakKorean(example.ko)} aria-label={`播放例句 ${example.ko}`}><Volume2 size={15} /></button>
+              <strong>{example.ko}</strong>
+              <p>{example.zh}</p>
+            </article>
+          ))}
+        </div>
+        <div className="vocabulary-lesson-links">
+          <span>出現課程</span>
+          {word.lessons.map((lesson) => (
+            <button key={lesson.id} onClick={() => onOpenLesson(lesson.id)}>{lesson.label}</button>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 
