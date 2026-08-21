@@ -2,6 +2,7 @@ import { ArrowLeft, BookOpenCheck, BookText, GraduationCap, Info, ListFilter, Se
 import React from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { courseLessons } from "./data/courseLessons.js";
+import { specialCourses } from "./data/specialCourses.js";
 import { buildVocabularyIndex } from "./data/vocabularyIndex.js";
 import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
@@ -19,11 +20,13 @@ import {
 export default function App() {
   const [activeLetterSymbol, setActiveLetterSymbol] = useState(null);
   const [activeCourseLessonId, setActiveCourseLessonId] = useState(null);
+  const [activeSpecialCourseId, setActiveSpecialCourseId] = useState(null);
   const [activeNovelId, setActiveNovelId] = useState(null);
   const [mainView, setMainView] = useState("lessons");
   const [vocabularyQuery, setVocabularyQuery] = useState("");
   const [selectedVocabulary, setSelectedVocabulary] = useState(null);
-  const allVocabulary = useMemo(() => buildVocabularyIndex(courseLessons), []);
+  const allLessons = useMemo(() => [...courseLessons, ...specialCourses], []);
+  const allVocabulary = useMemo(() => buildVocabularyIndex(allLessons), [allLessons]);
   const normalizedQuery = vocabularyQuery.trim().toLocaleLowerCase();
   const filteredVocabulary = useMemo(() => {
     if (!normalizedQuery) return allVocabulary;
@@ -46,11 +49,15 @@ export default function App() {
     ? courseLessons.find((lesson) => lesson.id === activeCourseLessonId)
     : null;
 
+  const activeSpecialCourse = activeSpecialCourseId
+    ? specialCourses.find((course) => course.id === activeSpecialCourseId)
+    : null;
+
   useEffect(() => {
-    if (activeCourseLessonId || activeNovelId) {
+    if (activeCourseLessonId || activeSpecialCourseId || activeNovelId) {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     }
-  }, [activeCourseLessonId, activeNovelId]);
+  }, [activeCourseLessonId, activeSpecialCourseId, activeNovelId]);
 
   function openLetterPage(symbol) {
     setActiveLetterSymbol(symbol);
@@ -66,6 +73,15 @@ export default function App() {
     setSelectedVocabulary({ ...item });
     setMainView("vocabulary");
     setVocabularyQuery("");
+  }
+
+  function openLearningItem(id) {
+    if (specialCourses.some((course) => course.id === id)) {
+      setActiveSpecialCourseId(id);
+      return;
+    }
+
+    setActiveCourseLessonId(id);
   }
 
   if (activeNovel) {
@@ -94,6 +110,26 @@ export default function App() {
         <CourseLessonReader
           lesson={activeCourseLesson}
           onClose={() => setActiveCourseLessonId(null)}
+          onOpenLetter={openLetterPage}
+        />
+        {activeLetterPage ? (
+          <LetterLearningPopup
+            key={activeLetterPage.symbol}
+            page={activeLetterPage}
+            onBack={() => setActiveLetterSymbol(null)}
+            onSpeak={playSound}
+          />
+        ) : null}
+      </>
+    );
+  }
+
+  if (activeSpecialCourse) {
+    return (
+      <>
+        <CourseLessonReader
+          lesson={activeSpecialCourse}
+          onClose={() => setActiveSpecialCourseId(null)}
           onOpenLetter={openLetterPage}
         />
         {activeLetterPage ? (
@@ -145,6 +181,7 @@ export default function App() {
         <section className="learning-grid">
           <JamoIndex vowels={lessonData.vowels} consonants={lessonData.consonants} activeSymbol={activeLetterSymbol} onPick={openLetterPage} />
           <CourseLessonListPanel lessons={courseLessons} onOpen={setActiveCourseLessonId} />
+          <SpecialCourseListPanel courses={specialCourses} onOpen={setActiveSpecialCourseId} />
           <NovelListPanel novels={novelData} onOpen={setActiveNovelId} />
         </section>
       ) : (
@@ -152,7 +189,7 @@ export default function App() {
           words={filteredVocabulary}
           allWords={allVocabulary}
           selectedWord={selectedVocabulary}
-          onOpenLesson={setActiveCourseLessonId}
+          onOpenLesson={openLearningItem}
         />
       )}
 
@@ -215,6 +252,44 @@ function CourseLessonListPanel({ lessons, onOpen }) {
               </p>
               <button className="novel-read-button" onClick={() => onOpen(lesson.id)}>
                 開始練習 →
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function SpecialCourseListPanel({ courses, onOpen }) {
+  return (
+    <section className="alphabet-panel special-course-panel">
+      <div className="panel-heading">
+        <span className="special-course-heading-icon" aria-hidden="true">✦</span>
+        <h2>Special courses · 特別課程</h2>
+      </div>
+      <p className="novel-panel-desc">從影片與真實旅行情境整理的短課；先學最常用的單字，再帶回對話裡開口。</p>
+      <div className="special-course-list">
+        {courses.map((course) => (
+          <article key={course.id} className="special-course-card">
+            <div className="special-course-art" aria-hidden="true">
+              <span>{course.heroEmoji ?? "✦"}</span>
+              <small>TRAVEL</small>
+            </div>
+            <div className="special-course-card-body">
+              <div className="special-course-card-topline">
+                <span className="novel-genre-tag">{course.label}</span>
+                <span className="special-course-new-badge">NEW</span>
+              </div>
+              <h3 className="course-card-title">{course.titleKo}</h3>
+              <p className="novel-card-title-zh">{course.titleZh}</p>
+              <p className="novel-card-desc">{course.description}</p>
+              <div className="special-course-stats">
+                <span>{course.dialogues.length} 個情境</span>
+                <span>{course.vocabulary.length} 個單字</span>
+              </div>
+              <button className="novel-read-button special-course-open-button" onClick={() => onOpen(course.id)}>
+                開始特別課程 →
               </button>
             </div>
           </article>
@@ -426,7 +501,7 @@ function NovelReader({ novel, onClose, onOpenLetter }) {
 
 function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
   const [dialogueIndex, setDialogueIndex] = useState(0);
-  const [view, setView] = useState("dialogue");
+  const [view, setView] = useState(lesson.initialView ?? "dialogue");
   const [selectedWord, setSelectedWord] = useState(null);
   const [inspectorPos, setInspectorPos] = useState({ x: 0, y: 0 });
   const [playback, setPlayback] = useState(null);
@@ -566,17 +641,32 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           </button>
         </div>
 
-        <div className="course-hero">
-          <div>
+        <div className={`course-hero ${lesson.isSpecial ? "is-special-course" : ""}`}>
+          <div className="course-hero-copy">
             <p className="lab-label">{lesson.theme}</p>
             <h1>{lesson.titleKo}</h1>
             <p>{lesson.titleZh}</p>
+            {lesson.description ? <p className="course-hero-description">{lesson.description}</p> : null}
           </div>
-          <img className="course-hero-image" src={lesson.media.hero} alt={`${lesson.label} 課程人物`} />
-          <button className="primary-button" onClick={() => speakKorean(lesson.titleKo)}>
-            <Volume2 size={18} />
-            聽標題
-          </button>
+          {lesson.media?.hero ? (
+            <img className="course-hero-image" src={lesson.media.hero} alt={`${lesson.label} 課程人物`} />
+          ) : (
+            <div className="course-hero-art" aria-hidden="true">
+              <span>{lesson.heroEmoji ?? "✦"}</span>
+              <small>LEARN · SPEAK · GO</small>
+            </div>
+          )}
+          <div className="course-hero-actions">
+            <button className="primary-button" onClick={() => speakKorean(lesson.titleKo)}>
+              <Volume2 size={18} />
+              聽標題
+            </button>
+            {lesson.sourceUrl ? (
+              <a className="course-source-link" href={lesson.sourceUrl} target="_blank" rel="noreferrer">
+                觀看影片來源 ↗
+              </a>
+            ) : null}
+          </div>
         </div>
 
         <div className="novel-reader-layout course-reader-layout">
@@ -692,7 +782,11 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                     <strong>{vocab.text}</strong>
                     <span>{vocab.zh}</span>
                     <em>{vocab.roman}</em>
-                    <img className="course-vocab-image" src={vocab.image} alt={`${vocab.zh} 圖片`} />
+                    {vocab.image ? (
+                      <img className="course-vocab-image" src={vocab.image} alt={`${vocab.zh} 圖片`} />
+                    ) : (
+                      <span className="course-vocab-visual" aria-hidden="true">{vocab.emoji ?? "✦"}</span>
+                    )}
                   </button>
                 ))}
               </div>
@@ -793,6 +887,7 @@ function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, 
                     className={`course-number-item ${selectedWord === item ? "is-selected" : ""} ${highlight?.kind === "guide" && highlight.wordIndex === index ? "is-karaoke" : ""}`}
                     onClick={(event) => onWordClick(item, event)}
                   >
+                    {item.emoji ? <span className="course-number-emoji" aria-hidden="true">{item.emoji}</span> : null}
                     <span className="course-number-value">{item.zh}</span>
                     <strong>{item.text}</strong>
                     <em>{item.roman}</em>
@@ -862,7 +957,8 @@ function LearningGuide({ guide, selectedWord, onWordClick, playback, highlight, 
 }
 
 function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
-  const [selectedLessonIds, setSelectedLessonIds] = useState(() => courseLessons.map((lesson) => lesson.id));
+  const lessonOptions = useMemo(() => [...courseLessons, ...specialCourses], []);
+  const [selectedLessonIds, setSelectedLessonIds] = useState(() => lessonOptions.map((lesson) => lesson.id));
   const [isLessonListOpen, setIsLessonListOpen] = useState(false);
   const [detailsWord, setDetailsWord] = useState(selectedWord ?? null);
   const [playback, setPlayback] = useState(null);
@@ -879,7 +975,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
     () => words.filter((item) => item.lessons.some((lesson) => selectedLessonIdSet.has(lesson.id))),
     [words, selectedLessonIdSet]
   );
-  const hasAllLessonsSelected = selectedLessonIds.length === courseLessons.length;
+  const hasAllLessonsSelected = selectedLessonIds.length === lessonOptions.length;
 
   useEffect(() => {
     if (selectedWord) {
@@ -994,7 +1090,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
 
   function selectAllLessons() {
     stopPlayback();
-    setSelectedLessonIds(courseLessons.map((lesson) => lesson.id));
+    setSelectedLessonIds(lessonOptions.map((lesson) => lesson.id));
   }
 
   function clearLessonSelection() {
@@ -1020,14 +1116,14 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
             <div className="vocabulary-lesson-list" id="vocabulary-lesson-list">
               <div className="vocabulary-lesson-list-heading">
                 <strong>選擇要練習的課程</strong>
-                <span>{selectedLessonIds.length} / {courseLessons.length}</span>
+                <span>{selectedLessonIds.length} / {lessonOptions.length}</span>
               </div>
               <div className="vocabulary-lesson-list-actions">
                 <button onClick={selectAllLessons}>全部選取</button>
                 <button onClick={clearLessonSelection}>清除</button>
               </div>
               <div className="vocabulary-lesson-options">
-                {courseLessons.map((lesson) => (
+                {lessonOptions.map((lesson) => (
                   <label key={lesson.id}>
                     <input
                       type="checkbox"
