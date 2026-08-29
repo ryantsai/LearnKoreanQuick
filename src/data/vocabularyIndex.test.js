@@ -13,8 +13,10 @@ describe("buildVocabularyIndex", () => {
     expect(vocabulary.find((item) => item.text === "어제").lessons.some((lesson) => lesson.id === "b1-11")).toBe(true);
     expect(vocabulary.find((item) => item.text === "짬뽕").lessons.some((lesson) => lesson.id === "b1-12")).toBe(true);
     expect(vocabulary.find((item) => item.text === "맥주").lessons.some((lesson) => lesson.id === "b1-12")).toBe(true);
+    expect(vocabulary.find((item) => item.text === "억").lessons.some((lesson) => lesson.id === "b1-13")).toBe(true);
+    expect(vocabulary.find((item) => item.text === "스물").lessons.some((lesson) => lesson.id === "b1-14")).toBe(true);
 
-    for (const lessonId of ["b1-11", "b1-12"]) {
+    for (const lessonId of ["b1-11", "b1-12", "b1-13", "b1-14"]) {
       const lesson = courseLessons.find((item) => item.id === lessonId);
       for (const lessonWord of lesson.vocabulary) {
         const indexedWord = vocabulary.find((item) => item.text === lessonWord.text);

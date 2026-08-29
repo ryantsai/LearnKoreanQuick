@@ -23,7 +23,9 @@ describe("courseLessons", () => {
       "b1-9",
       "b1-10",
       "b1-11",
-      "b1-12"
+      "b1-12",
+      "b1-13",
+      "b1-14"
     ]);
 
     for (const lesson of courseLessons) {
@@ -193,5 +195,22 @@ describe("courseLessons", () => {
     expect(b112.guide.title).toContain("하고、와／과");
     expect(b112.vocabulary).toHaveLength(20);
     expect(b112.guide.practice.prompts).toHaveLength(5);
+  });
+
+  test("adds the 0901 and 0903 lessons with both Korean number systems", () => {
+    const b113 = courseLessons.find((lesson) => lesson.id === "b1-13");
+    const b114 = courseLessons.find((lesson) => lesson.id === "b1-14");
+
+    expect(b113.sourcePdf).toBe("docs/lessons/new/0901.pdf");
+    expect(b113.titleKo).toContain("전화 번호도 압니까");
+    expect(b113.guide.title).toContain("몇 번");
+    expect(b113.vocabulary).toHaveLength(17);
+    expect(b113.guide.practice.prompts).toHaveLength(5);
+
+    expect(b114.sourcePdf).toBe("docs/lessons/new/0903.pdf");
+    expect(b114.titleKo).toContain("외국 사람이 많습니까");
+    expect(b114.guide.title).toContain("數冠形詞");
+    expect(b114.vocabulary).toHaveLength(19);
+    expect(b114.guide.practice.prompts).toHaveLength(5);
   });
 });

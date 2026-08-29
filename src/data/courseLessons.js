@@ -530,6 +530,48 @@ const b112 = [
   word("라면을", "ra-myeon-eul", "泡麵（受詞）")
 ];
 
+const b113 = [
+  word("영", "yeong", "零（一般數字）"),
+  word("공", "gong", "零（電話號碼常用）"),
+  word("일", "il", "一"),
+  word("이", "i", "二"),
+  word("삼", "sam", "三"),
+  word("사", "sa", "四"),
+  word("오", "o", "五"),
+  word("육", "yuk", "六"),
+  word("칠", "chil", "七"),
+  word("팔", "pal", "八"),
+  word("구", "gu", "九"),
+  word("십", "sip", "十"),
+  word("백", "baek", "百"),
+  word("천", "cheon", "千"),
+  word("만", "man", "萬"),
+  word("억", "eok", "億"),
+  word("조", "jo", "兆")
+];
+
+const b114 = [
+  word("하나", "ha-na", "一"),
+  word("둘", "dul", "二"),
+  word("셋", "set", "三"),
+  word("넷", "net", "四"),
+  word("다섯", "da-seot", "五"),
+  word("여섯", "yeo-seot", "六"),
+  word("일곱", "il-gop", "七"),
+  word("여덟", "yeo-deol", "八"),
+  word("아홉", "a-hop", "九"),
+  word("열", "yeol", "十"),
+  word("스물", "seu-mul", "二十"),
+  word("서른", "seo-reun", "三十"),
+  word("마흔", "ma-heun", "四十"),
+  word("쉰", "swin", "五十"),
+  word("예순", "ye-sun", "六十"),
+  word("일흔", "il-heun", "七十"),
+  word("여든", "yeo-deun", "八十"),
+  word("아흔", "a-heun", "九十"),
+  word("백", "baek", "一百")
+];
+
 export const courseLessons = [
   {
     id: "l2-1",
@@ -2157,6 +2199,175 @@ export const courseLessons = [
           { label: "敏俊", text: "啊，我剛剛吃過了。" },
           { label: "冠宇", text: "吃了什麼呢？" },
           { label: "敏俊", text: "剛剛在韓國餐廳吃了紫菜飯捲跟拉麵。" }
+        ]
+      }]
+    }
+  },
+  {
+    id: "b1-13",
+    label: "初級1-13",
+    titleKo: "사무실 전화 번호도 압니까?",
+    titleZh: "辦公室電話號碼也知道嗎？",
+    theme: "漢字數詞與詢問電話號碼的 몇 번",
+    sourcePdf: "docs/lessons/new/0901.pdf",
+    media: { hero: courseAsset("b1-13-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-13-dialogue-person"),
+        objectImage: courseAsset("b1-13-dialogue-object"),
+        lines: [
+          line("관우", "민준 씨, 혹시 선이 씨 휴대폰 번호를 압니까?", "冠宇：敏俊先生，你知道善伊的手機號碼嗎？", [word("민준", "min-jun", "敏俊（人名）"), word("씨", "ssi", "先生／小姐"), word("혹시", "hok-si", "或許／請問"), word("선이", "seon-i", "善伊（人名）"), word("휴대폰", "hyu-dae-pon", "手機"), word("번호를", "beon-ho-reul", "號碼（受詞）"), word("압니까", "am-ni-kka", "知道嗎？")]),
+          line("민준", "모릅니다. 그렇지만 집 전화 번호를 압니다. 집 전화 번호는 222-4499입니다.", "敏俊：不知道，但是知道她家電話。她家電話是 222-4499。", [word("모릅니다", "mo-reum-ni-da", "不知道"), word("그렇지만", "geu-reot-ji-man", "但是"), word("집", "jip", "家"), word("전화", "jeon-hwa", "電話"), word("번호를", "beon-ho-reul", "號碼（受詞）"), word("압니다", "am-ni-da", "知道"), word("번호는", "beon-ho-neun", "號碼（主題）"), word("입니다", "im-ni-da", "是")]),
+          line("관우", "사무실 전화 번호도 압니까?", "冠宇：辦公室電話也知道嗎？", [word("사무실", "sa-mu-sil", "辦公室"), word("전화", "jeon-hwa", "電話"), word("번호도", "beon-ho-do", "號碼也"), word("압니까", "am-ni-kka", "知道嗎？")]),
+          line("민준", "아니요, 집 전화 번호만 압니다.", "敏俊：不，我只知道家裡電話。", [word("아니요", "a-ni-yo", "不／不是"), word("집", "jip", "家"), word("전화", "jeon-hwa", "電話"), word("번호만", "beon-ho-man", "只有號碼"), word("압니다", "am-ni-da", "知道")])
+        ]
+      },
+      {
+        title: "換你說說看（保留空格）",
+        image: courseAsset("b1-13-practice-person"),
+        objectImage: courseAsset("b1-13-practice-visual"),
+        lines: [
+          line("A", "휴대폰이 있습니까?", "有手機嗎？", [word("휴대폰이", "hyu-dae-pon-i", "手機（主語）"), word("있습니까", "it-seum-ni-kka", "有嗎？")]),
+          line("B", "네, ________________.", "是，請自行補充回答。", [word("네", "ne", "是／好的"), word("있습니다", "it-seum-ni-da", "有")]),
+          line("A", "그럼, 번호가 몇 번입니까?", "那麼，號碼是幾號？", [word("그럼", "geu-reom", "那麼"), word("번호가", "beon-ho-ga", "號碼（主語）"), word("몇", "myeot", "幾"), word("번입니까", "beon-im-ni-kka", "是幾號？")]),
+          line("B", "________________________.", "請用漢字數詞逐位念出自己的號碼。", [word("번호는", "beon-ho-neun", "號碼（主題）"), word("입니다", "im-ni-da", "是")])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-13-vocab-page", b113),
+    guide: {
+      label: "數詞與翻譯",
+      title: "漢字數詞與 몇 번（幾號）",
+      hint: "漢字數詞用於電話號碼與較大的數字。電話號碼通常逐位念，0 多念 공；回答時可用 N은／는 N입니다。",
+      sections: [
+        { heading: "0-9：電話號碼逐位念", words: b113.slice(0, 11) },
+        { heading: "位數名稱", words: b113.slice(11) },
+        { heading: "詢問各種號碼", words: [word("몇", "myeot", "幾"), word("번입니까", "beon-im-ni-kka", "是幾號？"), word("전화번호", "jeon-hwa-beon-ho", "電話號碼"), word("휴대폰번호", "hyu-dae-pon-beon-ho", "手機號碼"), word("카드번호", "ka-deu-beon-ho", "卡號"), word("계좌번호", "gye-jwa-beon-ho", "帳號") ] }
+      ],
+      practice: {
+        heading: "固定數字讀法",
+        hint: "先按萬、千、百、十分組；百、千、萬前面的 1 通常省略不念，億和兆前面的 1 要念 일。",
+        valueSuffix: "",
+        items: [
+          { value: "40", answer: word("사십", "sa-sip", "四十") },
+          { value: "68", answer: word("육십팔", "yuk-sip-pal", "六十八") },
+          { value: "102", answer: word("백이", "baek-i", "一百零二") },
+          { value: "119", answer: word("백십구", "baek-sip-gu", "一百一十九") },
+          { value: "3,200", answer: word("삼천이백", "sam-cheon-i-baek", "三千二百") },
+          { value: "4,096", answer: word("사천구십육", "sa-cheon-gu-sip-yuk", "四千零九十六") },
+          { value: "123,658", answer: word("십이만삼천육백오십팔", "sip-i-man-sam-cheon-yuk-baek-o-sip-pal", "十二萬三千六百五十八") },
+          { value: "986,578,423", answer: word("구억팔천육백오십칠만팔천사백이십삼", "gu-eok-pal-cheon-yuk-baek-o-sip-chil-man-pal-cheon-sa-baek-i-sip-sam", "九億八千六百五十七萬八千四百二十三") }
+        ],
+        prompts: [
+          { page: "第 8 頁", ko: "698 / 721 / 1,024 / 2,048 → ______", zh: "請用漢字數詞念出各個數字；來源保留空格。" },
+          { page: "第 8 頁", ko: "5,469,875 / 26,598,541 / 654,841,256 → ______", zh: "請按位數分組念出；來源保留空格。" },
+          { page: "第 12 頁", ko: "신분증 번호가 몇 번입니까?", zh: "身分證號碼是幾號？請自行回答。" },
+          { page: "第 12 頁", ko: "휴대폰 번호가 몇 번입니까?", zh: "手機號碼是幾號？請自行回答。" },
+          { page: "第 14 頁", ko: "그럼, 번호가 몇 번입니까?", zh: "請逐位念出自己的號碼；來源保留回答空格。" }
+        ]
+      },
+      sourceNotes: [{
+        heading: "來源重點",
+        lines: [
+          "韓語有純韓文數詞與漢字數詞兩套系統；本課以漢字數詞和電話號碼為主。",
+          "十、百、千、萬前面的 1 通常不念；億、兆前面的 1 則要念 일。",
+          "몇 加 번 形成『幾號』；電話、卡片、密碼、帳號與房號都能用 몇 번입니까 詢問。",
+          "電話號碼中的 0 常念 공，連字號 - 念 의；本課對話位於第 13 頁。"
+        ]
+      }],
+      references: [{
+        heading: "附錄：對話翻譯（第 17 頁）",
+        entries: [
+          { label: "冠宇", text: "敏俊先生，你知道善伊的手機號碼嗎？" },
+          { label: "敏俊", text: "不知道，但是知道她家電話。她家電話是 222-4499。" },
+          { label: "冠宇", text: "辦公室電話也知道嗎？" },
+          { label: "敏俊", text: "不，我只知道家裡電話。" }
+        ]
+      }]
+    }
+  },
+  {
+    id: "b1-14",
+    label: "初級1-14",
+    titleKo: "기숙사에 외국 사람이 많습니까?",
+    titleZh: "宿舍有很多外國人嗎？",
+    theme: "純韓文數詞、數冠形詞與量詞",
+    sourcePdf: "docs/lessons/new/0903.pdf",
+    media: { hero: courseAsset("b1-14-dialogue-person") },
+    dialogues: [
+      {
+        title: "本課對話",
+        image: courseAsset("b1-14-dialogue-person"),
+        objectImage: courseAsset("b1-14-dialogue-object"),
+        lines: [
+          line("관우", "민준 씨, 기숙사에 외국 사람이 많습니까?", "冠宇：敏俊先生，宿舍有很多外國人嗎？", [word("민준", "min-jun", "敏俊（人名）"), word("씨", "ssi", "先生／小姐"), word("기숙사에", "gi-suk-sa-e", "在宿舍"), word("외국", "oe-guk", "外國"), word("사람이", "sa-ram-i", "人（主語）"), word("많습니까", "man-seum-ni-kka", "多嗎？")]),
+          line("민준", "아니요. 열 명만 있습니다. 미국 사람 세 명하고 중국 사람 다섯 명, 그리고 한국 사람 두 명 있습니다.", "敏俊：不是，只有十個。三個美國人、五個中國人，還有兩個韓國人。", [word("아니요", "a-ni-yo", "不／不是"), word("열", "yeol", "十"), word("명만", "myeong-man", "只有…人"), word("있습니다", "it-seum-ni-da", "有"), word("미국", "mi-guk", "美國"), word("사람", "sa-ram", "人"), word("세", "se", "三（數冠形）"), word("명하고", "myeong-ha-go", "人和…"), word("중국", "jung-guk", "中國"), word("다섯", "da-seot", "五"), word("명", "myeong", "名／人"), word("그리고", "geu-ri-go", "還有／然後"), word("한국", "han-guk", "韓國"), word("두", "du", "二（數冠形）")]),
+          line("관우", "일본 사람 한 명도 없습니까?", "冠宇：一個日本人都沒有嗎？", [word("일본", "il-bon", "日本"), word("사람", "sa-ram", "人"), word("한", "han", "一（數冠形）"), word("명도", "myeong-do", "連一人也"), word("없습니까", "eop-seum-ni-kka", "沒有嗎？")]),
+          line("민준", "네, 없습니다.", "敏俊：是的，沒有。", [word("네", "ne", "是／好的"), word("없습니다", "eop-seum-ni-da", "沒有")])
+        ]
+      },
+      {
+        title: "換你說說看（保留空格）",
+        image: courseAsset("b1-14-practice-person"),
+        objectImage: courseAsset("b1-14-practice-visual"),
+        lines: [
+          line("A", "회사에 사람이 많습니까?", "公司裡人多嗎？", [word("회사에", "hoe-sa-e", "在公司"), word("사람이", "sa-ram-i", "人（主語）"), word("많습니까", "man-seum-ni-kka", "多嗎？")]),
+          line("B", "____________________.", "請依自己的情況回答。", [word("사람이", "sa-ram-i", "人（主語）"), word("있습니다", "it-seum-ni-da", "有")]),
+          line("A", "몇 명 있습니까?", "有幾個人？", [word("몇", "myeot", "幾"), word("명", "myeong", "名／人"), word("있습니까", "it-seum-ni-kka", "有嗎？")]),
+          line("B", "____________________.", "請用純韓文數詞加 명 回答。", [word("명", "myeong", "名／人"), word("있습니다", "it-seum-ni-da", "有")]),
+          line("A", "다 대만 사람입니까?", "全都是台灣人嗎？", [word("다", "da", "全部"), word("대만", "dae-man", "台灣"), word("사람입니까", "sa-ram-im-ni-kka", "是…人嗎？")])
+        ]
+      }
+    ],
+    vocabulary: withSharedVocabImage("b1-14-vocab-page", b114),
+    guide: {
+      label: "數詞與量詞",
+      title: "純韓文數詞、數冠形詞與 N + 數量 + 單位",
+      hint: "純韓文數詞主要用於 1-99。修飾量詞時，1、2、3、4、20 變成 한、두、세、네、스무；語序是名詞在前、數量在後。",
+      sections: [
+        { heading: "純韓文數詞 1-100", words: b114 },
+        { heading: "五個特殊數冠形", words: [word("한", "han", "一（하나 的數冠形）"), word("두", "du", "二（둘 的數冠形）"), word("세", "se", "三（셋 的數冠形）"), word("네", "ne", "四（넷 的數冠形）"), word("스무", "seu-mu", "二十（스물 的數冠形）")] },
+        { heading: "常用量詞", words: [word("명", "myeong", "名／人"), word("병", "byeong", "瓶"), word("그릇", "geu-reut", "碗"), word("잔", "jan", "杯"), word("개", "gae", "個"), word("자루", "ja-ru", "枝"), word("살", "sal", "歲"), word("권", "gwon", "本／冊")] }
+      ],
+      practice: {
+        heading: "固定數量說法",
+        hint: "先說名詞，再說數冠形詞和量詞；比較 하나／둘／셋／넷／스물在量詞前的變化。",
+        valueSuffix: "",
+        items: [
+          { value: "3 瓶", answer: word("세 병", "se- -byeong", "三瓶") },
+          { value: "4 碗", answer: word("네 그릇", "ne- -geu-reut", "四碗") },
+          { value: "5 杯", answer: word("다섯 잔", "da-seot- -jan", "五杯") },
+          { value: "20 個", answer: word("스무 개", "seu-mu- -gae", "二十個") },
+          { value: "21 名", answer: word("스물한 명", "seu-mul-han- -myeong", "二十一名") },
+          { value: "33 枝", answer: word("서른세 자루", "seo-reun-se- -ja-ru", "三十三枝") },
+          { value: "50 歲", answer: word("쉰 살", "swin- -sal", "五十歲") },
+          { value: "85 本", answer: word("여든다섯 권", "yeo-deun-da-seot- -gwon", "八十五本") }
+        ],
+        prompts: [
+          { page: "第 11 頁", ko: "6병 / 10명 / 1잔 / 95권 / 23개 / 100그릇 → ______", zh: "請把數字改成正確的數冠形詞，再加量詞。" },
+          { page: "第 13 頁", ko: "가방에 잡지 다섯 권하고 귤 두 개 있습니다.", zh: "請仿照範例描述五本雜誌和兩個橘子；來源保留空格。" },
+          { page: "第 13 頁", ko: "교실에 학생 네 명하고 선생님 두 명 있습니다.", zh: "請仿照範例描述教室人數；來源保留空格。" },
+          { page: "第 15 頁", ko: "몇 명 있습니까?", zh: "公司有幾個人？請依自己的情況回答。" },
+          { page: "第 15 頁", ko: "다 대만 사람입니까?", zh: "全都是台灣人嗎？請自行回答。" }
+        ]
+      },
+      sourceNotes: [{
+        heading: "來源重點",
+        lines: [
+          "純韓文數詞每個十進位都有不同名稱，現代韓語通常只用於 1-99，100 以上改用漢字數詞。",
+          "修飾單位名詞時，하나、둘、셋、넷、스물分別變成 한、두、세、네、스무。",
+          "數量語序為名詞 + 數冠形詞 + 單位，例如 사람 세 명、커피 다섯 잔。",
+          "本課對話位於第 14 頁，開放式會話練習位於第 15 頁。"
+        ]
+      }],
+      references: [{
+        heading: "附錄：對話翻譯（第 18 頁）",
+        entries: [
+          { label: "冠宇", text: "敏俊先生，宿舍有很多外國人嗎？" },
+          { label: "敏俊", text: "不是，只有十個。三個美國人、五個中國人，還有兩個韓國人。" },
+          { label: "冠宇", text: "一個日本人都沒有嗎？" },
+          { label: "敏俊", text: "是的，沒有。" }
         ]
       }]
     }
