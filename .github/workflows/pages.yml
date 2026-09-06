@@ -34,6 +34,9 @@ jobs:
       - name: Test
         run: npm test
 
+      - name: Verify generated audio coverage
+        run: npm run audio:verify
+
       - name: Build
         run: npm run build
 

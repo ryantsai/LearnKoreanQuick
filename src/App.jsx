@@ -8,7 +8,7 @@ import { letterPages } from "./data/letterPages.js";
 import { lessonData } from "./data/lessonData.js";
 import { novelData } from "./data/novelData.js";
 import { buildDialoguePlaybackItems, buildVocabularyPlaybackItems } from "./utils/playback.js";
-import { speakKorean } from "./utils/speech.js";
+import { speakKorean, speakAudio, stopSpeech } from "./utils/speech.js";
 import { decomposeHangulWord } from "./utils/hangul.js";
 import {
   getTtsSpeed,
@@ -523,29 +523,13 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
     return new Promise((resolve) => window.setTimeout(resolve, ms));
   }
 
-  function speakQueued(text, lang) {
-    if (!("speechSynthesis" in window)) {
-      return Promise.resolve();
-    }
+  const speakQueued = speakAudio;
 
-    return new Promise((resolve) => {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = lang;
-      utterance.rate = (lang === "ko-KR" ? 0.78 : 0.92) * getTtsSpeed();
-      utterance.pitch = 1.04;
-      utterance.onend = resolve;
-      utterance.onerror = resolve;
-      window.speechSynthesis.speak(utterance);
-    });
-  }
-
-  function stopPlayback() {
+  function stopPlayback(cancelAudio = true) {
     playbackRunRef.current += 1;
     setPlayback(null);
     setHighlight(null);
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+    if (cancelAudio) stopSpeech();
   }
 
   async function runPlayback(kind, includeChinese) {
@@ -553,9 +537,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
     playbackRunRef.current = runId;
     setSelectedWord(null);
     setPlayback({ kind, includeChinese });
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
 
     const sentencePause = 2000;
     const vocabPause = 2000;
@@ -576,10 +558,16 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           setHighlight(kind === "dialogue"
             ? { kind, lineIndex: item.lineIndex, tokenIndex: item.tokenIndex }
             : { kind, wordIndex: item.wordIndex });
-          await speakQueued(item.text, "ko-KR");
+          if (!await speakQueued(item.text, "ko-KR")) {
+            if (playbackRunRef.current === runId) stopPlayback(false);
+            return;
+          }
         } else {
           setHighlight(null);
-          await speakQueued(item.text, "zh-TW");
+          if (!await speakQueued(item.text, "zh-TW")) {
+            if (playbackRunRef.current === runId) stopPlayback(false);
+            return;
+          }
         }
 
         if ((kind === "vocabulary" || kind === "guide") && (!includeChinese || item.type === "chinese")) {
@@ -657,7 +645,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
             </div>
           )}
           <div className="course-hero-actions">
-            <button className="primary-button" onClick={() => speakKorean(lesson.titleKo)}>
+            <button className="primary-button" onClick={() => { stopPlayback(); speakKorean(lesson.titleKo); }}>
               <Volume2 size={18} />
               聽標題
             </button>
@@ -749,7 +737,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                       />
                     </p>
                     <p className="course-line-zh">{lineItem.zh}</p>
-                    <button className="letter-sound-button" onClick={() => speakKorean(lineItem.ko)}>
+                    <button className="letter-sound-button" onClick={() => { stopPlayback(); speakKorean(lineItem.ko); }}>
                       <Volume2 size={14} />
                       整句發音
                     </button>
@@ -1015,29 +1003,13 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
     return new Promise((resolve) => window.setTimeout(resolve, ms));
   }
 
-  function speakQueued(text, lang) {
-    if (!("speechSynthesis" in window)) {
-      return Promise.resolve();
-    }
+  const speakQueued = speakAudio;
 
-    return new Promise((resolve) => {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = lang;
-      utterance.rate = (lang === "ko-KR" ? 0.78 : 0.92) * getTtsSpeed();
-      utterance.pitch = 1.04;
-      utterance.onend = resolve;
-      utterance.onerror = resolve;
-      window.speechSynthesis.speak(utterance);
-    });
-  }
-
-  function stopPlayback() {
+  function stopPlayback(cancelAudio = true) {
     playbackRunRef.current += 1;
     setPlayback(null);
     setHighlightedWord(null);
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+    if (cancelAudio) stopSpeech();
   }
 
   async function runPlayback(includeChinese) {
@@ -1047,16 +1019,17 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
     playbackRunRef.current = runId;
     setPlayback({ includeChinese });
     setHighlightedWord(null);
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
 
     const items = buildVocabularyPlaybackItems(selectedLessonWords, includeChinese);
     for (const item of items) {
       if (playbackRunRef.current !== runId) return;
 
       setHighlightedWord(selectedLessonWords[item.wordIndex]?.text ?? null);
-      await speakQueued(item.text, item.type === "korean" ? "ko-KR" : "zh-TW");
+      if (!await speakQueued(item.text, item.type === "korean" ? "ko-KR" : "zh-TW")) {
+        if (playbackRunRef.current === runId) stopPlayback(false);
+        return;
+      }
       if (playbackRunRef.current !== runId) return;
 
       // A brief Korean-to-Chinese beat keeps the translation distinct; the longer
@@ -1186,7 +1159,7 @@ function VocabularyLibrary({ words, allWords, selectedWord, onOpenLesson }) {
               </button>
               <button
                 className="vocabulary-row-icon"
-                onClick={() => speakKorean(item.text)}
+                onClick={() => { stopPlayback(); speakKorean(item.text); }}
                 aria-label={`播放 ${item.text}`}
                 title="播放發音"
               >
@@ -1292,7 +1265,7 @@ function LessonMediaRail({ dialogue }) {
 }
 
 function ClickableKoreanLine({ line, selectedWord, highlight, lineIndex, onWordClick }) {
-  const tokenByText = new Map(line.tokens.map((token) => [token.text, token]));
+  const tokenByText = new Map(line.tokens.map((token) => [token.displayText ?? token.text, token]));
   const segments = line.ko.match(/[A-Za-z0-9가-힣]+|[^A-Za-z0-9가-힣]+/g) ?? [line.ko];
   let tokenIndex = -1;
 
@@ -1307,7 +1280,7 @@ function ClickableKoreanLine({ line, selectedWord, highlight, lineIndex, onWordC
     const isHighlighted =
       highlight?.kind === "dialogue" &&
       highlight.lineIndex === lineIndex &&
-      highlight.tokenIndex === tokenIndex;
+      (highlight.tokenIndex === null || highlight.tokenIndex === tokenIndex);
 
     return (
       <button

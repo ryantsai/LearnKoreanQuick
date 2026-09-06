@@ -5,6 +5,7 @@ describe("playback sequencing", () => {
   const dialogue = {
     lines: [
       {
+        ko: "안녕하세요 유미.",
         zh: "你好。",
         tokens: [
           { text: "안녕하세요" },
@@ -12,26 +13,25 @@ describe("playback sequencing", () => {
         ],
       },
       {
+        ko: "감사합니다.",
         zh: "謝謝。",
         tokens: [{ text: "감사합니다" }],
       },
     ],
   };
 
-  test("builds Korean-only dialogue playback in spoken token order", () => {
+  test("plays full Korean sentences to preserve natural prosody", () => {
     expect(buildDialoguePlaybackItems(dialogue)).toEqual([
-      { type: "korean", text: "안녕하세요", lineIndex: 0, tokenIndex: 0 },
-      { type: "korean", text: "유미", lineIndex: 0, tokenIndex: 1 },
-      { type: "korean", text: "감사합니다", lineIndex: 1, tokenIndex: 0 },
+      { type: "korean", text: "안녕하세요 유미.", lineIndex: 0, tokenIndex: null },
+      { type: "korean", text: "감사합니다.", lineIndex: 1, tokenIndex: null },
     ]);
   });
 
   test("adds Chinese after each dialogue sentence when requested", () => {
     expect(buildDialoguePlaybackItems(dialogue, true)).toEqual([
-      { type: "korean", text: "안녕하세요", lineIndex: 0, tokenIndex: 0 },
-      { type: "korean", text: "유미", lineIndex: 0, tokenIndex: 1 },
+      { type: "korean", text: "안녕하세요 유미.", lineIndex: 0, tokenIndex: null },
       { type: "chinese", text: "你好。", lineIndex: 0, tokenIndex: null },
-      { type: "korean", text: "감사합니다", lineIndex: 1, tokenIndex: 0 },
+      { type: "korean", text: "감사합니다.", lineIndex: 1, tokenIndex: null },
       { type: "chinese", text: "謝謝。", lineIndex: 1, tokenIndex: null },
     ]);
   });

@@ -2712,3 +2712,6 @@ p {
     transition: none !important;
   }
 }
+
+.audio-notice { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 1000; max-width: calc(100vw - 32px); padding: 14px 20px; border-radius: 12px; background: #263445; color: white; box-shadow: 0 4px 16px #0003; }
+.audio-notice button { margin-left: 16px; border: 0; background: transparent; color: white; text-decoration: underline; cursor: pointer; }

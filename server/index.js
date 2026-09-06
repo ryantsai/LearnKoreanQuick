@@ -15,7 +15,8 @@ app.get("/api/lesson", (_req, res) => {
   res.json(lessonData);
 });
 
-app.use(express.static(path.join(rootDir, "dist")));
+app.use(["/audio", "/LearnKoreanQuick/audio"], express.static(path.join(rootDir, "public", "audio")));
+app.use(["/", "/LearnKoreanQuick"], express.static(path.join(rootDir, "dist")));
 app.use("/assets", express.static(path.join(rootDir, "public", "assets")));
 
 app.get("/{*splat}", (_req, res) => {
