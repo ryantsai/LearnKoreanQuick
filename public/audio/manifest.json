@@ -20439,10 +20439,6 @@
       "file": "ecc73a0da2076d7faae0b7be.mp3",
       "duration": 2.0
     },
-    "ko-KR:오늘 “시간” 표현을 연습합니다.": {
-      "file": "b498f05620cbb58d9ad5b863.mp3",
-      "duration": 2.32
-    },
     "ko-KR:오늘 “시월” 표현을 연습합니다.": {
       "file": "eb98ec4cca2f0a8e913ab1d7.mp3",
       "duration": 2.08
@@ -20534,10 +20530,6 @@
     "ko-KR:오늘 “어미” 표현을 연습합니다.": {
       "file": "2b31abd8e485418c91524b7f.mp3",
       "duration": 2.24
-    },
-    "ko-KR:오늘 “언제” 표현을 연습합니다.": {
-      "file": "6f0c1b9aff56f03de975b531.mp3",
-      "duration": 2.8
     },
     "ko-KR:오늘 “얼마” 표현을 연습합니다.": {
       "file": "ce701e999ef0d96e1a1544c6.mp3",
@@ -21007,10 +20999,6 @@
       "file": "29fad9070575601b1b1164c9.mp3",
       "duration": 2.88
     },
-    "ko-KR:오늘 “갑니까” 표현을 연습합니다.": {
-      "file": "2dba9aa2b7d020857a40840f.mp3",
-      "duration": 2.64
-    },
     "ko-KR:오늘 “갑시다” 표현을 연습합니다.": {
       "file": "f7f0193e88730414a511f403.mp3",
       "duration": 2.48
@@ -21057,10 +21045,6 @@
     },
     "ko-KR:오늘 “그래요” 표현을 연습합니다.": {
       "file": "8bf84c76afcae4959746768c.mp3",
-      "duration": 2.56
-    },
-    "ko-KR:오늘 “그러면” 표현을 연습합니다.": {
-      "file": "4bf0afd1fa402ac629c7cf19.mp3",
       "duration": 2.56
     },
     "ko-KR:오늘 “그런가” 표현을 연습합니다.": {
@@ -21395,10 +21379,6 @@
       "file": "56c633be8b304d0043dd1244.mp3",
       "duration": 2.32
     },
-    "ko-KR:오늘 “시간이” 표현을 연습합니다.": {
-      "file": "04650a0ccae1b07be3fa1ebf.mp3",
-      "duration": 2.32
-    },
     "ko-KR:오늘 “신분증” 표현을 연습합니다.": {
       "file": "331adf7725ac6be17fbab285.mp3",
       "duration": 2.56
@@ -21439,10 +21419,6 @@
       "file": "2bec71293eee80a69387c436.mp3",
       "duration": 2.64
     },
-    "ko-KR:오늘 “어디에” 표현을 연습합니다.": {
-      "file": "529ae9180cbfbf29c7233f6c.mp3",
-      "duration": 2.16
-    },
     "ko-KR:오늘 “어떻게” 표현을 연습합니다.": {
       "file": "fd75836cb3a1833619a12467.mp3",
       "duration": 2.72
@@ -21458,10 +21434,6 @@
     "ko-KR:오늘 “여권을” 표현을 연습합니다.": {
       "file": "0cc7b48ccc1bcbe8375ec7ac.mp3",
       "duration": 2.32
-    },
-    "ko-KR:오늘 “여기가” 표현을 연습합니다.": {
-      "file": "6b57157351e7262320b86a9b.mp3",
-      "duration": 2.4
     },
     "ko-KR:오늘 “여기는” 표현을 연습합니다.": {
       "file": "c548b2e98d788162d78fca69.mp3",
@@ -21727,10 +21699,6 @@
       "file": "fa5f1029ba8fe1abe57b5151.mp3",
       "duration": 2.48
     },
-    "ko-KR:오늘 “한국에” 표현을 연습합니다.": {
-      "file": "5de2a2ba5ff672642667d665.mp3",
-      "duration": 3.04
-    },
     "ko-KR:오늘 “한국은” 표현을 연습합니다.": {
       "file": "8a9b16838ab20627224df06f.mp3",
       "duration": 3.04
@@ -21986,10 +21954,6 @@
     "ko-KR:오늘 “싫어해요” 표현을 연습합니다.": {
       "file": "165509d8cd89f358487b9c9d.mp3",
       "duration": 2.8
-    },
-    "ko-KR:오늘 “아니에요” 표현을 연습합니다.": {
-      "file": "dae16183f04db51f4f34479b.mp3",
-      "duration": 2.72
     },
     "ko-KR:오늘 “아닙니까” 표현을 연습합니다.": {
       "file": "ba7931fed089bde3fb23ebdb.mp3",
@@ -23783,10 +23747,6 @@
       "file": "684a1bf72a43b00d0b46c346.mp3",
       "duration": 2.08
     },
-    "zh-TW:在韓國／到韓國": {
-      "file": "b71a99fbc5cf11b0afc0d52c.mp3",
-      "duration": 1.76
-    },
     "zh-TW:搞錯了/誤會了": {
       "file": "da9b00813f76086551481f2f.mp3",
       "duration": 1.68
@@ -23926,11 +23886,1751 @@
     "zh-TW:穿了（입다 → 입 + 었）": {
       "file": "c9b25bb90102ede7d74aed99.mp3",
       "duration": 3.28
+    },
+    "ko-KR:댁": {
+      "file": "5e9fa22d1b958748d66483ef.mp3",
+      "duration": 0.32
+    },
+    "ko-KR:봄": {
+      "file": "301612fc551f91947e03217a.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:주": {
+      "file": "e252fefa5a0e0ea66cb88239.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:가위": {
+      "file": "4275c27c06d724374588e60a.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:가을": {
+      "file": "28bea5feb95cc2890c88fe80.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:건물": {
+      "file": "213451212b86b2d08ee187ed.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:고향": {
+      "file": "134e0ab5ad698341378b704c.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:구일": {
+      "file": "e3f591aeabb100e231b90294.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:글피": {
+      "file": "c9e965712834e7b97c247540.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:다음": {
+      "file": "bc187f0d3df7ca90f8b15f21.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:로션": {
+      "file": "0a383541d51cd41203dacabc.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:린스": {
+      "file": "bcad2024941b0370457e60eb.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:립밤": {
+      "file": "331c88483785d95629387b8c.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:며칠": {
+      "file": "1b5a59953ae92eae329d2ff5.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:모레": {
+      "file": "4d2a7362375eab4b2f2ae16c.mp3",
+      "duration": 0.56
+    },
+    "ko-KR:비누": {
+      "file": "edf721c7cf4209e85b4fd742.mp3",
+      "duration": 0.56
+    },
+    "ko-KR:생일": {
+      "file": "38f4dbea0de228b7f0c3127d.mp3",
+      "duration": 0.56
+    },
+    "ko-KR:샴푸": {
+      "file": "ea86bd7fe29f740d44a788c3.mp3",
+      "duration": 1.68
+    },
+    "ko-KR:수건": {
+      "file": "9f8c36f7d2458c6e31797734.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:스킨": {
+      "file": "2d0060dd2e09ae8054881344.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:여름": {
+      "file": "1ddd98752cc16e5299ffea64.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:예요": {
+      "file": "d024037965bfca191187538d.mp3",
+      "duration": 0.56
+    },
+    "ko-KR:이건": {
+      "file": "1adafc30be7f725c66c50159.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:저쪽": {
+      "file": "f2cf1d9a0aa74c942630638f.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:칠일": {
+      "file": "250e497be84f886c0633e207.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:크림": {
+      "file": "5e01991ed0d46ed895a32245.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:팔일": {
+      "file": "21e8b6569ba8c76d9de47b17.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:향수": {
+      "file": "eaad1b7a31fae3fef2eb73f1.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:갑니다": {
+      "file": "1215041094bf36221c3cda30.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:그글피": {
+      "file": "52db90e367c3850ce701e146.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:그저께": {
+      "file": "3d1434bb34bba74375b9f025.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:김치는": {
+      "file": "e94d881e52e6896f56e539f3.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:로션은": {
+      "file": "cba208ba6e5d8c2df9442a34.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:로션이": {
+      "file": "efd66ade7eb8d7dee5e7a1d6.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:머리끈": {
+      "file": "905687bbe7f496ce86ce5f6a.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:면도기": {
+      "file": "690901a11dfc419b25921e9e.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:면도날": {
+      "file": "c52631a93625a87b4dc154d9.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:백화점": {
+      "file": "a09d195473c7c1b5db610c3c.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:생일이": {
+      "file": "b100bdc8a3f52168460277d8.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:선크림": {
+      "file": "37d14412126f21045674bb03.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:섬나라": {
+      "file": "4545dde066d08650eb495b77.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:십이일": {
+      "file": "fc70cdf02e0d6d1da5526fff.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:십일일": {
+      "file": "2613973c8f2c852fe64a5082.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:에센스": {
+      "file": "55c02c4f26f08aa29f129e8b.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:이에요": {
+      "file": "aaa7e6b1fd7d006071d97f88.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:일본에": {
+      "file": "b3504484a37171f06926cf64.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:저쪽에": {
+      "file": "2cef98c0af8ed07d0f2b0336.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:그끄저께": {
+      "file": "8e4dcdc2865a11c5752a65c8.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:다음 주": {
+      "file": "e379041947b475afb55ff061.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:드라이기": {
+      "file": "ab2b92440bc457dec015d055.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:매니큐어": {
+      "file": "9349788023d2fc3feece2c73.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:목욕타월": {
+      "file": "d82d57ed01e9f55cb570e609.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:바디로션": {
+      "file": "7eb5b64d5725140c7e11475d.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:바디워시": {
+      "file": "1a19e88fc2a4673bbba5d647.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:손톱깎이": {
+      "file": "40d5db5d085edcdd6968ff4c.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:쉐이빙폼": {
+      "file": "96ed0a169b157fc5d7d8cbfc.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:십육일에": {
+      "file": "95573b4fcf2aa5ea900b5764.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:이번 주": {
+      "file": "cfdac0cc49ca64f4afe8b7e4.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:공부합니다": {
+      "file": "27670473e9be5957ebbab6a6.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:드럭스토어": {
+      "file": "11840d125d5d7da4eef1a87b.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:로션이에요": {
+      "file": "2c05db6f17310fd6b8cd6416.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:사람이에요": {
+      "file": "a711db9c916fc6abe335c8de.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:언제입니까": {
+      "file": "1363d1d6abbe99b948300df6.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:에센스예요": {
+      "file": "06e05d441529367d668f4d27.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:음식이에요": {
+      "file": "d2429b58a8ce0c58692d594d.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:학생이에요": {
+      "file": "a9cad835382df7bcffb87081.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:10월 5일": {
+      "file": "c1bb2f03d116f223596d10c4.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:4월 15일": {
+      "file": "55f7d62c436e26a9685e8f6e.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:6월 10일": {
+      "file": "7d79f5da7ed15bf395292c94.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:쇼핑했습니다": {
+      "file": "f1e1ee36d787fb2d82d51306.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:시월 십칠일": {
+      "file": "c38d72264c8a14b3272483a2.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:타이난이에요": {
+      "file": "7c7c84d7ba5ceb9645949ea8.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:학생이에요?": {
+      "file": "0ab9dec32918532ec7f69da8.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:2월 14일에": {
+      "file": "17964bb82d1874c97b3e4dfe.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:4월 10일에": {
+      "file": "141870a5e71c747ef02ba224.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:삼월 이십칠일": {
+      "file": "4fe59a969c76dd65bd943a41.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:회의를 합니다": {
+      "file": "dffed79cc3d658302288acec.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:10월 10일에": {
+      "file": "a5d4259c3013e8d9f0727391.mp3",
+      "duration": 2.0
+    },
+    "ko-KR:동생을 만납니다": {
+      "file": "4fcca54f0b3c75d25845a7bc.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:이것은 시계예요": {
+      "file": "f8480552ca6b0c3157aa58cd.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:학생이 아니에요": {
+      "file": "23f6c4dfe18e9f349669f2bd.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:한국 사람이에요": {
+      "file": "75e2a4dcf1bb09563e30e85c.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:16일에 갑니다.": {
+      "file": "f0e85aaf2e9a3e157760b78c.mp3",
+      "duration": 3.04
+    },
+    "ko-KR:네, 감사합니다.": {
+      "file": "e55cf9c4bfefd91dc2956924.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:이건 로션이에요?": {
+      "file": "ea5e37462adf35033bce2d00.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:저쪽에 있습니다.": {
+      "file": "562336fec499be75c1b261bb.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:한국 사람이에요?": {
+      "file": "142e80e26a7b6f1326cd4cc6.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:그 건물은 학교예요": {
+      "file": "3bad55cd7fe6dda7f9053a6b.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:불고기를 먹었습니다": {
+      "file": "8e3a17c1f8fcf996da8818c2.mp3",
+      "duration": 1.68
+    },
+    "ko-KR:생일이 언제입니까?": {
+      "file": "6999f1b1835f4ab7ed082318.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:며칠 한국에 갑니까?": {
+      "file": "9894a9beef503ba354620d65.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:언제 일본에 갑니까?": {
+      "file": "f5481bd36c40d8fd5e4f77d9.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:여기가 타이난이에요?": {
+      "file": "cf4d14f29e21bdcea34ef713.mp3",
+      "duration": 2.56
+    },
+    "ko-KR:한국 사람이 아니에요": {
+      "file": "2bafaff0314598ac1ed56a1f.mp3",
+      "duration": 1.76
+    },
+    "ko-KR:김치는 과자가 아니에요": {
+      "file": "94b611b637c350323e6f9a31.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:술은 음료수가 아니에요": {
+      "file": "bbd83097f8886a6fad4eac58.mp3",
+      "duration": 1.92
+    },
+    "ko-KR:언제 시간이 있습니까?": {
+      "file": "dbc7d9e94948ca126d751169.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:김치는 대만 음식이에요?": {
+      "file": "d5d5e773d36e0fdb5526f05c.mp3",
+      "duration": 2.0
+    },
+    "ko-KR:내일 학교에서 공부합니다": {
+      "file": "1ee9856a2883507e57e500bb.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:선생님은 남자가 아니에요": {
+      "file": "4c9b58a1bae5e53a3d63e628.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:태국은 섬나라가 아니에요": {
+      "file": "805f192d7acaf6c710977f19.mp3",
+      "duration": 2.16
+    },
+    "ko-KR:시월 십일에 한국에 갑니다": {
+      "file": "449ce1709a5493239380e57f.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:타이베이는 대만의 수도예요": {
+      "file": "b0b99b8cee5ae2c1f9e7c828.mp3",
+      "duration": 2.16
+    },
+    "ko-KR:다음 주 언제 시간 있습니까?": {
+      "file": "51e0b2a912df7aa7c2ace5b2.mp3",
+      "duration": 1.92
+    },
+    "ko-KR:로션이 아니에요. 에센스예요.": {
+      "file": "bba1169d8a507b5634e6551a.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:그러면 로션은 어디에 있습니까?": {
+      "file": "6fee9318395cd692c3bf4652.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:그렇습니까? 며칠 한국에 갑니까?": {
+      "file": "33adf3b1336381c8c3a534ed.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:시월 오일에 고향에서 동생을 만납니다": {
+      "file": "44d83d9c5f1b39532d20e905.mp3",
+      "duration": 3.44
+    },
+    "ko-KR:이월 십사일에 여자 친구하고 영화 봅니다": {
+      "file": "43e4f07c675c908e04573ffa.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:다음 주 시간이 없습니다. 한국에 갑니다.": {
+      "file": "9ac32c1e6d8534c27c26f92e.mp3",
+      "duration": 2.72
+    },
+    "ko-KR:아니요, ____________________.": {
+      "file": "32dbec901e27f923883f9eea.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:아니요. ____________________.": {
+      "file": "88ce14a9a94036f664cad9db.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:네/아니요, ____________________.": {
+      "file": "efd9b9c6f6ed8b6ef1f91d3c.mp3",
+      "duration": 1.92
+    },
+    "zh-TW:冬": {
+      "file": "a0e20baf6ced6310b676e97f.mp3",
+      "duration": 0.48
+    },
+    "zh-TW:夏": {
+      "file": "463b1ad613c3ff788d293894.mp3",
+      "duration": 0.56
+    },
+    "zh-TW:春": {
+      "file": "51301952453ed5d3d551966a.mp3",
+      "duration": 0.56
+    },
+    "zh-TW:秋": {
+      "file": "947cdec522be18faa8a19780.mp3",
+      "duration": 0.64
+    },
+    "zh-TW:7日": {
+      "file": "f74e14c4aae3b9df0fe65558.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:8日": {
+      "file": "e9decf6e6b53965f35c2ce7e.mp3",
+      "duration": 0.64
+    },
+    "zh-TW:9日": {
+      "file": "c7327771c649616d0da1eac2.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:乳液": {
+      "file": "3c2860194ec3c0c22f5cc1e2.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:乳霜": {
+      "file": "d713391c105768039c2297b6.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:公司": {
+      "file": "3e094770c0efa455124eff0f.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:前天": {
+      "file": "088205c68298e2e3e1b74e01.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:剪刀": {
+      "file": "a5b343b153fef9d9424f409d.mp3",
+      "duration": 0.48
+    },
+    "zh-TW:學校": {
+      "file": "fcf4cec32acc43352ed32591.mp3",
+      "duration": 0.64
+    },
+    "zh-TW:島國": {
+      "file": "59c8b2dac8aae1a679bd5cc6.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:後天": {
+      "file": "f279f0cf1e287c3bcd45733d.mp3",
+      "duration": 0.72
+    },
+    "zh-TW:手錶": {
+      "file": "939603d8b97c690175c79fc4.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:故鄉": {
+      "file": "bfb69399193a3374f560616f.mp3",
+      "duration": 0.64
+    },
+    "zh-TW:毛巾": {
+      "file": "9ca769515b679cb091fee70b.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:浴巾": {
+      "file": "55b19c371fb052d843f91eb8.mp3",
+      "duration": 0.64
+    },
+    "zh-TW:肥皂": {
+      "file": "41e31b5232c4378dbbc2c8f8.mp3",
+      "duration": 1.6
+    },
+    "zh-TW:開會": {
+      "file": "f2fdc7ee93e8ecf87e478ba5.mp3",
+      "duration": 0.72
+    },
+    "zh-TW:香水": {
+      "file": "1ea9414f3fd71bdb8c6691a6.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:髮帶": {
+      "file": "a288dff31fd11cf424a1e271.mp3",
+      "duration": 0.56
+    },
+    "zh-TW:11日": {
+      "file": "38df629c901c3bff6275805a.mp3",
+      "duration": 1.28
+    },
+    "zh-TW:12日": {
+      "file": "af886feed667aa5d1b93e3b5.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:上星期": {
+      "file": "0078f7915448faa070d6b8d4.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:下星期": {
+      "file": "42f0cab647d2c25ad55a387f.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:刮鬍刀": {
+      "file": "df57fa45e2e67fde647a6c83.mp3",
+      "duration": 0.72
+    },
+    "zh-TW:刮鬍膏": {
+      "file": "95db9126c44c6d3c66abdc5b.mp3",
+      "duration": 0.72
+    },
+    "zh-TW:化妝水": {
+      "file": "b88495622d55344ec5dab101.mp3",
+      "duration": 1.28
+    },
+    "zh-TW:吹風機": {
+      "file": "bd65eefcd5b7832037d244b5.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:大前天": {
+      "file": "890f42fee6afc0bc22039e9f.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:大後天": {
+      "file": "e185f75e96842b4db577dbdf.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:指甲剪": {
+      "file": "2885bcb7d55e3cbe7fdf8367.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:指甲油": {
+      "file": "618d38fc080f8baa977a6a0d.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:是學生": {
+      "file": "f7a98e23167072bceb5a4956.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:沐浴乳": {
+      "file": "9d8a64dbfa7fb49523a379ad.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:洗面乳": {
+      "file": "62e2a54ae104e8c91a8891f8.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:洗髮精": {
+      "file": "2c7b71bd1f0fda142deebb8f.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:潤髮乳": {
+      "file": "d7c62273b7cfa8b6e98d87e0.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:精華液": {
+      "file": "9d6d481122e2b53a632e74dd.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:藥妝店": {
+      "file": "39404bca89c4e60ee88a8a21.mp3",
+      "duration": 1.12
+    },
+    "zh-TW:護唇膏": {
+      "file": "3d0f1d6e17056ad6598cc3a6.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:這星期": {
+      "file": "af237c361224d279bb9423f8.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:逛街了": {
+      "file": "79ca6c346b75b16b3452f63d.mp3",
+      "duration": 0.72
+    },
+    "zh-TW:防曬乳": {
+      "file": "53de4984f4b5e429b957dda6.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:不是學生": {
+      "file": "32d9988746d8b2253d168eec.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:刮鬍刀片": {
+      "file": "19904b59037d2c616cdbc470.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:吃了烤肉": {
+      "file": "3b7277da43ac86e5af347c33.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:大大後天": {
+      "file": "3f7d5d80bee5e9bd4f9025d7.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:家的尊稱": {
+      "file": "7c4873b9d1719ad417647b75.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:是韓國人": {
+      "file": "0e6852021152dff60c27a4bd.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:百貨公司": {
+      "file": "d33ac2e32e71c4dfa24f9c53.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:這是手錶": {
+      "file": "e39e4c94a17324fbbc0839b8.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:10月5日": {
+      "file": "26e53e029fd2980d3d1a9d5d.mp3",
+      "duration": 1.28
+    },
+    "zh-TW:4月15日": {
+      "file": "ac412f22d18ade0f6df41ffa.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:6月10日": {
+      "file": "a7905d9035988e62084f630d.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:建築物／樓": {
+      "file": "536ad276add5a2724e78b797.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:是學生嗎？": {
+      "file": "be857f785c98102e02f0f7b2.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:酒不是飲料": {
+      "file": "b9b699e4b410091efd76c44b.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:餅乾／零食": {
+      "file": "c22b61fca924cf8f35688847.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:在2月14日": {
+      "file": "5282b6d415d80682757cdc51.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:在4月10日": {
+      "file": "9f1c311c4e533e5913cf2958.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:幾號／哪一天": {
+      "file": "c2008de109948f2aa588a146.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:是韓國人嗎？": {
+      "file": "754a9f30c1f03a01a80126eb.mp3",
+      "duration": 1.04
+    },
+    "zh-TW:泰國不是島國": {
+      "file": "16d7c2ca8c7f3f73eb2ce9e8.mp3",
+      "duration": 1.6
+    },
+    "zh-TW:老師不是男性": {
+      "file": "5868552b4b97083f93bb0471.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:見弟弟／妹妹": {
+      "file": "a33507da57d49c3219e1ee0e.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:乳液（身體用）": {
+      "file": "f9649d43f80b9f0f0c09f3f5.mp3",
+      "duration": 2.08
+    },
+    "zh-TW:什麼時候有空？": {
+      "file": "07a8ee125eb82431fd3f8457.mp3",
+      "duration": 1.12
+    },
+    "zh-TW:在10月10日": {
+      "file": "19617aaee8789588acc16b26.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:店員：在那邊。": {
+      "file": "46492c8eed85597eb0d1cc6c.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:這裡是台南嗎？": {
+      "file": "f903f9792994ea64ea5f6260.mp3",
+      "duration": 1.2
+    },
+    "zh-TW:什麼時候去日本？": {
+      "file": "aa4977b43ca37887edbf4f57.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:台北是台灣的首都": {
+      "file": "b39141359af5f34f534e013a.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:敏俊：16號去。": {
+      "file": "e4f10cdac1094d67f9f98205.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:敏俊：好，謝謝。": {
+      "file": "1eccaa2f76a734c4b602c38a.mp3",
+      "duration": 2.32
+    },
+    "zh-TW:泡菜不是餅乾零食": {
+      "file": "a594e21119f0b2994019f3be.mp3",
+      "duration": 1.92
+    },
+    "zh-TW:生日是什麼時候？": {
+      "file": "c9f0acc66bc2b6c3c2d5c236.mp3",
+      "duration": 1.44
+    },
+    "zh-TW:那棟建築物是學校": {
+      "file": "7b4030bb1df25c9590a62852.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:泡菜是台灣食物嗎？": {
+      "file": "4b230a7d42ea417dfda452f5.mp3",
+      "duration": 1.84
+    },
+    "zh-TW:請回答自己的生日。": {
+      "file": "50b1a0d169a95317bdf6a59d.mp3",
+      "duration": 1.52
+    },
+    "zh-TW:敏俊：這個是乳液嗎？": {
+      "file": "2f0cfa5ac1720211713f5ea5.mp3",
+      "duration": 2.08
+    },
+    "zh-TW:冠宇：下星期何時有空？": {
+      "file": "3a7d6617fdcd1853037a0dbe.mp3",
+      "duration": 2.56
+    },
+    "zh-TW:敏俊：那麼乳液在哪裡？": {
+      "file": "00b79826e0755838718eff46.mp3",
+      "duration": 2.56
+    },
+    "zh-TW:是（接在有尾音名詞後）": {
+      "file": "8f1f01740ec7058f5eb6af41.mp3",
+      "duration": 3.44
+    },
+    "zh-TW:是（接在無尾音名詞後）": {
+      "file": "cca5f08de3305c1d45180e8c.mp3",
+      "duration": 3.6
+    },
+    "zh-TW:冠宇：是嗎？幾號去韓國？": {
+      "file": "86b7329dbbb0b3eb97b85ee4.mp3",
+      "duration": 3.2
+    },
+    "zh-TW:請用日期或相對時間回答。": {
+      "file": "005e9b73c46fb1252c6247d3.mp3",
+      "duration": 2.56
+    },
+    "zh-TW:店員：不是乳液，是精華液。": {
+      "file": "ea3d3e6ca2ccdd0d2027e241.mp3",
+      "duration": 2.88
+    },
+    "zh-TW:敏俊：下星期沒空。回韓國。": {
+      "file": "31e2ea90575646c6e275575a.mp3",
+      "duration": 2.96
+    },
+    "zh-TW:請用 아니에요 完整回答。": {
+      "file": "7c0e0ac96fe71146a7a891d9.mp3",
+      "duration": 2.0
+    },
+    "zh-TW:不是，請用非格式體語尾回答。": {
+      "file": "0518f776d8dbdb710bbc3f35.mp3",
+      "duration": 2.56
+    },
+    "zh-TW:不是。請用非格式體語尾回答。": {
+      "file": "53f6e7f79c61462a51f5c7c4.mp3",
+      "duration": 3.6
+    },
+    "zh-TW:請把 3/27 念成韓文日期。": {
+      "file": "75965f1fbd26816ebc3aa537.mp3",
+      "duration": 4.24
+    },
+    "zh-TW:請選擇肯定或否定，再完成句子。": {
+      "file": "5cdfeb3da6a56350b4aa4b93.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:댁만": {
+      "file": "0afe0041b938474969b46578.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:댁이": {
+      "file": "62df5d558130ee19db987630.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:봄만": {
+      "file": "d65e804d9aad5a854852d338.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:봄이": {
+      "file": "fbc3d18621236bff2f5b6cbf.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:주가": {
+      "file": "c442ae3ac1b7adbd76b1fb29.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:주만": {
+      "file": "0b9f20a319419b9b70222811.mp3",
+      "duration": 0.56
+    },
+    "ko-KR:가위가": {
+      "file": "f8594fa5342f0496da02dbbb.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:가위만": {
+      "file": "2198ede29b1077736503112d.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:가을만": {
+      "file": "41de1289a067f550a6f23248.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:가을이": {
+      "file": "f5540a51d21c624fa036113b.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:건물만": {
+      "file": "f7f72bb46ce11aebf5b33f40.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:건물이": {
+      "file": "fe87f32ee16a3d5e8c0bd95c.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:겨울만": {
+      "file": "204efef7b69ea2a8b41d1d3d.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:겨울이": {
+      "file": "749d8a0c8a759bfce37c6858.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:고향만": {
+      "file": "3e24ca690abe5036b859c54a.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:고향이": {
+      "file": "6676e9f419940a904ee1e816.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:과자가": {
+      "file": "4d4c8c1627b315cf00a84615.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:과자만": {
+      "file": "19e967c090da08c5be0394c2.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:구일만": {
+      "file": "0df65fc424451a63eed4f02e.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:구일이": {
+      "file": "03b19bea204aa81b8dd44a63.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:글피가": {
+      "file": "6209122d12b3bd03cdc7b3a7.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:글피만": {
+      "file": "6a169d8507a3bb6eb2d033eb.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:다음만": {
+      "file": "93eff456f05f3579bd354b91.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:다음이": {
+      "file": "0e9dd1c5c8d124b555a38661.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:댁하고": {
+      "file": "f8ede7d27debf783260fe7e7.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:로션만": {
+      "file": "e8c8c86c2d2f724172be6bf1.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:린스가": {
+      "file": "cec533bb0f4aaf5eef6c08b1.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:린스만": {
+      "file": "0e61ad86f805476de2378169.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:립밤만": {
+      "file": "e6863961475bbd8d957ed84e.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:립밤이": {
+      "file": "104f5ae4f25b6c3fad2d15b9.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:며칠만": {
+      "file": "86007849aa1b9e156044aa07.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:모레가": {
+      "file": "ab9f6370d8a9fc4556a530ab.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:모레만": {
+      "file": "b4b0808f3e24740452905b1e.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:비누가": {
+      "file": "2704505bf49daa0e9390fa9a.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:비누만": {
+      "file": "ae18d35d8bd99943afb90f67.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:생일만": {
+      "file": "481b58b5b5c5fd7394294a06.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:샴푸가": {
+      "file": "e8d5e6d96b448d225485572b.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:샴푸만": {
+      "file": "919c920fbf2d09d288178a3c.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:수건만": {
+      "file": "6aaa3c2b592994e9a3ac6db8.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:수건이": {
+      "file": "5ca5d0ff1b7ad946fc87e7e3.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:스킨만": {
+      "file": "086a2dcbfe7d211044ead5fb.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:스킨이": {
+      "file": "73bb75ca834fb95dd0473c6b.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:시계가": {
+      "file": "4f090a294509e3be679d1726.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:시계만": {
+      "file": "eae00ff2401677c04c80b918.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:여름만": {
+      "file": "3bf6cccacad5c54cb2e4d553.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:여름이": {
+      "file": "ec15fcfddac9e3d02de2f95c.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:예요가": {
+      "file": "09e555ba8f010882d909ea71.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:예요만": {
+      "file": "860a6594c0c3e48acbde8d71.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:이건만": {
+      "file": "8ac38d6f4e3ca1469a08c9cd.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:이건이": {
+      "file": "b4cd46d632c028fe6c1535a0.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:저쪽만": {
+      "file": "0c7afe44578290b98121a225.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:저쪽이": {
+      "file": "e00ec1ba4a9500766596d34f.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:칠일만": {
+      "file": "b1edba5fa9ec4a6cde2273e8.mp3",
+      "duration": 1.92
+    },
+    "ko-KR:칠일이": {
+      "file": "b65dad1f33281e237a1e5d67.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:크림만": {
+      "file": "521a0253c8b75d2c8406f3c2.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:크림이": {
+      "file": "1ef859978f3a0d43ecb4f68d.mp3",
+      "duration": 0.64
+    },
+    "ko-KR:팔일만": {
+      "file": "bbb4a07c7ff053f8fb01ef9f.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:팔일이": {
+      "file": "87e9fe495caab805ea397b03.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:학교가": {
+      "file": "8061617c20b7c9fd90934300.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:학교만": {
+      "file": "d3a6e501495c11ed31ddb653.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:향수가": {
+      "file": "87473098a823b4b5a4d82c4d.mp3",
+      "duration": 0.8
+    },
+    "ko-KR:향수만": {
+      "file": "09a30f818c48b2cc8ba85c85.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:회사가": {
+      "file": "016f11a2cea52b35a7af6e7a.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:회사만": {
+      "file": "8076dd437112a9a9e8b8db32.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:갑니다가": {
+      "file": "69accbc4c233af5f2271bacd.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:갑니다만": {
+      "file": "c2e83e416f9d34531e9ef6ad.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:그글피가": {
+      "file": "9c16ef11ecd1335acae14246.mp3",
+      "duration": 0.72
+    },
+    "ko-KR:그글피만": {
+      "file": "d3a9db569d529133030be45b.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:그저께가": {
+      "file": "b7ec629a66bab4f5a6b1ca48.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:그저께만": {
+      "file": "f9ba51a35d6ce287a6aed317.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:김치는만": {
+      "file": "f7a71dddf8906c7545a3994d.mp3",
+      "duration": 0.88
+    },
+    "ko-KR:김치는이": {
+      "file": "c49f27fb51a52792776940c1.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:로션은만": {
+      "file": "d7bb7539b50e802e0a547d6a.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:로션은이": {
+      "file": "778b9c0e11cbeb1a1415bca0.mp3",
+      "duration": 1.6
+    },
+    "ko-KR:로션이가": {
+      "file": "6aeff7ab9556812d082cbfe8.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:로션이만": {
+      "file": "c008efd5c4eff7252b4b0f47.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:머리끈만": {
+      "file": "308f2c30e7916ade3871c2c8.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:머리끈이": {
+      "file": "9444488b55c4cba33dc60a8b.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:면도기가": {
+      "file": "d18615af36d288aa2bb27254.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:면도기만": {
+      "file": "4600a111b1d1d7eca92f83e8.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:면도날만": {
+      "file": "b3d625476e76e38bf1b9f347.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:면도날이": {
+      "file": "180d477184cc2a83a8fad3e0.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:백화점만": {
+      "file": "da7f59e6e3e834d36eebd3a7.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:백화점이": {
+      "file": "13837de68770d46c321a8312.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:생일이가": {
+      "file": "bb6d83d873c28729c608e5db.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:생일이만": {
+      "file": "087b9de1646e8a5b9cff4d34.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:선크림만": {
+      "file": "16ea5134bf92c46f84a518bf.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:선크림이": {
+      "file": "5c7b7377f803719399ae6e14.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:섬나라가": {
+      "file": "858917fd20470490f2c6f2ab.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:섬나라만": {
+      "file": "528ea392963adbf9ce0effb3.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:십이일만": {
+      "file": "9120a0ae926c7ec32650757a.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:십이일이": {
+      "file": "0f59a7414b4f915568267097.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:십일일만": {
+      "file": "3e1134bde8695b458f04a408.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:십일일이": {
+      "file": "b7aa0370e8ed4017dd64f056.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:에센스가": {
+      "file": "2c872311c755fe78be9d19ac.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:에센스만": {
+      "file": "61124ca07d3e37d09a5a6ebb.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:이에요가": {
+      "file": "7286e1e0720606a92ac41756.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:이에요만": {
+      "file": "7bce845148b2d8bbbeeaab1d.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:일본에가": {
+      "file": "6def5c80c9ba66e8cab903b8.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:일본에만": {
+      "file": "c445eb2f1de5501eaf9b1fc8.mp3",
+      "duration": 0.96
+    },
+    "ko-KR:저쪽에가": {
+      "file": "132523e4356f408b0f3da24a.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:저쪽에만": {
+      "file": "158792fc8ae6c00f05f3666b.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:저쪽하고": {
+      "file": "2532ec473b4a201951bd4d7c.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:그끄저께가": {
+      "file": "194c0cec09f741f70efb520f.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:그끄저께만": {
+      "file": "b831c40feb67b57499afdf26.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:드라이기가": {
+      "file": "79401b2be3b98b85b19a2735.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:드라이기만": {
+      "file": "d671b39a67230398db03b732.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:매니큐어가": {
+      "file": "a451a3512c2a82e97e15b558.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:매니큐어만": {
+      "file": "8fe68560504df6431f0d858a.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:목욕타월만": {
+      "file": "ac4e231f96be6a6f7fe833b1.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:목욕타월이": {
+      "file": "d3d25b1f9c07786449924d77.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:바디로션만": {
+      "file": "7b08ac63f36fa5ee7d3ab0d9.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:바디로션이": {
+      "file": "81422aa3267c4af2e56f67de.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:바디워시가": {
+      "file": "0b435572dfe543b333b1cb82.mp3",
+      "duration": 1.6
+    },
+    "ko-KR:바디워시만": {
+      "file": "f58671189e5e5d5bec626268.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:손톱깎이가": {
+      "file": "fe5256cd6a99f24d5b6f966a.mp3",
+      "duration": 2.08
+    },
+    "ko-KR:손톱깎이만": {
+      "file": "cc588d6ca4a66517b827fd22.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:쉐이빙폼만": {
+      "file": "c75e4428934651653c47c7e1.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:쉐이빙폼이": {
+      "file": "44ba68226067795cbc8831fa.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:십육일에가": {
+      "file": "630f5a3edcdef90bd336f103.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:십육일에만": {
+      "file": "9ada15544df29cd11af289d0.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:공부합니다가": {
+      "file": "f7421a209e8fe6d14d201630.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:공부합니다만": {
+      "file": "3652f73cdf33ebd4aa8c6586.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:드럭스토어가": {
+      "file": "97ef6899179d4a7569d736aa.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:드럭스토어만": {
+      "file": "cff3e490c0633f6b864ddd9a.mp3",
+      "duration": 1.6
+    },
+    "ko-KR:로션이에요가": {
+      "file": "7d9c52c1b7b60588ae5b14a9.mp3",
+      "duration": 1.12
+    },
+    "ko-KR:로션이에요만": {
+      "file": "cffdc09ccaf238cd702a8156.mp3",
+      "duration": 1.6
+    },
+    "ko-KR:사람이에요가": {
+      "file": "c6b2de2ce893b1aebfe01bf3.mp3",
+      "duration": 1.84
+    },
+    "ko-KR:사람이에요만": {
+      "file": "601caf8eb537ad17a839992f.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:언제입니까가": {
+      "file": "90f787f6ad93515264a16582.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:언제입니까만": {
+      "file": "0e9707ef87cdea1d8faf61a8.mp3",
+      "duration": 1.76
+    },
+    "ko-KR:에센스예요가": {
+      "file": "3e1a08724213b62eb62dfd42.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:에센스예요만": {
+      "file": "e40277d6533b86e7be1e666f.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:음식이에요가": {
+      "file": "1b5e65919428d07465bbe6eb.mp3",
+      "duration": 1.52
+    },
+    "ko-KR:음식이에요만": {
+      "file": "c96e3ae5fdb4036c9d2bcbb1.mp3",
+      "duration": 1.04
+    },
+    "ko-KR:학생이에요가": {
+      "file": "0168650ca5fac3a8d009d13e.mp3",
+      "duration": 1.28
+    },
+    "ko-KR:학생이에요만": {
+      "file": "694a46458e87e1e0a09a3d1f.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:쇼핑했습니다가": {
+      "file": "05790bd5d4fbc0091426fb70.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:쇼핑했습니다만": {
+      "file": "39b9f68c7675c40c1ac026ff.mp3",
+      "duration": 1.36
+    },
+    "ko-KR:타이난이에요가": {
+      "file": "a95590344360475a9a2cdd22.mp3",
+      "duration": 1.44
+    },
+    "ko-KR:타이난이에요만": {
+      "file": "1841a72f77ab0d7c5cc7d241.mp3",
+      "duration": 1.2
+    },
+    "ko-KR:오늘 “댁” 표현을 연습합니다.": {
+      "file": "b7f14a90aa53f4f964004fd9.mp3",
+      "duration": 3.6
+    },
+    "ko-KR:오늘 “봄” 표현을 연습합니다.": {
+      "file": "a5b25368df7629e441c8edfc.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “가위” 표현을 연습합니다.": {
+      "file": "6e3217f2141753d09f9b214c.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “가을” 표현을 연습합니다.": {
+      "file": "331c96a3ddcc55c8d8364629.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:오늘 “건물” 표현을 연습합니다.": {
+      "file": "a182d69e7fa0aa13fba1ff2b.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “겨울” 표현을 연습합니다.": {
+      "file": "0d63431ba8d314015e2a49f4.mp3",
+      "duration": 2.96
+    },
+    "ko-KR:오늘 “고향” 표현을 연습합니다.": {
+      "file": "c6191dc5345f77d806563904.mp3",
+      "duration": 2.32
+    },
+    "ko-KR:오늘 “과자” 표현을 연습합니다.": {
+      "file": "701fcac0d1c5d7bf4590cf23.mp3",
+      "duration": 2.16
+    },
+    "ko-KR:오늘 “구일” 표현을 연습합니다.": {
+      "file": "326d009d53d54a098baecd66.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “글피” 표현을 연습합니다.": {
+      "file": "1f48c92fff850ca331d00880.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:오늘 “로션” 표현을 연습합니다.": {
+      "file": "3515a6fb954b2149cb56c2b9.mp3",
+      "duration": 2.08
+    },
+    "ko-KR:오늘 “린스” 표현을 연습합니다.": {
+      "file": "67471f52a06fd7a6d9e39e3b.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “립밤” 표현을 연습합니다.": {
+      "file": "a34a3182f53e8beecdf94373.mp3",
+      "duration": 2.56
+    },
+    "ko-KR:오늘 “며칠” 표현을 연습합니다.": {
+      "file": "3ec2dd0989887a212f8424c7.mp3",
+      "duration": 2.08
+    },
+    "ko-KR:오늘 “모레” 표현을 연습합니다.": {
+      "file": "640d1c289826092719ca4803.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “비누” 표현을 연습합니다.": {
+      "file": "03d12243a1d9651b5cb2c754.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “생일” 표현을 연습합니다.": {
+      "file": "2951fbe7eda0ca3d4f8e2d70.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “샴푸” 표현을 연습합니다.": {
+      "file": "d21e6dff98c98a16d768586e.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “수건” 표현을 연습합니다.": {
+      "file": "32aa18fd93ac2c032874589a.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “스킨” 표현을 연습합니다.": {
+      "file": "3a1cbd4775ed1f3f49ebfe63.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “시계” 표현을 연습합니다.": {
+      "file": "e7cccb0dab786ff729b9c9cd.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “여름” 표현을 연습합니다.": {
+      "file": "352d48f021d3eb0881088b29.mp3",
+      "duration": 2.0
+    },
+    "ko-KR:오늘 “예요” 표현을 연습합니다.": {
+      "file": "53d476405a1c74c6555dd1e4.mp3",
+      "duration": 2.96
+    },
+    "ko-KR:오늘 “이건” 표현을 연습합니다.": {
+      "file": "c9d8bf8a08aa47d2d4ad7b23.mp3",
+      "duration": 2.32
+    },
+    "ko-KR:오늘 “저쪽” 표현을 연습합니다.": {
+      "file": "96801951f9a8d31d1673a8a4.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “칠일” 표현을 연습합니다.": {
+      "file": "22107c33fbc64f7b5b8ee735.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “크림” 표현을 연습합니다.": {
+      "file": "9194f9d6814d59d1edd1b21d.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:오늘 “팔일” 표현을 연습합니다.": {
+      "file": "685d775169ab0d808f1afda4.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:오늘 “학교” 표현을 연습합니다.": {
+      "file": "a963bac49160077ae52ab608.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “향수” 표현을 연습합니다.": {
+      "file": "bfde1e699ac113e72da56f01.mp3",
+      "duration": 2.32
+    },
+    "ko-KR:오늘 “회사” 표현을 연습합니다.": {
+      "file": "ed6e959884214e4f71dcc363.mp3",
+      "duration": 2.56
+    },
+    "ko-KR:오늘 “그글피” 표현을 연습합니다.": {
+      "file": "35f201d6d10511b7889ea82c.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “그저께” 표현을 연습합니다.": {
+      "file": "a82675a6ef8773fd1357bfd2.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “김치는” 표현을 연습합니다.": {
+      "file": "657b89b793f48e25bd9e9bf5.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:오늘 “로션은” 표현을 연습합니다.": {
+      "file": "27f120ae2f8983616f11e62c.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “로션이” 표현을 연습합니다.": {
+      "file": "708cac7376e6abd2a906940d.mp3",
+      "duration": 2.96
+    },
+    "ko-KR:오늘 “머리끈” 표현을 연습합니다.": {
+      "file": "1dd74fe87e65f25850cdccc3.mp3",
+      "duration": 2.24
+    },
+    "ko-KR:오늘 “면도기” 표현을 연습합니다.": {
+      "file": "f19304888d548d81befe088c.mp3",
+      "duration": 2.32
+    },
+    "ko-KR:오늘 “면도날” 표현을 연습합니다.": {
+      "file": "fb68cf31a9a634e8dcdcfb88.mp3",
+      "duration": 2.56
+    },
+    "ko-KR:오늘 “백화점” 표현을 연습합니다.": {
+      "file": "2e1744c106724f27db91a5f0.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “생일이” 표현을 연습합니다.": {
+      "file": "d8089f90a1c217d65abc5043.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “선크림” 표현을 연습합니다.": {
+      "file": "9ca37b1ae466a5bd6d2fc1b1.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “섬나라” 표현을 연습합니다.": {
+      "file": "04f27d79e018aae3d1303f4f.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “십이일” 표현을 연습합니다.": {
+      "file": "97cbb2f8a88a03d0be92a8a4.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “십일일” 표현을 연습합니다.": {
+      "file": "f0411accd38a675090767a5f.mp3",
+      "duration": 2.72
+    },
+    "ko-KR:오늘 “에센스” 표현을 연습합니다.": {
+      "file": "6d113054769c5e62ac54ec77.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “이에요” 표현을 연습합니다.": {
+      "file": "5e86f4cf316bff02dec25a05.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “일본에” 표현을 연습합니다.": {
+      "file": "71fab3db1b05b2689576d0db.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “저쪽에” 표현을 연습합니다.": {
+      "file": "d03e863181bb952e16ee9e39.mp3",
+      "duration": 3.2
+    },
+    "ko-KR:오늘 “그끄저께” 표현을 연습합니다.": {
+      "file": "3e7297eb741ccf39ead43374.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “드라이기” 표현을 연습합니다.": {
+      "file": "e6b25a79a542f10fa58107b5.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “매니큐어” 표현을 연습합니다.": {
+      "file": "1957f3b2ebbd583a9582ad60.mp3",
+      "duration": 3.2
+    },
+    "ko-KR:오늘 “목욕타월” 표현을 연습합니다.": {
+      "file": "a551681e0a4bca7b353c5326.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “바디로션” 표현을 연습합니다.": {
+      "file": "2b713bd0c69989b389c2624a.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “바디워시” 표현을 연습합니다.": {
+      "file": "005b3271fe64df155c3bdf96.mp3",
+      "duration": 2.4
+    },
+    "ko-KR:오늘 “손톱깎이” 표현을 연습합니다.": {
+      "file": "4724178348ec733636442517.mp3",
+      "duration": 2.8
+    },
+    "ko-KR:오늘 “쉐이빙폼” 표현을 연습합니다.": {
+      "file": "c24ac0f4fcba076e2eb6e6bf.mp3",
+      "duration": 2.48
+    },
+    "ko-KR:오늘 “십육일에” 표현을 연습합니다.": {
+      "file": "8e2f8677df575abaa1f82812.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “공부합니다” 표현을 연습합니다.": {
+      "file": "75f3b135ea90e404daa83855.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “드럭스토어” 표현을 연습합니다.": {
+      "file": "4b4324525bef24e97dd98c9b.mp3",
+      "duration": 2.64
+    },
+    "ko-KR:오늘 “로션이에요” 표현을 연습합니다.": {
+      "file": "8f1f5f75c0d00235ea59da1b.mp3",
+      "duration": 3.68
+    },
+    "ko-KR:오늘 “사람이에요” 표현을 연습합니다.": {
+      "file": "8a9ef65152d57d327ee28979.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “언제입니까” 표현을 연습합니다.": {
+      "file": "9a94a1730703c45bae8085c6.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “에센스예요” 표현을 연습합니다.": {
+      "file": "17292f1eecf3a8f41361a345.mp3",
+      "duration": 3.36
+    },
+    "ko-KR:오늘 “음식이에요” 표현을 연습합니다.": {
+      "file": "6837c510945c14737425a2a5.mp3",
+      "duration": 2.96
+    },
+    "ko-KR:오늘 “쇼핑했습니다” 표현을 연습합니다.": {
+      "file": "f90d2719ea52f8fb1245098c.mp3",
+      "duration": 2.88
+    },
+    "ko-KR:오늘 “타이난이에요” 표현을 연습합니다.": {
+      "file": "a7d987ce05a16cd2a3fb3a7f.mp3",
+      "duration": 3.68
+    },
+    "zh-TW:生日": {
+      "file": "c2f9b5442784633b7eba61a5.mp3",
+      "duration": 1.36
+    },
+    "zh-TW:去日本": {
+      "file": "1c0f84dcd09fdead003214f0.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:去韓國": {
+      "file": "43ac1b6f7fef42da74e69842.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:在那邊": {
+      "file": "34114730f8fcbed9702431fb.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:星期／週": {
+      "file": "25a40bb8c389a0601c1e540d.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:是人嗎？": {
+      "file": "a2b08fd7d81dd5e4ca746e0f.mp3",
+      "duration": 0.8
+    },
+    "zh-TW:是精華液": {
+      "file": "eecab60727f7ece17327d1b1.mp3",
+      "duration": 1.12
+    },
+    "zh-TW:下／下一個": {
+      "file": "8fd3f6d05290f72d9131e1eb.mp3",
+      "duration": 1.28
+    },
+    "zh-TW:是乳液嗎？": {
+      "file": "99ee0a6ca241d44887b34617.mp3",
+      "duration": 1.28
+    },
+    "zh-TW:是台南嗎？": {
+      "file": "ec04d9c7ca0bc91dc6a33483.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:是食物嗎？": {
+      "file": "e93113e6b5880c1297b05a58.mp3",
+      "duration": 0.88
+    },
+    "zh-TW:乳液（主語）": {
+      "file": "bc12dc6d1a160fe13f7ea9a5.mp3",
+      "duration": 2.4
+    },
+    "zh-TW:乳液（主題）": {
+      "file": "18020f8f0e081d4017b095a3.mp3",
+      "duration": 2.16
+    },
+    "zh-TW:是什麼時候？": {
+      "file": "6dc274641cfff8ac0953b67e.mp3",
+      "duration": 0.96
+    },
+    "zh-TW:泡菜（主題）": {
+      "file": "5eb3ff9c20dbc30b4e403d9a.mp3",
+      "duration": 2.48
+    },
+    "zh-TW:生日（主語）": {
+      "file": "ffb909aa3464ac3f5d018d27.mp3",
+      "duration": 3.04
+    },
+    "zh-TW:16號（讀作 십육일）": {
+      "file": "1ca22b1ec098c036283cb32b.mp3",
+      "duration": 2.24
+    },
+    "zh-TW:這個（이것은 的縮寫）": {
+      "file": "bca227ce7e831c68ea048202.mp3",
+      "duration": 3.68
     }
   },
-  "totalExpected": 5980,
+  "totalExpected": 6405,
   "complete": true,
-  "peakGpuGB": 4.558,
+  "peakGpuGB": 4.623,
   "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
   "engine": "faster-qwen3-tts 0.4.0"
 }

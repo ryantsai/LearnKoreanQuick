@@ -2,39 +2,11 @@
   "version": 1,
   "entries": [
     {
-      "key": "ko-KR:네",
-      "text": "네",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "d9043f58af65c4de5d509274.mp3"
-    },
-    {
-      "key": "ko-KR:뭘",
-      "text": "뭘",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "6c8086a25e1ebb1296eb82a7.mp3"
-    },
-    {
-      "key": "ko-KR:세",
-      "text": "세",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "54f05ea89ec23dac14351c01.mp3"
-    },
-    {
       "key": "ko-KR:원",
       "text": "원",
       "lang": "ko-KR",
       "priority": 0,
       "file": "b3a0614deaddbf67b75ddfad.mp3"
-    },
-    {
-      "key": "ko-KR:좀",
-      "text": "좀",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "5592067ef1491e1016e19534.mp3"
     },
     {
       "key": "ko-KR:줄",
@@ -51,13 +23,6 @@
       "file": "96f7750ac5ede529678673f4.mp3"
     },
     {
-      "key": "ko-KR:한",
-      "text": "한",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "ef04cf801a7d14efedc5363e.mp3"
-    },
-    {
       "key": "ko-KR:가격",
       "text": "가격",
       "lang": "ko-KR",
@@ -70,13 +35,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "cba95e1bdfa85dd87c446733.mp3"
-    },
-    {
-      "key": "ko-KR:그럼",
-      "text": "그럼",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "172d42371b51c3290cbf2ed7.mp3"
     },
     {
       "key": "ko-KR:깎다",
@@ -100,20 +58,6 @@
       "file": "6c1bfd12a2b022a68689fd51.mp3"
     },
     {
-      "key": "ko-KR:라면",
-      "text": "라면",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "25b6125c0c8031711ab75209.mp3"
-    },
-    {
-      "key": "ko-KR:모두",
-      "text": "모두",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "9fe40358179fadf66554310e.mp3"
-    },
-    {
       "key": "ko-KR:박스",
       "text": "박스",
       "lang": "ko-KR",
@@ -133,13 +77,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "bf27a74360223867c598c0dc.mp3"
-    },
-    {
-      "key": "ko-KR:빙수",
-      "text": "빙수",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "a69e06106923eec71e1048fb.mp3"
     },
     {
       "key": "ko-KR:사과",
@@ -191,13 +128,6 @@
       "file": "aa80178f57cb0fd7844d0d09.mp3"
     },
     {
-      "key": "ko-KR:와플",
-      "text": "와플",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "8fbfa5c89e9927562074b54b.mp3"
-    },
-    {
       "key": "ko-KR:요금",
       "text": "요금",
       "lang": "ko-KR",
@@ -226,13 +156,6 @@
       "file": "296ac6277e9daf9a81b19134.mp3"
     },
     {
-      "key": "ko-KR:주스",
-      "text": "주스",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "4057c00bd4c31aef0be52390.mp3"
-    },
-    {
       "key": "ko-KR:주인",
       "text": "주인",
       "lang": "ko-KR",
@@ -240,32 +163,11 @@
       "file": "ad50ce9be338c7db1cdb55cd.mp3"
     },
     {
-      "key": "ko-KR:짬뽕",
-      "text": "짬뽕",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "278dd1d2b964b2767397a88c.mp3"
-    },
-    {
       "key": "ko-KR:치킨",
       "text": "치킨",
       "lang": "ko-KR",
       "priority": 0,
       "file": "4258b3262a8212c6f7c1074f.mp3"
-    },
-    {
-      "key": "ko-KR:커피",
-      "text": "커피",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "1c0c03c594a42ec1e9ef22ec.mp3"
-    },
-    {
-      "key": "ko-KR:콜라",
-      "text": "콜라",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "ba7eac25c1b10ec9e3d23842.mp3"
     },
     {
       "key": "ko-KR:쿠키",
@@ -289,20 +191,6 @@
       "file": "2a8ac18eb038da485fca9c85.mp3"
     },
     {
-      "key": "ko-KR:홍차",
-      "text": "홍차",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "4e993b0d16f8f12b2e6a8748.mp3"
-    },
-    {
-      "key": "ko-KR:갈비탕",
-      "text": "갈비탕",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "fcd67c5061746c1f39d21f44.mp3"
-    },
-    {
       "key": "ko-KR:개하고",
       "text": "개하고",
       "lang": "ko-KR",
@@ -315,13 +203,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "16e4936fb73368693edb79e4.mp3"
-    },
-    {
-      "key": "ko-KR:그러면",
-      "text": "그러면",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "e2005c2832f697189b0c56d0.mp3"
     },
     {
       "key": "ko-KR:딸기는",
@@ -352,13 +233,6 @@
       "file": "fd463882e3ac1ee1df3e5e86.mp3"
     },
     {
-      "key": "ko-KR:밀크티",
-      "text": "밀크티",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "5a24fe035c8a6b13b6954c9c.mp3"
-    },
-    {
       "key": "ko-KR:박스에",
       "text": "박스에",
       "lang": "ko-KR",
@@ -371,13 +245,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "46fa700228af8b2334959380.mp3"
-    },
-    {
-      "key": "ko-KR:버블티",
-      "text": "버블티",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "74b9924705d07a8f77a3ad0f.mp3"
     },
     {
       "key": "ko-KR:베이글",
@@ -443,13 +310,6 @@
       "file": "9e64ed546b4708b396c60753.mp3"
     },
     {
-      "key": "ko-KR:주세요",
-      "text": "주세요",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "73cb6e73ee806250efff64db.mp3"
-    },
-    {
       "key": "ko-KR:증명서",
       "text": "증명서",
       "lang": "ko-KR",
@@ -485,25 +345,11 @@
       "file": "cc865a50d8ef00449b7089e9.mp3"
     },
     {
-      "key": "ko-KR:계좌번호",
-      "text": "계좌번호",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "b3aba93aef41cd63672dbf97.mp3"
-    },
-    {
       "key": "ko-KR:교환하다",
       "text": "교환하다",
       "lang": "ko-KR",
       "priority": 0,
       "file": "a8ae6353c118df9203df95ac.mp3"
-    },
-    {
-      "key": "ko-KR:드릴까요",
-      "text": "드릴까요",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "ce67e926937b27a3f5b28111.mp3"
     },
     {
       "key": "ko-KR:드립니다",
@@ -555,13 +401,6 @@
       "file": "e45178031f6237b168f872ed.mp3"
     },
     {
-      "key": "ko-KR:없습니다",
-      "text": "없습니다",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "929e4152c0706c058658c7be.mp3"
-    },
-    {
       "key": "ko-KR:오만 원",
       "text": "오만 원",
       "lang": "ko-KR",
@@ -597,13 +436,6 @@
       "file": "bcfaaf339c3b426aa244eb90.mp3"
     },
     {
-      "key": "ko-KR:전화번호",
-      "text": "전화번호",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "24fa3db6f0f44976e8fcb255.mp3"
-    },
-    {
       "key": "ko-KR:주십시오",
       "text": "주십시오",
       "lang": "ko-KR",
@@ -623,13 +455,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "23e877ca27db12ff7deb8232.mp3"
-    },
-    {
-      "key": "ko-KR:커피하고",
-      "text": "커피하고",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "4eac944d31a341eb1d64289c.mp3"
     },
     {
       "key": "ko-KR:팔만 원",
@@ -693,13 +518,6 @@
       "lang": "ko-KR",
       "priority": 0,
       "file": "83f342c766862b679f6d0e51.mp3"
-    },
-    {
-      "key": "ko-KR:죄송합니다",
-      "text": "죄송합니다",
-      "lang": "ko-KR",
-      "priority": 0,
-      "file": "500126e72c42cbcaa74a82c8.mp3"
     },
     {
       "key": "ko-KR:카페 모카",
@@ -1129,20 +947,6 @@
       "file": "2714f5e07753e764c426ccf1.mp3"
     },
     {
-      "key": "zh-TW:刨冰",
-      "text": "刨冰",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "f66c95b82538c6ff1d67a148.mp3"
-    },
-    {
-      "key": "zh-TW:可樂",
-      "text": "可樂",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "f3158202f86da9a843a37b86.mp3"
-    },
-    {
       "key": "zh-TW:吐司",
       "text": "吐司",
       "lang": "zh-TW",
@@ -1171,20 +975,6 @@
       "file": "e7844fa723b7c575e3e7b9ca.mp3"
     },
     {
-      "key": "zh-TW:奶茶",
-      "text": "奶茶",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "fdea6052ad47e6423993d09b.mp3"
-    },
-    {
-      "key": "zh-TW:帳號",
-      "text": "帳號",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "91fece36aabedfe18e033545.mp3"
-    },
-    {
       "key": "zh-TW:很貴",
       "text": "很貴",
       "lang": "zh-TW",
@@ -1197,13 +987,6 @@
       "lang": "zh-TW",
       "priority": 0,
       "file": "5f1461275a8c1dfbf1586ed4.mp3"
-    },
-    {
-      "key": "zh-TW:拿鐵",
-      "text": "拿鐵",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "9d108a86ba33e8a75674d2b6.mp3"
     },
     {
       "key": "zh-TW:收據",
@@ -1220,25 +1003,11 @@
       "file": "05e9c26561ddbade87b83d37.mp3"
     },
     {
-      "key": "zh-TW:果汁",
-      "text": "果汁",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "ab52a026d2680b3f5ccef1ba.mp3"
-    },
-    {
       "key": "zh-TW:沙拉",
       "text": "沙拉",
       "lang": "zh-TW",
       "priority": 0,
       "file": "2e4c0ee6310aa85d97a0bacd.mp3"
-    },
-    {
-      "key": "zh-TW:泡麵",
-      "text": "泡麵",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "23a777f6b14aaa53d48eeb29.mp3"
     },
     {
       "key": "zh-TW:漢堡",
@@ -1267,13 +1036,6 @@
       "lang": "zh-TW",
       "priority": 0,
       "file": "d307c962424868615c6fad45.mp3"
-    },
-    {
-      "key": "zh-TW:紅茶",
-      "text": "紅茶",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "af7775f1adcc53eeeb99a7a4.mp3"
     },
     {
       "key": "zh-TW:草莓",
@@ -1344,13 +1106,6 @@
       "lang": "zh-TW",
       "priority": 0,
       "file": "89e0edffe575275613351e6b.mp3"
-    },
-    {
-      "key": "zh-TW:鬆餅",
-      "text": "鬆餅",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "88d23e7f70fc86971f9d1825.mp3"
     },
     {
       "key": "zh-TW:三明治",
@@ -1444,13 +1199,6 @@
       "file": "f7c986b2f095af6672a69597.mp3"
     },
     {
-      "key": "zh-TW:身分證",
-      "text": "身分證",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "7dcacdcec609c054213a8026.mp3"
-    },
-    {
       "key": "zh-TW:一千韓圓",
       "text": "一千韓圓",
       "lang": "zh-TW",
@@ -1528,13 +1276,6 @@
       "file": "751885e8bb4961ed023d29cc.mp3"
     },
     {
-      "key": "zh-TW:摩卡咖啡",
-      "text": "摩卡咖啡",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "8d09d62bf232d209bd38314d.mp3"
-    },
-    {
       "key": "zh-TW:濃縮咖啡",
       "text": "濃縮咖啡",
       "lang": "zh-TW",
@@ -1549,25 +1290,11 @@
       "file": "3527b627e4f57afbcf075a09.mp3"
     },
     {
-      "key": "zh-TW:熱巧克力",
-      "text": "熱巧克力",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "58fdc980b4248bbe021f3d0f.mp3"
-    },
-    {
       "key": "zh-TW:牛小排湯",
       "text": "牛小排湯",
       "lang": "zh-TW",
       "priority": 0,
       "file": "2ca84725f1c1f3df60702614.mp3"
-    },
-    {
-      "key": "zh-TW:珍珠奶茶",
-      "text": "珍珠奶茶",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "6f4ec0f3187e8c62fe8b409a.mp3"
     },
     {
       "key": "zh-TW:紅茶拿鐵",
@@ -1610,13 +1337,6 @@
       "lang": "zh-TW",
       "priority": 0,
       "file": "5a381553625dadb94101d2d2.mp3"
-    },
-    {
-      "key": "zh-TW:電話號碼",
-      "text": "電話號碼",
-      "lang": "zh-TW",
-      "priority": 0,
-      "file": "e3c1671bfb9e4879cb9aac94.mp3"
     },
     {
       "key": "zh-TW:香草拿鐵",
@@ -1962,6 +1682,13 @@
       "file": "13b103b3d1e04149a6516084.mp3"
     },
     {
+      "key": "ko-KR:네",
+      "text": "네",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "d9043f58af65c4de5d509274.mp3"
+    },
+    {
       "key": "ko-KR:넷",
       "text": "넷",
       "lang": "ko-KR",
@@ -1981,6 +1708,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "d21d575155781121996d061c.mp3"
+    },
+    {
+      "key": "ko-KR:댁",
+      "text": "댁",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "5e9fa22d1b958748d66483ef.mp3"
     },
     {
       "key": "ko-KR:더",
@@ -2060,6 +1794,13 @@
       "file": "3be479f984bb92fa10799567.mp3"
     },
     {
+      "key": "ko-KR:뭘",
+      "text": "뭘",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "6c8086a25e1ebb1296eb82a7.mp3"
+    },
+    {
       "key": "ko-KR:밤",
       "text": "밤",
       "lang": "ko-KR",
@@ -2088,6 +1829,13 @@
       "file": "35d7013f25b5e7eaa17389d7.mp3"
     },
     {
+      "key": "ko-KR:봄",
+      "text": "봄",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "301612fc551f91947e03217a.mp3"
+    },
+    {
       "key": "ko-KR:사",
       "text": "사",
       "lang": "ko-KR",
@@ -2107,6 +1855,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "2b875e994d9634913ef2d667.mp3"
+    },
+    {
+      "key": "ko-KR:세",
+      "text": "세",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "54f05ea89ec23dac14351c01.mp3"
     },
     {
       "key": "ko-KR:셋",
@@ -2284,6 +2039,20 @@
       "file": "7aeae458126e68f509b31a31.mp3"
     },
     {
+      "key": "ko-KR:좀",
+      "text": "좀",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "5592067ef1491e1016e19534.mp3"
+    },
+    {
+      "key": "ko-KR:주",
+      "text": "주",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e252fefa5a0e0ea66cb88239.mp3"
+    },
+    {
       "key": "ko-KR:짐",
       "text": "짐",
       "lang": "ko-KR",
@@ -2340,6 +2109,13 @@
       "file": "8d35aa0e901c8a1544089e88.mp3"
     },
     {
+      "key": "ko-KR:한",
+      "text": "한",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ef04cf801a7d14efedc5363e.mp3"
+    },
+    {
       "key": "ko-KR:해",
       "text": "해",
       "lang": "ko-KR",
@@ -2368,6 +2144,20 @@
       "file": "c46b539d15614ea7e25bdcf4.mp3"
     },
     {
+      "key": "ko-KR:가위",
+      "text": "가위",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4275c27c06d724374588e60a.mp3"
+    },
+    {
+      "key": "ko-KR:가을",
+      "text": "가을",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "28bea5feb95cc2890c88fe80.mp3"
+    },
+    {
       "key": "ko-KR:감사",
       "text": "감사",
       "lang": "ko-KR",
@@ -2389,6 +2179,13 @@
       "file": "96a9a34310cb609f10ebc577.mp3"
     },
     {
+      "key": "ko-KR:건물",
+      "text": "건물",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "213451212b86b2d08ee187ed.mp3"
+    },
+    {
       "key": "ko-KR:검사",
       "text": "검사",
       "lang": "ko-KR",
@@ -2403,6 +2200,13 @@
       "file": "6414c6c3eb38097fb26e5645.mp3"
     },
     {
+      "key": "ko-KR:겨울",
+      "text": "겨울",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a923b7a021e978c920fd9127.mp3"
+    },
+    {
       "key": "ko-KR:경찰",
       "text": "경찰",
       "lang": "ko-KR",
@@ -2415,6 +2219,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "10a0c10865dbe76e22b779d8.mp3"
+    },
+    {
+      "key": "ko-KR:고향",
+      "text": "고향",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "134e0ab5ad698341378b704c.mp3"
     },
     {
       "key": "ko-KR:공간",
@@ -2445,6 +2256,13 @@
       "file": "8e4faad8b81c72d14534c1d1.mp3"
     },
     {
+      "key": "ko-KR:과자",
+      "text": "과자",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "13ced51d3598cdf35988b640.mp3"
+    },
+    {
       "key": "ko-KR:관우",
       "text": "관우",
       "lang": "ko-KR",
@@ -2457,6 +2275,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "e59c820184589b0d450997da.mp3"
+    },
+    {
+      "key": "ko-KR:구일",
+      "text": "구일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e3f591aeabb100e231b90294.mp3"
     },
     {
       "key": "ko-KR:국내",
@@ -2480,11 +2305,25 @@
       "file": "44a312f3e0b606ad0c853923.mp3"
     },
     {
+      "key": "ko-KR:그럼",
+      "text": "그럼",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "172d42371b51c3290cbf2ed7.mp3"
+    },
+    {
       "key": "ko-KR:그릇",
       "text": "그릇",
       "lang": "ko-KR",
       "priority": 1,
       "file": "30de28aa2c4559b616a3695c.mp3"
+    },
+    {
+      "key": "ko-KR:글피",
+      "text": "글피",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "c9e965712834e7b97c247540.mp3"
     },
     {
       "key": "ko-KR:기차",
@@ -2585,6 +2424,13 @@
       "file": "693f840fd5615f43f5eacaa2.mp3"
     },
     {
+      "key": "ko-KR:다음",
+      "text": "다음",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "bc187f0d3df7ca90f8b15f21.mp3"
+    },
+    {
       "key": "ko-KR:달다",
       "text": "달다",
       "lang": "ko-KR",
@@ -2653,6 +2499,34 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "758403c14952e6f5f6889662.mp3"
+    },
+    {
+      "key": "ko-KR:라면",
+      "text": "라면",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "25b6125c0c8031711ab75209.mp3"
+    },
+    {
+      "key": "ko-KR:로션",
+      "text": "로션",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "0a383541d51cd41203dacabc.mp3"
+    },
+    {
+      "key": "ko-KR:린스",
+      "text": "린스",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "bcad2024941b0370457e60eb.mp3"
+    },
+    {
+      "key": "ko-KR:립밤",
+      "text": "립밤",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "331c88483785d95629387b8c.mp3"
     },
     {
       "key": "ko-KR:마흔",
@@ -2732,6 +2606,13 @@
       "file": "6729a08a2bc0a17305ddd9da.mp3"
     },
     {
+      "key": "ko-KR:며칠",
+      "text": "며칠",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1b5a59953ae92eae329d2ff5.mp3"
+    },
+    {
       "key": "ko-KR:명도",
       "text": "명도",
       "lang": "ko-KR",
@@ -2744,6 +2625,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "9fdef5f24e449a0ec062983d.mp3"
+    },
+    {
+      "key": "ko-KR:모두",
+      "text": "모두",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "9fe40358179fadf66554310e.mp3"
+    },
+    {
+      "key": "ko-KR:모레",
+      "text": "모레",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4d2a7362375eab4b2f2ae16c.mp3"
     },
     {
       "key": "ko-KR:목이",
@@ -2921,6 +2816,20 @@
       "file": "a6073dbb00a010b9e8f55d72.mp3"
     },
     {
+      "key": "ko-KR:비누",
+      "text": "비누",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "edf721c7cf4209e85b4fd742.mp3"
+    },
+    {
+      "key": "ko-KR:빙수",
+      "text": "빙수",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a69e06106923eec71e1048fb.mp3"
+    },
+    {
       "key": "ko-KR:사다",
       "text": "사다",
       "lang": "ko-KR",
@@ -3012,6 +2921,20 @@
       "file": "6dde3a6ad2b3daa497ed14c4.mp3"
     },
     {
+      "key": "ko-KR:생일",
+      "text": "생일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "38f4dbea0de228b7f0c3127d.mp3"
+    },
+    {
+      "key": "ko-KR:샴푸",
+      "text": "샴푸",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ea86bd7fe29f740d44a788c3.mp3"
+    },
+    {
       "key": "ko-KR:서른",
       "text": "서른",
       "lang": "ko-KR",
@@ -3052,6 +2975,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "18f915e0fd2764549a328e84.mp3"
+    },
+    {
+      "key": "ko-KR:수건",
+      "text": "수건",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "9f8c36f7d2458c6e31797734.mp3"
     },
     {
       "key": "ko-KR:수도",
@@ -3117,11 +3047,25 @@
       "file": "12e81813d646c5cfd4d923bc.mp3"
     },
     {
+      "key": "ko-KR:스킨",
+      "text": "스킨",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "2d0060dd2e09ae8054881344.mp3"
+    },
+    {
       "key": "ko-KR:시간",
       "text": "시간",
       "lang": "ko-KR",
       "priority": 1,
       "file": "cc65d00269c8bee4c66a1756.mp3"
+    },
+    {
+      "key": "ko-KR:시계",
+      "text": "시계",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "cad80bd2a06ef2d824fddb30.mp3"
     },
     {
       "key": "ko-KR:시월",
@@ -3341,6 +3285,13 @@
       "file": "efffe0d736c2e3765f3d2618.mp3"
     },
     {
+      "key": "ko-KR:여름",
+      "text": "여름",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1ddd98752cc16e5299ffea64.mp3"
+    },
+    {
       "key": "ko-KR:여섯",
       "text": "여섯",
       "lang": "ko-KR",
@@ -3397,6 +3348,13 @@
       "file": "4f94ccede39f1a58091baf01.mp3"
     },
     {
+      "key": "ko-KR:예요",
+      "text": "예요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "d024037965bfca191187538d.mp3"
+    },
+    {
       "key": "ko-KR:오늘",
       "text": "오늘",
       "lang": "ko-KR",
@@ -3437,6 +3395,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "9b1855e978a1cf91fd12722a.mp3"
+    },
+    {
+      "key": "ko-KR:와플",
+      "text": "와플",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "8fbfa5c89e9927562074b54b.mp3"
     },
     {
       "key": "ko-KR:외국",
@@ -3542,6 +3507,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "3d94dcb605bb3b87d42d9e73.mp3"
+    },
+    {
+      "key": "ko-KR:이건",
+      "text": "이건",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1adafc30be7f725c66c50159.mp3"
     },
     {
       "key": "ko-KR:이모",
@@ -3719,6 +3691,13 @@
       "file": "33fa163a583b401997e44027.mp3"
     },
     {
+      "key": "ko-KR:저쪽",
+      "text": "저쪽",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "f2cf1d9a0aa74c942630638f.mp3"
+    },
+    {
       "key": "ko-KR:적다",
       "text": "적다",
       "lang": "ko-KR",
@@ -3810,6 +3789,13 @@
       "file": "2e25c6145e9b7c331a43a7b7.mp3"
     },
     {
+      "key": "ko-KR:주스",
+      "text": "주스",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4057c00bd4c31aef0be52390.mp3"
+    },
+    {
       "key": "ko-KR:주어",
       "text": "주어",
       "lang": "ko-KR",
@@ -3850,6 +3836,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "f9bdc2fda9315f43b9412bd3.mp3"
+    },
+    {
+      "key": "ko-KR:짬뽕",
+      "text": "짬뽕",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "278dd1d2b964b2767397a88c.mp3"
     },
     {
       "key": "ko-KR:찍다",
@@ -3915,6 +3908,13 @@
       "file": "fb0a11fadef10af6eb06a155.mp3"
     },
     {
+      "key": "ko-KR:칠일",
+      "text": "칠일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "250e497be84f886c0633e207.mp3"
+    },
+    {
       "key": "ko-KR:칫솔",
       "text": "칫솔",
       "lang": "ko-KR",
@@ -3936,6 +3936,20 @@
       "file": "09a647bfd8e3dace6f67d60b.mp3"
     },
     {
+      "key": "ko-KR:커피",
+      "text": "커피",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1c0c03c594a42ec1e9ef22ec.mp3"
+    },
+    {
+      "key": "ko-KR:콜라",
+      "text": "콜라",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ba7eac25c1b10ec9e3d23842.mp3"
+    },
+    {
       "key": "ko-KR:크게",
       "text": "크게",
       "lang": "ko-KR",
@@ -3948,6 +3962,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "0669ab543e0d2ed5b47721a9.mp3"
+    },
+    {
+      "key": "ko-KR:크림",
+      "text": "크림",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "5e01991ed0d46ed895a32245.mp3"
     },
     {
       "key": "ko-KR:타고",
@@ -3976,6 +3997,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "4e79efd63689fb0ece6212b9.mp3"
+    },
+    {
+      "key": "ko-KR:팔일",
+      "text": "팔일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "21e8b6569ba8c76d9de47b17.mp3"
     },
     {
       "key": "ko-KR:평후",
@@ -4013,6 +4041,13 @@
       "file": "5b65da3e66623cb9c1bd328b.mp3"
     },
     {
+      "key": "ko-KR:학교",
+      "text": "학교",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "7c3a673438af981aa61325d5.mp3"
+    },
+    {
       "key": "ko-KR:학생",
       "text": "학생",
       "lang": "ko-KR",
@@ -4025,6 +4060,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "ad0a7f2998b05ca918d09ffd.mp3"
+    },
+    {
+      "key": "ko-KR:향수",
+      "text": "향수",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "eaad1b7a31fae3fef2eb73f1.mp3"
     },
     {
       "key": "ko-KR:허리",
@@ -4053,6 +4095,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "8b3bb47cd2e4734aa0f94076.mp3"
+    },
+    {
+      "key": "ko-KR:홍차",
+      "text": "홍차",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4e993b0d16f8f12b2e6a8748.mp3"
+    },
+    {
+      "key": "ko-KR:회사",
+      "text": "회사",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4b50b998a7f464033bf73645.mp3"
     },
     {
       "key": "ko-KR:후에",
@@ -4111,11 +4167,25 @@
       "file": "9fd3321a1f94af0095bf2103.mp3"
     },
     {
+      "key": "ko-KR:갈비탕",
+      "text": "갈비탕",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "fcd67c5061746c1f39d21f44.mp3"
+    },
+    {
       "key": "ko-KR:갑니까",
       "text": "갑니까",
       "lang": "ko-KR",
       "priority": 1,
       "file": "08fadaf469c2a9ef5d4b556f.mp3"
+    },
+    {
+      "key": "ko-KR:갑니다",
+      "text": "갑니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1215041094bf36221c3cda30.mp3"
     },
     {
       "key": "ko-KR:갑시다",
@@ -4195,11 +4265,25 @@
       "file": "9b2b422b27b26ca643dc59f6.mp3"
     },
     {
+      "key": "ko-KR:그글피",
+      "text": "그글피",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "52db90e367c3850ce701e146.mp3"
+    },
+    {
       "key": "ko-KR:그래요",
       "text": "그래요",
       "lang": "ko-KR",
       "priority": 1,
       "file": "103beec6027441b5e757149b.mp3"
+    },
+    {
+      "key": "ko-KR:그러면",
+      "text": "그러면",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e2005c2832f697189b0c56d0.mp3"
     },
     {
       "key": "ko-KR:그런가",
@@ -4223,6 +4307,13 @@
       "file": "34b15e8f267ab40c6a8dd142.mp3"
     },
     {
+      "key": "ko-KR:그저께",
+      "text": "그저께",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "3d1434bb34bba74375b9f025.mp3"
+    },
+    {
       "key": "ko-KR:금요일",
       "text": "금요일",
       "lang": "ko-KR",
@@ -4242,6 +4333,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "8f174c1bb8d9cb330b2b2b1a.mp3"
+    },
+    {
+      "key": "ko-KR:김치는",
+      "text": "김치는",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e94d881e52e6896f56e539f3.mp3"
     },
     {
       "key": "ko-KR:나쁘다",
@@ -4370,6 +4468,20 @@
       "file": "2b79c74845682f4da2f48d73.mp3"
     },
     {
+      "key": "ko-KR:로션은",
+      "text": "로션은",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "cba208ba6e5d8c2df9442a34.mp3"
+    },
+    {
+      "key": "ko-KR:로션이",
+      "text": "로션이",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "efd66ade7eb8d7dee5e7a1d6.mp3"
+    },
+    {
       "key": "ko-KR:마시고",
       "text": "마시고",
       "lang": "ko-KR",
@@ -4426,11 +4538,32 @@
       "file": "1e134afbb9168434f8388776.mp3"
     },
     {
+      "key": "ko-KR:머리끈",
+      "text": "머리끈",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "905687bbe7f496ce86ce5f6a.mp3"
+    },
+    {
       "key": "ko-KR:메뉴판",
       "text": "메뉴판",
       "lang": "ko-KR",
       "priority": 1,
       "file": "bfe5de19748ecb5ce882372f.mp3"
+    },
+    {
+      "key": "ko-KR:면도기",
+      "text": "면도기",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "690901a11dfc419b25921e9e.mp3"
+    },
+    {
+      "key": "ko-KR:면도날",
+      "text": "면도날",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "c52631a93625a87b4dc154d9.mp3"
     },
     {
       "key": "ko-KR:명하고",
@@ -4524,6 +4657,13 @@
       "file": "c6d1c61192a5d1731e88879a.mp3"
     },
     {
+      "key": "ko-KR:밀크티",
+      "text": "밀크티",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "5a24fe035c8a6b13b6954c9c.mp3"
+    },
+    {
       "key": "ko-KR:바닥에",
       "text": "바닥에",
       "lang": "ko-KR",
@@ -4585,6 +4725,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "81f332dc461a2b95ffeafca2.mp3"
+    },
+    {
+      "key": "ko-KR:백화점",
+      "text": "백화점",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a09d195473c7c1b5db610c3c.mp3"
+    },
+    {
+      "key": "ko-KR:버블티",
+      "text": "버블티",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "74b9924705d07a8f77a3ad0f.mp3"
     },
     {
       "key": "ko-KR:번호가",
@@ -4727,6 +4881,13 @@
       "file": "f37ea506db4f2f31bf301bf8.mp3"
     },
     {
+      "key": "ko-KR:생일이",
+      "text": "생일이",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "b100bdc8a3f52168460277d8.mp3"
+    },
+    {
       "key": "ko-KR:선생님",
       "text": "선생님",
       "lang": "ko-KR",
@@ -4739,6 +4900,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "89862ab5bc5033e538f1075c.mp3"
+    },
+    {
+      "key": "ko-KR:선크림",
+      "text": "선크림",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "37d14412126f21045674bb03.mp3"
+    },
+    {
+      "key": "ko-KR:섬나라",
+      "text": "섬나라",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4545dde066d08650eb495b77.mp3"
     },
     {
       "key": "ko-KR:세 병",
@@ -4867,11 +5042,25 @@
       "file": "23c21501da5d35b8b50931ae.mp3"
     },
     {
+      "key": "ko-KR:십이일",
+      "text": "십이일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "fc70cdf02e0d6d1da5526fff.mp3"
+    },
+    {
       "key": "ko-KR:십일월",
       "text": "십일월",
       "lang": "ko-KR",
       "priority": 1,
       "file": "680e3b23792a434f746343e0.mp3"
+    },
+    {
+      "key": "ko-KR:십일일",
+      "text": "십일일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "2613973c8f2c852fe64a5082.mp3"
     },
     {
       "key": "ko-KR:싶어요",
@@ -4963,6 +5152,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "ea3986b976536ce50022b679.mp3"
+    },
+    {
+      "key": "ko-KR:에센스",
+      "text": "에센스",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "55c02c4f26f08aa29f129e8b.mp3"
     },
     {
       "key": "ko-KR:여권을",
@@ -5168,6 +5364,20 @@
       "file": "2d2cec54c36c3c539023c21d.mp3"
     },
     {
+      "key": "ko-KR:이에요",
+      "text": "이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "aaa7e6b1fd7d006071d97f88.mp3"
+    },
+    {
+      "key": "ko-KR:일본에",
+      "text": "일본에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "b3504484a37171f06926cf64.mp3"
+    },
+    {
       "key": "ko-KR:일요일",
       "text": "일요일",
       "lang": "ko-KR",
@@ -5231,6 +5441,13 @@
       "file": "296d424c6f574f914c0a1da2.mp3"
     },
     {
+      "key": "ko-KR:저쪽에",
+      "text": "저쪽에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "2cef98c0af8ed07d0f2b0336.mp3"
+    },
+    {
       "key": "ko-KR:점심을",
       "text": "점심을",
       "lang": "ko-KR",
@@ -5250,6 +5467,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "b5843a3200812d2847d7e35a.mp3"
+    },
+    {
+      "key": "ko-KR:주세요",
+      "text": "주세요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "73cb6e73ee806250efff64db.mp3"
     },
     {
       "key": "ko-KR:주셔서",
@@ -5630,6 +5854,13 @@
       "file": "97d04734994594deff495555.mp3"
     },
     {
+      "key": "ko-KR:계좌번호",
+      "text": "계좌번호",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "b3aba93aef41cd63672dbf97.mp3"
+    },
+    {
       "key": "ko-KR:공부하다",
       "text": "공부하다",
       "lang": "ko-KR",
@@ -5663,6 +5894,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "1267abe654e77189eec0e7a0.mp3"
+    },
+    {
+      "key": "ko-KR:그끄저께",
+      "text": "그끄저께",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "8e4dcdc2865a11c5752a65c8.mp3"
     },
     {
       "key": "ko-KR:그렇군요",
@@ -5735,6 +5973,13 @@
       "file": "36511da1a2b24086feeedff1.mp3"
     },
     {
+      "key": "ko-KR:다음 주",
+      "text": "다음 주",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e379041947b475afb55ff061.mp3"
+    },
+    {
       "key": "ko-KR:덥습니까",
       "text": "덥습니까",
       "lang": "ko-KR",
@@ -5756,11 +6001,25 @@
       "file": "4d0372f0188fc8031a28c4be.mp3"
     },
     {
+      "key": "ko-KR:드라이기",
+      "text": "드라이기",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ab2b92440bc457dec015d055.mp3"
+    },
+    {
       "key": "ko-KR:드릴게요",
       "text": "드릴게요",
       "lang": "ko-KR",
       "priority": 1,
       "file": "bafa51b6ea4898b7a521932e.mp3"
+    },
+    {
+      "key": "ko-KR:드릴까요",
+      "text": "드릴까요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ce67e926937b27a3f5b28111.mp3"
     },
     {
       "key": "ko-KR:듣습니다",
@@ -5812,6 +6071,13 @@
       "file": "9b51770559087048ed95c108.mp3"
     },
     {
+      "key": "ko-KR:매니큐어",
+      "text": "매니큐어",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "9349788023d2fc3feece2c73.mp3"
+    },
+    {
       "key": "ko-KR:맵습니다",
       "text": "맵습니다",
       "lang": "ko-KR",
@@ -5838,6 +6104,27 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "139b62a2a818236295a73b8c.mp3"
+    },
+    {
+      "key": "ko-KR:목욕타월",
+      "text": "목욕타월",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "d82d57ed01e9f55cb570e609.mp3"
+    },
+    {
+      "key": "ko-KR:바디로션",
+      "text": "바디로션",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "7eb5b64d5725140c7e11475d.mp3"
+    },
+    {
+      "key": "ko-KR:바디워시",
+      "text": "바디워시",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1a19e88fc2a4673bbba5d647.mp3"
     },
     {
       "key": "ko-KR:버블티는",
@@ -5952,11 +6239,25 @@
       "file": "f3368f922f8139b7e6777963.mp3"
     },
     {
+      "key": "ko-KR:손톱깎이",
+      "text": "손톱깎이",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "40d5db5d085edcdd6968ff4c.mp3"
+    },
+    {
       "key": "ko-KR:쇼핑하기",
       "text": "쇼핑하기",
       "lang": "ko-KR",
       "priority": 1,
       "file": "66d7d0871575f209fbf6923b.mp3"
+    },
+    {
+      "key": "ko-KR:쉐이빙폼",
+      "text": "쉐이빙폼",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "96ed0a169b157fc5d7d8cbfc.mp3"
     },
     {
       "key": "ko-KR:스무 개",
@@ -5985,6 +6286,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "1fab3878ff52ce0850a94af5.mp3"
+    },
+    {
+      "key": "ko-KR:십육일에",
+      "text": "십육일에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "95573b4fcf2aa5ea900b5764.mp3"
     },
     {
       "key": "ko-KR:아니에요",
@@ -6071,6 +6379,13 @@
       "file": "929d9498a6cc192dc505c079.mp3"
     },
     {
+      "key": "ko-KR:없습니다",
+      "text": "없습니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "929e4152c0706c058658c7be.mp3"
+    },
+    {
       "key": "ko-KR:여행가는",
       "text": "여행가는",
       "lang": "ko-KR",
@@ -6139,6 +6454,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "f9500075c30e09db0886376c.mp3"
+    },
+    {
+      "key": "ko-KR:이번 주",
+      "text": "이번 주",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "cfdac0cc49ca64f4afe8b7e4.mp3"
     },
     {
       "key": "ko-KR:이상해서",
@@ -6223,6 +6545,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "98e5fdd4f6eacd3b8f7c7804.mp3"
+    },
+    {
+      "key": "ko-KR:전화번호",
+      "text": "전화번호",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "24fa3db6f0f44976e8fcb255.mp3"
     },
     {
       "key": "ko-KR:조심해서",
@@ -6323,6 +6652,13 @@
       "file": "a0d9a0c0131322c3c25b9e90.mp3"
     },
     {
+      "key": "ko-KR:커피하고",
+      "text": "커피하고",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4eac944d31a341eb1d64289c.mp3"
+    },
+    {
       "key": "ko-KR:타이베이",
       "text": "타이베이",
       "lang": "ko-KR",
@@ -6421,6 +6757,13 @@
       "file": "155850e010ab5ced622fd66a.mp3"
     },
     {
+      "key": "ko-KR:공부합니다",
+      "text": "공부합니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "27670473e9be5957ebbab6a6.mp3"
+    },
+    {
       "key": "ko-KR:괜찮습니다",
       "text": "괜찮습니다",
       "lang": "ko-KR",
@@ -6456,11 +6799,25 @@
       "file": "b263a31a887bbb73d60a0e87.mp3"
     },
     {
+      "key": "ko-KR:드럭스토어",
+      "text": "드럭스토어",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "11840d125d5d7da4eef1a87b.mp3"
+    },
+    {
       "key": "ko-KR:라오허지에",
       "text": "라오허지에",
       "lang": "ko-KR",
       "priority": 1,
       "file": "2f6e03d005a09a05c3beaae2.mp3"
+    },
+    {
+      "key": "ko-KR:로션이에요",
+      "text": "로션이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "2c05db6f17310fd6b8cd6416.mp3"
     },
     {
       "key": "ko-KR:마셨습니다",
@@ -6580,6 +6937,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "f1a3d88b0c352359d33ab550.mp3"
+    },
+    {
+      "key": "ko-KR:사람이에요",
+      "text": "사람이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a711db9c916fc6abe335c8de.mp3"
     },
     {
       "key": "ko-KR:사람입니까",
@@ -6715,6 +7079,20 @@
       "file": "9fd52cab034a1e18ec6625f5.mp3"
     },
     {
+      "key": "ko-KR:언제입니까",
+      "text": "언제입니까",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1363d1d6abbe99b948300df6.mp3"
+    },
+    {
+      "key": "ko-KR:에센스예요",
+      "text": "에센스예요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "06e05d441529367d668f4d27.mp3"
+    },
+    {
       "key": "ko-KR:여자입니다",
       "text": "여자입니다",
       "lang": "ko-KR",
@@ -6827,6 +7205,13 @@
       "file": "2de3bb62c66b641a72562b54.mp3"
     },
     {
+      "key": "ko-KR:음식이에요",
+      "text": "음식이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "d2429b58a8ce0c58692d594d.mp3"
+    },
+    {
       "key": "ko-KR:음식입니까",
       "text": "음식입니까",
       "lang": "ko-KR",
@@ -6911,6 +7296,13 @@
       "file": "ea08307b0c09ac623cd2873a.mp3"
     },
     {
+      "key": "ko-KR:죄송합니다",
+      "text": "죄송합니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "500126e72c42cbcaa74a82c8.mp3"
+    },
+    {
       "key": "ko-KR:주민등록증",
       "text": "주민등록증",
       "lang": "ko-KR",
@@ -6981,6 +7373,13 @@
       "file": "d260a2310615eac16fe11960.mp3"
     },
     {
+      "key": "ko-KR:학생이에요",
+      "text": "학생이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a9cad835382df7bcffb87081.mp3"
+    },
+    {
       "key": "ko-KR:헷갈렸네요",
       "text": "헷갈렸네요",
       "lang": "ko-KR",
@@ -7000,6 +7399,27 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "6c5a8ffeead434887363f58b.mp3"
+    },
+    {
+      "key": "ko-KR:10월 5일",
+      "text": "10월 5일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "c1bb2f03d116f223596d10c4.mp3"
+    },
+    {
+      "key": "ko-KR:4월 15일",
+      "text": "4월 15일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "55f7d62c436e26a9685e8f6e.mp3"
+    },
+    {
+      "key": "ko-KR:6월 10일",
+      "text": "6월 10일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "7d79f5da7ed15bf395292c94.mp3"
     },
     {
       "key": "ko-KR:가오슝입니다",
@@ -7128,6 +7548,13 @@
       "file": "919edd496fcb7fcd710fcc59.mp3"
     },
     {
+      "key": "ko-KR:쇼핑했습니다",
+      "text": "쇼핑했습니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "f1e1ee36d787fb2d82d51306.mp3"
+    },
+    {
       "key": "ko-KR:수요일이에요",
       "text": "수요일이에요",
       "lang": "ko-KR",
@@ -7140,6 +7567,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "08bba1c5a6a5f1caa7c6c8ca.mp3"
+    },
+    {
+      "key": "ko-KR:시월 십칠일",
+      "text": "시월 십칠일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "c38d72264c8a14b3272483a2.mp3"
     },
     {
       "key": "ko-KR:아침을 먹다",
@@ -7324,6 +7758,13 @@
       "file": "de9b95f4132519a75a5f5433.mp3"
     },
     {
+      "key": "ko-KR:타이난이에요",
+      "text": "타이난이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "7c7c84d7ba5ceb9645949ea8.mp3"
+    },
+    {
       "key": "ko-KR:태풍이 오다",
       "text": "태풍이 오다",
       "lang": "ko-KR",
@@ -7359,6 +7800,13 @@
       "file": "6a2959a6e28a62bde1cc298e.mp3"
     },
     {
+      "key": "ko-KR:학생이에요?",
+      "text": "학생이에요?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "0ab9dec32918532ec7f69da8.mp3"
+    },
+    {
       "key": "ko-KR:한국관광공사",
       "text": "한국관광공사",
       "lang": "ko-KR",
@@ -7371,6 +7819,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "f32b73a00f05349c6aca7409.mp3"
+    },
+    {
+      "key": "ko-KR:2월 14일에",
+      "text": "2월 14일에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "17964bb82d1874c97b3e4dfe.mp3"
+    },
+    {
+      "key": "ko-KR:4월 10일에",
+      "text": "4월 10일에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "141870a5e71c747ef02ba224.mp3"
     },
     {
       "key": "ko-KR:구월 이십팔일",
@@ -7406,6 +7868,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "233afe3fa39e73653ee0bd1a.mp3"
+    },
+    {
+      "key": "ko-KR:삼월 이십칠일",
+      "text": "삼월 이십칠일",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4fe59a969c76dd65bd943a41.mp3"
     },
     {
       "key": "ko-KR:선생님입니까?",
@@ -7506,6 +7975,20 @@
       "file": "195e9270c925b02a36ab83ff.mp3"
     },
     {
+      "key": "ko-KR:회의를 합니다",
+      "text": "회의를 합니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "dffed79cc3d658302288acec.mp3"
+    },
+    {
+      "key": "ko-KR:10월 10일에",
+      "text": "10월 10일에",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "a5d4259c3013e8d9f0727391.mp3"
+    },
+    {
       "key": "ko-KR:공부 안 합니다",
       "text": "공부 안 합니다",
       "lang": "ko-KR",
@@ -7560,6 +8043,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "4f20574574e0317628202b9c.mp3"
+    },
+    {
+      "key": "ko-KR:동생을 만납니다",
+      "text": "동생을 만납니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4fcca54f0b3c75d25845a7bc.mp3"
     },
     {
       "key": "ko-KR:뭐 먹었습니까?",
@@ -7625,6 +8115,13 @@
       "file": "e70e8518c433f43485624769.mp3"
     },
     {
+      "key": "ko-KR:이것은 시계예요",
+      "text": "이것은 시계예요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "f8480552ca6b0c3157aa58cd.mp3"
+    },
+    {
       "key": "ko-KR:이천오백원이에요",
       "text": "이천오백원이에요",
       "lang": "ko-KR",
@@ -7667,11 +8164,25 @@
       "file": "94e14fff64400ced0e2d9872.mp3"
     },
     {
+      "key": "ko-KR:학생이 아니에요",
+      "text": "학생이 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "23f6c4dfe18e9f349669f2bd.mp3"
+    },
+    {
       "key": "ko-KR:학생하고 선생님",
       "text": "학생하고 선생님",
       "lang": "ko-KR",
       "priority": 1,
       "file": "03520f03cdd4887d8c7c5593.mp3"
+    },
+    {
+      "key": "ko-KR:한국 사람이에요",
+      "text": "한국 사람이에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "75e2a4dcf1bb09563e30e85c.mp3"
     },
     {
       "key": "ko-KR:한국이 춥습니다",
@@ -7695,6 +8206,13 @@
       "file": "a78fcbea963623502ca337e2.mp3"
     },
     {
+      "key": "ko-KR:16일에 갑니다.",
+      "text": "16일에 갑니다.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "f0e85aaf2e9a3e157760b78c.mp3"
+    },
+    {
       "key": "ko-KR:같이 운동합니까?",
       "text": "같이 운동합니까?",
       "lang": "ko-KR",
@@ -7714,6 +8232,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "e294c57c36935632f0125b7e.mp3"
+    },
+    {
+      "key": "ko-KR:네, 감사합니다.",
+      "text": "네, 감사합니다.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "e55cf9c4bfefd91dc2956924.mp3"
     },
     {
       "key": "ko-KR:네, 알겠습니다.",
@@ -7779,11 +8304,32 @@
       "file": "5c521abf31e2ff110223873e.mp3"
     },
     {
+      "key": "ko-KR:이건 로션이에요?",
+      "text": "이건 로션이에요?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "ea5e37462adf35033bce2d00.mp3"
+    },
+    {
       "key": "ko-KR:저는 회사원입니다",
       "text": "저는 회사원입니다",
       "lang": "ko-KR",
       "priority": 1,
       "file": "4aab8588723a8efadc535bb3.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽에 있습니다.",
+      "text": "저쪽에 있습니다.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "562336fec499be75c1b261bb.mp3"
+    },
+    {
+      "key": "ko-KR:한국 사람이에요?",
+      "text": "한국 사람이에요?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "142e80e26a7b6f1326cd4cc6.mp3"
     },
     {
       "key": "ko-KR:한국 사람입니까?",
@@ -7821,6 +8367,13 @@
       "file": "28c1a96ea8c890cf91dea8d5.mp3"
     },
     {
+      "key": "ko-KR:그 건물은 학교예요",
+      "text": "그 건물은 학교예요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "3bad55cd7fe6dda7f9053a6b.mp3"
+    },
+    {
       "key": "ko-KR:모두 오천원이에요.",
       "text": "모두 오천원이에요.",
       "lang": "ko-KR",
@@ -7833,6 +8386,20 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "fb5027a427effb38bc6c7bbf.mp3"
+    },
+    {
+      "key": "ko-KR:불고기를 먹었습니다",
+      "text": "불고기를 먹었습니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "8e3a17c1f8fcf996da8818c2.mp3"
+    },
+    {
+      "key": "ko-KR:생일이 언제입니까?",
+      "text": "생일이 언제입니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "6999f1b1835f4ab7ed082318.mp3"
     },
     {
       "key": "ko-KR:십이만삼천육백오십팔",
@@ -7933,6 +8500,13 @@
       "file": "7cd45eb8027d8625fda0d10f.mp3"
     },
     {
+      "key": "ko-KR:며칠 한국에 갑니까?",
+      "text": "며칠 한국에 갑니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "9894a9beef503ba354620d65.mp3"
+    },
+    {
       "key": "ko-KR:방에 문제가 있어요.",
       "text": "방에 문제가 있어요.",
       "lang": "ko-KR",
@@ -7989,11 +8563,25 @@
       "file": "995c4c971f5a1a1212e8d7d0.mp3"
     },
     {
+      "key": "ko-KR:언제 일본에 갑니까?",
+      "text": "언제 일본에 갑니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "f5481bd36c40d8fd5e4f77d9.mp3"
+    },
+    {
       "key": "ko-KR:여권을 보여 주세요.",
       "text": "여권을 보여 주세요.",
       "lang": "ko-KR",
       "priority": 1,
       "file": "ebc9fa7b68611d108e0ba008.mp3"
+    },
+    {
+      "key": "ko-KR:여기가 타이난이에요?",
+      "text": "여기가 타이난이에요?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "cf4d14f29e21bdcea34ef713.mp3"
     },
     {
       "key": "ko-KR:오늘 수영을 합니까?",
@@ -8045,6 +8633,13 @@
       "file": "e88019fb5ef072db33e98d49.mp3"
     },
     {
+      "key": "ko-KR:한국 사람이 아니에요",
+      "text": "한국 사람이 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "2bafaff0314598ac1ed56a1f.mp3"
+    },
+    {
       "key": "ko-KR:한국어가 어렵습니까?",
       "text": "한국어가 어렵습니까?",
       "lang": "ko-KR",
@@ -8064,6 +8659,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "d971f8d17f4d6fa501d9def3.mp3"
+    },
+    {
+      "key": "ko-KR:김치는 과자가 아니에요",
+      "text": "김치는 과자가 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "94b611b637c350323e6f9a31.mp3"
     },
     {
       "key": "ko-KR:김치는 한국 음식입니다",
@@ -8108,6 +8710,13 @@
       "file": "19c0fbf9d21a80f3fac506e9.mp3"
     },
     {
+      "key": "ko-KR:술은 음료수가 아니에요",
+      "text": "술은 음료수가 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "bbd83097f8886a6fad4eac58.mp3"
+    },
+    {
       "key": "ko-KR:아...목이 아픕니다.",
       "text": "아...목이 아픕니다.",
       "lang": "ko-KR",
@@ -8127,6 +8736,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "b098377adf7e4cad468ab91a.mp3"
+    },
+    {
+      "key": "ko-KR:언제 시간이 있습니까?",
+      "text": "언제 시간이 있습니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "dbc7d9e94948ca126d751169.mp3"
     },
     {
       "key": "ko-KR:오늘 학교에 안 갑니다",
@@ -8276,6 +8892,20 @@
       "file": "4918da4c1cb38e6998c67590.mp3"
     },
     {
+      "key": "ko-KR:김치는 대만 음식이에요?",
+      "text": "김치는 대만 음식이에요?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "d5d5e773d36e0fdb5526f05c.mp3"
+    },
+    {
+      "key": "ko-KR:내일 학교에서 공부합니다",
+      "text": "내일 학교에서 공부합니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "1ee9856a2883507e57e500bb.mp3"
+    },
+    {
       "key": "ko-KR:대만 날씨가 어떻습니까?",
       "text": "대만 날씨가 어떻습니까?",
       "lang": "ko-KR",
@@ -8302,6 +8932,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "dff401bc167b0d188aabea47.mp3"
+    },
+    {
+      "key": "ko-KR:선생님은 남자가 아니에요",
+      "text": "선생님은 남자가 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "4c9b58a1bae5e53a3d63e628.mp3"
     },
     {
       "key": "ko-KR:세수하고 이를 닦습니다.",
@@ -8395,6 +9032,13 @@
       "file": "70234201eef3d2edcf06e6d9.mp3"
     },
     {
+      "key": "ko-KR:태국은 섬나라가 아니에요",
+      "text": "태국은 섬나라가 아니에요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "805f192d7acaf6c710977f19.mp3"
+    },
+    {
       "key": "ko-KR:학교에서 영어를 배웁니다",
       "text": "학교에서 영어를 배웁니다",
       "lang": "ko-KR",
@@ -8430,6 +9074,13 @@
       "file": "f04a56442b8888da7e7e0494.mp3"
     },
     {
+      "key": "ko-KR:시월 십일에 한국에 갑니다",
+      "text": "시월 십일에 한국에 갑니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "449ce1709a5493239380e57f.mp3"
+    },
+    {
       "key": "ko-KR:여동생은 간호사가 아닙니다",
       "text": "여동생은 간호사가 아닙니다",
       "lang": "ko-KR",
@@ -8456,6 +9107,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "4cfaecfab991b729e545577e.mp3"
+    },
+    {
+      "key": "ko-KR:타이베이는 대만의 수도예요",
+      "text": "타이베이는 대만의 수도예요",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "b0b99b8cee5ae2c1f9e7c828.mp3"
     },
     {
       "key": "ko-KR:계산서 주세요. 카드 돼요?",
@@ -8598,6 +9256,20 @@
       "file": "74964f916414b347625ab2c3.mp3"
     },
     {
+      "key": "ko-KR:다음 주 언제 시간 있습니까?",
+      "text": "다음 주 언제 시간 있습니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "51e0b2a912df7aa7c2ace5b2.mp3"
+    },
+    {
+      "key": "ko-KR:로션이 아니에요. 에센스예요.",
+      "text": "로션이 아니에요. 에센스예요.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "bba1169d8a507b5634e6551a.mp3"
+    },
+    {
       "key": "ko-KR:수업 끝난 후에 어디에 가요?",
       "text": "수업 끝난 후에 어디에 가요?",
       "lang": "ko-KR",
@@ -8687,6 +9359,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "2c1fb8453e098a6e6a554eda.mp3"
+    },
+    {
+      "key": "ko-KR:그러면 로션은 어디에 있습니까?",
+      "text": "그러면 로션은 어디에 있습니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "6fee9318395cd692c3bf4652.mp3"
     },
     {
       "key": "ko-KR:그럼, 불고기를 같이 먹습니까?",
@@ -8799,6 +9478,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "89c69c6f1bd2f511c489c337.mp3"
+    },
+    {
+      "key": "ko-KR:그렇습니까? 며칠 한국에 갑니까?",
+      "text": "그렇습니까? 며칠 한국에 갑니까?",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "33adf3b1336381c8c3a534ed.mp3"
     },
     {
       "key": "ko-KR:네, 감사합니다. 안녕히 계세요.",
@@ -8934,6 +9620,13 @@
       "file": "8f8e48da90548a34844b245f.mp3"
     },
     {
+      "key": "ko-KR:시월 오일에 고향에서 동생을 만납니다",
+      "text": "시월 오일에 고향에서 동생을 만납니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "44d83d9c5f1b39532d20e905.mp3"
+    },
+    {
       "key": "ko-KR:아니요, 백화점에서 저녁을 먹습니다.",
       "text": "아니요, 백화점에서 저녁을 먹습니다.",
       "lang": "ko-KR",
@@ -9011,6 +9704,13 @@
       "file": "d3fa6ed2cc64b6664b3ded84.mp3"
     },
     {
+      "key": "ko-KR:이월 십사일에 여자 친구하고 영화 봅니다",
+      "text": "이월 십사일에 여자 친구하고 영화 봅니다",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "43e4f07c675c908e04573ffa.mp3"
+    },
+    {
       "key": "ko-KR:관우는 좋습니다. 그렇지만 민준은 나쁩니다",
       "text": "관우는 좋습니다. 그렇지만 민준은 나쁩니다",
       "lang": "ko-KR",
@@ -9030,6 +9730,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "7717fc6cba0468dce07787b8.mp3"
+    },
+    {
+      "key": "ko-KR:다음 주 시간이 없습니다. 한국에 갑니다.",
+      "text": "다음 주 시간이 없습니다. 한국에 갑니다.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "9ac32c1e6d8534c27c26f92e.mp3"
     },
     {
       "key": "ko-KR:대만은 덥습니다. 그렇지만 한국은 춥습니다",
@@ -9207,11 +9914,25 @@
       "file": "39088262caa1a0c816f104b0.mp3"
     },
     {
+      "key": "ko-KR:아니요, ____________________.",
+      "text": "아니요, ____________________.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "32dbec901e27f923883f9eea.mp3"
+    },
+    {
       "key": "ko-KR:아니요, 밥을 먹고 커피숍에서 커피를 마십니다.",
       "text": "아니요, 밥을 먹고 커피숍에서 커피를 마십니다.",
       "lang": "ko-KR",
       "priority": 1,
       "file": "7b251922865bfff56806e0e8.mp3"
+    },
+    {
+      "key": "ko-KR:아니요. ____________________.",
+      "text": "아니요. ____________________.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "88ce14a9a94036f664cad9db.mp3"
     },
     {
       "key": "ko-KR:원래 이렇게 덥습니다. 대만이 습하고 덥습니다.",
@@ -9268,6 +9989,13 @@
       "lang": "ko-KR",
       "priority": 1,
       "file": "314492e04773335331c05114.mp3"
+    },
+    {
+      "key": "ko-KR:네/아니요, ____________________.",
+      "text": "네/아니요, ____________________.",
+      "lang": "ko-KR",
+      "priority": 1,
+      "file": "efd9b9c6f6ed8b6ef1f91d3c.mp3"
     },
     {
       "key": "ko-KR:안녕하세요. 저는 임관우입니다. 만나서 반갑습니다.",
@@ -9529,6 +10257,13 @@
       "file": "599c6fe8e24ee056c1f55722.mp3"
     },
     {
+      "key": "zh-TW:冬",
+      "text": "冬",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a0e20baf6ced6310b676e97f.mp3"
+    },
+    {
       "key": "zh-TW:冷",
       "text": "冷",
       "lang": "zh-TW",
@@ -9576,6 +10311,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "0e4d16f6eea16028b891fb89.mp3"
+    },
+    {
+      "key": "zh-TW:夏",
+      "text": "夏",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "463b1ad613c3ff788d293894.mp3"
     },
     {
       "key": "zh-TW:多",
@@ -9639,6 +10381,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "03b11fe4c02e9312bb79a0ec.mp3"
+    },
+    {
+      "key": "zh-TW:春",
+      "text": "春",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "51301952453ed5d3d551966a.mp3"
     },
     {
       "key": "zh-TW:是",
@@ -9744,6 +10493,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "a910fbc67735c63404dc1333.mp3"
+    },
+    {
+      "key": "zh-TW:秋",
+      "text": "秋",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "947cdec522be18faa8a19780.mp3"
     },
     {
       "key": "zh-TW:聽",
@@ -9928,6 +10684,13 @@
       "file": "19fbce5ec4baeae5f683f33b.mp3"
     },
     {
+      "key": "zh-TW:7日",
+      "text": "7日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f74e14c4aae3b9df0fe65558.mp3"
+    },
+    {
       "key": "zh-TW:7月",
       "text": "7月",
       "lang": "zh-TW",
@@ -9935,11 +10698,25 @@
       "file": "66e73b333eb7fa0737cbfbe6.mp3"
     },
     {
+      "key": "zh-TW:8日",
+      "text": "8日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "e9decf6e6b53965f35c2ce7e.mp3"
+    },
+    {
       "key": "zh-TW:8月",
       "text": "8月",
       "lang": "zh-TW",
       "priority": 1,
       "file": "79cef42647a5f384344c0df2.mp3"
+    },
+    {
+      "key": "zh-TW:9日",
+      "text": "9日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "c7327771c649616d0da1eac2.mp3"
     },
     {
       "key": "zh-TW:9月",
@@ -10047,6 +10824,20 @@
       "file": "1cd6d1b73faad2bff1973071.mp3"
     },
     {
+      "key": "zh-TW:乳液",
+      "text": "乳液",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3c2860194ec3c0c22f5cc1e2.mp3"
+    },
+    {
+      "key": "zh-TW:乳霜",
+      "text": "乳霜",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "d713391c105768039c2297b6.mp3"
+    },
+    {
       "key": "zh-TW:乾燥",
       "text": "乾燥",
       "lang": "zh-TW",
@@ -10131,6 +10922,13 @@
       "file": "d6eb2d8b3f65767c27fd8a6b.mp3"
     },
     {
+      "key": "zh-TW:公司",
+      "text": "公司",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3e094770c0efa455124eff0f.mp3"
+    },
+    {
       "key": "zh-TW:公車",
       "text": "公車",
       "lang": "zh-TW",
@@ -10159,6 +10957,13 @@
       "file": "5bc2d79ccd36c7cc38894e79.mp3"
     },
     {
+      "key": "zh-TW:刨冰",
+      "text": "刨冰",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f66c95b82538c6ff1d67a148.mp3"
+    },
+    {
       "key": "zh-TW:刮風",
       "text": "刮風",
       "lang": "zh-TW",
@@ -10171,6 +10976,20 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "65afe88de6fbf08d2fb2a6c7.mp3"
+    },
+    {
+      "key": "zh-TW:前天",
+      "text": "前天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "088205c68298e2e3e1b74e01.mp3"
+    },
+    {
+      "key": "zh-TW:剪刀",
+      "text": "剪刀",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a5b343b153fef9d9424f409d.mp3"
     },
     {
       "key": "zh-TW:北部",
@@ -10199,6 +11018,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "ba0539240093cf010f2da429.mp3"
+    },
+    {
+      "key": "zh-TW:可樂",
+      "text": "可樂",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f3158202f86da9a843a37b86.mp3"
     },
     {
       "key": "zh-TW:台中",
@@ -10397,6 +11223,13 @@
       "file": "b14777a1338fa94a5ab2ffec.mp3"
     },
     {
+      "key": "zh-TW:奶茶",
+      "text": "奶茶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "fdea6052ad47e6423993d09b.mp3"
+    },
+    {
       "key": "zh-TW:好吃",
       "text": "好吃",
       "lang": "zh-TW",
@@ -10409,6 +11242,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "1b2219299141dc158c3e9276.mp3"
+    },
+    {
+      "key": "zh-TW:學校",
+      "text": "學校",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "fcf4cec32acc43352ed32591.mp3"
     },
     {
       "key": "zh-TW:學生",
@@ -10439,6 +11279,13 @@
       "file": "fe9e90c38939a08ea90ee433.mp3"
     },
     {
+      "key": "zh-TW:島國",
+      "text": "島國",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "59c8b2dac8aae1a679bd5cc6.mp3"
+    },
+    {
       "key": "zh-TW:左邊",
       "text": "左邊",
       "lang": "zh-TW",
@@ -10453,6 +11300,13 @@
       "file": "1cb20f157bf1cccc58264b37.mp3"
     },
     {
+      "key": "zh-TW:帳號",
+      "text": "帳號",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "91fece36aabedfe18e033545.mp3"
+    },
+    {
       "key": "zh-TW:廚師",
       "text": "廚師",
       "lang": "zh-TW",
@@ -10465,6 +11319,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "0deb24b9579adf11f7b65231.mp3"
+    },
+    {
+      "key": "zh-TW:後天",
+      "text": "後天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f279f0cf1e287c3bcd45733d.mp3"
     },
     {
       "key": "zh-TW:必定",
@@ -10523,6 +11384,13 @@
       "file": "c8571f913eb5354f277a9856.mp3"
     },
     {
+      "key": "zh-TW:手錶",
+      "text": "手錶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "939603d8b97c690175c79fc4.mp3"
+    },
+    {
       "key": "zh-TW:打雷",
       "text": "打雷",
       "lang": "zh-TW",
@@ -10544,6 +11412,13 @@
       "file": "d7b6dc0e4389402679ed6ac0.mp3"
     },
     {
+      "key": "zh-TW:拿鐵",
+      "text": "拿鐵",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "9d108a86ba33e8a75674d2b6.mp3"
+    },
+    {
       "key": "zh-TW:推薦",
       "text": "推薦",
       "lang": "zh-TW",
@@ -10556,6 +11431,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "fb7651c0f96ee3279f5379df.mp3"
+    },
+    {
+      "key": "zh-TW:故鄉",
+      "text": "故鄉",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "bfb69399193a3374f560616f.mp3"
     },
     {
       "key": "zh-TW:旅行",
@@ -10614,6 +11496,13 @@
       "file": "da4ae8bc94a97912ea9f378f.mp3"
     },
     {
+      "key": "zh-TW:果汁",
+      "text": "果汁",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "ab52a026d2680b3f5ccef1ba.mp3"
+    },
+    {
       "key": "zh-TW:棒球",
       "text": "棒球",
       "lang": "zh-TW",
@@ -10642,6 +11531,13 @@
       "file": "266655a246bb62ca93b60420.mp3"
     },
     {
+      "key": "zh-TW:毛巾",
+      "text": "毛巾",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "9ca769515b679cb091fee70b.mp3"
+    },
+    {
       "key": "zh-TW:水果",
       "text": "水果",
       "lang": "zh-TW",
@@ -10663,6 +11559,13 @@
       "file": "13b5957e53dff0cc7763af77.mp3"
     },
     {
+      "key": "zh-TW:泡麵",
+      "text": "泡麵",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "23a777f6b14aaa53d48eeb29.mp3"
+    },
+    {
       "key": "zh-TW:洋酒",
       "text": "洋酒",
       "lang": "zh-TW",
@@ -10682,6 +11585,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "4f7226253e07f03724a38921.mp3"
+    },
+    {
+      "key": "zh-TW:浴巾",
+      "text": "浴巾",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "55b19c371fb052d843f91eb8.mp3"
     },
     {
       "key": "zh-TW:涼爽",
@@ -10845,6 +11755,13 @@
       "file": "ae4019157c855709345870dd.mp3"
     },
     {
+      "key": "zh-TW:紅茶",
+      "text": "紅茶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "af7775f1adcc53eeeb99a7a4.mp3"
+    },
+    {
       "key": "zh-TW:綠茶",
       "text": "綠茶",
       "lang": "zh-TW",
@@ -10864,6 +11781,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "43ff37c2e4a0c9437723c79e.mp3"
+    },
+    {
+      "key": "zh-TW:肥皂",
+      "text": "肥皂",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "41e31b5232c4378dbbc2c8f8.mp3"
     },
     {
       "key": "zh-TW:胸口",
@@ -10999,6 +11923,13 @@
       "file": "aab610a7bdb4e96648e4052e.mp3"
     },
     {
+      "key": "zh-TW:那邊",
+      "text": "那邊",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "8c5ec0443d927333ff7eabb3.mp3"
+    },
+    {
       "key": "zh-TW:醫師",
       "text": "醫師",
       "lang": "zh-TW",
@@ -11018,6 +11949,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "621d06444b046c291443dd82.mp3"
+    },
+    {
+      "key": "zh-TW:開會",
+      "text": "開會",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f2fdc7ee93e8ecf87e478ba5.mp3"
     },
     {
       "key": "zh-TW:雜誌",
@@ -11118,11 +12056,32 @@
       "file": "79699658256f5cbe59c503ac.mp3"
     },
     {
+      "key": "zh-TW:香水",
+      "text": "香水",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "1ea9414f3fd71bdb8c6691a6.mp3"
+    },
+    {
       "key": "zh-TW:高雄",
       "text": "高雄",
       "lang": "zh-TW",
       "priority": 1,
       "file": "d032d8ef9765ea612b08ad66.mp3"
+    },
+    {
+      "key": "zh-TW:髮帶",
+      "text": "髮帶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a288dff31fd11cf424a1e271.mp3"
+    },
+    {
+      "key": "zh-TW:鬆餅",
+      "text": "鬆餅",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "88d23e7f70fc86971f9d1825.mp3"
     },
     {
       "key": "zh-TW:100",
@@ -11146,11 +12105,25 @@
       "file": "ecf732c43b2974e43aeb9eed.mp3"
     },
     {
+      "key": "zh-TW:11日",
+      "text": "11日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "38df629c901c3bff6275805a.mp3"
+    },
+    {
       "key": "zh-TW:11月",
       "text": "11月",
       "lang": "zh-TW",
       "priority": 1,
       "file": "b32b697c3c99ef682627af1e.mp3"
+    },
+    {
+      "key": "zh-TW:12日",
+      "text": "12日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "af886feed667aa5d1b93e3b5.mp3"
     },
     {
       "key": "zh-TW:12月",
@@ -11209,11 +12182,25 @@
       "file": "e43e9db444c2a4f129761225.mp3"
     },
     {
+      "key": "zh-TW:上星期",
+      "text": "上星期",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "0078f7915448faa070d6b8d4.mp3"
+    },
+    {
       "key": "zh-TW:上班族",
       "text": "上班族",
       "lang": "zh-TW",
       "priority": 1,
       "file": "6359f01a3159bb78ba624b3d.mp3"
+    },
+    {
+      "key": "zh-TW:下星期",
+      "text": "下星期",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "42f0cab647d2c25ad55a387f.mp3"
     },
     {
       "key": "zh-TW:不好吃",
@@ -11279,6 +12266,27 @@
       "file": "5cf19a13cd842f8c90ba0c8d.mp3"
     },
     {
+      "key": "zh-TW:刮鬍刀",
+      "text": "刮鬍刀",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "df57fa45e2e67fde647a6c83.mp3"
+    },
+    {
+      "key": "zh-TW:刮鬍膏",
+      "text": "刮鬍膏",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "95db9126c44c6d3c66abdc5b.mp3"
+    },
+    {
+      "key": "zh-TW:化妝水",
+      "text": "化妝水",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "b88495622d55344ec5dab101.mp3"
+    },
+    {
       "key": "zh-TW:博物館",
       "text": "博物館",
       "lang": "zh-TW",
@@ -11326,6 +12334,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "16b08a5fc72cdc1352675c93.mp3"
+    },
+    {
+      "key": "zh-TW:吹風機",
+      "text": "吹風機",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "bd65eefcd5b7832037d244b5.mp3"
     },
     {
       "key": "zh-TW:咖啡廳",
@@ -11398,6 +12413,20 @@
       "file": "15d25433826fb3439f08cff4.mp3"
     },
     {
+      "key": "zh-TW:大前天",
+      "text": "大前天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "890f42fee6afc0bc22039e9f.mp3"
+    },
+    {
+      "key": "zh-TW:大後天",
+      "text": "大後天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "e185f75e96842b4db577dbdf.mp3"
+    },
+    {
       "key": "zh-TW:大醬湯",
       "text": "大醬湯",
       "lang": "zh-TW",
@@ -11445,6 +12474,20 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "9f9674d0d15a76e171ccda37.mp3"
+    },
+    {
+      "key": "zh-TW:指甲剪",
+      "text": "指甲剪",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "2885bcb7d55e3cbe7fdf8367.mp3"
+    },
+    {
+      "key": "zh-TW:指甲油",
+      "text": "指甲油",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "618d38fc080f8baa977a6a0d.mp3"
     },
     {
       "key": "zh-TW:排骨湯",
@@ -11531,6 +12574,13 @@
       "file": "aaf587fb1f1f04cc824803f5.mp3"
     },
     {
+      "key": "zh-TW:是學生",
+      "text": "是學生",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f7a98e23167072bceb5a4956.mp3"
+    },
+    {
       "key": "zh-TW:本／冊",
       "text": "本／冊",
       "lang": "zh-TW",
@@ -11552,6 +12602,13 @@
       "file": "a7e87fdb11f1fcd6e7a71486.mp3"
     },
     {
+      "key": "zh-TW:沐浴乳",
+      "text": "沐浴乳",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "9d8a64dbfa7fb49523a379ad.mp3"
+    },
+    {
       "key": "zh-TW:泡菜鍋",
       "text": "泡菜鍋",
       "lang": "zh-TW",
@@ -11566,11 +12623,32 @@
       "file": "12e6ec272e3b6a023ae1e094.mp3"
     },
     {
+      "key": "zh-TW:洗面乳",
+      "text": "洗面乳",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "62e2a54ae104e8c91a8891f8.mp3"
+    },
+    {
+      "key": "zh-TW:洗髮精",
+      "text": "洗髮精",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "2c7b71bd1f0fda142deebb8f.mp3"
+    },
+    {
       "key": "zh-TW:海帶湯",
       "text": "海帶湯",
       "lang": "zh-TW",
       "priority": 1,
       "file": "aada0b84de24e5cb253eb4cf.mp3"
+    },
+    {
+      "key": "zh-TW:潤髮乳",
+      "text": "潤髮乳",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "d7c62273b7cfa8b6e98d87e0.mp3"
     },
     {
       "key": "zh-TW:火車站",
@@ -11622,6 +12700,13 @@
       "file": "39d69e4c4b2bf91d1e1774b0.mp3"
     },
     {
+      "key": "zh-TW:精華液",
+      "text": "精華液",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "9d6d481122e2b53a632e74dd.mp3"
+    },
+    {
       "key": "zh-TW:糖醋肉",
       "text": "糖醋肉",
       "lang": "zh-TW",
@@ -11671,6 +12756,13 @@
       "file": "fd5461fa99018e6b7bf3f529.mp3"
     },
     {
+      "key": "zh-TW:藥妝店",
+      "text": "藥妝店",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "39404bca89c4e60ee88a8a21.mp3"
+    },
+    {
       "key": "zh-TW:行李箱",
       "text": "行李箱",
       "lang": "zh-TW",
@@ -11683,6 +12775,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "e67b148aef2eaf9b34f3f8be.mp3"
+    },
+    {
+      "key": "zh-TW:護唇膏",
+      "text": "護唇膏",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3d0f1d6e17056ad6598cc3a6.mp3"
     },
     {
       "key": "zh-TW:護理師",
@@ -11699,6 +12798,13 @@
       "file": "ca967a046a7155a379f99a86.mp3"
     },
     {
+      "key": "zh-TW:身分證",
+      "text": "身分證",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "7dcacdcec609c054213a8026.mp3"
+    },
+    {
       "key": "zh-TW:辛苦了",
       "text": "辛苦了",
       "lang": "zh-TW",
@@ -11706,11 +12812,32 @@
       "file": "9a7a64bc2007f3eae055cf38.mp3"
     },
     {
+      "key": "zh-TW:這星期",
+      "text": "這星期",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "af237c361224d279bb9423f8.mp3"
+    },
+    {
+      "key": "zh-TW:逛街了",
+      "text": "逛街了",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "79ca6c346b75b16b3452f63d.mp3"
+    },
+    {
       "key": "zh-TW:部隊鍋",
       "text": "部隊鍋",
       "lang": "zh-TW",
       "priority": 1,
       "file": "3e574fa3293cd179b8d729c1.mp3"
+    },
+    {
+      "key": "zh-TW:防曬乳",
+      "text": "防曬乳",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "53de4984f4b5e429b957dda6.mp3"
     },
     {
       "key": "zh-TW:高粱酒",
@@ -11725,6 +12852,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "fa06e1039430a3cb352de806.mp3"
+    },
+    {
+      "key": "zh-TW:不是學生",
+      "text": "不是學生",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "32d9988746d8b2253d168eec.mp3"
     },
     {
       "key": "zh-TW:不能運動",
@@ -11762,11 +12896,25 @@
       "file": "948c18533cef44dc19662dee.mp3"
     },
     {
+      "key": "zh-TW:刮鬍刀片",
+      "text": "刮鬍刀片",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "19904b59037d2c616cdbc470.mp3"
+    },
+    {
       "key": "zh-TW:又暗又髒",
       "text": "又暗又髒",
       "lang": "zh-TW",
       "priority": 1,
       "file": "f11de6737e1d6bee5376a600.mp3"
+    },
+    {
+      "key": "zh-TW:吃了烤肉",
+      "text": "吃了烤肉",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3b7277da43ac86e5af347c33.mp3"
     },
     {
       "key": "zh-TW:咖啡嗎？",
@@ -11783,6 +12931,13 @@
       "file": "7c065b9c179c175dd52dca70.mp3"
     },
     {
+      "key": "zh-TW:大大後天",
+      "text": "大大後天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3f7d5d80bee5e9bd4f9025d7.mp3"
+    },
+    {
       "key": "zh-TW:家庭主婦",
       "text": "家庭主婦",
       "lang": "zh-TW",
@@ -11790,11 +12945,25 @@
       "file": "4c9763fdda7019af7372c325.mp3"
     },
     {
+      "key": "zh-TW:家的尊稱",
+      "text": "家的尊稱",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "7c4873b9d1719ad417647b75.mp3"
+    },
+    {
       "key": "zh-TW:手機號碼",
       "text": "手機號碼",
       "lang": "zh-TW",
       "priority": 1,
       "file": "1b7afcd7a2627a7ad4a745cc.mp3"
+    },
+    {
+      "key": "zh-TW:摩卡咖啡",
+      "text": "摩卡咖啡",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "8d09d62bf232d209bd38314d.mp3"
     },
     {
       "key": "zh-TW:擲柶遊戲",
@@ -11811,6 +12980,13 @@
       "file": "db6fb0b694234af0aae4b0e8.mp3"
     },
     {
+      "key": "zh-TW:是韓國人",
+      "text": "是韓國人",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "0e6852021152dff60c27a4bd.mp3"
+    },
+    {
       "key": "zh-TW:書和包包",
       "text": "書和包包",
       "lang": "zh-TW",
@@ -11818,11 +12994,32 @@
       "file": "1dc936dbae97eb71eb5063d3.mp3"
     },
     {
+      "key": "zh-TW:熱巧克力",
+      "text": "熱巧克力",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "58fdc980b4248bbe021f3d0f.mp3"
+    },
+    {
+      "key": "zh-TW:珍珠奶茶",
+      "text": "珍珠奶茶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "6f4ec0f3187e8c62fe8b409a.mp3"
+    },
+    {
       "key": "zh-TW:白葡萄酒",
       "text": "白葡萄酒",
       "lang": "zh-TW",
       "priority": 1,
       "file": "165d2fbb5bc64a163e1696ea.mp3"
+    },
+    {
+      "key": "zh-TW:百貨公司",
+      "text": "百貨公司",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "d33ac2e32e71c4dfa24f9c53.mp3"
     },
     {
       "key": "zh-TW:紅葡萄酒",
@@ -11881,6 +13078,20 @@
       "file": "79e46a488d993ff86c66bfb9.mp3"
     },
     {
+      "key": "zh-TW:這是手錶",
+      "text": "這是手錶",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "e39e4c94a17324fbbc0839b8.mp3"
+    },
+    {
+      "key": "zh-TW:電話號碼",
+      "text": "電話號碼",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "e3c1671bfb9e4879cb9aac94.mp3"
+    },
+    {
       "key": "zh-TW:高速鐵路",
       "text": "高速鐵路",
       "lang": "zh-TW",
@@ -11902,11 +13113,32 @@
       "file": "863738ac2e498470eae245df.mp3"
     },
     {
+      "key": "zh-TW:10月5日",
+      "text": "10月5日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "26e53e029fd2980d3d1a9d5d.mp3"
+    },
+    {
       "key": "zh-TW:3,000",
       "text": "3,000",
       "lang": "zh-TW",
       "priority": 1,
       "file": "7bf624a0d60653cabf70761c.mp3"
+    },
+    {
+      "key": "zh-TW:4月15日",
+      "text": "4月15日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "ac412f22d18ade0f6df41ffa.mp3"
+    },
+    {
+      "key": "zh-TW:6月10日",
+      "text": "6月10日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a7905d9035988e62084f630d.mp3"
     },
     {
       "key": "zh-TW:不是…嗎？",
@@ -11972,6 +13204,13 @@
       "file": "0bf0bf878db1c5e33bbae104.mp3"
     },
     {
+      "key": "zh-TW:建築物／樓",
+      "text": "建築物／樓",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "536ad276add5a2724e78b797.mp3"
+    },
+    {
       "key": "zh-TW:念書／學習",
       "text": "念書／學習",
       "lang": "zh-TW",
@@ -12005,6 +13244,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "b4704f0b1a2fabadfb089b47.mp3"
+    },
+    {
+      "key": "zh-TW:是學生嗎？",
+      "text": "是學生嗎？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "be857f785c98102e02f0f7b2.mp3"
     },
     {
       "key": "zh-TW:有幾個人？",
@@ -12056,6 +13302,13 @@
       "file": "c31d8857257f929cfd658bee.mp3"
     },
     {
+      "key": "zh-TW:酒不是飲料",
+      "text": "酒不是飲料",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "b9b699e4b410091efd76c44b.mp3"
+    },
+    {
       "key": "zh-TW:錢包/皮夾",
       "text": "錢包/皮夾",
       "lang": "zh-TW",
@@ -12089,6 +13342,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "b67e1772f7528ce395ce4c55.mp3"
+    },
+    {
+      "key": "zh-TW:餅乾／零食",
+      "text": "餅乾／零食",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "c22b61fca924cf8f35688847.mp3"
     },
     {
       "key": "zh-TW:10,000",
@@ -12175,11 +13435,32 @@
       "file": "5473dda8d0925a370859a321.mp3"
     },
     {
+      "key": "zh-TW:在2月14日",
+      "text": "在2月14日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "5282b6d415d80682757cdc51.mp3"
+    },
+    {
+      "key": "zh-TW:在4月10日",
+      "text": "在4月10日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "9f1c311c4e533e5913cf2958.mp3"
+    },
+    {
       "key": "zh-TW:在公園運動。",
       "text": "在公園運動。",
       "lang": "zh-TW",
       "priority": 1,
       "file": "3a399c6f7f3b58177cc903ef.mp3"
+    },
+    {
+      "key": "zh-TW:幾號／哪一天",
+      "text": "幾號／哪一天",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "c2008de109948f2aa588a146.mp3"
     },
     {
       "key": "zh-TW:我想搭地鐵。",
@@ -12203,6 +13484,13 @@
       "file": "e74cc72bb62abd21b4f560b4.mp3"
     },
     {
+      "key": "zh-TW:是韓國人嗎？",
+      "text": "是韓國人嗎？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "754a9f30c1f03a01a80126eb.mp3"
+    },
+    {
       "key": "zh-TW:歌曲（名詞）",
       "text": "歌曲（名詞）",
       "lang": "zh-TW",
@@ -12215,6 +13503,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "270c0f800ae948da714ff69b.mp3"
+    },
+    {
+      "key": "zh-TW:泰國不是島國",
+      "text": "泰國不是島國",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "16d7c2ca8c7f3f73eb2ce9e8.mp3"
     },
     {
       "key": "zh-TW:炸豬排（飯）",
@@ -12236,6 +13531,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "45710327860296193e3fa5c2.mp3"
+    },
+    {
+      "key": "zh-TW:老師不是男性",
+      "text": "老師不是男性",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "5868552b4b97083f93bb0471.mp3"
     },
     {
       "key": "zh-TW:聽音樂也看書",
@@ -12271,6 +13573,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "8a3fa7920008ce209d550dc5.mp3"
+    },
+    {
+      "key": "zh-TW:見弟弟／妹妹",
+      "text": "見弟弟／妹妹",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a33507da57d49c3219e1ee0e.mp3"
     },
     {
       "key": "zh-TW:請出示護照。",
@@ -12343,6 +13652,20 @@
       "file": "19a9e54a22bf56715233fa7e.mp3"
     },
     {
+      "key": "zh-TW:乳液（身體用）",
+      "text": "乳液（身體用）",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f9649d43f80b9f0f0c09f3f5.mp3"
+    },
+    {
+      "key": "zh-TW:什麼時候有空？",
+      "text": "什麼時候有空？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "07a8ee125eb82431fd3f8457.mp3"
+    },
+    {
       "key": "zh-TW:今天不運動嗎？",
       "text": "今天不運動嗎？",
       "lang": "zh-TW",
@@ -12399,11 +13722,25 @@
       "file": "7a06bc8455bac04ceef273b4.mp3"
     },
     {
+      "key": "zh-TW:在10月10日",
+      "text": "在10月10日",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "19617aaee8789588acc16b26.mp3"
+    },
+    {
       "key": "zh-TW:學韓語也聽音樂",
       "text": "學韓語也聽音樂",
       "lang": "zh-TW",
       "priority": 1,
       "file": "d0bcf8e71ccf7f955b74116f.mp3"
+    },
+    {
+      "key": "zh-TW:店員：在那邊。",
+      "text": "店員：在那邊。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "46492c8eed85597eb0d1cc6c.mp3"
     },
     {
       "key": "zh-TW:摩托車比較快。",
@@ -12467,6 +13804,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "3a8fbacb42d92ba32ea60e41.mp3"
+    },
+    {
+      "key": "zh-TW:這裡是台南嗎？",
+      "text": "這裡是台南嗎？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "f903f9792994ea64ea5f6260.mp3"
     },
     {
       "key": "zh-TW:零（一般數字）",
@@ -12546,6 +13890,13 @@
       "file": "4407a14d4a09a5d0050a23f8.mp3"
     },
     {
+      "key": "zh-TW:什麼時候去日本？",
+      "text": "什麼時候去日本？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "aa4977b43ca37887edbf4f57.mp3"
+    },
+    {
       "key": "zh-TW:全部是五千韓元。",
       "text": "全部是五千韓元。",
       "lang": "zh-TW",
@@ -12565,6 +13916,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "21dab61fd1cecf3e54ae2e29.mp3"
+    },
+    {
+      "key": "zh-TW:台北是台灣的首都",
+      "text": "台北是台灣的首都",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "b39141359af5f34f534e013a.mp3"
     },
     {
       "key": "zh-TW:台灣潮濕又炎熱。",
@@ -12616,6 +13974,20 @@
       "file": "40d3d2b2e8f5fd091c628bc7.mp3"
     },
     {
+      "key": "zh-TW:敏俊：16號去。",
+      "text": "敏俊：16號去。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "e4f10cdac1094d67f9f98205.mp3"
+    },
+    {
+      "key": "zh-TW:敏俊：好，謝謝。",
+      "text": "敏俊：好，謝謝。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "1eccaa2f76a734c4b602c38a.mp3"
+    },
+    {
       "key": "zh-TW:是，一個多少錢？",
       "text": "是，一個多少錢？",
       "lang": "zh-TW",
@@ -12637,11 +14009,32 @@
       "file": "71f2c2e03af6bb3c17323c24.mp3"
     },
     {
+      "key": "zh-TW:泡菜不是餅乾零食",
+      "text": "泡菜不是餅乾零食",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "a594e21119f0b2994019f3be.mp3"
+    },
+    {
+      "key": "zh-TW:生日是什麼時候？",
+      "text": "生日是什麼時候？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "c9f0acc66bc2b6c3c2d5c236.mp3"
+    },
+    {
       "key": "zh-TW:謝謝招待。再見。",
       "text": "謝謝招待。再見。",
       "lang": "zh-TW",
       "priority": 1,
       "file": "4db5bd904bb67a990cb997fc.mp3"
+    },
+    {
+      "key": "zh-TW:那棟建築物是學校",
+      "text": "那棟建築物是學校",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "7b4030bb1df25c9590a62852.mp3"
     },
     {
       "key": "zh-TW:韓國天氣如何呢？",
@@ -12714,11 +14107,25 @@
       "file": "1fcd6aef25e4f3da4d85fb27.mp3"
     },
     {
+      "key": "zh-TW:泡菜是台灣食物嗎？",
+      "text": "泡菜是台灣食物嗎？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "4b230a7d42ea417dfda452f5.mp3"
+    },
+    {
       "key": "zh-TW:為什麼坐摩托車去？",
       "text": "為什麼坐摩托車去？",
       "lang": "zh-TW",
       "priority": 1,
       "file": "821f46f05bf020a7366fc8e8.mp3"
+    },
+    {
+      "key": "zh-TW:請回答自己的生日。",
+      "text": "請回答自己的生日。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "50b1a0d169a95317bdf6a59d.mp3"
     },
     {
       "key": "zh-TW:請給我咖啡和鬆餅。",
@@ -12882,6 +14289,13 @@
       "file": "ef41a8ea65b306e461d4d19d.mp3"
     },
     {
+      "key": "zh-TW:敏俊：這個是乳液嗎？",
+      "text": "敏俊：這個是乳液嗎？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "2f0cfa5ac1720211713f5ea5.mp3"
+    },
+    {
       "key": "zh-TW:是，請自行補充回答。",
       "text": "是，請自行補充回答。",
       "lang": "zh-TW",
@@ -12987,6 +14401,13 @@
       "file": "800ca8be2faffb0bb29f86fc.mp3"
     },
     {
+      "key": "zh-TW:冠宇：下星期何時有空？",
+      "text": "冠宇：下星期何時有空？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "3a7d6617fdcd1853037a0dbe.mp3"
+    },
+    {
       "key": "zh-TW:冠宇：在哪裡見了朋友？",
       "text": "冠宇：在哪裡見了朋友？",
       "lang": "zh-TW",
@@ -13020,6 +14441,27 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "2858bd00179077dccba3cfe9.mp3"
+    },
+    {
+      "key": "zh-TW:敏俊：那麼乳液在哪裡？",
+      "text": "敏俊：那麼乳液在哪裡？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "00b79826e0755838718eff46.mp3"
+    },
+    {
+      "key": "zh-TW:是（接在有尾音名詞後）",
+      "text": "是（接在有尾音名詞後）",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "8f1f01740ec7058f5eb6af41.mp3"
+    },
+    {
+      "key": "zh-TW:是（接在無尾音名詞後）",
+      "text": "是（接在無尾音名詞後）",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "cca5f08de3305c1d45180e8c.mp3"
     },
     {
       "key": "zh-TW:是的，喜歡。非常好吃。",
@@ -13106,6 +14548,13 @@
       "file": "4860a85b7971009938e72817.mp3"
     },
     {
+      "key": "zh-TW:冠宇：是嗎？幾號去韓國？",
+      "text": "冠宇：是嗎？幾號去韓國？",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "86b7329dbbb0b3eb97b85ee4.mp3"
+    },
+    {
       "key": "zh-TW:可以刷卡嗎？請給我收據。",
       "text": "可以刷卡嗎？請給我收據。",
       "lang": "zh-TW",
@@ -13160,6 +14609,13 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "de67451dde4f8fb4d7f85223.mp3"
+    },
+    {
+      "key": "zh-TW:請用日期或相對時間回答。",
+      "text": "請用日期或相對時間回答。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "005e9b73c46fb1252c6247d3.mp3"
     },
     {
       "key": "zh-TW:請給我帳單。可以刷卡嗎？",
@@ -13246,11 +14702,25 @@
       "file": "f6dff235c0b60ca360df572f.mp3"
     },
     {
+      "key": "zh-TW:店員：不是乳液，是精華液。",
+      "text": "店員：不是乳液，是精華液。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "ea3d3e6ca2ccdd0d2027e241.mp3"
+    },
+    {
       "key": "zh-TW:我的錢包弄丟了，請幫幫我。",
       "text": "我的錢包弄丟了，請幫幫我。",
       "lang": "zh-TW",
       "priority": 1,
       "file": "d61445dc5613849c3fd358fb.mp3"
+    },
+    {
+      "key": "zh-TW:敏俊：下星期沒空。回韓國。",
+      "text": "敏俊：下星期沒空。回韓國。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "31e2ea90575646c6e275575a.mp3"
     },
     {
       "key": "zh-TW:敏俊：啊……我剛剛吃過了。",
@@ -13281,6 +14751,13 @@
       "file": "d5cc318085b61d6b05f40deb.mp3"
     },
     {
+      "key": "zh-TW:請用 아니에요 完整回答。",
+      "text": "請用 아니에요 完整回答。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "7c0e0ac96fe71146a7a891d9.mp3"
+    },
+    {
       "key": "zh-TW:請用過去式補上另一件事情。",
       "text": "請用過去式補上另一件事情。",
       "lang": "zh-TW",
@@ -13300,6 +14777,20 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "5c1963cd2746b82e415b0fcc.mp3"
+    },
+    {
+      "key": "zh-TW:不是，請用非格式體語尾回答。",
+      "text": "不是，請用非格式體語尾回答。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "0518f776d8dbdb710bbc3f35.mp3"
+    },
+    {
+      "key": "zh-TW:不是。請用非格式體語尾回答。",
+      "text": "不是。請用非格式體語尾回答。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "53f6e7f79c61462a51f5c7c4.mp3"
     },
     {
       "key": "zh-TW:冠宇：不，在百貨公司吃晚餐。",
@@ -13468,6 +14959,20 @@
       "lang": "zh-TW",
       "priority": 1,
       "file": "73f87295318f8d3a0857d008.mp3"
+    },
+    {
+      "key": "zh-TW:請把 3/27 念成韓文日期。",
+      "text": "請把 3/27 念成韓文日期。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "75965f1fbd26816ebc3aa537.mp3"
+    },
+    {
+      "key": "zh-TW:請選擇肯定或否定，再完成句子。",
+      "text": "請選擇肯定或否定，再完成句子。",
+      "lang": "zh-TW",
+      "priority": 1,
+      "file": "5cdfeb3da6a56350b4aa4b93.mp3"
     },
     {
       "key": "zh-TW:讀書（漢字「工夫」，意義不同）",
@@ -14639,13 +16144,6 @@
       "file": "5e66b292870eb3fff4169af8.mp3"
     },
     {
-      "key": "ko-KR:겨울",
-      "text": "겨울",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "a923b7a021e978c920fd9127.mp3"
-    },
-    {
       "key": "ko-KR:결국",
       "text": "결국",
       "lang": "ko-KR",
@@ -14721,13 +16219,6 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "1c8b68f238aa67a7563f860d.mp3"
-    },
-    {
-      "key": "ko-KR:과자",
-      "text": "과자",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "13ced51d3598cdf35988b640.mp3"
     },
     {
       "key": "ko-KR:관광",
@@ -15204,6 +16695,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "4afe1b02952ad829355c2c5e.mp3"
+    },
+    {
+      "key": "ko-KR:댁만",
+      "text": "댁만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0afe0041b938474969b46578.mp3"
+    },
+    {
+      "key": "ko-KR:댁이",
+      "text": "댁이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "62df5d558130ee19db987630.mp3"
     },
     {
       "key": "ko-KR:더가",
@@ -15934,6 +17439,20 @@
       "file": "e6b74d02d3e486534b1e93ba.mp3"
     },
     {
+      "key": "ko-KR:봄만",
+      "text": "봄만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d65e804d9aad5a854852d338.mp3"
+    },
+    {
+      "key": "ko-KR:봄이",
+      "text": "봄이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "fbc3d18621236bff2f5b6cbf.mp3"
+    },
+    {
       "key": "ko-KR:봉지",
       "text": "봉지",
       "lang": "ko-KR",
@@ -16233,13 +17752,6 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "9bffa8d35f83506b2b0aabb8.mp3"
-    },
-    {
-      "key": "ko-KR:시계",
-      "text": "시계",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "cad80bd2a06ef2d824fddb30.mp3"
     },
     {
       "key": "ko-KR:시장",
@@ -17208,6 +18720,20 @@
       "file": "6535b57b3e63595949a58cf8.mp3"
     },
     {
+      "key": "ko-KR:주가",
+      "text": "주가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c442ae3ac1b7adbd76b1fb29.mp3"
+    },
+    {
+      "key": "ko-KR:주만",
+      "text": "주만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0b9f20a319419b9b70222811.mp3"
+    },
+    {
       "key": "ko-KR:주의",
       "text": "주의",
       "lang": "ko-KR",
@@ -17621,13 +19147,6 @@
       "file": "5fb1f531347d26e272535624.mp3"
     },
     {
-      "key": "ko-KR:학교",
-      "text": "학교",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "7c3a673438af981aa61325d5.mp3"
-    },
-    {
       "key": "ko-KR:한강",
       "text": "한강",
       "lang": "ko-KR",
@@ -17794,13 +19313,6 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "ef0f3c18b62d902db0f6f42a.mp3"
-    },
-    {
-      "key": "ko-KR:회사",
-      "text": "회사",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "4b50b998a7f464033bf73645.mp3"
     },
     {
       "key": "ko-KR:회색",
@@ -17985,6 +19497,34 @@
       "file": "5da963bc84b318c11c4e87f6.mp3"
     },
     {
+      "key": "ko-KR:가위가",
+      "text": "가위가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f8594fa5342f0496da02dbbb.mp3"
+    },
+    {
+      "key": "ko-KR:가위만",
+      "text": "가위만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2198ede29b1077736503112d.mp3"
+    },
+    {
+      "key": "ko-KR:가을만",
+      "text": "가을만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "41de1289a067f550a6f23248.mp3"
+    },
+    {
+      "key": "ko-KR:가을이",
+      "text": "가을이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f5540a51d21c624fa036113b.mp3"
+    },
+    {
       "key": "ko-KR:갈대가",
       "text": "갈대가",
       "lang": "ko-KR",
@@ -18160,6 +19700,20 @@
       "file": "2f59908f659d34d095154790.mp3"
     },
     {
+      "key": "ko-KR:건물만",
+      "text": "건물만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f7f72bb46ce11aebf5b33f40.mp3"
+    },
+    {
+      "key": "ko-KR:건물이",
+      "text": "건물이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "fe87f32ee16a3d5e8c0bd95c.mp3"
+    },
+    {
       "key": "ko-KR:걷다가",
       "text": "걷다가",
       "lang": "ko-KR",
@@ -18221,6 +19775,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "638cf88f2a87276a5ca6c750.mp3"
+    },
+    {
+      "key": "ko-KR:겨울만",
+      "text": "겨울만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "204efef7b69ea2a8b41d1d3d.mp3"
+    },
+    {
+      "key": "ko-KR:겨울이",
+      "text": "겨울이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "749d8a0c8a759bfce37c6858.mp3"
     },
     {
       "key": "ko-KR:결국은",
@@ -18300,6 +19868,20 @@
       "file": "d68a67d25ad622eed605f6fb.mp3"
     },
     {
+      "key": "ko-KR:고향만",
+      "text": "고향만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3e24ca690abe5036b859c54a.mp3"
+    },
+    {
+      "key": "ko-KR:고향이",
+      "text": "고향이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6676e9f419940a904ee1e816.mp3"
+    },
+    {
       "key": "ko-KR:공간만",
       "text": "공간만",
       "lang": "ko-KR",
@@ -18363,6 +19945,20 @@
       "file": "54758c88235ae9b3c6302172.mp3"
     },
     {
+      "key": "ko-KR:과자가",
+      "text": "과자가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "4d4c8c1627b315cf00a84615.mp3"
+    },
+    {
+      "key": "ko-KR:과자만",
+      "text": "과자만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "19e967c090da08c5be0394c2.mp3"
+    },
+    {
       "key": "ko-KR:관우가",
       "text": "관우가",
       "lang": "ko-KR",
@@ -18396,6 +19992,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "5fe3b817a36e1da461b0102a.mp3"
+    },
+    {
+      "key": "ko-KR:구일만",
+      "text": "구일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0df65fc424451a63eed4f02e.mp3"
+    },
+    {
+      "key": "ko-KR:구일이",
+      "text": "구일이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "03b19bea204aa81b8dd44a63.mp3"
     },
     {
       "key": "ko-KR:국경을",
@@ -18585,6 +20195,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "d1dfd9bc5207f6d22cf9467e.mp3"
+    },
+    {
+      "key": "ko-KR:글피가",
+      "text": "글피가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6209122d12b3bd03cdc7b3a7.mp3"
+    },
+    {
+      "key": "ko-KR:글피만",
+      "text": "글피만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6a169d8507a3bb6eb2d033eb.mp3"
     },
     {
       "key": "ko-KR:기념품",
@@ -19105,6 +20729,20 @@
       "file": "f06ad26e0fe7b11727686149.mp3"
     },
     {
+      "key": "ko-KR:다음만",
+      "text": "다음만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "93eff456f05f3579bd354b91.mp3"
+    },
+    {
+      "key": "ko-KR:다음이",
+      "text": "다음이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0e9dd1c5c8d124b555a38661.mp3"
+    },
+    {
       "key": "ko-KR:단것은",
       "text": "단것은",
       "lang": "ko-KR",
@@ -19187,6 +20825,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "3142ba8d59ad0dca5c2f9f6c.mp3"
+    },
+    {
+      "key": "ko-KR:댁하고",
+      "text": "댁하고",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f8ede7d27debf783260fe7e7.mp3"
     },
     {
       "key": "ko-KR:더해서",
@@ -19488,6 +21133,41 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "f3938eb90ac754bc113d6ee3.mp3"
+    },
+    {
+      "key": "ko-KR:로션만",
+      "text": "로션만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e8c8c86c2d2f724172be6bf1.mp3"
+    },
+    {
+      "key": "ko-KR:린스가",
+      "text": "린스가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "cec533bb0f4aaf5eef6c08b1.mp3"
+    },
+    {
+      "key": "ko-KR:린스만",
+      "text": "린스만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0e61ad86f805476de2378169.mp3"
+    },
+    {
+      "key": "ko-KR:립밤만",
+      "text": "립밤만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e6863961475bbd8d957ed84e.mp3"
+    },
+    {
+      "key": "ko-KR:립밤이",
+      "text": "립밤이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "104f5ae4f25b6c3fad2d15b9.mp3"
     },
     {
       "key": "ko-KR:마늘을",
@@ -19819,6 +21499,13 @@
       "file": "0587c605688273594d34ee05.mp3"
     },
     {
+      "key": "ko-KR:며칠만",
+      "text": "며칠만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "86007849aa1b9e156044aa07.mp3"
+    },
+    {
       "key": "ko-KR:며칠이",
       "text": "며칠이",
       "lang": "ko-KR",
@@ -19901,6 +21588,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "8ffa15a69e9401cb90aea18a.mp3"
+    },
+    {
+      "key": "ko-KR:모레가",
+      "text": "모레가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "ab9f6370d8a9fc4556a530ab.mp3"
+    },
+    {
+      "key": "ko-KR:모레만",
+      "text": "모레만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b4b0808f3e24740452905b1e.mp3"
     },
     {
       "key": "ko-KR:모르는",
@@ -20596,6 +22297,20 @@
       "file": "4f54a4691a0f739c3e94337b.mp3"
     },
     {
+      "key": "ko-KR:비누가",
+      "text": "비누가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2704505bf49daa0e9390fa9a.mp3"
+    },
+    {
+      "key": "ko-KR:비누만",
+      "text": "비누만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "ae18d35d8bd99943afb90f67.mp3"
+    },
+    {
       "key": "ko-KR:비명을",
       "text": "비명을",
       "lang": "ko-KR",
@@ -20960,6 +22675,27 @@
       "file": "7e885ce2865c97933f9f408f.mp3"
     },
     {
+      "key": "ko-KR:생일만",
+      "text": "생일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "481b58b5b5c5fd7394294a06.mp3"
+    },
+    {
+      "key": "ko-KR:샴푸가",
+      "text": "샴푸가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e8d5e6d96b448d225485572b.mp3"
+    },
+    {
+      "key": "ko-KR:샴푸만",
+      "text": "샴푸만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "919c920fbf2d09d288178a3c.mp3"
+    },
+    {
       "key": "ko-KR:서른만",
       "text": "서른만",
       "lang": "ko-KR",
@@ -21226,6 +22962,20 @@
       "file": "707d6b7218f3e899df1ff4ee.mp3"
     },
     {
+      "key": "ko-KR:수건만",
+      "text": "수건만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6aaa3c2b592994e9a3ac6db8.mp3"
+    },
+    {
+      "key": "ko-KR:수건이",
+      "text": "수건이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "5ca5d0ff1b7ad946fc87e7e3.mp3"
+    },
+    {
       "key": "ko-KR:수도가",
       "text": "수도가",
       "lang": "ko-KR",
@@ -21394,6 +23144,20 @@
       "file": "621e33b445daa5d459a9eb5a.mp3"
     },
     {
+      "key": "ko-KR:스킨만",
+      "text": "스킨만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "086a2dcbfe7d211044ead5fb.mp3"
+    },
+    {
+      "key": "ko-KR:스킨이",
+      "text": "스킨이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "73bb75ca834fb95dd0473c6b.mp3"
+    },
+    {
       "key": "ko-KR:슬펐다",
       "text": "슬펐다",
       "lang": "ko-KR",
@@ -21413,6 +23177,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "cb19e8ed4fae1f19f580869b.mp3"
+    },
+    {
+      "key": "ko-KR:시계가",
+      "text": "시계가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "4f090a294509e3be679d1726.mp3"
+    },
+    {
+      "key": "ko-KR:시계만",
+      "text": "시계만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "eae00ff2401677c04c80b918.mp3"
     },
     {
       "key": "ko-KR:시예요",
@@ -22199,6 +23977,20 @@
       "file": "11805caf7dcd3094dde93e3d.mp3"
     },
     {
+      "key": "ko-KR:여름만",
+      "text": "여름만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3bf6cccacad5c54cb2e4d553.mp3"
+    },
+    {
+      "key": "ko-KR:여름이",
+      "text": "여름이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "ec15fcfddac9e3d02de2f95c.mp3"
+    },
+    {
       "key": "ko-KR:여섯만",
       "text": "여섯만",
       "lang": "ko-KR",
@@ -22379,6 +24171,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "297aebe643c8f1a456ea6508.mp3"
+    },
+    {
+      "key": "ko-KR:예요가",
+      "text": "예요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "09e555ba8f010882d909ea71.mp3"
+    },
+    {
+      "key": "ko-KR:예요만",
+      "text": "예요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "860a6594c0c3e48acbde8d71.mp3"
     },
     {
       "key": "ko-KR:오가고",
@@ -22883,6 +24689,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "6bb2e9873140032fd8e7d6ff.mp3"
+    },
+    {
+      "key": "ko-KR:이건만",
+      "text": "이건만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8ac38d6f4e3ca1469a08c9cd.mp3"
+    },
+    {
+      "key": "ko-KR:이건이",
+      "text": "이건이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b4cd46d632c028fe6c1535a0.mp3"
     },
     {
       "key": "ko-KR:이것과",
@@ -23450,6 +25270,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "18bad7b22a486ddbd705bca2.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽만",
+      "text": "저쪽만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0c7afe44578290b98121a225.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽이",
+      "text": "저쪽이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e00ec1ba4a9500766596d34f.mp3"
     },
     {
       "key": "ko-KR:적다가",
@@ -24229,6 +26063,20 @@
       "file": "7e4d9460fa1a63feea59d35b.mp3"
     },
     {
+      "key": "ko-KR:칠일만",
+      "text": "칠일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b1edba5fa9ec4a6cde2273e8.mp3"
+    },
+    {
+      "key": "ko-KR:칠일이",
+      "text": "칠일이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b65dad1f33281e237a1e5d67.mp3"
+    },
+    {
       "key": "ko-KR:칫솔만",
       "text": "칫솔만",
       "lang": "ko-KR",
@@ -24404,6 +26252,20 @@
       "file": "1db83043c005703a5d562cb4.mp3"
     },
     {
+      "key": "ko-KR:크림만",
+      "text": "크림만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "521a0253c8b75d2c8406f3c2.mp3"
+    },
+    {
+      "key": "ko-KR:크림이",
+      "text": "크림이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1ef859978f3a0d43ecb4f68d.mp3"
+    },
+    {
       "key": "ko-KR:키가가",
       "text": "키가가",
       "lang": "ko-KR",
@@ -24514,6 +26376,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "e8fb451413aa824227b3ea6e.mp3"
+    },
+    {
+      "key": "ko-KR:팔일만",
+      "text": "팔일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "bbb4a07c7ff053f8fb01ef9f.mp3"
+    },
+    {
+      "key": "ko-KR:팔일이",
+      "text": "팔일이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "87e9fe495caab805ea397b03.mp3"
     },
     {
       "key": "ko-KR:퍼졌다",
@@ -24663,6 +26539,20 @@
       "file": "65398246c3d23513ae90f060.mp3"
     },
     {
+      "key": "ko-KR:학교가",
+      "text": "학교가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8061617c20b7c9fd90934300.mp3"
+    },
+    {
+      "key": "ko-KR:학교만",
+      "text": "학교만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d3a6e501495c11ed31ddb653.mp3"
+    },
+    {
       "key": "ko-KR:학생만",
       "text": "학생만",
       "lang": "ko-KR",
@@ -24773,6 +26663,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "8983133d31cc226f42307af3.mp3"
+    },
+    {
+      "key": "ko-KR:향수가",
+      "text": "향수가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "87473098a823b4b5a4d82c4d.mp3"
+    },
+    {
+      "key": "ko-KR:향수만",
+      "text": "향수만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "09a30f818c48b2cc8ba85c85.mp3"
     },
     {
       "key": "ko-KR:향하고",
@@ -24892,6 +26796,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "8938c0f98380b37ac13800fb.mp3"
+    },
+    {
+      "key": "ko-KR:회사가",
+      "text": "회사가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "016f11a2cea52b35a7af6e7a.mp3"
+    },
+    {
+      "key": "ko-KR:회사만",
+      "text": "회사만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8076dd437112a9a9e8b8db32.mp3"
     },
     {
       "key": "ko-KR:회의가",
@@ -25116,6 +27034,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "f061e7d5987800cbb7c04596.mp3"
+    },
+    {
+      "key": "ko-KR:갑니다가",
+      "text": "갑니다가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "69accbc4c233af5f2271bacd.mp3"
+    },
+    {
+      "key": "ko-KR:갑니다만",
+      "text": "갑니다만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c2e83e416f9d34531e9ef6ad.mp3"
     },
     {
       "key": "ko-KR:갑시다가",
@@ -25398,6 +27330,20 @@
       "file": "cb357df26dc9fc9babca5d21.mp3"
     },
     {
+      "key": "ko-KR:그글피가",
+      "text": "그글피가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9c16ef11ecd1335acae14246.mp3"
+    },
+    {
+      "key": "ko-KR:그글피만",
+      "text": "그글피만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d3a9db569d529133030be45b.mp3"
+    },
+    {
       "key": "ko-KR:그날따라",
       "text": "그날따라",
       "lang": "ko-KR",
@@ -25496,6 +27442,20 @@
       "file": "3e93fdceb4552780fb5a7226.mp3"
     },
     {
+      "key": "ko-KR:그저께가",
+      "text": "그저께가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b7ec629a66bab4f5a6b1ca48.mp3"
+    },
+    {
+      "key": "ko-KR:그저께만",
+      "text": "그저께만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f9ba51a35d6ce287a6aed317.mp3"
+    },
+    {
       "key": "ko-KR:금요일만",
       "text": "금요일만",
       "lang": "ko-KR",
@@ -25571,6 +27531,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "a0922d9aba21ff578123f09b.mp3"
+    },
+    {
+      "key": "ko-KR:김치는만",
+      "text": "김치는만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f7a71dddf8906c7545a3994d.mp3"
+    },
+    {
+      "key": "ko-KR:김치는이",
+      "text": "김치는이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c49f27fb51a52792776940c1.mp3"
     },
     {
       "key": "ko-KR:깔끔했다",
@@ -26231,6 +28205,34 @@
       "file": "169b3e77c4c11a424767ca9b.mp3"
     },
     {
+      "key": "ko-KR:로션은만",
+      "text": "로션은만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d7bb7539b50e802e0a547d6a.mp3"
+    },
+    {
+      "key": "ko-KR:로션은이",
+      "text": "로션은이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "778b9c0e11cbeb1a1415bca0.mp3"
+    },
+    {
+      "key": "ko-KR:로션이가",
+      "text": "로션이가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6aeff7ab9556812d082cbfe8.mp3"
+    },
+    {
+      "key": "ko-KR:로션이만",
+      "text": "로션이만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c008efd5c4eff7252b4b0f47.mp3"
+    },
+    {
       "key": "ko-KR:리포트가",
       "text": "리포트가",
       "lang": "ko-KR",
@@ -26420,6 +28422,20 @@
       "file": "660b38e9f85451d6fcac80c8.mp3"
     },
     {
+      "key": "ko-KR:머리끈만",
+      "text": "머리끈만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "308f2c30e7916ade3871c2c8.mp3"
+    },
+    {
+      "key": "ko-KR:머리끈이",
+      "text": "머리끈이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9444488b55c4cba33dc60a8b.mp3"
+    },
+    {
       "key": "ko-KR:먹는다는",
       "text": "먹는다는",
       "lang": "ko-KR",
@@ -26460,6 +28476,34 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "6b23924c42ef571a671d5ea7.mp3"
+    },
+    {
+      "key": "ko-KR:면도기가",
+      "text": "면도기가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d18615af36d288aa2bb27254.mp3"
+    },
+    {
+      "key": "ko-KR:면도기만",
+      "text": "면도기만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "4600a111b1d1d7eca92f83e8.mp3"
+    },
+    {
+      "key": "ko-KR:면도날만",
+      "text": "면도날만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b3d625476e76e38bf1b9f347.mp3"
+    },
+    {
+      "key": "ko-KR:면도날이",
+      "text": "면도날이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "180d477184cc2a83a8fad3e0.mp3"
     },
     {
       "key": "ko-KR:명동까지",
@@ -26943,6 +28987,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "62f4df3df89e24d259895cd6.mp3"
+    },
+    {
+      "key": "ko-KR:백화점만",
+      "text": "백화점만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "da7f59e6e3e834d36eebd3a7.mp3"
+    },
+    {
+      "key": "ko-KR:백화점이",
+      "text": "백화점이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "13837de68770d46c321a8312.mp3"
     },
     {
       "key": "ko-KR:버블티가",
@@ -27519,6 +29577,20 @@
       "file": "8ba0217cb7e71d8a066ebbbb.mp3"
     },
     {
+      "key": "ko-KR:생일이가",
+      "text": "생일이가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "bb6d83d873c28729c608e5db.mp3"
+    },
+    {
+      "key": "ko-KR:생일이만",
+      "text": "생일이만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "087b9de1646e8a5b9cff4d34.mp3"
+    },
+    {
       "key": "ko-KR:서있었다",
       "text": "서있었다",
       "lang": "ko-KR",
@@ -27587,6 +29659,34 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "06a76f9a053c8d245b289b34.mp3"
+    },
+    {
+      "key": "ko-KR:선크림만",
+      "text": "선크림만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "16ea5134bf92c46f84a518bf.mp3"
+    },
+    {
+      "key": "ko-KR:선크림이",
+      "text": "선크림이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "5c7b7377f803719399ae6e14.mp3"
+    },
+    {
+      "key": "ko-KR:섬나라가",
+      "text": "섬나라가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "858917fd20470490f2c6f2ab.mp3"
+    },
+    {
+      "key": "ko-KR:섬나라만",
+      "text": "섬나라만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "528ea392963adbf9ce0effb3.mp3"
     },
     {
       "key": "ko-KR:세상에서",
@@ -27946,6 +30046,20 @@
       "file": "e344b2958e21fb67eaddb026.mp3"
     },
     {
+      "key": "ko-KR:십이일만",
+      "text": "십이일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9120a0ae926c7ec32650757a.mp3"
+    },
+    {
+      "key": "ko-KR:십이일이",
+      "text": "십이일이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0f59a7414b4f915568267097.mp3"
+    },
+    {
       "key": "ko-KR:십일월만",
       "text": "십일월만",
       "lang": "ko-KR",
@@ -27958,6 +30072,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "64dd763da2e512e69cbd9cfe.mp3"
+    },
+    {
+      "key": "ko-KR:십일일만",
+      "text": "십일일만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3e1134bde8695b458f04a408.mp3"
+    },
+    {
+      "key": "ko-KR:십일일이",
+      "text": "십일일이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b7aa0370e8ed4017dd64f056.mp3"
     },
     {
       "key": "ko-KR:싶어요가",
@@ -28329,6 +30457,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "f8fc1def73e1ccd5c1b4d000.mp3"
+    },
+    {
+      "key": "ko-KR:에센스가",
+      "text": "에센스가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2c872311c755fe78be9d19ac.mp3"
+    },
+    {
+      "key": "ko-KR:에센스만",
+      "text": "에센스만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "61124ca07d3e37d09a5a6ebb.mp3"
     },
     {
       "key": "ko-KR:여권을만",
@@ -28968,6 +31110,20 @@
       "file": "60336ac366c1dc945e0c5d19.mp3"
     },
     {
+      "key": "ko-KR:이에요가",
+      "text": "이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "7286e1e0720606a92ac41756.mp3"
+    },
+    {
+      "key": "ko-KR:이에요만",
+      "text": "이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "7bce845148b2d8bbbeeaab1d.mp3"
+    },
+    {
       "key": "ko-KR:이쪽으로",
       "text": "이쪽으로",
       "lang": "ko-KR",
@@ -28994,6 +31150,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "146f6ea1b8698bcc30ead37e.mp3"
+    },
+    {
+      "key": "ko-KR:일본에가",
+      "text": "일본에가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6def5c80c9ba66e8cab903b8.mp3"
+    },
+    {
+      "key": "ko-KR:일본에만",
+      "text": "일본에만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c445eb2f1de5501eaf9b1fc8.mp3"
     },
     {
       "key": "ko-KR:일요일만",
@@ -29204,6 +31374,27 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "bf9d7d5dc68215a370279423.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽에가",
+      "text": "저쪽에가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "132523e4356f408b0f3da24a.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽에만",
+      "text": "저쪽에만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "158792fc8ae6c00f05f3666b.mp3"
+    },
+    {
+      "key": "ko-KR:저쪽하고",
+      "text": "저쪽하고",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2532ec473b4a201951bd4d7c.mp3"
     },
     {
       "key": "ko-KR:전쟁보다",
@@ -30683,6 +32874,20 @@
       "file": "482969818b3e86ef6ddc89ff.mp3"
     },
     {
+      "key": "ko-KR:그끄저께가",
+      "text": "그끄저께가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "194c0cec09f741f70efb520f.mp3"
+    },
+    {
+      "key": "ko-KR:그끄저께만",
+      "text": "그끄저께만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b831c40feb67b57499afdf26.mp3"
+    },
+    {
       "key": "ko-KR:그렇군요가",
       "text": "그렇군요가",
       "lang": "ko-KR",
@@ -30949,6 +33154,20 @@
       "file": "6cb9adc1c34e525d2206bccb.mp3"
     },
     {
+      "key": "ko-KR:드라이기가",
+      "text": "드라이기가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "79401b2be3b98b85b19a2735.mp3"
+    },
+    {
+      "key": "ko-KR:드라이기만",
+      "text": "드라이기만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d671b39a67230398db03b732.mp3"
+    },
+    {
       "key": "ko-KR:드릴게요가",
       "text": "드릴게요가",
       "lang": "ko-KR",
@@ -31180,6 +33399,20 @@
       "file": "97f81a6f89e76b0a59f26d2a.mp3"
     },
     {
+      "key": "ko-KR:매니큐어가",
+      "text": "매니큐어가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a451a3512c2a82e97e15b558.mp3"
+    },
+    {
+      "key": "ko-KR:매니큐어만",
+      "text": "매니큐어만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8fe68560504df6431f0d858a.mp3"
+    },
+    {
       "key": "ko-KR:맵습니다가",
       "text": "맵습니다가",
       "lang": "ko-KR",
@@ -31257,6 +33490,20 @@
       "file": "09007105ca461d8c47bb45e1.mp3"
     },
     {
+      "key": "ko-KR:목욕타월만",
+      "text": "목욕타월만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "ac4e231f96be6a6f7fe833b1.mp3"
+    },
+    {
+      "key": "ko-KR:목욕타월이",
+      "text": "목욕타월이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d3d25b1f9c07786449924d77.mp3"
+    },
+    {
       "key": "ko-KR:몸무게가가",
       "text": "몸무게가가",
       "lang": "ko-KR",
@@ -31297,6 +33544,34 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "1ebca706888b500aa02d2d5c.mp3"
+    },
+    {
+      "key": "ko-KR:바디로션만",
+      "text": "바디로션만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "7b08ac63f36fa5ee7d3ab0d9.mp3"
+    },
+    {
+      "key": "ko-KR:바디로션이",
+      "text": "바디로션이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "81422aa3267c4af2e56f67de.mp3"
+    },
+    {
+      "key": "ko-KR:바디워시가",
+      "text": "바디워시가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0b435572dfe543b333b1cb82.mp3"
+    },
+    {
+      "key": "ko-KR:바디워시만",
+      "text": "바디워시만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f58671189e5e5d5bec626268.mp3"
     },
     {
       "key": "ko-KR:바라보더니",
@@ -31642,6 +33917,20 @@
       "file": "b30509eb7a4debed4efb940b.mp3"
     },
     {
+      "key": "ko-KR:손톱깎이가",
+      "text": "손톱깎이가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "fe5256cd6a99f24d5b6f966a.mp3"
+    },
+    {
+      "key": "ko-KR:손톱깎이만",
+      "text": "손톱깎이만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "cc588d6ca4a66517b827fd22.mp3"
+    },
+    {
       "key": "ko-KR:쇼핑하기가",
       "text": "쇼핑하기가",
       "lang": "ko-KR",
@@ -31661,6 +33950,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "8519fda902b51e4176ba5a6b.mp3"
+    },
+    {
+      "key": "ko-KR:쉐이빙폼만",
+      "text": "쉐이빙폼만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c75e4428934651653c47c7e1.mp3"
+    },
+    {
+      "key": "ko-KR:쉐이빙폼이",
+      "text": "쉐이빙폼이",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "44ba68226067795cbc8831fa.mp3"
     },
     {
       "key": "ko-KR:스마트폰을",
@@ -31710,6 +34013,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "7452da21d1fbe7abdb9cca5e.mp3"
+    },
+    {
+      "key": "ko-KR:십육일에가",
+      "text": "십육일에가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "630f5a3edcdef90bd336f103.mp3"
+    },
+    {
+      "key": "ko-KR:십육일에만",
+      "text": "십육일에만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9ada15544df29cd11af289d0.mp3"
     },
     {
       "key": "ko-KR:쓰여있다고",
@@ -33028,6 +35345,20 @@
       "file": "89696af6f28fa890241d2279.mp3"
     },
     {
+      "key": "ko-KR:공부합니다가",
+      "text": "공부합니다가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f7421a209e8fe6d14d201630.mp3"
+    },
+    {
+      "key": "ko-KR:공부합니다만",
+      "text": "공부합니다만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3652f73cdf33ebd4aa8c6586.mp3"
+    },
+    {
       "key": "ko-KR:괜찮습니다가",
       "text": "괜찮습니다가",
       "lang": "ko-KR",
@@ -33112,6 +35443,20 @@
       "file": "df956db0d633eebbe9f86156.mp3"
     },
     {
+      "key": "ko-KR:드럭스토어가",
+      "text": "드럭스토어가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "97ef6899179d4a7569d736aa.mp3"
+    },
+    {
+      "key": "ko-KR:드럭스토어만",
+      "text": "드럭스토어만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "cff3e490c0633f6b864ddd9a.mp3"
+    },
+    {
       "key": "ko-KR:드르렁드르렁",
       "text": "드르렁드르렁",
       "lang": "ko-KR",
@@ -33145,6 +35490,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "a4e8d8e7432f8e26862dba53.mp3"
+    },
+    {
+      "key": "ko-KR:로션이에요가",
+      "text": "로션이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "7d9c52c1b7b60588ae5b14a9.mp3"
+    },
+    {
+      "key": "ko-KR:로션이에요만",
+      "text": "로션이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "cffdc09ccaf238cd702a8156.mp3"
     },
     {
       "key": "ko-KR:마셨습니다가",
@@ -33327,6 +35686,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "62dafb7a603e82aef2e81a97.mp3"
+    },
+    {
+      "key": "ko-KR:사람이에요가",
+      "text": "사람이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c6b2de2ce893b1aebfe01bf3.mp3"
+    },
+    {
+      "key": "ko-KR:사람이에요만",
+      "text": "사람이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "601caf8eb537ad17a839992f.mp3"
     },
     {
       "key": "ko-KR:사람입니까가",
@@ -33574,6 +35947,20 @@
       "file": "39b3fc61ae1985d2d03c8fb6.mp3"
     },
     {
+      "key": "ko-KR:언제입니까가",
+      "text": "언제입니까가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "90f787f6ad93515264a16582.mp3"
+    },
+    {
+      "key": "ko-KR:언제입니까만",
+      "text": "언제입니까만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0e9707ef87cdea1d8faf61a8.mp3"
+    },
+    {
       "key": "ko-KR:얼마입니까가",
       "text": "얼마입니까가",
       "lang": "ko-KR",
@@ -33586,6 +35973,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "69b6dfba4bc095fe92f44599.mp3"
+    },
+    {
+      "key": "ko-KR:에센스예요가",
+      "text": "에센스예요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3e1a08724213b62eb62dfd42.mp3"
+    },
+    {
+      "key": "ko-KR:에센스예요만",
+      "text": "에센스예요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e40277d6533b86e7be1e666f.mp3"
     },
     {
       "key": "ko-KR:에스프레소가",
@@ -33810,6 +36211,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "691afadd1c7fc20cc2b85366.mp3"
+    },
+    {
+      "key": "ko-KR:음식이에요가",
+      "text": "음식이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1b5e65919428d07465bbe6eb.mp3"
+    },
+    {
+      "key": "ko-KR:음식이에요만",
+      "text": "음식이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c96e3ae5fdb4036c9d2bcbb1.mp3"
     },
     {
       "key": "ko-KR:음식입니까가",
@@ -34113,6 +36528,20 @@
       "file": "6d30ac2bd65f57d616dcb7f2.mp3"
     },
     {
+      "key": "ko-KR:학생이에요가",
+      "text": "학생이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0168650ca5fac3a8d009d13e.mp3"
+    },
+    {
+      "key": "ko-KR:학생이에요만",
+      "text": "학생이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "694a46458e87e1e0a09a3d1f.mp3"
+    },
+    {
       "key": "ko-KR:헷갈렸네요가",
       "text": "헷갈렸네요가",
       "lang": "ko-KR",
@@ -34244,6 +36673,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "244904d94d16c3c728b59bfa.mp3"
+    },
+    {
+      "key": "ko-KR:쇼핑했습니다가",
+      "text": "쇼핑했습니다가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "05790bd5d4fbc0091426fb70.mp3"
+    },
+    {
+      "key": "ko-KR:쇼핑했습니다만",
+      "text": "쇼핑했습니다만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "39b9f68c7675c40c1ac026ff.mp3"
     },
     {
       "key": "ko-KR:수요일이에요가",
@@ -34461,6 +36904,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "75f5b16f24ed281fa0c37501.mp3"
+    },
+    {
+      "key": "ko-KR:타이난이에요가",
+      "text": "타이난이에요가",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a95590344360475a9a2cdd22.mp3"
+    },
+    {
+      "key": "ko-KR:타이난이에요만",
+      "text": "타이난이에요만",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1841a72f77ab0d7c5cc7d241.mp3"
     },
     {
       "key": "ko-KR:팔만삼천사백만",
@@ -34694,6 +37151,13 @@
       "file": "dc7e65b0932eea1a329874bf.mp3"
     },
     {
+      "key": "ko-KR:오늘 “댁” 표현을 연습합니다.",
+      "text": "오늘 “댁” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "b7f14a90aa53f4f964004fd9.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “두” 표현을 연습합니다.",
       "text": "오늘 “두” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -34748,6 +37212,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "87c3a37c021ad300b7a08230.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “봄” 표현을 연습합니다.",
+      "text": "오늘 “봄” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a5b25368df7629e441c8edfc.mp3"
     },
     {
       "key": "ko-KR:오늘 “사” 표현을 연습합니다.",
@@ -35023,6 +37494,20 @@
       "file": "118b9f5ad17946d1f0d5a250.mp3"
     },
     {
+      "key": "ko-KR:오늘 “가위” 표현을 연습합니다.",
+      "text": "오늘 “가위” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6e3217f2141753d09f9b214c.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “가을” 표현을 연습합니다.",
+      "text": "오늘 “가을” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "331c96a3ddcc55c8d8364629.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “감사” 표현을 연습합니다.",
       "text": "오늘 “감사” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35035,6 +37520,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "535037bb45d20832e82aef38.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “건물” 표현을 연습합니다.",
+      "text": "오늘 “건물” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a182d69e7fa0aa13fba1ff2b.mp3"
     },
     {
       "key": "ko-KR:오늘 “검사” 표현을 연습합니다.",
@@ -35051,6 +37543,13 @@
       "file": "de8a28bb5ae9b2a6e304eca0.mp3"
     },
     {
+      "key": "ko-KR:오늘 “겨울” 표현을 연습합니다.",
+      "text": "오늘 “겨울” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "0d63431ba8d314015e2a49f4.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “경찰” 표현을 연습합니다.",
       "text": "오늘 “경찰” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35063,6 +37562,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "b8bbaa4ccdcd195c32537018.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “고향” 표현을 연습합니다.",
+      "text": "오늘 “고향” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c6191dc5345f77d806563904.mp3"
     },
     {
       "key": "ko-KR:오늘 “공간” 표현을 연습합니다.",
@@ -35093,11 +37599,25 @@
       "file": "0b6d9b8ee15caadc17ca10ae.mp3"
     },
     {
+      "key": "ko-KR:오늘 “과자” 표현을 연습합니다.",
+      "text": "오늘 “과자” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "701fcac0d1c5d7bf4590cf23.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “구월” 표현을 연습합니다.",
       "text": "오늘 “구월” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "1776ef83c0e97b56fa68e228.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “구일” 표현을 연습합니다.",
+      "text": "오늘 “구일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "326d009d53d54a098baecd66.mp3"
     },
     {
       "key": "ko-KR:오늘 “국내” 표현을 연습합니다.",
@@ -35126,6 +37646,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "fce2a5f72f7eb03926f59fd4.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “글피” 표현을 연습합니다.",
+      "text": "오늘 “글피” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1f48c92fff850ca331d00880.mp3"
     },
     {
       "key": "ko-KR:오늘 “기차” 표현을 연습합니다.",
@@ -35296,6 +37823,27 @@
       "file": "47bdcf0ec588cfc67d08f8a6.mp3"
     },
     {
+      "key": "ko-KR:오늘 “로션” 표현을 연습합니다.",
+      "text": "오늘 “로션” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3515a6fb954b2149cb56c2b9.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “린스” 표현을 연습합니다.",
+      "text": "오늘 “린스” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "67471f52a06fd7a6d9e39e3b.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “립밤” 표현을 연습합니다.",
+      "text": "오늘 “립밤” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a34a3182f53e8beecdf94373.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “마흔” 표현을 연습합니다.",
       "text": "오늘 “마흔” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35359,6 +37907,13 @@
       "file": "7fb8a15b2883c2c9c1b2bea4.mp3"
     },
     {
+      "key": "ko-KR:오늘 “며칠” 표현을 연습합니다.",
+      "text": "오늘 “며칠” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3ec2dd0989887a212f8424c7.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “명도” 표현을 연습합니다.",
       "text": "오늘 “명도” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35371,6 +37926,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "16efcb4382e65c99fb814518.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “모레” 표현을 연습합니다.",
+      "text": "오늘 “모레” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "640d1c289826092719ca4803.mp3"
     },
     {
       "key": "ko-KR:오늘 “목이” 표현을 연습합니다.",
@@ -35555,6 +38117,13 @@
       "file": "f722cae3bf3d962a893c2e04.mp3"
     },
     {
+      "key": "ko-KR:오늘 “비누” 표현을 연습합니다.",
+      "text": "오늘 “비누” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "03d12243a1d9651b5cb2c754.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “빙수” 표현을 연습합니다.",
       "text": "오늘 “빙수” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35653,6 +38222,20 @@
       "file": "11d214d122532140d75e8c7a.mp3"
     },
     {
+      "key": "ko-KR:오늘 “생일” 표현을 연습합니다.",
+      "text": "오늘 “생일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2951fbe7eda0ca3d4f8e2d70.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “샴푸” 표현을 연습합니다.",
+      "text": "오늘 “샴푸” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d21e6dff98c98a16d768586e.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “서른” 표현을 연습합니다.",
       "text": "오늘 “서른” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35707,6 +38290,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "dfbeab63647ee81cdb2724fe.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “수건” 표현을 연습합니다.",
+      "text": "오늘 “수건” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "32aa18fd93ac2c032874589a.mp3"
     },
     {
       "key": "ko-KR:오늘 “수도” 표현을 연습합니다.",
@@ -35772,11 +38362,18 @@
       "file": "ecc73a0da2076d7faae0b7be.mp3"
     },
     {
-      "key": "ko-KR:오늘 “시간” 표현을 연습합니다.",
-      "text": "오늘 “시간” 표현을 연습합니다.",
+      "key": "ko-KR:오늘 “스킨” 표현을 연습합니다.",
+      "text": "오늘 “스킨” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
-      "file": "b498f05620cbb58d9ad5b863.mp3"
+      "file": "3a1cbd4775ed1f3f49ebfe63.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “시계” 표현을 연습합니다.",
+      "text": "오늘 “시계” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e7cccb0dab786ff729b9c9cd.mp3"
     },
     {
       "key": "ko-KR:오늘 “시월” 표현을 연습합니다.",
@@ -35940,13 +38537,6 @@
       "file": "2b31abd8e485418c91524b7f.mp3"
     },
     {
-      "key": "ko-KR:오늘 “언제” 표현을 연습합니다.",
-      "text": "오늘 “언제” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "6f0c1b9aff56f03de975b531.mp3"
-    },
-    {
       "key": "ko-KR:오늘 “얼마” 표현을 연습합니다.",
       "text": "오늘 “얼마” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -35987,6 +38577,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "5a9610adc8ba94d9d0794f0f.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “여름” 표현을 연습합니다.",
+      "text": "오늘 “여름” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "352d48f021d3eb0881088b29.mp3"
     },
     {
       "key": "ko-KR:오늘 “여섯” 표현을 연습합니다.",
@@ -36043,6 +38640,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "4f1d2574310c72b60d28ad0e.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “예요” 표현을 연습합니다.",
+      "text": "오늘 “예요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "53d476405a1c74c6555dd1e4.mp3"
     },
     {
       "key": "ko-KR:오늘 “오월” 표현을 연습합니다.",
@@ -36190,6 +38794,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "74ffacb0c8481ab68bf1ad0f.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “이건” 표현을 연습합니다.",
+      "text": "오늘 “이건” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c9d8bf8a08aa47d2d4ad7b23.mp3"
     },
     {
       "key": "ko-KR:오늘 “이모” 표현을 연습합니다.",
@@ -36358,6 +38969,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "3e3ef3484586590bdde50093.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “저쪽” 표현을 연습합니다.",
+      "text": "오늘 “저쪽” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "96801951f9a8d31d1673a8a4.mp3"
     },
     {
       "key": "ko-KR:오늘 “적다” 표현을 연습합니다.",
@@ -36577,6 +39195,13 @@
       "file": "d1d2942ea637c41a943d6f6b.mp3"
     },
     {
+      "key": "ko-KR:오늘 “칠일” 표현을 연습합니다.",
+      "text": "오늘 “칠일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "22107c33fbc64f7b5b8ee735.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “칫솔” 표현을 연습합니다.",
       "text": "오늘 “칫솔” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -36619,6 +39244,13 @@
       "file": "bf71c6c4082db138e946393a.mp3"
     },
     {
+      "key": "ko-KR:오늘 “크림” 표현을 연습합니다.",
+      "text": "오늘 “크림” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9194f9d6814d59d1edd1b21d.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “키가” 표현을 연습합니다.",
       "text": "오늘 “키가” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -36638,6 +39270,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "e4ab1841fdbd433d8fe21c82.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “팔일” 표현을 연습합니다.",
+      "text": "오늘 “팔일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "685d775169ab0d808f1afda4.mp3"
     },
     {
       "key": "ko-KR:오늘 “평후” 표현을 연습합니다.",
@@ -36668,6 +39307,13 @@
       "file": "b2786ead12041c27bae16988.mp3"
     },
     {
+      "key": "ko-KR:오늘 “학교” 표현을 연습합니다.",
+      "text": "오늘 “학교” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a963bac49160077ae52ab608.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “학생” 표현을 연습합니다.",
       "text": "오늘 “학생” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -36680,6 +39326,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "15c6acffeb1bfc527f0f427e.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “향수” 표현을 연습합니다.",
+      "text": "오늘 “향수” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "bfde1e699ac113e72da56f01.mp3"
     },
     {
       "key": "ko-KR:오늘 “허리” 표현을 연습합니다.",
@@ -36708,6 +39361,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "a3e251437f8ba92fdce05fe9.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “회사” 표현을 연습합니다.",
+      "text": "오늘 “회사” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "ed6e959884214e4f71dcc363.mp3"
     },
     {
       "key": "ko-KR:오늘 “후에” 표현을 연습합니다.",
@@ -36764,13 +39424,6 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "29fad9070575601b1b1164c9.mp3"
-    },
-    {
-      "key": "ko-KR:오늘 “갑니까” 표현을 연습합니다.",
-      "text": "오늘 “갑니까” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "2dba9aa2b7d020857a40840f.mp3"
     },
     {
       "key": "ko-KR:오늘 “갑시다” 표현을 연습합니다.",
@@ -36850,18 +39503,18 @@
       "file": "8fec654359cca4f9a1daea44.mp3"
     },
     {
+      "key": "ko-KR:오늘 “그글피” 표현을 연습합니다.",
+      "text": "오늘 “그글피” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "35f201d6d10511b7889ea82c.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “그래요” 표현을 연습합니다.",
       "text": "오늘 “그래요” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "8bf84c76afcae4959746768c.mp3"
-    },
-    {
-      "key": "ko-KR:오늘 “그러면” 표현을 연습합니다.",
-      "text": "오늘 “그러면” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "4bf0afd1fa402ac629c7cf19.mp3"
     },
     {
       "key": "ko-KR:오늘 “그런가” 표현을 연습합니다.",
@@ -36876,6 +39529,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "e5aa5f40b938e503ac8d03a2.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “그저께” 표현을 연습합니다.",
+      "text": "오늘 “그저께” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a82675a6ef8773fd1357bfd2.mp3"
     },
     {
       "key": "ko-KR:오늘 “금요일” 표현을 연습합니다.",
@@ -36897,6 +39557,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "cd841c1822fd998d3190451b.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “김치는” 표현을 연습합니다.",
+      "text": "오늘 “김치는” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "657b89b793f48e25bd9e9bf5.mp3"
     },
     {
       "key": "ko-KR:오늘 “나쁘다” 표현을 연습합니다.",
@@ -37011,6 +39678,20 @@
       "file": "aac2c120247d8d9a42b63fed.mp3"
     },
     {
+      "key": "ko-KR:오늘 “로션은” 표현을 연습합니다.",
+      "text": "오늘 “로션은” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "27f120ae2f8983616f11e62c.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “로션이” 표현을 연습합니다.",
+      "text": "오늘 “로션이” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "708cac7376e6abd2a906940d.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “리포트” 표현을 연습합니다.",
       "text": "오늘 “리포트” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37067,11 +39748,32 @@
       "file": "a4b1c5079a82a58e902b6f4a.mp3"
     },
     {
+      "key": "ko-KR:오늘 “머리끈” 표현을 연습합니다.",
+      "text": "오늘 “머리끈” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1dd74fe87e65f25850cdccc3.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “메뉴판” 표현을 연습합니다.",
       "text": "오늘 “메뉴판” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "0cc0829509b1d1fd28459006.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “면도기” 표현을 연습합니다.",
+      "text": "오늘 “면도기” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f19304888d548d81befe088c.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “면도날” 표현을 연습합니다.",
+      "text": "오늘 “면도날” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "fb68cf31a9a634e8dcdcfb88.mp3"
     },
     {
       "key": "ko-KR:오늘 “명하고” 표현을 연습합니다.",
@@ -37221,6 +39923,13 @@
       "file": "0e83d661e7ad29bb526f1864.mp3"
     },
     {
+      "key": "ko-KR:오늘 “백화점” 표현을 연습합니다.",
+      "text": "오늘 “백화점” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2e1744c106724f27db91a5f0.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “버블티” 표현을 연습합니다.",
       "text": "오늘 “버블티” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37368,6 +40077,13 @@
       "file": "3ce4439b6f36f6261805a81c.mp3"
     },
     {
+      "key": "ko-KR:오늘 “생일이” 표현을 연습합니다.",
+      "text": "오늘 “생일이” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d8089f90a1c217d65abc5043.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “선생님” 표현을 연습합니다.",
       "text": "오늘 “선생님” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37380,6 +40096,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "0af4a180e14e732e7d5a6bf1.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “선크림” 표현을 연습합니다.",
+      "text": "오늘 “선크림” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9ca37b1ae466a5bd6d2fc1b1.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “섬나라” 표현을 연습합니다.",
+      "text": "오늘 “섬나라” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "04f27d79e018aae3d1303f4f.mp3"
     },
     {
       "key": "ko-KR:오늘 “세트가” 표현을 연습합니다.",
@@ -37445,13 +40175,6 @@
       "file": "56c633be8b304d0043dd1244.mp3"
     },
     {
-      "key": "ko-KR:오늘 “시간이” 표현을 연습합니다.",
-      "text": "오늘 “시간이” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "04650a0ccae1b07be3fa1ebf.mp3"
-    },
-    {
       "key": "ko-KR:오늘 “신분증” 표현을 연습합니다.",
       "text": "오늘 “신분증” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37487,11 +40210,25 @@
       "file": "3531849c61b1537133c4b5a7.mp3"
     },
     {
+      "key": "ko-KR:오늘 “십이일” 표현을 연습합니다.",
+      "text": "오늘 “십이일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "97cbb2f8a88a03d0be92a8a4.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “십일월” 표현을 연습합니다.",
       "text": "오늘 “십일월” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "55db1bb8324c4cf32e4da2ae.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “십일일” 표현을 연습합니다.",
+      "text": "오늘 “십일일” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f0411accd38a675090767a5f.mp3"
     },
     {
       "key": "ko-KR:오늘 “아이스” 표현을 연습합니다.",
@@ -37522,13 +40259,6 @@
       "file": "2bec71293eee80a69387c436.mp3"
     },
     {
-      "key": "ko-KR:오늘 “어디에” 표현을 연습합니다.",
-      "text": "오늘 “어디에” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "529ae9180cbfbf29c7233f6c.mp3"
-    },
-    {
       "key": "ko-KR:오늘 “어떻게” 표현을 연습합니다.",
       "text": "오늘 “어떻게” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37550,18 +40280,18 @@
       "file": "989d937e49879bd81cc516f1.mp3"
     },
     {
+      "key": "ko-KR:오늘 “에센스” 표현을 연습합니다.",
+      "text": "오늘 “에센스” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6d113054769c5e62ac54ec77.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “여권을” 표현을 연습합니다.",
       "text": "오늘 “여권을” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "0cc7b48ccc1bcbe8375ec7ac.mp3"
-    },
-    {
-      "key": "ko-KR:오늘 “여기가” 표현을 연습합니다.",
-      "text": "오늘 “여기가” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "6b57157351e7262320b86a9b.mp3"
     },
     {
       "key": "ko-KR:오늘 “여기는” 표현을 연습합니다.",
@@ -37739,6 +40469,20 @@
       "file": "092ce1285f5bbb4fb3d062f9.mp3"
     },
     {
+      "key": "ko-KR:오늘 “이에요” 표현을 연습합니다.",
+      "text": "오늘 “이에요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "5e86f4cf316bff02dec25a05.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “일본에” 표현을 연습합니다.",
+      "text": "오늘 “일본에” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "71fab3db1b05b2689576d0db.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “일요일” 표현을 연습합니다.",
       "text": "오늘 “일요일” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -37779,6 +40523,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "455109e728e7fd15a073656a.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “저쪽에” 표현을 연습합니다.",
+      "text": "오늘 “저쪽에” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "d03e863181bb952e16ee9e39.mp3"
     },
     {
       "key": "ko-KR:오늘 “점심을” 표현을 연습합니다.",
@@ -38026,13 +40777,6 @@
       "file": "fa5f1029ba8fe1abe57b5151.mp3"
     },
     {
-      "key": "ko-KR:오늘 “한국에” 표현을 연습합니다.",
-      "text": "오늘 “한국에” 표현을 연습합니다.",
-      "lang": "ko-KR",
-      "priority": 2,
-      "file": "5de2a2ba5ff672642667d665.mp3"
-    },
-    {
       "key": "ko-KR:오늘 “한국은” 표현을 연습합니다.",
       "text": "오늘 “한국은” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -38215,6 +40959,13 @@
       "file": "4a2c2f73251c8bee1d4d07c9.mp3"
     },
     {
+      "key": "ko-KR:오늘 “그끄저께” 표현을 연습합니다.",
+      "text": "오늘 “그끄저께” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "3e7297eb741ccf39ead43374.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “그렇군요” 표현을 연습합니다.",
       "text": "오늘 “그렇군요” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -38271,6 +41022,13 @@
       "file": "122d6cb1a51764805358d6ff.mp3"
     },
     {
+      "key": "ko-KR:오늘 “드라이기” 표현을 연습합니다.",
+      "text": "오늘 “드라이기” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "e6b25a79a542f10fa58107b5.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “듣습니다” 표현을 연습합니다.",
       "text": "오늘 “듣습니다” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -38320,6 +41078,13 @@
       "file": "2b4703e3f97edecebfdbf152.mp3"
     },
     {
+      "key": "ko-KR:오늘 “매니큐어” 표현을 연습합니다.",
+      "text": "오늘 “매니큐어” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "1957f3b2ebbd583a9582ad60.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “맵습니다” 표현을 연습합니다.",
       "text": "오늘 “맵습니다” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -38341,11 +41106,32 @@
       "file": "052e673a9ce293dc856f4c0a.mp3"
     },
     {
+      "key": "ko-KR:오늘 “목욕타월” 표현을 연습합니다.",
+      "text": "오늘 “목욕타월” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a551681e0a4bca7b353c5326.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “몸무게가” 표현을 연습합니다.",
       "text": "오늘 “몸무게가” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "ce48db180fbbeb397981775e.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “바디로션” 표현을 연습합니다.",
+      "text": "오늘 “바디로션” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "2b713bd0c69989b389c2624a.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “바디워시” 표현을 연습합니다.",
+      "text": "오늘 “바디워시” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "005b3271fe64df155c3bdf96.mp3"
     },
     {
       "key": "ko-KR:오늘 “번입니까” 표현을 연습합니다.",
@@ -38460,11 +41246,25 @@
       "file": "ed1ddcfe17a05d33c04a434e.mp3"
     },
     {
+      "key": "ko-KR:오늘 “손톱깎이” 표현을 연습합니다.",
+      "text": "오늘 “손톱깎이” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "4724178348ec733636442517.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “쇼핑하기” 표현을 연습합니다.",
       "text": "오늘 “쇼핑하기” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
       "file": "7c069a6c8edc40be29e56ffc.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “쉐이빙폼” 표현을 연습합니다.",
+      "text": "오늘 “쉐이빙폼” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "c24ac0f4fcba076e2eb6e6bf.mp3"
     },
     {
       "key": "ko-KR:오늘 “시원하다” 표현을 연습합니다.",
@@ -38481,11 +41281,11 @@
       "file": "165509d8cd89f358487b9c9d.mp3"
     },
     {
-      "key": "ko-KR:오늘 “아니에요” 표현을 연습합니다.",
-      "text": "오늘 “아니에요” 표현을 연습합니다.",
+      "key": "ko-KR:오늘 “십육일에” 표현을 연습합니다.",
+      "text": "오늘 “십육일에” 표현을 연습합니다.",
       "lang": "ko-KR",
       "priority": 2,
-      "file": "dae16183f04db51f4f34479b.mp3"
+      "file": "8e2f8677df575abaa1f82812.mp3"
     },
     {
       "key": "ko-KR:오늘 “아닙니까” 표현을 연습합니다.",
@@ -38873,6 +41673,13 @@
       "file": "b286d6c69e32fe72cdc655a5.mp3"
     },
     {
+      "key": "ko-KR:오늘 “공부합니다” 표현을 연습합니다.",
+      "text": "오늘 “공부합니다” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "75f3b135ea90e404daa83855.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “괜찮습니다” 표현을 연습합니다.",
       "text": "오늘 “괜찮습니다” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -38892,6 +41699,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "ae78622813a97ff1e814c6c0.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “드럭스토어” 표현을 연습합니다.",
+      "text": "오늘 “드럭스토어” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "4b4324525bef24e97dd98c9b.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “로션이에요” 표현을 연습합니다.",
+      "text": "오늘 “로션이에요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8f1f5f75c0d00235ea59da1b.mp3"
     },
     {
       "key": "ko-KR:오늘 “마셨습니다” 표현을 연습합니다.",
@@ -38941,6 +41762,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "9c6563d3e0e13c2c6fb52b12.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “사람이에요” 표현을 연습합니다.",
+      "text": "오늘 “사람이에요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "8a9ef65152d57d327ee28979.mp3"
     },
     {
       "key": "ko-KR:오늘 “사천구십육” 표현을 연습합니다.",
@@ -39004,6 +41832,20 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "006989531b2c3d27a759187d.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “언제입니까” 표현을 연습합니다.",
+      "text": "오늘 “언제입니까” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "9a94a1730703c45bae8085c6.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “에센스예요” 표현을 연습합니다.",
+      "text": "오늘 “에센스예요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "17292f1eecf3a8f41361a345.mp3"
     },
     {
       "key": "ko-KR:오늘 “에스프레소” 표현을 연습합니다.",
@@ -39102,6 +41944,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "137af44aff70c78fd01adcf6.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “음식이에요” 표현을 연습합니다.",
+      "text": "오늘 “음식이에요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "6837c510945c14737425a2a5.mp3"
     },
     {
       "key": "ko-KR:오늘 “음식입니까” 표현을 연습합니다.",
@@ -39265,6 +42114,13 @@
       "file": "5dd604b437efc758687a405e.mp3"
     },
     {
+      "key": "ko-KR:오늘 “쇼핑했습니다” 표현을 연습합니다.",
+      "text": "오늘 “쇼핑했습니다” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "f90d2719ea52f8fb1245098c.mp3"
+    },
+    {
       "key": "ko-KR:오늘 “수요일이에요” 표현을 연습합니다.",
       "text": "오늘 “수요일이에요” 표현을 연습합니다.",
       "lang": "ko-KR",
@@ -39368,6 +42224,13 @@
       "lang": "ko-KR",
       "priority": 2,
       "file": "f73219ed00cf1a7a00dfadbc.mp3"
+    },
+    {
+      "key": "ko-KR:오늘 “타이난이에요” 표현을 연습합니다.",
+      "text": "오늘 “타이난이에요” 표현을 연습합니다.",
+      "lang": "ko-KR",
+      "priority": 2,
+      "file": "a7d987ce05a16cd2a3fb3a7f.mp3"
     },
     {
       "key": "ko-KR:오늘 “팔만삼천사백” 표현을 연습합니다.",
@@ -39748,6 +42611,13 @@
       "file": "0bebc85504a58fa5919d0d5b.mp3"
     },
     {
+      "key": "zh-TW:生日",
+      "text": "生日",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "c2f9b5442784633b7eba61a5.mp3"
+    },
+    {
       "key": "zh-TW:由美",
       "text": "由美",
       "lang": "zh-TW",
@@ -39874,13 +42744,6 @@
       "file": "c99723a6a967cbd904d845ad.mp3"
     },
     {
-      "key": "zh-TW:那邊",
-      "text": "那邊",
-      "lang": "zh-TW",
-      "priority": 2,
-      "file": "8c5ec0443d927333ff7eabb3.mp3"
-    },
-    {
       "key": "zh-TW:那麼",
       "text": "那麼",
       "lang": "zh-TW",
@@ -39986,11 +42849,25 @@
       "file": "07a2a06287111827a3a85bab.mp3"
     },
     {
+      "key": "zh-TW:去日本",
+      "text": "去日本",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "1c0f84dcd09fdead003214f0.mp3"
+    },
+    {
       "key": "zh-TW:去醫院",
       "text": "去醫院",
       "lang": "zh-TW",
       "priority": 2,
       "file": "adfd02048cc40d748ea0fc24.mp3"
+    },
+    {
+      "key": "zh-TW:去韓國",
+      "text": "去韓國",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "43ac1b6f7fef42da74e69842.mp3"
     },
     {
       "key": "zh-TW:只看書",
@@ -40068,6 +42945,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "b345718c1e3525a6ccc4fac2.mp3"
+    },
+    {
+      "key": "zh-TW:在那邊",
+      "text": "在那邊",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "34114730f8fcbed9702431fb.mp3"
     },
     {
       "key": "zh-TW:多嗎？",
@@ -40672,11 +43556,25 @@
       "file": "b43d6686a643980389129760.mp3"
     },
     {
+      "key": "zh-TW:星期／週",
+      "text": "星期／週",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "25a40bb8c389a0601c1e540d.mp3"
+    },
+    {
       "key": "zh-TW:是…食物",
       "text": "是…食物",
       "lang": "zh-TW",
       "priority": 2,
       "file": "9e777878f94a57943f659f75.mp3"
+    },
+    {
+      "key": "zh-TW:是人嗎？",
+      "text": "是人嗎？",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "a2b08fd7d81dd5e4ca746e0f.mp3"
     },
     {
       "key": "zh-TW:是什麼？",
@@ -40712,6 +43610,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "719992ff95247ef6a6cc863d.mp3"
+    },
+    {
+      "key": "zh-TW:是精華液",
+      "text": "是精華液",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "eecab60727f7ece17327d1b1.mp3"
     },
     {
       "key": "zh-TW:有，而且",
@@ -40803,6 +43708,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "db1b5decba29a66281bb40c2.mp3"
+    },
+    {
+      "key": "zh-TW:下／下一個",
+      "text": "下／下一個",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "8fd3f6d05290f72d9131e1eb.mp3"
     },
     {
       "key": "zh-TW:不舒服嗎？",
@@ -40952,6 +43864,13 @@
       "file": "88d5809f4db913d9e4fdd7af.mp3"
     },
     {
+      "key": "zh-TW:是乳液嗎？",
+      "text": "是乳液嗎？",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "99ee0a6ca241d44887b34617.mp3"
+    },
+    {
       "key": "zh-TW:是五千韓元",
       "text": "是五千韓元",
       "lang": "zh-TW",
@@ -40971,6 +43890,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "8c7e342dda29d083c23cc3d8.mp3"
+    },
+    {
+      "key": "zh-TW:是台南嗎？",
+      "text": "是台南嗎？",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "ec04d9c7ca0bc91dc6a33483.mp3"
     },
     {
       "key": "zh-TW:是夜市嗎？",
@@ -41006,6 +43932,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "95013ae61d7f978e19121bca.mp3"
+    },
+    {
+      "key": "zh-TW:是食物嗎？",
+      "text": "是食物嗎？",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "e93113e6b5880c1297b05a58.mp3"
     },
     {
       "key": "zh-TW:本來／原本",
@@ -41146,6 +44079,20 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "3c8469ad0bae0ae2177f5bc2.mp3"
+    },
+    {
+      "key": "zh-TW:乳液（主語）",
+      "text": "乳液（主語）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "bc12dc6d1a160fe13f7ea9a5.mp3"
+    },
+    {
+      "key": "zh-TW:乳液（主題）",
+      "text": "乳液（主題）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "18020f8f0e081d4017b095a3.mp3"
     },
     {
       "key": "zh-TW:二（數冠形）",
@@ -41330,6 +44277,13 @@
       "file": "913769596513ce855d1051f2.mp3"
     },
     {
+      "key": "zh-TW:是什麼時候？",
+      "text": "是什麼時候？",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "6dc274641cfff8ac0953b67e.mp3"
+    },
+    {
       "key": "zh-TW:時間（主語）",
       "text": "時間（主語）",
       "lang": "zh-TW",
@@ -41351,6 +44305,13 @@
       "file": "5099fda8b966f0faa25400de.mp3"
     },
     {
+      "key": "zh-TW:泡菜（主題）",
+      "text": "泡菜（主題）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "5eb3ff9c20dbc30b4e403d9a.mp3"
+    },
+    {
       "key": "zh-TW:游泳（受詞）",
       "text": "游泳（受詞）",
       "lang": "zh-TW",
@@ -41363,6 +44324,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "eab1640e25bbb8c16ff5fe69.mp3"
+    },
+    {
+      "key": "zh-TW:生日（主語）",
+      "text": "生日（主語）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "ffb909aa3464ac3f5d018d27.mp3"
     },
     {
       "key": "zh-TW:發音（主語）",
@@ -41624,13 +44592,6 @@
       "file": "684a1bf72a43b00d0b46c346.mp3"
     },
     {
-      "key": "zh-TW:在韓國／到韓國",
-      "text": "在韓國／到韓國",
-      "lang": "zh-TW",
-      "priority": 2,
-      "file": "b71a99fbc5cf11b0afc0d52c.mp3"
-    },
-    {
       "key": "zh-TW:搞錯了/誤會了",
       "text": "搞錯了/誤會了",
       "lang": "zh-TW",
@@ -41827,6 +44788,13 @@
       "file": "5d6aa87c949214a04c409515.mp3"
     },
     {
+      "key": "zh-TW:16號（讀作 십육일）",
+      "text": "16號（讀作 십육일）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "1ca22b1ec098c036283cb32b.mp3"
+    },
+    {
       "key": "zh-TW:不能／無法（能力否定）",
       "text": "不能／無法（能力否定）",
       "lang": "zh-TW",
@@ -41839,6 +44807,13 @@
       "lang": "zh-TW",
       "priority": 2,
       "file": "d1fab292821663b0e46fa430.mp3"
+    },
+    {
+      "key": "zh-TW:這個（이것은 的縮寫）",
+      "text": "這個（이것은 的縮寫）",
+      "lang": "zh-TW",
+      "priority": 2,
+      "file": "bca227ce7e831c68ea048202.mp3"
     },
     {
       "key": "zh-TW:但是（發音「그러치만」）",

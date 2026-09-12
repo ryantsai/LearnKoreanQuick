@@ -27,7 +27,9 @@ describe("courseLessons", () => {
       "b1-13",
       "b1-14",
       "b1-15",
-      "b1-16"
+      "b1-16",
+      "b1-17",
+      "b1-18"
     ]);
 
     for (const lesson of courseLessons) {
@@ -214,5 +216,24 @@ describe("courseLessons", () => {
     expect(b114.guide.title).toContain("數冠形詞");
     expect(b114.vocabulary).toHaveLength(19);
     expect(b114.guide.practice.prompts).toHaveLength(5);
+  });
+
+  test("adds the 0914 and 0916 lessons with informal copula and date vocabulary", () => {
+    const b117 = courseLessons.find((lesson) => lesson.id === "b1-17");
+    const b118 = courseLessons.find((lesson) => lesson.id === "b1-18");
+
+    expect(b117.sourcePdf).toBe("docs/lessons/new/0914.pdf");
+    expect(b117.titleKo).toBe("이건 로션이에요?");
+    expect(b117.dialogues[0].lines).toHaveLength(5);
+    expect(b117.vocabulary).toHaveLength(23);
+    expect(b117.guide.title).toContain("아니에요");
+    expect(b117.guide.practice.prompts).toHaveLength(3);
+
+    expect(b118.sourcePdf).toBe("docs/lessons/new/0916.pdf");
+    expect(b118.titleKo).toBe("며칠 한국에 갑니까?");
+    expect(b118.dialogues[0].lines).toHaveLength(4);
+    expect(b118.vocabulary).toHaveLength(27);
+    expect(b118.guide.sections.some((section) => section.heading.includes("에"))).toBe(true);
+    expect(b118.guide.practice.prompts).toHaveLength(6);
   });
 });

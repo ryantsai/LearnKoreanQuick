@@ -11,7 +11,7 @@
     "preview": "node server/index.js",
     "test": "vitest run",
     "audio:catalog": "node scripts/build-audio-catalog.mjs",
-    "audio:generate": ".venv-tts/Scripts/python.exe -X utf8 scripts/generate-local-audio.py",
+    "audio:generate": ".\\.venv-tts\\Scripts\\python.exe -X utf8 scripts/generate-local-audio.py",
     "audio:verify": "node scripts/verify-audio.mjs"
   },
   "dependencies": {

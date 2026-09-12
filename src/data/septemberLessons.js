@@ -7,12 +7,58 @@ const words = (rows) => rows.map((row) => w(...row));
 const priceReadings = {
   "2000원입니다": "이천원입니다", "16000원입니다": "만육천원입니다",
   "15000원에": "만오천원에", "52000원입니다": "오만이천원입니다", "50000원에": "오만원에",
+  "16일에": "십육일에",
 };
 const l = (speaker, ko, zh, rows) => ({ speaker, ko, zh, tokens: words(rows).map((token) => {
   const displayText = Object.keys(priceReadings).find((price) => ko.includes(price) && priceReadings[price] === token.text);
   return displayText ? { ...token, displayText } : token;
 }) });
 const shared = (id, rows) => words(rows).map((item) => ({ ...item, image: asset(`${id}-vocab-page`) }));
+const withImage = (imageName, rows) => words(rows).map((item) => ({ ...item, image: asset(imageName) }));
+
+const skincare = [
+  ["스킨", "seu-kin", "化妝水"], ["로션", "ro-syeon", "乳液"],
+  ["크림", "keu-rim", "乳霜"], ["선크림", "seon-keu-rim", "防曬乳"],
+  ["에센스", "e-sen-seu", "精華液"], ["향수", "hyang-su", "香水"],
+  ["립밤", "rip-bam", "護唇膏"], ["매니큐어", "mae-ni-kyu-eo", "指甲油"],
+];
+const bathroom = [
+  ["샴푸", "syam-pu", "洗髮精"], ["린스", "rin-seu", "潤髮乳"],
+  ["비누", "bi-nu", "肥皂"], ["바디워시", "ba-di-wo-si", "沐浴乳"],
+  ["바디로션", "ba-di-ro-syeon", "乳液（身體用）"], ["클렌징", "keul-len-jing", "洗面乳"],
+  ["쉐이빙폼", "swe-i-bing-pom", "刮鬍膏"], ["면도기", "myeon-do-gi", "刮鬍刀"],
+  ["면도날", "myeon-do-nal", "刮鬍刀片"], ["수건", "su-geon", "毛巾"],
+  ["목욕타월", "mo-gyok-ta-wol", "浴巾"], ["드라이기", "deu-ra-i-gi", "吹風機"],
+  ["손톱깎이", "son-top-kkak-i", "指甲剪"], ["가위", "ga-wi", "剪刀"],
+  ["머리끈", "meo-ri-kkeun", "髮帶"],
+];
+const cosmetics = [...skincare, ...bathroom];
+
+const months = [
+  ["일월", "il-wol", "1月"], ["이월", "i-wol", "2月"], ["삼월", "sam-wol", "3月"],
+  ["사월", "sa-wol", "4月"], ["오월", "o-wol", "5月"], ["유월", "yu-wol", "6月"],
+  ["칠월", "chil-wol", "7月"], ["팔월", "pal-wol", "8月"], ["구월", "gu-wol", "9月"],
+  ["시월", "si-wol", "10月"], ["십일월", "sip-il-wol", "11月"], ["십이월", "sip-i-wol", "12月"],
+];
+const dates = [
+  ["일일", "il-il", "1日"], ["이일", "i-il", "2日"], ["삼일", "sam-il", "3日"],
+  ["사일", "sa-il", "4日"], ["오일", "o-il", "5日"], ["육일", "yuk-il", "6日"],
+  ["칠일", "chil-il", "7日"], ["팔일", "pal-il", "8日"], ["구일", "gu-il", "9日"],
+  ["십일", "sip-il", "10日"], ["십일일", "sip-il-il", "11日"], ["십이일", "sip-i-il", "12日"],
+  ["이십일", "i-sip-il", "20日"], ["삼십일", "sam-sip-il", "30日"], ["삼십일일", "sam-sip-il-il", "31日"],
+];
+const relativeDays = [
+  ["그끄저께", "geu-kkeu-jeo-kke", "大前天"], ["그저께", "geu-jeo-kke", "前天"],
+  ["어제", "eo-je", "昨天"], ["오늘", "o-neul", "今天"], ["내일", "nae-il", "明天"],
+  ["모레", "mo-re", "後天"], ["글피", "geul-pi", "大後天"], ["그글피", "geu-geul-pi", "大大後天"],
+];
+const seasons = [
+  ["봄", "bom", "春"], ["여름", "yeo-reum", "夏"], ["가을", "ga-eul", "秋"], ["겨울", "gyeo-ul", "冬"],
+];
+const weekWords = [
+  ["다음 주", "da-eum- -ju", "下星期"], ["이번 주", "i-beon- -ju", "這星期"], ["지난주", "ji-nan-ju", "上星期"],
+];
+const calendarVocabulary = [...months, ...relativeDays, ...seasons, ...weekWords];
 
 const desserts = [
   ["치즈 케이크", "chi-jeu- -ke-i-keu", "起司蛋糕"],
@@ -199,6 +245,158 @@ export const septemberLessons = [
         { label: "敏俊", text: "草莓多少呢？" }, { label: "老闆", text: "草莓一箱一萬六千韓圓。" },
         { label: "敏俊", text: "有點貴，算便宜一點。" }, { label: "老闆", text: "那麼一萬五千韓圓給你。" },
         { label: "敏俊", text: "好，那麼請給我三個蘋果，還有一箱草莓。" }
+      ] }]
+    }
+  },
+  {
+    id: "b1-17", label: "初級1-17", titleKo: "이건 로션이에요?", titleZh: "這個是乳液嗎？",
+    theme: "非格式體語尾與美妝品單字", sourcePdf: "docs/lessons/new/0914.pdf",
+    media: { hero: asset("b1-17-dialogue-person") },
+    dialogues: [
+      { title: "本課對話：在藥妝店", image: asset("b1-17-dialogue-person"), objectImage: asset("b1-17-dialogue-object"), lines: [
+        l("민준", "이건 로션이에요?", "敏俊：這個是乳液嗎？", [["이건", "i-geon", "這個（이것은 的縮寫）"], ["로션이에요", "ro-syeon-i-e-yo", "是乳液嗎？"]]),
+        l("점원", "로션이 아니에요. 에센스예요.", "店員：不是乳液，是精華液。", [["로션이", "ro-syeon-i", "乳液（主語）"], ["아니에요", "a-ni-e-yo", "不是"], ["에센스예요", "e-sen-seu-ye-yo", "是精華液"]]),
+        l("민준", "그러면 로션은 어디에 있습니까?", "敏俊：那麼乳液在哪裡？", [["그러면", "geu-reo-myeon", "那麼"], ["로션은", "ro-syeon-eun", "乳液（主題）"], ["어디에", "eo-di-e", "在哪裡"], ["있습니까", "it-seum-ni-kka", "有嗎？／在嗎？"]]),
+        l("점원", "저쪽에 있습니다.", "店員：在那邊。", [["저쪽에", "jeo-jjok-e", "在那邊"], ["있습니다", "it-seum-ni-da", "在／有"]]),
+        l("민준", "네, 감사합니다.", "敏俊：好，謝謝。", [["네", "ne", "好／是"], ["감사합니다", "gam-sa-ham-ni-da", "謝謝"]])
+      ] },
+      { title: "換你說說看（保留空格）", image: asset("b1-17-practice-person"), objectImage: asset("b1-17-practice-visual"), lines: [
+        l("A", "한국 사람이에요?", "是韓國人嗎？", [["한국", "han-guk", "韓國"], ["사람이에요", "sa-ram-i-e-yo", "是人嗎？"]]),
+        l("B", "아니요. ____________________.", "不是。請用非格式體語尾回答。", [["아니요", "a-ni-yo", "不／不是"]]),
+        l("A", "여기가 타이난이에요?", "這裡是台南嗎？", [["여기가", "yeo-gi-ga", "這裡（主語）"], ["타이난이에요", "ta-i-nan-i-e-yo", "是台南嗎？"]]),
+        l("B", "아니요, ____________________.", "不是，請用非格式體語尾回答。", [["아니요", "a-ni-yo", "不／不是"]]),
+        l("A", "학생이에요?", "是學生嗎？", [["학생이에요", "hak-saeng-i-e-yo", "是學生嗎？"]]),
+        l("B", "네/아니요, ____________________.", "請選擇肯定或否定，再完成句子。", [["네", "ne", "是／好"], ["아니요", "a-ni-yo", "不／不是"]]),
+        l("A", "김치는 대만 음식이에요?", "泡菜是台灣食物嗎？", [["김치는", "gim-chi-neun", "泡菜（主題）"], ["대만", "dae-man", "台灣"], ["음식이에요", "eum-sik-i-e-yo", "是食物嗎？"]]),
+        l("B", "____________________.", "請用 아니에요 完整回答。", [["아니에요", "a-ni-e-yo", "不是"]])
+      ] }
+    ],
+    vocabulary: [
+      ...withImage("b1-17-vocab-page-1", skincare),
+      ...withImage("b1-17-vocab-page-2", bathroom)
+    ],
+    guide: {
+      label: "非格式體語尾", title: "N이에요／예요・N이／가 아니에요",
+      hint: "이에요／예요 和 아니에요 用於一般禮貌場合；有尾音的名詞接 이에요 或 이 아니에요，沒有尾音的名詞接 예요 或 가 아니에요。",
+      sections: [
+        { heading: "是：有尾音用 이에요，無尾音用 예요（第 3–5 頁）", words: words([
+          ["이에요", "i-e-yo", "是（接在有尾音名詞後）"], ["예요", "ye-yo", "是（接在無尾音名詞後）"],
+          ["학생이에요", "hak-saeng-i-e-yo", "是學生"], ["한국 사람이에요", "han-guk- -sa-ram-i-e-yo", "是韓國人"],
+          ["타이베이는 대만의 수도예요", "ta-i-be-i-neun- -dae-man-ui- -su-do-ye-yo", "台北是台灣的首都"],
+          ["그 건물은 학교예요", "geu- -geon-mu-reun- -hak-gyo-ye-yo", "那棟建築物是學校"],
+          ["이것은 시계예요", "i-geo-seun- -si-gye-ye-yo", "這是手錶"]
+        ]) },
+        { heading: "不是：N이／가 아니에요（第 6–8 頁）", words: words([
+          ["아니에요", "a-ni-e-yo", "不是"], ["학생이 아니에요", "hak-saeng-i- -a-ni-e-yo", "不是學生"],
+          ["술은 음료수가 아니에요", "su-reun- -eum-nyo-su-ga- -a-ni-e-yo", "酒不是飲料"],
+          ["선생님은 남자가 아니에요", "seon-saeng-ni-meun- -nam-ja-ga- -a-ni-e-yo", "老師不是男性"],
+          ["김치는 과자가 아니에요", "gim-chi-neun- -gwa-ja-ga- -a-ni-e-yo", "泡菜不是餅乾零食"],
+          ["태국은 섬나라가 아니에요", "tae-gu-geun- -seom-na-ra-ga- -a-ni-e-yo", "泰國不是島國"]
+        ]) },
+        { heading: "美妝品（第 9–12 頁）", words: words(cosmetics) },
+        { heading: "對話補充詞", words: words([
+          ["건물", "geon-mul", "建築物／樓"], ["시계", "si-gye", "手錶"], ["과자", "gwa-ja", "餅乾／零食"],
+          ["섬나라", "seom-na-ra", "島國"], ["드럭스토어", "deu-reok-seu-to-eo", "藥妝店"], ["저쪽", "jeo-jjok", "那邊"]
+        ]) }
+      ],
+      practice: {
+        heading: "完成 이에요／예요 與 아니에요", hint: "先判斷名詞最後有沒有收音，再選 이에요／예요；否定句用 이／가 아니에요。", valueSuffix: "",
+        items: [
+          { value: "我是學生", answer: w("학생이에요", "hak-saeng-i-e-yo", "是學生") },
+          { value: "台北是台灣的首都", answer: w("타이베이는 대만의 수도예요", "ta-i-be-i-neun- -dae-man-ui- -su-do-ye-yo", "台北是台灣的首都") },
+          { value: "不是韓國人", answer: w("한국 사람이 아니에요", "han-guk- -sa-ram-i- -a-ni-e-yo", "不是韓國人") },
+          { value: "不是乳液，是精華液", answer: w("로션이 아니에요. 에센스예요.", "ro-syeon-i- -a-ni-e-yo- -e-sen-seu-ye-yo", "不是乳液，是精華液") }
+        ],
+        prompts: [
+          { page: "第 5 頁", ko: "저는 학생 / 타이베이는 대만의 수도 / 버블티는 대만 음식 / 선생님은 여자 / 관우 씨는 대만 사람", zh: "請替每個名詞選擇 이에요 或 예요，說出完整句子。" },
+          { page: "第 8 頁", ko: "선생님은 한국 사람 / 저는 대학생 / 버블티는 대만 음료수 / 타이난은 대만의 수도 / 관우 씨는 태국 사람", zh: "請替每個名詞選擇 이 아니에요 或 가 아니에요。" },
+          { page: "第 14 頁", ko: "한국 사람이에요? / 여기가 타이난이에요? / 학생이에요? / 김치는 대만 음식이에요?", zh: "扮演 B，使用 이에요／예요 或 아니에요 回答 A 的問題。" }
+        ]
+      },
+      sourceNotes: [{ heading: "來源重點", lines: [
+        "이에요／예요 是一般禮貌的『是』；이에요 接有尾音名詞，예요 接無尾音名詞。",
+        "아니에요 是一般禮貌的『不是』；有尾音用 이 아니에요，無尾音用 가 아니에요。",
+        "保留原課件的美妝品單字；스킨 在此指化妝水，不是英文 skin 的一般意思。",
+        "本課對話位於第 13 頁，換你說說看位於第 14 頁，中文翻譯位於第 17 頁。"
+      ] }],
+      references: [{ heading: "附錄：對話翻譯（第 17 頁）", entries: [
+        { label: "敏俊", text: "這是乳液嗎？" }, { label: "店員", text: "不是乳液，是精華液。" },
+        { label: "敏俊", text: "那麼乳液在哪裡？" }, { label: "店員", text: "在那邊。" }, { label: "敏俊", text: "好，謝謝。" }
+      ] }]
+    }
+  },
+  {
+    id: "b1-18", label: "初級1-18", titleKo: "며칠 한국에 갑니까?", titleZh: "幾號去韓國？",
+    theme: "月份、日期與時間表達", sourcePdf: "docs/lessons/new/0916.pdf",
+    media: { hero: asset("b1-18-dialogue-person") },
+    dialogues: [
+      { title: "本課對話：旅行日期", image: asset("b1-18-dialogue-person"), objectImage: asset("b1-18-dialogue-object"), lines: [
+        l("관우", "다음 주 언제 시간 있습니까?", "冠宇：下星期何時有空？", [["다음", "da-eum", "下／下一個"], ["주", "ju", "星期／週"], ["언제", "eon-je", "何時"], ["시간", "si-gan", "時間"], ["있습니까", "it-seum-ni-kka", "有嗎？"]]),
+        l("민준", "다음 주 시간이 없습니다. 한국에 갑니다.", "敏俊：下星期沒空。回韓國。", [["다음", "da-eum", "下／下一個"], ["주", "ju", "星期／週"], ["시간이", "si-gan-i", "時間（主語）"], ["없습니다", "eop-seum-ni-da", "沒有"], ["한국에", "han-guk-e", "去韓國"], ["갑니다", "gam-ni-da", "去"]]),
+        l("관우", "그렇습니까? 며칠 한국에 갑니까?", "冠宇：是嗎？幾號去韓國？", [["그렇습니까", "geu-reo-seum-ni-kka", "是嗎？"], ["며칠", "myeo-chil", "幾號／哪一天"], ["한국에", "han-guk-e", "去韓國"], ["갑니까", "gam-ni-kka", "去嗎？"]]),
+        l("민준", "16일에 갑니다.", "敏俊：16號去。", [["십육일에", "sip-yuk-il-e", "16號（讀作 십육일）"], ["갑니다", "gam-ni-da", "去"]])
+      ] },
+      { title: "換你說說看（保留空格）", image: asset("b1-18-practice-person"), objectImage: asset("b1-18-practice-visual"), lines: [
+        l("A", "언제 일본에 갑니까?", "什麼時候去日本？", [["언제", "eon-je", "何時"], ["일본에", "il-bon-e", "去日本"], ["갑니까", "gam-ni-kka", "去嗎？"]]),
+        l("B", "3/27 → ____________________", "請把 3/27 念成韓文日期。", [["삼월 이십칠일", "sam-wol- -i-sip-chil-il", "3月27日"]]),
+        l("A", "생일이 언제입니까?", "生日是什麼時候？", [["생일이", "saeng-il-i", "生日（主語）"], ["언제입니까", "eon-je-im-ni-kka", "是什麼時候？"]]),
+        l("B", "____________________.", "請回答自己的生日。", [["생일", "saeng-il", "生日"]]),
+        l("A", "언제 시간이 있습니까?", "什麼時候有空？", [["언제", "eon-je", "何時"], ["시간이", "si-gan-i", "時間（主語）"], ["있습니까", "it-seum-ni-kka", "有嗎？"]]),
+        l("B", "____________________.", "請用日期或相對時間回答。", [["시간", "si-gan", "時間"]])
+      ] }
+    ],
+    vocabulary: withImage("b1-18-vocab-page", calendarVocabulary),
+    guide: {
+      label: "月份與日期", title: "月份、日期與時間에",
+      hint: "月份和日期使用漢字數詞加 월／일；要說在某個具體時間或日期做事，就在時間後加 에。어제、오늘、내일 等相對時間詞通常不加 에。",
+      sections: [
+        { heading: "月份（월）", words: words(months) },
+        { heading: "日期（일）", words: words(dates) },
+        { heading: "相對時間：通常不加 에（第 11 頁）", words: words(relativeDays) },
+        { heading: "時間、地點與動作（第 10 頁）", words: words([
+          ["내일", "nae-il", "明天"], ["4월 15일", "sa-wol- -sip-o-il", "4月15日"], ["모레", "mo-re", "後天"],
+          ["6월 10일", "yu-wol- -sip-il", "6月10日"], ["10월 5일", "si-wol- -o-il", "10月5日"], ["그저께", "geu-jeo-kke", "前天"],
+          ["학교", "hak-gyo", "學校"], ["백화점", "baek-hwa-jeom", "百貨公司"], ["집", "jip", "家"],
+          ["고향", "go-hyang", "故鄉"], ["회사", "hoe-sa", "公司"], ["식당", "sik-ttang", "餐廳"],
+          ["공부합니다", "gong-bu-ham-ni-da", "學習"], ["쇼핑했습니다", "syo-ping-haet-seum-ni-da", "逛街了"],
+          ["동생을 만납니다", "dong-saeng-eul- -man-nam-ni-da", "見弟弟／妹妹"], ["회의를 합니다", "hoe-ui-reul- -ham-ni-da", "開會"],
+          ["불고기를 먹었습니다", "bul-go-gi-reul- -meo-geot-seum-ni-da", "吃了烤肉"]
+        ]) },
+        { heading: "季節與星期周次（第 12、14 頁）", words: words([...seasons, ...weekWords, ["며칠", "myeo-chil", "幾號／哪一天"], ["언제", "eon-je", "何時"]]) },
+        { heading: "時間助詞 에（第 9 頁）", words: words([
+          ["2월 14일에", "i-wol- -sip-sa-il-e", "在2月14日"], ["10월 10일에", "si-wol- -sip-il-e", "在10月10日"],
+          ["4월 10일에", "sa-wol- -sip-il-e", "在4月10日"], ["댁", "daek", "家的尊稱"]
+        ]) }
+      ],
+      practice: {
+        heading: "說出月份、日期與時間", hint: "具體日期後加 에；日期本身讀作「○월 ○일」。注意 6月是 유월，10月是 시월。", valueSuffix: "",
+        items: [
+          { value: "1月", answer: w("일월", "il-wol", "1月") },
+          { value: "6月", answer: w("유월", "yu-wol", "6月") },
+          { value: "10/17", answer: w("시월 십칠일", "si-wol- -sip-chil-il", "10月17日") },
+          { value: "2/14＋看電影", answer: w("이월 십사일에 여자 친구하고 영화 봅니다", "i-wol- -sip-sa-il-e- -yeo-ja- -chin-gu-ha-go- -yeong-hwa- -bom-ni-da", "2月14日和女朋友看電影") },
+          { value: "10/10＋去韓國", answer: w("시월 십일에 한국에 갑니다", "si-wol- -sip-il-e- -han-guk-e- -gam-ni-da", "10月10日去韓國") },
+          { value: "10/5＋在故鄉見弟弟", answer: w("시월 오일에 고향에서 동생을 만납니다", "si-wol- -o-il-e- -go-hyang-e-seo- -dong-saeng-eul- -man-nam-ni-da", "10月5日在故鄉見弟弟") },
+          { value: "明天在學校讀書", answer: w("내일 학교에서 공부합니다", "nae-il- -hak-gyo-e-seo- -gong-bu-ham-ni-da", "明天在學校讀書") }
+        ],
+        prompts: [
+          { page: "第 4 頁", ko: "一月／二月／三月／四月／五月／六月／七月／八月／九月／十月／十一月／十二月", zh: "隨機挑一個月份，說出它的韓文；特別注意 유월、시월。" },
+          { page: "第 6 頁", ko: "13日／1日／6日／29日／21日／20日／30日／31日／15日", zh: "隨機挑一個日期，使用漢字數詞加 일 說出韓文。" },
+          { page: "第 10 頁", ko: "時間：내일／4월 15일／모레／6월 10일／10월 5일／그저께；地點：학교／백화점／집／고향／회사／식당", zh: "從時間、地點、動作欄各選一項，造出完整句子。" },
+          { page: "第 11 頁", ko: "어제 어디에 갔습니까? / 오늘 뭐 합니까? / 내일 시간이 있습니까?", zh: "相對時間詞前面不加 에，請回答三個問題。" },
+          { page: "第 13 頁", ko: "어느 계절을 좋아합니까? / ____에는 사람들이 바다에 갑니다. / 한국의 ____은 춥습니다.", zh: "用 봄、여름、가을、겨울 說出你喜歡的季節並完成句子。" },
+          { page: "第 15 頁", ko: "언제 일본에 갑니까? / 생일이 언제입니까? / 언제 시간이 있습니까?", zh: "用具體日期或相對時間回答開放式問題。" }
+        ]
+      },
+      sourceNotes: [{ heading: "來源重點", lines: [
+        "月份與日期用漢字數詞加 월／일；6月的固定讀法是 유월，10月是 시월。",
+        "說明具體時間或日期時，在後方加 에，例如 10월 10일에 한국에 갑니다。",
+        "어제、오늘、내일、모레 等相對時間詞通常直接放在句中，不加 에；本課也整理韓國四季。",
+        "本課對話位於第 14 頁，換你說說看位於第 15 頁，中文翻譯位於第 18 頁。"
+      ] }],
+      references: [{ heading: "附錄：對話翻譯（第 18 頁）", entries: [
+        { label: "冠宇", text: "下星期何時有空？" }, { label: "敏俊", text: "下星期沒空。回韓國。" },
+        { label: "冠宇", text: "是嗎？幾號回去？" }, { label: "敏俊", text: "16號去。" }
       ] }]
     }
   }
