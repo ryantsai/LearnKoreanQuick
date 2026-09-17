@@ -1,7 +1,8 @@
 export function buildDialoguePlaybackItems(dialogue, includeChinese = false) {
   return dialogue.lines.flatMap((line, lineIndex) => {
-    const koreanItems = /[가-힣]/u.test(line.ko ?? '') ? [{
-      type: 'korean', text: line.ko, lineIndex, tokenIndex: null,
+    const text = line.spokenKo ?? line.ko;
+    const koreanItems = /[가-힣]/u.test(text ?? '') ? [{
+      type: 'korean', text, lineIndex, tokenIndex: null,
     }] : [];
     if (!includeChinese) return koreanItems;
     return [...koreanItems, { type: 'chinese', text: line.zh, lineIndex, tokenIndex: null }];

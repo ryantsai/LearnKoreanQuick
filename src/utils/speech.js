@@ -39,10 +39,13 @@ export async function speakAudio(text, lang = 'ko-KR') {
     const clip = data.clips[audioKey(text, lang)];
     if (!clip) throw new Error('這段語音尚未準備好，請稍後再試。');
     return await new Promise((resolve, reject) => {
-      const audio = new Audio(assetPath(`audio/${clip.file}?v=${data.fingerprint ?? "1"}`));
+      const audio = new Audio(assetPath(`audio/${clip.file}?v=${clip.revision ?? data.fingerprint ?? "1"}`));
       audio.playbackRate = getTtsSpeed();
       audio.preservesPitch = true;
+      let settled = false;
       const finish = (ok, error) => {
+        if (settled) return;
+        settled = true;
         audio.onended = null;
         audio.onerror = null;
         if (active?.audio === audio) active = undefined;
@@ -52,7 +55,12 @@ export async function speakAudio(text, lang = 'ko-KR') {
       audio.onended = () => finish(true);
       audio.onerror = () => finish(false, new Error('無法播放語音，請檢查連線後再試。'));
       audio.play().then(() => {
-        if (run === generation) window.dispatchEvent(new CustomEvent('lkq-audio-ready'));
+        if (run !== generation || settled) {
+          audio.pause();
+          finish(false);
+          return;
+        }
+        window.dispatchEvent(new CustomEvent('lkq-audio-ready'));
       }).catch((error) => {
         if (run === generation) finish(false, error);
         else finish(false);

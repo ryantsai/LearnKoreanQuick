@@ -2,6 +2,11 @@ import { describe, expect, test } from "vitest";
 import { buildDialoguePlaybackItems, buildVocabularyPlaybackItems } from "./playback.js";
 
 describe("playback sequencing", () => {
+  test('uses explicit spoken dates for numeric exercise prompts', () => {
+    expect(buildDialoguePlaybackItems({ lines: [{ ko: '3/27 → ____', spokenKo: '삼월 이십칠일' }] })).toEqual([
+      { type: 'korean', text: '삼월 이십칠일', lineIndex: 0, tokenIndex: null },
+    ]);
+  });
   const dialogue = {
     lines: [
       {

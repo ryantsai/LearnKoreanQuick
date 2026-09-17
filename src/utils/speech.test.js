@@ -2,14 +2,16 @@ import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 
 let instances;
 let dispatchEvent;
+let playImplementation;
 beforeEach(() => {
   vi.resetModules();
   instances = [];
   dispatchEvent = vi.fn();
+  playImplementation = () => Promise.resolve();
   vi.stubGlobal('window', { dispatchEvent });
   vi.stubGlobal('CustomEvent', class { constructor(type, options) { this.type = type; this.detail = options?.detail; } });
   vi.stubGlobal('Audio', class {
-    constructor(src) { this.src = src; this.pause = vi.fn(); this.play = vi.fn().mockResolvedValue(); instances.push(this); }
+    constructor(src) { this.src = src; this.pause = vi.fn(); this.play = vi.fn(() => playImplementation()); instances.push(this); }
   });
   vi.stubGlobal('localStorage', { getItem: () => '0.8' });
 });
@@ -18,6 +20,34 @@ const readyManifest = () => vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ o
 const tick = () => new Promise(resolve => setTimeout(resolve, 0));
 
 describe('recorded speech', () => {
+  test('regenerated recordings use their own content revision to bypass old browser caches', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ fingerprint: 'old', clips: { 'ko-KR:안녕하세요': { file: 'hello.mp3', revision: 'new' } } }) }));
+    const { speakKorean } = await import('./speech.js');
+    const result = speakKorean('안녕하세요');
+    await tick();
+    expect(instances[0].src).toContain('?v=new');
+    instances[0].onended();
+    expect(await result).toBe(true);
+  });
+  test('a delayed play start after cancellation is paused again without interrupting the new clip', async () => {
+    readyManifest();
+    const { speakKorean } = await import('./speech.js');
+    // Audio.play can finish loading after the learner has already switched clips.
+    let started;
+    playImplementation = () => new Promise(resolve => { started = resolve; });
+    const first = speakKorean('안녕하세요');
+    await tick();
+    playImplementation = () => Promise.resolve();
+    const second = speakKorean('안녕하세요');
+    await tick();
+    expect(await first).toBe(false);
+    started();
+    await tick();
+    expect(instances[0].pause).toHaveBeenCalledTimes(2);
+    expect(instances[1].pause).not.toHaveBeenCalled();
+    instances[1].onended();
+    expect(await second).toBe(true);
+  });
   test('uses base-aware audio URLs and pitch-preserving selected speed', async () => {
     readyManifest();
     const { speakKorean } = await import('./speech.js');

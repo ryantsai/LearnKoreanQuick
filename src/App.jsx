@@ -548,6 +548,10 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
         : kind === "guide"
           ? buildVocabularyPlaybackItems(lesson.guide.sections.flatMap((section) => section.words), includeChinese)
           : buildVocabularyPlaybackItems(lesson.vocabulary, includeChinese);
+      if (!items.length) {
+        stopPlayback();
+        return;
+      }
 
       for (const [itemIndex, item] of items.entries()) {
         if (playbackRunRef.current !== runId) {
@@ -570,6 +574,8 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           }
         }
 
+        if (playbackRunRef.current !== runId) return;
+
         if ((kind === "vocabulary" || kind === "guide") && (!includeChinese || item.type === "chinese")) {
           setHighlight(null);
           await sleep(vocabPause);
@@ -588,6 +594,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
         }
       }
 
+      if (playbackRunRef.current !== runId) return;
       setHighlight(null);
     }
   }
@@ -737,7 +744,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                       />
                     </p>
                     <p className="course-line-zh">{lineItem.zh}</p>
-                    <button className="letter-sound-button" onClick={() => { stopPlayback(); speakKorean(lineItem.ko); }}>
+                    <button className="letter-sound-button" onClick={() => { stopPlayback(); speakKorean(lineItem.spokenKo ?? lineItem.ko); }}>
                       <Volume2 size={14} />
                       整句發音
                     </button>

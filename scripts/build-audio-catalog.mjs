@@ -14,20 +14,25 @@ function add(text, lang) {
   text = text.normalize('NFC').trim().replace(/\s+/g, ' ');
   if (!text || (lang === 'ko-KR' && !/[가-힣ㄱ-ㅎㅏ-ㅣ]/u.test(text))) return;
   const key = `${lang}:${text}`;
-  if (entries.has(key)) return;
-  entries.set(key, { key, text, lang, priority, file: `${createHash('sha256').update(key).digest('hex').slice(0, 24)}.mp3` });
+  if (entries.has(key)) {
+    if (currentLesson && !entries.get(key).lessons.includes(currentLesson)) entries.get(key).lessons.push(currentLesson);
+    return;
+  }
+  entries.set(key, { key, text, lang, priority, lessons: currentLesson ? [currentLesson] : [], file: `${createHash('sha256').update(key).digest('hex').slice(0, 24)}.mp3` });
 }
 function word(item, bilingual = true) {
   add(item.text ?? item.hangul, 'ko-KR');
   if (bilingual) add(item.zh, 'zh-TW');
 }
 const lessons = [...courseLessons.slice(-2), ...courseLessons.slice(0, -2), ...specialCourses];
+let currentLesson;
 for (const lesson of lessons) {
-  priority = ["b1-15", "b1-16"].includes(lesson.id) ? 0 : 1;
+  currentLesson = lesson.id;
+  priority = courseLessons.slice(-2).some(item => item.id === lesson.id) ? 0 : 1;
   add(lesson.titleKo, 'ko-KR');
   for (const dialogue of lesson.dialogues ?? []) {
     for (const line of dialogue.lines) {
-      add(line.ko, 'ko-KR'); add(line.zh, 'zh-TW');
+      add(line.spokenKo ?? line.ko, 'ko-KR'); add(line.zh, 'zh-TW');
       line.tokens.forEach(item => word(item, false));
     }
   }
@@ -35,6 +40,7 @@ for (const lesson of lessons) {
   for (const section of lesson.guide?.sections ?? []) section.words.forEach(item => word(item));
   for (const item of lesson.guide?.practice?.items ?? []) word(item.answer, false);
 }
+currentLesson = undefined;
 priority = 2;
 for (const item of buildVocabularyIndex([...courseLessons, ...specialCourses])) {
   word(item);

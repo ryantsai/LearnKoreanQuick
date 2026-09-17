@@ -9,7 +9,9 @@ const priceReadings = {
   "15000원에": "만오천원에", "52000원입니다": "오만이천원입니다", "50000원에": "오만원에",
   "16일에": "십육일에",
 };
-const l = (speaker, ko, zh, rows) => ({ speaker, ko, zh, tokens: words(rows).map((token) => {
+const l = (speaker, ko, zh, rows) => ({ speaker, ko, zh,
+  ...(ko.startsWith('3/27') ? { spokenKo: '삼월 이십칠일' } : {}),
+  tokens: words(rows).map((token) => {
   const displayText = Object.keys(priceReadings).find((price) => ko.includes(price) && priceReadings[price] === token.text);
   return displayText ? { ...token, displayText } : token;
 }) });
