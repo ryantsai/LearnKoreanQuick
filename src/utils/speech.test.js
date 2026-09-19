@@ -29,7 +29,7 @@ describe('recorded speech', () => {
     instances[0].onended();
     expect(await result).toBe(true);
   });
-  test('a delayed play start after cancellation is paused again without interrupting the new clip', async () => {
+  test('a cancelled clip that resolves its play late does not pause the clip that replaced it', async () => {
     readyManifest();
     const { speakKorean } = await import('./speech.js');
     // Audio.play can finish loading after the learner has already switched clips.
@@ -41,12 +41,56 @@ describe('recorded speech', () => {
     const second = speakKorean('안녕하세요');
     await tick();
     expect(await first).toBe(false);
+    expect(instances).toHaveLength(1);
+    expect(instances[0].pause).toHaveBeenCalledTimes(1);
     started();
     await tick();
-    expect(instances[0].pause).toHaveBeenCalledTimes(2);
-    expect(instances[1].pause).not.toHaveBeenCalled();
-    instances[1].onended();
+    expect(instances[0].pause).toHaveBeenCalledTimes(1);
+    instances[0].onended();
     expect(await second).toBe(true);
+  });
+  test('reuses one audio element for every clip so iOS keeps playback permission', async () => {
+    readyManifest();
+    const { speakKorean } = await import('./speech.js');
+    const first = speakKorean('안녕하세요');
+    await tick();
+    instances[0].onended();
+    expect(await first).toBe(true);
+    const second = speakKorean('안녕하세요');
+    await tick();
+    instances[0].onended();
+    expect(await second).toBe(true);
+    expect(instances).toHaveLength(1);
+  });
+  test('primes the shared element with a silent clip on the first gesture, then stops priming', async () => {
+    readyManifest();
+    const { speakKorean, unlockAudio } = await import('./speech.js');
+    unlockAudio();
+    expect(instances).toHaveLength(1);
+    expect(instances[0].src).toMatch(/^data:audio\/wav;base64,/);
+    await tick();
+    expect(instances[0].pause).toHaveBeenCalledTimes(1);
+    const result = speakKorean('안녕하세요');
+    await tick();
+    expect(instances[0].src).toContain('/audio/hello.mp3');
+    instances[0].onended();
+    expect(await result).toBe(true);
+    const plays = instances[0].play.mock.calls.length;
+    unlockAudio();
+    expect(instances[0].play).toHaveBeenCalledTimes(plays);
+    expect(instances[0].src).toContain('/audio/hello.mp3');
+  });
+  test('installs gesture listeners that prime playback only once', async () => {
+    const listeners = new Map();
+    window.addEventListener = vi.fn((type, listener) => listeners.set(type, listener));
+    window.removeEventListener = vi.fn();
+    const { installAudioUnlock } = await import('./speech.js');
+    installAudioUnlock();
+    installAudioUnlock();
+    expect(window.addEventListener).toHaveBeenCalledTimes(4);
+    listeners.get('pointerdown')();
+    expect(instances).toHaveLength(1);
+    expect(instances[0].play).toHaveBeenCalledTimes(1);
   });
   test('uses base-aware audio URLs and pitch-preserving selected speed', async () => {
     readyManifest();
