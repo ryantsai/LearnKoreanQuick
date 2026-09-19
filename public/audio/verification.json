@@ -1,8 +1,8 @@
 {
-  "expected": 6405,
-  "decoded": 6405,
-  "audioMinutes": 146.03,
+  "expected": 6538,
+  "decoded": 6538,
+  "audioMinutes": 149.37,
   "errors": [],
-  "normalizedClips": 292,
-  "speechVolumeSpreadDb": 0.446
+  "normalizedClips": 461,
+  "speechVolumeSpreadDb": 0.482
 }

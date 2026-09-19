@@ -97,8 +97,8 @@
     },
     "ko-KR:네": {
       "file": "d9043f58af65c4de5d509274.mp3",
-      "duration": 0.64,
-      "revision": "ef65c2ce28aa9a06",
+      "duration": 0.4,
+      "revision": "d247cc665efaa096",
       "spokenText": "네.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -208,7 +208,10 @@
     },
     "ko-KR:몇": {
       "file": "38269f488650f3a8b87dfa1b.mp3",
-      "duration": 0.48
+      "duration": 0.32,
+      "revision": "d63f0dc7271b435d",
+      "spokenText": "몇.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:몸": {
       "file": "1f78b76e8bcdc39cebd4bce1.mp3",
@@ -244,7 +247,10 @@
     },
     "ko-KR:밤": {
       "file": "9e8f20b6e04096a4baa56165.mp3",
-      "duration": 0.64
+      "duration": 0.72,
+      "revision": "b1f80f424a6ea952",
+      "spokenText": "밤.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:밥": {
       "file": "e8136c3c670eefc18a134dbc.mp3",
@@ -1559,7 +1565,7 @@
     "ko-KR:내일": {
       "file": "9fc2492be2b9cc9f552d7242.mp3",
       "duration": 0.72,
-      "revision": "9a87c8b79d6fb535",
+      "revision": "c701d20aa1b40580",
       "spokenText": "내일.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -1692,7 +1698,10 @@
     },
     "ko-KR:무슨": {
       "file": "dd1d483bbde9819e3fe568aa.mp3",
-      "duration": 0.96
+      "duration": 1.04,
+      "revision": "80b68b2d3882752f",
+      "spokenText": "무슨.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:문제": {
       "file": "4318c5759e13acb6ec04afeb.mp3",
@@ -1840,7 +1849,10 @@
     },
     "ko-KR:새벽": {
       "file": "6dde3a6ad2b3daa497ed14c4.mp3",
-      "duration": 0.64
+      "duration": 0.96,
+      "revision": "65b25e0d81093ecb",
+      "spokenText": "새벽.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:서른": {
       "file": "8348382f98ed0dab72fd612d.mp3",
@@ -1876,7 +1888,10 @@
     },
     "ko-KR:수업": {
       "file": "df6748ba215a43ea32fde977.mp3",
-      "duration": 0.56
+      "duration": 0.88,
+      "revision": "310a75673c676f0b",
+      "spokenText": "수업.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:수영": {
       "file": "85b4bc1e86bcc72104452d96.mp3",
@@ -1976,7 +1991,10 @@
     },
     "ko-KR:아침": {
       "file": "0492ac5279a75b44c9f43e66.mp3",
-      "duration": 0.64
+      "duration": 0.96,
+      "revision": "18a1931f01c363ad",
+      "spokenText": "아침.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:아홉": {
       "file": "33b863defd0e43541b5e7cee.mp3",
@@ -2082,8 +2100,8 @@
     },
     "ko-KR:오늘": {
       "file": "71193b17873be169905e0fbb.mp3",
-      "duration": 0.8,
-      "revision": "b9f9fa8bfced712c",
+      "duration": 0.56,
+      "revision": "3f1ed30972117cfc",
       "spokenText": "오늘.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -2103,7 +2121,10 @@
     },
     "ko-KR:오후": {
       "file": "b4c8575bce9e253b3767e953.mp3",
-      "duration": 0.96
+      "duration": 1.12,
+      "revision": "bdc311f97029f580",
+      "spokenText": "오후.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:올해": {
       "file": "96dffc8a12974427ca5dba16.mp3",
@@ -2285,7 +2306,10 @@
     },
     "ko-KR:저녁": {
       "file": "71ccc08d18531e7807e771bd.mp3",
-      "duration": 0.72
+      "duration": 0.72,
+      "revision": "0f7fe8ed0ac90676",
+      "spokenText": "저녁.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:저는": {
       "file": "33fa163a583b401997e44027.mp3",
@@ -2361,7 +2385,10 @@
     },
     "ko-KR:지금": {
       "file": "c453cf2c1fae6398cd1ead3f.mp3",
-      "duration": 0.56
+      "duration": 1.6,
+      "revision": "8c56faeea3494e03",
+      "spokenText": "지금.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:진짜": {
       "file": "e3527e50231ef6a87e4c5133.mp3",
@@ -2546,8 +2573,8 @@
     },
     "ko-KR:갑니까": {
       "file": "08fadaf469c2a9ef5d4b556f.mp3",
-      "duration": 0.96,
-      "revision": "b7fbd6551011c95e",
+      "duration": 0.64,
+      "revision": "2a28ab2ca799710f",
       "spokenText": "갑니까.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -2613,7 +2640,10 @@
     },
     "ko-KR:금요일": {
       "file": "3db1099e6982fe6b99a1c437.mp3",
-      "duration": 0.72
+      "duration": 1.12,
+      "revision": "4de4b05144607a79",
+      "spokenText": "금요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:기차역": {
       "file": "229b24e7ecbe8d0a00ac2078.mp3",
@@ -2737,7 +2767,10 @@
     },
     "ko-KR:목요일": {
       "file": "7b5cc0e2af52c92977814f8d.mp3",
-      "duration": 0.64
+      "duration": 0.72,
+      "revision": "56fb4b951fa6915a",
+      "spokenText": "목요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:몸이요": {
       "file": "e3c6f3dcb225fba669865046.mp3",
@@ -2944,7 +2977,10 @@
     },
     "ko-KR:수요일": {
       "file": "de8a82ce3d5783dd2f3183af.mp3",
-      "duration": 0.8
+      "duration": 0.8,
+      "revision": "204e692152352d26",
+      "spokenText": "수요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:쉬세요": {
       "file": "4e92092271856831a203bb23.mp3",
@@ -3134,7 +3170,10 @@
     },
     "ko-KR:월요일": {
       "file": "f6e7b073d6ed6fd271fa5222.mp3",
-      "duration": 0.8
+      "duration": 0.8,
+      "revision": "70d85f751cd5700d",
+      "spokenText": "월요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:위스키": {
       "file": "7904a0eed4f3fb3bec11f334.mp3",
@@ -3185,7 +3224,10 @@
     },
     "ko-KR:일요일": {
       "file": "ca06d272d67b464bba41c9e3.mp3",
-      "duration": 0.8
+      "duration": 0.8,
+      "revision": "a30438362e2194c7",
+      "spokenText": "일요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:임관우": {
       "file": "0aa90e9ee4627407f770c97b.mp3",
@@ -3351,7 +3393,10 @@
     },
     "ko-KR:토요일": {
       "file": "012f5706ada2d0eadc7fbdca.mp3",
-      "duration": 0.88
+      "duration": 0.88,
+      "revision": "53bc6c91cc700f28",
+      "spokenText": "토요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:특산품": {
       "file": "3e694ada83e1c9ea2e154bc2.mp3",
@@ -3367,7 +3412,10 @@
     },
     "ko-KR:한국어": {
       "file": "4dc7512e6fa276f99ac649d0.mp3",
-      "duration": 0.8
+      "duration": 0.8,
+      "revision": "9e5274bcbdc22eaf",
+      "spokenText": "한국어.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:한국에": {
       "file": "a084833895307d382f31ad60.mp3",
@@ -3406,7 +3454,10 @@
     },
     "ko-KR:화요일": {
       "file": "ebcf5379290d5d92a376be20.mp3",
-      "duration": 0.72
+      "duration": 0.64,
+      "revision": "619024f3bf150697",
+      "spokenText": "화요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:화장실": {
       "file": "092980b99fb33b3518bd9cf9.mp3",
@@ -3418,7 +3469,10 @@
     },
     "ko-KR:회사에": {
       "file": "3f7168233554578edb312f86.mp3",
-      "duration": 0.88
+      "duration": 0.96,
+      "revision": "ffcd9aa39b30eeb8",
+      "spokenText": "회사에.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:회사원": {
       "file": "5b4bdd6cf6754119f74db885.mp3",
@@ -3784,15 +3838,15 @@
     },
     "ko-KR:있습니까": {
       "file": "5e6527a098616e96ee3ac073.mp3",
-      "duration": 1.28,
-      "revision": "b11365cdbe5750d7",
+      "duration": 0.96,
+      "revision": "79671bb13a552f55",
       "spokenText": "있습니까.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:있습니다": {
       "file": "740f9ac25ed7c438387b9ebd.mp3",
       "duration": 0.96,
-      "revision": "8a0c8c4a80884ea1",
+      "revision": "07f7b25fedb7e1b4",
       "spokenText": "있습니다.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -3937,8 +3991,8 @@
     },
     "ko-KR:그렇습니까": {
       "file": "1d974b73a3f59751e895937d.mp3",
-      "duration": 1.6,
-      "revision": "662ac6c8da655cd4",
+      "duration": 1.28,
+      "revision": "61a17d8a3f3e78e0",
       "spokenText": "그렇습니까.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -6263,7 +6317,10 @@
     },
     "zh-TW:幾": {
       "file": "62a39f9825aa7152a9e9768b.mp3",
-      "duration": 0.4
+      "duration": 0.4,
+      "revision": "8069e77c5b683d8e",
+      "spokenText": "几.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:我": {
       "file": "03b11fe4c02e9312bb79a0ec.mp3",
@@ -6508,7 +6565,10 @@
     },
     "zh-TW:下午": {
       "file": "da4da3e1d1a0857613a6e50a.mp3",
-      "duration": 0.8
+      "duration": 0.72,
+      "revision": "bbf00d07f7cbe353",
+      "spokenText": "下午.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:下次": {
       "file": "593cfafbc102f66646b3ded3.mp3",
@@ -6860,7 +6920,10 @@
     },
     "zh-TW:早上": {
       "file": "d2a23a0154a4070d5a4b9e8f.mp3",
-      "duration": 1.04
+      "duration": 0.64,
+      "revision": "9ae3ed816409020b",
+      "spokenText": "早上.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:明天": {
       "file": "1b5acc84a3496e4ea9c85f65.mp3",
@@ -6882,7 +6945,10 @@
     },
     "zh-TW:晚上": {
       "file": "8e23b8fc25c9182c84f5f405.mp3",
-      "duration": 0.8
+      "duration": 1.28,
+      "revision": "05da6529d4ac057c",
+      "spokenText": "晚上.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:本週": {
       "file": "da4ae8bc94a97912ea9f378f.mp3",
@@ -7410,27 +7476,45 @@
     },
     "zh-TW:星期一": {
       "file": "d00eb2f2d18ecb1a66a24e5f.mp3",
-      "duration": 0.96
+      "duration": 0.96,
+      "revision": "2ac9076fe39af22d",
+      "spokenText": "星期一.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期三": {
       "file": "ffb93fd7464f8a2d04002e6d.mp3",
-      "duration": 0.96
+      "duration": 0.72,
+      "revision": "2a3f7257a67d1eba",
+      "spokenText": "星期三.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期二": {
       "file": "82dce281c42408d566433dd3.mp3",
-      "duration": 1.44
+      "duration": 1.28,
+      "revision": "cd1998d5c0c395cf",
+      "spokenText": "星期二.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期五": {
       "file": "bd45071a4dbae370db28e29c.mp3",
-      "duration": 1.04
+      "duration": 1.44,
+      "revision": "5c8943db67ff0844",
+      "spokenText": "星期五.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期六": {
       "file": "209a65c1a821232f1c5441a8.mp3",
-      "duration": 1.04
+      "duration": 0.72,
+      "revision": "791c163585894b11",
+      "spokenText": "星期六.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期四": {
       "file": "80d0eda63f12c478c3e495fc.mp3",
-      "duration": 1.2
+      "duration": 0.72,
+      "revision": "6f94fc219a3cd4a6",
+      "spokenText": "星期四.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:星期日": {
       "file": "aaf587fb1f1f04cc824803f5.mp3",
@@ -9741,7 +9825,10 @@
     },
     "ko-KR:오전": {
       "file": "9b01207b73d27bac3f25d11e.mp3",
-      "duration": 1.04
+      "duration": 0.8,
+      "revision": "ec1953dd060ea1af",
+      "spokenText": "오전.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:오직": {
       "file": "187a1ca65172aa15b58c87de.mp3",
@@ -10309,8 +10396,8 @@
     },
     "ko-KR:학교": {
       "file": "7c3a673438af981aa61325d5.mp3",
-      "duration": 0.64,
-      "revision": "c1e9c5b19586295b",
+      "duration": 1.12,
+      "revision": "071909d8f33d4e0d",
       "spokenText": "학교.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -10412,8 +10499,8 @@
     },
     "ko-KR:회사": {
       "file": "4b50b998a7f464033bf73645.mp3",
-      "duration": 0.48,
-      "revision": "d62a2673fb4a5496",
+      "duration": 0.96,
+      "revision": "d63a95d6bf178373",
       "spokenText": "회사.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -12395,7 +12482,10 @@
     },
     "ko-KR:수업이": {
       "file": "5c16486cd4a72cd93a363a4a.mp3",
-      "duration": 1.12
+      "duration": 0.96,
+      "revision": "6da898924b7856be",
+      "spokenText": "수업이.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "ko-KR:수영만": {
       "file": "84eae149e0a9cf3f76e50d97.mp3",
@@ -20357,10 +20447,6 @@
       "file": "5d4bc0808c946b0559f868a8.mp3",
       "duration": 2.56
     },
-    "ko-KR:오늘 “내일” 표현을 연습합니다.": {
-      "file": "c5070d9c01951a94b9a5815b.mp3",
-      "duration": 2.4
-    },
     "ko-KR:오늘 “노래” 표현을 연습합니다.": {
       "file": "fbd0785922aab096d59643c3.mp3",
       "duration": 2.8
@@ -20656,10 +20742,6 @@
     "ko-KR:오늘 “수술” 표현을 연습합니다.": {
       "file": "8e10a2bd26ff727ef312ed6d.mp3",
       "duration": 2.56
-    },
-    "ko-KR:오늘 “수업” 표현을 연습합니다.": {
-      "file": "97254f695b178996492c63e7.mp3",
-      "duration": 2.88
     },
     "ko-KR:오늘 “수영” 표현을 연습합니다.": {
       "file": "3529269108da3250ede0df81.mp3",
@@ -21941,10 +22023,6 @@
       "file": "a760e50825015e6f6ad1b553.mp3",
       "duration": 2.72
     },
-    "ko-KR:오늘 “한국어” 표현을 연습합니다.": {
-      "file": "fa5f1029ba8fe1abe57b5151.mp3",
-      "duration": 2.48
-    },
     "ko-KR:오늘 “한국은” 표현을 연습합니다.": {
       "file": "8a9b16838ab20627224df06f.mp3",
       "duration": 3.04
@@ -21980,10 +22058,6 @@
     "ko-KR:오늘 “확인해” 표현을 연습합니다.": {
       "file": "9aa0c7af9eb2bf02531a0d22.mp3",
       "duration": 2.4
-    },
-    "ko-KR:오늘 “회사에” 표현을 연습합니다.": {
-      "file": "35ba91c369ff185ba3f243e0.mp3",
-      "duration": 2.72
     },
     "ko-KR:오늘 “회사원” 표현을 연습합니다.": {
       "file": "9175bcba2261c9b1df48642b.mp3",
@@ -22807,7 +22881,10 @@
     },
     "zh-TW:什麼": {
       "file": "0417e87c041a61816f546210.mp3",
-      "duration": 0.72
+      "duration": 0.8,
+      "revision": "fdd690d9f528ee90",
+      "spokenText": "什么.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:個和": {
       "file": "cbdb75a88c5a5561202b31af.mp3",
@@ -22919,7 +22996,10 @@
     },
     "zh-TW:現在": {
       "file": "0bebc85504a58fa5919d0d5b.mp3",
-      "duration": 0.88
+      "duration": 1.12,
+      "revision": "783ded3a178f3c9a",
+      "spokenText": "现在.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     },
     "zh-TW:由美": {
       "file": "cc13901942f90bdd14b15d32.mp3",
@@ -24335,7 +24415,7 @@
     "ko-KR:갑니다": {
       "file": "1215041094bf36221c3cda30.mp3",
       "duration": 0.8,
-      "revision": "48ac5278c93a741d",
+      "revision": "11f3379a821c9e28",
       "spokenText": "갑니다.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -24992,8 +25072,8 @@
     },
     "zh-TW:公司": {
       "file": "3e094770c0efa455124eff0f.mp3",
-      "duration": 0.56,
-      "revision": "fe8041a987339225",
+      "duration": 0.88,
+      "revision": "ff9b2122bcf612df",
       "spokenText": "公司.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -25013,8 +25093,8 @@
     },
     "zh-TW:學校": {
       "file": "fcf4cec32acc43352ed32591.mp3",
-      "duration": 1.28,
-      "revision": "c1a477faa9eb1e4c",
+      "duration": 1.04,
+      "revision": "62545986817985e4",
       "spokenText": "学校.",
       "normalization": "speech-rms-0.12-peak-0.9"
     },
@@ -26502,11 +26582,970 @@
     "zh-TW:這個（이것은 的縮寫）": {
       "file": "bca227ce7e831c68ea048202.mp3",
       "duration": 3.68
+    },
+    "ko-KR:분": {
+      "file": "4e50dac9f7a25416fa60f793.mp3",
+      "duration": 0.64,
+      "revision": "8e134d459492b740",
+      "spokenText": "분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시": {
+      "file": "fff12526fba78b6f645f75e7.mp3",
+      "duration": 0.8,
+      "revision": "3e3e3cbc4c6e97d4",
+      "spokenText": "시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:요일": {
+      "file": "14c071a89c923468bea8d539.mp3",
+      "duration": 0.64,
+      "revision": "e3e93fec9573b332",
+      "spokenText": "요일.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝나다": {
+      "file": "72da57fb4ff26767986c6627.mp3",
+      "duration": 1.04,
+      "revision": "c70c8a6f82e3a6e7",
+      "spokenText": "끝나다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:네 시": {
+      "file": "b05fed486299c54ab2bce28d.mp3",
+      "duration": 1.04,
+      "revision": "591100af954f5ee3",
+      "spokenText": "네 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:두 시": {
+      "file": "5f583153d97391fa9b13fb20.mp3",
+      "duration": 1.04,
+      "revision": "e0e81dad529468a1",
+      "spokenText": "두 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:세 시": {
+      "file": "319eb4ac71040edbbad820ed.mp3",
+      "duration": 0.96,
+      "revision": "50da5d8d137366f4",
+      "spokenText": "세 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:십 분": {
+      "file": "11488141bf2715eb4b6bf92e.mp3",
+      "duration": 0.88,
+      "revision": "cbe9a20068fc286c",
+      "spokenText": "십 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:열 시": {
+      "file": "4010570de98790511ed5f757.mp3",
+      "duration": 0.72,
+      "revision": "c10e15947d822f98",
+      "spokenText": "열 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오 분": {
+      "file": "15083cab87706baaf0ad6e18.mp3",
+      "duration": 0.8,
+      "revision": "db6ac70d3115e360",
+      "spokenText": "오 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:중국어": {
+      "file": "f4f980502f42713cd36dabe9.mp3",
+      "duration": 0.8,
+      "revision": "d81c2e12eb58e43f",
+      "spokenText": "중국어.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:학교에": {
+      "file": "b248331e44ce45d4f478330a.mp3",
+      "duration": 1.04,
+      "revision": "04381fc475dd2164",
+      "spokenText": "학교에.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한 시": {
+      "file": "369f94540788e4819d5e4025.mp3",
+      "duration": 1.04,
+      "revision": "ff3ae6da3222543f",
+      "spokenText": "한 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한밤중": {
+      "file": "54b2decc8b84946637b7cf1f.mp3",
+      "duration": 0.96,
+      "revision": "7b15afb8eaabf878",
+      "spokenText": "한밤중.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니까": {
+      "file": "aa1649d86b7aeb7968223866.mp3",
+      "duration": 1.12,
+      "revision": "9826c474a7b85605",
+      "spokenText": "끝납니까.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니다": {
+      "file": "2ab8980496fb2607608147b5.mp3",
+      "duration": 1.76,
+      "revision": "c3cea43be50c0033",
+      "spokenText": "끝납니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:다섯 시": {
+      "file": "e370f54147b9528e80784f63.mp3",
+      "duration": 1.04,
+      "revision": "b226813f0ac11963",
+      "spokenText": "다섯 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:몇 시에": {
+      "file": "a9ba00e069da40e51e497cb2.mp3",
+      "duration": 1.28,
+      "revision": "a9bebb2e7603e5ce",
+      "spokenText": "몇 시에.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:삼십 분": {
+      "file": "2f17845a73578b2f8483e645.mp3",
+      "duration": 1.2,
+      "revision": "c7c0195e8af56000",
+      "spokenText": "삼십 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하고": {
+      "file": "66b2a462aa60126deaf74447.mp3",
+      "duration": 1.28,
+      "revision": "0b134ce4e5605098",
+      "spokenText": "시작하고.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하다": {
+      "file": "1417b8261ee66aab2e1053ca.mp3",
+      "duration": 1.04,
+      "revision": "b33b805f5639ddbf",
+      "spokenText": "시작하다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:십오 분": {
+      "file": "8f2e6693ec6098c8316d06d4.mp3",
+      "duration": 1.84,
+      "revision": "6f8c8cb56922f530",
+      "spokenText": "십오 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:아홉 시": {
+      "file": "0d74c0cf49a6af0722551030.mp3",
+      "duration": 0.88,
+      "revision": "c3b87a579252d2f5",
+      "spokenText": "아홉 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:여덟 시": {
+      "file": "2c992ebb7e647c1bb8011fdd.mp3",
+      "duration": 0.88,
+      "revision": "89406b8b71d31497",
+      "spokenText": "여덟 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:여섯 시": {
+      "file": "e473ba2e87e1fdc55d92272f.mp3",
+      "duration": 0.72,
+      "revision": "020ddbc8bd26fafe",
+      "spokenText": "여섯 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:열두 시": {
+      "file": "54d6ef3a160db32bb0bcfbc2.mp3",
+      "duration": 0.88,
+      "revision": "117599dd7964ea0a",
+      "spokenText": "열두 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:열한 시": {
+      "file": "f6b60e5c83b6f35980664efc.mp3",
+      "duration": 0.88,
+      "revision": "5e4beda0c640b182",
+      "spokenText": "열한 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:이십 분": {
+      "file": "9fa3bff904e7927153b700eb.mp3",
+      "duration": 1.12,
+      "revision": "761035a2085b955f",
+      "spokenText": "이십 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:일곱 시": {
+      "file": "b308585805276e19dd69fea2.mp3",
+      "duration": 1.36,
+      "revision": "4a80210c744c4c52",
+      "spokenText": "일곱 시.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:일어나다": {
+      "file": "26447401c49cfe36ca7b7bbb.mp3",
+      "duration": 0.96,
+      "revision": "f92f828a820b53a7",
+      "spokenText": "일어나다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:사십오 분": {
+      "file": "769c43efdb6d3d9d8403b624.mp3",
+      "duration": 2.0,
+      "revision": "53fd6c2e3bfe4d79",
+      "spokenText": "사십오 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:삼십 분에": {
+      "file": "5ce3d16470237d220a02bce8.mp3",
+      "duration": 1.6,
+      "revision": "0e6379489651bc96",
+      "spokenText": "삼십 분에.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오십구 분": {
+      "file": "7ecc2fb0e1ed90dfbb45e24f.mp3",
+      "duration": 1.84,
+      "revision": "8111d8c16fd19c58",
+      "spokenText": "오십구 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:열두 시 십이 분": {
+      "file": "9664d43fa607ea2b689f464f.mp3",
+      "duration": 1.76,
+      "revision": "1df04d729be4f1c6",
+      "spokenText": "열두 시 십이 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:지금 몇 시예요?": {
+      "file": "57b6e54a61e084153d4fca9d.mp3",
+      "duration": 1.92,
+      "revision": "8da9fbfef05024d7",
+      "spokenText": "지금 몇 시예요?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:내일 학교에 갑니까?": {
+      "file": "df78500b5db995a29b14336d.mp3",
+      "duration": 1.44,
+      "revision": "a8befaa95c0faae9",
+      "spokenText": "내일 학교에 갑니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전 세 시 십사 분": {
+      "file": "c388aee25f539587991149e8.mp3",
+      "duration": 2.48,
+      "revision": "6f3769b0086677e9",
+      "spokenText": "오전 세 시 십사 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 몇 시에 갑니까?": {
+      "file": "8f5150c89a8fa455bad42a20.mp3",
+      "duration": 1.68,
+      "revision": "d898f2248cb884f7",
+      "spokenText": "오늘 몇 시에 갑니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오후 일곱 시 이십 분": {
+      "file": "1552b834d6d13ef863f41b71.mp3",
+      "duration": 2.24,
+      "revision": "3dc6295f469941dc",
+      "spokenText": "오후 일곱 시 이십 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘이 무슨 요일이에요?": {
+      "file": "ec24ec4771bb90cfb74d74a9.mp3",
+      "duration": 2.32,
+      "revision": "4a47fe879941fe3d",
+      "spokenText": "오늘이 무슨 요일이에요?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오후 다섯 시 오십팔 분": {
+      "file": "a76137246a32dd48a6a9b3b1.mp3",
+      "duration": 2.64,
+      "revision": "f7e4aa449a9d8518",
+      "spokenText": "오후 다섯 시 오십팔 분.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전 아홉 시 삼십 분이에요": {
+      "file": "2dd9ef74f86e128f0330b74c.mp3",
+      "duration": 2.64,
+      "revision": "fec8f156961ddac7",
+      "spokenText": "오전 아홉 시 삼십 분이에요.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:내일 몇 시에 회사에 갑니까?": {
+      "file": "91e33f67ef4ed95aef9f692f.mp3",
+      "duration": 1.76,
+      "revision": "68ecebf7dbc9edeb",
+      "spokenText": "내일 몇 시에 회사에 갑니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한국어 수업이 언제 있습니까?": {
+      "file": "f5938251d7adeeb8cd86181f.mp3",
+      "duration": 2.64,
+      "revision": "c2faa24117e5f5d0",
+      "spokenText": "한국어 수업이 언제 있습니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한국어 수업이 몇 시에 끝납니까?": {
+      "file": "64d9eb614248b6468a2d9420.mp3",
+      "duration": 2.32,
+      "revision": "58d368d8f5d668cd",
+      "spokenText": "한국어 수업이 몇 시에 끝납니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:그렇습니까? 중국어 수업 몇 시에 있습니까?": {
+      "file": "6cbde8d8d377a8bfab6e1afd.mp3",
+      "duration": 4.0,
+      "revision": "34734eeaba8cbb9a",
+      "spokenText": "그렇습니까? 중국어 수업 몇 시에 있습니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:네, 학교에 갑니다. 중국어 수업이 있습니다.": {
+      "file": "4129a80752e37019a876d2a4.mp3",
+      "duration": 4.16,
+      "revision": "22bab8d1541baa17",
+      "spokenText": "네, 학교에 갑니다. 중국어 수업이 있습니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전 아홉 시 삼십 분에 시작하고 열한 시 삼십 분에 끝납니다.": {
+      "file": "71f45effea17b87afdabd8de.mp3",
+      "duration": 5.68,
+      "revision": "2754827f560827be",
+      "spokenText": "오전 아홉 시 삼십 분에 시작하고 열한 시 삼십 분에 끝납니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:分": {
+      "file": "89948ff704fa55b44ea9169f.mp3",
+      "duration": 0.48,
+      "revision": "ad339ce9306e9b2a",
+      "spokenText": "分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:時": {
+      "file": "d723643ad6d36639d82aa92b.mp3",
+      "duration": 0.72,
+      "revision": "7cc46d982529d662",
+      "spokenText": "时.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:課": {
+      "file": "6296943d08fab3c93859a04c.mp3",
+      "duration": 0.4,
+      "revision": "f1eb4a24d408c2f0",
+      "spokenText": "课.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:一點": {
+      "file": "146fb46fa7be497406059e13.mp3",
+      "duration": 0.56,
+      "revision": "95b07c84a515aeff",
+      "spokenText": "一点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:七點": {
+      "file": "694de0ae215d48e55fec456f.mp3",
+      "duration": 0.64,
+      "revision": "692718dcbe041e06",
+      "spokenText": "七点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:三點": {
+      "file": "5f5f9a3f3b9d3f65e991febf.mp3",
+      "duration": 0.8,
+      "revision": "6e4bf5d263ea3a6e",
+      "spokenText": "三点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:上午": {
+      "file": "f4b8598942e9a84644da9dfd.mp3",
+      "duration": 1.04,
+      "revision": "f5140ad39f30ccab",
+      "spokenText": "上午.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:中文": {
+      "file": "f5c3502f1aa985b1f3867e4a.mp3",
+      "duration": 0.8,
+      "revision": "8526032c2264af4c",
+      "spokenText": "中文.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:九點": {
+      "file": "b9b1b15d61573e2dffd97ab2.mp3",
+      "duration": 0.96,
+      "revision": "77da83142e0c1dd4",
+      "spokenText": "九点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:五分": {
+      "file": "935409cae369d1287af34fad.mp3",
+      "duration": 0.8,
+      "revision": "44dc4a8411b1f3c1",
+      "spokenText": "五分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:五點": {
+      "file": "ff595722d86b262922cc3038.mp3",
+      "duration": 1.2,
+      "revision": "8ef35cbccfc27a42",
+      "spokenText": "五点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:傍晚": {
+      "file": "8792feb5dc1ed912d2ee2291.mp3",
+      "duration": 0.64,
+      "revision": "7229362ebf55bb5f",
+      "spokenText": "傍晚.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:兩點": {
+      "file": "735de4ff4a6b972fc72eb270.mp3",
+      "duration": 0.64,
+      "revision": "f8d730b74a4c4c82",
+      "spokenText": "两点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:八點": {
+      "file": "1879e3971c6b856075d47854.mp3",
+      "duration": 0.64,
+      "revision": "b3c3aae319cb9e0b",
+      "spokenText": "八点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:六點": {
+      "file": "05998140899556b400db0861.mp3",
+      "duration": 0.8,
+      "revision": "f33dd79a91bc3e86",
+      "spokenText": "六点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:凌晨": {
+      "file": "3086a087366b1124ec33336c.mp3",
+      "duration": 0.64,
+      "revision": "059bd8697a4c052b",
+      "spokenText": "凌晨.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:十分": {
+      "file": "6d47b0c2c37016007242b9ec.mp3",
+      "duration": 0.96,
+      "revision": "cd6b2f000305ed8a",
+      "spokenText": "十分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:十點": {
+      "file": "6f6d46e19a31758fc05ece5e.mp3",
+      "duration": 1.04,
+      "revision": "7b434e3e7da5b716",
+      "spokenText": "十点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:四點": {
+      "file": "9ac123af75693a7308f6fcb6.mp3",
+      "duration": 0.871,
+      "revision": "fd2cea5a9c5722e2",
+      "spokenText": "四点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:深夜": {
+      "file": "051ce3ae58ef3882deea2e8a.mp3",
+      "duration": 1.04,
+      "revision": "d15303669bc519d5",
+      "spokenText": "深夜.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:結束": {
+      "file": "3ecc5b19a50f82a4f342f168.mp3",
+      "duration": 0.72,
+      "revision": "a5213bb5465c5d4f",
+      "spokenText": "结束.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:開始": {
+      "file": "142b801f50322cd981e018cf.mp3",
+      "duration": 0.8,
+      "revision": "f9302569a1d74ed9",
+      "spokenText": "开始.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:韓文": {
+      "file": "a40194a156ed854e7312c5c4.mp3",
+      "duration": 0.72,
+      "revision": "83577639ac0379d0",
+      "spokenText": "韩文.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:三十分": {
+      "file": "d50654edfad91a681e3d46f8.mp3",
+      "duration": 0.96,
+      "revision": "ca132bbe576a7626",
+      "spokenText": "三十分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:二十分": {
+      "file": "a32c766113745a6c93ccd4d8.mp3",
+      "duration": 0.8,
+      "revision": "8fbf8c06991bd35d",
+      "spokenText": "二十分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:十一點": {
+      "file": "b5a625e4310da4072f887ee9.mp3",
+      "duration": 0.8,
+      "revision": "68ae5b0a7fa3a563",
+      "spokenText": "十一点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:十二點": {
+      "file": "233ee45959d8f2b4a2318317.mp3",
+      "duration": 0.88,
+      "revision": "28f3452088c56bec",
+      "spokenText": "十二点.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:十五分": {
+      "file": "61bc6abd062a6bb4a3a68acf.mp3",
+      "duration": 0.88,
+      "revision": "568631bfc127a708",
+      "spokenText": "十五分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:星期天": {
+      "file": "dc277603c1d51abce6b75284.mp3",
+      "duration": 0.96,
+      "revision": "d49690a3c06668e5",
+      "spokenText": "星期天.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:五十九分": {
+      "file": "9c3568faf32cd18404c83860.mp3",
+      "duration": 1.2,
+      "revision": "daea6151b8967eac",
+      "spokenText": "五十九分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:四十五分": {
+      "file": "7ebf9270a96026fafd03ebbb.mp3",
+      "duration": 0.88,
+      "revision": "9a642b985787af2c",
+      "spokenText": "四十五分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:星期／曜日": {
+      "file": "494971bd7ae33af6712fcabe.mp3",
+      "duration": 1.04,
+      "revision": "f040989936ff048c",
+      "spokenText": "星期／曜日.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:現在幾點？": {
+      "file": "3933dabdbd2ec524f0eaf869.mp3",
+      "duration": 0.96,
+      "revision": "a1cbec4466abc492",
+      "spokenText": "现在几点？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:起來／起床": {
+      "file": "940655a903c366b7c16ff5bc.mp3",
+      "duration": 0.96,
+      "revision": "2c412ffa55ef9d62",
+      "spokenText": "起来／起床.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:今天幾點去？": {
+      "file": "283a57d94b4af74ff2561c8a.mp3",
+      "duration": 1.44,
+      "revision": "e5e4ce9009c4e5f2",
+      "spokenText": "今天几点去？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:今天是星期幾？": {
+      "file": "27a2b895360352ced4e2bea7.mp3",
+      "duration": 1.52,
+      "revision": "1be75dfc78897804",
+      "spokenText": "今天是星期几？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:是上午九點三十分": {
+      "file": "89497c59c49f09da76fd5dec.mp3",
+      "duration": 1.68,
+      "revision": "10fd05df3a4bac22",
+      "spokenText": "是上午九点三十分.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:韓文課幾點結束？": {
+      "file": "0bace5971472c8a73842bce4.mp3",
+      "duration": 2.08,
+      "revision": "c0a04c39d7a4687d",
+      "spokenText": "韩文课几点结束？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:冠宇：明天去學校嗎？": {
+      "file": "e9fbbad3649a402bf4823d23.mp3",
+      "duration": 2.48,
+      "revision": "0da45eed356e45d8",
+      "spokenText": "冠宇：明天去学校吗？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:請用今天幾點去回答。": {
+      "file": "27bdf3e91cd033bc049ab421.mp3",
+      "duration": 1.92,
+      "revision": "11187d0a36c17a4d",
+      "spokenText": "请用今天几点去回答。",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:明天幾點去公司（學校）？": {
+      "file": "79b8571eb1de9e84f5650cee.mp3",
+      "duration": 2.32,
+      "revision": "8b4c82b699973e25",
+      "spokenText": "明天几点去公司（学校）？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:冠宇：是嗎？中文課在幾點？": {
+      "file": "d67fd96cc5248fa00b1ac0b3.mp3",
+      "duration": 3.52,
+      "revision": "158262a56da48d37",
+      "spokenText": "冠宇：是吗？中文课在几点？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:敏俊：是，去學校。有中文課。": {
+      "file": "00fa7d8f33d78c72ce53ff60.mp3",
+      "duration": 4.48,
+      "revision": "5208c5c73ea3e972",
+      "spokenText": "敏俊：是，去学校。有中文课。",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:請回答你會幾點去（公司／學校）。": {
+      "file": "096f6fffae385001f7a31feb.mp3",
+      "duration": 3.36,
+      "revision": "3ee057b203a96690",
+      "spokenText": "请回答你会几点去（公司／学校）。",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:敏俊：上午九點三十分開始，十一點三十分結束。": {
+      "file": "30f5de900310eb2ed572c340.mp3",
+      "duration": 4.96,
+      "revision": "90a5e0a22f06fefc",
+      "spokenText": "敏俊：上午九点三十分开始，十一点三十分结束。",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:請用「오전／오후＋時間＋에 끝납니다」回答。": {
+      "file": "3c93c5f1072c2a785d708926.mp3",
+      "duration": 5.2,
+      "revision": "f1710e1d249bac6a",
+      "spokenText": "请用「오전／오후＋时间＋에 끝납니다」回答。",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:분만": {
+      "file": "b0bf3ce217f2eb64f0ec06f8.mp3",
+      "duration": 0.72,
+      "revision": "83c07602d9a426fb",
+      "spokenText": "분만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:분이": {
+      "file": "d0d81097a7bf2d1f35ecfc00.mp3",
+      "duration": 0.64,
+      "revision": "d6bb632efecba90a",
+      "spokenText": "분이.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시가": {
+      "file": "9d5727f56932267c173b7c32.mp3",
+      "duration": 0.64,
+      "revision": "deb5c051a4364103",
+      "spokenText": "시가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시만": {
+      "file": "0f9cb7ec710b5b3c637fcae4.mp3",
+      "duration": 0.64,
+      "revision": "870957d39067a8c7",
+      "spokenText": "시만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전만": {
+      "file": "00ea5403cb43221e82ddee01.mp3",
+      "duration": 1.2,
+      "revision": "60745bbc5da917e3",
+      "spokenText": "오전만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전이": {
+      "file": "439cd88599e265a80df807d7.mp3",
+      "duration": 1.2,
+      "revision": "228bd253d88973bc",
+      "spokenText": "오전이.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:요일만": {
+      "file": "cd79b5731d4ff052f0d4841a.mp3",
+      "duration": 0.72,
+      "revision": "c03707e3c2977dfa",
+      "spokenText": "요일만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:요일이": {
+      "file": "cb478835f6f087304184d5ba.mp3",
+      "duration": 0.64,
+      "revision": "f245b16a0773c0c6",
+      "spokenText": "요일이.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝나다가": {
+      "file": "151e0f62ff3d7223b214fb77.mp3",
+      "duration": 1.12,
+      "revision": "40906de5d97481a4",
+      "spokenText": "끝나다가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝나다만": {
+      "file": "8dbfe2097bee6270d57579f1.mp3",
+      "duration": 0.88,
+      "revision": "25c2d3ca977ffa33",
+      "spokenText": "끝나다만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:수업이가": {
+      "file": "b4385d5074f48b5b7ea3f7be.mp3",
+      "duration": 1.44,
+      "revision": "68650894d027b9f7",
+      "spokenText": "수업이가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:수업이만": {
+      "file": "060946fc0c9b13a99431a797.mp3",
+      "duration": 1.28,
+      "revision": "7a280373a4ace1f1",
+      "spokenText": "수업이만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:중국어가": {
+      "file": "32a3369a99ea8dec5d5b605f.mp3",
+      "duration": 1.2,
+      "revision": "cfbf5565dc0d75a3",
+      "spokenText": "중국어가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:중국어만": {
+      "file": "50b9a6865d760a2d1a27a40f.mp3",
+      "duration": 1.2,
+      "revision": "5ac0456718732ca9",
+      "spokenText": "중국어만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:학교에가": {
+      "file": "0d7049b5aed15fc5cebbb258.mp3",
+      "duration": 1.12,
+      "revision": "d45da02e2e302df7",
+      "spokenText": "학교에가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:학교에만": {
+      "file": "fbef907db0b9b688e73a00ae.mp3",
+      "duration": 1.28,
+      "revision": "fe6bc430b8123ad7",
+      "spokenText": "학교에만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한밤중만": {
+      "file": "0f6e2f6e56c2fb44e76d9477.mp3",
+      "duration": 1.36,
+      "revision": "9975156a48e6469e",
+      "spokenText": "한밤중만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:한밤중이": {
+      "file": "72b321f55c74ceeb35605103.mp3",
+      "duration": 0.96,
+      "revision": "553e29a19e5945c0",
+      "spokenText": "한밤중이.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니까가": {
+      "file": "ded1c458ca179dfab253a378.mp3",
+      "duration": 1.28,
+      "revision": "70e80a3278ca7f85",
+      "spokenText": "끝납니까가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니까만": {
+      "file": "5426706e01bb6f7c2a616654.mp3",
+      "duration": 1.52,
+      "revision": "26fcf8e78f381d1c",
+      "spokenText": "끝납니까만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니다가": {
+      "file": "1f2710f39913690339eb8f0f.mp3",
+      "duration": 1.04,
+      "revision": "0c56777d757274ee",
+      "spokenText": "끝납니다가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:끝납니다만": {
+      "file": "82c0d08f02044f314c55f40c.mp3",
+      "duration": 0.96,
+      "revision": "edc72710bac4e173",
+      "spokenText": "끝납니다만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하고가": {
+      "file": "5d74cbc5ba48407583fa34ac.mp3",
+      "duration": 1.2,
+      "revision": "a14b4095e8daae58",
+      "spokenText": "시작하고가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하고만": {
+      "file": "099d3570bed6b102d184a399.mp3",
+      "duration": 1.12,
+      "revision": "4b5f395bcb9ae9e1",
+      "spokenText": "시작하고만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하다가": {
+      "file": "57470bdf98026d4c7e69294e.mp3",
+      "duration": 1.28,
+      "revision": "e46651156fc0d09b",
+      "spokenText": "시작하다가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:시작하다만": {
+      "file": "ecf36f1f9658b3424f31fb2e.mp3",
+      "duration": 0.88,
+      "revision": "54920aa498ab83ba",
+      "spokenText": "시작하다만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:일어나다가": {
+      "file": "cfb87a78fb3ae2060c987b76.mp3",
+      "duration": 0.88,
+      "revision": "81b8491dc519a2df",
+      "spokenText": "일어나다가.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:일어나다만": {
+      "file": "9b1ddcadae644eb019027a4b.mp3",
+      "duration": 1.2,
+      "revision": "79bf533d7af163bf",
+      "spokenText": "일어나다만.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “분” 표현을 연습합니다.": {
+      "file": "2440e6d721a542ba33af63a6.mp3",
+      "duration": 2.08,
+      "revision": "aac0af203475b0df",
+      "spokenText": "오늘 “분” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “시” 표현을 연습합니다.": {
+      "file": "d6a2e40ca4c8914cb7ccb185.mp3",
+      "duration": 2.32,
+      "revision": "627a2ccace28a95b",
+      "spokenText": "오늘 “시” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “요일” 표현을 연습합니다.": {
+      "file": "a5dbb86385bae6dc84905755.mp3",
+      "duration": 2.16,
+      "revision": "7992a21891e9486e",
+      "spokenText": "오늘 “요일” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “끝나다” 표현을 연습합니다.": {
+      "file": "7851dfdf6df4a715b5b0e47d.mp3",
+      "duration": 2.4,
+      "revision": "46e8f6791d4750f6",
+      "spokenText": "오늘 “끝나다” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “한밤중” 표현을 연습합니다.": {
+      "file": "93fbc7124177c91d42e81c8e.mp3",
+      "duration": 2.4,
+      "revision": "7341e2a5b24fe893",
+      "spokenText": "오늘 “한밤중” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:내일 몇 시에 회사(학교)에 갑니까?": {
+      "file": "f235e1baa81e02f7cff18fc8.mp3",
+      "duration": 2.24,
+      "revision": "34b66f7aa27486a0",
+      "spokenText": "내일 몇 시에 회사에 갑니까?",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “끝납니까” 표현을 연습합니다.": {
+      "file": "d0e516f738a7904be1fa9ecf.mp3",
+      "duration": 2.4,
+      "revision": "41f02cc8515d3638",
+      "spokenText": "오늘 “끝납니까” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “시작하고” 표현을 연습합니다.": {
+      "file": "ec816e2b1c5a2a1fe636655e.mp3",
+      "duration": 2.32,
+      "revision": "9f32d0e20fb8cfa8",
+      "spokenText": "오늘 “시작하고” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “시작하다” 표현을 연습합니다.": {
+      "file": "a27f21ab996cdee4a95a0037.mp3",
+      "duration": 2.8,
+      "revision": "3a0232913b224353",
+      "spokenText": "오늘 “시작하다” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오늘 “일어나다” 표현을 연습합니다.": {
+      "file": "153c38158b4235d581c9a4db.mp3",
+      "duration": 3.04,
+      "revision": "9149c31783e287eb",
+      "spokenText": "오늘 “일어나다” 표현을 연습합니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "ko-KR:오전 9시 30분에 시작하고 11시 30분에 끝납니다.": {
+      "file": "4f0a77403b982985e6235228.mp3",
+      "duration": 4.0,
+      "revision": "6316e58e21709450",
+      "spokenText": "오전 9시 30분에 시작하고 11시 30분에 끝납니다.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:去學校": {
+      "file": "501e245bc4af092799302ecc.mp3",
+      "duration": 1.12,
+      "revision": "6c6a8003cac4519b",
+      "spokenText": "去学校.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:結束嗎？": {
+      "file": "76a3dca6886cdc71a7f7defc.mp3",
+      "duration": 0.8,
+      "revision": "1eafbeaacc36f45e",
+      "spokenText": "结束吗？",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:課（主語）": {
+      "file": "9d21ae8793b2197f75379ad2.mp3",
+      "duration": 1.44,
+      "revision": "5b385db0014ce2b0",
+      "spokenText": "课（主语）.",
+      "normalization": "speech-rms-0.12-peak-0.9"
+    },
+    "zh-TW:開始，然後": {
+      "file": "16e9193b62bbdd5fc2da0981.mp3",
+      "duration": 1.12,
+      "revision": "5fe02abfdb4e95b2",
+      "spokenText": "开始，然后.",
+      "normalization": "speech-rms-0.12-peak-0.9"
     }
   },
-  "totalExpected": 6405,
+  "totalExpected": 6538,
   "complete": true,
-  "peakGpuGB": 4.306,
+  "peakGpuGB": 4.611,
   "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
   "engine": "faster-qwen3-tts 0.4.0"
 }

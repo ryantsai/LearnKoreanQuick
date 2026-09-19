@@ -231,7 +231,31 @@ function TtsSpeedControl() {
   );
 }
 
+const LESSONS_PER_PAGE = 5;
+
+function lessonSortKey(lesson) {
+  const match = /^([a-z]+)(\d+)-(\d+)$/.exec(lesson.id);
+  if (!match) {
+    return [0, 0, 0];
+  }
+  return [match[1] === "b" ? 1 : 0, Number(match[2]), Number(match[3])];
+}
+
 function CourseLessonListPanel({ lessons, onOpen }) {
+  const sortedLessons = useMemo(
+    () =>
+      [...lessons].sort((a, b) => {
+        const [aSeries, aGrade, aNumber] = lessonSortKey(a);
+        const [bSeries, bGrade, bNumber] = lessonSortKey(b);
+        return bSeries - aSeries || bGrade - aGrade || bNumber - aNumber;
+      }),
+    [lessons]
+  );
+  const [page, setPage] = useState(0);
+  const pageCount = Math.max(1, Math.ceil(sortedLessons.length / LESSONS_PER_PAGE));
+  const currentPage = Math.min(page, pageCount - 1);
+  const visibleLessons = sortedLessons.slice(currentPage * LESSONS_PER_PAGE, (currentPage + 1) * LESSONS_PER_PAGE);
+
   return (
     <section className="alphabet-panel course-list-panel">
       <div className="panel-heading">
@@ -240,7 +264,7 @@ function CourseLessonListPanel({ lessons, onOpen }) {
       </div>
       <p className="novel-panel-desc">從 PDF 課堂內容整理短對話與單字；點擊韓文即可聽發音、看拆解。</p>
       <div className="course-list">
-        {lessons.map((lesson) => (
+        {visibleLessons.map((lesson) => (
           <article key={lesson.id} className="course-card">
             <div className="course-card-label">{lesson.label}</div>
             <div className="course-card-body">
@@ -257,6 +281,19 @@ function CourseLessonListPanel({ lessons, onOpen }) {
           </article>
         ))}
       </div>
+      {pageCount > 1 ? (
+        <nav className="course-list-pagination" aria-label="課程分頁">
+          <button type="button" disabled={currentPage === 0} onClick={() => setPage(Math.max(0, currentPage - 1))}>
+            ← 上一頁
+          </button>
+          <span>
+            第 {currentPage + 1} / {pageCount} 頁
+          </span>
+          <button type="button" disabled={currentPage >= pageCount - 1} onClick={() => setPage(Math.min(pageCount - 1, currentPage + 1))}>
+            下一頁 →
+          </button>
+        </nav>
+      ) : null}
     </section>
   );
 }

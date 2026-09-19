@@ -8,9 +8,10 @@ const priceReadings = {
   "2000원입니다": "이천원입니다", "16000원입니다": "만육천원입니다",
   "15000원에": "만오천원에", "52000원입니다": "오만이천원입니다", "50000원에": "오만원에",
   "16일에": "십육일에",
+  "9시": "아홉 시", "11시": "열한 시", "30분에": "삼십 분에",
 };
-const l = (speaker, ko, zh, rows) => ({ speaker, ko, zh,
-  ...(ko.startsWith('3/27') ? { spokenKo: '삼월 이십칠일' } : {}),
+const l = (speaker, ko, zh, rows, spokenKo) => ({ speaker, ko, zh,
+  ...(spokenKo ? { spokenKo } : ko.startsWith('3/27') ? { spokenKo: '삼월 이십칠일' } : {}),
   tokens: words(rows).map((token) => {
   const displayText = Object.keys(priceReadings).find((price) => ko.includes(price) && priceReadings[price] === token.text);
   return displayText ? { ...token, displayText } : token;
@@ -59,6 +60,26 @@ const seasons = [
 ];
 const weekWords = [
   ["다음 주", "da-eum- -ju", "下星期"], ["이번 주", "i-beon- -ju", "這星期"], ["지난주", "ji-nan-ju", "上星期"],
+];
+const weekdays = [
+  ["일요일", "i-ryo-il", "星期天"], ["월요일", "wo-ryo-il", "星期一"], ["화요일", "hwa-yo-il", "星期二"],
+  ["수요일", "su-yo-il", "星期三"], ["목요일", "mo-gyo-il", "星期四"], ["금요일", "geu-myo-il", "星期五"],
+  ["토요일", "to-yo-il", "星期六"],
+];
+const hours = [
+  ["한 시", "han- -si", "一點"], ["두 시", "du- -si", "兩點"], ["세 시", "se- -si", "三點"],
+  ["네 시", "ne- -si", "四點"], ["다섯 시", "da-seot- -si", "五點"], ["여섯 시", "yeo-seot- -si", "六點"],
+  ["일곱 시", "il-gop- -si", "七點"], ["여덟 시", "yeo-deol- -si", "八點"], ["아홉 시", "a-hop- -si", "九點"],
+  ["열 시", "yeol- -si", "十點"], ["열한 시", "yeol-han- -si", "十一點"], ["열두 시", "yeol-du- -si", "十二點"],
+];
+const minutes = [
+  ["오 분", "o- -bun", "五分"], ["십 분", "sip- -bun", "十分"], ["십오 분", "sip-o- -bun", "十五分"],
+  ["이십 분", "i-sip- -bun", "二十分"], ["삼십 분", "sam-sip- -bun", "三十分"], ["사십오 분", "sa-sip-o- -bun", "四十五分"],
+  ["오십구 분", "o-sip-gu- -bun", "五十九分"],
+];
+const timePeriods = [
+  ["오전", "o-jeon", "上午"], ["오후", "o-hu", "下午"], ["아침", "a-chim", "早上"],
+  ["저녁", "jeo-nyeok", "傍晚"], ["밤", "bam", "晚上"], ["한밤중", "han-bam-jung", "深夜"], ["새벽", "sae-byeok", "凌晨"],
 ];
 const calendarVocabulary = [...months, ...relativeDays, ...seasons, ...weekWords];
 
@@ -399,6 +420,83 @@ export const septemberLessons = [
       references: [{ heading: "附錄：對話翻譯（第 18 頁）", entries: [
         { label: "冠宇", text: "下星期何時有空？" }, { label: "敏俊", text: "下星期沒空。回韓國。" },
         { label: "冠宇", text: "是嗎？幾號回去？" }, { label: "敏俊", text: "16號去。" }
+      ] }]
+    }
+  },
+  {
+    id: "b1-19", label: "初級1-19", titleKo: "한국어 수업이 언제 있습니까?", titleZh: "韓文課在何時？",
+    theme: "星期與時間的說法", sourcePdf: "docs/lessons/new/0921.pdf",
+    media: { hero: asset("b1-19-dialogue-person") },
+    dialogues: [
+      { title: "本課對話：中文課時間", image: asset("b1-19-dialogue-person"), objectImage: asset("b1-19-dialogue-object"), lines: [
+        l("관우", "내일 학교에 갑니까?", "冠宇：明天去學校嗎？", [["내일", "nae-il", "明天"], ["학교에", "hak-gyo-e", "去學校"], ["갑니까", "gam-ni-kka", "去嗎？"]]),
+        l("민준", "네, 학교에 갑니다. 중국어 수업이 있습니다.", "敏俊：是，去學校。有中文課。", [["네", "ne", "是／好"], ["학교에", "hak-gyo-e", "去學校"], ["갑니다", "gam-ni-da", "去"], ["중국어", "jung-gu-geo", "中文"], ["수업이", "su-eo-bi", "課（主語）"], ["있습니다", "it-seum-ni-da", "有"]]),
+        l("관우", "그렇습니까? 중국어 수업 몇 시에 있습니까?", "冠宇：是嗎？中文課在幾點？", [["그렇습니까", "geu-reo-seum-ni-kka", "是嗎？"], ["중국어", "jung-gu-geo", "中文"], ["수업", "su-eop", "課"], ["몇 시에", "myeot- -si-e", "在幾點"], ["있습니까", "it-seum-ni-kka", "有嗎？"]]),
+        l("민준", "오전 9시 30분에 시작하고 11시 30분에 끝납니다.", "敏俊：上午九點三十分開始，十一點三十分結束。", [["오전", "o-jeon", "上午"], ["아홉 시", "a-hop- -si", "九點"], ["삼십 분에", "sam-sip- -bun-e", "在三十分"], ["시작하고", "si-ja-ka-go", "開始，然後"], ["열한 시", "yeol-han- -si", "十一點"], ["끝납니다", "kkeun-nam-ni-da", "結束"]], "오전 아홉 시 삼십 분에 시작하고 열한 시 삼십 분에 끝납니다.")
+      ] },
+      { title: "換你說說看（保留空格）", image: asset("b1-19-practice-person"), objectImage: asset("b1-19-practice-visual"), lines: [
+        l("A", "내일 몇 시에 회사(학교)에 갑니까?", "明天幾點去公司（學校）？", [["내일", "nae-il", "明天"], ["몇 시에", "myeot- -si-e", "在幾點"], ["회사에", "hoe-sa-e", "去公司"], ["학교에", "hak-gyo-e", "去學校"], ["갑니까", "gam-ni-kka", "去嗎？"]], "내일 몇 시에 회사에 갑니까?"),
+        l("B", "____________________.", "請回答你會幾點去（公司／學校）。", [["몇 시에", "myeot- -si-e", "在幾點"], ["갑니다", "gam-ni-da", "去"]]),
+        l("A", "한국어 수업이 몇 시에 끝납니까?", "韓文課幾點結束？", [["한국어", "han-gu-geo", "韓文"], ["수업이", "su-eo-bi", "課（主語）"], ["몇 시에", "myeot- -si-e", "在幾點"], ["끝납니까", "kkeun-nam-ni-kka", "結束嗎？"]]),
+        l("B", "____________________.", "請用「오전／오후＋時間＋에 끝납니다」回答。", [["오전", "o-jeon", "上午"], ["오후", "o-hu", "下午"], ["끝납니다", "kkeun-nam-ni-da", "結束"]]),
+        l("A", "오늘 몇 시에 갑니까?", "今天幾點去？", [["오늘", "o-neul", "今天"], ["몇 시에", "myeot- -si-e", "在幾點"], ["갑니까", "gam-ni-kka", "去嗎？"]]),
+        l("B", "____________________.", "請用今天幾點去回答。", [["오늘", "o-neul", "今天"], ["갑니다", "gam-ni-da", "去"]])
+      ] }
+    ],
+    vocabulary: [
+      ...withImage("b1-19-vocab-page-1", weekdays),
+      ...withImage("b1-19-vocab-page-2", hours),
+      ...withImage("b1-19-vocab-page-3", [...timePeriods, ["몇", "myeot", "幾"], ["무슨", "mu-seun", "什麼"], ["요일", "yo-il", "星期／曜日"], ["시", "si", "時"], ["분", "bun", "分"], ["시작하다", "si-ja-ka-da", "開始"], ["끝나다", "kkeun-na-da", "結束"], ["일어나다", "i-reo-na-da", "起來／起床"]])
+    ],
+    guide: {
+      label: "星期與時間", title: "무슨 요일・몇 시 몇 분",
+      hint: "問星期幾用 무슨 요일，問時間用 몇 시；回答時間先說 오전／오후，再接「數冠形＋시」與「漢字數詞＋분」。具體時間後加 에。",
+      sections: [
+        { heading: "星期的說法（第 3 頁）", words: words(weekdays) },
+        { heading: "幾點的說法：數冠形＋시（第 6 頁）", words: words(hours) },
+        { heading: "幾分的說法：漢字數詞＋분（第 7 頁）", words: words(minutes) },
+        { heading: "各時段（第 9 頁）", words: words(timePeriods) },
+        { heading: "詢問與回答（第 5、10 頁）", words: words([
+          ["무슨", "mu-seun", "什麼"], ["요일", "yo-il", "星期／曜日"], ["몇", "myeot", "幾"],
+          ["시", "si", "時"], ["분", "bun", "分"], ["지금", "ji-geum", "現在"],
+          ["오늘이 무슨 요일이에요?", "o-neu-ri- -mu-seun- -yo-i-ri-e-yo", "今天是星期幾？"],
+          ["지금 몇 시예요?", "ji-geum- -myeot- -si-ye-yo", "現在幾點？"],
+          ["오전 아홉 시 삼십 분이에요", "o-jeon- -a-hop- -si- -sam-sip- -bu-ni-e-yo", "是上午九點三十分"]
+        ]) },
+        { heading: "對話補充詞", words: words([
+          ["학교", "hak-gyo", "學校"], ["수업", "su-eop", "課"], ["중국어", "jung-gu-geo", "中文"],
+          ["한국어", "han-gu-geo", "韓文"], ["회사", "hoe-sa", "公司"], ["시작하다", "si-ja-ka-da", "開始"],
+          ["끝나다", "kkeun-na-da", "結束"], ["일어나다", "i-reo-na-da", "起來／起床"]
+        ]) }
+      ],
+      practice: {
+        heading: "說出星期與時間", hint: "星期以 요일 結尾；時間＝오전／오후＋數冠形 시＋漢字數詞 분；句尾用 이에요。", valueSuffix: "",
+        items: [
+          { value: "星期一", answer: w("월요일", "wo-ryo-il", "星期一") },
+          { value: "星期四", answer: w("목요일", "mo-gyo-il", "星期四") },
+          { value: "星期天", answer: w("일요일", "i-ryo-il", "星期天") },
+          { value: "오전 3:14", answer: w("오전 세 시 십사 분", "o-jeon- -se- -si- -sip-sa- -bun", "上午三點十四分") },
+          { value: "오후 5:58", answer: w("오후 다섯 시 오십팔 분", "o-hu- -da-seot- -si- -o-sip-pal- -bun", "下午五點五十八分") },
+          { value: "오후 7:20", answer: w("오후 일곱 시 이십 분", "o-hu- -il-gop- -si- -i-sip- -bun", "下午七點二十分") },
+          { value: "12:12", answer: w("열두 시 십이 분", "yeol-du- -si- -si-bi- -bun", "十二點十二分") }
+        ],
+        prompts: [
+          { page: "第 4 頁", ko: "월요일／화요일／수요일／목요일／금요일／토요일／일요일", zh: "隨機挑一天，說出韓文星期。" },
+          { page: "第 8 頁", ko: "1:00／4:10／10:59／8:05／9:20／12:12", zh: "用「몇 시 몇 분」說出每個時間。" },
+          { page: "第 11 頁", ko: "AM 3:14／PM 5:58／AM 11:29／PM 11:59／AM 6:01／PM 8:20", zh: "先說 오전／오후，再說出每個時間。" },
+          { page: "第 12 頁", ko: "10월 11일이 무슨 요일입니까?／다음 주 월요일이 며칠입니까?／오늘 몇 시에 일어났습니까?", zh: "您是 B，請回答這三個問題。" },
+          { page: "第 14 頁", ko: "내일 몇 시에 회사(학교)에 갑니까?／한국어 수업이 몇 시에 끝납니까?／오늘 몇 시에 갑니까?", zh: "您是 B，請依自己的行程回答。" }
+        ]
+      },
+      sourceNotes: [{ heading: "來源重點", lines: [
+        "星期名稱來自日、月、火、水、木、金、土，後面加上 요일；問星期幾用 무슨 요일。",
+        "幾點用「數冠形＋시」（한 시、두 시…열두 시），幾分用「漢字數詞＋분」（삼십 분、오십구 분）。",
+        "回答時間先說 오전／오후；具體時間後加 에，例如 오전 9시 30분에 시작합니다。",
+        "本課對話位於第 13 頁，換你說說看位於第 14 頁，中文翻譯位於第 17 頁。"
+      ] }],
+      references: [{ heading: "附錄：對話翻譯（第 17 頁）", entries: [
+        { label: "冠宇", text: "明天去學校嗎？" }, { label: "敏俊", text: "是，去學校。有中文課。" },
+        { label: "冠宇", text: "是嗎？中文課在幾點？" }, { label: "敏俊", text: "上午九點三十分開始，十一點三十分結束。" }
       ] }]
     }
   }
