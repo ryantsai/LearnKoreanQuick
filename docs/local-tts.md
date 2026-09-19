@@ -13,6 +13,14 @@ Selected **Qwen3-TTS-12Hz-1.7B-CustomVoice**, with **Sohee** (native Korean) and
 
 Measured on this RTX 5080: about 4.4 GB peak allocated GPU memory for the initial bilingual sample and approximately 4.5–5 GB with the accelerated sequential runtime. Other applications and driver allocations add to that. Generation uses the GPU; playback on the deployed site needs no GPU or Python installation.
 
+## Voice consistency
+
+Use one voice per language for all clips: **Sohee** for Korean, **Serena** for Chinese. Unless a lesson clearly has different people speaking and those voices must sound distinct, do not switch, alternate, or blend preset speakers between clips.
+
+Vocabulary, alphabet, and dialogue audio then all come from the same speaker, so a word is pronounced identically everywhere it appears. Mixing voices introduces pronunciation and tone deviations, which is especially noticeable when isolated vocabulary is played back to back.
+
+The `speaker` field on `line(...)` in the lesson data records who is talking in a dialogue; it does not select a TTS voice. A new dialogue with different `speaker` names still uses the single language voice. If a lesson genuinely needs a second audible voice, treat that as an explicit change: update this document and the generator's speaker configuration together, then regenerate the whole audio set so no clip is left in the old voice.
+
 ## Setup on Windows
 
 Run from the repository root with `uv` installed:

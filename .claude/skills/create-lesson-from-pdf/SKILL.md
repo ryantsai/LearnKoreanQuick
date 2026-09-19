@@ -40,6 +40,8 @@ learning tabs, 對話練習, 重點回顧, and a closing 再見 slide.
 word(text, roman, zh)              // builds { text, roman, zh, syllables }
 withVocabImages("l2-<n>", [words]) // attaches vocab-01..NN images by index
 line(speaker, ko, zh, tokens)      // one dialogue line; tokens is an array of word objects
+                                   // `speaker` is a display name only: all audio keeps the single
+                                   // per-language voice (see docs/local-tts.md → Voice consistency)
 courseAsset("l2-<n>-…")            // -> assetPath("assets/course-lessons/<name>.png")
 ```
 
