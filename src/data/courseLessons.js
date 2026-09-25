@@ -1,4 +1,5 @@
 import { septemberLessons } from "./septemberLessons.js";
+import { lateSeptemberLessons } from "./lateSeptemberLessons.js";
 import { assetPath } from "../utils/assets.js";
 import { decomposeHangulWord } from "../utils/hangul.js";
 
@@ -2373,5 +2374,6 @@ export const courseLessons = [
       }]
     }
   },
-  ...septemberLessons
+  ...septemberLessons,
+  ...lateSeptemberLessons
 ];

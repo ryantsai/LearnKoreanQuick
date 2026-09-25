@@ -17,7 +17,7 @@ VOWELS = dict(zip('ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢ�
 # Explicit liaison avoids the model confusing the noun 깎이 with the verb 깎기.
 # https://www.korean.go.kr/nkview/nknews/200312/65_3.html
 # https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72828
-PRONUNCIATION = {'손톱깎이':'손톱까끼', '일일':'이릴', '내일 몇 시에 회사(학교)에 갑니까?':'내일 몇 시에 회사에 갑니까?'}
+PRONUNCIATION = {'손톱깎이':'손톱까끼', '일일':'이릴', '내일 몇 시에 회사(학교)에 갑니까?':'내일 몇 시에 회사에 갑니까?', '동대문은 을지로 6가 근처에 있어요.':'동대문은 을지로 육가 근처에 있어요.'}
 def spoken_text(entry):
     text = entry['text']
     if entry['lang']=='ko-KR' and re.fullmatch(r'네[,\s_.。]+', text):
