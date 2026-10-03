@@ -24,13 +24,14 @@ describe("verified Chirp import", () => {
       .toBe("01446064253c702b85a392c9ce9bc141697f519594bd7c6ca873c6f811d01ce6");
   });
   test("preserves complete Chinese records and imports only current Korean playback keys", () => {
-    const f = fixture(), chinese = { file: "existing.mp3", duration: 2.3, extra: "preserve" };
+    const f = fixture(), chinese = { file: "existing.mp3", duration: 2.3, extra: "preserve", voice: "Meijia (Chinese (Taiwan))", provider: "macOS Speech Synthesis" };
     const verified = validateChirpResults(f.plan, f.batch, f.hash, f.results, () => f.bytes);
-    const manifest = buildImportedManifest({ clips: { "zh-TW:咖啡": chinese }, speakers: { "zh-TW": "Serena" }, model: "Qwen" }, f.plan, f.plan, verified, f.hash);
+    const manifest = buildImportedManifest({ clips: { "zh-TW:咖啡": chinese }, speakers: { "zh-TW": "Serena" }, model: "Qwen", providers: { "zh-TW": "Qwen / Serena + macOS / Meijia" } }, f.plan, f.plan, verified, f.hash);
     expect(manifest.clips["zh-TW:咖啡"]).toEqual(chinese);
     expect(manifest.clips["ko-KR:커피"].voice).toBe("ko-KR-Chirp3-HD-Kore");
     expect(manifest.voiceVariants).toBe(true);
     expect(manifest.speakers["zh-TW"]).toBe("Serena");
+    expect(manifest.providers["zh-TW"]).toBe("Qwen / Serena + macOS / Meijia");
   });
   test.each(["hash", "voice", "budget", "duration", "accounting", "output", "content", "missing"])("rejects %s failure before publishing", (failure) => {
     const f = fixture();

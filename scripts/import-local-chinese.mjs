@@ -8,7 +8,7 @@ import { sha256 } from "./lib/google-audio-plan.mjs";
 import { prepareChineseImport } from "./lib/chinese-import.mjs";
 
 const args = process.argv.slice(2), dirIndex = args.indexOf("--results-dir");
-if (dirIndex < 0 || !args[dirIndex + 1]) throw new Error("Required: --results-dir <isolated Qwen Chinese output>");
+if (dirIndex < 0 || !args[dirIndex + 1]) throw new Error("Required: --results-dir <approved isolated local Chinese output>");
 const sourceRoot = realpathSync(path.resolve(args[dirIndex + 1]));
 const source = (file) => {
   const resolved = path.resolve(sourceRoot, file);

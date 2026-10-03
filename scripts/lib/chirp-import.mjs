@@ -85,7 +85,7 @@ export function buildImportedManifest(existing, activePlan, batchPlan, verified,
     clips[alias.key] = { file: `chirp3-hd/${request.file}`, duration: output.result.duration_seconds,
       voice: request.voice, sha256: output.result.audio_sha256, revision: batchHash };
   }
-  return { version: 2, model: "Google Cloud Text-to-Speech Chirp 3 HD (Korean); Qwen3-TTS (Chinese)",
+  return { version: 2, model: "Google Cloud Text-to-Speech Chirp 3 HD (Korean); local speech synthesis (Chinese)",
     fingerprint: batchHash, speakers: { ...existing.speakers, "ko-KR": BASELINE_KOREAN_VOICE },
     voiceVariants: true, complete: true,
     providers: { "ko-KR": "Google Cloud Text-to-Speech Chirp 3 HD", "zh-TW": existing.providers?.["zh-TW"] ?? existing.model }, clips };
