@@ -265,7 +265,7 @@ function CourseLessonListPanel({ lessons, onOpen }) {
       <p className="novel-panel-desc">從 PDF 課堂內容整理短對話與單字；點擊韓文即可聽發音、看拆解。</p>
       <div className="course-list">
         {visibleLessons.map((lesson) => (
-          <article key={lesson.id} className="course-card">
+          <article key={lesson.id} className={`course-card${lesson.courseMetadata ? " course-card-named" : ""}`}>
             <div className="course-card-label">{lesson.label}</div>
             <div className="course-card-body">
               <span className="novel-genre-tag">{lesson.theme}</span>

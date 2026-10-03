@@ -2,6 +2,8 @@ import { describe, expect, test } from "vitest";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { courseLessons } from "./courseLessons.js";
+import { courseMetadata } from "./courseMetadata.js";
+import { formatCourseLabel } from "../utils/courseLabel.js";
 
 describe("courseLessons", () => {
   test("contains every PDF-backed lesson with dialogues and vocabulary", () => {
@@ -36,7 +38,13 @@ describe("courseLessons", () => {
     ]);
 
     for (const lesson of courseLessons) {
-      expect(lesson.label).toMatch(/^(L2-|初級1-)/);
+      if (courseMetadata[lesson.id]) {
+        expect(lesson.label).toBe(formatCourseLabel(courseMetadata[lesson.id]));
+      } else {
+        expect(lesson.label).toBe(lesson.id.startsWith("l2-")
+          ? lesson.id.toUpperCase()
+          : lesson.id.replace("b1-", "初級1-"));
+      }
       expect(lesson.titleKo.length).toBeGreaterThan(0);
       expect(lesson.dialogues.length).toBeGreaterThanOrEqual(1);
       expect(lesson.vocabulary.length).toBeGreaterThanOrEqual(12);
@@ -76,6 +84,30 @@ describe("courseLessons", () => {
         expect(existsSync(path.join(process.cwd(), "public", publicPath))).toBe(true);
       }
     }
+  });
+
+  test("maps official metadata only to existing stable lesson IDs", () => {
+    const ids = new Set(courseLessons.map((lesson) => lesson.id));
+    for (const [id, metadata] of Object.entries(courseMetadata)) {
+      expect(ids.has(id)).toBe(true);
+      expect(Object.keys(metadata).sort()).toEqual(["date", "name", "sessionCount", "sessionNumber"]);
+      expect(() => formatCourseLabel(metadata)).not.toThrow();
+    }
+  });
+
+  test("renames the 26 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(26);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(26);
+    expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
+      .toEqual(["b1-15"]);
+    expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
+  });
+
+  test("preserves official session ordering where legacy lesson numbers differ", () => {
+    const label = (id) => courseLessons.find((lesson) => lesson.id === id).label;
+    expect(label("b1-3")).toBe("韓語1級主修會話(一)-3/6堂-20260706(一)");
+    expect(label("b1-5")).toBe("韓語1級主修會話(一)-6/6堂-20260715(三)");
+    expect(label("b1-6")).toBe("韓語1級主修會話(一)-5/6堂-20260713(一)");
   });
 
   // Every guide word must keep its romanization aligned with its Hangul

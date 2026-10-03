@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { courseLessons } from "./courseLessons.js";
 import { buildVocabularyIndex } from "./vocabularyIndex.js";
+import { applyCourseMetadata } from "../utils/courseLabel.js";
 
 describe("buildVocabularyIndex", () => {
   const vocabulary = buildVocabularyIndex(courseLessons);
@@ -30,6 +31,20 @@ describe("buildVocabularyIndex", () => {
     expect(vocabulary.some((item) => item.text === "밥을 먹다")).toBe(false);
     expect(vocabulary.some((item) => item.text === "공부하고 텔레비전을 봅니다.")).toBe(false);
     expect(vocabulary.some((item) => item.text === "민준①")).toBe(false);
+  });
+
+  test("uses updated display names in search references while preserving lesson IDs and words", () => {
+    const lesson = courseLessons.find((item) => item.id === "b1-21");
+    const renamed = applyCourseMetadata(lesson, {
+      name: "測試課程", sessionNumber: 2, sessionCount: 6, date: "20261008"
+    });
+    const originalIndex = buildVocabularyIndex([lesson]);
+    const renamedIndex = buildVocabularyIndex([renamed]);
+    expect(renamedIndex.map(({ lessons, ...word }) => word))
+      .toEqual(originalIndex.map(({ lessons, ...word }) => word));
+    for (const word of renamedIndex) {
+      expect(word.lessons).toEqual([{ id: "b1-21", label: "測試課程-2/6堂-20261008(四)" }]);
+    }
   });
 
   test("provides explanations, pronunciation guidance, and usage examples", () => {

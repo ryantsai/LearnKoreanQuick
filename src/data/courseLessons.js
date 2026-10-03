@@ -1,5 +1,7 @@
 import { septemberLessons } from "./septemberLessons.js";
 import { lateSeptemberLessons } from "./lateSeptemberLessons.js";
+import { courseMetadata } from "./courseMetadata.js";
+import { applyCourseMetadata } from "../utils/courseLabel.js";
 import { assetPath } from "../utils/assets.js";
 import { decomposeHangulWord } from "../utils/hangul.js";
 
@@ -2376,4 +2378,4 @@ export const courseLessons = [
   },
   ...septemberLessons,
   ...lateSeptemberLessons
-];
+].map((lesson) => applyCourseMetadata(lesson, courseMetadata[lesson.id]));
