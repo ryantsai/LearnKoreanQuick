@@ -20,6 +20,37 @@ const readyManifest = () => vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ o
 const tick = () => new Promise(resolve => setTimeout(resolve, 0));
 
 describe('recorded speech', () => {
+  test('selects a requested dialogue voice while preserving the playback speed control', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ voiceVariants: true, clips: {
+      'ko-KR:안녕하세요': { file: 'kore.mp3' },
+      'ko-KR:안녕하세요|voice=ko-KR-Chirp3-HD-Charon': { file: 'charon.mp3' },
+    } }) }));
+    const { speakKorean } = await import('./speech.js');
+    const result = speakKorean('안녕하세요', 'ko-KR-Chirp3-HD-Charon');
+    await tick();
+    expect(instances[0].src).toContain('/audio/charon.mp3');
+    expect(instances[0].playbackRate).toBe(0.8);
+    instances[0].onended();
+    expect(await result).toBe(true);
+  });
+  test('uses existing recordings during preparation', async () => {
+    readyManifest();
+    const { speakKorean } = await import('./speech.js');
+    const result = speakKorean('안녕하세요', 'ko-KR-Chirp3-HD-Charon');
+    await tick();
+    expect(instances[0].src).toContain('/audio/hello.mp3');
+    instances[0].onended();
+    expect(await result).toBe(true);
+  });
+  test('rejects missing role variants after a completed migration', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ voiceVariants: true, clips: {
+      'ko-KR:안녕하세요': { file: 'kore.mp3' },
+    } }) }));
+    const { speakKorean } = await import('./speech.js');
+    expect(await speakKorean('안녕하세요', 'ko-KR-Chirp3-HD-Charon')).toBe(false);
+    expect(instances).toHaveLength(0);
+    expect(dispatchEvent.mock.calls[0][0].type).toBe('lkq-audio-error');
+  });
   test('regenerated recordings use their own content revision to bypass old browser caches', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => ({ fingerprint: 'old', clips: { 'ko-KR:안녕하세요': { file: 'hello.mp3', revision: 'new' } } }) }));
     const { speakKorean } = await import('./speech.js');

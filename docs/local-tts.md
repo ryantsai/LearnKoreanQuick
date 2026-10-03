@@ -4,7 +4,11 @@ The app plays pre-generated MP3 files in `public/audio`. It does not use browser
 
 ## Model choice
 
-Selected **Qwen3-TTS-12Hz-1.7B-CustomVoice**, with **Sohee** (native Korean) and **Serena** (Chinese). The official Qwen documentation lists Korean and Chinese support, preset speakers, and instruction-based expression control. Preset speakers avoid needing a person's voice-cloning recording. Model license: Apache 2.0. Pinned model revision: `0c0e3051f131929182e2c023b9537f8b1c68adfe`.
+The Korean migration selects **Google Chirp 3 HD** at the default synthesis rate 1.0. Narration and vocabulary use **Kore**. Dialogue uses the fixed Kore/Charon casting in `src/utils/dialogueVoice.js`; every existing two-person conversation has distinct voices. Only dialogue sentences requiring Charon add recordings. Chinese retains **Qwen3-TTS-12Hz-1.7B-CustomVoice / Serena** and its existing files. The active manifest remains Qwen until a complete verified Google batch is imported.
+
+Google references: [Chirp 3 HD voices](https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd), [pricing](https://cloud.google.com/text-to-speech/pricing), [request limits](https://docs.cloud.google.com/text-to-speech/quotas).
+
+The previous Korean voice was **Qwen3-TTS / Sohee**. Its pinned model revision is `0c0e3051f131929182e2c023b9537f8b1c68adfe`; license: Apache 2.0. The existing local generator remains available for Chinese additions.
 
 - Official model and speaker documentation: https://github.com/QwenLM/Qwen3-TTS
 - Model card: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
@@ -15,13 +19,25 @@ Measured on this RTX 5080: about 4.4 GB peak allocated GPU memory for the initia
 
 ## Voice consistency
 
-Use one voice per language for all clips: **Sohee** for Korean, **Serena** for Chinese. Unless a lesson clearly has different people speaking and those voices must sound distinct, do not switch, alternate, or blend preset speakers between clips.
+The `speaker` field selects a fixed Korean dialogue voice. Vocabulary, alphabet and narration always use Kore; Chinese always keeps Serena. Review new role names before synthesis. Stable base text keys stay unchanged; Charon sentence keys append `|voice=ko-KR-Chirp3-HD-Charon`. Legacy manifests retain the original Korean fallback during preparation. A completed role-aware manifest requires each voice variant and cannot silently fall back to another voice.
 
-Vocabulary, alphabet, and dialogue audio then all come from the same speaker, so a word is pronounced identically everywhere it appears. Mixing voices introduces pronunciation and tone deviations, which is especially noticeable when isolated vocabulary is played back to back.
+## Offline Google preparation and import
 
-The `speaker` field on `line(...)` in the lesson data records who is talking in a dialogue; it does not select a TTS voice. A new dialogue with different `speaker` names still uses the single language voice. If a lesson genuinely needs a second audible voice, treat that as an explicit change: update this document and the generator's speaker configuration together, then regenerate the whole audio set so no clip is left in the old voice.
+`npm run audio:google:plan` writes an ignored `tmp/google-audio-plan.json` without credentials or network calls. `--extra-lessons /absolute/local/lesson.mjs` includes reviewed local drafts without publishing them. The plan preserves current playback requirements even when a draft adds new dictionary contexts. It separates existing Chinese clips from missing new Chinese clips; neither is sent to Google.
 
-## Setup on Windows
+The one-time bulk budget is **US$2**, using gross list price **US$30/million characters** without assuming a free allowance. Every retry and uncertain outcome must be charged. `scripts/lib/chirp-manifest.mjs` adapts the plan to the separately owned, manifest-bound batch runner. That runner must durably reserve cost before each request, use one resumable ledger, verify receipts, and export only approved MP3s plus its result report. The repository has no paid synthesis command or credentials setup.
+
+Import a safely extracted, verified result directory with:
+
+```sh
+npm run audio:google:import -- --plan /local/plan.json --batch /local/batch.json --results-dir /local/extracted-results
+```
+
+This verifies batch identity, exact text/voice/config, hashes, complete output coverage and retry accounting, then fully decodes every MP3 with FFmpeg. It changes no repository files. Add `--apply` to copy only currently published Korean assets and atomically switch the manifest after all checks pass. Draft-only outputs stay outside the repository. Existing Chinese records and file hashes are checked and preserved. Current source data must cover every playback key before cutover; missing new Chinese recordings must be prepared separately before publishing bilingual course additions.
+
+Korean assets use `public/audio/chirp3-hd/`; base lesson IDs, progress storage and original physical assets remain unchanged. Regenerate the catalog, run `audio:verify`, tests and build after integration. Listen to representative alphabet, word, sentence, alternating-role and slow-playback samples: hashes and decoding establish file integrity, not linguistic quality.
+
+## Previous local provider: setup on Windows
 
 Run from the repository root with `uv` installed:
 

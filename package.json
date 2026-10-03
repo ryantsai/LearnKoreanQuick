@@ -11,6 +11,8 @@
     "preview": "node server/index.js",
     "test": "vitest run",
     "audio:catalog": "node scripts/build-audio-catalog.mjs",
+    "audio:google:plan": "node scripts/prepare-google-audio.mjs",
+    "audio:google:import": "node scripts/import-chirp-audio.mjs",
     "audio:generate": ".\\.venv-tts\\Scripts\\python.exe -X utf8 scripts/generate-local-audio.py",
     "audio:verify": "node scripts/verify-audio.mjs"
   },

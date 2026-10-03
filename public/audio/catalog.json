@@ -26485,14 +26485,6 @@
       "file": "7f1fa2df63a96d19347becf5.mp3"
     },
     {
-      "key": "ko-KR:다가",
-      "text": "다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "712fcdd2eab9d9615185790b.mp3"
-    },
-    {
       "key": "ko-KR:다도",
       "text": "다도",
       "lang": "ko-KR",
@@ -26515,14 +26507,6 @@
       "priority": 2,
       "lessons": [],
       "file": "6064db505d631c788005bfd4.mp3"
-    },
-    {
-      "key": "ko-KR:다만",
-      "text": "다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a00875cfce90e114b20ef2a2.mp3"
     },
     {
       "key": "ko-KR:다시",
@@ -27235,22 +27219,6 @@
       "priority": 2,
       "lessons": [],
       "file": "44913a7aa89cf2f204dfd400.mp3"
-    },
-    {
-      "key": "ko-KR:뭘만",
-      "text": "뭘만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ffeb86726e84ba2bb0509e71.mp3"
-    },
-    {
-      "key": "ko-KR:뭘이",
-      "text": "뭘이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8c7da1564bfb5e4ff07fb11e.mp3"
     },
     {
       "key": "ko-KR:미리",
@@ -27989,28 +27957,12 @@
       "file": "a50e55c4a6950a35414a2d69.mp3"
     },
     {
-      "key": "ko-KR:안만",
-      "text": "안만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "65db277e20ef0479918d23c5.mp3"
-    },
-    {
       "key": "ko-KR:안은",
       "text": "안은",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "a585822b6aaec7e9f1cf7c86.mp3"
-    },
-    {
-      "key": "ko-KR:안이",
-      "text": "안이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "87c3e59104cfd37b9d339e76.mp3"
     },
     {
       "key": "ko-KR:앉아",
@@ -29805,22 +29757,6 @@
       "file": "4602a89103c4508e2bda74a2.mp3"
     },
     {
-      "key": "ko-KR:가다가",
-      "text": "가다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "90a6532fdb243b76458e545e.mp3"
-    },
-    {
-      "key": "ko-KR:가다만",
-      "text": "가다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6fe68a8d1e6bc342b44ea512.mp3"
-    },
-    {
       "key": "ko-KR:가라고",
       "text": "가라고",
       "lang": "ko-KR",
@@ -29899,22 +29835,6 @@
       "priority": 2,
       "lessons": [],
       "file": "3d8363dc00e42794a306470b.mp3"
-    },
-    {
-      "key": "ko-KR:가요가",
-      "text": "가요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b6217329dd85d8f7a5379cc3.mp3"
-    },
-    {
-      "key": "ko-KR:가요만",
-      "text": "가요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5da963bc84b318c11c4e87f6.mp3"
     },
     {
       "key": "ko-KR:가위가",
@@ -30043,22 +29963,6 @@
       "priority": 2,
       "lessons": [],
       "file": "a244ba6d422295b098eaa25e.mp3"
-    },
-    {
-      "key": "ko-KR:같이가",
-      "text": "같이가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f83328f82bf0bfb228a223ff.mp3"
-    },
-    {
-      "key": "ko-KR:같이만",
-      "text": "같이만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c6b1b67c2586624706b61c06.mp3"
     },
     {
       "key": "ko-KR:같지만",
@@ -30677,22 +30581,6 @@
       "file": "6322bb89e3ee1530e3332375.mp3"
     },
     {
-      "key": "ko-KR:그럼만",
-      "text": "그럼만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c46a899cc19df155eef070ac.mp3"
-    },
-    {
-      "key": "ko-KR:그럼이",
-      "text": "그럼이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8c550e65bacbd701d46a941f.mp3"
-    },
-    {
       "key": "ko-KR:그렇게",
       "text": "그렇게",
       "lang": "ko-KR",
@@ -30843,22 +30731,6 @@
       "priority": 2,
       "lessons": [],
       "file": "61090eaac9391fdacc00e0d4.mp3"
-    },
-    {
-      "key": "ko-KR:깎다가",
-      "text": "깎다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7036871dc9f06a596e928dce.mp3"
-    },
-    {
-      "key": "ko-KR:깎다만",
-      "text": "깎다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7c0a23097051b599334ef34a.mp3"
     },
     {
       "key": "ko-KR:깎아가",
@@ -31405,22 +31277,6 @@
       "file": "8840f40bdebcf84af79ce56f.mp3"
     },
     {
-      "key": "ko-KR:달다가",
-      "text": "달다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "831f7c20b44bfdb1998f6f43.mp3"
-    },
-    {
-      "key": "ko-KR:달다만",
-      "text": "달다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "49186d3fac93e297ede91f9e.mp3"
-    },
-    {
       "key": "ko-KR:달라도",
       "text": "달라도",
       "lang": "ko-KR",
@@ -31501,22 +31357,6 @@
       "file": "c13cb614f16532177faab1f9.mp3"
     },
     {
-      "key": "ko-KR:덥다가",
-      "text": "덥다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9a17f23cf9909aefc73a288c.mp3"
-    },
-    {
-      "key": "ko-KR:덥다만",
-      "text": "덥다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "93b61c97502972264a82e3e7.mp3"
-    },
-    {
       "key": "ko-KR:도보가",
       "text": "도보가",
       "lang": "ko-KR",
@@ -31589,22 +31429,6 @@
       "file": "908eb1561087c7442a5b71b8.mp3"
     },
     {
-      "key": "ko-KR:돼요가",
-      "text": "돼요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "43b4783c85b9f198a6d639b3.mp3"
-    },
-    {
-      "key": "ko-KR:돼요만",
-      "text": "돼요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7e9a52ec9818883434f83eb1.mp3"
-    },
-    {
       "key": "ko-KR:되나요",
       "text": "되나요",
       "lang": "ko-KR",
@@ -31667,22 +31491,6 @@
       "priority": 2,
       "lessons": [],
       "file": "8bbaf926a9128803e2ba711b.mp3"
-    },
-    {
-      "key": "ko-KR:듣다가",
-      "text": "듣다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1a19068ae2f41ad2f7444044.mp3"
-    },
-    {
-      "key": "ko-KR:듣다만",
-      "text": "듣다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "789c25b5cd0414e126b544bc.mp3"
     },
     {
       "key": "ko-KR:들려서",
@@ -31933,22 +31741,6 @@
       "file": "b044bc03430a75fed7fa527c.mp3"
     },
     {
-      "key": "ko-KR:많다가",
-      "text": "많다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8fd744aa31fb1778f2a8a767.mp3"
-    },
-    {
-      "key": "ko-KR:많다만",
-      "text": "많다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8dcb627090d2316495779e30.mp3"
-    },
-    {
       "key": "ko-KR:많이가",
       "text": "많이가",
       "lang": "ko-KR",
@@ -32109,22 +31901,6 @@
       "file": "a8e42309c6bff68fe6924491.mp3"
     },
     {
-      "key": "ko-KR:맵다가",
-      "text": "맵다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e9d9f7e6d921eec7d6899908.mp3"
-    },
-    {
-      "key": "ko-KR:맵다만",
-      "text": "맵다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "61e91d080d98c8c887490b42.mp3"
-    },
-    {
       "key": "ko-KR:머리를",
       "text": "머리를",
       "lang": "ko-KR",
@@ -32163,22 +31939,6 @@
       "priority": 2,
       "lessons": [],
       "file": "50e20973f05b1871335362ed.mp3"
-    },
-    {
-      "key": "ko-KR:먹다가",
-      "text": "먹다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e2d28116646af769a4aefa1e.mp3"
-    },
-    {
-      "key": "ko-KR:먹다만",
-      "text": "먹다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e9003f590e91416f8ed57821.mp3"
     },
     {
       "key": "ko-KR:먹어야",
@@ -32781,22 +32541,6 @@
       "file": "165a882a7f01d8c3a5deef95.mp3"
     },
     {
-      "key": "ko-KR:밥을만",
-      "text": "밥을만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c95231e3e4f1703890b0deac.mp3"
-    },
-    {
-      "key": "ko-KR:밥을이",
-      "text": "밥을이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f6a99a53f35f8782ab1eb812.mp3"
-    },
-    {
       "key": "ko-KR:방법만",
       "text": "방법만",
       "lang": "ko-KR",
@@ -32973,22 +32717,6 @@
       "file": "99ce521c7482867ed8699df7.mp3"
     },
     {
-      "key": "ko-KR:보다가",
-      "text": "보다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4c4197513bdd2d1bd6a37b72.mp3"
-    },
-    {
-      "key": "ko-KR:보다만",
-      "text": "보다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dd23a74745fee278d88ea770.mp3"
-    },
-    {
       "key": "ko-KR:보더니",
       "text": "보더니",
       "lang": "ko-KR",
@@ -33125,22 +32853,6 @@
       "file": "e2f60a0238de07ad21cdf53e.mp3"
     },
     {
-      "key": "ko-KR:봐요가",
-      "text": "봐요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3fce50ece5556592ff5436c9.mp3"
-    },
-    {
-      "key": "ko-KR:봐요만",
-      "text": "봐요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "288704dc343fa867874790a5.mp3"
-    },
-    {
       "key": "ko-KR:부르면",
       "text": "부르면",
       "lang": "ko-KR",
@@ -33203,22 +32915,6 @@
       "priority": 2,
       "lessons": [],
       "file": "9e674197175add8e926464ac.mp3"
-    },
-    {
-      "key": "ko-KR:붓다가",
-      "text": "붓다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2531cd4bb8fe0698734c2158.mp3"
-    },
-    {
-      "key": "ko-KR:붓다만",
-      "text": "붓다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4f54a4691a0f739c3e94337b.mp3"
     },
     {
       "key": "ko-KR:비누가",
@@ -33341,22 +33037,6 @@
       "file": "5985a207f01e6ea914a91380.mp3"
     },
     {
-      "key": "ko-KR:사다가",
-      "text": "사다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "046d06a321891a88d56db752.mp3"
-    },
-    {
-      "key": "ko-KR:사다만",
-      "text": "사다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "649be0e6f7239a6d7695801d.mp3"
-    },
-    {
       "key": "ko-KR:사람과",
       "text": "사람과",
       "lang": "ko-KR",
@@ -33413,22 +33093,6 @@
       "file": "3d933d566bb6db0dc9cb7f30.mp3"
     },
     {
-      "key": "ko-KR:사면만",
-      "text": "사면만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5a88f8c04a8563f1da786701.mp3"
-    },
-    {
-      "key": "ko-KR:사면이",
-      "text": "사면이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "43f0c8eca9a598978da161b6.mp3"
-    },
-    {
       "key": "ko-KR:사십만",
       "text": "사십만",
       "lang": "ko-KR",
@@ -33443,22 +33107,6 @@
       "priority": 2,
       "lessons": [],
       "file": "6d2c465f7458158b6d135c2d.mp3"
-    },
-    {
-      "key": "ko-KR:사요가",
-      "text": "사요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "beddbbdd3810dd9e2ec0cb0a.mp3"
-    },
-    {
-      "key": "ko-KR:사요만",
-      "text": "사요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "90967419111b70ef5a873fd9.mp3"
     },
     {
       "key": "ko-KR:사월만",
@@ -34109,44 +33757,12 @@
       "file": "83e386339637432210f3eff4.mp3"
     },
     {
-      "key": "ko-KR:쉬다가",
-      "text": "쉬다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "96a218d9aa738b2c7f930172.mp3"
-    },
-    {
-      "key": "ko-KR:쉬다만",
-      "text": "쉬다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ebab9d1962b4e25a5465795a.mp3"
-    },
-    {
       "key": "ko-KR:쉬었다",
       "text": "쉬었다",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "2f996c03b5e4af4d7bffc2a6.mp3"
-    },
-    {
-      "key": "ko-KR:쉽다가",
-      "text": "쉽다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7df118ce3f63dd90d4d3a084.mp3"
-    },
-    {
-      "key": "ko-KR:쉽다만",
-      "text": "쉽다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "de8eec05ad1f26ec81a728bc.mp3"
     },
     {
       "key": "ko-KR:스몰이",
@@ -34317,22 +33933,6 @@
       "file": "56b033b619cadf8f5d11cba6.mp3"
     },
     {
-      "key": "ko-KR:신다가",
-      "text": "신다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d01a1ca5197f4b3ec32d2ab6.mp3"
-    },
-    {
-      "key": "ko-KR:신다만",
-      "text": "신다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0258ef13a0b648ce7dd9c620.mp3"
-    },
-    {
       "key": "ko-KR:신라면",
       "text": "신라면",
       "lang": "ko-KR",
@@ -34453,38 +34053,6 @@
       "file": "7b5b8bc31dddfe7c71a5b8df.mp3"
     },
     {
-      "key": "ko-KR:싸다가",
-      "text": "싸다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6ce530a34600e69b53d2893d.mp3"
-    },
-    {
-      "key": "ko-KR:싸다만",
-      "text": "싸다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "646dc70f4a265c1e5252ae62.mp3"
-    },
-    {
-      "key": "ko-KR:싸요가",
-      "text": "싸요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b7d323d2c3f1b67768b599f8.mp3"
-    },
-    {
-      "key": "ko-KR:싸요만",
-      "text": "싸요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6c160da0cc401e9edda2d65b.mp3"
-    },
-    {
       "key": "ko-KR:싸웠고",
       "text": "싸웠고",
       "lang": "ko-KR",
@@ -34507,22 +34075,6 @@
       "priority": 2,
       "lessons": [],
       "file": "8758b34c0758be75104fa73b.mp3"
-    },
-    {
-      "key": "ko-KR:쓰다가",
-      "text": "쓰다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d9f7b55fd20d3b4239b41181.mp3"
-    },
-    {
-      "key": "ko-KR:쓰다만",
-      "text": "쓰다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ced041ca905e15cea3549b01.mp3"
     },
     {
       "key": "ko-KR:쓰린만",
@@ -35061,28 +34613,12 @@
       "file": "8e3d354d18baff88f8500118.mp3"
     },
     {
-      "key": "ko-KR:언제가",
-      "text": "언제가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0cb95fa221ff121d6b7d968e.mp3"
-    },
-    {
       "key": "ko-KR:언제나",
       "text": "언제나",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "f1e178adec64eb5eb7a9ff42.mp3"
-    },
-    {
-      "key": "ko-KR:언제만",
-      "text": "언제만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "253a6e8e1b258b0d8624c5e6.mp3"
     },
     {
       "key": "ko-KR:얹었다",
@@ -35461,22 +34997,6 @@
       "file": "297aebe643c8f1a456ea6508.mp3"
     },
     {
-      "key": "ko-KR:예요가",
-      "text": "예요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "09e555ba8f010882d909ea71.mp3"
-    },
-    {
-      "key": "ko-KR:예요만",
-      "text": "예요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "860a6594c0c3e48acbde8d71.mp3"
-    },
-    {
       "key": "ko-KR:오가고",
       "text": "오가고",
       "lang": "ko-KR",
@@ -35499,22 +35019,6 @@
       "priority": 2,
       "lessons": [],
       "file": "e1832970711edfc5ffd81fc8.mp3"
-    },
-    {
-      "key": "ko-KR:오다가",
-      "text": "오다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "475d4670d56de544c35759d3.mp3"
-    },
-    {
-      "key": "ko-KR:오다만",
-      "text": "오다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f0067399e7b760c9a02ba183.mp3"
     },
     {
       "key": "ko-KR:오래된",
@@ -36349,22 +35853,6 @@
       "file": "b45454921e0e2dd235d58183.mp3"
     },
     {
-      "key": "ko-KR:일이가",
-      "text": "일이가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f8757b9bff92a8c1bfa3a600.mp3"
-    },
-    {
-      "key": "ko-KR:일이만",
-      "text": "일이만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3b4016c849c08d4354063b78.mp3"
-    },
-    {
       "key": "ko-KR:일일만",
       "text": "일일만",
       "lang": "ko-KR",
@@ -36413,44 +35901,12 @@
       "file": "0c007192b27c4e58e091cae1.mp3"
     },
     {
-      "key": "ko-KR:읽다가",
-      "text": "읽다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dfca3c8310bbed1b875f5eda.mp3"
-    },
-    {
-      "key": "ko-KR:읽다만",
-      "text": "읽다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "335a80367ca3ee749eac8668.mp3"
-    },
-    {
       "key": "ko-KR:잃었다",
       "text": "잃었다",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "3ecb9d7fc9ef39ae8bf6baae.mp3"
-    },
-    {
-      "key": "ko-KR:입다가",
-      "text": "입다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2dc0b5df71f6fb2cb750b90e.mp3"
-    },
-    {
-      "key": "ko-KR:입다만",
-      "text": "입다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dd02ff7231f69c8eadf6eb85.mp3"
     },
     {
       "key": "ko-KR:입원만",
@@ -36557,22 +36013,6 @@
       "file": "6d1fd4bbb84e98711b79c96b.mp3"
     },
     {
-      "key": "ko-KR:자다가",
-      "text": "자다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "47c64433a8111a354fa71e09.mp3"
-    },
-    {
-      "key": "ko-KR:자다만",
-      "text": "자다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e235abe233035c84e55f9fbb.mp3"
-    },
-    {
       "key": "ko-KR:자동차",
       "text": "자동차",
       "lang": "ko-KR",
@@ -36635,22 +36075,6 @@
       "priority": 2,
       "lessons": [],
       "file": "95d2a0df46e62c7b860acbbf.mp3"
-    },
-    {
-      "key": "ko-KR:작다가",
-      "text": "작다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5f8b402bd535d9b152817d29.mp3"
-    },
-    {
-      "key": "ko-KR:작다만",
-      "text": "작다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d71f72e15a3f6e5c8d4149d5.mp3"
     },
     {
       "key": "ko-KR:작지만",
@@ -36803,22 +36227,6 @@
       "priority": 2,
       "lessons": [],
       "file": "e00ec1ba4a9500766596d34f.mp3"
-    },
-    {
-      "key": "ko-KR:적다가",
-      "text": "적다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e0c2b2f1df6ddf5bf574666c.mp3"
-    },
-    {
-      "key": "ko-KR:적다만",
-      "text": "적다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2976b0a3452550f5867d3e21.mp3"
     },
     {
       "key": "ko-KR:적어도",
@@ -37069,22 +36477,6 @@
       "file": "3f34e7a967f064ea7b0694fc.mp3"
     },
     {
-      "key": "ko-KR:좋다가",
-      "text": "좋다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ca185d0279d7d51e46756784.mp3"
-    },
-    {
-      "key": "ko-KR:좋다만",
-      "text": "좋다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a663d83e47406d46c77d7d53.mp3"
-    },
-    {
       "key": "ko-KR:주말만",
       "text": "주말만",
       "lang": "ko-KR",
@@ -37203,22 +36595,6 @@
       "priority": 2,
       "lessons": [],
       "file": "bc510460b8c64b89d2f70b18.mp3"
-    },
-    {
-      "key": "ko-KR:줘요가",
-      "text": "줘요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e52c5b652fa8fd32ab572f26.mp3"
-    },
-    {
-      "key": "ko-KR:줘요만",
-      "text": "줘요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6d6b784df4c2ae634bb4d4c4.mp3"
     },
     {
       "key": "ko-KR:쥐었다",
@@ -37381,22 +36757,6 @@
       "file": "49c14c57913f1857d0e8e55f.mp3"
     },
     {
-      "key": "ko-KR:집에가",
-      "text": "집에가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d90b29897e18c5f4ad10b2b7.mp3"
-    },
-    {
-      "key": "ko-KR:집에만",
-      "text": "집에만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "323be872e1b3cf9e14d8d1de.mp3"
-    },
-    {
       "key": "ko-KR:집하고",
       "text": "집하고",
       "lang": "ko-KR",
@@ -37443,22 +36803,6 @@
       "priority": 2,
       "lessons": [],
       "file": "fc417575f13f059e4cbf490b.mp3"
-    },
-    {
-      "key": "ko-KR:찍다가",
-      "text": "찍다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bb98626a72e4ee66cbf3a8ba.mp3"
-    },
-    {
-      "key": "ko-KR:찍다만",
-      "text": "찍다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f1d4f063eeecbf6ae214f621.mp3"
     },
     {
       "key": "ko-KR:찔렀다",
@@ -37675,22 +37019,6 @@
       "priority": 2,
       "lessons": [],
       "file": "7ce1e6e351e5f949853e0b08.mp3"
-    },
-    {
-      "key": "ko-KR:춥다가",
-      "text": "춥다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6dc04e3ad37d47dec1ddfe7b.mp3"
-    },
-    {
-      "key": "ko-KR:춥다만",
-      "text": "춥다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b517f4507b3db85dc1ba678c.mp3"
     },
     {
       "key": "ko-KR:치킨만",
@@ -37965,22 +37293,6 @@
       "file": "536041337d6bea9aa4d829f0.mp3"
     },
     {
-      "key": "ko-KR:크다가",
-      "text": "크다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0f6e46684cc5347617fc01b7.mp3"
-    },
-    {
-      "key": "ko-KR:크다만",
-      "text": "크다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1db83043c005703a5d562cb4.mp3"
-    },
-    {
       "key": "ko-KR:크림만",
       "text": "크림만",
       "lang": "ko-KR",
@@ -38027,22 +37339,6 @@
       "priority": 2,
       "lessons": [],
       "file": "00e2daad3af1004f80129b67.mp3"
-    },
-    {
-      "key": "ko-KR:타다가",
-      "text": "타다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f6da2a594734d8a37ded3f09.mp3"
-    },
-    {
-      "key": "ko-KR:타다만",
-      "text": "타다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f6d5b41038eaa4096ae90752.mp3"
     },
     {
       "key": "ko-KR:타이완",
@@ -38315,22 +37611,6 @@
       "priority": 2,
       "lessons": [],
       "file": "b7653e18e4a99b932c98bf75.mp3"
-    },
-    {
-      "key": "ko-KR:하다가",
-      "text": "하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a5a004619b2e85928c642447.mp3"
-    },
-    {
-      "key": "ko-KR:하다만",
-      "text": "하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b90f5633aa38948b0b9560a0.mp3"
     },
     {
       "key": "ko-KR:하루를",
@@ -38661,22 +37941,6 @@
       "file": "1bcf36508ba5e3e9e96cc0c5.mp3"
     },
     {
-      "key": "ko-KR:후에가",
-      "text": "후에가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ec11da597f4dc0542ce09249.mp3"
-    },
-    {
-      "key": "ko-KR:후에만",
-      "text": "후에만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "218982fb292593e5720ce631.mp3"
-    },
-    {
       "key": "ko-KR:훈련이",
       "text": "훈련이",
       "lang": "ko-KR",
@@ -38781,60 +38045,12 @@
       "file": "e7ce8b7587d5f556a9bacfca.mp3"
     },
     {
-      "key": "ko-KR:가렵다가",
-      "text": "가렵다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "44d16c4e0212ab623b8118a5.mp3"
-    },
-    {
-      "key": "ko-KR:가렵다만",
-      "text": "가렵다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d39632cf9459257ced5551fa.mp3"
-    },
-    {
       "key": "ko-KR:가방에서",
       "text": "가방에서",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "ff00956de1c0cefa1b55adc1.mp3"
-    },
-    {
-      "key": "ko-KR:가볍다가",
-      "text": "가볍다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5e9201c73cbb20bde3630969.mp3"
-    },
-    {
-      "key": "ko-KR:가볍다만",
-      "text": "가볍다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bf744fb6b0aa8fd67201396f.mp3"
-    },
-    {
-      "key": "ko-KR:가세요가",
-      "text": "가세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f63185faa3bc0fa04936b90c.mp3"
-    },
-    {
-      "key": "ko-KR:가세요만",
-      "text": "가세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4f61056139acc930be044107.mp3"
     },
     {
       "key": "ko-KR:가오슝만",
@@ -38891,54 +38107,6 @@
       "priority": 2,
       "lessons": [],
       "file": "daa9c316d74e52361ccf806c.mp3"
-    },
-    {
-      "key": "ko-KR:갑니까가",
-      "text": "갑니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4650630bca5c88d6695fbb5c.mp3"
-    },
-    {
-      "key": "ko-KR:갑니까만",
-      "text": "갑니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f061e7d5987800cbb7c04596.mp3"
-    },
-    {
-      "key": "ko-KR:갑니다가",
-      "text": "갑니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "69accbc4c233af5f2271bacd.mp3"
-    },
-    {
-      "key": "ko-KR:갑니다만",
-      "text": "갑니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c2e83e416f9d34531e9ef6ad.mp3"
-    },
-    {
-      "key": "ko-KR:갑시다가",
-      "text": "갑시다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "61b53ef7e4c5339b47631480.mp3"
-    },
-    {
-      "key": "ko-KR:갑시다만",
-      "text": "갑시다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f2d17288046ceb2051109954.mp3"
     },
     {
       "key": "ko-KR:강물만이",
@@ -39091,22 +38259,6 @@
       "priority": 2,
       "lessons": [],
       "file": "52c45fc4513c3e5b7f1717da.mp3"
-    },
-    {
-      "key": "ko-KR:계세요가",
-      "text": "계세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "60178d12dd2183269878b3ef.mp3"
-    },
-    {
-      "key": "ko-KR:계세요만",
-      "text": "계세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "66b54ba465b1df39702c2c84.mp3"
     },
     {
       "key": "ko-KR:고구마가",
@@ -39301,22 +38453,6 @@
       "file": "7e9cea2aa58401484268c524.mp3"
     },
     {
-      "key": "ko-KR:그래요가",
-      "text": "그래요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3d2ab6a4ca620ae877525e26.mp3"
-    },
-    {
-      "key": "ko-KR:그래요만",
-      "text": "그래요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "607cc1fb49cd12cc40129385.mp3"
-    },
-    {
       "key": "ko-KR:그랬는지",
       "text": "그랬는지",
       "lang": "ko-KR",
@@ -39419,22 +38555,6 @@
       "priority": 2,
       "lessons": [],
       "file": "f9ba51a35d6ce287a6aed317.mp3"
-    },
-    {
-      "key": "ko-KR:근처에가",
-      "text": "근처에가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ce0bd24d3c43a51a57e98bcc.mp3"
-    },
-    {
-      "key": "ko-KR:근처에만",
-      "text": "근처에만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c8cb5e1fa0bd383b528349c3.mp3"
     },
     {
       "key": "ko-KR:금요일만",
@@ -39589,22 +38709,6 @@
       "file": "4b18c2c17ab7f88c72d7e667.mp3"
     },
     {
-      "key": "ko-KR:끝나다가",
-      "text": "끝나다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "151e0f62ff3d7223b214fb77.mp3"
-    },
-    {
-      "key": "ko-KR:끝나다만",
-      "text": "끝나다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8dbfe2097bee6270d57579f1.mp3"
-    },
-    {
       "key": "ko-KR:끝났어도",
       "text": "끝났어도",
       "lang": "ko-KR",
@@ -39619,22 +38723,6 @@
       "priority": 2,
       "lessons": [],
       "file": "a75712bac18a7044dc626598.mp3"
-    },
-    {
-      "key": "ko-KR:나쁘다가",
-      "text": "나쁘다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8623645e34c0c95c3af76e80.mp3"
-    },
-    {
-      "key": "ko-KR:나쁘다만",
-      "text": "나쁘다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "175cb23d10e8a3752216aafe.mp3"
     },
     {
       "key": "ko-KR:나오면서",
@@ -39667,22 +38755,6 @@
       "priority": 2,
       "lessons": [],
       "file": "4acaf6a9761859044251a4c8.mp3"
-    },
-    {
-      "key": "ko-KR:날씨가가",
-      "text": "날씨가가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "502c2cdec77bd045ae480c2e.mp3"
-    },
-    {
-      "key": "ko-KR:날씨가만",
-      "text": "날씨가만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "06632fd6efc55b0b2eb158e6.mp3"
     },
     {
       "key": "ko-KR:날짜를만",
@@ -39741,22 +38813,6 @@
       "file": "1632214a9ad967f577e835d7.mp3"
     },
     {
-      "key": "ko-KR:납니다가",
-      "text": "납니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2e1f88a3ccf1b7daba238a12.mp3"
-    },
-    {
-      "key": "ko-KR:납니다만",
-      "text": "납니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "668714c2b22d1682ccf96d87.mp3"
-    },
-    {
       "key": "ko-KR:내려가서",
       "text": "내려가서",
       "lang": "ko-KR",
@@ -39811,22 +38867,6 @@
       "priority": 2,
       "lessons": [],
       "file": "cf0977410ebb02a60edbd856.mp3"
-    },
-    {
-      "key": "ko-KR:놀아요가",
-      "text": "놀아요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ec2d9e600d297bb97cedffe5.mp3"
-    },
-    {
-      "key": "ko-KR:놀아요만",
-      "text": "놀아요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6347e1417c2e7b1aeb3acfaf.mp3"
     },
     {
       "key": "ko-KR:누구든지",
@@ -39907,22 +38947,6 @@
       "priority": 2,
       "lessons": [],
       "file": "a95444c83e292594b60ffebf.mp3"
-    },
-    {
-      "key": "ko-KR:다음에가",
-      "text": "다음에가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b224ed701ed060dd5535436b.mp3"
-    },
-    {
-      "key": "ko-KR:다음에만",
-      "text": "다음에만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b0d2504fe522957507696673.mp3"
     },
     {
       "key": "ko-KR:다음으로",
@@ -40365,22 +39389,6 @@
       "file": "10e0c6481a3068af4e72016e.mp3"
     },
     {
-      "key": "ko-KR:마셔요가",
-      "text": "마셔요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f4b56a57c4d951748753869f.mp3"
-    },
-    {
-      "key": "ko-KR:마셔요만",
-      "text": "마셔요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "94589dacc62ff4b8aae58f1f.mp3"
-    },
-    {
       "key": "ko-KR:마스크팩",
       "text": "마스크팩",
       "lang": "ko-KR",
@@ -40469,22 +39477,6 @@
       "file": "92775a05942772be001f7090.mp3"
     },
     {
-      "key": "ko-KR:말하다가",
-      "text": "말하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1a18504284b199049c052826.mp3"
-    },
-    {
-      "key": "ko-KR:말하다만",
-      "text": "말하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fb9304845abae9e371d62378.mp3"
-    },
-    {
       "key": "ko-KR:말하더니",
       "text": "말하더니",
       "lang": "ko-KR",
@@ -40493,60 +39485,12 @@
       "file": "df67321714728ea8274c498a.mp3"
     },
     {
-      "key": "ko-KR:말해요가",
-      "text": "말해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "62d2135a25f113c93dd22b8d.mp3"
-    },
-    {
-      "key": "ko-KR:말해요만",
-      "text": "말해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e95f1a927ab23c35ca18f308.mp3"
-    },
-    {
       "key": "ko-KR:말해주고",
       "text": "말해주고",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "61b9e38a27602b05f25efc1d.mp3"
-    },
-    {
-      "key": "ko-KR:맛없다가",
-      "text": "맛없다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3d52f4796674602a8ce92930.mp3"
-    },
-    {
-      "key": "ko-KR:맛없다만",
-      "text": "맛없다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e0f0a403d798c0e53153f3bf.mp3"
-    },
-    {
-      "key": "ko-KR:맛있다가",
-      "text": "맛있다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "76af6319ee0cecc8e84cf78f.mp3"
-    },
-    {
-      "key": "ko-KR:맛있다만",
-      "text": "맛있다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "44f87aef584eabebef0acd54.mp3"
     },
     {
       "key": "ko-KR:맞대었다",
@@ -40563,22 +39507,6 @@
       "priority": 2,
       "lessons": [],
       "file": "9edeb5f8f64e66279829d326.mp3"
-    },
-    {
-      "key": "ko-KR:매워요가",
-      "text": "매워요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "16358e9e74e006d33f56ea3b.mp3"
-    },
-    {
-      "key": "ko-KR:매워요만",
-      "text": "매워요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bd24efb8186bebc5b1541cf5.mp3"
     },
     {
       "key": "ko-KR:머리가가",
@@ -40619,22 +39547,6 @@
       "priority": 2,
       "lessons": [],
       "file": "9c2e747bb8750c527268c69f.mp3"
-    },
-    {
-      "key": "ko-KR:먹어요가",
-      "text": "먹어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7ce2393b7c2a637d8d2e296e.mp3"
-    },
-    {
-      "key": "ko-KR:먹어요만",
-      "text": "먹어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4cdcf49b39dde7dfbf21fc26.mp3"
     },
     {
       "key": "ko-KR:먹으면서",
@@ -40773,54 +39685,6 @@
       "file": "5b72d793e76329924e2044ff.mp3"
     },
     {
-      "key": "ko-KR:몸이요가",
-      "text": "몸이요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "99111a8decc7beaacdaf592b.mp3"
-    },
-    {
-      "key": "ko-KR:몸이요만",
-      "text": "몸이요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c7499a01ce2ec5312a5fb002.mp3"
-    },
-    {
-      "key": "ko-KR:못해요가",
-      "text": "못해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9eb6a47285a9b9f764773f0f.mp3"
-    },
-    {
-      "key": "ko-KR:못해요만",
-      "text": "못해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "308dd40cc43ae5f036955979.mp3"
-    },
-    {
-      "key": "ko-KR:무겁다가",
-      "text": "무겁다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d4c08afd8ad927d03910f28b.mp3"
-    },
-    {
-      "key": "ko-KR:무겁다만",
-      "text": "무겁다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "336d25527d3ec991535dd5cc.mp3"
-    },
-    {
       "key": "ko-KR:무너져도",
       "text": "무너져도",
       "lang": "ko-KR",
@@ -40915,54 +39779,6 @@
       "priority": 2,
       "lessons": [],
       "file": "ba6cef49dc750fc21ccccd2b.mp3"
-    },
-    {
-      "key": "ko-KR:물이요가",
-      "text": "물이요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1e85aed112ad2861ec65c025.mp3"
-    },
-    {
-      "key": "ko-KR:물이요만",
-      "text": "물이요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "31018efa8099d7225d4fa986.mp3"
-    },
-    {
-      "key": "ko-KR:뭐예요가",
-      "text": "뭐예요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "93f33f88682b3cf3540df73a.mp3"
-    },
-    {
-      "key": "ko-KR:뭐예요만",
-      "text": "뭐예요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1cbd96488cd7cabd20d759fa.mp3"
-    },
-    {
-      "key": "ko-KR:뭡니까가",
-      "text": "뭡니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bba95bb6f8e6eb627856c370.mp3"
-    },
-    {
-      "key": "ko-KR:뭡니까만",
-      "text": "뭡니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "351f86ce69a9a81a2ebcb3ac.mp3"
     },
     {
       "key": "ko-KR:미국하고",
@@ -41221,22 +40037,6 @@
       "file": "d50f9e38369c1b727354ee5c.mp3"
     },
     {
-      "key": "ko-KR:배우다가",
-      "text": "배우다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ffec7080aec5a25256cd5b72.mp3"
-    },
-    {
-      "key": "ko-KR:배우다만",
-      "text": "배우다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4bea3b9c272128ec87f8c320.mp3"
-    },
-    {
       "key": "ko-KR:배터리가",
       "text": "배터리가",
       "lang": "ko-KR",
@@ -41437,22 +40237,6 @@
       "file": "34188ccaa3016769d55de973.mp3"
     },
     {
-      "key": "ko-KR:보세요가",
-      "text": "보세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fde2a268b07ef67219bd2076.mp3"
-    },
-    {
-      "key": "ko-KR:보세요만",
-      "text": "보세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a0bdafbb744dda8f2e7c535a.mp3"
-    },
-    {
       "key": "ko-KR:보자마자",
       "text": "보자마자",
       "lang": "ko-KR",
@@ -41493,44 +40277,12 @@
       "file": "4d59a8c15780179f88ee8fd7.mp3"
     },
     {
-      "key": "ko-KR:볼까요가",
-      "text": "볼까요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "796ba3ac72c88378a25bb2fc.mp3"
-    },
-    {
-      "key": "ko-KR:볼까요만",
-      "text": "볼까요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "487e8e5d08ab05044be1fcfd.mp3"
-    },
-    {
       "key": "ko-KR:봄이었다",
       "text": "봄이었다",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "d8f5e4acd0a69a6eb1cdfdaa.mp3"
-    },
-    {
-      "key": "ko-KR:봅니까가",
-      "text": "봅니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "efb107dd43bf3bfc1143e72a.mp3"
-    },
-    {
-      "key": "ko-KR:봅니까만",
-      "text": "봅니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a0542946ebf56c5c33fbe40c.mp3"
     },
     {
       "key": "ko-KR:부상당한",
@@ -41605,22 +40357,6 @@
       "file": "9dfa024a077b75130776760b.mp3"
     },
     {
-      "key": "ko-KR:비싸요가",
-      "text": "비싸요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "148a03fecba4a498455ad991.mp3"
-    },
-    {
-      "key": "ko-KR:비싸요만",
-      "text": "비싸요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ee8a6aa74117bdaed894fc46.mp3"
-    },
-    {
       "key": "ko-KR:비행기가",
       "text": "비행기가",
       "lang": "ko-KR",
@@ -41643,22 +40379,6 @@
       "priority": 2,
       "lessons": [],
       "file": "963e6db3f1aa433053d40a19.mp3"
-    },
-    {
-      "key": "ko-KR:빨라요가",
-      "text": "빨라요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "574b337047d93494239f0650.mp3"
-    },
-    {
-      "key": "ko-KR:빨라요만",
-      "text": "빨라요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "402e1fed8495dd42128fa89e.mp3"
     },
     {
       "key": "ko-KR:사각사각",
@@ -42261,22 +40981,6 @@
       "file": "c6d5913c3c263336469a8fee.mp3"
     },
     {
-      "key": "ko-KR:쉬세요가",
-      "text": "쉬세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a9c5fdd01e05a92cacce29a5.mp3"
-    },
-    {
-      "key": "ko-KR:쉬세요만",
-      "text": "쉬세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ef9bfbfc2bb6e429c7789d71.mp3"
-    },
-    {
       "key": "ko-KR:슈퍼마켓",
       "text": "슈퍼마켓",
       "lang": "ko-KR",
@@ -42341,44 +41045,12 @@
       "file": "6d2f02aa34a0761c53b4bae3.mp3"
     },
     {
-      "key": "ko-KR:습하다가",
-      "text": "습하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6b1f5090bc078528caf4045d.mp3"
-    },
-    {
-      "key": "ko-KR:습하다만",
-      "text": "습하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "37f806bae3bff150933a3628.mp3"
-    },
-    {
       "key": "ko-KR:시간에는",
       "text": "시간에는",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "0a6f5f2330cf710184867016.mp3"
-    },
-    {
-      "key": "ko-KR:시간이가",
-      "text": "시간이가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a4ef87636eca9083dd138c47.mp3"
-    },
-    {
-      "key": "ko-KR:시간이만",
-      "text": "시간이만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3b0ec4dc3967d3a702f53804.mp3"
     },
     {
       "key": "ko-KR:시계로가",
@@ -42453,22 +41125,6 @@
       "file": "b458a6de6b2d06e8aafa492a.mp3"
     },
     {
-      "key": "ko-KR:신어요가",
-      "text": "신어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "84fd788f09bae1b255c1bcaa.mp3"
-    },
-    {
-      "key": "ko-KR:신어요만",
-      "text": "신어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c1d57a1c9c2c99dd5cc0a879.mp3"
-    },
-    {
       "key": "ko-KR:신용카드",
       "text": "신용카드",
       "lang": "ko-KR",
@@ -42491,22 +41147,6 @@
       "priority": 2,
       "lessons": [],
       "file": "fc69f946a576997a07d8d33e.mp3"
-    },
-    {
-      "key": "ko-KR:싫어요가",
-      "text": "싫어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6a62caff03f3e9f7cf4425fc.mp3"
-    },
-    {
-      "key": "ko-KR:싫어요만",
-      "text": "싫어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "071cb9d5c3a0c6fdb374b1aa.mp3"
     },
     {
       "key": "ko-KR:싫어했다",
@@ -42597,22 +41237,6 @@
       "file": "b7aa0370e8ed4017dd64f056.mp3"
     },
     {
-      "key": "ko-KR:싶어요가",
-      "text": "싶어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b7301fcbc4c41c3442f5d64f.mp3"
-    },
-    {
-      "key": "ko-KR:싶어요만",
-      "text": "싶어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f2abaf6131b3ac032ea48b81.mp3"
-    },
-    {
       "key": "ko-KR:싸먹었다",
       "text": "싸먹었다",
       "lang": "ko-KR",
@@ -42629,44 +41253,12 @@
       "file": "ea7fbdd86e034d7dbab8a9ca.mp3"
     },
     {
-      "key": "ko-KR:씨는요가",
-      "text": "씨는요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7bad2bd7a58ce79c7996cb81.mp3"
-    },
-    {
-      "key": "ko-KR:씨는요만",
-      "text": "씨는요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "efa7cce93ac8f6213dfcc8aa.mp3"
-    },
-    {
       "key": "ko-KR:아니었다",
       "text": "아니었다",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "1d42be26aa37ab7ecba72254.mp3"
-    },
-    {
-      "key": "ko-KR:아니요가",
-      "text": "아니요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b605337c65b44ca41d0fdbf8.mp3"
-    },
-    {
-      "key": "ko-KR:아니요만",
-      "text": "아니요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2e23b4652acb030f86d96d59.mp3"
     },
     {
       "key": "ko-KR:아름다운",
@@ -42773,22 +41365,6 @@
       "file": "fa1e6d05ccebe3695d5e0c2c.mp3"
     },
     {
-      "key": "ko-KR:아프다가",
-      "text": "아프다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8b0927c00caceb47579af959.mp3"
-    },
-    {
-      "key": "ko-KR:아프다만",
-      "text": "아프다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "061d1f86539b5c37269cab56.mp3"
-    },
-    {
       "key": "ko-KR:아홉하고",
       "text": "아홉하고",
       "lang": "ko-KR",
@@ -42851,38 +41427,6 @@
       "priority": 2,
       "lessons": [],
       "file": "21f1843a7229239846203cef.mp3"
-    },
-    {
-      "key": "ko-KR:압니까가",
-      "text": "압니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "65e507a510d6255d9d890563.mp3"
-    },
-    {
-      "key": "ko-KR:압니까만",
-      "text": "압니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "581f089ad2232cdf6eaa9611.mp3"
-    },
-    {
-      "key": "ko-KR:압니다가",
-      "text": "압니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6478858a5addc35a919ea634.mp3"
-    },
-    {
-      "key": "ko-KR:압니다만",
-      "text": "압니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "95790e3bdf58fdb000593be5.mp3"
     },
     {
       "key": "ko-KR:앞에서는",
@@ -42981,22 +41525,6 @@
       "file": "6859e6812db4509fcbb4c0cb.mp3"
     },
     {
-      "key": "ko-KR:어렵다가",
-      "text": "어렵다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b772fbce48189e5bde893f51.mp3"
-    },
-    {
-      "key": "ko-KR:어렵다만",
-      "text": "어렵다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2a7afc8b10dbdbab0c592c5c.mp3"
-    },
-    {
       "key": "ko-KR:어렵지만",
       "text": "어렵지만",
       "lang": "ko-KR",
@@ -43019,22 +41547,6 @@
       "priority": 2,
       "lessons": [],
       "file": "6cfaf39aefe6dd73a4cf67fa.mp3"
-    },
-    {
-      "key": "ko-KR:없어요가",
-      "text": "없어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "94054678e7c7fb0297b676c6.mp3"
-    },
-    {
-      "key": "ko-KR:없어요만",
-      "text": "없어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f8fc1def73e1ccd5c1b4d000.mp3"
     },
     {
       "key": "ko-KR:에센스가",
@@ -43133,22 +41645,6 @@
       "file": "1b69589285148ac3b351c23e.mp3"
     },
     {
-      "key": "ko-KR:여자요가",
-      "text": "여자요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2970369200c5c74fc880de59.mp3"
-    },
-    {
-      "key": "ko-KR:여자요만",
-      "text": "여자요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a7da03a6cc89ec9eda28cea6.mp3"
-    },
-    {
       "key": "ko-KR:연습해온",
       "text": "연습해온",
       "lang": "ko-KR",
@@ -43213,38 +41709,6 @@
       "file": "61b8b2491892fba7d96492b2.mp3"
     },
     {
-      "key": "ko-KR:예뻐요가",
-      "text": "예뻐요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8e02b78879da68927f25dce9.mp3"
-    },
-    {
-      "key": "ko-KR:예뻐요만",
-      "text": "예뻐요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "457a0ef360af2a8b232e82b5.mp3"
-    },
-    {
-      "key": "ko-KR:예쁘다가",
-      "text": "예쁘다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7f508b7b7a0bc13e131934f2.mp3"
-    },
-    {
-      "key": "ko-KR:예쁘다만",
-      "text": "예쁘다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c6d88cd8af1ad65545ac9b11.mp3"
-    },
-    {
       "key": "ko-KR:예약하고",
       "text": "예약하고",
       "lang": "ko-KR",
@@ -43301,44 +41765,12 @@
       "file": "4e300c7817dbdb0f6de8a8f7.mp3"
     },
     {
-      "key": "ko-KR:옵시다가",
-      "text": "옵시다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1b0f85c93b7db9f91723a6f2.mp3"
-    },
-    {
-      "key": "ko-KR:옵시다만",
-      "text": "옵시다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7a21f5e644f3d6e0b0275e53.mp3"
-    },
-    {
       "key": "ko-KR:와이파이",
       "text": "와이파이",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "e06f60d30045061332735d05.mp3"
-    },
-    {
-      "key": "ko-KR:왔어요가",
-      "text": "왔어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a81d3f0b328fa95573130acc.mp3"
-    },
-    {
-      "key": "ko-KR:왔어요만",
-      "text": "왔어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f63c40a821a13a1fcd649e49.mp3"
     },
     {
       "key": "ko-KR:왜냐하면",
@@ -43797,22 +42229,6 @@
       "file": "60336ac366c1dc945e0c5d19.mp3"
     },
     {
-      "key": "ko-KR:이에요가",
-      "text": "이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7286e1e0720606a92ac41756.mp3"
-    },
-    {
-      "key": "ko-KR:이에요만",
-      "text": "이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7bce845148b2d8bbbeeaab1d.mp3"
-    },
-    {
       "key": "ko-KR:이쪽으로",
       "text": "이쪽으로",
       "lang": "ko-KR",
@@ -43893,22 +42309,6 @@
       "file": "5aca947fd17998be48ce4423.mp3"
     },
     {
-      "key": "ko-KR:읽어요가",
-      "text": "읽어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8749a9b11b5449d745e33333.mp3"
-    },
-    {
-      "key": "ko-KR:읽어요만",
-      "text": "읽어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "69003d90e8446487ee70e320.mp3"
-    },
-    {
       "key": "ko-KR:임관우가",
       "text": "임관우가",
       "lang": "ko-KR",
@@ -43925,38 +42325,6 @@
       "file": "51531a6dee3b7ab0c0eaf948.mp3"
     },
     {
-      "key": "ko-KR:입니까가",
-      "text": "입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0b000e5cd73ac2fcdd297171.mp3"
-    },
-    {
-      "key": "ko-KR:입니까만",
-      "text": "입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "00009d417bbf7d4bd8ec4daf.mp3"
-    },
-    {
-      "key": "ko-KR:입니다가",
-      "text": "입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3b4a25d83e92518f3e103b6c.mp3"
-    },
-    {
-      "key": "ko-KR:입니다만",
-      "text": "입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b9ba056bee9e47ae07658e29.mp3"
-    },
-    {
       "key": "ko-KR:입어보니",
       "text": "입어보니",
       "lang": "ko-KR",
@@ -43971,54 +42339,6 @@
       "priority": 2,
       "lessons": [],
       "file": "f739e20e4f4273ce74aed804.mp3"
-    },
-    {
-      "key": "ko-KR:입어요가",
-      "text": "입어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9f836d89428fb1cd5eb607a3.mp3"
-    },
-    {
-      "key": "ko-KR:입어요만",
-      "text": "입어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "80c095ac4b875d76e9deaea0.mp3"
-    },
-    {
-      "key": "ko-KR:있어요가",
-      "text": "있어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b01ccebb7f092cd42ecc5c24.mp3"
-    },
-    {
-      "key": "ko-KR:있어요만",
-      "text": "있어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e3d2cbe59c21025d50e86337.mp3"
-    },
-    {
-      "key": "ko-KR:있으면만",
-      "text": "있으면만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "16df10f541dab0dbe32d2ae0.mp3"
-    },
-    {
-      "key": "ko-KR:있으면이",
-      "text": "있으면이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "340f853e709d60be17beea9d.mp3"
     },
     {
       "key": "ko-KR:자건에게",
@@ -44107,22 +42427,6 @@
       "priority": 2,
       "lessons": [],
       "file": "79b82ae1fac9ecc2357e2c0a.mp3"
-    },
-    {
-      "key": "ko-KR:저기요가",
-      "text": "저기요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "05a4aec553474bdc8d695107.mp3"
-    },
-    {
-      "key": "ko-KR:저기요만",
-      "text": "저기요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c08885daaa6f936e2baa05e5.mp3"
     },
     {
       "key": "ko-KR:저녁을만",
@@ -44261,22 +42565,6 @@
       "file": "05b5e1e787a6d22decf35ef9.mp3"
     },
     {
-      "key": "ko-KR:좋아요가",
-      "text": "좋아요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3dd697603a69564d1b7c1584.mp3"
-    },
-    {
-      "key": "ko-KR:좋아요만",
-      "text": "좋아요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "05486e3feff2c82c62e3d18b.mp3"
-    },
-    {
       "key": "ko-KR:좋아하니",
       "text": "좋아하니",
       "lang": "ko-KR",
@@ -44299,22 +42587,6 @@
       "priority": 2,
       "lessons": [],
       "file": "20e6fd097af38d57b59fe170.mp3"
-    },
-    {
-      "key": "ko-KR:주세요가",
-      "text": "주세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "47939af8995821c62d790a34.mp3"
-    },
-    {
-      "key": "ko-KR:주세요만",
-      "text": "주세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0ff73ccc6809d7412fffb202.mp3"
     },
     {
       "key": "ko-KR:주셔서가",
@@ -44749,22 +43021,6 @@
       "file": "9b80ddb3d139216b918bb489.mp3"
     },
     {
-      "key": "ko-KR:친구를만",
-      "text": "친구를만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1297e14bdd6c540293b758c1.mp3"
-    },
-    {
-      "key": "ko-KR:친구를이",
-      "text": "친구를이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dd062c449645cff3a00b70d0.mp3"
-    },
-    {
       "key": "ko-KR:친절하게",
       "text": "친절하게",
       "lang": "ko-KR",
@@ -44853,22 +43109,6 @@
       "file": "6dafeda09f1a7868f7a12324.mp3"
     },
     {
-      "key": "ko-KR:커피를만",
-      "text": "커피를만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b4d76c741a90a0980740fc13.mp3"
-    },
-    {
-      "key": "ko-KR:커피를이",
-      "text": "커피를이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "96ca46579c8475fb52799e0b.mp3"
-    },
-    {
       "key": "ko-KR:커피숍만",
       "text": "커피숍만",
       "lang": "ko-KR",
@@ -44883,22 +43123,6 @@
       "priority": 2,
       "lessons": [],
       "file": "f6884346786cca24124c5183.mp3"
-    },
-    {
-      "key": "ko-KR:커피요가",
-      "text": "커피요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cce854518011b7d92c76122c.mp3"
-    },
-    {
-      "key": "ko-KR:커피요만",
-      "text": "커피요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "46de163fe3bcbcc6884f6b80.mp3"
     },
     {
       "key": "ko-KR:컴퓨터가",
@@ -45293,22 +43517,6 @@
       "file": "6079807213cb5328ca324f44.mp3"
     },
     {
-      "key": "ko-KR:한국에가",
-      "text": "한국에가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5324fb0f490273dbb4b9664b.mp3"
-    },
-    {
-      "key": "ko-KR:한국에만",
-      "text": "한국에만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7dfd3fc379f04fec684ea890.mp3"
-    },
-    {
       "key": "ko-KR:한국은만",
       "text": "한국은만",
       "lang": "ko-KR",
@@ -45363,54 +43571,6 @@
       "priority": 2,
       "lessons": [],
       "file": "26830a1ac554636d3d2c8394.mp3"
-    },
-    {
-      "key": "ko-KR:합니까가",
-      "text": "합니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fba103c39842d1c4cb19c3bd.mp3"
-    },
-    {
-      "key": "ko-KR:합니까만",
-      "text": "합니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "185739328dd78f2cefb8a1b3.mp3"
-    },
-    {
-      "key": "ko-KR:합니다가",
-      "text": "합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d5dcd60642cf4007386556cb.mp3"
-    },
-    {
-      "key": "ko-KR:합니다만",
-      "text": "합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f4695942896d2ed6bb6097f2.mp3"
-    },
-    {
-      "key": "ko-KR:합시다가",
-      "text": "합시다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8c1b9afde8706a1ce91fa1b0.mp3"
-    },
-    {
-      "key": "ko-KR:합시다만",
-      "text": "합시다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1d5c4392ed0553446b92940a.mp3"
     },
     {
       "key": "ko-KR:핫도그와",
@@ -45605,22 +43765,6 @@
       "file": "87df9019959f849183a2958f.mp3"
     },
     {
-      "key": "ko-KR:흐리다가",
-      "text": "흐리다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a0e964a1be5bda6ffb431607.mp3"
-    },
-    {
-      "key": "ko-KR:흐리다만",
-      "text": "흐리다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ff949911ed5cb15c30d23d07.mp3"
-    },
-    {
       "key": "ko-KR:흔들리는",
       "text": "흔들리는",
       "lang": "ko-KR",
@@ -45701,22 +43845,6 @@
       "file": "e42da779651e50caca8917ae.mp3"
     },
     {
-      "key": "ko-KR:갔습니다가",
-      "text": "갔습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2de64e3a84df2356bb59f6d5.mp3"
-    },
-    {
-      "key": "ko-KR:갔습니다만",
-      "text": "갔습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ca4f4b4f5e2497ac72a135d1.mp3"
-    },
-    {
       "key": "ko-KR:강물소리와",
       "text": "강물소리와",
       "lang": "ko-KR",
@@ -45739,22 +43867,6 @@
       "priority": 2,
       "lessons": [],
       "file": "6b57d5fe1f490a70117b04b7.mp3"
-    },
-    {
-      "key": "ko-KR:건조하다가",
-      "text": "건조하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "391e7433efa5bfd879b7e74b.mp3"
-    },
-    {
-      "key": "ko-KR:건조하다만",
-      "text": "건조하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b8edfdb8d098ab58fc36cb71.mp3"
     },
     {
       "key": "ko-KR:걸어다녔다",
@@ -45787,22 +43899,6 @@
       "priority": 2,
       "lessons": [],
       "file": "767a9dc73d036d5d516bbbe1.mp3"
-    },
-    {
-      "key": "ko-KR:결제해요가",
-      "text": "결제해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "729792b17ba1a62d52149ea4.mp3"
-    },
-    {
-      "key": "ko-KR:결제해요만",
-      "text": "결제해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dd1b39c2797b67df9f243e65.mp3"
     },
     {
       "key": "ko-KR:계산하면서",
@@ -45843,38 +43939,6 @@
       "priority": 2,
       "lessons": [],
       "file": "8e8e6c83d600ce68ee54c60a.mp3"
-    },
-    {
-      "key": "ko-KR:공부하다가",
-      "text": "공부하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dadf9366e3bc36defcc666f2.mp3"
-    },
-    {
-      "key": "ko-KR:공부하다만",
-      "text": "공부하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "43e4bd59db149e07e72ea046.mp3"
-    },
-    {
-      "key": "ko-KR:공부해요가",
-      "text": "공부해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8831064664a994aa77ce4743.mp3"
-    },
-    {
-      "key": "ko-KR:공부해요만",
-      "text": "공부해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fa215e82b309582779fa17d7.mp3"
     },
     {
       "key": "ko-KR:공원에서가",
@@ -45941,44 +44005,12 @@
       "file": "a1e6761b08897e5b9a14eb40.mp3"
     },
     {
-      "key": "ko-KR:괜찮아요가",
-      "text": "괜찮아요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2b0dc08c2e7fb8a31a221a13.mp3"
-    },
-    {
-      "key": "ko-KR:괜찮아요만",
-      "text": "괜찮아요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b81e7c395fece23aa4dcd5f6.mp3"
-    },
-    {
       "key": "ko-KR:교통카드를",
       "text": "교통카드를",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "32ce04392cb34ca37629b54f.mp3"
-    },
-    {
-      "key": "ko-KR:교환하다가",
-      "text": "교환하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "abaa950e7b57712de9e0cdc7.mp3"
-    },
-    {
-      "key": "ko-KR:교환하다만",
-      "text": "교환하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "84b0ec3561174b471a9b0377.mp3"
     },
     {
       "key": "ko-KR:구경할게요",
@@ -46011,22 +44043,6 @@
       "priority": 2,
       "lessons": [],
       "file": "b831c40feb67b57499afdf26.mp3"
-    },
-    {
-      "key": "ko-KR:그렇군요가",
-      "text": "그렇군요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "adf5d98a51fd59d2d8bdd49f.mp3"
-    },
-    {
-      "key": "ko-KR:그렇군요만",
-      "text": "그렇군요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "28539d0a7f7dde018199ec2c.mp3"
     },
     {
       "key": "ko-KR:그렇지만만",
@@ -46109,38 +44125,6 @@
       "file": "eaf5fdeca287a81c3bd1034e.mp3"
     },
     {
-      "key": "ko-KR:끝납니까가",
-      "text": "끝납니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ded1c458ca179dfab253a378.mp3"
-    },
-    {
-      "key": "ko-KR:끝납니까만",
-      "text": "끝납니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5426706e01bb6f7c2a616654.mp3"
-    },
-    {
-      "key": "ko-KR:끝납니다가",
-      "text": "끝납니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1f2710f39913690339eb8f0f.mp3"
-    },
-    {
-      "key": "ko-KR:끝납니다만",
-      "text": "끝납니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "82c0d08f02044f314c55f40c.mp3"
-    },
-    {
       "key": "ko-KR:나눠먹었다",
       "text": "나눠먹었다",
       "lang": "ko-KR",
@@ -46205,22 +44189,6 @@
       "file": "f66db1eddc8e25a193fdfead.mp3"
     },
     {
-      "key": "ko-KR:노래하다가",
-      "text": "노래하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6f5239698d825fbc9314575e.mp3"
-    },
-    {
-      "key": "ko-KR:노래하다만",
-      "text": "노래하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "48789b0439256b0db0d93b59.mp3"
-    },
-    {
       "key": "ko-KR:노점상들이",
       "text": "노점상들이",
       "lang": "ko-KR",
@@ -46275,38 +44243,6 @@
       "priority": 2,
       "lessons": [],
       "file": "96365ca7f2102225a9e279b3.mp3"
-    },
-    {
-      "key": "ko-KR:덥습니까가",
-      "text": "덥습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a78b7767cc80add4a266d9bb.mp3"
-    },
-    {
-      "key": "ko-KR:덥습니까만",
-      "text": "덥습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "dc289293858872a1ffeef679.mp3"
-    },
-    {
-      "key": "ko-KR:덥습니다가",
-      "text": "덥습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "80a0fbb0f13beb9ee6283920.mp3"
-    },
-    {
-      "key": "ko-KR:덥습니다만",
-      "text": "덥습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2dd576901c1c3f014b18a171.mp3"
     },
     {
       "key": "ko-KR:돌아보았다",
@@ -46413,76 +44349,12 @@
       "file": "d671b39a67230398db03b732.mp3"
     },
     {
-      "key": "ko-KR:드릴게요가",
-      "text": "드릴게요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ac2f7f7ce4f516ce43f81472.mp3"
-    },
-    {
-      "key": "ko-KR:드릴게요만",
-      "text": "드릴게요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c9c280fda3ddbcb6628399e9.mp3"
-    },
-    {
-      "key": "ko-KR:드릴까요가",
-      "text": "드릴까요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a707f1d8bc5332893ebe4a58.mp3"
-    },
-    {
-      "key": "ko-KR:드릴까요만",
-      "text": "드릴까요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "75fd68f1b75bea02c821829f.mp3"
-    },
-    {
-      "key": "ko-KR:드립니다가",
-      "text": "드립니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "394e23c78ececd257ae7f411.mp3"
-    },
-    {
-      "key": "ko-KR:드립니다만",
-      "text": "드립니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b2235c730c30be05408d874c.mp3"
-    },
-    {
       "key": "ko-KR:드시겠어요",
       "text": "드시겠어요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "46ada2ef734212d4cc87c4d2.mp3"
-    },
-    {
-      "key": "ko-KR:듣습니다가",
-      "text": "듣습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9a913968953bc5334f0f34a8.mp3"
-    },
-    {
-      "key": "ko-KR:듣습니다만",
-      "text": "듣습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3be91d71f553d2a0df500d3d.mp3"
     },
     {
       "key": "ko-KR:들어서였다",
@@ -46515,22 +44387,6 @@
       "priority": 2,
       "lessons": [],
       "file": "ee1e7ce3a6b35ea412dc2574.mp3"
-    },
-    {
-      "key": "ko-KR:똑같아요가",
-      "text": "똑같아요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ac5e33adbcb7a1eb2b8abc1f.mp3"
-    },
-    {
-      "key": "ko-KR:똑같아요만",
-      "text": "똑같아요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "04b3321f55dc550373739a2b.mp3"
     },
     {
       "key": "ko-KR:뛰어다니지",
@@ -46573,22 +44429,6 @@
       "file": "8b7b6d0cfd5a0e3a96f34277.mp3"
     },
     {
-      "key": "ko-KR:마십니다가",
-      "text": "마십니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "275893817b87424c66c82a98.mp3"
-    },
-    {
-      "key": "ko-KR:마십니다만",
-      "text": "마십니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "eb7fac39ec6133302d3ef860.mp3"
-    },
-    {
       "key": "ko-KR:마요네즈가",
       "text": "마요네즈가",
       "lang": "ko-KR",
@@ -46611,54 +44451,6 @@
       "priority": 2,
       "lessons": [],
       "file": "44001e14f7ac79cc9dcefb39.mp3"
-    },
-    {
-      "key": "ko-KR:많습니까가",
-      "text": "많습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b925ad5c6f4c33a8c7e23040.mp3"
-    },
-    {
-      "key": "ko-KR:많습니까만",
-      "text": "많습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a3e3f32bcd150628830cbda8.mp3"
-    },
-    {
-      "key": "ko-KR:많습니다가",
-      "text": "많습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "953373caabdf2dd4a7135d27.mp3"
-    },
-    {
-      "key": "ko-KR:많습니다만",
-      "text": "많습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "020e086c8ca29d4b1c476f4d.mp3"
-    },
-    {
-      "key": "ko-KR:맛있어요가",
-      "text": "맛있어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "96eb5d53b2c32c0f05847d0f.mp3"
-    },
-    {
-      "key": "ko-KR:맛있어요만",
-      "text": "맛있어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "43998ecb91338c35feb53467.mp3"
     },
     {
       "key": "ko-KR:망설이더니",
@@ -46693,54 +44485,6 @@
       "file": "8fe68560504df6431f0d858a.mp3"
     },
     {
-      "key": "ko-KR:맵습니다가",
-      "text": "맵습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7fd4b5c131b3aa8499d74442.mp3"
-    },
-    {
-      "key": "ko-KR:맵습니다만",
-      "text": "맵습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1e61eb57e79a72d66cdbc4d6.mp3"
-    },
-    {
-      "key": "ko-KR:먹습니까가",
-      "text": "먹습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b4f776063e18425d2174ab91.mp3"
-    },
-    {
-      "key": "ko-KR:먹습니까만",
-      "text": "먹습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8f70b55a98b7b27b8eee7c2f.mp3"
-    },
-    {
-      "key": "ko-KR:먹습니다가",
-      "text": "먹습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "296abc73403d9ad42aa96c2a.mp3"
-    },
-    {
-      "key": "ko-KR:먹습니다만",
-      "text": "먹습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e1b495b5645f92cf70bc6952.mp3"
-    },
-    {
       "key": "ko-KR:명동역에서",
       "text": "명동역에서",
       "lang": "ko-KR",
@@ -46755,22 +44499,6 @@
       "priority": 2,
       "lessons": [],
       "file": "376de8bb8f74f21368fe38bf.mp3"
-    },
-    {
-      "key": "ko-KR:모릅니다가",
-      "text": "모릅니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cc8d508332a21df71b493dec.mp3"
-    },
-    {
-      "key": "ko-KR:모릅니다만",
-      "text": "모릅니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "be080fa29e3d53705d3e2372.mp3"
     },
     {
       "key": "ko-KR:모여들었다",
@@ -46917,38 +44645,6 @@
       "file": "90045ef7e9b3493db673311e.mp3"
     },
     {
-      "key": "ko-KR:번입니까가",
-      "text": "번입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2caac9855090a67176552591.mp3"
-    },
-    {
-      "key": "ko-KR:번입니까만",
-      "text": "번입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bfb96d3cd258cf405ec2090c.mp3"
-    },
-    {
-      "key": "ko-KR:복습하다가",
-      "text": "복습하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0623aa5277729287a66b7c33.mp3"
-    },
-    {
-      "key": "ko-KR:복습하다만",
-      "text": "복습하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8c31f429aebcc852758ef8a2.mp3"
-    },
-    {
       "key": "ko-KR:볶음밥하고",
       "text": "볶음밥하고",
       "lang": "ko-KR",
@@ -46971,22 +44667,6 @@
       "priority": 2,
       "lessons": [],
       "file": "d9e5661eed4883e7dfcce293.mp3"
-    },
-    {
-      "key": "ko-KR:봤습니다가",
-      "text": "봤습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "da020560e22981df88e110bd.mp3"
-    },
-    {
-      "key": "ko-KR:봤습니다만",
-      "text": "봤습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1c5123a285f03d68a23e10c1.mp3"
     },
     {
       "key": "ko-KR:부대찌개가",
@@ -47051,22 +44731,6 @@
       "priority": 2,
       "lessons": [],
       "file": "3a120d7a3f9c72778f7f3d32.mp3"
-    },
-    {
-      "key": "ko-KR:비쌉니다가",
-      "text": "비쌉니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ea18b7b1e7257716e7852ede.mp3"
-    },
-    {
-      "key": "ko-KR:비쌉니다만",
-      "text": "비쌉니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fa978fc2191e3a3f9d8c33a0.mp3"
     },
     {
       "key": "ko-KR:비행기에서",
@@ -47157,38 +44821,6 @@
       "file": "ecce82931ecf716d1c547a2d.mp3"
     },
     {
-      "key": "ko-KR:샀습니까가",
-      "text": "샀습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "071a2c1872fb41646e807dc5.mp3"
-    },
-    {
-      "key": "ko-KR:샀습니까만",
-      "text": "샀습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "704d5ad6e3fe553d6251033b.mp3"
-    },
-    {
-      "key": "ko-KR:샀습니다가",
-      "text": "샀습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6adea0440651aadefc594f71.mp3"
-    },
-    {
-      "key": "ko-KR:샀습니다만",
-      "text": "샀습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "924c1f0dd9889f4e1d3318cf.mp3"
-    },
-    {
       "key": "ko-KR:샌드위치가",
       "text": "샌드위치가",
       "lang": "ko-KR",
@@ -47229,44 +44861,12 @@
       "file": "186ea0edda192a9dd08ab937.mp3"
     },
     {
-      "key": "ko-KR:샤워하다가",
-      "text": "샤워하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "79c0226b1247ed18dbffdd53.mp3"
-    },
-    {
-      "key": "ko-KR:샤워하다만",
-      "text": "샤워하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "50484f8a4dc566ca8b333c36.mp3"
-    },
-    {
       "key": "ko-KR:서울역에서",
       "text": "서울역에서",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "847f9cbba501601af5fa0847.mp3"
-    },
-    {
-      "key": "ko-KR:세수하다가",
-      "text": "세수하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ad1631a9abd530549fba6001.mp3"
-    },
-    {
-      "key": "ko-KR:세수하다만",
-      "text": "세수하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5929848030ba4d5fa1eb9a98.mp3"
     },
     {
       "key": "ko-KR:소문이었다",
@@ -47349,22 +44949,6 @@
       "file": "646fc4cf635d7db8deef165a.mp3"
     },
     {
-      "key": "ko-KR:시원하다가",
-      "text": "시원하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "018d673681e144b896ef29a9.mp3"
-    },
-    {
-      "key": "ko-KR:시원하다만",
-      "text": "시원하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a0b0fbb954b8b32b074ff149.mp3"
-    },
-    {
       "key": "ko-KR:시작하고가",
       "text": "시작하고가",
       "lang": "ko-KR",
@@ -47381,22 +44965,6 @@
       "file": "099d3570bed6b102d184a399.mp3"
     },
     {
-      "key": "ko-KR:시작하다가",
-      "text": "시작하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "57470bdf98026d4c7e69294e.mp3"
-    },
-    {
-      "key": "ko-KR:시작하다만",
-      "text": "시작하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ecf36f1f9658b3424f31fb2e.mp3"
-    },
-    {
       "key": "ko-KR:식당에서가",
       "text": "식당에서가",
       "lang": "ko-KR",
@@ -47411,22 +44979,6 @@
       "priority": 2,
       "lessons": [],
       "file": "b47580e56e5a6abfd1a8fe64.mp3"
-    },
-    {
-      "key": "ko-KR:싫어해요가",
-      "text": "싫어해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e1c181bc11d6f4a1b7c72058.mp3"
-    },
-    {
-      "key": "ko-KR:싫어해요만",
-      "text": "싫어해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7452da21d1fbe7abdb9cca5e.mp3"
     },
     {
       "key": "ko-KR:십육일에가",
@@ -47451,54 +45003,6 @@
       "priority": 2,
       "lessons": [],
       "file": "5d7b088ca03a0ba431872997.mp3"
-    },
-    {
-      "key": "ko-KR:아니에요가",
-      "text": "아니에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "708372f1a2d30a195f0d9b50.mp3"
-    },
-    {
-      "key": "ko-KR:아니에요만",
-      "text": "아니에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9e51e77fe534d3aadd3bc2ab.mp3"
-    },
-    {
-      "key": "ko-KR:아닙니까가",
-      "text": "아닙니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "01935239af4b8958250a1a7f.mp3"
-    },
-    {
-      "key": "ko-KR:아닙니까만",
-      "text": "아닙니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f470a410df3fa18a40b2b360.mp3"
-    },
-    {
-      "key": "ko-KR:아닙니다가",
-      "text": "아닙니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7d4e5ac8f09d3d21c6c81517.mp3"
-    },
-    {
-      "key": "ko-KR:아닙니다만",
-      "text": "아닙니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "310072a9e4b2c981935d865d.mp3"
     },
     {
       "key": "ko-KR:아름다웠다",
@@ -47533,60 +45037,12 @@
       "file": "3b408f94ff3c2c8d42e0b01e.mp3"
     },
     {
-      "key": "ko-KR:아픕니까가",
-      "text": "아픕니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "29102ed41ca41cfb423da22e.mp3"
-    },
-    {
-      "key": "ko-KR:아픕니까만",
-      "text": "아픕니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "41d8e7887f621fd08c660c40.mp3"
-    },
-    {
-      "key": "ko-KR:아픕니다가",
-      "text": "아픕니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4d57df27259152b6264ebe87.mp3"
-    },
-    {
-      "key": "ko-KR:아픕니다만",
-      "text": "아픕니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a546eba1af65c7a2e0819ede.mp3"
-    },
-    {
       "key": "ko-KR:안내소에서",
       "text": "안내소에서",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "2c8ba6ba6d36d262544caa33.mp3"
-    },
-    {
-      "key": "ko-KR:알겠어요가",
-      "text": "알겠어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d09fa92779035566dfa6baee.mp3"
-    },
-    {
-      "key": "ko-KR:알겠어요만",
-      "text": "알겠어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c046f8700be7930fef5d2ef9.mp3"
     },
     {
       "key": "ko-KR:야시장이가",
@@ -47629,22 +45085,6 @@
       "file": "501918d40904a9aad69dab9d.mp3"
     },
     {
-      "key": "ko-KR:어떡해요가",
-      "text": "어떡해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "35960316d27021d5fcb9f0d2.mp3"
-    },
-    {
-      "key": "ko-KR:어떡해요만",
-      "text": "어떡해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "48f681d6d746a6209d3fa308.mp3"
-    },
-    {
       "key": "ko-KR:어색했지만",
       "text": "어색했지만",
       "lang": "ko-KR",
@@ -47675,54 +45115,6 @@
       "priority": 2,
       "lessons": [],
       "file": "bc3b7166fdb0414059f68489.mp3"
-    },
-    {
-      "key": "ko-KR:얼마예요가",
-      "text": "얼마예요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e2753c8b1ee0e8126d5371ca.mp3"
-    },
-    {
-      "key": "ko-KR:얼마예요만",
-      "text": "얼마예요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7c81777b022a75b3038fdf4b.mp3"
-    },
-    {
-      "key": "ko-KR:없습니까가",
-      "text": "없습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "66a0ad42173f24447d2984db.mp3"
-    },
-    {
-      "key": "ko-KR:없습니까만",
-      "text": "없습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7e003b6a8ee6e41f400e9551.mp3"
-    },
-    {
-      "key": "ko-KR:없습니다가",
-      "text": "없습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "148b65c5b49911fa3209e9f6.mp3"
-    },
-    {
-      "key": "ko-KR:없습니다만",
-      "text": "없습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a3260258188b26cd8dce492a.mp3"
     },
     {
       "key": "ko-KR:엘리베이터",
@@ -47787,22 +45179,6 @@
       "priority": 2,
       "lessons": [],
       "file": "2fecd1f8974c2372f93b151e.mp3"
-    },
-    {
-      "key": "ko-KR:연락해요가",
-      "text": "연락해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f05789ad6971bc109df2ca25.mp3"
-    },
-    {
-      "key": "ko-KR:연락해요만",
-      "text": "연락해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "335b748d4583857e73991be6.mp3"
     },
     {
       "key": "ko-KR:연습하는만",
@@ -47877,22 +45253,6 @@
       "file": "89fa601b012fd5c7e8c55c8e.mp3"
     },
     {
-      "key": "ko-KR:왔습니다가",
-      "text": "왔습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "838f10f6e000580b3b46ae7d.mp3"
-    },
-    {
-      "key": "ko-KR:왔습니다만",
-      "text": "왔습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "de7d5cf8ae397afb7ce9bab6.mp3"
-    },
-    {
       "key": "ko-KR:운동하고가",
       "text": "운동하고가",
       "lang": "ko-KR",
@@ -47907,38 +45267,6 @@
       "priority": 2,
       "lessons": [],
       "file": "920f1f966604fc4f699247ba.mp3"
-    },
-    {
-      "key": "ko-KR:운동하다가",
-      "text": "운동하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a10155ecfcbcaeb0f31c56ab.mp3"
-    },
-    {
-      "key": "ko-KR:운동하다만",
-      "text": "운동하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a36b7795177e4d0e627b2fa6.mp3"
-    },
-    {
-      "key": "ko-KR:운동해요가",
-      "text": "운동해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bda072259826b46841956db9.mp3"
-    },
-    {
-      "key": "ko-KR:운동해요만",
-      "text": "운동해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "eafdcbf2daa0b397f6db9f68.mp3"
     },
     {
       "key": "ko-KR:울려퍼졌다",
@@ -47987,22 +45315,6 @@
       "priority": 2,
       "lessons": [],
       "file": "9f11e3ce13d5784111b4033d.mp3"
-    },
-    {
-      "key": "ko-KR:이라고요가",
-      "text": "이라고요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f11e0aaa2a641eff6c441d69.mp3"
-    },
-    {
-      "key": "ko-KR:이라고요만",
-      "text": "이라고요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5c3c36f4558002c01bd889d4.mp3"
     },
     {
       "key": "ko-KR:이상하게도",
@@ -48085,102 +45397,6 @@
       "file": "022cca908fa45f85b1b1cc27.mp3"
     },
     {
-      "key": "ko-KR:일어나다가",
-      "text": "일어나다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cfb87a78fb3ae2060c987b76.mp3"
-    },
-    {
-      "key": "ko-KR:일어나다만",
-      "text": "일어나다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9b1ddcadae644eb019027a4b.mp3"
-    },
-    {
-      "key": "ko-KR:일이에요가",
-      "text": "일이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1b849e95643c2e95286f3593.mp3"
-    },
-    {
-      "key": "ko-KR:일이에요만",
-      "text": "일이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cfcf41c6a5ba4a9a2ce4ab6b.mp3"
-    },
-    {
-      "key": "ko-KR:읽습니까가",
-      "text": "읽습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "04a374d53f88f46675dec0e9.mp3"
-    },
-    {
-      "key": "ko-KR:읽습니까만",
-      "text": "읽습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9a73a72f3243e8a144a23a4c.mp3"
-    },
-    {
-      "key": "ko-KR:읽습니다가",
-      "text": "읽습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "df82aea29d9c8257a1dbac12.mp3"
-    },
-    {
-      "key": "ko-KR:읽습니다만",
-      "text": "읽습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f2e330ce3a59b8996489ff81.mp3"
-    },
-    {
-      "key": "ko-KR:있습니까가",
-      "text": "있습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5ebd6b2c0e6e08425f8620c8.mp3"
-    },
-    {
-      "key": "ko-KR:있습니까만",
-      "text": "있습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "306cb58824ea0a54e79a64b7.mp3"
-    },
-    {
-      "key": "ko-KR:있습니다가",
-      "text": "있습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3f3ad54d7ff6cbf69d2bebad.mp3"
-    },
-    {
-      "key": "ko-KR:있습니다만",
-      "text": "있습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "55ee457f5e504c13a84ab170.mp3"
-    },
-    {
       "key": "ko-KR:자건이라는",
       "text": "자건이라는",
       "lang": "ko-KR",
@@ -48195,38 +45411,6 @@
       "priority": 2,
       "lessons": [],
       "file": "ceb2a7d8928b7d0683fd41a1.mp3"
-    },
-    {
-      "key": "ko-KR:잠시만요가",
-      "text": "잠시만요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2954456e96e34f4676dd8150.mp3"
-    },
-    {
-      "key": "ko-KR:잠시만요만",
-      "text": "잠시만요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cbdcb211fe91160c0c2b8673.mp3"
-    },
-    {
-      "key": "ko-KR:잤습니다가",
-      "text": "잤습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2c9c2b54c451de44e1c3e245.mp3"
-    },
-    {
-      "key": "ko-KR:잤습니다만",
-      "text": "잤습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a6b3e36fd78855e35a01ccf9.mp3"
     },
     {
       "key": "ko-KR:재미있게가",
@@ -48333,22 +45517,6 @@
       "file": "1b8ea309218e7882747832ac.mp3"
     },
     {
-      "key": "ko-KR:좋습니다가",
-      "text": "좋습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0672ef21933885d305fe5bbf.mp3"
-    },
-    {
-      "key": "ko-KR:좋습니다만",
-      "text": "좋습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7fe7f3626f8a5bdbf46b9a62.mp3"
-    },
-    {
       "key": "ko-KR:좋아하는만",
       "text": "좋아하는만",
       "lang": "ko-KR",
@@ -48363,22 +45531,6 @@
       "priority": 2,
       "lessons": [],
       "file": "3bc20d42d8c2e71af2096db8.mp3"
-    },
-    {
-      "key": "ko-KR:좋아해요가",
-      "text": "좋아해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "473e3b158036f5d52e231999.mp3"
-    },
-    {
-      "key": "ko-KR:좋아해요만",
-      "text": "좋아해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2c8a84c2fc577e8275fe711f.mp3"
     },
     {
       "key": "ko-KR:죄송한데요",
@@ -48405,22 +45557,6 @@
       "file": "7ef796be5b31b168f8f669e1.mp3"
     },
     {
-      "key": "ko-KR:죽습니다가",
-      "text": "죽습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "abd6f25d5a52c5273a1ec40d.mp3"
-    },
-    {
-      "key": "ko-KR:죽습니다만",
-      "text": "죽습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "526211158aa4596679a96918.mp3"
-    },
-    {
       "key": "ko-KR:중얼거렸다",
       "text": "중얼거렸다",
       "lang": "ko-KR",
@@ -48435,22 +45571,6 @@
       "priority": 2,
       "lessons": [],
       "file": "0df1b0e1c04b6c7aca36ea26.mp3"
-    },
-    {
-      "key": "ko-KR:지킵니다가",
-      "text": "지킵니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ddc854aaa57a5bf9eba75426.mp3"
-    },
-    {
-      "key": "ko-KR:지킵니다만",
-      "text": "지킵니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0627b3ccf3282dc301406419.mp3"
     },
     {
       "key": "ko-KR:지하철로가",
@@ -48509,22 +45629,6 @@
       "file": "d33d7897f6fde6054c82ba61.mp3"
     },
     {
-      "key": "ko-KR:챙겼지요가",
-      "text": "챙겼지요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b1ce8baae147ba0314bd36bf.mp3"
-    },
-    {
-      "key": "ko-KR:챙겼지요만",
-      "text": "챙겼지요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5d1108a357cb1bb996eb4682.mp3"
-    },
-    {
       "key": "ko-KR:천국이라는",
       "text": "천국이라는",
       "lang": "ko-KR",
@@ -48563,38 +45667,6 @@
       "priority": 2,
       "lessons": [],
       "file": "1e81f9e61e2a8e381e79a66c.mp3"
-    },
-    {
-      "key": "ko-KR:춥습니다가",
-      "text": "춥습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2bc35acba2260c864ec8a2ed.mp3"
-    },
-    {
-      "key": "ko-KR:춥습니다만",
-      "text": "춥습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "97fa1f8fc66c68d5b250e209.mp3"
-    },
-    {
-      "key": "ko-KR:친구하고가",
-      "text": "친구하고가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "92ae326d860c0d075fb5d167.mp3"
-    },
-    {
-      "key": "ko-KR:친구하고만",
-      "text": "친구하고만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "130f41895647789c308039e8.mp3"
     },
     {
       "key": "ko-KR:카드번호가",
@@ -48781,22 +45853,6 @@
       "file": "0da55edc0f46951534a334f1.mp3"
     },
     {
-      "key": "ko-KR:피곤하다가",
-      "text": "피곤하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "af7d2150c3db6c83c1b0641e.mp3"
-    },
-    {
-      "key": "ko-KR:피곤하다만",
-      "text": "피곤하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "902268b6389cf7f022bb5ff4.mp3"
-    },
-    {
       "key": "ko-KR:피곤해서가",
       "text": "피곤해서가",
       "lang": "ko-KR",
@@ -48811,22 +45867,6 @@
       "priority": 2,
       "lessons": [],
       "file": "b5d2a0be21316e6c275ad7b0.mp3"
-    },
-    {
-      "key": "ko-KR:피곤해요가",
-      "text": "피곤해요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "19441d4edaca1f3e10c6cb5d.mp3"
-    },
-    {
-      "key": "ko-KR:피곤해요만",
-      "text": "피곤해요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e28fec366e440aed046cddc9.mp3"
     },
     {
       "key": "ko-KR:필요하세요",
@@ -48885,44 +45925,12 @@
       "file": "39b240b75f2f8986d2dcfaa5.mp3"
     },
     {
-      "key": "ko-KR:한국어를만",
-      "text": "한국어를만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a80f2199e625cabb9d58fa07.mp3"
-    },
-    {
-      "key": "ko-KR:한국어를이",
-      "text": "한국어를이",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8c201c6f7cdf6a8fd0d9efdf.mp3"
-    },
-    {
       "key": "ko-KR:한국에서의",
       "text": "한국에서의",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "62b74cb8098fcf1f1dfb724a.mp3"
-    },
-    {
-      "key": "ko-KR:했습니까가",
-      "text": "했습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "d515e5c4a3abb55f758e34b5.mp3"
-    },
-    {
-      "key": "ko-KR:했습니까만",
-      "text": "했습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "18a053538dff92bea2d7f322.mp3"
     },
     {
       "key": "ko-KR:행복이었다",
@@ -49005,22 +46013,6 @@
       "file": "a811d18393c82438f96004d8.mp3"
     },
     {
-      "key": "ko-KR:환불하다가",
-      "text": "환불하다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4d3d5810e4c34a77a3426f2e.mp3"
-    },
-    {
-      "key": "ko-KR:환불하다만",
-      "text": "환불하다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "420293f5a48a2802f3e7cdf7.mp3"
-    },
-    {
       "key": "ko-KR:휴대폰이가",
       "text": "휴대폰이가",
       "lang": "ko-KR",
@@ -49045,70 +46037,6 @@
       "file": "4ede233d94d629c6ec06b657.mp3"
     },
     {
-      "key": "ko-KR:감사합니다가",
-      "text": "감사합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "687bb5edc7c9aca73cbccaa1.mp3"
-    },
-    {
-      "key": "ko-KR:감사합니다만",
-      "text": "감사합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "89696af6f28fa890241d2279.mp3"
-    },
-    {
-      "key": "ko-KR:공부합니다가",
-      "text": "공부합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f7421a209e8fe6d14d201630.mp3"
-    },
-    {
-      "key": "ko-KR:공부합니다만",
-      "text": "공부합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3652f73cdf33ebd4aa8c6586.mp3"
-    },
-    {
-      "key": "ko-KR:괜찮습니다가",
-      "text": "괜찮습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fc307d1308ce2fb350ecee66.mp3"
-    },
-    {
-      "key": "ko-KR:괜찮습니다만",
-      "text": "괜찮습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6ee5455d6b5821f9274bdde1.mp3"
-    },
-    {
-      "key": "ko-KR:그렇습니까가",
-      "text": "그렇습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ca3ae5d6a543ac39f72d2a08.mp3"
-    },
-    {
-      "key": "ko-KR:그렇습니까만",
-      "text": "그렇습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b515d2d30accca3d06ca3996.mp3"
-    },
-    {
       "key": "ko-KR:기다려주시오",
       "text": "기다려주시오",
       "lang": "ko-KR",
@@ -49117,60 +46045,12 @@
       "file": "8a7c33c878bd8c73be6a7f44.mp3"
     },
     {
-      "key": "ko-KR:기다리세요가",
-      "text": "기다리세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "45dc38467ffbd9d2f433fe46.mp3"
-    },
-    {
-      "key": "ko-KR:기다리세요만",
-      "text": "기다리세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "232bc6189b530199d3c3ac07.mp3"
-    },
-    {
-      "key": "ko-KR:내일이에요가",
-      "text": "내일이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "452b4eddff302865fcaf360c.mp3"
-    },
-    {
-      "key": "ko-KR:내일이에요만",
-      "text": "내일이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "510e433efcf9b7b9475bc793.mp3"
-    },
-    {
       "key": "ko-KR:도와드릴까요",
       "text": "도와드릴까요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "2c38785052d15db36a8769a3.mp3"
-    },
-    {
-      "key": "ko-KR:도와주세요가",
-      "text": "도와주세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c34357595d91a2913a457ae3.mp3"
-    },
-    {
-      "key": "ko-KR:도와주세요만",
-      "text": "도와주세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "df956db0d633eebbe9f86156.mp3"
     },
     {
       "key": "ko-KR:드럭스토어가",
@@ -49229,70 +46109,6 @@
       "file": "a4e8d8e7432f8e26862dba53.mp3"
     },
     {
-      "key": "ko-KR:로션이에요가",
-      "text": "로션이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7d9c52c1b7b60588ae5b14a9.mp3"
-    },
-    {
-      "key": "ko-KR:로션이에요만",
-      "text": "로션이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cffdc09ccaf238cd702a8156.mp3"
-    },
-    {
-      "key": "ko-KR:마셨습니다가",
-      "text": "마셨습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5a7f80bdbfbdb1a1cfa4d0d5.mp3"
-    },
-    {
-      "key": "ko-KR:마셨습니다만",
-      "text": "마셨습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b94d5ad7c4b465cd18f38bba.mp3"
-    },
-    {
-      "key": "ko-KR:만났습니까가",
-      "text": "만났습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6bfc4982cdfe8f2bce99e881.mp3"
-    },
-    {
-      "key": "ko-KR:만났습니까만",
-      "text": "만났습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "449a5051acd5738cbd286d6d.mp3"
-    },
-    {
-      "key": "ko-KR:만났습니다가",
-      "text": "만났습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4b05bf79f0354fea3619fd2f.mp3"
-    },
-    {
-      "key": "ko-KR:만났습니다만",
-      "text": "만났습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c7d2382ed1c54c10899f27d5.mp3"
-    },
-    {
       "key": "ko-KR:만오천원에가",
       "text": "만오천원에가",
       "lang": "ko-KR",
@@ -49307,22 +46123,6 @@
       "priority": 2,
       "lessons": [],
       "file": "0a7527f1eacbc41e9398654a.mp3"
-    },
-    {
-      "key": "ko-KR:맛있습니다가",
-      "text": "맛있습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6c8d83de5fd38cdde6e3f63f.mp3"
-    },
-    {
-      "key": "ko-KR:맛있습니다만",
-      "text": "맛있습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "322d30f2f1c073e2d3d5bf7c.mp3"
     },
     {
       "key": "ko-KR:맥도날드가가",
@@ -49341,76 +46141,12 @@
       "file": "277c90739fccfb11a6f0cc05.mp3"
     },
     {
-      "key": "ko-KR:먹었습니까가",
-      "text": "먹었습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bc2e6fa338092490c6dfee3c.mp3"
-    },
-    {
-      "key": "ko-KR:먹었습니까만",
-      "text": "먹었습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f4fb76b75f1fd1bd354ddee4.mp3"
-    },
-    {
-      "key": "ko-KR:먹었습니다가",
-      "text": "먹었습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ab2d05fa88cba9379b3ac15f.mp3"
-    },
-    {
-      "key": "ko-KR:먹었습니다만",
-      "text": "먹었습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0ccf678bd79080bdeacde83f.mp3"
-    },
-    {
-      "key": "ko-KR:며칠이에요가",
-      "text": "며칠이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "098cbdfe14d89eaaec5067f9.mp3"
-    },
-    {
-      "key": "ko-KR:며칠이에요만",
-      "text": "며칠이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b9f77fff51a02ed7c96d66f7.mp3"
-    },
-    {
       "key": "ko-KR:무거워졌지만",
       "text": "무거워졌지만",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "568d16a36c1145c9390b6f12.mp3"
-    },
-    {
-      "key": "ko-KR:반갑습니다가",
-      "text": "반갑습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "64f400b9b6c12a17f543c773.mp3"
-    },
-    {
-      "key": "ko-KR:반갑습니다만",
-      "text": "반갑습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "23e6e2deab70645f8fbf3da8.mp3"
     },
     {
       "key": "ko-KR:백화점에서가",
@@ -49429,92 +46165,12 @@
       "file": "54f3347298e408f02584eb3b.mp3"
     },
     {
-      "key": "ko-KR:부산입니다가",
-      "text": "부산입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f06501b7a55082b913dda4e9.mp3"
-    },
-    {
-      "key": "ko-KR:부산입니다만",
-      "text": "부산입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8742a0e30d743a81799947a5.mp3"
-    },
-    {
-      "key": "ko-KR:불편합니까가",
-      "text": "불편합니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "141f8b0315b831cdd9de8e0f.mp3"
-    },
-    {
-      "key": "ko-KR:불편합니까만",
-      "text": "불편합니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ad3df7cce11bfcd05fb3aa21.mp3"
-    },
-    {
       "key": "ko-KR:사람이니까요",
       "text": "사람이니까요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "62dafb7a603e82aef2e81a97.mp3"
-    },
-    {
-      "key": "ko-KR:사람이에요가",
-      "text": "사람이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c6b2de2ce893b1aebfe01bf3.mp3"
-    },
-    {
-      "key": "ko-KR:사람이에요만",
-      "text": "사람이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "601caf8eb537ad17a839992f.mp3"
-    },
-    {
-      "key": "ko-KR:사람입니까가",
-      "text": "사람입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b794352ecbe18639e539753d.mp3"
-    },
-    {
-      "key": "ko-KR:사람입니까만",
-      "text": "사람입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9c542c3084d0f2fb81d8908f.mp3"
-    },
-    {
-      "key": "ko-KR:사람입니다가",
-      "text": "사람입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6b67d467dd92b6a0f963c58c.mp3"
-    },
-    {
-      "key": "ko-KR:사람입니다만",
-      "text": "사람입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0a3cdd0e65f9181c8adffc49.mp3"
     },
     {
       "key": "ko-KR:사천구십육만",
@@ -49573,38 +46229,6 @@
       "file": "b7292ad6c638620164ef330e.mp3"
     },
     {
-      "key": "ko-KR:시원합니다가",
-      "text": "시원합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "467bb6ddb177e0f00879f64c.mp3"
-    },
-    {
-      "key": "ko-KR:시원합니다만",
-      "text": "시원합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c5e3d034e2cfe1d81c9875d2.mp3"
-    },
-    {
-      "key": "ko-KR:아름다워요가",
-      "text": "아름다워요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f76b7597651a4160d0666e6e.mp3"
-    },
-    {
-      "key": "ko-KR:아름다워요만",
-      "text": "아름다워요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5fe6ad1b9daba173b744cfef.mp3"
-    },
-    {
       "key": "ko-KR:아메리카노가",
       "text": "아메리카노가",
       "lang": "ko-KR",
@@ -49645,172 +46269,12 @@
       "file": "6cbbae1de50f674fb3bcfe49.mp3"
     },
     {
-      "key": "ko-KR:안녕하세요가",
-      "text": "안녕하세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3f6dca8bab9f933eb6836039.mp3"
-    },
-    {
-      "key": "ko-KR:안녕하세요만",
-      "text": "안녕하세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "17f22d03ad53f79ab6516fd1.mp3"
-    },
-    {
-      "key": "ko-KR:알겠습니다가",
-      "text": "알겠습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c5b255c9ea993e840d260e18.mp3"
-    },
-    {
-      "key": "ko-KR:알겠습니다만",
-      "text": "알겠습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "39f92dc50815b9df371920aa.mp3"
-    },
-    {
       "key": "ko-KR:알아듣는건지",
       "text": "알아듣는건지",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "c4e3eb0de5da9c3a194b5d0f.mp3"
-    },
-    {
-      "key": "ko-KR:어디입니까가",
-      "text": "어디입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bf0e494bbcec860f9a5aca6e.mp3"
-    },
-    {
-      "key": "ko-KR:어디입니까만",
-      "text": "어디입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4a5c64f2a41421720052c055.mp3"
-    },
-    {
-      "key": "ko-KR:어떻습니까가",
-      "text": "어떻습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fb9b06d626ab83f3e62babf6.mp3"
-    },
-    {
-      "key": "ko-KR:어떻습니까만",
-      "text": "어떻습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4c924ca5c25fa81fe4741009.mp3"
-    },
-    {
-      "key": "ko-KR:어렵습니까가",
-      "text": "어렵습니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4ad7d0311bdd6dd1ceb2bfbc.mp3"
-    },
-    {
-      "key": "ko-KR:어렵습니까만",
-      "text": "어렵습니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e219518ffe3911e1e8b919c4.mp3"
-    },
-    {
-      "key": "ko-KR:어렵습니다가",
-      "text": "어렵습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e81f64e97833b6903463f66a.mp3"
-    },
-    {
-      "key": "ko-KR:어렵습니다만",
-      "text": "어렵습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "260cf386a9cbdd71474e6339.mp3"
-    },
-    {
-      "key": "ko-KR:어서오세요가",
-      "text": "어서오세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "62f17dce4e54e738bfea5c19.mp3"
-    },
-    {
-      "key": "ko-KR:어서오세요만",
-      "text": "어서오세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "39b3fc61ae1985d2d03c8fb6.mp3"
-    },
-    {
-      "key": "ko-KR:언제입니까가",
-      "text": "언제입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "90f787f6ad93515264a16582.mp3"
-    },
-    {
-      "key": "ko-KR:언제입니까만",
-      "text": "언제입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0e9707ef87cdea1d8faf61a8.mp3"
-    },
-    {
-      "key": "ko-KR:얼마입니까가",
-      "text": "얼마입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e4386b77b563e1c753616643.mp3"
-    },
-    {
-      "key": "ko-KR:얼마입니까만",
-      "text": "얼마입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "69b6dfba4bc095fe92f44599.mp3"
-    },
-    {
-      "key": "ko-KR:에센스예요가",
-      "text": "에센스예요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3e1a08724213b62eb62dfd42.mp3"
-    },
-    {
-      "key": "ko-KR:에센스예요만",
-      "text": "에센스예요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e40277d6533b86e7be1e666f.mp3"
     },
     {
       "key": "ko-KR:에스프레소가",
@@ -49829,60 +46293,12 @@
       "file": "afdf81ed21b8ba3b3e80ad9a.mp3"
     },
     {
-      "key": "ko-KR:여자입니다가",
-      "text": "여자입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "105c635d21d67b8c6c81e104.mp3"
-    },
-    {
-      "key": "ko-KR:여자입니다만",
-      "text": "여자입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bb90fa7e25e98b559d140d1f.mp3"
-    },
-    {
-      "key": "ko-KR:연습할까요가",
-      "text": "연습할까요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "895fa982a9d87ff9344b02ff.mp3"
-    },
-    {
-      "key": "ko-KR:연습할까요만",
-      "text": "연습할까요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ba5db5bfa550bf61cbfc1519.mp3"
-    },
-    {
       "key": "ko-KR:열시까지예요",
       "text": "열시까지예요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "034b2b6e2db891816879ec81.mp3"
-    },
-    {
-      "key": "ko-KR:예약했어요가",
-      "text": "예약했어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1da0d4ced2d819f4995fdeae.mp3"
-    },
-    {
-      "key": "ko-KR:예약했어요만",
-      "text": "예약했어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "037902922f544df7ff38e651.mp3"
     },
     {
       "key": "ko-KR:오천이백원만",
@@ -49949,102 +46365,6 @@
       "file": "97910038a11607dd3a0242a6.mp3"
     },
     {
-      "key": "ko-KR:요가입니까가",
-      "text": "요가입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "91d4cd38ebe192a5cea7e8c4.mp3"
-    },
-    {
-      "key": "ko-KR:요가입니까만",
-      "text": "요가입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "97527827c3eb694e76b63cc6.mp3"
-    },
-    {
-      "key": "ko-KR:요가입니다가",
-      "text": "요가입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "94875986502521250e2acf64.mp3"
-    },
-    {
-      "key": "ko-KR:요가입니다만",
-      "text": "요가입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b74f998cff59c0cc9cc1a641.mp3"
-    },
-    {
-      "key": "ko-KR:요일이에요가",
-      "text": "요일이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "cdf6b7ac68f7bcdb801898e2.mp3"
-    },
-    {
-      "key": "ko-KR:요일이에요만",
-      "text": "요일이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1eb73c6a88b488230dea383a.mp3"
-    },
-    {
-      "key": "ko-KR:운동합니까가",
-      "text": "운동합니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c5113fb9d4f9f6c60281b4c7.mp3"
-    },
-    {
-      "key": "ko-KR:운동합니까만",
-      "text": "운동합니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3d1aab51cfe50b0a2373373d.mp3"
-    },
-    {
-      "key": "ko-KR:운동합니다가",
-      "text": "운동합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "fd6a9a916dbd65feb9a9951c.mp3"
-    },
-    {
-      "key": "ko-KR:운동합니다만",
-      "text": "운동합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "35a2b2dc77662dc93bb98929.mp3"
-    },
-    {
-      "key": "ko-KR:유미입니다가",
-      "text": "유미입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5aa88ae8d8b0735dc505701c.mp3"
-    },
-    {
-      "key": "ko-KR:유미입니다만",
-      "text": "유미입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3310a101f77cc851377931c9.mp3"
-    },
-    {
       "key": "ko-KR:육백오십구가",
       "text": "육백오십구가",
       "lang": "ko-KR",
@@ -50083,54 +46403,6 @@
       "priority": 2,
       "lessons": [],
       "file": "691afadd1c7fc20cc2b85366.mp3"
-    },
-    {
-      "key": "ko-KR:음식이에요가",
-      "text": "음식이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1b5e65919428d07465bbe6eb.mp3"
-    },
-    {
-      "key": "ko-KR:음식이에요만",
-      "text": "음식이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c96e3ae5fdb4036c9d2bcbb1.mp3"
-    },
-    {
-      "key": "ko-KR:음식입니까가",
-      "text": "음식입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "20374f5a2d49a464dbe61457.mp3"
-    },
-    {
-      "key": "ko-KR:음식입니까만",
-      "text": "음식입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "27976bd786c2aa592e98f97e.mp3"
-    },
-    {
-      "key": "ko-KR:음식입니다가",
-      "text": "음식입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1e66d30fc38178a5fe4797a4.mp3"
-    },
-    {
-      "key": "ko-KR:음식입니다만",
-      "text": "음식입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e7f12fb42af3e989f910718e.mp3"
     },
     {
       "key": "ko-KR:이니스프리에",
@@ -50181,38 +46453,6 @@
       "file": "173eaf3b859e6f73922adf6b.mp3"
     },
     {
-      "key": "ko-KR:읽었습니다가",
-      "text": "읽었습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c7c0c9dc31b5adf1dbfe91b4.mp3"
-    },
-    {
-      "key": "ko-KR:읽었습니다만",
-      "text": "읽었습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1454f234301fe629a54d9d53.mp3"
-    },
-    {
-      "key": "ko-KR:입었습니다가",
-      "text": "입었습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2547925272dc6b2954841032.mp3"
-    },
-    {
-      "key": "ko-KR:입었습니다만",
-      "text": "입었습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "691dc27f462367ad15ab8565.mp3"
-    },
-    {
       "key": "ko-KR:장군이시군요",
       "text": "장군이시군요",
       "lang": "ko-KR",
@@ -50245,76 +46485,12 @@
       "file": "e006cb43b7a4cf604651d0b9.mp3"
     },
     {
-      "key": "ko-KR:조심하세요가",
-      "text": "조심하세요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "9dfb4cb7a6c1885ac41eccc5.mp3"
-    },
-    {
-      "key": "ko-KR:조심하세요만",
-      "text": "조심하세요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "39d92c64018757ba249c90a9.mp3"
-    },
-    {
       "key": "ko-KR:좋아하시나요",
       "text": "좋아하시나요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "85c7ebbb1b1ef75d9e13fdf7.mp3"
-    },
-    {
-      "key": "ko-KR:좋아합니까가",
-      "text": "좋아합니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6960814666f25a9beddbc075.mp3"
-    },
-    {
-      "key": "ko-KR:좋아합니까만",
-      "text": "좋아합니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ba4680bfe6619cabef7071fb.mp3"
-    },
-    {
-      "key": "ko-KR:좋아합니다가",
-      "text": "좋아합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e779822fb9a92094eef52b0f.mp3"
-    },
-    {
-      "key": "ko-KR:좋아합니다만",
-      "text": "좋아합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "45b9bcfe3877fd84ba6c12e7.mp3"
-    },
-    {
-      "key": "ko-KR:죄송합니다가",
-      "text": "죄송합니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7b667eb2db0681239d56e739.mp3"
-    },
-    {
-      "key": "ko-KR:죄송합니다만",
-      "text": "죄송합니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2c1f5002cca7af954b5a6a4d.mp3"
     },
     {
       "key": "ko-KR:주민등록증만",
@@ -50333,44 +46509,12 @@
       "file": "a80b9bfe7ae700fbd661a7da.mp3"
     },
     {
-      "key": "ko-KR:지민입니다가",
-      "text": "지민입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c50025a9b8184df9785dfd6e.mp3"
-    },
-    {
-      "key": "ko-KR:지민입니다만",
-      "text": "지민입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a55d4340b6750d6142d067e6.mp3"
-    },
-    {
       "key": "ko-KR:지하철역하고",
       "text": "지하철역하고",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "d6a70999058df27b72c29330.mp3"
-    },
-    {
-      "key": "ko-KR:착각했어요가",
-      "text": "착각했어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5e3e53e58e93b578d23775c4.mp3"
-    },
-    {
-      "key": "ko-KR:착각했어요만",
-      "text": "착각했어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b5e638605d3abf45c0031a44.mp3"
     },
     {
       "key": "ko-KR:철수책상은만",
@@ -50445,38 +46589,6 @@
       "file": "6d30ac2bd65f57d616dcb7f2.mp3"
     },
     {
-      "key": "ko-KR:학생이에요가",
-      "text": "학생이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0168650ca5fac3a8d009d13e.mp3"
-    },
-    {
-      "key": "ko-KR:학생이에요만",
-      "text": "학생이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "694a46458e87e1e0a09a3d1f.mp3"
-    },
-    {
-      "key": "ko-KR:헷갈렸네요가",
-      "text": "헷갈렸네요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "ba163954f02d9206e0473fb1.mp3"
-    },
-    {
-      "key": "ko-KR:헷갈렸네요만",
-      "text": "헷갈렸네요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "131b352053e08741c8ac14e2.mp3"
-    },
-    {
       "key": "ko-KR:화이트와인만",
       "text": "화이트와인만",
       "lang": "ko-KR",
@@ -50509,60 +46621,12 @@
       "file": "ed42da19fca9ab7620f24b0b.mp3"
     },
     {
-      "key": "ko-KR:가오슝입니다가",
-      "text": "가오슝입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "54e628c83b452ae8a5d07494.mp3"
-    },
-    {
-      "key": "ko-KR:가오슝입니다만",
-      "text": "가오슝입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "82d1744ffbb5ca4eba52ea69.mp3"
-    },
-    {
       "key": "ko-KR:감사합니다라고",
       "text": "감사합니다라고",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "64650eb5c2913876651d1d5e.mp3"
-    },
-    {
-      "key": "ko-KR:공부했습니다가",
-      "text": "공부했습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f35c087f8c8b7037f3957ddc.mp3"
-    },
-    {
-      "key": "ko-KR:공부했습니다만",
-      "text": "공부했습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1a7f319a0844d048a6b5024d.mp3"
-    },
-    {
-      "key": "ko-KR:김민준입니다가",
-      "text": "김민준입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b477659388b07c5fde8e4133.mp3"
-    },
-    {
-      "key": "ko-KR:김민준입니다만",
-      "text": "김민준입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "48940f5282f6314e75db7741.mp3"
     },
     {
       "key": "ko-KR:더페이스샵까지",
@@ -50581,22 +46645,6 @@
       "file": "1b81970f714edba659005efe.mp3"
     },
     {
-      "key": "ko-KR:버블티입니까가",
-      "text": "버블티입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "986416ca56a7273704fbb435.mp3"
-    },
-    {
-      "key": "ko-KR:버블티입니까만",
-      "text": "버블티입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "86f93189107338f099b41aca.mp3"
-    },
-    {
       "key": "ko-KR:보여주시겠어요",
       "text": "보여주시겠어요",
       "lang": "ko-KR",
@@ -50613,284 +46661,12 @@
       "file": "244904d94d16c3c728b59bfa.mp3"
     },
     {
-      "key": "ko-KR:쇼핑했습니다가",
-      "text": "쇼핑했습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "05790bd5d4fbc0091426fb70.mp3"
-    },
-    {
-      "key": "ko-KR:쇼핑했습니다만",
-      "text": "쇼핑했습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "39b9f68c7675c40c1ac026ff.mp3"
-    },
-    {
-      "key": "ko-KR:수요일이에요가",
-      "text": "수요일이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "57bf318b3e6b6cd58158a46a.mp3"
-    },
-    {
-      "key": "ko-KR:수요일이에요만",
-      "text": "수요일이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a29476e061aabdadb9f844f1.mp3"
-    },
-    {
-      "key": "ko-KR:안녕하십니까가",
-      "text": "안녕하십니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6943513c4c44e53f7608c7c2.mp3"
-    },
-    {
-      "key": "ko-KR:안녕하십니까만",
-      "text": "안녕하십니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "2bb921956e84cd1193b1625b.mp3"
-    },
-    {
-      "key": "ko-KR:야시장입니까가",
-      "text": "야시장입니까가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b60c98e3ef094e52e931cab4.mp3"
-    },
-    {
-      "key": "ko-KR:야시장입니까만",
-      "text": "야시장입니까만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "04712801e5b5b0ade5e3c3a6.mp3"
-    },
-    {
-      "key": "ko-KR:야시장입니다가",
-      "text": "야시장입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "8d0138b16c6ff85c31686949.mp3"
-    },
-    {
-      "key": "ko-KR:야시장입니다만",
-      "text": "야시장입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "625fd24dbfa439d5498c81bf.mp3"
-    },
-    {
       "key": "ko-KR:열한시까지예요",
       "text": "열한시까지예요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "37c98ab3308904dfa7c42a71.mp3"
-    },
-    {
-      "key": "ko-KR:오른쪽이에요가",
-      "text": "오른쪽이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "74f3ba8008079c5b155f898e.mp3"
-    },
-    {
-      "key": "ko-KR:오른쪽이에요만",
-      "text": "오른쪽이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "26c94f426248af097bda2db9.mp3"
-    },
-    {
-      "key": "ko-KR:오천원이에요가",
-      "text": "오천원이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b7bca83a2fdf861e03243dce.mp3"
-    },
-    {
-      "key": "ko-KR:오천원이에요만",
-      "text": "오천원이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1fc01dd7c186cb090e622dc7.mp3"
-    },
-    {
-      "key": "ko-KR:오천원입니다가",
-      "text": "오천원입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1c0940e9f6b359e6f5cd556a.mp3"
-    },
-    {
-      "key": "ko-KR:오천원입니다만",
-      "text": "오천원입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1d440839043dc277d6b60e74.mp3"
-    },
-    {
-      "key": "ko-KR:운동했습니다가",
-      "text": "운동했습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "bd7ebd678c66d32c939fb299.mp3"
-    },
-    {
-      "key": "ko-KR:운동했습니다만",
-      "text": "운동했습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "3001d1d3dd8720a7386fb953.mp3"
-    },
-    {
-      "key": "ko-KR:웃어야겠어요가",
-      "text": "웃어야겠어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "e93c000a8ba3fb7b4ca27da1.mp3"
-    },
-    {
-      "key": "ko-KR:웃어야겠어요만",
-      "text": "웃어야겠어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "4d8612ce2bb06eb7549376f2.mp3"
-    },
-    {
-      "key": "ko-KR:음료수입니다가",
-      "text": "음료수입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1dfbc816accdd83725599dec.mp3"
-    },
-    {
-      "key": "ko-KR:음료수입니다만",
-      "text": "음료수입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "85a237fd5b4a99d547ef4295.mp3"
-    },
-    {
-      "key": "ko-KR:이천원입니다가",
-      "text": "이천원입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "19872cf76bbb1cc588c5c2f4.mp3"
-    },
-    {
-      "key": "ko-KR:이천원입니다만",
-      "text": "이천원입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b303691e87394799e1402832.mp3"
-    },
-    {
-      "key": "ko-KR:잃어버렸어요가",
-      "text": "잃어버렸어요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b10f70bd67e37ebeaf9f9db6.mp3"
-    },
-    {
-      "key": "ko-KR:잃어버렸어요만",
-      "text": "잃어버렸어요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "64ee8f2db399570e9a41f52d.mp3"
-    },
-    {
-      "key": "ko-KR:임관우입니다가",
-      "text": "임관우입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "48b4197c622f206f9111dd22.mp3"
-    },
-    {
-      "key": "ko-KR:임관우입니다만",
-      "text": "임관우입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "7616cbf3410c895841a1fa55.mp3"
-    },
-    {
-      "key": "ko-KR:재미있습니다가",
-      "text": "재미있습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "c08624e264a5e70d4144f45d.mp3"
-    },
-    {
-      "key": "ko-KR:재미있습니다만",
-      "text": "재미있습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "5f6507b1a33ffdf7525c18ec.mp3"
-    },
-    {
-      "key": "ko-KR:좋아하니까요가",
-      "text": "좋아하니까요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "021cba0d89c7f4ca506f4068.mp3"
-    },
-    {
-      "key": "ko-KR:좋아하니까요만",
-      "text": "좋아하니까요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "75f5b16f24ed281fa0c37501.mp3"
-    },
-    {
-      "key": "ko-KR:타이난이에요가",
-      "text": "타이난이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "a95590344360475a9a2cdd22.mp3"
-    },
-    {
-      "key": "ko-KR:타이난이에요만",
-      "text": "타이난이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "1841a72f77ab0d7c5cc7d241.mp3"
     },
     {
       "key": "ko-KR:팔만삼천사백만",
@@ -50949,60 +46725,12 @@
       "file": "ed199a488b1b50eea9c09b4f.mp3"
     },
     {
-      "key": "ko-KR:만육천원입니다가",
-      "text": "만육천원입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "06f1564dfa0141eb562c23a8.mp3"
-    },
-    {
-      "key": "ko-KR:만육천원입니다만",
-      "text": "만육천원입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "46a073df0da47034b5d41a2d.mp3"
-    },
-    {
       "key": "ko-KR:무서워하시는군요",
       "text": "무서워하시는군요",
       "lang": "ko-KR",
       "priority": 2,
       "lessons": [],
       "file": "1f71248a5e6f4831d6cd037b.mp3"
-    },
-    {
-      "key": "ko-KR:쇼핑하기입니다가",
-      "text": "쇼핑하기입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "de9c8fca65a040444458b01c.mp3"
-    },
-    {
-      "key": "ko-KR:쇼핑하기입니다만",
-      "text": "쇼핑하기입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "f8e640fb3d0b3cb4f5bbbd46.mp3"
-    },
-    {
-      "key": "ko-KR:수고하셨습니다가",
-      "text": "수고하셨습니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6c350c54e9d55c1adf834e1d.mp3"
-    },
-    {
-      "key": "ko-KR:수고하셨습니다만",
-      "text": "수고하셨습니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "81107b8428a031c4eee79da3.mp3"
     },
     {
       "key": "ko-KR:없을것같아서였다",
@@ -51021,22 +46749,6 @@
       "file": "7aa7e2f25ddc3546a38a9a40.mp3"
     },
     {
-      "key": "ko-KR:오만이천원입니다가",
-      "text": "오만이천원입니다가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "b8a0a7e4a5e94d3d4b642769.mp3"
-    },
-    {
-      "key": "ko-KR:오만이천원입니다만",
-      "text": "오만이천원입니다만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "0a7f519f9e3c19888537f8f2.mp3"
-    },
-    {
       "key": "ko-KR:오십만육백팔십구가",
       "text": "오십만육백팔십구가",
       "lang": "ko-KR",
@@ -51051,22 +46763,6 @@
       "priority": 2,
       "lessons": [],
       "file": "272d6dceaf9f139e0bacd8fc.mp3"
-    },
-    {
-      "key": "ko-KR:이천오백원이에요가",
-      "text": "이천오백원이에요가",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "6c88ca7c159a51a52326783e.mp3"
-    },
-    {
-      "key": "ko-KR:이천오백원이에요만",
-      "text": "이천오백원이에요만",
-      "lang": "ko-KR",
-      "priority": 2,
-      "lessons": [],
-      "file": "91f0275b8966f20d4f6cdf9f.mp3"
     },
     {
       "key": "ko-KR:십이만삼천육백오십팔만",

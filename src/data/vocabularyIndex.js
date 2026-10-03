@@ -1,5 +1,12 @@
 const koreanPattern = /[가-힣]/;
 const singleWordPattern = /^(?:[가-힣]+|[A-Za-z]+[가-힣]+)$/u;
+const reviewedNouns = new Set(["바다", "캐나다", "사이다", "필요", "수요", "민요"]);
+// Reviewed adverbs, inflected predicates and tokens already carrying a
+// particle. Keep their source forms; bare-noun boundary drills do not apply.
+const reviewedNonNouns = new Set([
+  "같이", "그럼", "근처에", "날씨가", "다음에", "뭘", "밥을", "사면", "시간이",
+  "안", "언제", "일이", "있으면", "집에", "친구를", "친구하고", "커피를", "한국어를", "후에", "한국에",
+]);
 const finalJamo = [
   "", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ",
   "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"
@@ -102,6 +109,7 @@ function addCandidate(bucket, lesson, item, context = null) {
     lessons: [],
     contexts: []
   };
+  if (item.partOfSpeech) current.partOfSpeech = item.partOfSpeech;
 
   if (!current.lessons.some((entry) => entry.id === lesson.id)) {
     current.lessons.push({ id: lesson.id, label: lesson.label });
@@ -120,7 +128,7 @@ export function getPronunciationNote(text) {
   return "這個詞沒有句尾收音；連接下一個音節時，重點是保持母音完整並清楚帶出下一個起首音。";
 }
 
-export function getPronunciationCases(text, roman) {
+export function getPronunciationCases(text, roman, partOfSpeech) {
   const base = stripTrailingPunctuation(text);
   const batchim = getFinalConsonant(text);
   const cases = [
@@ -135,6 +143,14 @@ export function getPronunciationCases(text, roman) {
       drill: `慢念 ${roman}，再按發音鍵聽自然語速。`
     }
   ];
+
+  // These are inflected predicates/greetings, rather than bare nouns to which
+  // 이/가, 만 and 하고 can be mechanically appended. 한국에 already has 에.
+  // Keep the original lesson word and audio; omit only fabricated noun drills.
+  if (partOfSpeech === "predicate" || partOfSpeech === "expression" || reviewedNonNouns.has(base)
+    || (partOfSpeech !== "noun" && !reviewedNouns.has(base) && /(?:다|요|니까)$/.test(base))) {
+    return cases;
+  }
 
   if (batchim) {
     cases.push({
@@ -240,7 +256,7 @@ export function buildVocabularyIndex(lessons) {
       ...item,
       explanation: `「${item.text}」表示${item.zh.replace(/[。.]$/, "")}。`,
       pronunciationNote: getPronunciationNote(item.text),
-      pronunciationCases: getPronunciationCases(item.text, item.roman),
+      pronunciationCases: getPronunciationCases(item.text, item.roman, item.partOfSpeech),
       examples: [
         ...item.contexts.slice(0, 2),
         {
