@@ -37,6 +37,25 @@ This verifies batch identity, exact text/voice/config, hashes, complete output c
 
 Korean assets use `public/audio/chirp3-hd/`; base lesson IDs, progress storage and original physical assets remain unchanged. Regenerate the catalog, run `audio:verify`, tests and build after integration. Listen to representative alphabet, word, sentence, alternating-role and slow-playback samples: hashes and decoding establish file integrity, not linguistic quality.
 
+## Chinese additions with the existing provider
+
+New bilingual lessons require Chinese recordings as well as Korean recordings. Keep existing Chinese clips; do not send Chinese to the Korean Google batch. On the existing CUDA Qwen environment, enumerate only missing Chinese keys and stage Serena recordings separately:
+
+```powershell
+npm run audio:chinese:plan
+npm run audio:generate -- --language zh-TW --keys-file tmp/chinese-missing-keys.json --output-dir tmp/chinese-serena
+```
+
+The local generator requires the existing CUDA runtime and pinned model weights. This setup cannot run on an Apple Silicon Mac as configured. Staging writes its own manifest and MP3s, preserving the active audio directory. It uses the existing Serena voice and Chinese input normalization; no paid service is called.
+
+Return the isolated output directory and verify it on the integration machine:
+
+```sh
+npm run audio:chinese:import -- --results-dir /local/chinese-serena
+```
+
+The importer accepts only a complete Qwen/Serena batch containing exactly the currently missing Chinese keys. It rejects replacement of existing Chinese clips, checks hashes and fully decodes new MP3s. Add `--apply` after review to copy the verified additions and atomically update the manifest. Existing Chinese records and file hashes remain unchanged. Import Google Korean output after Chinese coverage is complete. The release must pass `audio:verify` and listening QA before merge.
+
 ## Previous local provider: setup on Windows
 
 Run from the repository root with `uv` installed:

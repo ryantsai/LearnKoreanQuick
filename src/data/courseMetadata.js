@@ -28,4 +28,5 @@ export const courseMetadata = {
   "b1-19": {"name": "韓語1級主修會話(四)", "sessionNumber": 4, "sessionCount": 6, "date": "20260921"},
   "b1-20": {"name": "韓語1級主修會話(四)", "sessionNumber": 5, "sessionCount": 6, "date": "20260929"},
   "b1-21": {"name": "韓語1級主修會話(四)", "sessionNumber": 6, "sessionCount": 6, "date": "20260930"},
+  "b1-22": {"name": "韓語1級主修會話(五)", "sessionNumber": 1, "sessionCount": 6, "date": "20261008"},
 };

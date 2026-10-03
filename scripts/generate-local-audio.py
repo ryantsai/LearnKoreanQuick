@@ -59,15 +59,22 @@ def valid_file(path):
         return False
 
 def main():
+    global OUT
     ap=argparse.ArgumentParser()
     ap.add_argument('--batch-size',type=int,default=1)
     ap.add_argument('--limit',type=int,default=0)
     ap.add_argument('--lessons', nargs='+', help='Only generate clips used by these lesson IDs')
     ap.add_argument('--force', action='store_true', help='Regenerate selected clips even if already present')
     ap.add_argument('--keys-file', type=Path, help='JSON array of clip keys to regenerate')
+    ap.add_argument('--language', choices=['ko-KR','zh-TW'], help='Restrict generation to one language')
+    ap.add_argument('--output-dir', type=Path, help='Stage recordings and a separate manifest without editing active audio')
     ap.add_argument('--seed',type=int,default=90809)
     ap.add_argument('--standard-engine', action='store_true', help='Use the original model decoder for pronunciation review retries')
     args=ap.parse_args()
+    isolated_output = args.output_dir is not None
+    if isolated_output:
+        OUT=args.output_dir.expanduser().resolve()
+        OUT.mkdir(parents=True,exist_ok=True)
     if args.batch_size < 1 or args.limit < 0: ap.error("batch-size must be positive and limit cannot be negative")
     if not torch.cuda.is_available(): raise RuntimeError('CUDA GPU required. Install the cu128 PyTorch wheels.')
     torch.set_num_threads(1)
@@ -87,11 +94,14 @@ def main():
     manifest['clips']={k:v for k,v in manifest.get('clips',{}).items() if k in valid_keys}
     clips=manifest['clips']
     selected=[e for e in catalog if not args.lessons or set(args.lessons).intersection(e.get('lessons', []))]
+    if args.language:
+        selected=[e for e in selected if e['lang']==args.language]
     if args.keys_file:
         requested=set(json.loads(args.keys_file.read_text(encoding='utf-8')))
         selected=[e for e in selected if e['key'] in requested]
         if requested - {e['key'] for e in selected}: raise ValueError('Some requested clip keys do not exist in the selected catalog.')
     if args.lessons and not selected: raise ValueError('No clips match the requested lessons; rebuild the catalog.')
+    expected = selected if isolated_output else catalog
     pending=[e for e in selected if args.force or e['key'] not in clips or not valid_file(OUT/e['file'])]
     if args.limit: pending=pending[:args.limit]
     print(f'Generating {len(pending)} clips; {len(clips)} already ready.',flush=True)
@@ -99,8 +109,8 @@ def main():
     model=FasterQwen3TTS.from_pretrained(str(ROOT/'.models/qwen3-tts-1.7b'),device='cuda',dtype=torch.bfloat16,attn_implementation='sdpa')
     started=time.time()
     def save_manifest():
-        manifest['totalExpected']=len(catalog)
-        manifest['complete']=all(e['key'] in clips for e in catalog)
+        manifest['totalExpected']=len(expected)
+        manifest['complete']=all(e['key'] in clips for e in expected)
         manifest['peakGpuGB']=round(torch.cuda.max_memory_allocated()/1e9,3)
         temp=manifest_path.with_suffix('.tmp')
         temp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
