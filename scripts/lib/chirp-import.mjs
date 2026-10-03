@@ -75,6 +75,9 @@ export function validateChirpResults(plan, batch, batchHash, results, readAudio)
 export function buildImportedManifest(existing, activePlan, batchPlan, verified, batchHash) {
   const requested = new Map(batchPlan.requests.flatMap((request) => request.aliases.map((alias) => [alias.key, request])));
   const clips = Object.fromEntries(Object.entries(existing.clips).filter(([key]) => key.startsWith("zh-TW:")));
+  for (const key of activePlan.chinesePlaybackKeys ?? []) {
+    if (!clips[key] || !(clips[key].duration > 0)) throw new Error(`Current Chinese playback is not covered: ${key}`);
+  }
   for (const active of activePlan.requests) for (const alias of active.aliases) {
     const request = requested.get(alias.key);
     const output = request && verified.get(request.requestHash);

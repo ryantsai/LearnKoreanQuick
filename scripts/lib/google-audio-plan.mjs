@@ -95,6 +95,7 @@ export function buildGoogleAudioPlan(catalog, lessons, { budgetUsd = BULK_BUDGET
       roleVariants: entries.filter((entry) => entry.voice !== BASELINE_KOREAN_VOICE).length,
       preservedChineseClips: catalog.entries.filter((entry) => entry.lang === "zh-TW" && (!existingChineseKeys || existingChineseKeys.has(entry.key))).length,
       missingChineseClips: catalog.entries.filter((entry) => entry.lang === "zh-TW" && existingChineseKeys && !existingChineseKeys.has(entry.key)).length },
+    chinesePlaybackKeys: catalog.entries.filter((entry) => entry.lang === "zh-TW").map((entry) => entry.key ?? audioKey(entry.text, entry.lang)).sort(),
     // A single worker owns this operation. Reserve every attempt's characters
     // durably before calling Google; unknown outcomes remain charged in ledger.
     resumeContract: { key: "requestHash", receiptFields: ["requestHash", "file", "sha256", "duration"],

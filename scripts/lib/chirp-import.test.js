@@ -50,4 +50,14 @@ describe("verified Chirp import", () => {
     const verified = validateChirpResults(f.plan, f.batch, f.hash, f.results, () => f.bytes);
     expect(() => buildImportedManifest({ clips: {} }, other, f.plan, verified, f.hash)).toThrow(/not covered/);
   });
+  test("blocks a newly published bilingual lesson until its missing Chinese recording exists", () => {
+    const f = fixture();
+    const active = buildGoogleAudioPlan({ entries: [
+      { text: "커피", lang: "ko-KR", lessons: ["fixture"] },
+      { text: "未錄製中文", lang: "zh-TW", lessons: ["fixture"] },
+    ] }, []);
+    const verified = validateChirpResults(f.plan, f.batch, f.hash, f.results, () => f.bytes);
+    expect(() => buildImportedManifest({ clips: {} }, active, f.plan, verified, f.hash)).toThrow(/Chinese playback is not covered/);
+    expect(buildImportedManifest({ clips: { "zh-TW:未錄製中文": { file: "existing.mp3", duration: 1 } } }, active, f.plan, verified, f.hash).complete).toBe(true);
+  });
 });
