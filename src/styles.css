@@ -786,6 +786,19 @@ p {
   border: 1px solid rgba(25, 170, 151, 0.2);
 }
 
+.course-card.course-card-named {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.course-card-named .course-card-label {
+  min-height: 0;
+  padding: 10px 12px;
+  justify-items: start;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
 .course-card-body {
   min-width: 0;
   display: flex;
@@ -1032,6 +1045,22 @@ p {
   font-weight: 900;
   font-size: 16px;
   color: #1d2633;
+}
+
+.course-page .novel-reader-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.course-page .novel-reader-title svg,
+.course-page .letter-page-toolbar > button {
+  flex-shrink: 0;
+}
+
+.course-page .chapter-nav-item {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .novel-reader-layout {
@@ -1941,7 +1970,7 @@ p {
 
 .vocabulary-lesson-options label {
   display: grid;
-  grid-template-columns: auto auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   justify-content: start;
   padding: 9px 3px;
   border-bottom: 1px solid rgba(29, 38, 51, 0.07);
@@ -1959,10 +1988,11 @@ p {
   color: #1d2633;
   font-size: 13px;
   font-weight: 900;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .vocabulary-lesson-options small {
+  grid-column: 2;
   overflow: hidden;
   color: #647386;
   font-size: 11px;
@@ -2307,6 +2337,8 @@ p {
 }
 
 .vocabulary-lesson-links button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
   padding: 6px 9px;
   border-radius: 8px;
   background: #fff1dd;

@@ -1,0 +1,31 @@
+// Verified official course names, sessions and calendar dates only.
+// Keep account records and source evidence outside this public repository.
+// b1-15 remains unmatched and keeps its existing display label.
+export const courseMetadata = {
+  "l2-1": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 1, "sessionCount": 6, "date": "20260603"},
+  "l2-2": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 2, "sessionCount": 6, "date": "20260608"},
+  "l2-3": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 3, "sessionCount": 6, "date": "20260610"},
+  "l2-4": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 4, "sessionCount": 6, "date": "20260615"},
+  "l2-5": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 5, "sessionCount": 6, "date": "20260617"},
+  "l2-6": {"name": "韓語1級主修會話先修(二)", "sessionNumber": 6, "sessionCount": 6, "date": "20260622"},
+  "b1-1": {"name": "韓語1級主修會話(一)", "sessionNumber": 1, "sessionCount": 6, "date": "20260629"},
+  "b1-2": {"name": "韓語1級主修會話(一)", "sessionNumber": 2, "sessionCount": 6, "date": "20260701"},
+  "b1-3": {"name": "韓語1級主修會話(一)", "sessionNumber": 3, "sessionCount": 6, "date": "20260706"},
+  "b1-4": {"name": "韓語1級主修會話(一)", "sessionNumber": 4, "sessionCount": 6, "date": "20260708"},
+  "b1-5": {"name": "韓語1級主修會話(一)", "sessionNumber": 6, "sessionCount": 6, "date": "20260715"},
+  "b1-6": {"name": "韓語1級主修會話(一)", "sessionNumber": 5, "sessionCount": 6, "date": "20260713"},
+  "b1-7": {"name": "韓語1級主修會話(二)", "sessionNumber": 3, "sessionCount": 6, "date": "20260804"},
+  "b1-8": {"name": "韓語1級主修會話(二)", "sessionNumber": 4, "sessionCount": 6, "date": "20260806"},
+  "b1-9": {"name": "韓語1級主修會話(二)", "sessionNumber": 5, "sessionCount": 6, "date": "20260811"},
+  "b1-10": {"name": "韓語1級主修會話(二)", "sessionNumber": 6, "sessionCount": 6, "date": "20260813"},
+  "b1-11": {"name": "韓語1級主修會話(三)", "sessionNumber": 1, "sessionCount": 6, "date": "20260817"},
+  "b1-12": {"name": "韓語1級主修會話(三)", "sessionNumber": 2, "sessionCount": 6, "date": "20260819"},
+  "b1-13": {"name": "韓語1級主修會話(三)", "sessionNumber": 4, "sessionCount": 6, "date": "20260901"},
+  "b1-14": {"name": "韓語1級主修會話(三)", "sessionNumber": 5, "sessionCount": 6, "date": "20260903"},
+  "b1-16": {"name": "韓語1級主修會話(四)", "sessionNumber": 1, "sessionCount": 6, "date": "20260909"},
+  "b1-17": {"name": "韓語1級主修會話(四)", "sessionNumber": 2, "sessionCount": 6, "date": "20260914"},
+  "b1-18": {"name": "韓語1級主修會話(四)", "sessionNumber": 3, "sessionCount": 6, "date": "20260916"},
+  "b1-19": {"name": "韓語1級主修會話(四)", "sessionNumber": 4, "sessionCount": 6, "date": "20260921"},
+  "b1-20": {"name": "韓語1級主修會話(四)", "sessionNumber": 5, "sessionCount": 6, "date": "20260929"},
+  "b1-21": {"name": "韓語1級主修會話(四)", "sessionNumber": 6, "sessionCount": 6, "date": "20260930"},
+};
