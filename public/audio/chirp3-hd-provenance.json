@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "provider": "Google Cloud Text-to-Speech Chirp 3 HD",
+  "batchManifestSha256": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec",
+  "synthesisRate": 1,
+  "audioEncoding": "MP3",
+  "sampleRate": 24000,
+  "channels": 1,
+  "requiredKoreanFiles": 5241,
+  "koreanPlaybackKeys": 5249,
+  "uniqueFilesByVoice": {
+    "ko-KR-Chirp3-HD-Kore": 5113,
+    "ko-KR-Chirp3-HD-Charon": 128
+  },
+  "sourceScope": "Currently published courses including the verified October 8 lesson; alphabet, vocabulary, special course and stories",
+  "originalChineseClipsPreserved": 1350,
+  "newTaiwanMeijiaChineseClipsPreserved": 64,
+  "integrity": "All received 5251 MP3s fully decoded before import; copied files match receipt SHA-256; all 1414 Chinese records and file hashes unchanged",
+  "excludedDisplacedFallbackOutputs": 10
+}

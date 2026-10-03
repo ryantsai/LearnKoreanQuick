@@ -1,5 +1,7 @@
 import { getTtsSpeed } from './ttsSpeed.js';
 import { assetPath } from './assets.js';
+import { audioKey } from './audioIdentity.js';
+export { audioKey } from './audioIdentity.js';
 
 let manifestPromise;
 let active;
@@ -8,7 +10,6 @@ let player;
 let playerUnlocked = false;
 let unlockInstalled = false;
 let silentClipUrl;
-export const audioKey = (text, lang = 'ko-KR') => `${lang}:${text.normalize('NFC').trim().replace(/\s+/g, ' ')}`;
 
 function manifest() {
   if (!manifestPromise) {
@@ -94,7 +95,7 @@ export function stopSpeech() {
   }
 }
 
-export async function speakAudio(text, lang = 'ko-KR') {
+export async function speakAudio(text, lang = 'ko-KR', voice) {
   stopSpeech();
   const run = generation;
   // Open-ended exercises have nothing to pronounce until the learner fills them in.
@@ -102,7 +103,10 @@ export async function speakAudio(text, lang = 'ko-KR') {
   try {
     const data = await manifest();
     if (run !== generation) return false;
-    const clip = data.clips[audioKey(text, lang)];
+    const clip = data.clips[audioKey(text, lang, voice)]
+      // Existing Qwen manifests keep working during preparation. A completed
+      // role-aware migration must contain every requested voice variant.
+      ?? (data.voiceVariants ? undefined : data.clips[audioKey(text, lang)]);
     if (!clip) throw new Error('這段語音尚未準備好，請稍後再試。');
     return await new Promise((resolve, reject) => {
       const audio = getPlayer();
@@ -144,6 +148,6 @@ export async function speakAudio(text, lang = 'ko-KR') {
   }
 }
 
-export function speakKorean(text) {
-  return speakAudio(text, 'ko-KR');
+export function speakKorean(text, voice) {
+  return speakAudio(text, 'ko-KR', voice);
 }

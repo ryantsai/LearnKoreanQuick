@@ -11,6 +11,11 @@
     "preview": "node server/index.js",
     "test": "vitest run",
     "audio:catalog": "node scripts/build-audio-catalog.mjs",
+    "audio:google:plan": "node scripts/prepare-google-audio.mjs",
+    "audio:google:import": "node scripts/import-chirp-audio.mjs",
+    "audio:chinese:import": "node scripts/import-local-chinese.mjs",
+    "audio:chinese:plan": "node scripts/prepare-chinese-audio.mjs",
+    "audio:chinese:macos": "node scripts/generate-macos-chinese.mjs",
     "audio:generate": ".\\.venv-tts\\Scripts\\python.exe -X utf8 scripts/generate-local-audio.py",
     "audio:verify": "node scripts/verify-audio.mjs"
   },

@@ -1,8 +1,11 @@
+import { getDialogueVoice } from "./dialogueVoice.js";
+
 export function buildDialoguePlaybackItems(dialogue, includeChinese = false) {
   return dialogue.lines.flatMap((line, lineIndex) => {
     const text = line.spokenKo ?? line.ko;
     const koreanItems = /[가-힣]/u.test(text ?? '') ? [{
       type: 'korean', text, lineIndex, tokenIndex: null,
+      ...(line.speaker ? { voice: getDialogueVoice(line.speaker) } : {}),
     }] : [];
     if (!includeChinese) return koreanItems;
     return [...koreanItems, { type: 'chinese', text: line.zh, lineIndex, tokenIndex: null }];

@@ -34,7 +34,8 @@ describe("courseLessons", () => {
       "b1-18",
       "b1-19",
       "b1-20",
-      "b1-21"
+      "b1-21",
+      "b1-22"
     ]);
 
     for (const lesson of courseLessons) {
@@ -48,10 +49,11 @@ describe("courseLessons", () => {
       expect(lesson.titleKo.length).toBeGreaterThan(0);
       expect(lesson.dialogues.length).toBeGreaterThanOrEqual(1);
       expect(lesson.vocabulary.length).toBeGreaterThanOrEqual(12);
-      expect(lesson.media.hero).toMatch(/assets\/course-lessons\/.+\.png$/);
+      if (lesson.media?.hero) expect(lesson.media.hero).toMatch(/assets\/course-lessons\/.+\.png$/);
+      else expect(lesson.heroEmoji).toBeTruthy();
 
       for (const imagePath of [
-        lesson.media.hero,
+        ...(lesson.media?.hero ? [lesson.media.hero] : []),
         ...lesson.dialogues.map((dialogue) => dialogue.image).filter(Boolean),
         ...lesson.dialogues.map((dialogue) => dialogue.objectImage).filter(Boolean),
       ]) {
@@ -65,7 +67,7 @@ describe("courseLessons", () => {
           expect(line.speaker.length).toBeGreaterThan(0);
           expect(line.ko.length).toBeGreaterThan(0);
           expect(line.zh.length).toBeGreaterThan(0);
-          expect(line.tokens.length).toBeGreaterThan(0);
+          if (!/^_+[.。]?$/u.test(line.ko)) expect(line.tokens.length).toBeGreaterThan(0);
           for (const token of line.tokens) {
             expect(token.text.length).toBeGreaterThan(0);
             expect(token.roman.length).toBeGreaterThan(0);
@@ -79,9 +81,11 @@ describe("courseLessons", () => {
         expect(word.roman.length).toBeGreaterThan(0);
         expect(word.zh.length).toBeGreaterThan(0);
         expect(word.syllables).toHaveLength([...word.text].length);
-        expect(word.image).toMatch(/assets\/course-lessons\/.+\.png$/);
-        const publicPath = word.image.slice(word.image.indexOf("assets/"));
-        expect(existsSync(path.join(process.cwd(), "public", publicPath))).toBe(true);
+        if (word.image) {
+          expect(word.image).toMatch(/assets\/course-lessons\/.+\.png$/);
+          const publicPath = word.image.slice(word.image.indexOf("assets/"));
+          expect(existsSync(path.join(process.cwd(), "public", publicPath))).toBe(true);
+        } else expect(lesson.media?.hero).toBeUndefined();
       }
     }
   });
@@ -95,9 +99,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("renames the 26 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(26);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(26);
+  test("names all 27 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(27);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(27);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
@@ -140,6 +144,30 @@ describe("courseLessons", () => {
       assertWord(item.answer);
     }
   };
+
+  test("adds the verified October 8 text without inventing exercise answers or publishing source images", () => {
+    const lesson = courseLessons.find((item) => item.id === "b1-22");
+    expect(lesson.label).toBe("韓語1級主修會話(五)-1/6堂-20261008(四)");
+    expect(lesson.titleKo).toBe("시간이 있으면 같이 커피를 마셔요.");
+    expect(lesson.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([4, 8, 6]);
+    expect(lesson.dialogues[0].lines[1].ko).toBe("미안해요. 퇴근한 후에 일이 있어요.");
+    expect(lesson.dialogues[0].lines[1].zh).toBe("對不起，下班之後有事。");
+    expect(lesson.dialogues[2].lines.filter((line) => /^_+$/.test(line.ko))).toHaveLength(3);
+    expect(lesson.vocabulary).toHaveLength(26);
+    assertGuide(lesson.guide);
+    expect(lesson.guide.sections.map((section) => section.words.length)).toEqual([5, 6, 10]);
+    expect(lesson.guide.practice.prompts).toHaveLength(5);
+    expect(lesson.guide.practice.prompts[1].ko).toContain("답장을 받다");
+    expect(lesson.guide.practice.prompts[3].ko).toContain("영화를 보다");
+    expect(lesson.guide.sourceNotes[1].lines[0]).toContain("中文附錄");
+    expect(lesson.media).toBeUndefined();
+    expect(lesson.dialogues.every((dialogue) => !dialogue.image && !dialogue.objectImage)).toBe(true);
+    expect(lesson.vocabulary.every((word) => !word.image)).toBe(true);
+    const words = [...lesson.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((line) => line.tokens)),
+      ...lesson.vocabulary, ...lesson.guide.sections.flatMap((section) => section.words),
+      ...lesson.guide.practice.items.map((item) => item.answer)];
+    for (const word of words) expect(word.roman.split("-").filter(Boolean)).toHaveLength([...word.text].length);
+  });
 
   test("L3 exposes a numbers learning guide with a single grid and price practice", () => {
     const l3 = courseLessons.find((lesson) => lesson.id === "l2-3");

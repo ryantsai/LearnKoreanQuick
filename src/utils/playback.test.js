@@ -54,4 +54,15 @@ describe("playback sequencing", () => {
       { type: "chinese", text: "鬆餅", wordIndex: 1 },
     ]);
   });
+
+  test("keeps fixed distinct Korean role voices and leaves Chinese cues unchanged", () => {
+    const items = buildDialoguePlaybackItems({ lines: [
+      { speaker: "관우", ko: "안녕하세요", zh: "你好" },
+      { speaker: "민준", ko: "안녕하세요", zh: "你好" },
+    ] }, true);
+    expect(items[0].voice).toBe("ko-KR-Chirp3-HD-Charon");
+    expect(items[2].voice).toBe("ko-KR-Chirp3-HD-Kore");
+    expect(items[1]).not.toHaveProperty("voice");
+    expect(items[3]).not.toHaveProperty("voice");
+  });
 });

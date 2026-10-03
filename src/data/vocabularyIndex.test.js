@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { courseLessons } from "./courseLessons.js";
-import { buildVocabularyIndex } from "./vocabularyIndex.js";
+import { buildVocabularyIndex, getPronunciationCases } from "./vocabularyIndex.js";
 import { applyCourseMetadata } from "../utils/courseLabel.js";
 
 describe("buildVocabularyIndex", () => {
@@ -51,7 +51,7 @@ describe("buildVocabularyIndex", () => {
     for (const item of vocabulary) {
       expect(item.explanation.length).toBeGreaterThan(0);
       expect(item.pronunciationNote.length).toBeGreaterThan(0);
-      expect(item.pronunciationCases.length).toBeGreaterThanOrEqual(3);
+      expect(item.pronunciationCases.length).toBeGreaterThanOrEqual(1);
       expect(item.pronunciationCases[0].written.length).toBeGreaterThan(0);
       expect(item.pronunciationCases[0].pronounced.length).toBeGreaterThan(0);
       expect(item.pronunciationCases[0].drill.length).toBeGreaterThan(0);
@@ -69,5 +69,18 @@ describe("buildVocabularyIndex", () => {
       ["못만", "몬만"],
       ["못하고", "모타고"]
     ]));
+  });
+
+  test("does not fabricate noun-particle drills for inflected predicates or 한국에", () => {
+    for (const text of ["괜찮아요", "읽습니까", "한국에", "감사합니다", "있어요", "가요", "읽다", "날씨가", "밥을", "친구하고", "같이", "뭘"]) {
+      const item = vocabulary.find((word) => word.text === text);
+      expect(item).toBeDefined();
+      expect(item.pronunciationCases.map((entry) => entry.written)).toEqual([text]);
+    }
+    const noun = vocabulary.find((word) => word.text === "커피");
+    expect(noun.pronunciationCases.map((entry) => entry.written)).toEqual(expect.arrayContaining(["커피가", "커피만"]));
+    expect(getPronunciationCases("바다", "ba-da").map((entry) => entry.written)).toContain("바다가");
+    expect(getPronunciationCases("필요", "pi-ryo").map((entry) => entry.written)).toContain("필요가");
+    expect(getPronunciationCases("예쁜", "ye-ppeun", "predicate").map((entry) => entry.written)).toEqual(["예쁜"]);
   });
 });

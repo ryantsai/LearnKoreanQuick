@@ -10,6 +10,7 @@ import { novelData } from "./data/novelData.js";
 import { buildDialoguePlaybackItems, buildVocabularyPlaybackItems } from "./utils/playback.js";
 import { speakKorean, speakAudio, stopSpeech } from "./utils/speech.js";
 import { decomposeHangulWord } from "./utils/hangul.js";
+import { getDialogueVoice } from "./utils/dialogueVoice.js";
 import {
   getTtsSpeed,
   setTtsSpeed,
@@ -599,7 +600,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
           setHighlight(kind === "dialogue"
             ? { kind, lineIndex: item.lineIndex, tokenIndex: item.tokenIndex }
             : { kind, wordIndex: item.wordIndex });
-          if (!await speakQueued(item.text, "ko-KR")) {
+          if (!await speakQueued(item.text, "ko-KR", item.voice)) {
             if (playbackRunRef.current === runId) stopPlayback(false);
             return;
           }
@@ -781,7 +782,7 @@ function CourseLessonReader({ lesson, onClose, onOpenLetter }) {
                       />
                     </p>
                     <p className="course-line-zh">{lineItem.zh}</p>
-                    <button className="letter-sound-button" onClick={() => { stopPlayback(); speakKorean(lineItem.spokenKo ?? lineItem.ko); }}>
+                    <button className="letter-sound-button" onClick={() => { stopPlayback(); speakKorean(lineItem.spokenKo ?? lineItem.ko, getDialogueVoice(lineItem.speaker)); }}>
                       <Volume2 size={14} />
                       整句發音
                     </button>
