@@ -90,3 +90,62 @@ export function buildImportedManifest(existing, activePlan, batchPlan, verified,
     voiceVariants: true, complete: true,
     providers: { "ko-KR": "Google Cloud Text-to-Speech Chirp 3 HD", "zh-TW": existing.providers?.["zh-TW"] ?? existing.model }, clips };
 }
+
+// Delta import: a paid request is needed only when no published clip uses it.
+// Published requests are kept as they are, and only if their bytes still match.
+export function selectDeltaPlan(plan, existing) {
+  const fresh = [];
+  let kept = 0;
+  for (const request of plan.requests) {
+    const published = request.aliases.filter((alias) => existing.clips[alias.key]).length;
+    if (published === 0) fresh.push(request);
+    else if (published === request.aliases.length) kept += 1;
+    else throw new Error(`Partly published request needs review: ${request.key}`);
+  }
+  const characters = fresh.reduce((sum, request) => sum + request.characterCount, 0);
+  return { ...plan, requests: fresh,
+    budget: { ...plan.budget, firstAttemptCharacters: characters,
+      firstAttemptGrossUsd: Number((characters * plan.budget.pricePerCharacterUsd).toFixed(5)),
+      remainingRetryCharacters: plan.budget.characterBudget - characters },
+    delta: { sourceFingerprint: plan.fingerprint, freshRequests: fresh.length, keptRequests: kept } };
+}
+
+// Mirrors buildImportedManifest, except that a current Korean key may be kept
+// from the published manifest when its clip still matches the request and bytes.
+export function buildDeltaManifest(existing, activePlan, deltaPlan, verified, batchHash, readAudio) {
+  const fresh = new Map(deltaPlan.requests.flatMap((request) => request.aliases.map((alias) => [alias.key, request])));
+  for (const request of deltaPlan.requests) {
+    if (request.aliases.some((alias) => existing.clips[alias.key])) throw new Error(`Delta request is already published: ${request.key}`);
+  }
+  const clips = Object.fromEntries(Object.entries(existing.clips).filter(([key]) => key.startsWith("zh-TW:")));
+  for (const key of activePlan.chinesePlaybackKeys ?? []) {
+    if (!clips[key] || !(clips[key].duration > 0)) throw new Error(`Current Chinese playback is not covered: ${key}`);
+  }
+  const activeHashes = new Set(activePlan.requests.map((request) => request.requestHash));
+  for (const request of deltaPlan.requests) {
+    if (!activeHashes.has(request.requestHash)) throw new Error(`Delta request is not current playback: ${request.key}`);
+  }
+  for (const active of activePlan.requests) {
+    const output = verified.get(active.requestHash);
+    if (output) {
+      const { request, result } = output;
+      if (active.payload.input.text !== request.payload.input.text || active.voice !== request.voice) throw new Error(`Current playback differs from the batch: ${active.key}`);
+      for (const alias of active.aliases) {
+        if (fresh.get(alias.key)?.requestHash !== active.requestHash) throw new Error(`Current playback is not covered: ${alias.key}`);
+        clips[alias.key] = { file: `chirp3-hd/${request.file}`, duration: result.duration_seconds,
+          voice: request.voice, sha256: result.audio_sha256, revision: batchHash };
+      }
+    } else {
+      for (const alias of active.aliases) {
+        const clip = existing.clips[alias.key];
+        if (!clip || clip.file !== `chirp3-hd/${active.file}` || clip.voice !== active.voice || !(clip.duration > 0)
+          || sha256(readAudio(clip.file)) !== clip.sha256) throw new Error(`Current playback is not covered: ${alias.key}`);
+        clips[alias.key] = clip;
+      }
+    }
+  }
+  return { version: 2, model: "Google Cloud Text-to-Speech Chirp 3 HD (Korean); local speech synthesis (Chinese)",
+    fingerprint: batchHash, speakers: { ...existing.speakers, "ko-KR": BASELINE_KOREAN_VOICE },
+    voiceVariants: true, complete: true,
+    providers: { "ko-KR": "Google Cloud Text-to-Speech Chirp 3 HD", "zh-TW": existing.providers?.["zh-TW"] ?? existing.model }, clips };
+}

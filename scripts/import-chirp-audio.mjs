@@ -7,7 +7,7 @@ import { courseLessons } from "../src/data/courseLessons.js";
 import { specialCourses } from "../src/data/specialCourses.js";
 import { collectAudioCatalog } from "./lib/audio-catalog.mjs";
 import { buildGoogleAudioPlan, sha256 } from "./lib/google-audio-plan.mjs";
-import { buildImportedManifest, validateChirpResults } from "./lib/chirp-import.mjs";
+import { buildDeltaManifest, buildImportedManifest, validateChirpResults } from "./lib/chirp-import.mjs";
 
 const args = process.argv.slice(2);
 const value = (flag) => args.includes(flag) ? args[args.indexOf(flag) + 1] : undefined;
@@ -29,7 +29,11 @@ const audioRoot = fileURLToPath(new URL("../public/audio/", import.meta.url));
 const manifestPath = path.join(audioRoot, "manifest.json");
 const oldBytes = readFileSync(manifestPath), existing = JSON.parse(oldBytes);
 const activePlan = buildGoogleAudioPlan(collectAudioCatalog(), [...courseLessons, ...specialCourses]);
-const imported = buildImportedManifest(existing, activePlan, plan, verified, batchHash);
+// --delta: the batch holds only requests that no published clip uses; published clips are kept by byte check.
+const delta = args.includes("--delta");
+const imported = delta
+  ? buildDeltaManifest(existing, activePlan, plan, verified, batchHash, (relative) => readFileSync(path.join(audioRoot, relative)))
+  : buildImportedManifest(existing, activePlan, plan, verified, batchHash);
 const chinese = Object.entries(existing.clips).filter(([key]) => key.startsWith("zh-TW:"));
 const chineseHashes = new Map(chinese.map(([key, clip]) => [key, sha256(readFileSync(path.join(audioRoot, clip.file)))]));
 const run = promisify(execFile);
@@ -47,7 +51,9 @@ await Promise.all(Array.from({ length: 4 }, async () => {
 if (sha256(readFileSync(manifestPath)) !== sha256(oldBytes)) throw new Error("Active manifest changed during verification; rerun before applying.");
 for (const [key, clip] of chinese) if (chineseHashes.get(key) !== sha256(readFileSync(path.join(audioRoot, clip.file)))) throw new Error("Existing Chinese audio changed during verification.");
 if (args.includes("--apply")) {
-  const requiredFiles = new Set(Object.entries(imported.clips).filter(([key]) => key.startsWith("ko-KR:")).map(([, clip]) => clip.file));
+  const requiredFiles = delta
+    ? new Set([...verified.values()].map(({ request }) => `chirp3-hd/${request.file}`))
+    : new Set(Object.entries(imported.clips).filter(([key]) => key.startsWith("ko-KR:")).map(([, clip]) => clip.file));
   for (const file of requiredFiles) {
     const destination = path.join(audioRoot, file);
     mkdirSync(path.dirname(destination), { recursive: true });
@@ -58,7 +64,8 @@ if (args.includes("--apply")) {
   writeFileSync(`${manifestPath}.partial`, `${JSON.stringify(imported, null, 2)}\n`);
   renameSync(`${manifestPath}.partial`, manifestPath);
 }
-console.log(JSON.stringify({ batchHash, decoded, applied: args.includes("--apply"),
+console.log(JSON.stringify({ mode: delta ? "delta" : "full", batchHash, decoded, applied: args.includes("--apply"),
   koreanPlaybackKeys: Object.keys(imported.clips).filter((key) => key.startsWith("ko-KR:")).length,
   preservedChineseClips: chinese.length, accountedCostUsd: results.accounted_cost_ceiling_usd,
-  excludedDraftOutputs: plan.requests.length - new Set(Object.entries(imported.clips).filter(([key]) => key.startsWith("ko-KR:")).map(([, clip]) => clip.file)).size }, null, 2));
+  ...(delta ? { freshRequests: plan.requests.length }
+    : { excludedDraftOutputs: plan.requests.length - new Set(Object.entries(imported.clips).filter(([key]) => key.startsWith("ko-KR:")).map(([, clip]) => clip.file)).size }) }, null, 2));

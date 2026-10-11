@@ -35,7 +35,9 @@ describe("courseLessons", () => {
       "b1-19",
       "b1-20",
       "b1-21",
-      "b1-22"
+      "b1-22",
+      "b1-23",
+      "b1-24"
     ]);
 
     for (const lesson of courseLessons) {
@@ -99,9 +101,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("names all 27 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(27);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(27);
+  test("names all 29 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(29);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(29);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
@@ -167,6 +169,40 @@ describe("courseLessons", () => {
       ...lesson.vocabulary, ...lesson.guide.sections.flatMap((section) => section.words),
       ...lesson.guide.practice.items.map((item) => item.answer)];
     for (const word of words) expect(word.roman.split("-").filter(Boolean)).toHaveLength([...word.text].length);
+  });
+
+  test("adds the October 13 and 15 text without source images and keeps romanization aligned", () => {
+    const lesson1013 = courseLessons.find((item) => item.id === "b1-23");
+    expect(lesson1013.label).toBe("韓語1級主修會話(五)-2/6堂-20261013(二)");
+    expect(lesson1013.titleKo).toBe("나오기 전에 샤워했어요.");
+    expect(lesson1013.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([4, 8, 8]);
+    expect(lesson1013.vocabulary).toHaveLength(23);
+    assertGuide(lesson1013.guide);
+    expect(lesson1013.guide.sections.map((section) => section.words.length)).toEqual([6, 6, 10]);
+    expect(lesson1013.guide.practice.prompts).toHaveLength(4);
+
+    const lesson1015 = courseLessons.find((item) => item.id === "b1-24");
+    expect(lesson1015.label).toBe("韓語1級主修會話(五)-3/6堂-20261015(四)");
+    expect(lesson1015.titleKo).toBe("한국어는 좀 어렵지만 재미있어요.");
+    expect(lesson1015.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([4, 5, 6]);
+    expect(lesson1015.vocabulary).toHaveLength(21);
+    assertGuide(lesson1015.guide);
+    expect(lesson1015.guide.sections.map((section) => section.words.length)).toEqual([6, 4, 4]);
+    expect(lesson1015.guide.practice.prompts).toHaveLength(4);
+
+    for (const lesson of [lesson1013, lesson1015]) {
+      expect(lesson.media).toBeUndefined();
+      expect(lesson.heroEmoji).toBeTruthy();
+      expect(lesson.dialogues.every((dialogue) => !dialogue.image && !dialogue.objectImage)).toBe(true);
+      expect(lesson.vocabulary.every((word) => !word.image)).toBe(true);
+      const words = [
+        ...lesson.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((lineItem) => lineItem.tokens)),
+        ...lesson.vocabulary,
+        ...lesson.guide.sections.flatMap((section) => section.words),
+        ...lesson.guide.practice.items.map((item) => item.answer),
+      ];
+      for (const word of words) expect(word.roman.split("-").filter(Boolean)).toHaveLength([...word.text].length);
+    }
   });
 
   test("L3 exposes a numbers learning guide with a single grid and price practice", () => {

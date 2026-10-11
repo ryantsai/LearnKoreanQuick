@@ -39,6 +39,8 @@ This verifies batch identity, exact text/voice/config, hashes, complete output c
 
 Korean assets use `public/audio/chirp3-hd/`; base lesson IDs, progress storage and original physical assets remain unchanged. Regenerate the catalog, run `audio:verify`, tests and build after integration. Listen to representative alphabet, word, sentence, alternating-role and slow-playback samples: hashes and decoding establish file integrity, not linguistic quality.
 
+Delta imports pay only for what is missing. After new lessons add Korean playback keys, `npm run audio:google:delta` writes `tmp/google-audio-delta-plan.json` with only the requests that no published clip uses. It makes no network call. Synthesize those requests only, then import with `npm run audio:google:import -- --delta --plan tmp/google-audio-delta-plan.json --batch /local/batch.json --results-dir /local/results`, adding `--apply` after review. A published clip is kept only when its bytes still match the manifest's SHA-256. The importer refuses any delta request that a published clip already uses. Keep batch files, receipts and the project ID outside the repository.
+
 ## Chinese additions
 
 The October 8 additions were generated locally with the already installed Taiwan Meijia voice. The public `public/audio/chinese-meijia-provenance.json` records the exact 64 keys, input and audio hashes, spoken text, recipe, duration and decoded signal measurements. Their source texts are UTF-8 Traditional Chinese. The command supplies no `say -r` rate override; MP3 encoding is 96 kbps. All 64 files fully decoded with finite, audible signal levels. Their combined duration is 90.78 seconds. No paid service, model download or replacement of an existing clip was performed.

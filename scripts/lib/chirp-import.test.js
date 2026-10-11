@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { buildGoogleAudioPlan, sha256 } from "./google-audio-plan.mjs";
 import { buildChirpManifest } from "./chirp-manifest.mjs";
-import { buildImportedManifest, runnerJobHash, validateChirpResults } from "./chirp-import.mjs";
+import { buildDeltaManifest, buildImportedManifest, runnerJobHash, selectDeltaPlan, validateChirpResults } from "./chirp-import.mjs";
 
 function fixture() {
   const plan = buildGoogleAudioPlan({ entries: [{ text: "커피", lang: "ko-KR", lessons: ["fixture"] }] }, []);
@@ -60,5 +60,55 @@ describe("verified Chirp import", () => {
     const verified = validateChirpResults(f.plan, f.batch, f.hash, f.results, () => f.bytes);
     expect(() => buildImportedManifest({ clips: {} }, active, f.plan, verified, f.hash)).toThrow(/Chinese playback is not covered/);
     expect(buildImportedManifest({ clips: { "zh-TW:未錄製中文": { file: "existing.mp3", duration: 1 } } }, active, f.plan, verified, f.hash).complete).toBe(true);
+  });
+});
+
+describe("delta Chirp import", () => {
+  function deltaFixture() {
+    const activePlan = buildGoogleAudioPlan({ entries: [
+      { text: "커피", lang: "ko-KR", lessons: ["fixture"] },
+      { text: "차", lang: "ko-KR", lessons: ["fixture"] },
+    ] }, []);
+    const published = activePlan.requests.find((request) => request.payload.input.text === "커피");
+    const fresh = activePlan.requests.find((request) => request.payload.input.text === "차");
+    const publishedBytes = Buffer.alloc(600, 5), freshBytes = Buffer.alloc(600, 9);
+    const existing = { speakers: { "ko-KR": "ko-KR-Chirp3-HD-Kore", "zh-TW": "Serena" }, providers: { "zh-TW": "local" }, model: "Qwen",
+      clips: { [published.aliases[0].key]: { file: `chirp3-hd/${published.file}`, duration: 1.1, voice: published.voice, sha256: sha256(publishedBytes), revision: "old" } } };
+    const deltaPlan = selectDeltaPlan(activePlan, existing);
+    const batch = buildChirpManifest(deltaPlan, "approved-project");
+    const item = batch.items[0], hash = sha256(JSON.stringify(batch));
+    const job = runnerJobHash(item, batch.voices);
+    const result = { id: item.id, course_id: item.course_id, role: item.role, output: item.output, characters: item.characters,
+      utf8_bytes: item.utf8_bytes, job_key: job, attempt_id: 1, voice: batch.voices[item.role], speaking_rate: 1, audio_encoding: "MP3",
+      http_status: 200, text_sha256: sha256(item.text), audio_bytes: freshBytes.length, audio_sha256: sha256(freshBytes), duration_seconds: 1.2 };
+    const results = { manifest_sha256: hash, project: batch.project, quota_project_header: batch.project, budget_usd: 2,
+      items: [result], output_count: 1, unique_request_count: 1, attempt_count: 1, accounted_cost_ceiling_usd: item.text.length * 30 / 1e6,
+      attempts: [{ attempt_id: 1, job_key: job, cost_microusd: item.text.length * 30, status: "succeeded", http_status: 200 }] };
+    const verified = validateChirpResults(deltaPlan, batch, hash, results, () => freshBytes);
+    const readPublished = (relative) => relative === `chirp3-hd/${published.file}` ? publishedBytes : Buffer.alloc(0);
+    return { activePlan, published, fresh, existing, deltaPlan, verified, hash, readPublished };
+  }
+  test("keeps published clips whose bytes still match and synthesizes only the fresh request", () => {
+    const f = deltaFixture();
+    expect(f.deltaPlan.requests.map((request) => request.payload.input.text)).toEqual(["차"]);
+    expect(f.deltaPlan.delta).toEqual({ sourceFingerprint: f.activePlan.fingerprint, freshRequests: 1, keptRequests: 1 });
+    const manifest = buildDeltaManifest(f.existing, f.activePlan, f.deltaPlan, f.verified, f.hash, f.readPublished);
+    expect(manifest.clips[f.published.aliases[0].key]).toEqual(f.existing.clips[f.published.aliases[0].key]);
+    expect(manifest.clips[f.fresh.aliases[0].key]).toMatchObject({ file: `chirp3-hd/${f.fresh.file}`, revision: f.hash, voice: "ko-KR-Chirp3-HD-Kore" });
+    expect(manifest.complete).toBe(true);
+  });
+  test("refuses to keep a published clip whose bytes changed", () => {
+    const f = deltaFixture();
+    expect(() => buildDeltaManifest(f.existing, f.activePlan, f.deltaPlan, f.verified, f.hash, () => Buffer.alloc(600, 1))).toThrow(/not covered/);
+  });
+  test("refuses to buy a request that a published clip already uses", () => {
+    const f = deltaFixture();
+    expect(() => buildDeltaManifest(f.existing, f.activePlan, { ...f.deltaPlan, requests: [f.published] }, f.verified, f.hash, f.readPublished))
+      .toThrow(/already published/);
+  });
+  test("rejects a request that is only partly published", () => {
+    const partial = { budget: { pricePerCharacterUsd: 0.00003, characterBudget: 66666 }, fingerprint: "f",
+      requests: [{ key: "ko-KR:x", characterCount: 1, aliases: [{ key: "ko-KR:x" }, { key: "ko-KR:x|alt" }] }] };
+    expect(() => selectDeltaPlan(partial, { clips: { "ko-KR:x": {} } })).toThrow(/Partly published/);
   });
 });
