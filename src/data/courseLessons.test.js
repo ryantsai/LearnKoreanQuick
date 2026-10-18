@@ -37,7 +37,9 @@ describe("courseLessons", () => {
       "b1-21",
       "b1-22",
       "b1-23",
-      "b1-24"
+      "b1-24",
+      "b1-25",
+      "b1-26"
     ]);
 
     for (const lesson of courseLessons) {
@@ -101,9 +103,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("names all 29 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(29);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(29);
+  test("names all 31 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(31);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(31);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
@@ -202,6 +204,51 @@ describe("courseLessons", () => {
         ...lesson.guide.practice.items.map((item) => item.answer),
       ];
       for (const word of words) expect(word.roman.split("-").filter(Boolean)).toHaveLength([...word.text].length);
+    }
+  });
+
+  test("adds the October 19 and 21 handouts with verified metadata and open exercises", () => {
+    const lesson1019 = courseLessons.find((item) => item.id === "b1-25");
+    expect(lesson1019.label).toBe("韓語1級主修會話(五)-4/6堂-20261019(一)");
+    expect(lesson1019.titleKo).toBe("영화를 같이 볼까요?");
+    expect(lesson1019.sourcePdf).toBe("docs/lessons/new/1019.pdf");
+    expect(lesson1019.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([6, 6, 8, 6]);
+    expect(lesson1019.dialogues[0].lines[2].ko).toBe("시간 있으면 같이 영화를 볼까요?");
+    expect(lesson1019.vocabulary).toHaveLength(21);
+    expect(lesson1019.guide.sections.map((section) => section.words.length)).toEqual([3, 3, 10]);
+    expect(lesson1019.guide.practice.prompts).toHaveLength(5);
+    expect(lesson1019.guide.practice.items).toHaveLength(2);
+    expect(lesson1019.dialogues[2].lines.filter((entry) => entry.ko === "__________")).toHaveLength(3);
+    expect(lesson1019.guide.sourceNotes[0].lines.join(" ")).toContain("長輩、上司");
+
+    const lesson1021 = courseLessons.find((item) => item.id === "b1-26");
+    expect(lesson1021.label).toBe("韓語1級主修會話(五)-5/6堂-20261021(三)");
+    expect(lesson1021.titleKo).toBe("버스로 가면 시간이 많이 걸려요.");
+    expect(lesson1021.sourcePdf).toBe("docs/lessons/new/1021.pdf");
+    expect(lesson1021.dialogues.map((dialogue) => dialogue.lines.length)).toEqual([6, 15, 6, 6]);
+    expect(lesson1021.dialogues[0].lines[0].ko).toContain("지우펀(九份)이");
+    expect(lesson1021.dialogues[0].lines[0].spokenKo).toBe("관우 씨, 지우펀이 어디 있어요?");
+    expect(lesson1021.dialogues[0].lines[5].spokenKo).toContain("사십 분");
+    expect(lesson1021.dialogues[3].lines[2].spokenKo).toContain("백일 빌딩");
+    expect(lesson1021.vocabulary).toHaveLength(12);
+    expect(lesson1021.guide.sections.map((section) => section.words.length)).toEqual([6, 8, 3, 10, 3, 8]);
+    expect(lesson1021.guide.practice.prompts).toHaveLength(6);
+    expect(lesson1021.guide.practice.items).toHaveLength(6);
+    expect(lesson1021.dialogues[3].lines.filter((entry) => entry.ko === "__________")).toHaveLength(3);
+
+    for (const lesson of [lesson1019, lesson1021]) {
+      assertGuide(lesson.guide);
+      expect(lesson.media).toBeUndefined();
+      expect(lesson.heroEmoji).toBeTruthy();
+      expect(lesson.dialogues.every((dialogue) => !dialogue.image && !dialogue.objectImage)).toBe(true);
+      expect(lesson.vocabulary.every((entry) => !entry.image)).toBe(true);
+      expect(lesson.guide.references[0].entries).toHaveLength(6);
+      const words = [
+        ...lesson.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((entry) => entry.tokens)),
+        ...lesson.vocabulary, ...lesson.guide.sections.flatMap((section) => section.words),
+        ...lesson.guide.practice.items.map((item) => item.answer),
+      ];
+      for (const entry of words) expect(entry.roman.split("-").filter(Boolean), entry.text).toHaveLength([...entry.text].length);
     }
   });
 
