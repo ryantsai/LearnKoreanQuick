@@ -39,7 +39,9 @@ describe("courseLessons", () => {
       "b1-23",
       "b1-24",
       "b1-25",
-      "b1-26"
+      "b1-26",
+      "b1-27",
+      "b1-28"
     ]);
 
     for (const lesson of courseLessons) {
@@ -103,9 +105,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("names all 31 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(31);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(31);
+  test("names all 33 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(33);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(33);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
@@ -382,4 +384,21 @@ describe("courseLessons", () => {
     expect(b118.guide.sections.some((section) => section.heading.includes("에"))).toBe(true);
     expect(b118.guide.practice.prompts).toHaveLength(6);
   });
+  test("adds the October 28 and November 3 handouts with reviewed dialogue and open exercises", () => {
+    const october = courseLessons.find((item) => item.id === "b1-27");
+    const november = courseLessons.find((item) => item.id === "b1-28");
+    expect(october.label).toBe("韓語1級主修會話(五)-6/6堂-20261028(三)");
+    expect(november.label).toBe("韓語1級主修會話(六)-1/6堂-20261103(二)");
+    expect(october.dialogues[0].lines[3].spokenKo).toContain("삼십 분");
+    expect(november.dialogues[0].lines[1].spokenKo).toContain("이 년");
+    expect(november.dialogues[0].lines[4].ko).toBe("왜 한국어를 배우고 싶었어요?");
+    expect(november.guide.sourceNotes[1].lines[0]).toContain("與韓文對話中的學習動機不同");
+    for (const lesson of [october, november]) {
+      assertGuide(lesson.guide);
+      expect(lesson.dialogues.at(-1).lines.some((line) => line.ko === "__________")).toBe(true);
+      const words = [...lesson.vocabulary, ...lesson.dialogues.flatMap((dialogue) => dialogue.lines.flatMap((line) => line.tokens)), ...lesson.guide.sections.flatMap((section) => section.words), ...lesson.guide.practice.items.map((item) => item.answer)];
+      for (const word of words) expect(word.roman.split("-").filter(Boolean)).toHaveLength([...word.text].length);
+    }
+  });
+
 });
