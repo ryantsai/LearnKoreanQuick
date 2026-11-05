@@ -1,7 +1,7 @@
 {
   "version": 2,
   "model": "Google Cloud Text-to-Speech Chirp 3 HD (Korean); local speech synthesis (Chinese)",
-  "fingerprint": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326",
+  "fingerprint": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb",
   "speakers": {
     "ko-KR": "ko-KR-Chirp3-HD-Kore",
     "zh-TW": "Serena"
@@ -11446,6 +11446,1476 @@
       "voice": "Serena",
       "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
     },
+    "zh-TW:山": {
+      "file": "af25ea765e3c4949bae22715.mp3",
+      "duration": 0.72,
+      "revision": "17bba163bcef8249",
+      "spokenText": "山.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "17bba163bcef824925f2a0c0cf8f077685ab7b634ab28b35b1ff62772d158922",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:新": {
+      "file": "f4934cbfefcdf28046be3074.mp3",
+      "duration": 0.56,
+      "revision": "9d37227a9993af65",
+      "spokenText": "新.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9d37227a9993af656de25ef5a87935ac01b3d43d6398d329e5ccf3054a50916c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:中山": {
+      "file": "f95cee02b6163e753c58523c.mp3",
+      "duration": 0.72,
+      "revision": "a63b18679c1cf640",
+      "spokenText": "中山.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "a63b18679c1cf640fda2b98b062c91da6cf1ccb58fc59875fe1e5ebc6ec6f91a",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:休假": {
+      "file": "30743c30b94ffdcd10717346.mp3",
+      "duration": 0.8,
+      "revision": "aa946b26ca263abd",
+      "spokenText": "休假.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "aa946b26ca263abdeb8497edccd3a2018bbddc1a7a6391453f80ddcdade98827",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:帽子": {
+      "file": "89c6546a28d15c36b6fdf781.mp3",
+      "duration": 0.56,
+      "revision": "d2f6b0791457d21e",
+      "spokenText": "帽子.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d2f6b0791457d21e692476f5e107ec37d12d64f9bb7603c59de115870f0abf36",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:文章": {
+      "file": "0f7d4a379972c5e97eacef42.mp3",
+      "duration": 0.64,
+      "revision": "37e7a223b6bf6cde",
+      "spokenText": "文章.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "37e7a223b6bf6cdedc522ff0ffb787605740d26db75cee0b3fbf6be0e45cc0d2",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:樓房": {
+      "file": "6e8234af77a8a9be75e197d0.mp3",
+      "duration": 1.04,
+      "revision": "d312da002b03a968",
+      "spokenText": "楼房.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d312da002b03a9680e1684752ae45f8487579a489ff2e1b4e48c36c9a165d41f",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:機票": {
+      "file": "60b486612c7706cf5e697141.mp3",
+      "duration": 0.72,
+      "revision": "fa763671e2d06dd1",
+      "spokenText": "机票.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "fa763671e2d06dd113325126c9a6792753be278788d0694517714ddecf298d7d",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:流行": {
+      "file": "5e38c45e5702c3aa0eec15f2.mp3",
+      "duration": 0.88,
+      "revision": "17acacf0594f3509",
+      "spokenText": "流行.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "17acacf0594f35090271b17d38ce5b0fc75eca56356deea745c45d2048418153",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:滑冰": {
+      "file": "908d9464d83f95587594e015.mp3",
+      "duration": 0.72,
+      "revision": "c2a4286ee7cfc10f",
+      "spokenText": "滑冰.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "c2a4286ee7cfc10f2b9bf431990397122cfa888d502c4e2c06c8a480f9872dbd",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:滑雪": {
+      "file": "df92c06e71ed2419ee045918.mp3",
+      "duration": 0.88,
+      "revision": "4130636a01ffb44d",
+      "spokenText": "滑雪.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "4130636a01ffb44d188f055e352cfbb1b8070116950b001fc195c3f4612a3a85",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:獨自": {
+      "file": "f41cedaf21972c28974ff84d.mp3",
+      "duration": 0.56,
+      "revision": "19388b05a8c5fe44",
+      "spokenText": "独自.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "19388b05a8c5fe44dc90149b5b97cf2a8e5d0818c5612964bfa1a4c204e51911",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:簽證": {
+      "file": "b05355750011dd0aa80f9dd6.mp3",
+      "duration": 0.72,
+      "revision": "0473ec8386c2703d",
+      "spokenText": "签证.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "0473ec8386c2703dd47fee8e2885a3b840a9e012db9a66a97fa4e7740c0195f1",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:跳舞": {
+      "file": "c64b7ec3b335ed43f02a4eba.mp3",
+      "duration": 0.8,
+      "revision": "3921e88202819f8f",
+      "spokenText": "跳舞.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "3921e88202819f8fea71b76462e86280ce3d1d9c7263883507d412f0f48c5efe",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這種": {
+      "file": "942a11ce48d09197ba844e0b.mp3",
+      "duration": 1.04,
+      "revision": "dafff8b735249e40",
+      "spokenText": "这种.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "dafff8b735249e4005d273dcc79c1fcffc915781ed282d37a6a7d29a090165b7",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:駕照": {
+      "file": "ad9bbd39105bf29ad378b782.mp3",
+      "duration": 0.72,
+      "revision": "da677bdc01d219e7",
+      "spokenText": "驾照.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "da677bdc01d219e796201533e50d3f46e1ca97463b0d89c7e92b1faf8251f144",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:駕駛": {
+      "file": "7e7d56b415ff297ce8d9d95b.mp3",
+      "duration": 0.8,
+      "revision": "d07be1b7e6c9103a",
+      "spokenText": "驾驶.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d07be1b7e6c9103aaa3bf9f989f1987f9152e78efb7e3cd01541115856c8e43f",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不能來": {
+      "file": "8f022c09c5c92831cedef0be.mp3",
+      "duration": 0.8,
+      "revision": "420f2a563e54a5c5",
+      "spokenText": "不能来.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "420f2a563e54a5c58561d7db25fb454ed5759c4d86aad3d4953506f12221a030",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不能吃": {
+      "file": "5329f8059648eedd6604d2e1.mp3",
+      "duration": 1.04,
+      "revision": "de0acbcf11f375ad",
+      "spokenText": "不能吃.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "de0acbcf11f375ad90acf74ac7439184dd2f1a578847e33ae98ee733f2fc956a",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不能喝": {
+      "file": "b6240a5905521a3150cdc41c.mp3",
+      "duration": 0.8,
+      "revision": "ab1e24384eede25d",
+      "spokenText": "不能喝.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ab1e24384eede25d9de9acafd421e62e8be419d398fc7b246f9be4586ca80115",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不能讀": {
+      "file": "bb10e1c00ef0729dd095e398.mp3",
+      "duration": 0.8,
+      "revision": "9a6cbd59a9966ec8",
+      "spokenText": "不能读.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9a6cbd59a9966ec88db2288fe6623ae86678e07a75e1bcef185f44259eb0837e",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以來": {
+      "file": "2a7ee6bc2caabc7664d96a7f.mp3",
+      "duration": 0.64,
+      "revision": "dc1e4febe28617d9",
+      "spokenText": "可以来.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "dc1e4febe28617d918911d3c1180f0cf1b92169744fcfeb2f4de032294a8d558",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以去": {
+      "file": "53c68dad7e5f45fa871a11ff.mp3",
+      "duration": 0.8,
+      "revision": "2ba273c6a3033b3a",
+      "spokenText": "可以去.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "2ba273c6a3033b3a95a0ab76d3329fa531d93199f136977878c80812c71ea668",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以吃": {
+      "file": "c48d0409fd22fd224826f04d.mp3",
+      "duration": 0.72,
+      "revision": "8059024876acb2a0",
+      "spokenText": "可以吃.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "8059024876acb2a0ebd77cecbe3ffccad1295cb5634d9e70ca01019d3e8376d4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以喝": {
+      "file": "876abb1300373721696e65f6.mp3",
+      "duration": 0.88,
+      "revision": "a88a53cdc70ac78d",
+      "spokenText": "可以喝.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "a88a53cdc70ac78d34bee434b1d1f72f824fa38c8867cad7d46df21c4e111909",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以讀": {
+      "file": "4c9f3b8323c888c364edc765.mp3",
+      "duration": 0.88,
+      "revision": "2d00cbb645939eb6",
+      "spokenText": "可以读.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "2d00cbb645939eb6469a5be201d1e706abbc677630657276692ac93876d36a7f",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以賣": {
+      "file": "22f5579a68e3d9ab6032bf41.mp3",
+      "duration": 0.72,
+      "revision": "f6de294a2380f110",
+      "spokenText": "可以卖.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f6de294a2380f110175a41b66494120a11cc522d0b776bd333f69bf19f2bd72f",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:地下街": {
+      "file": "81712697a0c877b4a90be02a.mp3",
+      "duration": 1.12,
+      "revision": "ac35b9e5ea03416d",
+      "spokenText": "地下街.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ac35b9e5ea03416d12ca3b86318411fc1c670d49f33f862a77b23f0bd6874efb",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:打壁球": {
+      "file": "f648078a234a8b3922ad1037.mp3",
+      "duration": 0.72,
+      "revision": "6d9734ab58e694eb",
+      "spokenText": "打壁球.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6d9734ab58e694eb143201d2d36bafe8372cf3fb490c535bf978c8025193abf3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這本書": {
+      "file": "3250832a5db99e66df8a96e4.mp3",
+      "duration": 0.96,
+      "revision": "f616df7b3dd1f72a",
+      "spokenText": "这本书.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f616df7b3dd1f72afc98a03e183bbf0db31efc29df867cadcc5a5eec2d85e251",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這棟樓": {
+      "file": "ea3b6021f77b0f93d71b4a34.mp3",
+      "duration": 1.28,
+      "revision": "98bdf722b4f153ea",
+      "spokenText": "这栋楼.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "98bdf722b4f153ea88e6339029691aa4c431f3b46e7b734bee22aae32f4f3cca",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個人": {
+      "file": "e0b91be3f7a3ddd9317e51a1.mp3",
+      "duration": 0.72,
+      "revision": "af03fd059ebb23a8",
+      "spokenText": "那个人.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "af03fd059ebb23a852afda08213e075b01c24581a0b3b930e69e3697c61f67f0",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那包包": {
+      "file": "ea9a9148e6ea93bbdc409a99.mp3",
+      "duration": 1.2,
+      "revision": "f326254751252e1c",
+      "spokenText": "那包包.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f326254751252e1caed281ec9db37e71ab8099d3f77ec96a21d442ca317b1bc7",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那座山": {
+      "file": "625bb04308b71f6eeef07eb6.mp3",
+      "duration": 0.88,
+      "revision": "a8569d1d5c203ea7",
+      "spokenText": "那座山.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "a8569d1d5c203ea72c3161f85fdee86643f53bebf6128c709b61e76ee6cb47c5",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:鐵娘子": {
+      "file": "3dd3505c6998ab7d69929e77.mp3",
+      "duration": 1.04,
+      "revision": "b44753b727992064",
+      "spokenText": "铁娘子.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b44753b7279920644e5a465c37e588267c4ed9be022acc1ff489507337dcd83c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:一杯咖啡": {
+      "file": "2c00e15d7da74b2e8b57f781.mp3",
+      "duration": 0.72,
+      "revision": "4c44f8ff9234c0bb",
+      "spokenText": "一杯咖啡.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "4c44f8ff9234c0bb1d660bc8023bdc3689de5b3519643adbd66262d5f8b18d5a",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:打保齡球": {
+      "file": "f2ec38a34a4a4d322568d77c.mp3",
+      "duration": 0.96,
+      "revision": "f9d3dc6423439eeb",
+      "spokenText": "打保龄球.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f9d3dc6423439eeb86db5562768e297ccde5ffb3f4c088e43a8b1b15d6ae5919",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:敏俊的家": {
+      "file": "34789ee857e3942e9c9c7dc1.mp3",
+      "duration": 1.04,
+      "revision": "aea414bdaf9a9833",
+      "spokenText": "敏俊的家.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "aea414bdaf9a98333f0baac35ee940addcbacc08bc4a94e0cd2b9da05642fb93",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:為什麼？": {
+      "file": "5e2eedbff98c320491afaf40.mp3",
+      "duration": 0.64,
+      "revision": "b95072f9abd6d8b2",
+      "spokenText": "为什么？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b95072f9abd6d8b212959a650dcc069f1e84f0f00936428d610f7d3c6cba4983",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這臺電腦": {
+      "file": "fa0e160ce8a61c223f6d4b69.mp3",
+      "duration": 1.04,
+      "revision": "cacad44673784660",
+      "spokenText": "这台电脑.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "cacad446737846608598748effcb670335888beaf4c2ee343473a7bc0d32e8c0",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個": {
+      "file": "02be8134b44dd3b816c2f78a.mp3",
+      "duration": 1.28,
+      "revision": "158489a341fbc4cc",
+      "spokenText": "远处那个.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "158489a341fbc4cc4270e24ffee7b4a3e5b7ee055e1d2dd3978a0dc7335e0e8d",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個女生": {
+      "file": "0f27153ad5f3d626c0a47470.mp3",
+      "duration": 1.2,
+      "revision": "7af7fd504a61fcf7",
+      "spokenText": "那个女生.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7af7fd504a61fcf75ff80eea41a339a462d2031330d1fd745de087b4a19780c3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個瓶子": {
+      "file": "3babd3f23957c5c48d2eec0e.mp3",
+      "duration": 0.88,
+      "revision": "378ef6757df6d830",
+      "spokenText": "那个瓶子.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "378ef6757df6d8301148d5b10d58001d2accf4eb18dde12f95b4948bf188d1cb",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那臺公車": {
+      "file": "786425e2161d99ec9f0f5ec9.mp3",
+      "duration": 1.2,
+      "revision": "77c36f9e375375ff",
+      "spokenText": "那台公车.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "77c36f9e375375ffd9a03ca0bac4d5d2f8af1aee84a6bcfb97c55995ae60a5c1",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:騎摩托車": {
+      "file": "38bccfb87b498a49a7a2c957.mp3",
+      "duration": 0.96,
+      "revision": "09c22e67ccc6b3c7",
+      "spokenText": "骑摩托车.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "09c22e67ccc6b3c7e71ea4c720a0215a4fc9ff5165873565b2aa0dd622832bed",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:冠宇的包包": {
+      "file": "5fa6f2f7d998a17e2e537a36.mp3",
+      "duration": 1.28,
+      "revision": "5c28f2ea39708e7e",
+      "spokenText": "冠宇的包包.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5c28f2ea39708e7e116b16914e94e40066567b827e344e212c54b6a95b9e8ccc",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:手錶、時鐘": {
+      "file": "089a9b7ead2cffc44c28a83b.mp3",
+      "duration": 2.32,
+      "revision": "ad1e766397982027",
+      "spokenText": "手表、时钟.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ad1e766397982027fa7e2403dfe9c2736b2278a7f5e78dc1275d8ba55013ae51",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:有汽車嗎？": {
+      "file": "5b0158c636c3138a30b9bf75.mp3",
+      "duration": 0.96,
+      "revision": "7ebd1436c0963ccd",
+      "spokenText": "有汽车吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7ebd1436c0963ccd5d1774bf0a660a6db998bfbeb737521d3701de4782cabe79",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:瓶子、水瓶": {
+      "file": "2b6f11a213ab1b2f1d7d20c3.mp3",
+      "duration": 2,
+      "revision": "b9df7c9362357d2d",
+      "spokenText": "瓶子、水瓶.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b9df7c9362357d2d2b60dba41f236262b040b5102bdcd95c7a64a1b1dc223b6b",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:臺灣的天氣": {
+      "file": "65f86a61c2248c0750b195a7.mp3",
+      "duration": 1.52,
+      "revision": "bf259b17dcf6b696",
+      "spokenText": "台湾的天气.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "bf259b17dcf6b696362eebbf4d98c73398bff12f6c4aabd79ea7f8292ce44f01",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不，自己去。": {
+      "file": "9f039feddd020e28099fbd0b.mp3",
+      "duration": 1.84,
+      "revision": "5cdfdda2ba58c1af",
+      "spokenText": "不，自己去。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5cdfdda2ba58c1af596d8a9f415c7b5fb8cadd863b2da7fb75f369da4532b4a5",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:擅長唱歌嗎？": {
+      "file": "7b0706e284ba08e285b0d6cf.mp3",
+      "duration": 1.28,
+      "revision": "1fde95a414786a2e",
+      "spokenText": "擅长唱歌吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "1fde95a414786a2e2c7048006d75878b759a021bccf53170117114c98b743668",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:請給我那個。": {
+      "file": "88a42667e9528ed93e7a47f7.mp3",
+      "duration": 0.96,
+      "revision": "b17c7f1ea2fe011e",
+      "spokenText": "请给我那个。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b17c7f1ea2fe011e963efde7116114a32a389abdfc29b86c786ad2f4f443dc94",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（主格）": {
+      "file": "d1d1857203b7fe7f3f6e152a.mp3",
+      "duration": 1.28,
+      "revision": "edb37c21e4e10739",
+      "spokenText": "这个（主格）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "edb37c21e4e1073968df9c60bff69facbdcdbd4d18f31144e83cbb6c30fc8dbe",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（主題）": {
+      "file": "131c428eec2bfad4c2b4c1a7.mp3",
+      "duration": 2,
+      "revision": "ba4d299efcbfaa21",
+      "spokenText": "这个（主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ba4d299efcbfaa21838ea04c3dcadb81eae04003865b2640fd8bf7c7c217c4d5",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（口語）": {
+      "file": "4400eefe4a1404307bd5cf8b.mp3",
+      "duration": 1.44,
+      "revision": "78bb425e3e261a50",
+      "spokenText": "这个（口语）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "78bb425e3e261a50383b06ee45948dd3f274076035c98bfb20a5365b8863a6bc",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（主格）": {
+      "file": "e19bc7c6954bf8ce6e380b74.mp3",
+      "duration": 0.96,
+      "revision": "71cb71bc681c81ac",
+      "spokenText": "那个（主格）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "71cb71bc681c81ac93204360aec012fd28c923717af03136fc372cd169eb0166",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（主題）": {
+      "file": "dfb9c9bb0c83eb5a94a618da.mp3",
+      "duration": 2.72,
+      "revision": "2969d3d616f3d990",
+      "spokenText": "那个（主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "2969d3d616f3d9903e38eefadca121a01607b620b10a3f0ae841274c294845bb",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（受詞）": {
+      "file": "84e2fdb23a960cb80f81c9a6.mp3",
+      "duration": 2.72,
+      "revision": "ba2eba45058cb40c",
+      "spokenText": "那个（受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ba2eba45058cb40c23b9361914ff1a6e6c7541d8140bb957059f46f024763732",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（口語）": {
+      "file": "281edd6092a62287679739f0.mp3",
+      "duration": 1.92,
+      "revision": "d603dd23025938f2",
+      "spokenText": "那个（口语）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d603dd23025938f205aa8cb54aea44558779504d54d2b3166a5c8f6e4d96efba",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個人是誰？": {
+      "file": "acde386941e41d68618985c3.mp3",
+      "duration": 0.96,
+      "revision": "4c14a3ab3dfc0fdb",
+      "spokenText": "那个人是谁？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "4c14a3ab3dfc0fdb5d61142aa5a57c48dfb91c5e2b1e96317ff1b8de90614204",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個是什麼？": {
+      "file": "8f9b25da777c2f0cc51649d2.mp3",
+      "duration": 1.12,
+      "revision": "e85b3b3bae2933ff",
+      "spokenText": "那个是什么？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "e85b3b3bae2933ff6046a1af1b0b15f2997791bb6f8c7e2b1485cb3e78f6141b",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不能生活／居住": {
+      "file": "8c52ec967fc9bf981dcd2ff3.mp3",
+      "duration": 2.32,
+      "revision": "5d40ac6f242f5024",
+      "spokenText": "不能生活／居住.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5d40ac6f242f5024eb725f49564ab0a2159625f0f6dafb1ee1e106f6ca062a1e",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:也擅長跳舞嗎？": {
+      "file": "941167fc6ff280d15b02cd80.mp3",
+      "duration": 1.68,
+      "revision": "74032fbf5792b6aa",
+      "spokenText": "也擅长跳舞吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "74032fbf5792b6aaefe7ca0a5b73703226101b940002b273291270f2646cc765",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:今天去學校嗎？": {
+      "file": "57d125a58e2b1862196c4a2d.mp3",
+      "duration": 1.52,
+      "revision": "4e1cfb7e01477cd3",
+      "spokenText": "今天去学校吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "4e1cfb7e01477cd359c8a35272bd22d0749d4d21fb81daa5ab5c083d575225b3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以生活／居住": {
+      "file": "c53f30e1f4bff3bcb419198b.mp3",
+      "duration": 1.84,
+      "revision": "b724ebd2dc913d0a",
+      "spokenText": "可以生活／居住.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b724ebd2dc913d0a4dfbc5aaf48a29a0b3031e383da10c4d5d0182bbdb328efd",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以買房子嗎？": {
+      "file": "b001cf8df391b053434c701d.mp3",
+      "duration": 1.04,
+      "revision": "6bec865a78792c2f",
+      "spokenText": "可以买房子吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6bec865a78792c2f6f3386e22d3a501f37d463e3e9c3568c973810ddc681b1f1",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:漂亮（禮貌形）": {
+      "file": "c3542b5ef6503ef720d7ced3.mp3",
+      "duration": 2,
+      "revision": "d015852774ffddf1",
+      "spokenText": "漂亮（礼貌形）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d015852774ffddf18e95ac7efca6fe2affa6d696ecf5e496f3fcf055be32c52d",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個是我的書。": {
+      "file": "159e6affef7b10b42e845058.mp3",
+      "duration": 0.96,
+      "revision": "3ce91379a8b9e87c",
+      "spokenText": "这个是我的书。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "3ce91379a8b9e87c0f3d1e0fb15a7a2bc58d8979af7f55a8dd015a5ed0b1039d",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個是泡菜嗎？": {
+      "file": "e746a4cc81d29eeffb7f3813.mp3",
+      "duration": 1.2,
+      "revision": "9a17ae2ee071558a",
+      "spokenText": "这个是泡菜吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9a17ae2ee071558a3e315fc2b0e070a7170f4eb4da6b0a50a9528c557f35abd5",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這包包是誰的？": {
+      "file": "314af2694719bafd2ab79ded.mp3",
+      "duration": 1.12,
+      "revision": "6202b92fda18d9cb",
+      "spokenText": "这包包是谁的？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6202b92fda18d9cbe68cf0e4c0bb32a84ef0564f02b440962ee23e7572a62ecf",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這是我的包包。": {
+      "file": "90067a6f21bc72f78d6e2b30.mp3",
+      "duration": 1.2,
+      "revision": "77563a78cf623408",
+      "spokenText": "这是我的包包。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "77563a78cf623408d5b7e75403e6b997ec6786aa6bcac8cd767f173ca16231ed",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這是韓語書嗎？": {
+      "file": "baf20c6408c3f2cd36b5ea06.mp3",
+      "duration": 1.04,
+      "revision": "107204c8f39c9913",
+      "spokenText": "这是韩语书吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "107204c8f39c991310279e31e1e2b276778e52217bef3c4a00c9bcf55f6b5780",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是，請完成回答。": {
+      "file": "7e07fb877cc6aff4a17c4599.mp3",
+      "duration": 2.4,
+      "revision": "529d93112baaf3c8",
+      "spokenText": "是，请完成回答。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "529d93112baaf3c88b3546350e77342d7dcc1310f9886f971b501c8ef095de07",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:跟朋友一起去嗎？": {
+      "file": "ed335679c7714b936026503d.mp3",
+      "duration": 1.28,
+      "revision": "5fae9417eea27cdc",
+      "spokenText": "跟朋友一起去吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5fae9417eea27cdc23f619519c7e61503a050238c38fbd6c71b43fc8cfd640a7",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（主格縮寫）": {
+      "file": "9589ec6099fec7d314096f5f.mp3",
+      "duration": 3.12,
+      "revision": "0f76e85b2ad276ea",
+      "spokenText": "这个（主格缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "0f76e85b2ad276ea0387193bfc35dfeaeb3b6be224497ca1266b8a2f22dbcb70",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（主題縮寫）": {
+      "file": "821800841781be020e987604.mp3",
+      "duration": 3.28,
+      "revision": "446852b09a429878",
+      "spokenText": "这个（主题缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "446852b09a42987871abb9852b9cc1adb705fd2e4780255edf1d9e20753cc5a3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（受詞縮寫）": {
+      "file": "243c7da5bbadee7100993a02.mp3",
+      "duration": 3.28,
+      "revision": "7a754cf35a21f0d8",
+      "spokenText": "这个（受词缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7a754cf35a21f0d83d3dc287e58bf2d0ae24d8077d9b3d738e2544604464f281",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（口語主題）": {
+      "file": "9453c667c4a995601fa73b02.mp3",
+      "duration": 2.56,
+      "revision": "c8534a5052470050",
+      "spokenText": "这个（口语主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "c8534a5052470050d2a51f6275c82713c5a782fb098af46bbb4c0f3848c74cb4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個（口語受詞）": {
+      "file": "559c6484f372da12bc14ff2c.mp3",
+      "duration": 2.56,
+      "revision": "072d7cd469b9cb61",
+      "spokenText": "这个（口语受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "072d7cd469b9cb613cfb21052c6fde3104285f27abdada87af38c127a1ad2db4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（主格）": {
+      "file": "31b51e36834e3e67052f512e.mp3",
+      "duration": 1.36,
+      "revision": "59295a53c01d0596",
+      "spokenText": "远处那个（主格）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "59295a53c01d0596f4c8280d23f97bc26400e95e0c51707d92f2b26606ff3c70",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（主題）": {
+      "file": "d7a51454b62d5c723a486309.mp3",
+      "duration": 3.28,
+      "revision": "5f685afa0f9a5572",
+      "spokenText": "远处那个（主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5f685afa0f9a5572abcfe558951da70a32225e4af15e4dad6c3c5556478b9163",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（受詞）": {
+      "file": "fcbec4c9b704a22592cf2099.mp3",
+      "duration": 1.92,
+      "revision": "344cd6f24f0be8a5",
+      "spokenText": "远处那个（受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "344cd6f24f0be8a5accc93fd9bb4032637dd99d2dd9bb627eb6b0ce9f937e489",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（口語）": {
+      "file": "da989e046dad065d5541357a.mp3",
+      "duration": 2.16,
+      "revision": "9c66d1a119d9fdaf",
+      "spokenText": "远处那个（口语）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9c66d1a119d9fdafa390964bcd64338d572e0cffaa0f639381bbe59442c64a08",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（主格縮寫）": {
+      "file": "d09085cc6294f3029b543533.mp3",
+      "duration": 2.64,
+      "revision": "ea511b67a56887ed",
+      "spokenText": "那个（主格缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ea511b67a56887ed4641bcaa67163c29af9f95dbd68b68d44b0ff846a676e611",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（主題縮寫）": {
+      "file": "d2c4c3fe8596972076e44f94.mp3",
+      "duration": 3.12,
+      "revision": "13d079c6cec28f5a",
+      "spokenText": "那个（主题缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "13d079c6cec28f5a5b794030049084d3b9b7ddc991b04d42fa17591aeb6ca7da",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（受詞縮寫）": {
+      "file": "d51612d8cd32a88a70ba81f7.mp3",
+      "duration": 2.72,
+      "revision": "29d5674162c69c41",
+      "spokenText": "那个（受词缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "29d5674162c69c41a9b616ab0e5380b54c036dcedd6c9ebf51dd58c5da82dc9c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（口語主題）": {
+      "file": "16fa56d24b805f6884e2917b.mp3",
+      "duration": 2.88,
+      "revision": "2290fe46f34f366f",
+      "spokenText": "那个（口语主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "2290fe46f34f366fec549b72eb1f4d1cfb659bf2abfdb6b8635f805321adc303",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（口語受詞）": {
+      "file": "6fe6d8988f5b3b5b9f0062a3.mp3",
+      "duration": 2.8,
+      "revision": "fa88e6c84c80bd1c",
+      "spokenText": "那个（口语受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "fa88e6c84c80bd1cc489013d844a465768a990ef172f766300b1832e564a78fa",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:什麼時候買那個的？": {
+      "file": "9440a6fef56b1ec5a77c42d3.mp3",
+      "duration": 1.6,
+      "revision": "ac8c6146e1ff8ee6",
+      "spokenText": "什么时候买那个的？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ac8c6146e1ff8ee6b5e56dbe5f1ef55e667076ed3a6eec25491e67022a4a4a45",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可以自己去美國嗎？": {
+      "file": "caf21c5fb0f40652fd942618.mp3",
+      "duration": 1.44,
+      "revision": "7146da38ffb436ff",
+      "spokenText": "可以自己去美国吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7146da38ffb436ff184eaa82fef6eeef343eed40cf37a68f91a2f07cefabde50",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是的，可以自己去。": {
+      "file": "3d75fbe49124cdf443702df8.mp3",
+      "duration": 1.36,
+      "revision": "8a7c9f003fc6751b",
+      "spokenText": "是的，可以自己去。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "8a7c9f003fc6751b3886f0719c54493782c7ce6b2dd4d36dabbf1a5b1e77d129",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（離雙方都遠）": {
+      "file": "13ce6914204ce45bbd6dfd74.mp3",
+      "duration": 2.8,
+      "revision": "75ccfab5ccafed5a",
+      "spokenText": "那个（离双方都远）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "75ccfab5ccafed5ac755b7d47b482e4e695b45bfbd68fff948db435b7f6908e4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個（靠近聽話者）": {
+      "file": "f456a7e9f5b8930bb56c47b8.mp3",
+      "duration": 3.68,
+      "revision": "6b3c66cef8bce248",
+      "spokenText": "那个（靠近听话者）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6b3c66cef8bce248a4573f0248541e341a85ed92cd25a032563057c0d2e3af29",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不，今天不能去學校。": {
+      "file": "ae3ed2916b565ac67be8eb6e.mp3",
+      "duration": 2.24,
+      "revision": "e072c2e46ccb7bda",
+      "spokenText": "不，今天不能去学校。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "e072c2e46ccb7bda740e21edc783048f9d28c41b1a4f1c6a151b898ec54add39",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:你可以自己去韓國嗎？": {
+      "file": "b65b788ba073834102400e60.mp3",
+      "duration": 1.52,
+      "revision": "82ce1cd5471ee8ef",
+      "spokenText": "你可以自己去韩国吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "82ce1cd5471ee8efd34472841097784a563113cadb6dc0d508f29eccf558e165",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:敏俊的家（省略 의）": {
+      "file": "511da15d42531da2de013d4c.mp3",
+      "duration": 2.16,
+      "revision": "7d62f93410b77061",
+      "spokenText": "敏俊的家（省略 의）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7d62f93410b7706153de3b35b340cbbdfdc49615a1aa9ffc6f9146ce837a7a95",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是，但是還沒買機票。": {
+      "file": "253990dc14e2a3bff9099631.mp3",
+      "duration": 2.88,
+      "revision": "1ae893a1f4ec5ca5",
+      "spokenText": "是，但是还没买机票。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "1ae893a1f4ec5ca57af355c2bcf8311c9eb843126582751115cdc87d7a3aeb0c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:滑直排輪（講義譯法）": {
+      "file": "ec792073c5396b9a3b4c4e3f.mp3",
+      "duration": 2.8,
+      "revision": "9e3fd99c930d5455",
+      "spokenText": "滑直排轮（讲义译法）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9e3fd99c930d5455b58e4942c4dc7b65dd266da77aa093f4646ee8fc256c3227",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:現在在運動場做什麼？": {
+      "file": "7e926d1cfb73ea5253811387.mp3",
+      "duration": 1.84,
+      "revision": "f0c06a7c05da93fe",
+      "spokenText": "现在在运动场做什么？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f0c06a7c05da93fef04f839fc46664b0568dcfac96dfbd8ded68bad05df9741a",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這頂帽子在哪裡買的？": {
+      "file": "3ec34b01ee3809e717f97fda.mp3",
+      "duration": 1.6,
+      "revision": "7f10febd52f3d3eb",
+      "spokenText": "这顶帽子在哪里买的？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7f10febd52f3d3eb3a6501fca3cb9faa4a14a9b7aa80b06408885373064104b9",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（主格縮寫）": {
+      "file": "60a51a660c824f78295f371e.mp3",
+      "duration": 2.56,
+      "revision": "cccf010697ac4475",
+      "spokenText": "远处那个（主格缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "cccf010697ac44753f500b1ce6bda831a2110a061d53438dd7a1d09ecaea3037",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（主題縮寫）": {
+      "file": "9980fde9af16b41d121fedc8.mp3",
+      "duration": 1.76,
+      "revision": "054e5e7a1fd86c18",
+      "spokenText": "远处那个（主题缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "054e5e7a1fd86c1846d3604d0ec9a919873d4e852d656a907b55fca12754021c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（受詞縮寫）": {
+      "file": "056ed4355a42d10d32114069.mp3",
+      "duration": 2.96,
+      "revision": "10af1968ec1d70bd",
+      "spokenText": "远处那个（受词缩写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "10af1968ec1d70bd596c0f1541820eb00d5496fa3a5dc54b189ea0cdc534d7cf",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（口語主題）": {
+      "file": "5d0c2edf38845bc42744071b.mp3",
+      "duration": 3.92,
+      "revision": "293bc5d46158ab5c",
+      "spokenText": "远处那个（口语主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "293bc5d46158ab5c5070e17e151daab80d5cdb42bb6ab1d980cbb76157a197c2",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:遠處那個（口語受詞）": {
+      "file": "903024dc88132b170d84f902.mp3",
+      "duration": 1.92,
+      "revision": "6f7c771a703d7397",
+      "spokenText": "远处那个（口语受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6f7c771a703d7397bf3f458858f4b6e097ad1a1ba14a5a996fffdb8b48ce31fd",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:冠宇的包包（省略 의）": {
+      "file": "fb21b3bac1442c13671b76db.mp3",
+      "duration": 1.76,
+      "revision": "612be6ecbe818ac9",
+      "spokenText": "冠宇的包包（省略 의）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "612be6ecbe818ac9eb12605104e573b09ce57ad1b3464d237a8f28e28287e3e1",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:臺灣的天氣（省略 의）": {
+      "file": "78723def1a278140a0fc58c7.mp3",
+      "duration": 2.8,
+      "revision": "0a63dd16197ec3ac",
+      "spokenText": "台湾的天气（省略 의）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "0a63dd16197ec3ac84af94d9b361715261e2db0a9cb9e4abf17d2e6b81e0c546",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:新包包嗎？什麼時候買的？": {
+      "file": "9420c5178f0769e829d6f85b.mp3",
+      "duration": 3.2,
+      "revision": "5126d95ff8b56c57",
+      "spokenText": "新包包吗？什么时候买的？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5126d95ff8b56c5767180b248e34fa57cf9e65fe5f6edac391d9aa200d53588e",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個是敏俊先生的電腦嗎？": {
+      "file": "cbfa48491b4bfda42520630d.mp3",
+      "duration": 1.92,
+      "revision": "6f60fe655c6f1d2d",
+      "spokenText": "这个是敏俊先生的电脑吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "6f60fe655c6f1d2d6a1a3ff595c1d4f824478d33c7732311a0ad76e36ed934e7",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:那個是貞熙小姐的包包嗎？": {
+      "file": "693d094da8b7ea00f424f01e.mp3",
+      "duration": 2.64,
+      "revision": "b7045094a16fdc6d",
+      "spokenText": "那个是贞熙小姐的包包吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b7045094a16fdc6d96cea0b148d0e12f84b107d506e79852209abb9c025859cd",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:冠宇先生，下個月去韓國嗎？": {
+      "file": "d98ea3d040ff88e6c419b8e8.mp3",
+      "duration": 2.4,
+      "revision": "3712cfa4079cc5ec",
+      "spokenText": "冠宇先生，下个月去韩国吗？",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "3712cfa4079cc5eccd91eb870cf6fcfb30a1a9f5ac868d9b0a4c25f723193a6e",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:和朋友……（請完成回答）。": {
+      "file": "06ffcca952e4ff1c917b3fb3.mp3",
+      "duration": 3.28,
+      "revision": "eeba2673fb886b98",
+      "spokenText": "和朋友……（请完成回答）。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "eeba2673fb886b980780f11e42e8a208b0069633505dfc68dbe4606575145e25",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:這個是泡菜嗎？（主格簡寫）": {
+      "file": "a2cc67fbac765b8d4ac4086c.mp3",
+      "duration": 2.8,
+      "revision": "fb9d17b3ce1fd520",
+      "spokenText": "这个是泡菜吗？（主格简写）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "fb9d17b3ce1fd5209c572b1b2caf9ac44104903969b58cf0cba5990b6289d8e0",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:使用（也有寫、苦、戴等意思）": {
+      "file": "e1c92d2b7335a74ed8785647.mp3",
+      "duration": 2.72,
+      "revision": "79e9ef6cbf7e5b45",
+      "spokenText": "使用（也有写、苦、戴等意思）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "79e9ef6cbf7e5b4510ff88ef02c164e78658201f587139da255e0f5abdf3a6d0",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:很漂亮，最近這種包包很流行。": {
+      "file": "927eed6e65847f4b3b2f8287.mp3",
+      "duration": 2.8,
+      "revision": "e1426f067b53efd0",
+      "spokenText": "很漂亮，最近这种包包很流行。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "e1426f067b53efd0cb1e23a37c6ca076541d157337f209cfeb83bb8a82c8ce07",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不，沒有。我……（請完成回答）。": {
+      "file": "e868d44a96d7bddc5cc71713.mp3",
+      "duration": 3.12,
+      "revision": "f3afbd82c0fd369b",
+      "spokenText": "不，没有。我……（请完成回答）。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f3afbd82c0fd369bd3183dc5d55bade4ec0b9cb15859d7b1dd5da26dd6cbc1a0",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:請完成句子，使用提示「地下街」。": {
+      "file": "9a240c4cbbb846d3596cf9c6.mp3",
+      "duration": 2.72,
+      "revision": "25f70dfdb4c652a6",
+      "spokenText": "请完成句子，使用提示「地下街」。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "25f70dfdb4c652a62192c37ac11bc85d36d3813ab809c6be88c1de37d97ae278",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:請完成句子，說明那是時鐘或手錶。": {
+      "file": "b364dc45b7bea0fa11b26dc7.mp3",
+      "duration": 3.2,
+      "revision": "f678976d977731bc",
+      "spokenText": "请完成句子，说明那是时钟或手表。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f678976d977731bcb04e576b35639ddfb22982ffb2c986e77a83d08b45081eba",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是，新包包。昨天在中山地下街買的。": {
+      "file": "911f490d53bb0ac82e8f705a.mp3",
+      "duration": 5.28,
+      "revision": "7d92ba9a1130fd90",
+      "spokenText": "是，新包包。昨天在中山地下街买的。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "7d92ba9a1130fd90120585082bb93cea71dc3f997c652c3a8e840a762a87aa3b",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:不，雖然歌唱得好……（請完成回答）。": {
+      "file": "3be26fc96b340411735ee44c.mp3",
+      "duration": 2.96,
+      "revision": "58ae9579df75d81a",
+      "spokenText": "不，虽然歌唱得好……（请完成回答）。",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "58ae9579df75d81ab878d8aa0c8bf1c1329cf694cde4a2ec13345257655588b6",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:誰": {
+      "file": "06f6fd96d1aa28b761daaef9.mp3",
+      "duration": 0.48,
+      "revision": "0ee40b1ed18198c7",
+      "spokenText": "谁.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "0ee40b1ed18198c7116dbd63979e4e27dcc8fd2cf224f630e28fff5279081530",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:唱嗎": {
+      "file": "c2d5099d5d895fce2eb663ac.mp3",
+      "duration": 0.96,
+      "revision": "745cb88e00fcf968",
+      "spokenText": "唱吗.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "745cb88e00fcf96847d427abbcbdf46b8519ce12d1b88098136d49706fd097d4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是書": {
+      "file": "1e47890f88300d16c712338a.mp3",
+      "duration": 0.8,
+      "revision": "159ac834a25c58c2",
+      "spokenText": "是书.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "159ac834a25c58c2bebd1ee16a6a8be728c596a9756adf9f53cf257a0f988f00",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是誰": {
+      "file": "5e9ef568beff23e345b6ca6a.mp3",
+      "duration": 0.88,
+      "revision": "c185e3aa983b0799",
+      "spokenText": "是谁.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "c185e3aa983b07990e6c13f27d9ea30beb48ec380afdc823948d5bcdc46b2b55",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:舞也": {
+      "file": "9191e9ff01be1471b583c623.mp3",
+      "duration": 0.96,
+      "revision": "d06cb0bdafb6dc21",
+      "spokenText": "舞也.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "d06cb0bdafb6dc21d44d79b4867dbf0c3f2f588724db318c8959c6b64fecac86",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:跳嗎": {
+      "file": "38ed1d5704a1826b8d1b2c95.mp3",
+      "duration": 0.8,
+      "revision": "1d9075d26f06a67c",
+      "spokenText": "跳吗.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "1d9075d26f06a67cc6c3ed376540e7bdcd67a940d84939ae433331596361d51c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:做什麼": {
+      "file": "8dbcd6a7a869632d358a5f23.mp3",
+      "duration": 0.8,
+      "revision": "b333ed78d866b398",
+      "spokenText": "做什么.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "b333ed78d866b3986b949129bf97818a72a1e8a2a1243900284774b1924c4c63",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:去美國": {
+      "file": "5c8158cc9b1b9ba1b6afc5b2.mp3",
+      "duration": 0.8,
+      "revision": "07f069d549b2192c",
+      "spokenText": "去美国.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "07f069d549b2192ccaae695ff8b323682c193b35552835cab4d21f2b7d95c516",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:在…月": {
+      "file": "548e8060aeb33b1756dd588d.mp3",
+      "duration": 2,
+      "revision": "f83b0c2703ba0749",
+      "spokenText": "在…月.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f83b0c2703ba07492d1ead30851d8f4886f744c491f869a311b66bf9b3796ee3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:很流行": {
+      "file": "2a8722ba4fa79e70487559fd.mp3",
+      "duration": 0.8,
+      "revision": "ccf3ca2f087dce7c",
+      "spokenText": "很流行.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ccf3ca2f087dce7cc788abffeb02aea7d4e10995fb0a37f34277229207148e8b",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是什麼": {
+      "file": "148401b2d3ddb2375b92cd26.mp3",
+      "duration": 1.2,
+      "revision": "f5e1058aeaa1d123",
+      "spokenText": "是什么.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "f5e1058aeaa1d12397a83c9f225fcd46da5476ac12e295bb4da637393d4611e3",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是包包": {
+      "file": "8ed42fe2e0a86bd7197259ba.mp3",
+      "duration": 0.88,
+      "revision": "07a31a58a86eb5a3",
+      "spokenText": "是包包.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "07a31a58a86eb5a342a61c23dbe66d8456b9e8f92113ffa38f5140f6213f8b90",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:雖然唱": {
+      "file": "95fa114009569c1c73add7df.mp3",
+      "duration": 1.12,
+      "revision": "5effd329cc37d3bd",
+      "spokenText": "虽然唱.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "5effd329cc37d3bdc1d316ba6abb8f810e09a6bfc23a1518bf385ad5ed6aef7c",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:在運動場": {
+      "file": "1fe09e4b1a78b58a03aef564.mp3",
+      "duration": 1.2,
+      "revision": "98a7f1a0d8c425ed",
+      "spokenText": "在运动场.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "98a7f1a0d8c425ede283da49c1a92a0ef3cbfb73181077198dcbb892784723b2",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是泡菜嗎": {
+      "file": "ea0f33b6ed8468ef5796fe85.mp3",
+      "duration": 1.36,
+      "revision": "44da0c0eb332c6f8",
+      "spokenText": "是泡菜吗.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "44da0c0eb332c6f82819748c9f7272eab377ff34cc6e98fdac72ffffda8b2734",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是電腦嗎": {
+      "file": "22c4b914a9d8ca67c8aaf35b.mp3",
+      "duration": 0.96,
+      "revision": "50ce8316c46ea6b6",
+      "spokenText": "是电脑吗.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "50ce8316c46ea6b683636edff309df13c607868ac4dd05516cffc4e56f1555e2",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:去（冠形）": {
+      "file": "aaf60ae6f1dc1d4c15c95250.mp3",
+      "duration": 2.4,
+      "revision": "96bf9e06d869a621",
+      "spokenText": "去（冠形）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "96bf9e06d869a6213d838370aa0aaf9f9274816ab0b218bd8b6686201efe46b4",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:歌（受詞）": {
+      "file": "6e4cdea2f953ae54baef8c15.mp3",
+      "duration": 1.6,
+      "revision": "eada8a7e1f816e5a",
+      "spokenText": "歌（受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "eada8a7e1f816e5a27aafc6c34dac3bb90027b0d8a312c227c8784a391f8471b",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:包包（主格）": {
+      "file": "038dc393062646ca4ea98a1c.mp3",
+      "duration": 2.24,
+      "revision": "48f849b1830b5105",
+      "spokenText": "包包（主格）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "48f849b1830b51051c3c0de1151720d8e090c11a0fe85b3fe5578e5f7405a37e",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:在中山地下街": {
+      "file": "9a4554cd8d25bf9a5b8a014c.mp3",
+      "duration": 1.84,
+      "revision": "ff9b0236bc2205fe",
+      "spokenText": "在中山地下街.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ff9b0236bc2205fe4982478f8e58aafdc2ef3db831887b7185269840192c1b76",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:帽子（主題）": {
+      "file": "5ce01ce05a92430e2eafa509.mp3",
+      "duration": 2.32,
+      "revision": "3b7131116df7fca0",
+      "spokenText": "帽子（主题）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "3b7131116df7fca0b7adc50ced574ba72f05410299512e9487626779b17251c9",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:房子（受詞）": {
+      "file": "282202bfcb1388651fa3d790.mp3",
+      "duration": 2.08,
+      "revision": "9d5bae275c2fa701",
+      "spokenText": "房子（受词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9d5bae275c2fa701930a8650ee1ee64c76ada49ab4e5e509cef743d7dc054984",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:擅長、好好地": {
+      "file": "3bf9a9503f9bc315dced0849.mp3",
+      "duration": 1.52,
+      "revision": "154544aff940ebb2",
+      "spokenText": "擅长、好好地.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "154544aff940ebb2ebdfdde749045f7ff789c7014d045e30eb75f8f53c2f9f9a",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:是…的東西嗎": {
+      "file": "a8b6567352ca520eba4adf7b.mp3",
+      "duration": 2,
+      "revision": "ca63198ae185ac27",
+      "spokenText": "是…的东西吗.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "ca63198ae185ac27281a3e2f2987c9ef5dcf4870f2b41fcfff71632f02be7a80",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:汽車（主格）": {
+      "file": "ade6a6c5d3f83b1cb93b5469.mp3",
+      "duration": 1.52,
+      "revision": "9cc9adc33bfc59a9",
+      "spokenText": "汽车（主格）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "9cc9adc33bfc59a95bedbc5569aef20001c48331346ab98c5fc416a33930be7d",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    "zh-TW:可能、能力（依存名詞）": {
+      "file": "9ef529671968b77d398051c6.mp3",
+      "duration": 4.56,
+      "revision": "29b35d0404145342",
+      "spokenText": "可能、能力（依存名词）.",
+      "normalization": "speech-rms-0.12-peak-0.9",
+      "sha256": "29b35d0404145342809d34ed06b3096346d494630b571346b59d2b8245d32425",
+      "voice": "Serena",
+      "provider": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
     "ko-KR:________ 하고 ________": {
       "file": "chirp3-hd/b4fdd0a802da7ad8609d3b00.mp3",
       "duration": 1.224,
@@ -11859,6 +13329,13 @@
       "sha256": "18223d502bc25ece0d7f09bc76be6890ee11f793f88d286f0fb26cc70cd80310",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:가방이에요": {
+      "file": "chirp3-hd/4392f5add58d9213b5b8355a.mp3",
+      "duration": 1.248,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d9c2b87882f70152e54029e2159ae8c174a67828b9210669cbd815266465c5bd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:가벼운": {
       "file": "chirp3-hd/a0b36b38e35a673985df97fb.mp3",
       "duration": 1.488,
@@ -12138,6 +13615,27 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "117a41f968efc6547c1f1e02ef887e374dc751ba95d242919a2c6e18e7a97628",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:갈": {
+      "file": "chirp3-hd/8751fbe5ae9ab1c7b2aac54b.mp3",
+      "duration": 0.816,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e088befa093ac1faf547b8e06bf5358f7fd8e07d05ae7bd6e2a84480189b163c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:갈 수 없다": {
+      "file": "chirp3-hd/020280fc1fbb5ab7b41e6ea4.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "87c746793d96189a3f63535e6ff47a3f46383f05c1c41212246cf5a7194b4a3d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:갈 수 있다": {
+      "file": "chirp3-hd/4bb90115f5727e123e8d492a.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d3945e007cb7693c3516f2af383b1eb48ac2617e3625aded5c04f27bde23e516",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:갈까요": {
       "file": "chirp3-hd/2823824c9ca8154ab8ea9b5c.mp3",
@@ -12719,6 +14217,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "7dfdcc57a01e25ce00d215aaeef9b2fdaea4940aeb66c3e3fa63e0a673ddc05d",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:거예요": {
+      "file": "chirp3-hd/378dbb104c91bdccea664e70.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "34a8abf43cd613cfbe158f8b63185e3858412c99e6ad985f190078aae5e804eb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:거울": {
       "file": "chirp3-hd/c2bf8508dcd9a91511ee7064.mp3",
@@ -13973,6 +15478,20 @@
       "sha256": "be99c9f664df36bd1662e43091e6f730e69c5c55b91ea70c7d1f685662c6edaf",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:관우 가방": {
+      "file": "chirp3-hd/4559f91af37f66e193ca60b7.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b9433f18f742d78f022f32de3e1f0ba9b484876b7fb02f820052a775168445d1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:관우 씨, 다음 달에 한국 가요?": {
+      "file": "chirp3-hd/493531e4dce797a61e7aad4c.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "503fbb032a23c1b3fa074920b5cfd42f3e34ea1ff242d85e43934f96ec2648ac",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:관우 씨, 오늘 퇴근한 후에 뭐 해요? 시간이 있어요?": {
       "file": "chirp3-hd/660f6690b11963c1583ec39d.mp3",
       "duration": 3.288,
@@ -14022,13 +15541,6 @@
       "sha256": "c3d6b7d4577ed87d91b6cbed1a35556856a83c67b8467e4a7c737fd5f6020740",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:관우가": {
-      "file": "chirp3-hd/7d1c204607eda070b3e97c9d.mp3",
-      "duration": 1.608,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "20679d72209bf7dfbe17868188c6d6b17320750d557d4663a86de8f3846b609b",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:관우는 좋습니다. 그렇지만 민준은 나쁩니다": {
       "file": "chirp3-hd/a800e6b797ae22010bddffdd.mp3",
       "duration": 3.744,
@@ -14036,12 +15548,12 @@
       "sha256": "321d7b1924923414d9d7cc39637eb9d363518bd1e9640077c457aec4e702cae8",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:관우만": {
-      "file": "chirp3-hd/e05736ac0cc0ab6e8b7dfa22.mp3",
-      "duration": 0.864,
+    "ko-KR:관우의 가방": {
+      "file": "chirp3-hd/a34b73430aaf31d54e00dde9.mp3",
+      "duration": 1.056,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "17f072545843115df24045d57715a4b268270791fb0024081a08d28ef1c2790d",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "f57d1ba70965eec7d0b7142f3b1c226bed36452e7dcd62d990111739b5d9b4ff",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:괜찮습니다": {
       "file": "chirp3-hd/42d9daeaeebc6360a788d0d0.mp3",
@@ -14421,6 +15933,13 @@
       "sha256": "ae8cdf07c6d5b3bc0497b489a899c9d4f10ea172ee5c11225381fdc1447c8ea3",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:그 가방": {
+      "file": "chirp3-hd/e7e6221b12ea853683768af6.mp3",
+      "duration": 0.888,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "77820d87bc6318b1a53882e3fb38d339ee9279d828ce762ff6c22b1261c4fe60",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:그 건물은 학교예요": {
       "file": "chirp3-hd/ac8f83b28dedda1c4d3e45e0.mp3",
       "duration": 1.968,
@@ -14428,12 +15947,54 @@
       "sha256": "f10d024fafb9b689d49cd451ca0a538671bc21966b6e9da6a8ac00547cb00ed6",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:그 것": {
+      "file": "chirp3-hd/e874f2546598b1e8291769af.mp3",
+      "duration": 1.104,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "51ea68b437832cce350544f96812f3cdad884e0838a318fea820526e478f2460",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그 물병": {
+      "file": "chirp3-hd/2fd514c5945d963c53737a24.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "91b4513013f40b3a85480a828d5d96e4f6a2b2d74482b07fcd1350e3f0d90460",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그 사람": {
+      "file": "chirp3-hd/91457a8ad21c93f73a57a6cc.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "dc888416041c2dcd1851760b7aee2e328aaa0e4a9ae04a868c0ad4a62dfe1b78",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:그가": {
       "file": "chirp3-hd/8768916f9997ebaf02a2b6e5.mp3",
       "duration": 1.296,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "2b33d6ac07b2f267702ecea010efc0b828f55b9ef095f5a7ca96f5d61f9149d0",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:그거": {
+      "file": "chirp3-hd/f24a006950af3b23c6339dfc.mp3",
+      "duration": 0.816,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "2f6d45986ecd7312b707b0d66751997430cb2cea7693870b4d512aa6d5d8c339",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그거는": {
+      "file": "chirp3-hd/81ba7fffc0f72caf0bdd60bf.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "10114d8d251534fbcd35385c8920ecf337e2baed26b5281e726b759499a9fd88",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그거를": {
+      "file": "chirp3-hd/16b5aca7400cee0c1a256295.mp3",
+      "duration": 0.696,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "345ca11cf664b00b8f8c278cec5a17f6fe0158916813c2c6289a238f7bce235a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:그건": {
       "file": "chirp3-hd/02fc39251d75760513b3d3e4.mp3",
@@ -14456,19 +16017,33 @@
       "sha256": "0717c1d74c9dd55a2300222a788aef96279ffe7e2e7e215a04ed0d6f409527ed",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:그건만": {
-      "file": "chirp3-hd/76ebd21b91844b1c5f37a853.mp3",
-      "duration": 1.416,
+    "ko-KR:그건 뭐예요?": {
+      "file": "chirp3-hd/ff079a093ac1e2dc6b4aec21.mp3",
+      "duration": 1.704,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "527ba3832ff9ceeef14de7f57fd48a1ae471ea2872ec41dbb43a8610e4435059",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "b8ede994cfa398f785434fda89d79eecdaf02510ffdbc791d3544fd8ff71d016",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
-    "ko-KR:그건이": {
-      "file": "chirp3-hd/926621a374602536da2818b8.mp3",
-      "duration": 1.416,
+    "ko-KR:그건 뭐예요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/8b8da19d01c361c9c78eeef1.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "1979240900b77ad59f0119f78af6e47e0d86d080a7fd1e5407acdea2967535f5",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그걸": {
+      "file": "chirp3-hd/36978b9967e6878e3926ccda.mp3",
+      "duration": 0.696,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "1df790091f9a07e7fa82c21fdb266413046c1972611932d7daefc18eb5607719",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "4ca68278f0ec30f5404c078394dc01eda0d4fa22a9b6655a88efba5ec67cf3e9",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그것": {
+      "file": "chirp3-hd/2395cd909a306f7dbc1465ef.mp3",
+      "duration": 0.888,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4d3f1c9aaf72f5c97eae592a5ceb54839964596498e63a11a9c0113c2640bca0",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:그것으로": {
       "file": "chirp3-hd/eb1ca0c6e6535ed81c20ad83.mp3",
@@ -14476,6 +16051,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "caae52035c4ffe48ed5a2fa9511c2a660f59a5215471a36f77107d491bfcf91a",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:그것은": {
+      "file": "chirp3-hd/7eb2b390344e2b25918c439c.mp3",
+      "duration": 1.584,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7ce82cb8b8d5aeeb4ab5a9a49331500358d06b505769ae9a33b9bfb86a3076b9",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:그것은 정희 씨 가방이에요?": {
+      "file": "chirp3-hd/6924a7375be2a34098eeaaa2.mp3",
+      "duration": 2.304,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "11c88d248c3e59a0b293d5425f653864a2688a03ce669042ddda39059e54b52e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:그것을": {
       "file": "chirp3-hd/d96b16ea0afc252e78cb8ed2.mp3",
@@ -14490,6 +16079,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "e0232c1a7e453c050a57194bfa432f247d9b9061539f2345e17cef265c5c7778",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:그게": {
+      "file": "chirp3-hd/5ed924e320f2f9b71cf6257d.mp3",
+      "duration": 1.344,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "931051bce6431a45d0697a5f9ad888b0f00d66fdc8761dfade17ec9a04057cda",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:그곳에": {
       "file": "chirp3-hd/05a65bdae995350d1266fec6.mp3",
@@ -14981,20 +16577,6 @@
       "sha256": "0e7c0a66568335ab9fd853dc5c886fdef4a7219924db84ba01ba10c173d4c148",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:그렇지만만": {
-      "file": "chirp3-hd/2f7825667b10fbb4af062e43.mp3",
-      "duration": 1.704,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "a38fddd377241aee19ce6e237b6a51694af4efc3b217c11d569fd56ba177fd0e",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:그렇지만이": {
-      "file": "chirp3-hd/b4af1e5c8cfd5758fc0c6312.mp3",
-      "duration": 1.656,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "4bd87f572df95e03bd9a2d75be353f3afa321129ec4c5f87328f05c68d489530",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:그룹을": {
       "file": "chirp3-hd/ad7f850f5455947a501ca512.mp3",
       "duration": 1.296,
@@ -15163,6 +16745,20 @@
       "sha256": "f0fea0ce999589f7535cafc1ddecc3cbad384058a01f86d45e4c1d53af5424d7",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:글": {
+      "file": "chirp3-hd/10c5eb0e0547814d1ada5558.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a193b6ba34280591e32d936aca3d3198b5702a0c1d94ce640616808d02299df1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:글만": {
+      "file": "chirp3-hd/fabb700459aaebd96dc72388.mp3",
+      "duration": 1.104,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "fc37317ddb8096687578bcd313ecd4fcc5fb8cb14661bdf79ce16b60eac12a72",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:글씨": {
       "file": "chirp3-hd/1339b282a0b1c7333cf3fe70.mp3",
       "duration": 1.464,
@@ -15183,6 +16779,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "44cf1c270bd1be20b115da646eead97d0dc3011fe8acd5ca86520e7e9722cfb6",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:글이": {
+      "file": "chirp3-hd/5099e33e97ff6cd3726844d3.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4c2a8e7a038f1c5ad0230801fa815d140b24debbbdcf799fe9049321681fb2aa",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:글피": {
       "file": "chirp3-hd/6b87b4a0d596b2351b7bc408.mp3",
@@ -15687,6 +17290,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "13377e1e77c5480bbc8d49f0777e5e05719bedaf7adb9357518e127ef205c833",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:김치예요": {
+      "file": "chirp3-hd/07ca7247d734ac9098a6f5e6.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9d565266cb86954887d9884c4d7662f5b32739165c7a1660d9082429bc005903",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:김치와 김밥": {
       "file": "chirp3-hd/16f9c98818e640fec85de7a0.mp3",
@@ -16836,6 +18446,13 @@
       "sha256": "e7b4ee8816811b108d64d33e38fdea1c50a321fa82e35ac5fec2da3700d6467d",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
     },
+    "ko-KR:네, __________": {
+      "file": "chirp3-hd/00c9a965ba7ad9c41d11f1dc.mp3",
+      "duration": 0.336,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "046b4c70c44d0907a2d2dc136267a6cf14498ab70226c96b077891444e3dc532",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:네, ________________.": {
       "file": "chirp3-hd/950a41156f11d0a589a28994.mp3",
       "duration": 0.336,
@@ -16905,6 +18522,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "b70f8cb033effe80ca57a23c253e1d129df143055e73ae01217192f4031baf7c",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
+    },
+    "ko-KR:네, 새 가방이에요. 어제 중산지하상가에서 샀어요.": {
+      "file": "chirp3-hd/1b6538dd713bb92bf0e3f9b5.mp3",
+      "duration": 4.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c55fed5325e8ff9072065128d6135b4dc258995490b0bb15ca078358adccf429",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:네, 새 가방이에요. 어제 중산지하상가에서 샀어요.|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/c5b501db8a3390ae7e0d42ba.mp3",
+      "duration": 4.848,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "bbda30b6c9aa3e48776c762cf6653a197076153f4da8780cc70e6ef4d6bf701a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:네, 안녕히 가세요.": {
       "file": "chirp3-hd/513bf0f31ad4dde0ee0e9595.mp3",
@@ -17053,6 +18684,20 @@
       "sha256": "e121dac9ac27b21e5bc2900af0a106f03254c89aba39a4d283d55451d3d961dc",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:네, 혼자 갈 수 있어요.": {
+      "file": "chirp3-hd/1f1022524055b8d4c6de74df.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "89dc969737914a3179d9fdf097f5fd0a49fdc0d460b2cfcb12dd694409eb76c8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:네, 혼자 갈 수 있어요.|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/b1f548930b697a6d036528f4.mp3",
+      "duration": 2.064,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "c7eeafed8bf399f8b080220aea2e49f556acec028c7e9784e7674d7ba918d382",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:네? 오천이백원 아니에요?": {
       "file": "chirp3-hd/61633ca8c3a3efb8d35a42c7.mp3",
       "duration": 2.616,
@@ -17066,6 +18711,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "de1ed17edd2b92bfc5a7c1c9df957f8a978625035701fe1e0d52449d7aa4d6ef",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:네. 그렇지만 비행기표 아직 안 샀어요.": {
+      "file": "chirp3-hd/e5d9afc5b39c2bcf0a21a251.mp3",
+      "duration": 3.816,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6b064939a179f4b86bde3482ff82769991a228be1c810f3e08347bef581d1b67",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:네. 그렇지만 비행기표 아직 안 샀어요.|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/d0dcb8194458f7f30ba565e4.mp3",
+      "duration": 3.504,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "aa45f469b727b6a31e8ee9d7a7e9cacf1944fb39de3a4d75a268ad9527740571",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:네. 저는 대만 사람입니다.": {
       "file": "chirp3-hd/d6411238192b822da663bbee.mp3",
@@ -17165,18 +18824,32 @@
       "sha256": "5deda22e0cd89caa54ca86e49797eb798479ab727f24cff124a273445afe52e3",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:노래를 부르다": {
+      "file": "chirp3-hd/9eada8a87be34b4a9bb3a124.mp3",
+      "duration": 1.248,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6b2d5ce9dd82b46cd5d7ec4141a63275f4ea6c8b78fe18b594b5963080913a5c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:노래를 잘 부릅니까?": {
+      "file": "chirp3-hd/d321eae30dd1ea8e8b19233b.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b38ff2c267dec10f451465d2e225a8ddd1bbdb5c7369196e71731a6a8bc26d39",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:노래를 잘 부릅니까?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/73691f1091d1200e8d8d8eb4.mp3",
+      "duration": 2.136,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "837d5fbfa260cd689cb998414c97367fbcce9417ed2d9c18423f14f3c3a8e085",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:노래를 하다": {
       "file": "chirp3-hd/b1ecf9c7931377c0c80530f1.mp3",
       "duration": 1.464,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "36ea4e651ec15fda8a3d7f2f25405623d50e8f28654713119804bde045b8492a",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:노래만": {
-      "file": "chirp3-hd/2ea49648b7636e93e1ec60f6.mp3",
-      "duration": 1.224,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "83eccca6464ec5c079bf60a9bc4d192f7619d59e75989f356d04fe247884e1ba",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:노래방": {
@@ -17340,6 +19013,13 @@
       "sha256": "b6751e6c89457f2de1d2ef5a07c882110cdbd7648cddd81f3335dc26a75d075a",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:누구": {
+      "file": "chirp3-hd/6e1799a4cfd2de2f783843ef.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f551ffd7547241a1262e5f764324d25e9c67c14dcc4c28156c380c77fe82c56a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:누구냐": {
       "file": "chirp3-hd/bee246cdde18c29a8119a82f.mp3",
       "duration": 0.648,
@@ -17353,6 +19033,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "05e1fd447e0abee0273bee7e662a96f98fe4c85761b22d15d7ec94c796674e1b",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:누구예요": {
+      "file": "chirp3-hd/6a2458df56893cbed3db82af.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f975a02525df5446b94d105a71e95bfa89f0e514ea9157a8d0adefda47358673",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:누군가가": {
       "file": "chirp3-hd/2c24c1a0661cadc85c89a4ac.mp3",
@@ -17886,6 +19573,13 @@
       "sha256": "26ea5f7e79b30613e8c0117b7e0cf5f3f95f7d65ebf4df89447c95740ec39107",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:달에": {
+      "file": "chirp3-hd/a68f8c3314da7984bf209545.mp3",
+      "duration": 0.648,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b6ce3b40793cd308754877b8625de43b9f734ce0f99012f2aa358206568b9b1b",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:달이": {
       "file": "chirp3-hd/62b5714a00f7570b7ce8bed0.mp3",
       "duration": 0.768,
@@ -18005,6 +19699,13 @@
       "sha256": "090594c44078ccb67c314e40e34a4a12dffe6b3f935fb7e496f2a2c9ceef593c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:대만 날씨": {
+      "file": "chirp3-hd/1da122745fe708c3c19dce30.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8d8a7e1478adffb1e311a2b38d650baea111e083c87cd71bcc8a4c1d5060000c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:대만 날씨가 어떻습니까?": {
       "file": "chirp3-hd/906ec669190093ec207d7196.mp3",
       "duration": 2.424,
@@ -18081,6 +19782,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "1ad7913fbc25511799778837c306c2013d134fcc227f20ce626d9709c98226e5",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:대만의 날씨": {
+      "file": "chirp3-hd/b0ee3abc367a2a5354fb85cc.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "52d70e9b26bbb7cda7f159e90f749f76ca059df0747b705cfe4d1020414a045a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:대만의가": {
       "file": "chirp3-hd/087e1bb3f7db227839f8a49f.mp3",
@@ -19881,6 +21589,13 @@
       "sha256": "d66c5d0940a130b1a95e97046362b228ed2c0b408caa68116d0ee5ad64ed9ce5",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:롤러스케이트를 타다": {
+      "file": "chirp3-hd/5b18b3f524d79b3da5ac4bfb.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b4ad2b7d72c5eef95841f54c945b90edc0d4cb627d0c5ee95a0cf55f7c5e804e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:롤이": {
       "file": "chirp3-hd/b432af4f54bad5f6b8d0b2c6.mp3",
       "duration": 1.536,
@@ -20062,6 +21777,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "662e3bd51d1961a77425597eef9be7f77bc114c4e490986486aac32c6736e6a2",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:마실 수 없다": {
+      "file": "chirp3-hd/6cf7e1e61a3efbfdc14bf973.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a858d0cf235aac0331bb4205c813de64c3dff7f23bd23aa6b1b4c203a988a0ef",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:마실 수 있다": {
+      "file": "chirp3-hd/f708e81a85b9be2e0f321d7d.mp3",
+      "duration": 1.488,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a41dfef0c4115622cf75c6db914f1b6da009cd5627d24262557b138afe592465",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:마실까요": {
       "file": "chirp3-hd/2edbedd07caf5596892bd12f.mp3",
@@ -21078,6 +22807,20 @@
       "sha256": "50b9e9d5579fe164aacf46d63eb525d6ee82df03023900dd0a60d93ea05d89bc",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:먹을 수 없다": {
+      "file": "chirp3-hd/29e1b5ecfa7ea57d29d180d5.mp3",
+      "duration": 1.224,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "79181ddfc13462f01785fa3f87de6e1e3c6e45c9dab46afc19a6bf89ff5f1589",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:먹을 수 있다": {
+      "file": "chirp3-hd/7de344b0b2396ea4fefd8d97.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8067543d4d421c9ade8eda465abcdb0af71ff61e80d3ed85aa335c5135722275",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:먹을까요": {
       "file": "chirp3-hd/2cb7e532d7db2c86e18127d1.mp3",
       "duration": 1.296,
@@ -21266,6 +23009,27 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "5f1eeb1cc6733853c8e8bcad0bc2e4a6fc14d055accbaef49bfc44df4339c01f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:면허증": {
+      "file": "chirp3-hd/42ff92f79fad8b97c0e7598e.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4d3f234e8feb32583d3f3af505b7b7b619f8f244403e692f73b71a2a68717d8c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:면허증만": {
+      "file": "chirp3-hd/f9d89714e16a1f72a6439387.mp3",
+      "duration": 1.176,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4664f63ce40ae1addfb81d7fc2737375cdcae1bb453086f55b222bdc1efe0571",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:면허증이": {
+      "file": "chirp3-hd/a843ed8bcc7fbbe6f11fb895.mp3",
+      "duration": 1.128,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9c2e59070d3bbed97509bf549ad63f795f7d2ddfcfaf1093f05f3281107b9fd4",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:명": {
       "file": "chirp3-hd/46f959eef61de49d96197262.mp3",
@@ -21602,6 +23366,27 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "1786c65376391b444ae5d732578589c75afab4caeae28aa944c4e351b8d3efd0",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:모자가": {
+      "file": "chirp3-hd/8695d319dbfec12094f0cd9b.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "2aca5daf485469d1eda969d7ed9317d392b2826e3fc4bdf54fb3cb53588cf553",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:모자는": {
+      "file": "chirp3-hd/e79f1fbf771119b297d5ebe3.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a71cf3397b5e1efa948d158511980f703eae5d22e5d49c3f0379e48eac70dd74",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:모자만": {
+      "file": "chirp3-hd/94b701b944e1a50074782a90.mp3",
+      "duration": 0.936,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "49dfe9b7e7ae32b4dd7fa5df5fc981689e0c3b033a521a4bda673f2d95acd731",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:목소리가": {
       "file": "chirp3-hd/581d8bfc84fdf3d659444b3a.mp3",
@@ -22233,6 +24018,27 @@
       "sha256": "762481d3f810472364ffafa349ea012cc8b53d34d1458ca6c04022945aeefc27",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:물병": {
+      "file": "chirp3-hd/c6ca803700642b61cbb6c962.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0a1965e9b347305d72e3481b352502126e42afc1d7ab0942f83f5b7eb17e0777",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:물병만": {
+      "file": "chirp3-hd/6c690a6555dc506e3b73fbea.mp3",
+      "duration": 1.608,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "84df91b99ab7c6ab9463c50f9b9658017d137cd42ef43346c52e750e66ae5563",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:물병이": {
+      "file": "chirp3-hd/5446121623f3f8463648bfe1.mp3",
+      "duration": 1.224,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4ea9e6fc9d4e0b8725588627ec6cffbd02aaf67fd083784b342c35908491cb6a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:물부터": {
       "file": "chirp3-hd/fa03087c4f06f1602e566b04.mp3",
       "duration": 1.656,
@@ -22338,6 +24144,13 @@
       "sha256": "2678eea15318fb3a7fac42caae60e139f74b54a5aafa9a5f36cef6a225c7874c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:뭐해요": {
+      "file": "chirp3-hd/973e000c778d7173782577b6.mp3",
+      "duration": 1.128,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "bd1a447d81502ffa23bc8582d30805f8435844c6589bca08b905dd4e54e0099d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:뭔가": {
       "file": "chirp3-hd/b32bc7a0befc2905289a1986.mp3",
       "duration": 1.536,
@@ -22407,6 +24220,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "2e636097d627b57c137b7ad97b4c984c9427a6f49185eeee4a0247fe5622adc0",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:미국에": {
+      "file": "chirp3-hd/00e96a634d2f627674c004fc.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e67cc58a79d8a605004600a62fac42d83d243d9865e7968f9ed44065b07307b2",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:미국은 큽니다. 그렇지만 대만은 작습니다": {
       "file": "chirp3-hd/94f25f53e263cf951c8232ba.mp3",
@@ -22632,6 +24452,13 @@
       "sha256": "04845bcbcee883d57744087521759a65488356d9155182866e337a12314f0efc",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:민준 집": {
+      "file": "chirp3-hd/40e608744649fb016cb54b72.mp3",
+      "duration": 1.224,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8a5369121a9540bc856647ceedfd99977aecd1b6d1e6f2b02b78e5b7a9f3fab7",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:민준①": {
       "file": "chirp3-hd/9e33c9756d9cd620aece72f0.mp3",
       "duration": 1.224,
@@ -22673,6 +24500,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "b85a744edfeb8cbb9ff4818c02299dae452879809e5f2ef4570fe51acaa973e7",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:민준의 집": {
+      "file": "chirp3-hd/36c1333f9acd76ff6700f6ec.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "68b664629eab49878065eaa0cfa961fbbea3efdf560b2294e7cd15000efe92c2",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:민준이": {
       "file": "chirp3-hd/7e440cef833d0c0fe1d5ce16.mp3",
@@ -24571,6 +26405,13 @@
       "sha256": "5c13e28c964355ff9ffffd8adbe03483d2c5e9720f622de39cb2b7f93293265c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:볼링을 치다": {
+      "file": "chirp3-hd/8567557d2c7d44fa525ea46a.mp3",
+      "duration": 1.728,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4dd93201d835db4067b65447ae5ce97810d828d6c5783d1d707cc0ea8b870f91",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:볼이": {
       "file": "chirp3-hd/511746043e00b0e383f6987d.mp3",
       "duration": 1.368,
@@ -24745,6 +26586,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "0895dcae207f66bed239ac3e7d36b3c4217eea4adb1e1a204be3101a161aea69",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:부르지만": {
+      "file": "chirp3-hd/ce5268783adce82525508d88.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b163f7ff0be4a52a670c7673b9d39601397d452feb9bcd3bf6626d8f2918c49c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:부릅니까": {
+      "file": "chirp3-hd/53859349b459c588ac3c408e.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9622fbf57b983db1a832a3547095ad0cc0246add9a067172f7a63f4284506224",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:부산": {
       "file": "chirp3-hd/54043d775e0973f678005dc3.mp3",
@@ -25152,6 +27007,27 @@
       "sha256": "5e85054dc775425f6bddfa32fc04f97bf35830e9bed1ea3a9ea6b43c3ef97ab9",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:비자": {
+      "file": "chirp3-hd/aa79ad3cd77467c257b6d4bb.mp3",
+      "duration": 1.104,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "21ece54a8fc5b04835cca9217e5835d4d6c75f26dbe4223675d49b047e4dfef6",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:비자가": {
+      "file": "chirp3-hd/8bea7e232485b9577f665920.mp3",
+      "duration": 0.984,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "beec3595754fc2f25eb1255714f8684705ced76df7a15956cf8a7ff3dc9f6a31",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:비자만": {
+      "file": "chirp3-hd/aecce37f66ce5878a933a0e2.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4e350aad87d7cee5428d71ecae0d9851fa663606fe4fb1e9d8f3d723bc6017c6",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:비행": {
       "file": "chirp3-hd/6fbbfd60633582b57a743e09.mp3",
       "duration": 1.344,
@@ -25235,6 +27111,27 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "ce903efae56fa52417e7c86ca00a2eaa3e231823f3129461eec2bf9c48aa4d14",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:비행기표": {
+      "file": "chirp3-hd/ca418f0e40918efe27a051d6.mp3",
+      "duration": 0.984,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8bdd2e948f992b706981376ec09a8f769e39a22e93425ef0326825735e2286bc",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:비행기표가": {
+      "file": "chirp3-hd/320ab5017318f309eebc050c.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "527639feec559af9054266b912b2b75fdcc2709e12a69803d16ec4e519bded27",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:비행기표만": {
+      "file": "chirp3-hd/4d52f6f39a0173f1f9f70739.mp3",
+      "duration": 1.128,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "77c8ac98bc326628d7512a3cb2bccf6870462fb512e53ad324688dc5dd1219b4",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:비행만": {
       "file": "chirp3-hd/c03c658448d1c87cfda30cae.mp3",
@@ -26027,12 +27924,47 @@
       "sha256": "61ed42a1bd026f4abaff64bb06dbaccadcf80c308ca926813fa21212e8c3e5ce",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:산": {
+      "file": "chirp3-hd/ca47a1df436c44fce9224ec1.mp3",
+      "duration": 0.504,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "81688ac363c6f9cc9e4c0b2904bece53eea5976ef3fa0a3fc60f714de9eb3292",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:산만": {
+      "file": "chirp3-hd/79931dae6a43376b1c5e013f.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "99b6fec62eca7bbbd0e32b161c54d7df6a3334501da15cf6d2bbfc46cc1694a0",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:산이": {
+      "file": "chirp3-hd/0d36fd56a2cda8cf6418a1db.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "793ecd43f62e1c1ffbcf680751948763a0ba5d434b0650de88e59b66c5ce86da",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:살": {
       "file": "chirp3-hd/fc681cb8d44c24e53eae4349.mp3",
       "duration": 0.816,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "7fc07b8271625a53f3e5381111e70e365844bf5ed4b646a6e6d386a2c8af1a54",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:살 수 없다": {
+      "file": "chirp3-hd/aaf4e44a2b222b25feeaa20b.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "26245558cc9e73aba4c853c14baa301c2ec5e585da40feb2087a6780a2eecd58",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:살 수 있다": {
+      "file": "chirp3-hd/5cd04d7d1ef071ab56c7a3c2.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6978fa0641c2f9ef3a1eaaddea73192964f6bedccca6052d79f7a800d67a40bf",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:살금살금": {
       "file": "chirp3-hd/cfe5940d36071e1e28af883d.mp3",
@@ -26055,13 +27987,6 @@
       "sha256": "24340ed712b6f970359eebee28606064b2c42b69bfc10b87109f051e42d133f9",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:살만": {
-      "file": "chirp3-hd/d62dda1a9be48349f56dc11c.mp3",
-      "duration": 0.696,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "7858ea6f16c12d9aa441f3eefd969b25de3ff07f47d14b629c7d2bef6e0f2550",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:살며시": {
       "file": "chirp3-hd/93013bcd4a2f198838df09aa.mp3",
       "duration": 1.224,
@@ -26081,13 +28006,6 @@
       "duration": 1.464,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "325db112066b7cdca910c0ab08d34a2523bbee046886952350d793773946f9cb",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:살이": {
-      "file": "chirp3-hd/81e86c341899aa5e8eb65181.mp3",
-      "duration": 0.696,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "d397116287045679566ce438b1029b3bfc4dc4d242763c9f51942547b7eeeb11",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:살지": {
@@ -26475,6 +28393,13 @@
       "sha256": "cd7d03d40882c9288a522504c64adeb9c93f6c10f2ac1af374b8f5be76332051",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:샀어요": {
+      "file": "chirp3-hd/a176897b2b5755114c47a4ee.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7181af60cc0723af4aa19acb5925d4cf1cdb2904119b59d7144e6e175955d9b7",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:상추에": {
       "file": "chirp3-hd/5da80d0d25d08d5ae9f558ad.mp3",
       "duration": 0.888,
@@ -26488,6 +28413,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "77587cbbf38740f4f03226b0afb8be0e375f295ac55367e87b49fac44ec65b8b",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:새 가방이에요? 언제 샀어요?": {
+      "file": "chirp3-hd/b369f5049fe9d4f90e644b42.mp3",
+      "duration": 2.976,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "ff25b0b190773285590b2372707635286ab1fc8e724420fe7847767a6c33206f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:새벽": {
       "file": "chirp3-hd/d409b0c756c166260cabc24d.mp3",
@@ -28204,6 +30136,27 @@
       "sha256": "e008ba37a657af1691b22ef99241be820125e76944d75e0a8b5217308f61e31c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:스케이트를 타다": {
+      "file": "chirp3-hd/4c6c988702af7f4a27e822b1.mp3",
+      "duration": 1.176,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8b02ba08b6b0f47c873bb4ed91b6678b2387a5ca1b1c4b376e73289d18ca9aed",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:스쿼시를 치다": {
+      "file": "chirp3-hd/2834064c6b88bf72293d22e8.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e8a80ca8792c503aad2a62a1884193af1482facdca5a3f31a6f08544efaac906",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:스키를 타다": {
+      "file": "chirp3-hd/0ec44eb0d39830c4b2cfdb4b.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f2dcbdd19bb92c95da97fbb4c7cec1f25e0779b0efd3f953c2a5b162fa31dd45",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:스킨": {
       "file": "chirp3-hd/bab45f1ec00d5b4cda8a39c1.mp3",
       "duration": 1.104,
@@ -28385,6 +30338,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "4e527ec3f71104f692297d6645a8c63448c615952c1822f0f77028e424080db4",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:시계 __________.": {
+      "file": "chirp3-hd/186d311e21e12f7deb389646.mp3",
+      "duration": 0.696,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0d04e3bc78ee6e02dad70a1d6cf244933f5168a081c27bb04ae0d94f7034078f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:시계가": {
       "file": "chirp3-hd/a0237a3dec28d0dfc2110b73.mp3",
@@ -29527,6 +31487,13 @@
       "sha256": "446db08963e1efe744fc714db2b5bc4c054a30c6bb5906ad0de4d95da5b45092",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:아니요, 노래 잘 부르지만 __________": {
+      "file": "chirp3-hd/32987a0ab3b50b8dacd9b721.mp3",
+      "duration": 2.208,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "28639b6c08c5189d7226397ac22fa0536bae4105fcb85083b1df7c459ae5410e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:아니요, 라오허지에 야시장이 아닙니다. 쓰린 야시장입니다.": {
       "file": "chirp3-hd/a8f1b8c65a6768167d76fde4.mp3",
       "duration": 4.656,
@@ -29590,6 +31557,13 @@
       "sha256": "ff47d4cdf16239287ab39abd00c0cba831ec5960b5a70a22367492d8d0a15285",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:아니요, 오늘 학교에 갈 수 없어요.": {
+      "file": "chirp3-hd/69283450b86cf91ca9b02e7e.mp3",
+      "duration": 1.848,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3ebb4408b17153ba7f4d3778a2ce801fdfae6bd3fdd2861982bdbaff391eada7",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:아니요, 집 전화 번호만 압니다.": {
       "file": "chirp3-hd/39eea2df4bcfb3383d94c020.mp3",
       "duration": 1.728,
@@ -29610,6 +31584,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "ceb055fc1a01b49e619fbf9ea4605c555e87ebaaa58ef953f730522ae248a3a2",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:아니요. 없어요. 제가 __________": {
+      "file": "chirp3-hd/107a59fcf66b49f693f4de0c.mp3",
+      "duration": 3.384,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "23f8cf47366639975c2399f19d3dbcdae88b07e7f466e32257c815b79196d1ea",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:아니요. 열 명만 있습니다. 미국 사람 세 명하고 중국 사람 다섯 명, 그리고 한국 사람 두 명 있습니다.": {
       "file": "chirp3-hd/5b0717859935a865c88eed98.mp3",
@@ -29652,6 +31633,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "81db9389ad54a3bcc9b61b94f3cc8c874ec65fde418990c4743852f3be0d8fc5",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:아니요. 혼자 가요.": {
+      "file": "chirp3-hd/7127c4fde3d42dbc652a51db.mp3",
+      "duration": 2.496,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c1fc4b61c45853df56b7baf6417f6b048112fcfda8619ba420bfd346ac17f0eb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:아니요. 혼자 가요.|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/8158c1850555cdd9a50ba3a8.mp3",
+      "duration": 2.304,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "35ef4d44f86360de619272c07cf5773f035be41f6acef6a817251524e92d4561",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:아닙니까": {
       "file": "chirp3-hd/12d603b9c927d82a427d97d4.mp3",
@@ -31410,20 +33405,6 @@
       "sha256": "10dcc6fd5cf6f5c5b6566f9a519196f6804c10d88328cc7627188732c8d4f2a6",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:어제가": {
-      "file": "chirp3-hd/65d5963fda25fbc8cf2940bf.mp3",
-      "duration": 1.584,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "eaff2e9b67cea56e627ebbfeac0ce4df430e63370a3c1c1b32bff4cac9013bf9",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:어제만": {
-      "file": "chirp3-hd/384b2763c7f3970ba9c67668.mp3",
-      "duration": 1.464,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "49ce427b03170949d577c3fb142fc753d2cf5ecc1ce307911d1c11d0d7b4dd4e",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:어제부터": {
       "file": "chirp3-hd/19f69c3f24f0dd98f7963e93.mp3",
       "duration": 1.776,
@@ -31500,6 +33481,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "a9f3ff82c98447f91dc0aa72e99e8ed7b049ab3667688efeac0c59cb604affd5",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:언제 그걸 샀어요?": {
+      "file": "chirp3-hd/665815ff5b97b2b1d355e494.mp3",
+      "duration": 2.064,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0bdd7c1441d6427ca4b0e15d01b63c9ca4fa209a0b327a417d8a0c2995d4b25d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:언제 시간이 있습니까?": {
       "file": "chirp3-hd/3b91248003a5b4a94c84d1e4.mp3",
@@ -32894,6 +34882,13 @@
       "sha256": "f77985589171830622832ab58e3d16c53ad364f27b39da1ad6a6ddb7b0610578",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:예뻐요. 요즘 이런 가방이 유행이에요.": {
+      "file": "chirp3-hd/7fd97859e6acff65da3ff0b6.mp3",
+      "duration": 2.904,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9eba89d0007ea24b8019ab10c1b27f4b84c2cfd88b1767a83fa85974941e8c1f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:예쁘다": {
       "file": "chirp3-hd/2fc32480dcbd606ef78d23cb.mp3",
       "duration": 1.056,
@@ -33104,12 +35099,12 @@
       "sha256": "b0df48cfab3908fcb254241a4f59f4f370712ba4ca87dca22568d2d5845e649b",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:오늘 “가방” 표현을 연습합니다.": {
-      "file": "chirp3-hd/20ed63ec9e5002509e32f89f.mp3",
-      "duration": 2.016,
+    "ko-KR:오늘 “가방이” 표현을 연습합니다.": {
+      "file": "chirp3-hd/0e5cf5feb697e8d0097c0bf4.mp3",
+      "duration": 2.256,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "c79f70bbce8b8d1d2e63bec6656160f0545974c3c4303678558a6ba81f287d2d",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "851f05ac6c242cff591a59d4836f6b8c8ef1452263753f3003a0b30be7df778a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “가볍다” 표현을 연습합니다.": {
       "file": "chirp3-hd/9d67815b7dff04d6cbc2f827.mp3",
@@ -33299,6 +35294,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "29da0734d246260d1b4d9dba9b198903ca4e7f44132ef637480be188b3c6c981",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:오늘 “거예요” 표현을 연습합니다.": {
+      "file": "chirp3-hd/d87967614e84f95a46d74692.mp3",
+      "duration": 2.856,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d5cfa783fb3bdd6694b4c66ee93e263936f7a3c4533592dfbc26230d4d0aaa96",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “건강” 표현을 연습합니다.": {
       "file": "chirp3-hd/f8b3a8e19325a0a3b8ca4ca5.mp3",
@@ -33671,12 +35673,68 @@
       "sha256": "4f8984f8c6ba72505ec62b1d8cb3971a8c65e81dc9f5a01a21ce49c1d80e3a34",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:오늘 “그건” 표현을 연습합니다.": {
-      "file": "chirp3-hd/e032473106fac393a5f96243.mp3",
-      "duration": 1.536,
+    "ko-KR:오늘 “그거” 표현을 연습합니다.": {
+      "file": "chirp3-hd/f4923b5e721daf2779d60274.mp3",
+      "duration": 1.896,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "f923186dcf4a069c546811618ad60216df2ecf5a625d8654516744025296b213",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "c8488a0ca2e548443864639b37e1ff524fefe706c2a31c74cfe526777db49f42",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그거는” 표현을 연습합니다.": {
+      "file": "chirp3-hd/8040b2af917c61a0b07a5bf8.mp3",
+      "duration": 3.216,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "ba2d5bd24b8f2b3ab917a977ab9928cde35d81d967fb9ae4008e4094a8f5f182",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그거를” 표현을 연습합니다.": {
+      "file": "chirp3-hd/b512b46c557521854c622686.mp3",
+      "duration": 2.424,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0a2ed256549d4fcb57c1c5cf8a604ed3b8bf3e77374a6fb7239dc28406f15cfd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그걸” 표현을 연습합니다.": {
+      "file": "chirp3-hd/21a0b51427a7ed0e6f022731.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a131fae76b65296051851290f01b6b5110915182177e49be812b5bc0e7da39fc",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그것” 표현을 연습합니다.": {
+      "file": "chirp3-hd/290b0c048c2afba352651883.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a2b966cbfcf74240c34e06b1e952f8a24c482999a710a8eb2f55b89fadb8bc95",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그것은” 표현을 연습합니다.": {
+      "file": "chirp3-hd/53b3eb60ce5ca674e2b4fb41.mp3",
+      "duration": 2.016,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "26c336e1277911b523a1681174fbeae4d9899224e74098f6a79e5ed434aec0ed",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그것을” 표현을 연습합니다.": {
+      "file": "chirp3-hd/729317d39017d10c2abeae8e.mp3",
+      "duration": 2.208,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "82ae9e121e89949c2ec75de4cfe873d3d291bd04be3aa6bbb84e01151403ba85",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그것이” 표현을 연습합니다.": {
+      "file": "chirp3-hd/231f93d1079188b42fda3cb2.mp3",
+      "duration": 2.136,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "1a7b65b58d0713b7145cb44ddfc7aa2e68d450fda391977dc2bcf95a154cf5bb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “그게” 표현을 연습합니다.": {
+      "file": "chirp3-hd/69450c9241eaa6beb9f3babb.mp3",
+      "duration": 1.824,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "42aa9a9a0f9fe044bf2796763f211c725ad91555028c2fa5a137a2f711d43e20",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “그글피” 표현을 연습합니다.": {
       "file": "chirp3-hd/a28cddd9f52489bf9ca22899.mp3",
@@ -33740,6 +35798,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "8dd37f2db68d0a2ac97e2ed44bb55d52f31fa4355de70aa4cf67d0d50f2e1f81",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “글” 표현을 연습합니다.": {
+      "file": "chirp3-hd/ecca8890a10ecd7db7d2feb3.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8e63ef1e47a50c49b8c19bd333bbba660decdd9ef0fd24414c455f28aa645ee8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “글씨” 표현을 연습합니다.": {
       "file": "chirp3-hd/587f61ec0990ca723b7106ca.mp3",
@@ -34091,6 +36156,13 @@
       "sha256": "e529b19485ea6c58d75a84d5d123d9e65692ff291779c64a2e0c87e799caa679",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “노래를” 표현을 연습합니다.": {
+      "file": "chirp3-hd/904ac3118e963761a6a99967.mp3",
+      "duration": 2.424,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "bc7986387674e49068c947f201e649b7093e1a5882641d44eb05777ec1b3f421",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “노래방” 표현을 연습합니다.": {
       "file": "chirp3-hd/1d353ca70da1060ff56e5a49.mp3",
       "duration": 2.016,
@@ -34147,6 +36219,20 @@
       "sha256": "6e103a825a5e206d2f06ef0d9eb2cd75db4176cb528db17b181a96f1e90546ff",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “누구” 표현을 연습합니다.": {
+      "file": "chirp3-hd/3083cc617a72ddd64649e6f2.mp3",
+      "duration": 2.376,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8454ebb295223cbfe194a00c13013abbe6c7236e27f74d56b2ea171c190ece4d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “누구예요” 표현을 연습합니다.": {
+      "file": "chirp3-hd/70edfdfc82e2507836e4e5d4.mp3",
+      "duration": 2.304,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "73fc52798069a70cd51f368a38725cee66dfd1e8f95047177c2d78b7e2055566",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “는” 표현을 연습합니다.": {
       "file": "chirp3-hd/7d7345e32f78829604204d30.mp3",
       "duration": 1.704,
@@ -34188,6 +36274,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "f2156825e2d59ea0ff97adb061a54cbb4b2ef4043cd51511051d6d42469c42d4",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “달에” 표현을 연습합니다.": {
+      "file": "chirp3-hd/9ab39622223137a4ad0d0049.mp3",
+      "duration": 2.616,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4f5b2cc3553140b8e0e1431cc7a6dfa6a7c2adceb874245e09e55f8319702e18",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “달이” 표현을 연습합니다.": {
       "file": "chirp3-hd/491bd9a91e18873f5575cde8.mp3",
@@ -34959,6 +37052,13 @@
       "sha256": "7a08b8c559b4facfcef0b14d119d7f5f4b9b91105cb9d05c8fe9d011cbb71a70",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “면허증” 표현을 연습합니다.": {
+      "file": "chirp3-hd/55199352691da5b796209886.mp3",
+      "duration": 2.328,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "00f28b06291cad70ed85d302b81e7b9fc512c9c3e00b59dd5bf9847584581cd1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “명도” 표현을 연습합니다.": {
       "file": "chirp3-hd/fcf38afc8214978073084861.mp3",
       "duration": 1.968,
@@ -34993,6 +37093,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "271afc9ba4ec6f0f3987162de15fdaf45f507f3d4e92a4e7e7e4642762f45adc",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “모자” 표현을 연습합니다.": {
+      "file": "chirp3-hd/ea24f74039f210eb45654458.mp3",
+      "duration": 1.776,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "621c31f24437474479599dd56f719772b21817b2dea2a534cf6c7e9c9be43d00",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “모자는” 표현을 연습합니다.": {
+      "file": "chirp3-hd/142c036a084757501c19be8f.mp3",
+      "duration": 2.088,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f7fb06176dab7e108ae15720027ec6c52fa09b793bd2fe5f1362254c6a327670",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “목요일” 표현을 연습합니다.": {
       "file": "chirp3-hd/158367d2e1990e1b2df49dc0.mp3",
@@ -35141,6 +37255,13 @@
       "sha256": "91a7668a9a7fb08e6b3ed376c81ccd617ca34505efa515c0a413f0e869854fc9",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “물병” 표현을 연습합니다.": {
+      "file": "chirp3-hd/c45910024e3c878e4e1ec3c3.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "15b4eefbac8b6099591faf145759349e4e3a36c12fcb3b00c08f417393dd66eb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “물부터” 표현을 연습합니다.": {
       "file": "chirp3-hd/49cf5c67c0277a70a62a4eca.mp3",
       "duration": 2.424,
@@ -35155,12 +37276,12 @@
       "sha256": "c6150cfcc6228cd0a72fe810bbb8589b00b43c070c801ef65ea09caabedbeedb",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:오늘 “뭐예요” 표현을 연습합니다.": {
-      "file": "chirp3-hd/2a1f33c69225273644e70368.mp3",
-      "duration": 2.976,
+    "ko-KR:오늘 “뭐해요” 표현을 연습합니다.": {
+      "file": "chirp3-hd/a8c0baced15b890f99565f21.mp3",
+      "duration": 1.944,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "3294f4a5e3cefe04f175aa5f450fa7c80ea64f37808f9418ecfa1f6cb0f640de",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "dd49d621cb9e14c1444ab2e5212e3e149a4d1d4650aa18ec9f96ebee88408445",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “뭘로” 표현을 연습합니다.": {
       "file": "chirp3-hd/d80b368789c5fe56cf417bfc.mp3",
@@ -35182,6 +37303,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "c23cae5bfdad546e6c85dc4fad7c453473371d66e420a9123e83f29227a8fe4a",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “미국에” 표현을 연습합니다.": {
+      "file": "chirp3-hd/23a1b0cc5797aa96407160bd.mp3",
+      "duration": 2.184,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "2d65cca09787332aa11c874e259bfdf21ca7de4b335a7ff88003d6b015591dca",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “미안해요” 표현을 연습합니다.": {
       "file": "chirp3-hd/c6f70b7d6592aba3cfe1f3e0.mp3",
@@ -35624,6 +37752,20 @@
       "sha256": "92cffea85cfb061a7c4252040ae577376546b84bd88ea2bba0e196a78764e5dc",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “부르지만” 표현을 연습합니다.": {
+      "file": "chirp3-hd/44bd468ba69a017d59bc85c0.mp3",
+      "duration": 2.784,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f030b2827f5f4c4267b9c7d90539c02f7f06bf75866eee256e5b3039dca476f6",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “부릅니까” 표현을 연습합니다.": {
+      "file": "chirp3-hd/6c279cb45ff2a8629dcc4ede.mp3",
+      "duration": 2.568,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9bc9a8f3c0da8ab7fa10c1363958f25b5f734ea7f8ef950e85c6a73df95b2243",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “부산입니다” 표현을 연습합니다.": {
       "file": "chirp3-hd/1bfc70844d69601cf9004e97.mp3",
       "duration": 2.856,
@@ -35701,6 +37843,13 @@
       "sha256": "97bb620509586ffab85aaf6c7bbca48376c5be2d7fa0ae9583401763b11a4a45",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “비자” 표현을 연습합니다.": {
+      "file": "chirp3-hd/b8abb4d3a3b772de6dcc649d.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c291c68f6a505946e6d41a787d451e479cf141a0e5cd61d01ac80ee187e59c6a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “비행” 표현을 연습합니다.": {
       "file": "chirp3-hd/caeb7732c499e2df85f495f3.mp3",
       "duration": 2.616,
@@ -35721,6 +37870,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "eea89f970560f5adc78ca96ad8101562c693e48d299527aceb6e792d76dd77a8",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:오늘 “비행기표” 표현을 연습합니다.": {
+      "file": "chirp3-hd/ff74cc4d583dc9d6259bbda6.mp3",
+      "duration": 2.424,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3ad7e1c224bcdeddd794af20c2a87aca9e1d97aa59cd18fe89c8b1a14d409f43",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “빌딩” 표현을 연습합니다.": {
       "file": "chirp3-hd/570083e6d12c6ecaabef8f17.mp3",
@@ -35882,6 +38038,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "8c82eee7f33fc2901bf3630f73cfcfd3b6cdfeeface8ac030ea6ca58e2933e68",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:오늘 “산” 표현을 연습합니다.": {
+      "file": "chirp3-hd/74347faa7281a6978136247f.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d00f838447d281eb6fe0b5890fd39380f71ea9f6289afe5ae296314998dd1c79",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “살” 표현을 연습합니다.": {
       "file": "chirp3-hd/73c4f8fc0e251cf95f07f03b.mp3",
@@ -37283,13 +39446,6 @@
       "sha256": "078afdc136e88d87a7b6d6ee872e9611a1127120be7d7847a01605e20a1afff7",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
     },
-    "ko-KR:오늘 “예뻐요” 표현을 연습합니다.": {
-      "file": "chirp3-hd/d8f7945d95e6281515415c0c.mp3",
-      "duration": 2.304,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "893ae85ffba9c4bd4283a3c4d57d33475abee97318c95517b0e627b78a9e7012",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:오늘 “예쁘다” 표현을 연습합니다.": {
       "file": "chirp3-hd/cc4b1db664e8d45f133e934c.mp3",
       "duration": 2.208,
@@ -37542,13 +39698,6 @@
       "sha256": "12594ae450a9e826c4ac1cb8be8feee55c9e89049c7860d91e8f42d27f47206e",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
     },
-    "ko-KR:오늘 “왜요” 표현을 연습합니다.": {
-      "file": "chirp3-hd/82d2ea0e9db536a055851f64.mp3",
-      "duration": 1.896,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "dc504d93edb356f8da597fb9ce12423b7f2fecc6ffb122707d89572d5ca3c863",
-      "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
-    },
     "ko-KR:오늘 “외국” 표현을 연습합니다.": {
       "file": "chirp3-hd/7f447b458347910d3d4a46fa.mp3",
       "duration": 1.824,
@@ -37660,6 +39809,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "18c764cb310c630c9ea731522346c68454cf27bbcc40f71545bd126f39460f73",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “운동장에서” 표현을 연습합니다.": {
+      "file": "chirp3-hd/642e69272a40a6e2c9a59112.mp3",
+      "duration": 2.616,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "39a843b61d01ee59d91f16ed36a1e33a1084d3d7d3172546ad607535e2ca6ba8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “운동하고” 표현을 연습합니다.": {
       "file": "chirp3-hd/e888f30ad60e88ac56f8b75f.mp3",
@@ -37807,6 +39963,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "e8c9106cde5cbab233e0a95d4bccbbe97241e84719bf73d6a4d7d05fe107f12b",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “유행” 표현을 연습합니다.": {
+      "file": "chirp3-hd/fb397120edc5869d8dbc6ad2.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9146eaf76168dadc886ca1dfaae4cffbcc560ee3f740f0fc3db816a56b9d74ce",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “유행이에요” 표현을 연습합니다.": {
+      "file": "chirp3-hd/5ba725fb45d1f93e2c7856cd.mp3",
+      "duration": 2.856,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e20a470c3a968ecfe778cb4473f2e5e447950b04a2a4a82031806e6b3126ca73",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “육” 표현을 연습합니다.": {
       "file": "chirp3-hd/896eacf560bb41b31f707e7d.mp3",
@@ -37962,19 +40132,26 @@
       "sha256": "667aadfb926edbf74a835a7efa38403d3133bbc4bb2559222ec03d70a4e6a185",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:오늘 “이” 표현을 연습합니다.": {
-      "file": "chirp3-hd/e49da6e22319e80d0242d708.mp3",
-      "duration": 1.896,
+    "ko-KR:오늘 “이거는” 표현을 연습합니다.": {
+      "file": "chirp3-hd/8bcc42ed743b02bbb816fa60.mp3",
+      "duration": 2.568,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "ce3f555a6b4e39954c8c783f4ca2a119038e88bfaf1e7adebe2f9884b9c9b0f5",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "6f96558c8e970d345fdce1cc97f7d368024b958a16f78190705796d05279d5fd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
-    "ko-KR:오늘 “이건” 표현을 연습합니다.": {
-      "file": "chirp3-hd/5e90ab02c522f2571c38f623.mp3",
-      "duration": 2.208,
+    "ko-KR:오늘 “이거를” 표현을 연습합니다.": {
+      "file": "chirp3-hd/ecbb72f1fbac9db176406843.mp3",
+      "duration": 2.016,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "0dc2f81dc4e3ab6e529ba9e0261ff0dc446c7decf9565f8eb67754d6180e916e",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "22d0ea06b255f291877a25c8230743d01ecf4c366e75d8786bf2f523ca79a81f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “이걸” 표현을 연습합니다.": {
+      "file": "chirp3-hd/166ce3d5c6d83b03fca1c330.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3e922ba6394bec273b7a7c9de29158f915a8743141135fde80b278ab0c35f56d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “이것” 표현을 연습합니다.": {
       "file": "chirp3-hd/d7485c8a36dd14f2fdb48248.mp3",
@@ -37983,12 +40160,26 @@
       "sha256": "0fb50447a87588780443ccc1b188db03403e45af581376c7ca16c1db38d62aa3",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
     },
+    "ko-KR:오늘 “이것은” 표현을 연습합니다.": {
+      "file": "chirp3-hd/65208c6683e5a476f41edc18.mp3",
+      "duration": 2.496,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "ba2d5cf4f9d182a17ef0f7a1fc0ae0adec33dc36a54d604cb0aa9c41e55c36a8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “이것을” 표현을 연습합니다.": {
       "file": "chirp3-hd/200f0fea043681e46443c1c9.mp3",
       "duration": 2.448,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "204f5f50d0f1e633172efe80a51df4f62cbc981b658533a567efa2f8eb64036e",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:오늘 “이것이” 표현을 연습합니다.": {
+      "file": "chirp3-hd/8ad8b8ad1d84f749d4628bd8.mp3",
+      "duration": 2.544,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "127276d6ce059766ccc8300ec341f3d6c9f4166bf9866ad6997f8ca8ba660312",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “이라고요” 표현을 연습합니다.": {
       "file": "chirp3-hd/888f58292149695fa7de6824.mp3",
@@ -38003,6 +40194,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "7c9412f1a0bf375ee6eb60cd1a3b7a9c61e3baafdac575e8f356dc879cc08f91",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “이런” 표현을 연습합니다.": {
+      "file": "chirp3-hd/fa011f34f21f90d72baba62d.mp3",
+      "duration": 1.728,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c359d9a08e07f5a2f4e33c05066216ecdecfcee54c28fc83e780fcccbee2c0ca",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “이레” 표현을 연습합니다.": {
       "file": "chirp3-hd/6261676b2e258a36406c71e4.mp3",
@@ -38389,6 +40587,13 @@
       "sha256": "9aecd6a0ec071e38ecc29d6053b17d13bbdba18847c8f6c455967882cdd3ab54",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “자동차가” 표현을 연습합니다.": {
+      "file": "chirp3-hd/731e799334664c140c04951d.mp3",
+      "duration": 2.256,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "1e0ee345404b14c7e98d66b7b4a25d5cbca4df7ac10ef8fd8016ceee5f8a0428",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “자루” 표현을 연습합니다.": {
       "file": "chirp3-hd/570060793a47bc1d6d86ca56.mp3",
       "duration": 2.424,
@@ -38450,13 +40655,6 @@
       "duration": 1.776,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "605c1d6c364d8a15cc314d76de68c10df8c474d8341fd59b8b852cfe4bfaf919",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:오늘 “잘” 표현을 연습합니다.": {
-      "file": "chirp3-hd/cc41e74a8ff097c5db43b81f.mp3",
-      "duration": 1.728,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "218d6197b3f046ff92fde748356e65a5ab888b96f61a772e30f56ae4a6f72919",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:오늘 “잠깐” 표현을 연습합니다.": {
@@ -38542,6 +40740,76 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "6384168a8e54218905485520eecd58e402df8df56c3771bf75fda7385370792f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 “저거” 표현을 연습합니다.": {
+      "file": "chirp3-hd/0683c9f2068716beea1edcf9.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7a57f94ed2ba71ab772f388cf4425d7e69d022ceb51d097bd68107474501fd6b",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저거는” 표현을 연습합니다.": {
+      "file": "chirp3-hd/6168d648d90740de2a1d880e.mp3",
+      "duration": 2.376,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "926f3905a4834a5cf0b4a194c620fe78da94ee4c82b39569754455de5e984cdb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저거를” 표현을 연습합니다.": {
+      "file": "chirp3-hd/03a470bec744d5dbf6e12275.mp3",
+      "duration": 2.016,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "4489186cd2e53d9a9890ef37a3297694cf33f1b2a12838963685cc9b1d05df48",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저건” 표현을 연습합니다.": {
+      "file": "chirp3-hd/d753bbf07f3f0b8d72c38d08.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "920aa478bf11b46fd26224c3df76e1d3bd758afccbe437951eed5edb5858cda0",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저걸” 표현을 연습합니다.": {
+      "file": "chirp3-hd/45c98469ed9b64d3956cecef.mp3",
+      "duration": 2.784,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "61f04716d5ca77f968d328678d9f58702551d18eb8442382aca12ba448373157",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저것” 표현을 연습합니다.": {
+      "file": "chirp3-hd/12c89dd3e0b2bded297fe424.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8ce4efe34d401687d9085e97fdfad1b01ce6421cf5ed9ed6671826f31b5c3ba5",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저것은” 표현을 연습합니다.": {
+      "file": "chirp3-hd/c03419e340ca973acf8fa959.mp3",
+      "duration": 2.688,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "df8a79c52f61cca678092e07dcb835f52b41be1a660f5e6e542d4690d2f98abb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저것을” 표현을 연습합니다.": {
+      "file": "chirp3-hd/3321c1af733022c7d7c512b8.mp3",
+      "duration": 2.088,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8d1ae0de90a2f55b0865b39a267da93814f64edde12a129a82ad9f2d1f652878",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저것이” 표현을 연습합니다.": {
+      "file": "chirp3-hd/42f0e4b7678ab6e780b80e22.mp3",
+      "duration": 2.424,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d75e31b17f4f39adbb871e0e78182057494bbff2c3769117c16506eb701cf5fe",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “저게” 표현을 연습합니다.": {
+      "file": "chirp3-hd/6550e1d3e1bdc149af6ae1f8.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "bbd27cd0f9eaf46249534b777fe7a5a9ca281c2c0889a5b7d0fa2d8d8939e07d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “저녁” 표현을 연습합니다.": {
       "file": "chirp3-hd/80ad0d4fb8eecfaa6d18ba40.mp3",
@@ -38647,13 +40915,6 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "a7491e1e79045b3a01aa32af3ec829eac7be251a21725835036482c9933f33ce",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
-    },
-    "ko-KR:오늘 “제가” 표현을 연습합니다.": {
-      "file": "chirp3-hd/d1d3dbcf1bb3faca10745e0b.mp3",
-      "duration": 2.616,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "efbfdecbccd33609c19fd90a5d08c8c4f28d9bf50f887dbf223b9711a9dd7545",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:오늘 “제일” 표현을 연습합니다.": {
       "file": "chirp3-hd/b56aa1189f56f0c4fee976b0.mp3",
@@ -38886,6 +41147,20 @@
       "sha256": "351dc3edb7b096a54975923269d66708ed2a6f24f76ad45534ee687299c78bbe",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
     },
+    "ko-KR:오늘 “중산” 표현을 연습합니다.": {
+      "file": "chirp3-hd/63aff25b73593df06c3c7f54.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "5ae00954bbd160ba144fef7e2fe666e3d28f24b1b8f01373fddd1ec6b016685c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “중산지하상가에서” 표현을 연습합니다.": {
+      "file": "chirp3-hd/9742e0132a87d94a8b450e78.mp3",
+      "duration": 3.024,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8f0315d2bff5a920c879abacdf4890cf6e532f022797a534d3409b5512831721",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “줘요” 표현을 연습합니다.": {
       "file": "chirp3-hd/6f07d9ec98274dc13ffce465.mp3",
       "duration": 2.616,
@@ -38984,6 +41259,13 @@
       "sha256": "d23c48ede6cf92a025ed77a9663f42fd07c6b7e94cbd1902201b757a14b2cb1b",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
     },
+    "ko-KR:오늘 “지하상가” 표현을 연습합니다.": {
+      "file": "chirp3-hd/f96a8ee44354a4b9aebaf653.mp3",
+      "duration": 2.304,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d9a7e027de1253d31983bbe9330c5c9c053fc917b09331310a7eb9bd85b41731",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “지하철” 표현을 연습합니다.": {
       "file": "chirp3-hd/58762680eb73ab6ebe62d88c.mp3",
       "duration": 2.256,
@@ -39046,6 +41328,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "4afed726f01f8d75a7cd5330a4e4975ee4466128aaf941ea7994fd7fdf0a3733",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:오늘 “집을” 표현을 연습합니다.": {
+      "file": "chirp3-hd/657ceea8096d64660bf179d1.mp3",
+      "duration": 2.064,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "266fd365888bfde6fbd016eb5acb90ef888d3f37826a4864396cb75c79fdd7a8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “짬뽕” 표현을 연습합니다.": {
       "file": "chirp3-hd/438eb458d88c78facf1dc687.mp3",
@@ -39264,6 +41553,20 @@
       "sha256": "bb6bc801104e02afd11071ebe50eb486649c5aaf2bff9ee439932179b976eff4",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “춤도” 표현을 연습합니다.": {
+      "file": "chirp3-hd/04c84581b11971194d5a406a.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7c6c665e0ff61c4667e32b7d605d6820b5375ff5d0ee81b5f504053f170b6922",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 “춥니까” 표현을 연습합니다.": {
+      "file": "chirp3-hd/b820b11e45deb89e5f2ea383.mp3",
+      "duration": 2.256,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a7f88741786e9fdb66249b7e439c91abe64e75019915fa024a9d067b850293ff",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “춥다” 표현을 연습합니다.": {
       "file": "chirp3-hd/09958fc110e090144007cffa.mp3",
       "duration": 2.496,
@@ -39459,6 +41762,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "644c6e9bb06b2c4a2ac5676b49f658a8b50da9b6c7df3f0bc200a53e4f691fd5",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
+    },
+    "ko-KR:오늘 “컴퓨터예요” 표현을 연습합니다.": {
+      "file": "chirp3-hd/ee9a5761d9315c2f091660ce.mp3",
+      "duration": 2.544,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "1d2a95c0f7ec0c4bd880cc8027a48d2e75bc8b5d19b30f8236b0fb145e6786c3",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “컵라면” 표현을 연습합니다.": {
       "file": "chirp3-hd/555b9a35594c90f8294c2f59.mp3",
@@ -40006,6 +42316,13 @@
       "sha256": "58a188886498509a90e702db8486e0a42f31a6767d341ce186e265e73cb7dc04",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오늘 “혼자서” 표현을 연습합니다.": {
+      "file": "chirp3-hd/c07f7e650d3b62c95a366682.mp3",
+      "duration": 2.016,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b56148a490e2dccb5d929014a450b9e72d9b1efff3ab15ee6801326fbdec13ad",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오늘 “홍차” 표현을 연습합니다.": {
       "file": "chirp3-hd/d64c79963f97b761c7d2d8a3.mp3",
       "duration": 1.896,
@@ -40089,6 +42406,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "ffd0655bf3d6fec67e9b4d7bffc914e10dfe8df0c12f03e5c75171129d23d7e0",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:오늘 “휴가” 표현을 연습합니다.": {
+      "file": "chirp3-hd/e4412f40f3b12a8ada743f01.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "005fb8b0dbbce52ec73bb6e90f48284a19a0b9ebe6bf69996c2d0a6c3c49cf55",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 “휴대폰” 표현을 연습합니다.": {
       "file": "chirp3-hd/227ca12e6639bc59619b3d4f.mp3",
@@ -40194,6 +42518,20 @@
       "voice": "ko-KR-Chirp3-HD-Charon",
       "sha256": "6d1b941cbb9c2aec2e49805dcc24376423a848d01ca364fed1cffec2db35d83c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:오늘 학교 가요?": {
+      "file": "chirp3-hd/f97d44d0279e8527d81ac2f1.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "18a6a197964fabed0a0168c9e872d0df5dc953ac706225c926915bac99093baf",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:오늘 학교 가요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/3a5319814b07a983ddc9ce0f.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "3cd3dd5c28a601c7ea68b51c89075b4560ab52ac7c3e9cc09ecd8e27af7773e4",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:오늘 학교에 안 갑니다": {
       "file": "chirp3-hd/683467e231b7016788692868.mp3",
@@ -40664,6 +43002,13 @@
       "sha256": "1092fcca23c7164838e70f61447fd9b6aefef29f2e436c978f7fbac9110fb41d",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:오토바이를 타다": {
+      "file": "chirp3-hd/d9b1958059c1912b8ea09123.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3e2b2de5263329227a16de89e18c5dbdd1f1617501cb971894250b9df32f2c37",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:오토바이를만": {
       "file": "chirp3-hd/a45287dfcaf97afc832d64ab.mp3",
       "duration": 1.704,
@@ -40782,6 +43127,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "a9635bb29a6741024918da14db15fed8e815406a5798af77ab95ecdf63b34ebf",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:올 수 없다": {
+      "file": "chirp3-hd/1aad7aca932d251c8e4ba7f8.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e04ebe4cce033d995a3ad2695a2b10052e1e7be2787f7c4b974a82d86dc98e7e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:올 수 있다": {
+      "file": "chirp3-hd/d5147f2264f67ac3fb4f4fe1.mp3",
+      "duration": 1.128,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "243c7575cf252db42316755777f77a9552921fef5d8cd5488d98198e405111e2",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:올라가다": {
       "file": "chirp3-hd/5d15f2d785cec9208cf332de.mp3",
@@ -41042,6 +43401,20 @@
       "sha256": "8ac96e65177944e91ecafcff0b223f667aab0850c74caee69e2003fa9182e981",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
     },
+    "ko-KR:왜요?": {
+      "file": "chirp3-hd/82bce585b790f8332e71aecf.mp3",
+      "duration": 1.104,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8e9ddfe8d26806ddef08006370fa03fa43bdacd065810c4cfc1740e4613b0cd1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:왜요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/0021cf570839426dc33d1afb.mp3",
+      "duration": 0.936,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "ed0e653030fa766885b8f8f403f15e75a34a4cd23598a5812a953e7fb5a796e3",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:왠지": {
       "file": "chirp3-hd/250c322a3e0f788f2105214e.mp3",
       "duration": 1.296,
@@ -41294,20 +43667,6 @@
       "sha256": "04e5b8073176218cf439079b3db9a6a5f007529e868ba03ebe2f9181943ebe01",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:요즘만": {
-      "file": "chirp3-hd/999c50c2a815d33e3502818c.mp3",
-      "duration": 1.056,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "80ae36c265570477c452cc0908498f672c71c7e8e0248561ac2b9f8e847c6f75",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:요즘이": {
-      "file": "chirp3-hd/79722371b3e7e0009a530955.mp3",
-      "duration": 1.056,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "b78f034b0b2188ae5a684143cfaf1ceb1eb366a28887cb8a781fce13607fca36",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:우롱차": {
       "file": "chirp3-hd/5849cca1b62d1df9a4bc4681.mp3",
       "duration": 1.296,
@@ -41489,6 +43848,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "f40035aab479de3a044f1674c6b7248563c32b131da138dd9003204d6b5aa91c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:운동장에서": {
+      "file": "chirp3-hd/d8cc0af13ae284a662b52178.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6e812efc7d28bf978fb344885016f3646bdb0e2de5257528bb06c1d80cee921e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:운동하고": {
       "file": "chirp3-hd/5fc7e2986863e3148e215151.mp3",
@@ -42071,6 +44437,27 @@
       "sha256": "54c2be90b5f0ee2eb3bb002fb4fc768150a6f3c3d6b3889f606fc407877afcf9",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:유행만": {
+      "file": "chirp3-hd/42dfec4511309081c1f54c45.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "241b16ecd8b4798b36b489694cbd2a124e16d48569d5a6245d906f17811bf64c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:유행이": {
+      "file": "chirp3-hd/3d1d66ebbe780ab38e823c09.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "60bd611f41e80f69d839718e3db749957c853139f7c8ac560b85ea743f7319f1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:유행이에요": {
+      "file": "chirp3-hd/f96b810597d39f3eda71601d.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d5156cea480026e3841e2dd95854bb98db6edf31c24bb7ebbc35caf325629acd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:유혹했다": {
       "file": "chirp3-hd/328ffeed5f6c855cebe4d1c8.mp3",
       "duration": 1.464,
@@ -42617,12 +45004,33 @@
       "sha256": "2108aa755e7fec0542660c382b6f773c094c6f151ebaac73728201ba16141802",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:이 가방 누구 거예요?": {
+      "file": "chirp3-hd/b8f1b831550ddf76a309f91c.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6449ff117c7b56e624186e9c3995a8d0ce669af50d123438978c5e90011c9630",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:이 개월": {
       "file": "chirp3-hd/e95c2abdae90814ef7e4bd0c.mp3",
       "duration": 1.704,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "453a923f50ce9d489defdaec73b58a6f60c305590bc7a25f545591970ee07358",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:이 건물": {
+      "file": "chirp3-hd/d834ed69d9a12284f18040bd.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7ec37bf8217032a8aa5c71c9ea572ca0e0c4ecabb6c2301c15d6af205aa74bda",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이 것": {
+      "file": "chirp3-hd/7840b6a1226f10c9d5e4c00f.mp3",
+      "duration": 1.224,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "39e4abffc9441e0812b988c6bc85a377e063bb7ca666ef595f65ab83d5c5e6e1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이 년 전부터 배우기 시작했어요.": {
       "file": "chirp3-hd/5fed03066945bcaf676322bf.mp3",
@@ -42638,6 +45046,20 @@
       "sha256": "6316bbf6294df2072bd52588288a9da957f41b5c0c2e81bdccf57c432ed1c971",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
     },
+    "ko-KR:이 모자는 어디에서 샀어요?": {
+      "file": "chirp3-hd/720d71eab07127bd97ff659c.mp3",
+      "duration": 2.328,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a9c73658a53f3b694104f19019cfd9b13c51fe06c2f142a6da8d470395de908d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이 모자는 어디에서 샀어요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/ee5f54876a6168dbb9da76be.mp3",
+      "duration": 2.208,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "834c70ed0788850b40bd10e12ee9b5c2185425b55f1518d81c3bd4a7ac248f84",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:이 분": {
       "file": "chirp3-hd/8c0a5fc7568764bb8d19ef24.mp3",
       "duration": 1.056,
@@ -42651,6 +45073,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "0384dff9316f5e70da8ba43aa4b3440ed2026bd3ac7482a826a14772acc24a15",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
+    },
+    "ko-KR:이 책": {
+      "file": "chirp3-hd/34293626d585b0f9bded2b8d.mp3",
+      "duration": 0.576,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6c885396f3acd56b22ba04670b14c1e354cf6df0892d325019109d470c8701cd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이 컴퓨터": {
+      "file": "chirp3-hd/f03dcca0c47237cec60781db.mp3",
+      "duration": 1.776,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8a6eec29b84113d0854ec79173a6fe46b69a548c25d1d678362f1360cabe5152",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이거": {
       "file": "chirp3-hd/b15b2b7f5f13be95a83dde8c.mp3",
@@ -42687,19 +45123,19 @@
       "sha256": "9da39896546818d264dc782d798f8968866c4f86ff5d2e7f7158e72192923582",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:이거가": {
-      "file": "chirp3-hd/f58d26737cbfaa709c398e92.mp3",
+    "ko-KR:이거는": {
+      "file": "chirp3-hd/94d9472e48e4edd7dcef242e.mp3",
+      "duration": 1.224,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8e3b3b7288ea83f8bee7c59a3f5a2f8497f5b0618c5ea00a86f1dccedd776f4e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이거를": {
+      "file": "chirp3-hd/25c9493224a18a3232868a79.mp3",
       "duration": 1.656,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "a1f0bb7e90f498689a2db52c7106771656575e6835a8f03e8ff90b9021e92600",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:이거만": {
-      "file": "chirp3-hd/59ebdd6f883d9a367eb65693.mp3",
-      "duration": 1.248,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "6740671635851e0d457c566c590cde5e2ef9ff93e1d08dd6dd347e0cb4ee5aa3",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "1363e72c6a55fa605d0d434be46ff229fc1e47342ddd847021bcff783a8714ee",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이건": {
       "file": "chirp3-hd/9f251df588688433127eccda.mp3",
@@ -42715,19 +45151,47 @@
       "sha256": "8d9595b2ee64d1c22d43e03fa85434643016adcbf5e5cb6ef7c34606d3406d31",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:이건만": {
-      "file": "chirp3-hd/731cc095b30563f7fcb149a9.mp3",
-      "duration": 1.536,
+    "ko-KR:이건 민준 씨 컴퓨터예요?": {
+      "file": "chirp3-hd/9066ecccde1e6a958987a3e5.mp3",
+      "duration": 2.064,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "eff593dfc159f5af862d0d388cc4f5056736fc9a71204703febdc241280ac2e7",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "4a352a0e0253dc1dc55d6145b40637786b3d5f3d370425c90602cb3cb5c835fa",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
-    "ko-KR:이건이": {
-      "file": "chirp3-hd/b1940abd54c0895f52793e80.mp3",
-      "duration": 1.344,
+    "ko-KR:이건 제 가방이에요.": {
+      "file": "chirp3-hd/69e1294cdba0ccf71575211c.mp3",
+      "duration": 2.088,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "aa39ecbe5df38aea7def11bd3c22a5d44ee7f4ae5d2681d4436ebdfa0b96e701",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "85f0bb5890d6df03f5ec3f8d1f7e0062e1fab84fc93d7868363231dbbcd4f0f7",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이건 제 가방이에요.|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/05e254f30a07955350720720.mp3",
+      "duration": 2.184,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "1415e0bd0359da81705788486266072dcc90c0e4282b7be519c72e42e64143c5",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이건 한국어 책이에요?": {
+      "file": "chirp3-hd/024caa3dd976c68d483da720.mp3",
+      "duration": 1.944,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e14e1b0cae6e3ae24733c48b6de5fc8bb2ce7af9fcf01da1d6652d2fe24f7364",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이건 한국어 책이에요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/792500e17a9c4f0bcddb7c6f.mp3",
+      "duration": 1.584,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "9d401aa0a7340108242a26fdfcd1363dfc9a00cfa80eb9a25ebd23611bad3e81",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이걸": {
+      "file": "chirp3-hd/db6fd17856a6764f16e60b8c.mp3",
+      "duration": 0.336,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "fcb5af459ddec6741596451a86e93ea66115172f5f9921d156baffa427e20401",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이것": {
       "file": "chirp3-hd/823d56e774bd9d54f9736dd0.mp3",
@@ -42750,12 +45214,26 @@
       "sha256": "92de27c0d3a41626ab33454d2210576413fb9aa9a815607803c4d7ccfc119750",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:이것은": {
+      "file": "chirp3-hd/ef22649ef139eac9528a962f.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "cff578402a6d9ab421a01eb5cf7a60ceddd9d8dfab1bc7795d4b4e3ba0b41814",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:이것은 시계예요": {
       "file": "chirp3-hd/ea4c7cd488e4b2b19759bac4.mp3",
       "duration": 2.016,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "07f6812a229d8b244c0b52e0bd3d8cc732e4df06f6abfa1f3a30ba4fe64db939",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:이것은 제 책이에요.": {
+      "file": "chirp3-hd/6690f690c9d256454cf45b46.mp3",
+      "duration": 2.136,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "edbf1545219b85870899626a389dc33da2050787be070da4639fd610ea485289",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이것을": {
       "file": "chirp3-hd/6497526c3e5e2198ecd715b5.mp3",
@@ -42778,12 +45256,33 @@
       "sha256": "2a1750e211d034deb755b0788ea6c1afb2b7b2f889cd886114440b17a27b5464",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
     },
+    "ko-KR:이것이": {
+      "file": "chirp3-hd/9221030644ebadf15e06b7bc.mp3",
+      "duration": 1.608,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "57b4f07a4231b1eeb82bb9a41d6283a3a53c9a00da531d16e10489b7e608cbda",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:이것이 김치예요?": {
+      "file": "chirp3-hd/1eebb88c68a06b7bac38edde.mp3",
+      "duration": 2.016,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "73ab027c5b534ffde82a5abbecec387637e1da1759a37c744084acdbd8a1f293",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:이게": {
       "file": "chirp3-hd/1ae822d59f74e16065e28a9c.mp3",
       "duration": 1.248,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "46e6a2aa6bd8c6a2d36f6b3ada20e75b68b0dd11cb2925e31c170bf4c7e016dd",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:이게 김치예요?": {
+      "file": "chirp3-hd/e16740767f2208fc9a63fa4d.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f8343287c986841a32953b98799decc87a70bfeba8342e1b0b25dd75e5ea425d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이겼고": {
       "file": "chirp3-hd/ea06cac64582ad03d12debcc.mp3",
@@ -42889,6 +45388,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "cff8597d8da308ca9a91ea86a815ae6cac51002b9b85061b5718f445fcea1c6e",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:이런": {
+      "file": "chirp3-hd/6366e96fa3ba95d452aa273c.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "65c8aaaa23de1c423b56cf8ce4cbeb9b12d9ab25e10a8037b2ab25fee921e01d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:이렇게": {
       "file": "chirp3-hd/4d09606bcf372cd84f0bfcb1.mp3",
@@ -43884,6 +46390,20 @@
       "sha256": "9f448c6bb51448a54817af7a1b6a8b243a29a1fc8c386a7133f422bd1ef19671",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:읽을 수 없다": {
+      "file": "chirp3-hd/664f623a82038ca7d26b6a7f.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c21231ef3abb0b1bb999288d02d65d8512c4e5a400eef9919800528c4442c128",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:읽을 수 있다": {
+      "file": "chirp3-hd/e528f2a2da93dd8d48cf1b6f.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0fed45c7230353dce9fe2cc322f1e84ab0fbf75f71b00d606acd3c2d7c2f9090",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:잃어버렸어요": {
       "file": "chirp3-hd/3a5c50170fd2f75566ad1e82.mp3",
       "duration": 1.416,
@@ -44255,6 +46775,27 @@
       "sha256": "8a64c301a6139e67c27eb4d5cdda96b7b7df21aa3daf7291375ce0eef8dce77a",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:자동차가": {
+      "file": "chirp3-hd/94c8a86054471834276914d0.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9659b4acdf1400b8d09768dc15718c828ba166b7483ad29a40f758bda996e08d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:자동차가 있어요?": {
+      "file": "chirp3-hd/6e7bf88cfdd02e356d0d3d3c.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "5fba5d01b518c63939e79cec149406a52b1596813d7b7f3411725139404a5a0f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:자동차가 있어요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/9ead13a6cee5cc1de6ec276e.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "a70b6aea2151c1eed6bd1637f35c9e0afec7c186458940a067d5797c0f9ef033",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:자루": {
       "file": "chirp3-hd/a7c56e5bbb76dfab8138455f.mp3",
       "duration": 1.536,
@@ -44463,20 +47004,6 @@
       "duration": 1.368,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "2ffb08ce78893e85f1e4b5d480c9a1d0b9dbc1f1dc2f05764ea7f22cdb97e23c",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:잘만": {
-      "file": "chirp3-hd/fcb67e21497e47439a178e66.mp3",
-      "duration": 1.104,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "8e91e5032c557f753dedc9dfa7f9ea7c500e427ef83fcf8b4246a1ec4c0aa33e",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:잘이": {
-      "file": "chirp3-hd/4073314dac8696abcf54bbec.mp3",
-      "duration": 1.536,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "75fc11bbb755c1926a4d5f7d76a3bc0f98f7f7abc242d40d5dc487f6c1770a09",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:잠겨": {
@@ -44794,12 +47321,47 @@
       "sha256": "89fe97e1e0f08611b548802ab60484fc84e55b92a2e44f7470a135be4d8e39b7",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:저 것": {
+      "file": "chirp3-hd/b1c97666923a1c1a7b7f1343.mp3",
+      "duration": 0.984,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "ce36fc7b7408da7f3101d56ee07c4b5e0868dc4b5f1629a444051b057e12f105",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:저 노래는": {
       "file": "chirp3-hd/e7c60bfe93cb09d31b157c8a.mp3",
       "duration": 0.936,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "50b0932592eaaa00465647578fbaa1bcf7fc0c777c757c052f32c86f9c93ad33",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:저 버스": {
+      "file": "chirp3-hd/341a40d496d1225ca0d22160.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f44229a97f133b2062866e910cf885f43a92c4908aab1b13c916da0f045f652c",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저 사람 누구예요?": {
+      "file": "chirp3-hd/afcd519fb7adb80f854a2df6.mp3",
+      "duration": 1.896,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "2fa5ba815ae7a4624a353bef481076e2772ae4d1668b5b18f64b3ded30921f3f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저 사람 누구예요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/576438b5c172951bcb92844a.mp3",
+      "duration": 1.848,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "d6b1cac6b138f5ee9c4f162452ce685d223bd841445e27755b42e6b7a2ffb026",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저 산": {
+      "file": "chirp3-hd/bbc1dda3d77263767299cb31.mp3",
+      "duration": 1.344,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e1069ff0fb14ee5099da7f3a936c7555ba75b29ae4479e2b1d71ed1583ea69e3",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:저 아래": {
       "file": "chirp3-hd/3cff7a563d36ef0ad3e43afb.mp3",
@@ -44808,12 +47370,47 @@
       "sha256": "64b1353a5803498a6e6f85c88c49a088fa8d3ab6a05d8a19f6f1cde98c6616e7",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:저가": {
-      "file": "chirp3-hd/ffdc99c0ea1b64ff6c4e0902.mp3",
-      "duration": 1.656,
+    "ko-KR:저 여자": {
+      "file": "chirp3-hd/faa7c0b2a547a975f5c7ee3c.mp3",
+      "duration": 1.704,
       "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "1213e1d844a455a2522cf71078dd182c13066edf5405aa521bffd8f4609c7e5d",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+      "sha256": "7025b01da0d4dcc70c5f4d2a97223a3d1702b93a9d8101a808f24a87593a554f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저거": {
+      "file": "chirp3-hd/190f07939b0a41ae042cbb15.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3147389c8407c7d00a5d0284db599e353f15555c6a65c956e7e748d16649ec80",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저거는": {
+      "file": "chirp3-hd/41fb9623838f427833fcbd2a.mp3",
+      "duration": 1.608,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "823d619be1947bc507c0d8a84b16c12120ae6d4db10864b0e0040010ae9b1383",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저거를": {
+      "file": "chirp3-hd/f060db2a37174e0fc58eebab.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "1ada777001a9167e729abddbdd6998e8d75d31c219b3f5a26fe4d5e576516ede",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저건": {
+      "file": "chirp3-hd/51e09a09e41d950f1d31e75e.mp3",
+      "duration": 1.248,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b73f261caae39aa67bf285d898ac5e79f6ac75e88ce4c938796b69d2e32af59f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저걸": {
+      "file": "chirp3-hd/d248b5a98cbb9dfca54fdddf.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "67a8ed773b1d5ffb7b4a4378931c399146ca69a79226a02fb2ee3fbb571eb412",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:저것": {
       "file": "chirp3-hd/fadc2512711cdec3d8795ba7.mp3",
@@ -44821,6 +47418,41 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "052a63b64c0da9573d7c83d8faf939fbbcdb2c7d8cc873597704f4cf80dcd9b6",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:저것은": {
+      "file": "chirp3-hd/ce8a726e431beec925581a97.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9ae236cec1ddb284130ac1c5879d566529f0641830fe1078d31551e8657ffc81",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저것을": {
+      "file": "chirp3-hd/12bd5622d0bd819ac1eca523.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "548b8da21a1a3118a908203d96a6aca25f094029a91ff9ef4ed8f2714472a898",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저것을 주세요.": {
+      "file": "chirp3-hd/8ae16b71e33f23f4917feaa0.mp3",
+      "duration": 2.136,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "3be7f9f521e69f2a97b564c65b1a0b9d0c9863f20636f00f50e29317c46ce564",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저것이": {
+      "file": "chirp3-hd/2f0c6d6d472411f44b333f0f.mp3",
+      "duration": 1.008,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9beb35d2077a9009152433487a41672679ca449fc3a0ebe0f8d869e75fd063f2",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:저게": {
+      "file": "chirp3-hd/43ca8f363758cbbfed4d98e5.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "c0dc08a7174dcaf521f143e20a9a84f46e74c243e4560279e6a55b4c217ca4f9",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:저기": {
       "file": "chirp3-hd/238dfb04ec6d259d02d70531.mp3",
@@ -45107,13 +47739,6 @@
       "duration": 1.536,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "b441531d4f196d3907243520e1333e0e87c7d28bac2c18328fb3729369e3627e",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:저만": {
-      "file": "chirp3-hd/19f85726bb9b417e1128c42a.mp3",
-      "duration": 0.768,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "dd44efe1fd6345ecc2a31b8ce094208c4eca717082729c04b5a6f89923ca91e8",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:저었다": {
@@ -45501,20 +48126,6 @@
       "sha256": "8393d341f67f3e852cb77b8aca74fda63c8bbd72cfcba59273d7eccc184e823f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:정희가": {
-      "file": "chirp3-hd/3bcd2a593c935763ed9bf820.mp3",
-      "duration": 1.584,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "d4c811d711f6227861ac5569c1e91d4c34ae2ed351305eb3ecc7006bed16ce9f",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:정희만": {
-      "file": "chirp3-hd/2db20f3aa6f5daf8cd007d38.mp3",
-      "duration": 1.056,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "7b04bd7da4974ddf132994374ea72f21b470028b2903b063128d676e351abdcc",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:젖다": {
       "file": "chirp3-hd/120ea58da59a5a11d9a5392d.mp3",
       "duration": 1.536,
@@ -45590,27 +48201,6 @@
       "duration": 1.728,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "cd865de16e3ca9883d93e297c9ee4051c5dd2440589f269e71a1f7bf76f92b1c",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:제가가": {
-      "file": "chirp3-hd/328ac9bb4ce86a04db5d6517.mp3",
-      "duration": 1.536,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "f69b1a4477cb22774ef88503f3f5bbbf8f6bc9e683c30d47d92b7cddf5a82d15",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:제가만": {
-      "file": "chirp3-hd/612a3f518574ee497e6d2506.mp3",
-      "duration": 0.816,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "5c5faeaaa24e28ef31a7cff4108c0ab0a2eee4d6fc8e7c84c92f166186676f6b",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:제만": {
-      "file": "chirp3-hd/d40074207f8de309bd2bbdd6.mp3",
-      "duration": 1.368,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "a700daba524f297995264aa94f48eb30846b92e540918ed67e2a36bb98b46bc4",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:제일": {
@@ -46481,6 +49071,13 @@
       "sha256": "620e66c641b13f4c3f75c3b9268aade287f7a26ea3325f26c98c669968c2764e",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:중국에 갈 수 없다": {
+      "file": "chirp3-hd/0752d5ef187c5758e04735cd.mp3",
+      "duration": 1.584,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e5a1be535438ae08edf390422a054c1812bc264cf594280e7a09607cb338ba31",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:중국이": {
       "file": "chirp3-hd/5741f3782504082921a27f41.mp3",
       "duration": 1.224,
@@ -46494,6 +49091,34 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "5cbe197164768d7af56c9c6328d85243386b032024cb94c5e69f6d4dc02e7b61",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:중산": {
+      "file": "chirp3-hd/3cdf6ff63e636114a13fcc2a.mp3",
+      "duration": 0.816,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "eb7050e66c8cfe9995bb9c9790e3d8549a0a4d5dfedcec127658b1d097f9aacb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:중산만": {
+      "file": "chirp3-hd/a141955321d96b2a5f92c751.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7f24195374b7437aa244565f6d19b0bc1f11b6626ad83f55142dfb8c22bbd10a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:중산이": {
+      "file": "chirp3-hd/c0f9606b11a00f0bf1e3c9c8.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "640dfcc0ccb099653f119d470cd3ef82d910c17a60ce727952bf58f1f9329d8f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:중산지하상가에서": {
+      "file": "chirp3-hd/42d1ca428eaf1f7622e79709.mp3",
+      "duration": 1.488,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "8328526c9cdff41b71be0307c25209b47982fb66236eb543fe0250b0a11a286e",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:중얼거렸다": {
       "file": "chirp3-hd/a16906261239fe38fe19cd70.mp3",
@@ -46662,6 +49287,20 @@
       "voice": "ko-KR-Chirp3-HD-Charon",
       "sha256": "6d276828a4d392bf933e88836bf04373ee6eeac2b2875ca23b65562457d015bd",
       "revision": "3a5ac7b1a6c7f4f11b4979ea6e0e2a20a18b36588976994653e61a1ed4bcbe10"
+    },
+    "ko-KR:지금 운동장에서 뭐해요?": {
+      "file": "chirp3-hd/a1671e4f84eeb4b7ae0c63ea.mp3",
+      "duration": 2.064,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "bd7cb214ea52f958ebc5975598540d59233d47a6af71fceee4f448b7c08d8ebd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:지금 운동장에서 뭐해요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/97db30f35e6f162c8eb52393.mp3",
+      "duration": 2.208,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "9b7b2a2d06534318a15bc994d271a28d53939d4911028beb97198556b826f5dd",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:지금 집에 __________": {
       "file": "chirp3-hd/dadd738daa0f11b32b8b5f04.mp3",
@@ -46914,6 +49553,34 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "f03f9ae59111381671c4833ca9e1332e2ecf215248959fe694065c6c87dda8f5",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
+    },
+    "ko-KR:지하상가": {
+      "file": "chirp3-hd/5510171ff19e485c046fb22b.mp3",
+      "duration": 0.936,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "82c9fba5bc7ebef5a242086856b0ef75d231c214c6c853e362f707fdcc4716a8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:지하상가 __________.": {
+      "file": "chirp3-hd/d6f6b8c9eed439d3052b617a.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "2a658d795ece9875f9db087a98cba04e390c0484bf8dbf85b6c2c013c5fbc97f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:지하상가가": {
+      "file": "chirp3-hd/11112828581f73a89f9a7d43.mp3",
+      "duration": 1.056,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "55f160c512b84cf22e9a7b5771cddb74296a420dac1e365d15971ec538bb4045",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:지하상가만": {
+      "file": "chirp3-hd/0dca5f6d29f07369198a6dc8.mp3",
+      "duration": 2.016,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "b3755123ba0c60dc9a9f4a0cde22512d4f03ff7e345fcaf233535cd590d1a92f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:지하철": {
       "file": "chirp3-hd/6f3fa6d0384e67820d3c391a.mp3",
@@ -47356,12 +50023,33 @@
       "sha256": "47e173485e443136cd2d087a66a4c0dc2d542b0f97d7fd4a9ee5d4f93bc856b1",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
     },
+    "ko-KR:집을": {
+      "file": "chirp3-hd/bfde9c29ab7e6c519aaa58d6.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d9611108920be3a6e34e0b58f548df3e8f46616aa176f50eccbfc1f5b723f87f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:집을 사다": {
       "file": "chirp3-hd/3fef90f1f969cf46d962f50e.mp3",
       "duration": 1.296,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "070a1e7bc0092c0a3cf77dddce7bf2ad680933e6630c52d3a5f6178579f88cb3",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:집을 살 수 있어요?": {
+      "file": "chirp3-hd/f8a8f8e59ed347344c5309af.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "9be1390a6b81f8a21f25241a8d71c69723baa908b7fa6ba8a4986cc20cbc4c6d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:집을 살 수 있어요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/6611760cb88d67d3422f6887.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "7e7471ea9c8810af3f00b4370fb8d95b2cbec9f0ad01df9ad9f6dddbb234d807",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:집이": {
       "file": "chirp3-hd/6a541c9842aa3f871c36f403.mp3",
@@ -47769,6 +50457,13 @@
       "sha256": "b111d7901daa1a203120998318ed024bc67c2e22923f0d317f38adc6438a7152",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:책이에요": {
+      "file": "chirp3-hd/61e098b66d1b41f8c67735d2.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "05d7f0b597f778f8425581bafef6efcaea68cc053c1802c3e97c411c90d091bb",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:책하고": {
       "file": "chirp3-hd/d0521162eb2accd1b0ec230f.mp3",
       "duration": 0.768,
@@ -47964,6 +50659,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "383b651965a4bc4b3ed045a3899e3438ab5c8528658db2b4ad6e26c9e063c16a",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:철의 여인": {
+      "file": "chirp3-hd/131da4de0a4ff00f017699bf.mp3",
+      "duration": 0.816,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "1f270640349c8998a51744615bf413c541525f21db55bb301efa1b0baba841ca",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:철책상": {
       "file": "chirp3-hd/07c82bf8ad3b2137c26fb1bc.mp3",
@@ -48280,6 +50982,41 @@
       "sha256": "6e445a83d5835a8fa0a76cfe3d03d51d2b34ad1e16424049961ef449bce2af2f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:춤도": {
+      "file": "chirp3-hd/593468038a4cd710c25b403e.mp3",
+      "duration": 1.176,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "a928d7b8a8ecea3939019e83e597d78e8957291a2da28a635e1c2dec9afcc80d",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:춤도 잘 춥니까?": {
+      "file": "chirp3-hd/e330bb94cce6b53989fab0cd.mp3",
+      "duration": 1.728,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d02c948c2627dfe6297d4e6271e739345312597da6da8d82f6b0420364ab184a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:춤도 잘 춥니까?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/10aafc0919f6d4df24263ddb.mp3",
+      "duration": 1.728,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "90f0162a06c7199ed5ddc9417696252b4e772f07f8881949cf6db0ebe34f2862",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:춤을 추다": {
+      "file": "chirp3-hd/fb38e78568e248669e0b4d9b.mp3",
+      "duration": 1.416,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "d76d267136ab76a9299c7123c1b9e0de7f046f34b107978f3857662f1643be30",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:춥니까": {
+      "file": "chirp3-hd/2d0862ca11d75b96e8291c98.mp3",
+      "duration": 1.368,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "60f78c32cb38901afdc822b503a3e85c63ed8fbd5e31ecb9a81f9cf19c3402cf",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:춥다": {
       "file": "chirp3-hd/4c9c96ef4a936e560360ce35.mp3",
       "duration": 1.008,
@@ -48461,6 +51198,20 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "792e67534e363dc67d2983cc6fee37f315c9f803379dc68c24d6e0f83139183f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:친구하고 __________": {
+      "file": "chirp3-hd/1469e0671c348d82ccfb015e.mp3",
+      "duration": 0.936,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "594eb1075ba5bb06776aa8f361e535614b8fdda5e8be570f13e5a40a4bcd34a1",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:친구하고 같이 가요?": {
+      "file": "chirp3-hd/8cfe88f4ce47526f3e86d266.mp3",
+      "duration": 1.728,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "7efe6523aca50ba12f6c213dda8818b41351670ae81e6f971790eeeb402a3bb0",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:친구하고 같이 놀면 재미있어요.": {
       "file": "chirp3-hd/f6d1d110592c39cea707d131.mp3",
@@ -49210,6 +51961,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "4f92a46780866085c1671e04fcecb44289b0ee7434f75f32f0dbe9b5a742151f",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:컴퓨터예요": {
+      "file": "chirp3-hd/1a95a92fb03008542f633b2d.mp3",
+      "duration": 1.704,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "6567f0b22487a851ae9a040c93bb0329771fb145c05a5a10c039d017d41d5839",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:컵라면": {
       "file": "chirp3-hd/d38c6691273a2d439f540b6a.mp3",
@@ -50100,6 +52858,13 @@
       "sha256": "e08733f671113ceab5a1991d2d14020b07dec24f7aa19816b8770ee109f842cb",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:팔 수 있다": {
+      "file": "chirp3-hd/692ee2497c5078b66585885e.mp3",
+      "duration": 0.888,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "07dbca2cc420b55e766eec3ba0aaf07aef0b2c7e6c4175889089b05f0408fb2b",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:팔고": {
       "file": "chirp3-hd/a36c81242c0028b2bbbeefea.mp3",
       "duration": 1.344,
@@ -50793,26 +53558,12 @@
       "sha256": "257b0f2eb2b4201eca288325216a9aacb9fe96915940043a53bcceaaec73b816",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:학교가": {
-      "file": "chirp3-hd/8318dd5be39b232f02ea0952.mp3",
-      "duration": 0.936,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "13262194e617e7114afff62dbf962db576d9f2c9cffa551a7cd24eb54f0ff3cd",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:학교까지": {
       "file": "chirp3-hd/9c0578eb7b929c9a613d1764.mp3",
       "duration": 1.536,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "5ee119b6c2f88fda4cbfdc585fde26ce131d3c0f3ade0077f9fe6e74be3289e1",
       "revision": "7f7e1033861ac84d5d932d62ff0eaa93f05bffffbf79a5675517fabde08e8326"
-    },
-    "ko-KR:학교만": {
-      "file": "chirp3-hd/64897bcac2d880d90d380c1d.mp3",
-      "duration": 0.864,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "25983be362ec78d1f451243e99442f9c98773fd2086e49ba0b2860a47763ee63",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:학교에": {
       "file": "chirp3-hd/52d6aa30186cfc9133263553.mp3",
@@ -50841,6 +53592,13 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "7ae4514340d35059ebe2491b6ebc1eef22d18cc2691061e8d858a2a3f9cfdc1c",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:학교에 갈 수 있다": {
+      "file": "chirp3-hd/b4376cbd061fa0c83ab4e59a.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "f8144624ba0d3647e1c600884ebf876c4a2887d2f5d4b8909b7dc62cc41aa76f",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:학교에 갈까요": {
       "file": "chirp3-hd/f3bf425258be0d830bd22c41.mp3",
@@ -51150,6 +53908,13 @@
       "sha256": "1997df9fc368a475b86cce52f54694a79c5d25c64eb279f161cfca7d90076c15",
       "revision": "32cdf372c0cb79c1616522cd1aacc912f154caf528832c0fc3c196970cffbbc5"
     },
+    "ko-KR:한 잔의 커피": {
+      "file": "chirp3-hd/a478f2264bd6fec5065fbf04.mp3",
+      "duration": 1.176,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "fa34b47a45df4108d521632e17bf248dd5fcd37841a8413a91ffb14fd6c36933",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:한가운데에": {
       "file": "chirp3-hd/830b36f948be2fb0d2b16330.mp3",
       "duration": 1.296,
@@ -51281,13 +54046,6 @@
       "duration": 1.656,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "e1c8f0c3f180286da9e8267c22530eafc57428aa0ebdad0af29a61841ff686c2",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:한국만": {
-      "file": "chirp3-hd/38f8a2ab8397812b27c04107.mp3",
-      "duration": 0.864,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "1e55145670443d95f1527a788dc330445a8cb5b6d7c353102d4cb43559246b06",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:한국말 잘하고 싶어요.": {
@@ -51458,6 +54216,13 @@
       "sha256": "4dc67f0c9475258eed8876329fad11da84c5519a02ef27b180f979b286e2a6ea",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:한국에 혼자 갈 수 있어요?": {
+      "file": "chirp3-hd/7cf71a4c0894c1ee32f87475.mp3",
+      "duration": 1.536,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "777343b1d8ff067228760a49dc6aa2bf2fe7a92503eb1845edecab9eb58d2794",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:한국에서의": {
       "file": "chirp3-hd/abee655ef8a2523365e1e255.mp3",
       "duration": 1.104,
@@ -51500,13 +54265,6 @@
       "sha256": "dfcdf250ae5ba00b173145ff3ae14f224a7818106d98a5558fb1642424cd74db",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
-    "ko-KR:한국이": {
-      "file": "chirp3-hd/453dbdb120b20c13984afe5b.mp3",
-      "duration": 0.936,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "f78e88043b898e6e48718cb391cc66f8be49de25021c8d8791edc7d751c18c53",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
     "ko-KR:한국이 춥습니까?": {
       "file": "chirp3-hd/21f353de0a68bbba9707d6f2.mp3",
       "duration": 1.584,
@@ -51526,13 +54284,6 @@
       "duration": 0.768,
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "fe224198c2a308a44cd817691bd27b35bffa2f5afe278fa943ea83496ea61698",
-      "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
-    },
-    "ko-KR:한국하고": {
-      "file": "chirp3-hd/470028324619009c69eae0f4.mp3",
-      "duration": 1.056,
-      "voice": "ko-KR-Chirp3-HD-Kore",
-      "sha256": "33d4234da8b81590cd2193e49359f91421c8f3954938ec1c71a137aea525e708",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
     "ko-KR:한글": {
@@ -52179,6 +54930,27 @@
       "sha256": "2ee966b04243077959d347c1dfff526e651f65de2fc06d229345c63ece415963",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
     },
+    "ko-KR:혼자 미국에 갈 수 있어요?": {
+      "file": "chirp3-hd/0fccfa63fe31523801e14229.mp3",
+      "duration": 1.968,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "45dc1bb995f14cfa69f1469d5791c1210e3bb443ea186aa2313541c6f4e93686",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:혼자 미국에 갈 수 있어요?|voice=ko-KR-Chirp3-HD-Charon": {
+      "file": "chirp3-hd/388d835697391542ebfe908a.mp3",
+      "duration": 2.256,
+      "voice": "ko-KR-Chirp3-HD-Charon",
+      "sha256": "58353afe774674e20eee4cfb0c3557c12379e4a8c534415441ed9605bd0136f6",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:혼자서": {
+      "file": "chirp3-hd/55ec8f4103f5e751c858c2fc.mp3",
+      "duration": 1.464,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "677d0b9eb86eba83c07904ed41b58658bf3b111df2fbf5ffdbcc06ed2276e7c9",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
     "ko-KR:혼자예요": {
       "file": "chirp3-hd/1422b06a1557eae7494c2181.mp3",
       "duration": 1.224,
@@ -52570,6 +55342,27 @@
       "voice": "ko-KR-Chirp3-HD-Kore",
       "sha256": "012c84c4a5f2a58c14e2f617c09f3ab6aa8aba931081379a3e2ba26e6f444f2e",
       "revision": "aea6538f880e313ce69e6124f22cb71e6750477f2a79e7b23366e8e264b7aaec"
+    },
+    "ko-KR:휴가": {
+      "file": "chirp3-hd/add27eca5bafeb2c388c3607.mp3",
+      "duration": 1.104,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "e422ecdc72bd160b43395d8f4542b90e7f3c4684e9d239dbcfe3221dceeb4aa8",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:휴가가": {
+      "file": "chirp3-hd/1213450af08faf746d7ca942.mp3",
+      "duration": 1.656,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "0c4cf33eaa6579a738ffaea76743dc52a07f1fd8fb51a7c2e31a3bd71945aedf",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
+    },
+    "ko-KR:휴가만": {
+      "file": "chirp3-hd/3a657740acf83ed33e5567ab.mp3",
+      "duration": 1.296,
+      "voice": "ko-KR-Chirp3-HD-Kore",
+      "sha256": "cc58213977e1f3e0b6bbebfa77b632521a5bb3a302390be3b9fa3a0f70d8033a",
+      "revision": "9cc5e1f9eded8a9265b253d701e0422d511fa15dd19973a3741787a8a0ede2fb"
     },
     "ko-KR:휴대폰": {
       "file": "chirp3-hd/19c4ebf6baf6c1dc079b33ed.mp3",
