@@ -974,6 +974,8 @@ p {
   font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft JhengHei", sans-serif;
   font-size: clamp(34px, 5vw, 62px);
   line-height: 1.04;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 .course-hero p:not(.lab-label) {

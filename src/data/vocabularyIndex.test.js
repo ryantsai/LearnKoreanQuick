@@ -62,17 +62,17 @@ describe("buildVocabularyIndex", () => {
   });
 
   test("teaches the selected word through exact boundary transformations", () => {
-    const mot = vocabulary.find((item) => item.text === "못");
-    expect(mot.pronunciationCases.map((item) => [item.written, item.pronounced])).toEqual(expect.arrayContaining([
-      ["못", "몯"],
-      ["못이", "모시"],
-      ["못만", "몬만"],
-      ["못하고", "모타고"]
+    const clothes = vocabulary.find((item) => item.text === "옷");
+    expect(clothes.pronunciationCases.map((item) => [item.written, item.pronounced])).toEqual(expect.arrayContaining([
+      ["옷", "옫"],
+      ["옷이", "오시"],
+      ["옷만", "온만"],
+      ["옷하고", "오타고"]
     ]));
   });
 
   test("does not fabricate noun-particle drills for inflected predicates or 한국에", () => {
-    for (const text of ["괜찮아요", "읽습니까", "한국에", "감사합니다", "있어요", "가요", "읽다", "날씨가", "밥을", "친구하고", "같이", "뭘"]) {
+    for (const text of ["괜찮아요", "읽습니까", "한국에", "감사합니다", "있어요", "가요", "읽다", "날씨가", "밥을", "친구하고", "같이", "뭘", "못"]) {
       const item = vocabulary.find((word) => word.text === text);
       expect(item).toBeDefined();
       expect(item.pronunciationCases.map((entry) => entry.written)).toEqual([text]);
