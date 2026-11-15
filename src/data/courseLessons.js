@@ -5,6 +5,7 @@ import { midOctoberLessons } from "./midOctoberLessons.js";
 import { lateOctoberLessons } from "./lateOctoberLessons.js";
 import { newLateLessons } from "./newLateLessons.js";
 import { novemberLessons } from "./novemberLessons.js";
+import { midNovemberLessons } from "./midNovemberLessons.js";
 import { courseMetadata } from "./courseMetadata.js";
 import { applyCourseMetadata } from "../utils/courseLabel.js";
 import { assetPath } from "../utils/assets.js";
@@ -2387,5 +2388,6 @@ export const courseLessons = [
   ...midOctoberLessons,
   ...lateOctoberLessons,
   ...newLateLessons,
-  ...novemberLessons
+  ...novemberLessons,
+  ...midNovemberLessons
 ].map((lesson) => applyCourseMetadata(lesson, courseMetadata[lesson.id]));

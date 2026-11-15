@@ -43,7 +43,9 @@ describe("courseLessons", () => {
       "b1-27",
       "b1-28",
       "b1-29",
-      "b1-30"
+      "b1-30",
+      "b1-31",
+      "b1-32"
     ]);
 
     for (const lesson of courseLessons) {
@@ -107,9 +109,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("names all 35 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(35);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(35);
+  test("names all 37 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(37);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(37);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
