@@ -45,7 +45,8 @@ describe("courseLessons", () => {
       "b1-29",
       "b1-30",
       "b1-31",
-      "b1-32"
+      "b1-32",
+      "b1-33"
     ]);
 
     for (const lesson of courseLessons) {
@@ -109,9 +110,9 @@ describe("courseLessons", () => {
     }
   });
 
-  test("names all 37 verified lessons and preserves the unmatched lesson", () => {
-    expect(Object.keys(courseMetadata)).toHaveLength(37);
-    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(37);
+  test("names all 38 verified lessons and preserves the unmatched lesson", () => {
+    expect(Object.keys(courseMetadata)).toHaveLength(38);
+    expect(courseLessons.filter((lesson) => lesson.courseMetadata)).toHaveLength(38);
     expect(courseLessons.filter((lesson) => !lesson.courseMetadata).map((lesson) => lesson.id))
       .toEqual(["b1-15"]);
     expect(courseLessons.find((lesson) => lesson.id === "b1-15").label).toBe("初級1-15");
@@ -154,6 +155,30 @@ describe("courseLessons", () => {
       assertWord(item.answer);
     }
   };
+
+  test("includes November 23 as session 6 with the source dialogue and open exercises", () => {
+    const lesson = courseLessons.find((item) => item.id === "b1-33");
+    expect(lesson.label).toBe("韓語1級主修會話(六)-6/6堂-20261123(一)");
+    expect(lesson.titleKo).toBe("운동을 잘 못해요.");
+    expect(lesson.sourcePdf).toBe("docs/lessons/new/1123.pdf");
+    expect(lesson.dialogues[0].lines.map(({ speaker, ko }) => [speaker, ko])).toEqual([
+      ["관우", "정희 씨, 내일 수영을 같이 해요?"],
+      ["정희", "수영이요? 저는 수영을 잘 못해요."],
+      ["관우", "그래요? 그럼 무슨 운동 좋아해요?"],
+      ["정희", "글쎄요..저는 운동을 잘 못해요."],
+    ]);
+    expect(lesson.dialogues.slice(2).map(({ lines }) =>
+      lines.filter(({ speaker, ko }) => speaker === "B" && ko.includes("__________")).length))
+      .toEqual([4, 4, 4, 4, 5]);
+    assertGuide(lesson.guide);
+    expect(lesson.guide.sections.map(({ words }) => words.length)).toEqual([6, 5, 5, 8]);
+    const words = [...lesson.vocabulary, ...lesson.guide.sections.flatMap((section) => section.words),
+      ...lesson.dialogues.flatMap(({ lines }) => lines.flatMap(({ tokens }) => tokens))];
+    for (const word of words) {
+      expect(word.roman.split("-").filter(Boolean), word.text).toHaveLength([...word.text].length);
+      expect(word.syllables.map(({ block }) => block).join("")).toBe(word.text);
+    }
+  });
 
   test("adds the verified October 8 text without inventing exercise answers or publishing source images", () => {
     const lesson = courseLessons.find((item) => item.id === "b1-22");
